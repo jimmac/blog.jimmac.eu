@@ -21,11 +21,16 @@ author:
   avatar: /assets/img/avatar.svg # change with your own avatar
 
 # URL settings
-url: "https://klise.now.sh" #
+url: "https://blog.jimmac.eu" #
 baseurl:
 permalink: /:title/
 google_analytics: # leave it blank if not wish
 fb_appid:
+
+
+relative_links:
+  enabled:     true
+  collections: false
 
 # Collection setting
 collections:
@@ -88,3 +93,4 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-postfiles
+  - jekyll-relative-links
