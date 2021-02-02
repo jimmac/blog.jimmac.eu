@@ -23,7 +23,7 @@ author:
 site_url: "https://blog.jimmac.eu" #
 url: "https://blog.jimmac.eu" #
 baseurl: ''
-permalink: /:title/
+permalink: /:year/:title/
 google_analytics: # leave it blank if not wish
 fb_appid:
 
