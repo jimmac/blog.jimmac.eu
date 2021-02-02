@@ -30,7 +30,7 @@ fb_appid:
 
 relative_links:
   enabled:     true
-  collections: true
+  collections: false
 
 # Collection setting
 collections:
