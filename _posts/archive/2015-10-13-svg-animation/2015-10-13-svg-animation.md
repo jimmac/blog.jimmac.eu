@@ -6,6 +6,7 @@ tags:
 - css
 - svg
 - inkscape
+- work
 ---
 I haven't written a post in quite a while, so I decided to document my failure to come up with a viable alternative to the translatable animations we use in [Getting Started](https://help.gnome.org/users/gnome-help/3.18/getting-started.html.en) documentation. So let's start with what's wrong with it. Despite being far more maintainable than a screencast, it's still a major hassle to keep the videos in sync with the developing designs. Every translation requires a re-render of all the frames and it quickly grows into gigabytes per language.
 
