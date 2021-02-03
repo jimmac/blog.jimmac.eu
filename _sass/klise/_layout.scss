@@ -3,12 +3,16 @@
   height: auto;
   max-width: calc(#{$wide-size} - (#{$spacing-full} * 2));
   max-width: -webkit-calc(#{$wide-size} - (#{$spacing-full} * 2));
-  position: relative;
+  position: sticky;
+  top: 0;
   margin-right: auto;
   margin-left: auto;
   border-bottom: 1px solid $light;
   padding: $spacing-full - 15px $spacing-full;
   @extend %clearfix;
+  z-index: 100;
+  background-color: transparentize($white,.1);
+  backdrop-filter: blur(10px);
 }
 
 // Navigation

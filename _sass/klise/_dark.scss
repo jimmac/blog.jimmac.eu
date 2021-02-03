@@ -123,6 +123,7 @@ body[data-theme="dark"] {
   // Navbar
   .navbar {
     border-color: $dark-light;
+    background-color: transparentize($dark-black,0.1);
     .menu {
       a#mode {
         .mode-sunny {
