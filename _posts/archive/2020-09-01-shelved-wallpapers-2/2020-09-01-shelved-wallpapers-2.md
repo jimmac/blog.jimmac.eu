@@ -1,7 +1,6 @@
 ---
-title: Shelved Wallpapers 2
+title: Shelved Wallpapers, Part 2
 date: 2020-09-01 11:37 UTC
-layout: post
 categories: wallpaper
 tags:
 - gnome

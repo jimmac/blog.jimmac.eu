@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" width="840" height="200">
+
+    <rect x="10" y="10" height="110" width="110"
+         style="fill: #3465a4">
+
+        <animateTransform
+            attributeName="transform"
+            begin="0s"
+            dur="20s"
+            type="rotate"
+            from="0 60 60"
+            to="360 60 60"
+            repeatCount="indefinite"
+        />
+    </rect>
+
+      <path
+         id="cursor"
+         d="m 181.29477,0 0,103.79079 23.42607,-22.87864 13.38633,27.34272 c 3.27882,7.39525 20.32483,1.44905 15.47792,-8.43995 l -13.24691,-28.38904 29.56149,0 -68.6049,-71.42588 z"
+         style="fill:#000000;">
+                 <animateTransform
+            attributeName="transform"
+            begin="0s"
+            dur="5s"
+            type="translate"
+            from="0 0"
+            to="360 0"
+            repeatCount="indefinite"
+        />
+      </path>
+         
+</svg>

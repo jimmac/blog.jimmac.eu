@@ -1,6 +1,6 @@
 ---
 date: 2005-01-05 20:02:00+00:00
-title: New Zealand, Part 3
+title: New Zealand, Part 3/4
 tags:
 - travel
 ---

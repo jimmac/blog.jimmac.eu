@@ -55,7 +55,11 @@ So, what would a system designed from the ground up to empower app developers/de
 
 The first step is having clearer guidelines and [more constraints](/blog/2017-01-25-artistic-constraints/). The old style was all about eyeballing it and doing what feels right. That's fine for [veteran designers](https://twitter.com/lapz) used to the style, but makes it inaccessible to newcomers. The new style comes with a grid, a set of recommended base shapes, and a new color palette. We have also updated the section on [app icons](https://developer.gnome.org/hig/stable/icon-design.html.en) in the [HIG](https://developer.gnome.org/hig/stable/) with a lot more detailed information on how to design the icons.
 
-![color](color.webm)
+
+<video controls autoplay loop class="image full">
+<source src="{{site.url}}{{page.url}}color.webm" type="video/webm">
+</video>
+
 
 <div class="inlineimgs" markdown="1">
 ![Template](Template.png)
