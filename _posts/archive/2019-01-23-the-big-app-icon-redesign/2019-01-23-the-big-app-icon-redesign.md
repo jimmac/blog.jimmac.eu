@@ -6,6 +6,7 @@ tags:
 - icon
 - inkscape
 - gnome
+- work
 ---
 
 <p style="display: none;">If your're reading this on Planet Gnome, please visit the <a href="{{ site.url }}{{ page.url }}">article on my site</a> to enjoy the inline CSS effects.</p>
