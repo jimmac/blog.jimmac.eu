@@ -1,6 +1,13 @@
 [
   
     {
+      "title"    : "Elektronic",
+      "tags"     : "synth, tracker",
+      "url"      : "/2021/elektronic/",
+      "date"     : "2021-02-02 00:00:00 +0100"
+    } ,
+  
+    {
       "title"    : "New Blog!",
       "tags"     : "blog, photo",
       "url"      : "/2021/new-blog/",
@@ -19,6 +26,13 @@
       "tags"     : "design, art, gnome, icon",
       "url"      : "/2020/art-vs-design/",
       "date"     : "2020-04-06 05:41:00 +0200"
+    } ,
+  
+    {
+      "title"    : "The Big App Icon Redesign",
+      "tags"     : "design, icon, inkscape, gnome",
+      "url"      : "/2019/the-big-app-icon-redesign/",
+      "date"     : "2019-01-23 13:00:00 +0100"
     } ,
   
     {

@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2021-02-03T01:08:56+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Even a Stopped Clock</title><subtitle>Random musings of a semi-sane designer from lesser Europe.</subtitle><author><name>Jakub Steiner</name><email>jimmac@gmail.com</email></author><entry><title type="html">New Blog!</title><link href="http://localhost:4000/2021/new-blog/" rel="alternate" type="text/html" title="New Blog!" /><published>2021-02-01T00:00:00+01:00</published><updated>2021-02-01T00:00:00+01:00</updated><id>http://localhost:4000/2021/new-blog</id><content type="html" xml:base="http://localhost:4000/2021/new-blog/">&lt;p&gt;&lt;img src=&quot;bedrichov.jpeg&quot; alt=&quot;Bedřichov&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2021-02-03T11:16:28+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Even a Stopped Clock</title><subtitle>Random musings of a semi-sane designer from lesser Europe.</subtitle><author><name>Jakub Steiner</name><email>jimmac@gmail.com</email></author><entry><title type="html">Elektronic</title><link href="http://localhost:4000/2021/elektronic/" rel="alternate" type="text/html" title="Elektronic" /><published>2021-02-02T00:00:00+01:00</published><updated>2021-02-02T00:00:00+01:00</updated><id>http://localhost:4000/2021/elektronic</id><content type="html" xml:base="http://localhost:4000/2021/elektronic/">&lt;p&gt;&lt;img src=&quot;digitakt.jpg&quot; alt=&quot;Elektron Digitakt&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;More than 20 years ago (gee), before I dipped my toes into Free software, I was into making electronic music using the tools that were available. In my case it was a PC with what was called a &lt;em&gt;mod tracker&lt;/em&gt; (&lt;a href=&quot;https://en.wikipedia.org/wiki/FastTracker_2&quot;&gt;Fast tracker 2&lt;/a&gt; in particular). Later I found myself in love with a more sophisticated variant of a mod tracker, called &lt;a href=&quot;https://jeskola.net/buzz/&quot;&gt;Jeskola Buzz&lt;/a&gt; – it &lt;em&gt;still exists!&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;I had no theory behind me and never played any intrument, but I was driven by the amazing sounds the software produced and the gradual iteritative workflow it embraced. It allowed me to make things I actually &lt;a href=&quot;https://jimmac.bandcamp.com/track/the-sphere&quot;&gt;enjoyed listening to&lt;/a&gt;, even years later. And that’s perhaps the biggest value you get out of anything. If you are fortunate enough to be able to enjoy what you do, you’ve hit the jackpot.&lt;/p&gt;
+
+&lt;p&gt;And this brings us to 20 years later, where I finally picked up where I left off. I dipped my toes in a hardware tracker, which didn’t quite spark the joy, but it led me to the world of a swedish music gear make, &lt;a href=&quot;https://elektron.se&quot;&gt;Elektron&lt;/a&gt;. These guys are the schoolbook example of &lt;em&gt;beautiful things works better&lt;/em&gt;. There are common workflow patterns used throughout their gear, so through familiarity they win you over (non designer people like to call it the i-word, &lt;em&gt;intuitive&lt;/em&gt;). Everything about the physical objects they make is amazing, but then you get to the lush reverb sounds their Digitone produces and you’re blown away.&lt;/p&gt;
+
+&lt;p&gt;I am still the amateur I was 20 years ago, but the joy of of nudging something that creates itself is still there. And I love it.&lt;/p&gt;
+
+&lt;iframe src=&quot;https://player.vimeo.com/video/506578461&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&quot;https://vimeo.com/506578461&quot;&gt;Digitakt + Digitone: Boards of Landfill&lt;/a&gt; from &lt;a href=&quot;https://vimeo.com/jimmacfx&quot;&gt;jimmac&lt;/a&gt; on &lt;a href=&quot;https://vimeo.com&quot;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</content><author><name>Jakub Steiner</name><email>jimmac@gmail.com</email></author><category term="synth" /><category term="tracker" /><summary type="html"></summary></entry><entry><title type="html">New Blog!</title><link href="http://localhost:4000/2021/new-blog/" rel="alternate" type="text/html" title="New Blog!" /><published>2021-02-01T00:00:00+01:00</published><updated>2021-02-01T00:00:00+01:00</updated><id>http://localhost:4000/2021/new-blog</id><content type="html" xml:base="http://localhost:4000/2021/new-blog/">&lt;p&gt;&lt;img src=&quot;bedrichov.jpeg&quot; alt=&quot;Bedřichov&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;In an effort to tone down my Facebook posts, I’ve looked into ways how to leverage the amazing &lt;a href=&quot;https://flathub.org/apps/details/org.gnome.gitlab.somas.Apostrophe&quot;&gt;Apostrophe&lt;/a&gt; app for writing simple markdown posts.&lt;/p&gt;
 
@@ -28,7 +39,96 @@ Your browser does not support the video tag.
 
 &lt;p&gt;So what was the situation twitter was praising? Let’s count on how many GNOME applications shipped a custom nighly icon. Umm, how about &lt;strong&gt;zero&lt;/strong&gt;?&lt;/p&gt;
 
-&lt;p&gt;A pretty picture an artist spends hours on, modelling, texturing, lighting, adjusting for low resolution screens is &lt;em&gt;not&lt;/em&gt; a visual framework nor a reasonable thing to ask app developers to do.&lt;/p&gt;</content><author><name>Jakub Steiner</name><email>jimmac@gmail.com</email></author><category term="design" /><category term="art" /><category term="gnome" /><category term="icon" /><summary type="html">Over the weekend I was forced to unload all my photos from my phone due to limited storage space. As I went through a nice capture of Builder nighly caught my attention and I couldn’t help but post it on twitter.</summary></entry><entry><title type="html">Shelved Wallpapers</title><link href="http://localhost:4000/2018/shelved-wallpapers/" rel="alternate" type="text/html" title="Shelved Wallpapers" /><published>2018-02-12T20:13:00+01:00</published><updated>2018-02-12T20:13:00+01:00</updated><id>http://localhost:4000/2018/shelved-wallpapers</id><content type="html" xml:base="http://localhost:4000/2018/shelved-wallpapers/">&lt;p&gt;GNOME 3.28 will release with another batch of new wallpapers that only a freaction of you will ever see. Apart from those I also made a few for different purposes that didn’t end up being used, but it would be a shame to keep shelved.&lt;/p&gt;
+&lt;p&gt;A pretty picture an artist spends hours on, modelling, texturing, lighting, adjusting for low resolution screens is &lt;em&gt;not&lt;/em&gt; a visual framework nor a reasonable thing to ask app developers to do.&lt;/p&gt;</content><author><name>Jakub Steiner</name><email>jimmac@gmail.com</email></author><category term="design" /><category term="art" /><category term="gnome" /><category term="icon" /><summary type="html">Over the weekend I was forced to unload all my photos from my phone due to limited storage space. As I went through a nice capture of Builder nighly caught my attention and I couldn’t help but post it on twitter.</summary></entry><entry><title type="html">The Big App Icon Redesign</title><link href="http://localhost:4000/2019/the-big-app-icon-redesign/" rel="alternate" type="text/html" title="The Big App Icon Redesign" /><published>2019-01-23T13:00:00+01:00</published><updated>2019-01-23T13:00:00+01:00</updated><id>http://localhost:4000/2019/the-big-app-icon-redesign</id><content type="html" xml:base="http://localhost:4000/2019/the-big-app-icon-redesign/">&lt;p style=&quot;display: none;&quot;&gt;If your're reading this on Planet Gnome, please visit the &lt;a href=&quot;http://localhost:4000/2019/the-big-app-icon-redesign/&quot;&gt;article on my site&lt;/a&gt; to enjoy the inline CSS effects.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-revolution-is-coming&quot;&gt;The Revolution is Coming&lt;/h1&gt;
+
+&lt;p&gt;As you may have heard, GNOME 3.32 is going to come with a radical new icon style and new guidelines for app developers. This post aims to give some background on why this was needed, our goals with the initiative, and our exciting plans for the future.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-problem&quot;&gt;The Problem&lt;/h1&gt;
+&lt;p&gt;Our current icon style dates back all the way to the early 00s and the original &lt;a href=&quot;http://tango.freedesktop.org/Tango_Icon_Theme_Guidelines&quot;&gt;Tango&lt;/a&gt;. One of the foundational ideas behind Tango was that each icon is drawn at multiple sizes, in order to look pixel-perfect in every context. This means that if you want to make an app icon you’re not drawing one, but up to 7 separate icons (symbolic, 16px, 22px, 24px, 32px, 48px, and 512px).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;xchat.png&quot; alt=&quot;Xchat&quot; class=&quot;centered&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;inlineimgs&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;boxes.png&quot; alt=&quot;Boxes&quot; /&gt;
+&lt;img src=&quot;builder.png&quot; alt=&quot;Builder&quot; /&gt;
+&lt;img src=&quot;gimp.png&quot; alt=&quot;GIMP&quot; /&gt;
+&lt;img src=&quot;gitg.png&quot; alt=&quot;Gitg&quot; /&gt;
+&lt;img src=&quot;inkscape.png&quot; alt=&quot;Inkscape&quot; /&gt;
+&lt;img src=&quot;music.png&quot; alt=&quot;Music&quot; /&gt;
+&lt;img src=&quot;photos.png&quot; alt=&quot;Photos&quot; /&gt;
+&lt;img src=&quot;recipe.png&quot; alt=&quot;Recipe&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Making these icons takes quite a bit of experience and craftsmanship, and many of our high-detail icons are more &lt;a href=&quot;/blog/2018-07-18-detail-considered-harmful/&quot;&gt;art than design&lt;/a&gt;. However, as a part of our design system the style has not succeeded, and is in dire need of reform. Some of the major issues:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Many of the sizes aren’t being used anywhere in the OS, and haven’t been for the better part of a decade. Since we use either large sizes or symbolics in most contexts, the pixel-hinted small sizes are rarely seen by anyone.&lt;/li&gt;
+  &lt;li&gt;Only a handful of people have the skills to draw icons in this style, and it can take weeks to do a single app icon. This means that iterating on the style is very hard, which is one of the reasons why our icon style has been stagnant for years.&lt;/li&gt;
+  &lt;li&gt;Very few third-party apps are following the guidelines. Our icons are simply too hard to draw for mere mortals, and as a result even the best third-party GNOME apps often have bad icons.&lt;/li&gt;
+  &lt;li&gt;We (GNOME Designers) don’t have the bandwidth to keep up with icon requests from developers, let alone update or evolve the style overall.&lt;/li&gt;
+  &lt;li&gt;The wider industry has moved on from the detailed icon styles of the 2000s, which gives new users the impression that our software is outdated.&lt;/li&gt;
+  &lt;li&gt;Cross-platform apps tend to ship with very simple, flat icons these days. The contrast between these icons and our super detailed ones can be quite jarring.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;inlineimgs&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;peek.png&quot; alt=&quot;Peek&quot; /&gt;
+&lt;img src=&quot;firefox.png&quot; alt=&quot;Firefox&quot; /&gt;
+&lt;img src=&quot;skype.png&quot; alt=&quot;Skype&quot; /&gt;
+&lt;img src=&quot;spotify.png&quot; alt=&quot;Spotify&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;a-new-beginning&quot;&gt;A New Beginning&lt;/h1&gt;
+&lt;p&gt;One of the major project-wide goals GNOME over the past years has been empowering app developers. A big reason for this initiative is that we realized that the current style is holding us back as an ecosystem. Just as &lt;a href=&quot;https://wiki.gnome.org/Apps/Builder&quot;&gt;Builder&lt;/a&gt; is about providing a seamless development workflow, and &lt;a href=&quot;https://flatpak.org/&quot;&gt;Flatpak&lt;/a&gt; is about enabling direct distribution, this initiative is about making good icons more attainable for more apps.&lt;/p&gt;
+
+&lt;p&gt;So, what would a system designed from the ground up to empower app developers/designers to make good icons look like?&lt;/p&gt;
+
+&lt;p&gt;The first step is having clearer guidelines and &lt;a href=&quot;/blog/2017-01-25-artistic-constraints/&quot;&gt;more constraints&lt;/a&gt;. The old style was all about eyeballing it and doing what feels right. That’s fine for &lt;a href=&quot;https://twitter.com/lapz&quot;&gt;veteran designers&lt;/a&gt; used to the style, but makes it inaccessible to newcomers. The new style comes with a grid, a set of recommended base shapes, and a new color palette. We have also updated the section on &lt;a href=&quot;https://developer.gnome.org/hig/stable/icon-design.html.en&quot;&gt;app icons&lt;/a&gt; in the &lt;a href=&quot;https://developer.gnome.org/hig/stable/&quot;&gt;HIG&lt;/a&gt; with a lot more detailed information on how to design the icons.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;color.webm&quot; alt=&quot;color&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;inlineimgs&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;Template.png&quot; alt=&quot;Template&quot; /&gt;
+&lt;img src=&quot;Template2.png&quot; alt=&quot;Template2&quot; /&gt;
+&lt;img src=&quot;Template3.png&quot; alt=&quot;Template3&quot; /&gt;
+&lt;img src=&quot;Template4.png&quot; alt=&quot;Template4&quot; /&gt;
+&lt;img src=&quot;icon-round.svg&quot; alt=&quot;Round icon&quot; /&gt;
+&lt;img src=&quot;icon-landscape.svg&quot; alt=&quot;Landscape&quot; /&gt;
+&lt;img src=&quot;icon-portrait.svg&quot; alt=&quot;Portrait&quot; /&gt;
+&lt;img src=&quot;icon-square.svg&quot; alt=&quot;Square&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The style is very &lt;strong&gt;geometric&lt;/strong&gt;, making it easy to reuse and adapt elements from other icons. We’re also removing baked-in drop shadows in favour of drawing them automatically from the icon’s alpha channel in GTK/Shell depending on the rendering context. In most cases 3rd party icons don’t come with baked in shadows and this makes icons easier to draw and ensures consistent shadows.&lt;/p&gt;
+
+&lt;p&gt;Another cornerstone of this initiative is reducing the number of icons to be drawn: From now on, you only need one full color icon and a monochrome symbolic icon.&lt;/p&gt;
+
+&lt;p&gt;The color icon is optimized for 64px (with a nominal size of 128px for historical reasons), but the simple geometric style without 1px strokes means that it also looks good larger &lt;em&gt;and&lt;/em&gt; smaller.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;onesize.png&quot; alt=&quot;One size&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This means the workflow changes from drawing 6 icons to just one (plus one symbolic icon). It also simplifies the way icons are shipped in apps. Instead of a a half dozen rendered PNGs, we can now ship a single color SVG (and a symbolic SVG). Thanks to the simple style most icons are only around 15kB.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;template-plus-symbolic.svg&quot; alt=&quot;Template with symbolic&quot; /&gt;&lt;/p&gt;
+
+&lt;h1&gt;Welcome to the Future&lt;/h1&gt;
+
+&lt;p&gt;Having this single source of truth makes it orders of magnitude easier to iterate on different metaphors for individual icons, update the style as a whole, and a number of other exciting things we're working towards.&lt;/p&gt;
+
+&lt;div class=&quot;inlineimgs&quot;&gt;
+  &lt;p&gt;&lt;img src=&quot;nightly-darktable.svg&quot; alt=&quot;Darktable&quot; /&gt;
+&lt;img src=&quot;nightly-games.svg&quot; alt=&quot;Games&quot; /&gt;
+&lt;img src=&quot;nightly-passwordsafe.svg&quot; alt=&quot;PasswordSafe&quot; /&gt;
+&lt;img src=&quot;nightly-fragments.svg&quot; alt=&quot;Fragments&quot; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;We’ve also been working on improving design tooling as part of this initiative. &lt;a href=&quot;https://flathub.org/apps/details/org.gnome.IconPreview&quot;&gt;Icon Preview&lt;/a&gt;, a new app by &lt;a href=&quot;https://github.com/ZanderBrown&quot;&gt;Zander Brown&lt;/a&gt;, is designed to make the icon design workflow smoother and faster. It allows you to quickly get started from a template, preview an icon in various contexts as you’re designing it, and then finally optimizing and exporting the SVG to use in apps. The latter part is not quite ready yet, but the app already works great for the former two use cases.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;icon-preview.png&quot; alt=&quot;Icon Preview&quot; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;lets-make-beautiful-app-icons&quot;&gt;Let’s Make Beautiful App Icons!&lt;/h1&gt;
+
+&lt;p&gt;If you’re a graphics designer and wish to bring consistency to the world of application icons, familiarize yourselves with &lt;a href=&quot;https://developer.gnome.org/hig/stable/icon-design.html.en&quot;&gt;the style&lt;/a&gt;, grab &lt;a href=&quot;https://flathub.org/apps/details/org.gnome.IconPreview&quot;&gt;Icon Preview&lt;/a&gt;, &lt;a href=&quot;https://flathub.org/apps/details/org.inkscape.Inkscape&quot;&gt;Inkscape&lt;/a&gt; and instead of patching up poor icons downstream with icon themes, please come join us &lt;a href=&quot;https://gitlab.gnome.org/GNOME/Initiatives/issues/2&quot;&gt;make beautiful upstream application icons&lt;/a&gt;!&lt;/p&gt;</content><author><name>Jakub Steiner</name><email>jimmac@gmail.com</email></author><category term="design" /><category term="icon" /><category term="inkscape" /><category term="gnome" /><summary type="html">If your're reading this on Planet Gnome, please visit the article on my site to enjoy the inline CSS effects.</summary></entry><entry><title type="html">Shelved Wallpapers</title><link href="http://localhost:4000/2018/shelved-wallpapers/" rel="alternate" type="text/html" title="Shelved Wallpapers" /><published>2018-02-12T20:13:00+01:00</published><updated>2018-02-12T20:13:00+01:00</updated><id>http://localhost:4000/2018/shelved-wallpapers</id><content type="html" xml:base="http://localhost:4000/2018/shelved-wallpapers/">&lt;p&gt;GNOME 3.28 will release with another batch of new wallpapers that only a freaction of you will ever see. Apart from those I also made a few for different purposes that didn’t end up being used, but it would be a shame to keep shelved.&lt;/p&gt;
 
 &lt;p&gt;So here’s a bit of isometric goodness I quite enjoy on my desktop, you might as well.&lt;/p&gt;
 
