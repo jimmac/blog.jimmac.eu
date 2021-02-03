@@ -75,9 +75,26 @@
     text-align: center;
   }
 
-  video,.full img {
+  video,
+  .full img,
+  iframe {
     display: block;
     width: 100%;
+    min-height: 400px;
+
+    @include media-query($on-mobile) {
+      min-height: inherit;
+    }
+  }
+
+  img.centered { display: block; margin: auto; }
+  .inlineimgs p {
+    margin: 2em 0 3em;
+    display: grid;
+    grid-gap: 32px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    img { display: block; width: 100%; }
   }
 
 
