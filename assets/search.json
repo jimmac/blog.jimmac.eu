@@ -1,6 +1,13 @@
 [
   
     {
+      "title"    : "iPhone 12 mini",
+      "tags"     : "photo, iphone",
+      "url"      : "/2021/iphone12-mini/",
+      "date"     : "2021-02-03 00:00:00 +0100"
+    } ,
+  
+    {
       "title"    : "Ele[k]tronic",
       "tags"     : "synth, tracker",
       "url"      : "/2021/elektronic/",
@@ -23,7 +30,7 @@
   
     {
       "title"    : "Art vs Design",
-      "tags"     : "design, art, gnome, icon",
+      "tags"     : "design, art, gnome, icon, work",
       "url"      : "/2020/art-vs-design/",
       "date"     : "2020-04-06 05:41:00 +0200"
     } ,
@@ -44,7 +51,7 @@
   
     {
       "title"    : "SVG animation",
-      "tags"     : "design, css, svg, inkscape",
+      "tags"     : "design, css, svg, inkscape, work",
       "url"      : "/2015/svg-animation/",
       "date"     : "2015-10-13 13:27:00 +0200"
     } ,
