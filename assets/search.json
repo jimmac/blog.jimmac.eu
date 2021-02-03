@@ -15,7 +15,7 @@
     } ,
   
     {
-      "title"    : "Shelved Wallpapers 2",
+      "title"    : "Shelved Wallpapers, Part 2",
       "tags"     : "gnome, design, wallpaper, download",
       "url"      : "/2020/shelved-wallpapers-2/",
       "date"     : "2020-09-01 13:37:00 +0200"
@@ -43,28 +43,35 @@
     } ,
   
     {
-      "title"    : "New Zealand Road Trip, Part 4 &amp; 5",
+      "title"    : "SVG animation",
+      "tags"     : "design, css, svg, inkscape",
+      "url"      : "/2015/svg-animation/",
+      "date"     : "2015-10-13 13:27:00 +0200"
+    } ,
+  
+    {
+      "title"    : "New Zealand, Part 4/4",
       "tags"     : "travel",
-      "url"      : "/2005/new-zealand-road-trip-part-4-5/",
+      "url"      : "/2005/new-zealand-part-4/",
       "date"     : "2005-01-11 23:59:00 +0100"
     } ,
   
     {
-      "title"    : "New Zealand, Part 3",
+      "title"    : "New Zealand, Part 3/4",
       "tags"     : "travel",
       "url"      : "/2005/new-zealand-part-3/",
       "date"     : "2005-01-05 21:02:00 +0100"
     } ,
   
     {
-      "title"    : "New Zealand, Part 2",
+      "title"    : "New Zealand, Part 2/4",
       "tags"     : "travel",
       "url"      : "/2004/new-zealand-part-2/",
       "date"     : "2004-12-30 12:28:00 +0100"
     } ,
   
     {
-      "title"    : "New Zealand, Part 1",
+      "title"    : "New Zealand, Part 1/4",
       "tags"     : "travel",
       "url"      : "/2004/new-zealand-part-1/",
       "date"     : "2004-12-30 09:35:00 +0100"
