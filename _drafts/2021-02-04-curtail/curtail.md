@@ -28,3 +28,12 @@ Well usually on one line as:
 ```
 for image in *jpeg; do out=`basename $image .jpeg`-thumb.jpeg; convert -geometry 400 $image $out; done
 ```
+
+# Curtail
+
+Curtail's main weapon is **convention**. Convention trumps configurability in my book (even if there are some preferences). Rather than making you configure a behavior, before you can do anything, it provides one. You either dig it and can immediately be productive, or you don't and flame it on reddit and the orange site. Sorry I meant move on.
+
+![Curtail UI](curtail.png)
+
+So what's the convention? The main workflow is you drop images onto it with drag and drop and it automatically compresses the images. The only decision you have to make upfront is whether you allow it to compress it more by going lossy or not. That's it. No selecting of output directory, scaling, formats. Nothing. Just drop images and get them processed. They will end up in the same directory as the source, with a `-min` suffix. Everything happens immediately and you will see a summary of the conversion in the window. It is very rare to run into such an app in the FOSS world. Thank you, [Hugo](https://hugo-posnic.fr/).
+
