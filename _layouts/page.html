@@ -34,21 +34,6 @@ layout: compress
       <h1 class="header-title center" itemprop="headline">{{ page.title | escape }}.</h1>
     </header>
     <main class="page-content" aria-label="Content">
-      {% if site.rewrite_images == false %}
-        {{ content_fixedyt }}
-      {% else %}
-        {% assign img_untreated = 'img src="/' %}
-        {% assign baseurlslash = site.baseurl | append: "/" %}
-        {% assign img_baseurl = img_untreated | replace: "/", baseurlslash %}
-        {% assign rewritten = content_fixedyt | replace: img_untreated, img_baseurl %}
-
-        {% if site.baseurl != "" %}
-          {% assign doublebase = site.baseurl | append: site.baseurl %}
-          {{ rewritten | replace: doublebase, site.baseurl }}
-        {% else %}
-          {{ rewritten }}
-        {% endif %}
-      {% endif %}
       {% include anchor_headings.html html=content anchorClass="anchor-head" beforeHeading=true h_min=4 h_max=4 %}
     </main>
     {% include footer.html %}
