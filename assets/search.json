@@ -1,6 +1,13 @@
 [
   
     {
+      "title"    : "Animated Tour",
+      "tags"     : "work, design, gnome",
+      "url"      : "/2021/animated-tour/",
+      "date"     : "2021-02-05 00:00:00 +0100"
+    } ,
+  
+    {
       "title"    : "Curtail",
       "tags"     : "app, flathub",
       "url"      : "/2021/curtail/",
