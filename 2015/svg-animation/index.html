@@ -1,4 +1,416 @@
-<!DOCTYPE html> <html lang="en-US"> <head prefix="og: http://ogp.me/ns#"> <meta charset="UTF-8" /> <meta http-equiv="X-UA-Compatible" content="ie=edge" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <meta name="mobile-web-app-capable" content="yes" /> <meta name="apple-mobile-web-app-capable" content="yes" /> <meta name="application-name" content="Even a Stopped Clock" /> <meta name="apple-mobile-web-app-status-bar-style" content="#fff" /> <meta name="apple-mobile-web-app-title" content="Even a Stopped Clock" /> <title> SVG animation - Even a Stopped Clock </title> <link rel="alternate" href="https://blog.jimmac.eu/2015/svg-animation/" hreflang="en-US" /> <link rel="canonical" href="https://blog.jimmac.eu/2015/svg-animation/" /> <meta name="description" content="Random musings of a semi-sane designer from lesser Europe." /> <meta name="referrer" content="no-referrer-when-downgrade" /> <meta property="fb:app_id" content="" /> <meta property="og:site_name" content="SVG animation | Jakub Steiner" /> <meta property="og:title" content="SVG animation | Jakub Steiner" /> <meta property="og:type" content="website" /> <meta property="og:url" content="https://blog.jimmac.eu/2015/svg-animation/" /> <meta property="og:description" content="Random musings of a semi-sane designer from lesser Europe." /> <meta property="og:image" content="https://blog.jimmac.eu/assets/img/ogp.png" /> <meta property="og:image:width" content="640" /> <meta property="og:image:height" content="640" /> <meta name="twitter:card" content="summary" /> <meta name="twitter:title" content="SVG animation | jimmac" /> <meta name="twitter:url" content="https://blog.jimmac.eu/2015/svg-animation/" /> <meta name="twitter:site" content="@jimmac" /> <meta name="twitter:creator" content="@jimmac" /> <meta name="twitter:description" content="Random musings of a semi-sane designer from lesser Europe." /> <meta name="twitter:image" content="https://blog.jimmac.eu/assets/img/ogp.png" /> <link type="application/atom+xml" rel="alternate" href="https://blog.jimmac.eu/feed.xml" title="Even a Stopped Clock" /> <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" /> <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png" /> <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png" /> <link rel="manifest" href="/assets/favicons/site.webmanifest" /> <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#5bbad5" /> <meta name="apple-mobile-web-app-title" content="Jkub Steiner" /> <meta name="application-name" content="Jakub Steiner" /> <meta name="msapplication-TileColor" content="#da532c" /> <meta name="theme-color" content="#2c2c2c" /> <link rel="stylesheet" href="/assets/css/style.css" /> </head> <body data-theme="dark" class="notransition"> <script> const body = document.body; const data = body.getAttribute("data-theme"); const initTheme = (state) => { if (state === "dark") { body.setAttribute("data-theme", "dark"); } else if (state === "light") { body.removeAttribute("data-theme"); } else { localStorage.setItem("theme", data); } }; initTheme(localStorage.getItem("theme")); setTimeout(() => body.classList.remove("notransition"), 75); </script> <div class="navbar" role="navigation"> <nav class="menu"> <input type="checkbox" id="menu-trigger" class="menu-trigger" /> <label for="menu-trigger"> <span class="menu-icon"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512" > <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" /> </svg> </span> </label> <a id="mode"> <svg class="mode-sunny" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512" > <title>LIGHT</title> <line x1="256" y1="48" x2="256" y2="96" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="256" y1="416" x2="256" y2="464" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="403.08" y1="108.92" x2="369.14" y2="142.86" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="142.86" y1="369.14" x2="108.92" y2="403.08" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="464" y1="256" x2="416" y2="256" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="96" y1="256" x2="48" y2="256" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="403.08" y1="403.08" x2="369.14" y2="369.14" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="142.86" y1="142.86" x2="108.92" y2="108.92" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <circle cx="256" cy="256" r="80" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> </svg> <svg class="mode-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512" > <title>DARK</title> <line x1="256" y1="48" x2="256" y2="96" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="256" y1="416" x2="256" y2="464" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="403.08" y1="108.92" x2="369.14" y2="142.86" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="142.86" y1="369.14" x2="108.92" y2="403.08" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="464" y1="256" x2="416" y2="256" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="96" y1="256" x2="48" y2="256" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="403.08" y1="403.08" x2="369.14" y2="369.14" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <line x1="142.86" y1="142.86" x2="108.92" y2="108.92" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> <circle cx="256" cy="256" r="80" style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px" /> </svg> </a> <div class="trigger"> <div class="trigger-container"><a class="menu-link" href="/">posts</a><a class="menu-link" href="/archive/">archive</a><a class="menu-link" href="/about/">about</a><a class="menu-link" href="https://jimmac.eu" target="_blank" rel="noopener" >portfolio</a ><a class="menu-link rss" href="/feed.xml"> <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 512 512" fill="#ED812E" > <title>RSS</title> <path d="M108.56,342.78a60.34,60.34,0,1,0,60.56,60.44A60.63,60.63,0,0,0,108.56,342.78Z" /> <path d="M48,186.67v86.55c52,0,101.94,15.39,138.67,52.11s52,86.56,52,138.67h86.66C325.33,312.44,199.67,186.67,48,186.67Z" /> <path d="M48,48v86.56c185.25,0,329.22,144.08,329.22,329.44H464C464,234.66,277.67,48,48,48Z" /> </svg> </a> </div> </div> </nav> </div> <div class="wrapper post"> <main class="page-content" aria-label="Content"> <article itemscope itemtype="https://schema.org/BlogPosting"> <header class="header"> <div class="tags"> <span itemprop="keywords"> <a class="tag" href="/tags/#design">DESIGN</a>, <a class="tag" href="/tags/#css">CSS</a>, <a class="tag" href="/tags/#svg">SVG</a>, <a class="tag" href="/tags/#inkscape">INKSCAPE</a>, <a class="tag" href="/tags/#work">WORK</a> </span> </div> <h1 class="header-title" itemprop="headline">SVG animation</h1> <div class="post-meta"> <time datetime="2015-10-13T13:27:00+02:00" itemprop="datePublished"> Oct 13, 2015 </time> <span itemprop="author" itemscope itemtype="https://schema.org/Person"> <span itemprop="name">Jakub Steiner</span> </span> <time hidden datetime="" itemprop="dateModified"> Oct 13, 2015 </time> <span hidden itemprop="publisher" itemtype="Person">Jakub Steiner</span> <span hidden itemprop="image"></span> <span hidden itemprop="mainEntityOfPage"><p>I haven’t written a post in quite a while, so I decided to document my failure to come up with a viable alternative to the translatable animations we use in <a href="https://help.gnome.org/users/gnome-help/3.18/getting-started.html.en">Getting Started</a> documentation. So let’s start with what’s wrong with it. Despite being far more maintainable than a screencast, it’s still a major hassle to keep the videos in sync with the developing designs. Every translation requires a re-render of all the frames and it quickly grows into gigabytes per language.</p> </span> </div> </header> <div class="page-content" itemprop="articleBody"> <p>I haven’t written a post in quite a while, so I decided to document my failure to come up with a viable alternative to the translatable animations we use in <a href="https://help.gnome.org/users/gnome-help/3.18/getting-started.html.en">Getting Started</a> documentation. So let’s start with what’s wrong with it. Despite being far more maintainable than a screencast, it’s still a major hassle to keep the videos in sync with the developing designs. Every translation requires a re-render of all the frames and it quickly grows into gigabytes per language.</p> <h1 id="video"> <a href="#video" class="anchor-head"></a> Video </h1> <video controls="" class="image full"> <source src="https://blog.jimmac.eu/2015/svg-animation/gnome-windows-and-workspaces.webm" type="video/webm" /> <a href="https://blog.jimmac.eu/2015/svg-animation/gnome-windows-and-workspaces.webm">Czech version of one of the Getting Started videos</a> </video> <p>If you’re interested in seeing how these were produced, see the <a href="https://www.youtube.com/watch?v=IhFcErztgeA">Behind the Scenes of getting Started</a> video.</p> <p>The animations themselves aren’t super complex. Basic transforms (translation, scale and rotation) and opacity is all that’s needed. And because we are using translatable SVGs in Mallard, it was time to look into SVG animation. There are numerous options available to animate in SVG, which already gave me a hint that none of them will work properly for my use case. I hate being right.</p> <h1 id="smil"> <a href="#smil" class="anchor-head"></a> SMIL </h1> <p>I’ll starts with the one I like least. The inline garbage approach. SMIL. Each attribute of an SVG element is animateable. Creating a global sequence using this by hand is close to impossible. Its capabilities do include a few extras like animating an object <em>along a path</em>, but in general I cannot imagine editing this by hand. Incorporating Inkscape into the workflow seemed feasible first. Inkscape will not touch the XML it doesn’t know about. It will not clean out any of the animation stuff when you save. The xlink namespace definition to animate along path seems to have worked, but I can’t figure out some weird offsets. Groups usually get some matrix transforms as soon as you reposition them. It all may boil down to Inkscape using its own coordinate system, I don’t know. I haven’t succeeded to bolt some animation on the Inkscape generated SVG.</p> <p><img src="smil.svg" alt="SMIL" /></p> <h1 id="css"> <a href="#css" class="anchor-head"></a> CSS </h1> <p>A much more appealing was the concept of using CSS animation. We do a lot of transitions and some animation in gtk+, so it would have been great to reuse the same technology here. While CSS transitions are spot on, animation with a sense of a global timeline is not really the use case for the web. Usually animation in the intended context is an individual transform happening after an event triggered. Creating a sequence of various objects animating in a global timeline is pretty awkward. Especially if you want to loop the whole animation infinitely. The only tools for your disposal is either a time offset or relative time keyframes, keeping all objects’ animation the same length.</p> <p><img src="inline-css.svg" alt="CSS Based animation of a #cursor1 with a JS playback reset button that doesn't work. ;)" /></p> <p>I also ran into Firefox and Webkit interpreting <code>transform-origin</code> differently.</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.run-animation {
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="application-name" content="Even a Stopped Clock" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="#fff" />
+  <meta name="apple-mobile-web-app-title" content="Even a Stopped Clock" />
+  <title>
+    SVG animation - Even a Stopped Clock
+  </title>
+  <link
+    rel="alternate"
+    href="https://blog.jimmac.eu/2015/svg-animation/"
+    hreflang="en-US"
+  />
+  <link
+    rel="canonical"
+    href="https://blog.jimmac.eu/2015/svg-animation/"
+  />
+   
+  <meta
+    name="description"
+    content="Random musings of a semi-sane designer from lesser Europe."
+  />
+  <meta name="referrer" content="no-referrer-when-downgrade" />
+  <meta property="fb:app_id" content="" />
+  <meta
+    property="og:site_name"
+    content="SVG animation | Jakub Steiner"
+  />
+  <meta
+    property="og:title"
+    content="SVG animation | Jakub Steiner"
+  />
+  
+  <meta property="og:type" content="website" />
+  
+  <meta
+    property="og:url"
+    content="https://blog.jimmac.eu/2015/svg-animation/"
+  />
+  <meta
+    property="og:description"
+    content="Random musings of a semi-sane designer from lesser Europe."
+  />
+  
+  <meta property="og:image" content="https://blog.jimmac.eu/assets/img/ogp.png" />
+  
+  <meta property="og:image:width" content="640" />
+  <meta property="og:image:height" content="640" />
+  <meta name="twitter:card" content="summary" />
+  <meta
+    name="twitter:title"
+    content="SVG animation | jimmac"
+  />
+  <meta
+    name="twitter:url"
+    content="https://blog.jimmac.eu/2015/svg-animation/"
+  />
+  <meta name="twitter:site" content="@jimmac" />
+  <meta name="twitter:creator" content="@jimmac" />
+  <meta
+    name="twitter:description"
+    content="Random musings of a semi-sane designer from lesser Europe."
+  />
+  
+  <meta name="twitter:image" content="https://blog.jimmac.eu/assets/img/ogp.png" />
+   <link type="application/atom+xml" rel="alternate" href="https://blog.jimmac.eu/feed.xml" title="Even a Stopped Clock" />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/assets/favicons/apple-touch-icon.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/assets/favicons/favicon-32x32.png"
+  />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="/assets/favicons/favicon-16x16.png"
+  />
+  <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+  <link
+    rel="mask-icon"
+    href="/assets/favicons/safari-pinned-tab.svg"
+    color="#5bbad5"
+  />
+  <meta name="apple-mobile-web-app-title" content="Jkub Steiner" />
+  <meta name="application-name" content="Jakub Steiner" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#2c2c2c" />
+
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+
+
+<body data-theme="dark" class="notransition">
+
+  <script>
+    const body = document.body;
+    const data = body.getAttribute("data-theme");
+
+    const initTheme = (state) => {
+      if (state === "dark") {
+        body.setAttribute("data-theme", "dark");
+      } else if (state === "light") {
+        body.removeAttribute("data-theme");
+      } else {
+        localStorage.setItem("theme", data);
+      }
+    };
+ 
+    initTheme(localStorage.getItem("theme"));
+    
+    setTimeout(() => body.classList.remove("notransition"), 75);
+  </script>
+
+  <div class="navbar" role="navigation">
+  <nav class="menu">
+    <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+    <label for="menu-trigger">
+      <span class="menu-icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 512 512"
+        >
+          <path
+            d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"
+          />
+        </svg>
+      </span>
+    </label>
+    <a id="mode">
+      <svg
+        class="mode-sunny"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 512 512"
+      >
+        <title>LIGHT</title>
+        <line
+          x1="256"
+          y1="48"
+          x2="256"
+          y2="96"
+          style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+        />
+        <line
+          x1="256"
+          y1="416"
+          x2="256"
+          y2="464"
+          style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+        />
+        <line
+          x1="403.08"
+          y1="108.92"
+          x2="369.14"
+          y2="142.86"
+          style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+        />
+        <line
+          x1="142.86"
+          y1="369.14"
+          x2="108.92"
+          y2="403.08"
+          style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+        />
+        <line
+          x1="464"
+          y1="256"
+          x2="416"
+          y2="256"
+          style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+        />
+        <line
+          x1="96"
+          y1="256"
+          x2="48"
+          y2="256"
+          style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+        />
+        <line
+          x1="403.08"
+          y1="403.08"
+          x2="369.14"
+          y2="369.14"
+          style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+        />
+        <line
+          x1="142.86"
+          y1="142.86"
+          x2="108.92"
+          y2="108.92"
+          style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+        />
+        <circle
+          cx="256"
+          cy="256"
+          r="80"
+          style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+        />
+      </svg>
+      <svg
+        class="mode-moon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 512 512"
+      >
+        <title>DARK</title>
+        <line
+          x1="256"
+          y1="48"
+          x2="256"
+          y2="96"
+          style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+        />
+        <line
+          x1="256"
+          y1="416"
+          x2="256"
+          y2="464"
+          style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+        />
+        <line
+          x1="403.08"
+          y1="108.92"
+          x2="369.14"
+          y2="142.86"
+          style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+        />
+        <line
+          x1="142.86"
+          y1="369.14"
+          x2="108.92"
+          y2="403.08"
+          style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+        />
+        <line
+          x1="464"
+          y1="256"
+          x2="416"
+          y2="256"
+          style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+        />
+        <line
+          x1="96"
+          y1="256"
+          x2="48"
+          y2="256"
+          style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+        />
+        <line
+          x1="403.08"
+          y1="403.08"
+          x2="369.14"
+          y2="369.14"
+          style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+        />
+        <line
+          x1="142.86"
+          y1="142.86"
+          x2="108.92"
+          y2="108.92"
+          style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+        />
+        <circle
+          cx="256"
+          cy="256"
+          r="80"
+          style="stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"
+        />
+      </svg>
+    </a>
+    <div class="trigger">
+      <div class="trigger-container"><a class="menu-link" href="/">posts</a><a class="menu-link" href="/archive/">archive</a><a class="menu-link" href="/about/">about</a><a
+                  class="menu-link"
+                  href="https://jimmac.eu"
+                  target="_blank"
+                  rel="noopener"
+                  >portfolio</a
+                ><a class="menu-link rss" href="/feed.xml">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="17"
+            height="17"
+            viewBox="0 0 512 512"
+            fill="#ED812E"
+          >
+            <title>RSS</title>
+            <path
+              d="M108.56,342.78a60.34,60.34,0,1,0,60.56,60.44A60.63,60.63,0,0,0,108.56,342.78Z"
+            />
+            <path
+              d="M48,186.67v86.55c52,0,101.94,15.39,138.67,52.11s52,86.56,52,138.67h86.66C325.33,312.44,199.67,186.67,48,186.67Z"
+            />
+            <path
+              d="M48,48v86.56c185.25,0,329.22,144.08,329.22,329.44H464C464,234.66,277.67,48,48,48Z"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+</div>
+
+  <div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+      <article itemscope itemtype="https://schema.org/BlogPosting">
+
+        <header class="header">
+          
+          <div class="tags">
+            
+            <span itemprop="keywords">
+              
+              <a class="tag"
+                href="/tags/#design">DESIGN</a>,
+              
+              <a class="tag"
+                href="/tags/#css">CSS</a>,
+              
+              <a class="tag"
+                href="/tags/#svg">SVG</a>,
+              
+              <a class="tag"
+                href="/tags/#inkscape">INKSCAPE</a>,
+              
+              <a class="tag"
+                href="/tags/#work">WORK</a>
+              
+            </span>
+          </div>
+          
+          <h1 class="header-title" itemprop="headline">SVG animation</h1>
+          
+          <div class="post-meta">
+            <time datetime="2015-10-13T13:27:00+02:00" itemprop="datePublished">
+              Oct 13, 2015
+            </time>
+            <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+              <span itemprop="name">Jakub Steiner</span>
+            </span>
+            <time hidden datetime="" itemprop="dateModified">
+              Oct 13, 2015
+            </time>
+            <span hidden itemprop="publisher" itemtype="Person">Jakub Steiner</span>
+            <span hidden itemprop="image"></span>
+            <span hidden itemprop="mainEntityOfPage"><p>I haven’t written a post in quite a while, so I decided to document my failure to come up with a viable alternative to the translatable animations we use in <a href="https://help.gnome.org/users/gnome-help/3.18/getting-started.html.en">Getting Started</a> documentation. So let’s start with what’s wrong with it. Despite being far more maintainable than a screencast, it’s still a major hassle to keep the videos in sync with the developing designs. Every translation requires a re-render of all the frames and it quickly grows into gigabytes per language.</p>
+</span>
+          </div>
+          
+        </header>
+
+        <div class="page-content" itemprop="articleBody">
+          <p>I haven’t written a post in quite a while, so I decided to document my failure to come up with a viable alternative to the translatable animations we use in <a href="https://help.gnome.org/users/gnome-help/3.18/getting-started.html.en">Getting Started</a> documentation. So let’s start with what’s wrong with it. Despite being far more maintainable than a screencast, it’s still a major hassle to keep the videos in sync with the developing designs. Every translation requires a re-render of all the frames and it quickly grows into gigabytes per language.</p>
+      <h1 id="video">
+        
+        
+          <a href="#video" class="anchor-head"></a> Video
+        
+        
+      </h1>
+
+<video controls="" class="image full">
+<source src="https://blog.jimmac.eu/2015/svg-animation/gnome-windows-and-workspaces.webm" type="video/webm" />
+<a href="https://blog.jimmac.eu/2015/svg-animation/gnome-windows-and-workspaces.webm">Czech version of one of the Getting Started videos</a>
+</video>
+
+<p>If you’re interested in seeing how these were produced, see the <a href="https://www.youtube.com/watch?v=IhFcErztgeA">Behind the Scenes of getting Started</a> video.</p>
+
+<p>The animations themselves aren’t super complex. Basic transforms (translation, scale and rotation) and opacity is all that’s needed. And because we are using translatable SVGs in Mallard, it was time to look into SVG animation. There are numerous options available to animate in SVG, which already gave me a hint that none of them will work properly for my use case. I hate being right.</p>
+    
+      <h1 id="smil">
+        
+        
+          <a href="#smil" class="anchor-head"></a> SMIL
+        
+        
+      </h1>
+
+<p>I’ll starts with the one I like least. The inline garbage approach. SMIL. Each attribute of an SVG element is animateable. Creating a global sequence using this by hand is close to impossible. Its capabilities do include a few extras like animating an object <em>along a path</em>, but in general I cannot imagine editing this by hand. Incorporating Inkscape into the workflow seemed feasible first. Inkscape will not touch the XML it doesn’t know about. It will not clean out any of the animation stuff when you save. The xlink namespace definition to animate along path seems to have worked, but I can’t figure out some weird offsets. Groups usually get some matrix transforms as soon as you reposition them. It all may boil down to Inkscape using its own coordinate system, I don’t know. I haven’t succeeded to bolt some animation on the Inkscape generated SVG.</p>
+
+<p><img src="smil.svg" alt="SMIL" /></p>
+    
+      <h1 id="css">
+        
+        
+          <a href="#css" class="anchor-head"></a> CSS
+        
+        
+      </h1>
+
+<p>A much more appealing was the concept of using CSS animation. We do a lot of transitions and some animation in gtk+, so it would have been great to reuse the same technology here. While CSS transitions are spot on, animation with a sense of a global timeline is not really the use case for the web. Usually animation in the intended context is an individual transform happening after an event triggered. Creating a sequence of various objects animating in a global timeline is pretty awkward. Especially if you want to loop the whole animation infinitely. The only tools for your disposal is either a time offset or relative time keyframes, keeping all objects’ animation the same length.</p>
+
+<p><img src="inline-css.svg" alt="CSS Based animation of a #cursor1 with a JS playback reset button that doesn't work. ;)" /></p>
+
+<p>I also ran into Firefox and Webkit interpreting <code>transform-origin</code> differently.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.run-animation {
   transform-origin: top left;
   animation: cursor-move 2s ease 1s forwards, 
                     fade-in 1s linear 0s, 
@@ -16,4 +428,80 @@
   from { transform: translate(100px,-100px) scale(1); }
   to { transform: translate(100px,-100px) scale(.5); }
 }
-</code></pre></div></div> <p>The above CSS uses <code class="language-plaintext highlighter-rouge">animation-delay</code>. It might be possible to have all keyframes last the same time and use the keyframes relative keyframing for timing (duplicate same keyframe to “hold”). I can’t imagine retiming or generally modify an existing animation hand constructed using CSS’ keyframes though. A visual tool with a timeline would be necessary.</p> <h1 id="javascript"> <a href="#javascript" class="anchor-head"></a> Javascript </h1> <p>There are many js based frameworks to aid creating and animating SVG documents in realtime, but none of them seem to aid me in creating a global complex animation using assets created in Inkscape. I looked at Google Webdesigner next.</p> <ul> <li><a href="http://julian.com/research/velocity/">Velocity</a></li> <li><a href="http://snapsvg.io/">Snap SVG</a></li> <li><a href="http://raphaeljs.com/">Raphael</a></li> </ul> <h1 id="google-webdesigner"> <a href="#google-webdesigner" class="anchor-head"></a> Google Webdesigner </h1> <p><a href="https://www.google.com/webdesigner/">Google Webdesigner</a> has all the necessary visual tools like property keyframing and a global timeline. Sadly it produces a rather less self contained set of html, js and css files. I didn’t figure out a way how that could be brought into Mallard.</p> <iframe class="image full" height="600" src="http://127.0.0.1:4000/assets/statichtml/2015-10-13-googledesign/"></iframe> <p>In the end, even though the animations don’t seem to be that complex, maintaining them by hand doesn’t seem very doable. A visual editor is required. If Google Webdesigner can be taught to produce a standalone SVG or Mallard taught to use iframes, I’m all ear. Any pointers to a similar tool is also welcome.</p> </div> </article> </main> <nav class="post-nav"> <a class="post-nav-item post-nav-prev" href="/2005/new-zealand-part-4/" > <div class="nav-arrow">Previous</div> <span class="post-title">New Zealand, Part 4/4</span> </a> <a class="post-nav-item post-nav-next" href="/2018/shelved-wallpapers/"> <div class="nav-arrow">Next</div> <span class="post-title">Shelved Wallpapers</span> </a> </nav> <footer class="footer"> <!-- <a class="footer_item" href="/feed.xml">rss</a> <span class="footer_item">&copy; 2021</span> --> </footer> <script src="/assets/js/main.js" defer="defer"></script> </div> </body> </html>
+</code></pre></div></div>
+
+<p>The above CSS uses <code class="language-plaintext highlighter-rouge">animation-delay</code>. It might be possible to have all keyframes last the same time and use the keyframes relative keyframing for timing (duplicate same keyframe to “hold”). I can’t imagine retiming or generally modify an existing animation hand constructed using CSS’ keyframes though. A visual tool with a timeline would be necessary.</p>
+    
+      <h1 id="javascript">
+        
+        
+          <a href="#javascript" class="anchor-head"></a> Javascript
+        
+        
+      </h1>
+
+<p>There are many js based frameworks to aid creating and animating SVG documents in realtime, but none of them seem to aid me in creating a global complex animation using assets created in Inkscape. I looked at Google Webdesigner next.</p>
+
+<ul>
+  <li><a href="http://julian.com/research/velocity/">Velocity</a></li>
+  <li><a href="http://snapsvg.io/">Snap SVG</a></li>
+  <li><a href="http://raphaeljs.com/">Raphael</a></li>
+</ul>
+    
+      <h1 id="google-webdesigner">
+        
+        
+          <a href="#google-webdesigner" class="anchor-head"></a> Google Webdesigner
+        
+        
+      </h1>
+
+<p><a href="https://www.google.com/webdesigner/">Google Webdesigner</a> has all the necessary visual tools like property keyframing and a global timeline. Sadly it produces a rather less self contained set of html, js and css files. I didn’t figure out a way how that could be brought into Mallard.</p>
+
+<iframe class="image full" height="600" src="http://127.0.0.1:4000/assets/statichtml/2015-10-13-googledesign/"></iframe>
+
+<p>In the end, even though the animations don’t seem to be that complex, maintaining them by hand doesn’t seem very doable. A visual editor is required. If Google Webdesigner can be taught to produce a standalone SVG or Mallard taught to use iframes, I’m all ear. Any pointers to a similar tool is also welcome.</p>
+
+          
+        </div>
+      </article>
+    
+      
+
+    </main>
+
+    
+    
+      <nav class="post-nav">
+  
+  <a
+    class="post-nav-item post-nav-prev"
+    href="/2005/new-zealand-part-4/"
+  >
+    <div class="nav-arrow">Previous</div>
+    <span class="post-title">New Zealand, Part 4/4</span>
+  </a>
+   
+  <a class="post-nav-item post-nav-next" href="/2018/shelved-wallpapers/">
+    <div class="nav-arrow">Next</div>
+    <span class="post-title">Shelved Wallpapers</span>
+  </a>
+  
+</nav>
+
+    
+
+    
+<footer class="footer">
+<!--
+    <a class="footer_item" href="/feed.xml">rss</a>
+  <span class="footer_item">&copy; 2021</span>
+  -->
+</footer>
+
+
+<script src="/assets/js/main.js" defer="defer"></script>
+  </div>
+</body>
+
+</html>
