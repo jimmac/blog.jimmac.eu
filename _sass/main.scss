@@ -5,7 +5,7 @@
 // Fonts preferences
 $sans-family: "Red Hat Display", -apple-system, sans-serif;
 $mono-family: "Overpass Mono", monospace;
-$base-font-size: 16px;
+$base-font-size: 20px;
 $medium-font-size: $base-font-size * 0.938;
 $small-font-size: $base-font-size * 0.875;
 $base-line-height: 1.85;
@@ -63,5 +63,5 @@ $on-widescreen: 1152px;
 }
 
 // Import sass files
-@import "klise/fonts", "klise/base", "klise/layout", "klise/post",
+@import "klise/base", "klise/layout", "klise/post",
   "klise/miscellaneous", "klise/syntax", "klise/dark";
