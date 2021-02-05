@@ -1,8 +1,8 @@
 ---
-title: 
-tags:
+title: FIXME
 published: false
-- photo
+tags:
+- tag
 ---
 
 [comment]: <> <div class="inlineimgs" markdown="1">
