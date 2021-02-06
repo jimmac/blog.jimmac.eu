@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://blog.jimmac.eu/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.jimmac.eu/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2021-02-05T10:32:12+01:00</updated><id>https://blog.jimmac.eu/feed.xml</id><title type="html">Even a Stopped Clock</title><subtitle>Random musings of a semi-sane designer from lesser Europe.</subtitle><author><name>Jakub Steiner</name><email>jimmac@gmail.com</email></author><entry><title type="html">Animated Tour</title><link href="https://blog.jimmac.eu/2021/animated-tour/" rel="alternate" type="text/html" title="Animated Tour" /><published>2021-02-05T00:00:00+01:00</published><updated>2021-02-05T00:00:00+01:00</updated><id>https://blog.jimmac.eu/2021/animated-tour</id><content type="html" xml:base="https://blog.jimmac.eu/2021/animated-tour/">&lt;p&gt;We’ve &lt;a href=&quot;/2015/svg-animation/&quot;&gt;struggled&lt;/a&gt; with bringing subtle animation to GNOME in the past. There is interest in bringing it in &lt;a href=&quot;https://gitlab.gnome.org/GNOME/gtk/-/tree/wip/otte/lottie&quot;&gt;some shape&lt;/a&gt; or form to &lt;em&gt;gtk4&lt;/em&gt;. The bad news is the tools are still lacking on the production side. There’s not much past &lt;a href=&quot;https://glaxnimate.mattbas.org/&quot;&gt;Glaxanimate&lt;/a&gt; to do even simple transforms.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://blog.jimmac.eu/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.jimmac.eu/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2021-02-06T08:52:33+01:00</updated><id>https://blog.jimmac.eu/feed.xml</id><title type="html">Even a Stopped Clock</title><subtitle>Random musings of a semi-sane designer from lesser Europe.</subtitle><author><name>Jakub Steiner</name><email>jimmac@gmail.com</email></author><entry><title type="html">Git Worktree — Concurrent Development</title><link href="https://blog.jimmac.eu/2021/git-worktree/" rel="alternate" type="text/html" title="Git Worktree — Concurrent Development" /><published>2021-02-06T00:00:00+01:00</published><updated>2021-02-06T00:00:00+01:00</updated><id>https://blog.jimmac.eu/2021/git-worktree</id><content type="html" xml:base="https://blog.jimmac.eu/2021/git-worktree/">&lt;p&gt;&lt;img src=&quot;git-worktree.png&quot; alt=&quot;git worktree&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Sometimes you have to sit on two chairs at the same time. No, I don’t mean to give you east-European political advice. I mean developing things in two concurrent branches can be a pain with the constant switching.&lt;/p&gt;
+
+&lt;p&gt;In my case I need to develop a stylesheet for both &lt;em&gt;gtk3&lt;/em&gt; and &lt;em&gt;gtk4&lt;/em&gt; at the same time, usually having to compare the two running concurrently. &lt;a href=&quot;https://blogs.gnome.org/mclasen/&quot;&gt;Matthias&lt;/a&gt; recently introduced me to the secret cabal of people knowing about &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git worktree&lt;/code&gt;. Thanks to it you can have two branches of the same project checked out at the same time, not only saving you the (cheap) drive space, but keeping a single history so &lt;em&gt;cherry picking&lt;/em&gt; and diffing between the two doesn’t need to involve refreshing remotes or jumping through other hoops.&lt;/p&gt;
+
+&lt;p&gt;So let’s take a look at my scenario. I have gtk checked out in &lt;a href=&quot;https://flathub.org/apps/details/org.gnome.Builder&quot;&gt;Builder&lt;/a&gt;, by default going to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/Projects/gtk&lt;/code&gt;. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;master&lt;/code&gt; branch equates to the new goodness of &lt;em&gt;gtk4&lt;/em&gt;. Pushing the &lt;em&gt;run&lt;/em&gt; button will build me &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gtk4-widget-factory&lt;/code&gt; ready to test the stylesheet. But to have the gtk3 equivalent run side by side, I don’t use a duplicate of the repo, but instead created a worktree copy:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd ~/Projects/gtk
+git checkout -tb gtk-3-24 origin/gtk-3-24 
+git checkout master 
+git worktree add ../gtk3 gtk-3-24
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;At this point you can open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gtk3&lt;/code&gt; project in Builder and works as if those were not closely interconnected. But every commit is ‘visible’ in the other project.&lt;/p&gt;</content><author><name>Jakub Steiner</name><email>jimmac@gmail.com</email></author><category term="work" /><category term="git" /><category term="gnome" /><summary type="html"></summary></entry><entry><title type="html">Animated Tour</title><link href="https://blog.jimmac.eu/2021/animated-tour/" rel="alternate" type="text/html" title="Animated Tour" /><published>2021-02-05T00:00:00+01:00</published><updated>2021-02-05T00:00:00+01:00</updated><id>https://blog.jimmac.eu/2021/animated-tour</id><content type="html" xml:base="https://blog.jimmac.eu/2021/animated-tour/">&lt;p&gt;We’ve &lt;a href=&quot;/2015/svg-animation/&quot;&gt;struggled&lt;/a&gt; with bringing subtle animation to GNOME in the past. There is interest in bringing it in &lt;a href=&quot;https://gitlab.gnome.org/GNOME/gtk/-/tree/wip/otte/lottie&quot;&gt;some shape&lt;/a&gt; or form to &lt;em&gt;gtk4&lt;/em&gt;. The bad news is the tools are still lacking on the production side. There’s not much past &lt;a href=&quot;https://glaxnimate.mattbas.org/&quot;&gt;Glaxanimate&lt;/a&gt; to do even simple transforms.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;sketch-ws.png&quot; alt=&quot;Tour Storyboard&quot; /&gt;&lt;/p&gt;
 
@@ -238,69 +252,4 @@ Your browser does not support the video tag.
 &lt;p&gt;&lt;a href=&quot;10.png&quot; class=&quot;full&quot;&gt;&lt;img src=&quot;10thumb.jpg&quot; alt=&quot;test&quot; /&gt;&lt;/a&gt;
 &lt;a href=&quot;10-1.png&quot; class=&quot;full&quot;&gt;&lt;img src=&quot;10-1thumb.jpg&quot; alt=&quot;test&quot; /&gt;&lt;/a&gt;
 &lt;a href=&quot;10-2.png&quot; class=&quot;full&quot;&gt;&lt;img src=&quot;10-2thumb.jpg&quot; alt=&quot;test&quot; /&gt;&lt;/a&gt;
-&lt;a href=&quot;10-2.png&quot; class=&quot;full&quot;&gt;&lt;img src=&quot;10-3thumb.jpg&quot; alt=&quot;test&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name>Jakub Steiner</name><email>jimmac@gmail.com</email></author><category term="gnome" /><category term="design" /><category term="wallpaper" /><category term="download" /><summary type="html">GNOME 3.28 will release with another batch of new wallpapers that only a freaction of you will ever see. Apart from those I also made a few for different purposes that didn’t end up being used, but it would be a shame to keep shelved.</summary></entry><entry><title type="html">SVG animation</title><link href="https://blog.jimmac.eu/2015/svg-animation/" rel="alternate" type="text/html" title="SVG animation" /><published>2015-10-13T13:27:00+02:00</published><updated>2015-10-13T13:27:00+02:00</updated><id>https://blog.jimmac.eu/2015/svg-animation</id><content type="html" xml:base="https://blog.jimmac.eu/2015/svg-animation/">&lt;p&gt;I haven’t written a post in quite a while, so I decided to document my failure to come up with a viable alternative to the translatable animations we use in &lt;a href=&quot;https://help.gnome.org/users/gnome-help/3.18/getting-started.html.en&quot;&gt;Getting Started&lt;/a&gt; documentation. So let’s start with what’s wrong with it. Despite being far more maintainable than a screencast, it’s still a major hassle to keep the videos in sync with the developing designs. Every translation requires a re-render of all the frames and it quickly grows into gigabytes per language.&lt;/p&gt;
-
-&lt;h1 id=&quot;video&quot;&gt;Video&lt;/h1&gt;
-
-&lt;video controls=&quot;&quot; class=&quot;image full&quot;&gt;
-&lt;source src=&quot;https://blog.jimmac.eu/2015/svg-animation/gnome-windows-and-workspaces.webm&quot; type=&quot;video/webm&quot; /&gt;
-&lt;a href=&quot;https://blog.jimmac.eu/2015/svg-animation/gnome-windows-and-workspaces.webm&quot;&gt;Czech version of one of the Getting Started videos&lt;/a&gt;
-&lt;/video&gt;
-
-&lt;p&gt;If you’re interested in seeing how these were produced, see the &lt;a href=&quot;https://www.youtube.com/watch?v=IhFcErztgeA&quot;&gt;Behind the Scenes of getting Started&lt;/a&gt; video.&lt;/p&gt;
-
-&lt;p&gt;The animations themselves aren’t super complex. Basic transforms (translation, scale and rotation) and opacity is all that’s needed. And because we are using translatable SVGs in Mallard, it was time to look into SVG animation. There are numerous options available to animate in SVG, which already gave me a hint that none of them will work properly for my use case. I hate being right.&lt;/p&gt;
-
-&lt;h1 id=&quot;smil&quot;&gt;SMIL&lt;/h1&gt;
-
-&lt;p&gt;I’ll starts with the one I like least. The inline garbage approach. SMIL. Each attribute of an SVG element is animateable. Creating a global sequence using this by hand is close to impossible. Its capabilities do include a few extras like animating an object &lt;em&gt;along a path&lt;/em&gt;, but in general I cannot imagine editing this by hand. Incorporating Inkscape into the workflow seemed feasible first. Inkscape will not touch the XML it doesn’t know about. It will not clean out any of the animation stuff when you save. The xlink namespace definition to animate along path seems to have worked, but I can’t figure out some weird offsets. Groups usually get some matrix transforms as soon as you reposition them. It all may boil down to Inkscape using its own coordinate system, I don’t know. I haven’t succeeded to bolt some animation on the Inkscape generated SVG.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;smil.svg&quot; alt=&quot;SMIL&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;css&quot;&gt;CSS&lt;/h1&gt;
-
-&lt;p&gt;A much more appealing was the concept of using CSS animation. We do a lot of transitions and some animation in gtk+, so it would have been great to reuse the same technology here. While CSS transitions are spot on, animation with a sense of a global timeline is not really the use case for the web. Usually animation in the intended context is an individual transform happening after an event triggered. Creating a sequence of various objects animating in a global timeline is pretty awkward. Especially if you want to loop the whole animation infinitely. The only tools for your disposal is either a time offset or relative time keyframes, keeping all objects’ animation the same length.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;inline-css.svg&quot; alt=&quot;CSS Based animation of a #cursor1 with a JS playback reset button that doesn't work. ;)&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;I also ran into Firefox and Webkit interpreting &lt;code&gt;transform-origin&lt;/code&gt; differently.&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;.run-animation {
-  transform-origin: top left;
-  animation: cursor-move 2s ease 1s forwards, 
-                    fade-in 1s linear 0s, 
-                    cursor-click .25s ease 3s alternate 2;
-  }
-@keyframes fade-in {
-  from { opacity: 0;  }
-  to {  opacity: 1; }
-}
-@keyframes cursor-move {
-  from { opacity: 1;  }
-  to {  opacity: 1; transform: translate(100px,-100px);}
-}
-@keyframes cursor-click {
-  from { transform: translate(100px,-100px) scale(1); }
-  to { transform: translate(100px,-100px) scale(.5); }
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The above CSS uses &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;animation-delay&lt;/code&gt;. It might be possible to have all keyframes last the same time and use the keyframes relative keyframing for timing (duplicate same keyframe to “hold”). I can’t imagine retiming or generally modify an existing animation hand constructed using CSS’ keyframes though. A visual tool with a timeline would be necessary.&lt;/p&gt;
-
-&lt;h1 id=&quot;javascript&quot;&gt;Javascript&lt;/h1&gt;
-
-&lt;p&gt;There are many js based frameworks to aid creating and animating SVG documents in realtime, but none of them seem to aid me in creating a global complex animation using assets created in Inkscape. I looked at Google Webdesigner next.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://julian.com/research/velocity/&quot;&gt;Velocity&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://snapsvg.io/&quot;&gt;Snap SVG&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://raphaeljs.com/&quot;&gt;Raphael&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;google-webdesigner&quot;&gt;Google Webdesigner&lt;/h1&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.google.com/webdesigner/&quot;&gt;Google Webdesigner&lt;/a&gt; has all the necessary visual tools like property keyframing and a global timeline. Sadly it produces a rather less self contained set of html, js and css files. I didn’t figure out a way how that could be brought into Mallard.&lt;/p&gt;
-
-&lt;iframe class=&quot;image full&quot; height=&quot;600&quot; src=&quot;http://127.0.0.1:4000/assets/statichtml/2015-10-13-googledesign/&quot;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;In the end, even though the animations don’t seem to be that complex, maintaining them by hand doesn’t seem very doable. A visual editor is required. If Google Webdesigner can be taught to produce a standalone SVG or Mallard taught to use iframes, I’m all ear. Any pointers to a similar tool is also welcome.&lt;/p&gt;</content><author><name>Jakub Steiner</name><email>jimmac@gmail.com</email></author><category term="design" /><category term="css" /><category term="svg" /><category term="inkscape" /><category term="work" /><summary type="html">I haven’t written a post in quite a while, so I decided to document my failure to come up with a viable alternative to the translatable animations we use in Getting Started documentation. So let’s start with what’s wrong with it. Despite being far more maintainable than a screencast, it’s still a major hassle to keep the videos in sync with the developing designs. Every translation requires a re-render of all the frames and it quickly grows into gigabytes per language.</summary></entry></feed>
+&lt;a href=&quot;10-2.png&quot; class=&quot;full&quot;&gt;&lt;img src=&quot;10-3thumb.jpg&quot; alt=&quot;test&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</content><author><name>Jakub Steiner</name><email>jimmac@gmail.com</email></author><category term="gnome" /><category term="design" /><category term="wallpaper" /><category term="download" /><summary type="html">GNOME 3.28 will release with another batch of new wallpapers that only a freaction of you will ever see. Apart from those I also made a few for different purposes that didn’t end up being used, but it would be a shame to keep shelved.</summary></entry></feed>

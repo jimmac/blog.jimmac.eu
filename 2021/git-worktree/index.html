@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head prefix="og: http://ogp.me/ns#">
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -10,16 +11,16 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="#fff" />
   <meta name="apple-mobile-web-app-title" content="Even a Stopped Clock" />
   <title>
-    Even a Stopped Clock
+    Git Worktree — Concurrent Development - Even a Stopped Clock
   </title>
   <link
     rel="alternate"
-    href="https://blog.jimmac.eu/"
+    href="https://blog.jimmac.eu/2021/git-worktree/"
     hreflang="en-US"
   />
   <link
     rel="canonical"
-    href="https://blog.jimmac.eu/"
+    href="https://blog.jimmac.eu/2021/git-worktree/"
   />
    
   <meta
@@ -30,18 +31,18 @@
   <meta property="fb:app_id" content="" />
   <meta
     property="og:site_name"
-    content="Even a Stopped Clock"
+    content="Git Worktree — Concurrent Development | Jakub Steiner"
   />
   <meta
     property="og:title"
-    content="Even a Stopped Clock"
+    content="Git Worktree — Concurrent Development | Jakub Steiner"
   />
   
   <meta property="og:type" content="website" />
   
   <meta
     property="og:url"
-    content="https://blog.jimmac.eu/"
+    content="https://blog.jimmac.eu/2021/git-worktree/"
   />
   <meta
     property="og:description"
@@ -55,11 +56,11 @@
   <meta name="twitter:card" content="summary" />
   <meta
     name="twitter:title"
-    content="Even a Stopped Clock"
+    content="Git Worktree — Concurrent Development | jimmac"
   />
   <meta
     name="twitter:url"
-    content="https://blog.jimmac.eu/"
+    content="https://blog.jimmac.eu/2021/git-worktree/"
   />
   <meta name="twitter:site" content="@jimmac" />
   <meta name="twitter:creator" content="@jimmac" />
@@ -285,7 +286,7 @@
       </svg>
     </a>
     <div class="trigger">
-      <div class="trigger-container"><a class="menu-link active" href="/">posts</a><a class="menu-link" href="/archive/">archive</a><a class="menu-link" href="/about/">about</a><a
+      <div class="trigger-container"><a class="menu-link" href="/">posts</a><a class="menu-link" href="/archive/">archive</a><a class="menu-link" href="/about/">about</a><a
                   class="menu-link"
                   href="https://jimmac.eu"
                   target="_blank"
@@ -316,45 +317,89 @@
   </nav>
 </div>
 
-  <div class="wrapper">
-    <div class="author">
-  <img
-    class="author-avatar"
-    src="/assets/img/avatar.svg"
-    alt="jimmac"
-  />
-  <h2 class="author-name">Jakub Steiner</h2>
-  <p class="author-bio">Musings of a visual designer from the lesser Europe</p>
-</div>
+  <div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+      <article itemscope itemtype="https://schema.org/BlogPosting">
 
-    <main aria-label="Content">
-      <h3 class="posts-item-note" aria-label="Recent Posts">Recent Posts</h3><article class="post-item">
-  <span class="post-item-date">Feb 06, 2021</span>
-  <h4 class="post-item-title">
-    <a href="/2021/git-worktree/">Git Worktree — Concurrent Development</a>
-  </h4>
-</article><article class="post-item">
-  <span class="post-item-date">Feb 05, 2021</span>
-  <h4 class="post-item-title">
-    <a href="/2021/animated-tour/">Animated Tour</a>
-  </h4>
-</article><article class="post-item">
-  <span class="post-item-date">Feb 04, 2021</span>
-  <h4 class="post-item-title">
-    <a href="/2021/curtail/">Curtail</a>
-  </h4>
-</article><article class="post-item">
-  <span class="post-item-date">Feb 03, 2021</span>
-  <h4 class="post-item-title">
-    <a href="/2021/iphone12-mini/">iPhone 12 mini</a>
-  </h4>
-</article><article class="post-item">
-  <span class="post-item-date">Feb 02, 2021</span>
-  <h4 class="post-item-title">
-    <a href="/2021/elektronic/">Ele[k]tronic</a>
-  </h4>
-</article>
+        <header class="header">
+          
+          <div class="tags">
+            
+            <span itemprop="keywords">
+              
+              <a class="tag"
+                href="/tags/#work">WORK</a>,
+              
+              <a class="tag"
+                href="/tags/#git">GIT</a>,
+              
+              <a class="tag"
+                href="/tags/#gnome">GNOME</a>
+              
+            </span>
+          </div>
+          
+          <h1 class="header-title" itemprop="headline">Git Worktree — Concurrent Development</h1>
+          
+          <div class="post-meta">
+            <time datetime="2021-02-06T00:00:00+01:00" itemprop="datePublished">
+              Feb 06, 2021
+            </time>
+            <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+              <span itemprop="name">Jakub Steiner</span>
+            </span>
+            <time hidden datetime="" itemprop="dateModified">
+              Feb 06, 2021
+            </time>
+            <span hidden itemprop="publisher" itemtype="Person">Jakub Steiner</span>
+            <span hidden itemprop="image"></span>
+            <span hidden itemprop="mainEntityOfPage"><p><img src="git-worktree.png" alt="git worktree" /></p>
+</span>
+          </div>
+          
+        </header>
+
+        <div class="page-content" itemprop="articleBody">
+          <p><img src="git-worktree.png" alt="git worktree" /></p>
+
+<p>Sometimes you have to sit on two chairs at the same time. No, I don’t mean to give you east-European political advice. I mean developing things in two concurrent branches can be a pain with the constant switching.</p>
+
+<p>In my case I need to develop a stylesheet for both <em>gtk3</em> and <em>gtk4</em> at the same time, usually having to compare the two running concurrently. <a href="https://blogs.gnome.org/mclasen/">Matthias</a> recently introduced me to the secret cabal of people knowing about <code class="language-plaintext highlighter-rouge">git worktree</code>. Thanks to it you can have two branches of the same project checked out at the same time, not only saving you the (cheap) drive space, but keeping a single history so <em>cherry picking</em> and diffing between the two doesn’t need to involve refreshing remotes or jumping through other hoops.</p>
+
+<p>So let’s take a look at my scenario. I have gtk checked out in <a href="https://flathub.org/apps/details/org.gnome.Builder">Builder</a>, by default going to <code class="language-plaintext highlighter-rouge">~/Projects/gtk</code>. The <code class="language-plaintext highlighter-rouge">master</code> branch equates to the new goodness of <em>gtk4</em>. Pushing the <em>run</em> button will build me <code class="language-plaintext highlighter-rouge">gtk4-widget-factory</code> ready to test the stylesheet. But to have the gtk3 equivalent run side by side, I don’t use a duplicate of the repo, but instead created a worktree copy:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd ~/Projects/gtk
+git checkout -tb gtk-3-24 origin/gtk-3-24 
+git checkout master 
+git worktree add ../gtk3 gtk-3-24
+</code></pre></div></div>
+
+<p>At this point you can open the <code class="language-plaintext highlighter-rouge">gtk3</code> project in Builder and works as if those were not closely interconnected. But every commit is ‘visible’ in the other project.</p>
+
+          
+        </div>
+      </article>
+    
+      
+
     </main>
+
+    
+    
+      <nav class="post-nav">
+  
+  <a
+    class="post-nav-item post-nav-prev"
+    href="/2021/animated-tour/"
+  >
+    <div class="nav-arrow">Previous</div>
+    <span class="post-title">Animated Tour</span>
+  </a>
+   
+</nav>
+
+    
+
     
 <footer class="footer">
 <!--
@@ -367,4 +412,5 @@
 <script src="/assets/js/main.js" defer="defer"></script>
   </div>
 </body>
+
 </html>
