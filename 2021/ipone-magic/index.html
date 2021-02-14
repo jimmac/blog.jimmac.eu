@@ -11,16 +11,16 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="#fff" />
   <meta name="apple-mobile-web-app-title" content="Even a Stopped Clock" />
   <title>
-    Git Worktree — Concurrent Development - Even a Stopped Clock
+    Night Mode Magic - Even a Stopped Clock
   </title>
   <link
     rel="alternate"
-    href="https://blog.jimmac.eu/2021/git-worktree/"
+    href="https://blog.jimmac.eu/2021/ipone-magic/"
     hreflang="en-US"
   />
   <link
     rel="canonical"
-    href="https://blog.jimmac.eu/2021/git-worktree/"
+    href="https://blog.jimmac.eu/2021/ipone-magic/"
   />
    
   <meta
@@ -31,18 +31,18 @@
   <meta property="fb:app_id" content="" />
   <meta
     property="og:site_name"
-    content="Git Worktree — Concurrent Development | Jakub Steiner"
+    content="Night Mode Magic | Jakub Steiner"
   />
   <meta
     property="og:title"
-    content="Git Worktree — Concurrent Development | Jakub Steiner"
+    content="Night Mode Magic | Jakub Steiner"
   />
   
   <meta property="og:type" content="website" />
   
   <meta
     property="og:url"
-    content="https://blog.jimmac.eu/2021/git-worktree/"
+    content="https://blog.jimmac.eu/2021/ipone-magic/"
   />
   <meta
     property="og:description"
@@ -56,11 +56,11 @@
   <meta name="twitter:card" content="summary" />
   <meta
     name="twitter:title"
-    content="Git Worktree — Concurrent Development | jimmac"
+    content="Night Mode Magic | jimmac"
   />
   <meta
     name="twitter:url"
-    content="https://blog.jimmac.eu/2021/git-worktree/"
+    content="https://blog.jimmac.eu/2021/ipone-magic/"
   />
   <meta name="twitter:site" content="@jimmac" />
   <meta name="twitter:creator" content="@jimmac" />
@@ -328,53 +328,40 @@
             <span itemprop="keywords">
               
               <a class="tag"
-                href="/tags/#work">WORK</a>,
+                href="/tags/#photo">PHOTO</a>,
               
               <a class="tag"
-                href="/tags/#git">GIT</a>,
-              
-              <a class="tag"
-                href="/tags/#gnome">GNOME</a>
+                href="/tags/#iphone">IPHONE</a>
               
             </span>
           </div>
           
-          <h1 class="header-title" itemprop="headline">Git Worktree — Concurrent Development</h1>
+          <h1 class="header-title" itemprop="headline">Night Mode Magic</h1>
           
           <div class="post-meta">
-            <time datetime="2021-02-06T00:00:00+01:00" itemprop="datePublished">
-              Feb 06, 2021
+            <time datetime="2021-02-14T00:00:00+01:00" itemprop="datePublished">
+              Feb 14, 2021
             </time>
             <span itemprop="author" itemscope itemtype="https://schema.org/Person">
               <span itemprop="name">Jakub Steiner</span>
             </span>
             <time hidden datetime="" itemprop="dateModified">
-              Feb 06, 2021
+              Feb 14, 2021
             </time>
             <span hidden itemprop="publisher" itemtype="Person">Jakub Steiner</span>
             <span hidden itemprop="image"></span>
-            <span hidden itemprop="mainEntityOfPage"><p><img src="git-worktree.png" alt="git worktree" /></p>
+            <span hidden itemprop="mainEntityOfPage"><p>I still can’t get over the magic coming out of the minuscule sensor at night.</p>
 </span>
           </div>
           
         </header>
 
         <div class="page-content" itemprop="articleBody">
-          <p><img src="git-worktree.png" alt="git worktree" /></p>
+          <p>I still can’t get over the magic coming out of the minuscule sensor at night.</p>
 
-<p>Sometimes you have to sit on two chairs at the same time. No, I don’t mean to give you east-European political advice. I mean developing things in two concurrent branches can be a pain with the constant switching.</p>
-
-<p>In my case I need to develop a stylesheet for both <em>gtk3</em> and <em>gtk4</em> at the same time, usually having to compare the two running concurrently. <a href="https://blogs.gnome.org/mclasen/">Matthias</a> recently introduced me to the secret cabal of people knowing about <code class="language-plaintext highlighter-rouge">git worktree</code>. Thanks to it you can have two branches of the same project checked out at the same time, not only saving you the (cheap) drive space, but keeping a single history so <em>cherry picking</em> and diffing between the two doesn’t need to involve refreshing remotes or jumping through other hoops.</p>
-
-<p>So let’s take a look at my scenario. I have gtk checked out in <a href="https://flathub.org/apps/details/org.gnome.Builder">Builder</a>, by default going to <code class="language-plaintext highlighter-rouge">~/Projects/gtk</code>. The <code class="language-plaintext highlighter-rouge">master</code> branch equates to the new goodness of <em>gtk4</em>. Pushing the <em>run</em> button will build me <code class="language-plaintext highlighter-rouge">gtk4-widget-factory</code> ready to test the stylesheet. But to have the gtk3 equivalent run side by side, I don’t use a duplicate of the repo, but instead created a worktree copy:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd ~/Projects/gtk
-git checkout -tb gtk-3-24 origin/gtk-3-24 
-git checkout master 
-git worktree add ../gtk3 gtk-3-24
-</code></pre></div></div>
-
-<p>At this point you can open the <code class="language-plaintext highlighter-rouge">gtk3</code> project in Builder and works as if those were not closely interconnected. But every commit is ‘visible’ in the other project.</p>
+<p><img src="IMG_1891.jpeg" alt="photo1" />
+<img src="IMG_1898.jpeg" alt="photo4" />
+<img src="IMG_1892.jpeg" alt="photo5" /></p>
 
           
         </div>
@@ -390,17 +377,12 @@ git worktree add ../gtk3 gtk-3-24
   
   <a
     class="post-nav-item post-nav-prev"
-    href="/2021/animated-tour/"
+    href="/2021/git-worktree/"
   >
     <div class="nav-arrow">Previous</div>
-    <span class="post-title">Animated Tour</span>
+    <span class="post-title">Git Worktree — Concurrent Development</span>
   </a>
    
-  <a class="post-nav-item post-nav-next" href="/2021/ipone-magic/">
-    <div class="nav-arrow">Next</div>
-    <span class="post-title">Night Mode Magic</span>
-  </a>
-  
 </nav>
 
     
