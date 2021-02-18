@@ -10,6 +10,13 @@
     {
       "title"    : "Git Worktree — Concurrent Development",
       "tags"     : "work, git, gnome",
+      "url"      : "/2021/perseverence/",
+      "date"     : "2021-02-06 00:00:00 +0100"
+    } ,
+  
+    {
+      "title"    : "Git Worktree — Concurrent Development",
+      "tags"     : "work, git, gnome",
       "url"      : "/2021/git-worktree/",
       "date"     : "2021-02-06 00:00:00 +0100"
     } ,
