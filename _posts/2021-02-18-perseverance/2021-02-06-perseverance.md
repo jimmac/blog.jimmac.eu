@@ -2,9 +2,8 @@
 title: Perseverance Landing
 date: 2021-02-18
 tags:
-- work
-- git
-- gnome
+- nasa
+- youtube
 ---
 
 ![NASA Logo by Bruce Blackburn](nasa.png)
