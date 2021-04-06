@@ -1,9 +1,9 @@
 /* FONTS */
 @import url("../fonts/overpass-mono/overpass-mono.css");
-@import url("../fonts/redhat-display/redhat-display.css");
+@import url("../fonts/inter/inter.css");
 
 // Fonts preferences
-$sans-family: "Red Hat Display", -apple-system, sans-serif;
+$sans-family: Inter, -apple-system, sans-serif;
 $mono-family: "Overpass Mono", monospace;
 $base-font-size: 20px;
 $medium-font-size: $base-font-size * 0.938;
