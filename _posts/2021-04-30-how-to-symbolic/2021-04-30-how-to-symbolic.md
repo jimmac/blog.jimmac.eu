@@ -46,7 +46,7 @@ The first step is always to figure out **the metaphor**. Sketching out some idea
 
 ![Sketching](sketching.png)
 
-Once you're somewhat convinced a fitting metaphor can be executed on the 16x16 pixel grid, it's time to reach for the tool to guide your thotugh the process, [Symbolic Preview](https://flathub.org/apps/details/org.gnome.design.SymbolicPreview).
+Once you're somewhat convinced a fitting metaphor can be executed on the 16x16 pixel grid, it's time to reach for the tool to guide your throughout the process, [Symbolic Preview](https://flathub.org/apps/details/org.gnome.design.SymbolicPreview).
 
 ### A Handful
 
