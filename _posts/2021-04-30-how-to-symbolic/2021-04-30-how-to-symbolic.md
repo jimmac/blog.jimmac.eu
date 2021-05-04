@@ -11,7 +11,7 @@ tags:
 
 Unlike [application icons]({% post_url archive/2019-01-23-the-big-app-icon-redesign/2019-01-23-the-big-app-icon-redesign %}), the [symbolic icons](https://teams.pages.gitlab.gnome.org/Design/hig-www/guidelines/ui-icons.html) don't convey application identity, but rely on visual metaphor to describe an action (what a button in the UI does).
 
-GNOME has not used fullcolor icons from toolbars and most of the UI in many years. Instead we use symbols, adjusting legibility and their rendering the same way we do with text (recoloring the foreground and background as you can demo switching the dark theme on this blog post).
+GNOME has not used fullcolor icons in toolbars and most of the UI in many years. Instead we use symbols, adjusting legibility and their rendering the same way we do with text (recoloring the foreground and background as you can demo switching the dark theme on this blog post).
 
 {% include_relative symbols.svg %}
 
