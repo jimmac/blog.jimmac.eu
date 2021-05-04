@@ -22,7 +22,7 @@ Before we dive into *creation* though, let's start with a more common case: In m
 
 ## Finding an Icon
 
-Historically, looking up icons has been a matter of familiarizing yourself with the [icon naming spec](https://developer.gnome.org/icon-naming-spec/), which was built on the concept of *semantic naming*. However, it turns out Developers really just want that symbol that *looks like a door*, rather than adhering to the strict semantic constraints. Combined with icon themes and evolving visual trends this semantic dream gradually faded over time.
+Historically, looking up icons has been a matter of familiarizing yourself with the [icon naming spec](https://developer.gnome.org/icon-naming-spec/), which was built on the concept of *semantic naming*. However, it turns out developers really just want that symbol that *looks like a door*, rather than adhering to the strict semantic constraints. Combined with icon themes and evolving visual trends this semantic dream gradually faded over time.
 
 The very basic set of icons is provided directly by the [toolkit](https://gtk.org). For the most part it still adheres to the semantic names such as `edit-copy` or `menu-open` rather than descriptive names like `scissors` or `pencil`. The coverage of the set is [quite conservative](https://gitlab.gnome.org/GNOME/gtk/-/tree/master/gtk/icons/scalable) and you're likely to need something that isn't provided by GTK itself. 
 
