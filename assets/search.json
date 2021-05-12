@@ -1,6 +1,13 @@
 [
   
     {
+      "title"    : "DJI FPV Video Out",
+      "tags"     : "fpv, dji, github",
+      "url"      : "/2021/dji-fpv-video-out/",
+      "date"     : "2021-05-12 00:00:00 +0200"
+    } ,
+  
+    {
       "title"    : "How to Symbolic Icon",
       "tags"     : "icon, design, gnome, work",
       "url"      : "/2021/how-to-symbolic/",
