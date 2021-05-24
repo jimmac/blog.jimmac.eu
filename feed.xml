@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://blog.jimmac.eu/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.jimmac.eu/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2021-05-20T13:20:12+02:00</updated><id>https://blog.jimmac.eu/feed.xml</id><title type="html">Even a Stopped Clock</title><subtitle>Random musings of a semi-sane designer from lesser Europe.</subtitle><author><name>Jakub Steiner</name><email>jimmac@gmail.com</email></author><entry><title type="html">125BPM vs 100KPH</title><link href="https://blog.jimmac.eu/2021/100kph/" rel="alternate" type="text/html" title="125BPM vs 100KPH" /><published>2021-05-20T00:00:00+02:00</published><updated>2021-05-20T00:00:00+02:00</updated><id>https://blog.jimmac.eu/2021/100kph</id><content type="html" xml:base="https://blog.jimmac.eu/2021/100kph/">&lt;p&gt;&lt;img src=&quot;DIandDT.png&quot; alt=&quot;Elektron Digitone + Digitakt&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://blog.jimmac.eu/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.jimmac.eu/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2021-05-24T09:18:53+02:00</updated><id>https://blog.jimmac.eu/feed.xml</id><title type="html">Even a Stopped Clock</title><subtitle>Random musings of a semi-sane designer from lesser Europe.</subtitle><author><name>Jakub Steiner</name><email>jimmac@gmail.com</email></author><entry><title type="html">What am I?</title><link href="https://blog.jimmac.eu/2021/what-am-i/" rel="alternate" type="text/html" title="What am I?" /><published>2021-05-24T00:00:00+02:00</published><updated>2021-05-24T00:00:00+02:00</updated><id>https://blog.jimmac.eu/2021/what-am-i</id><content type="html" xml:base="https://blog.jimmac.eu/2021/what-am-i/">&lt;p&gt;&lt;img src=&quot;polyend.jpg&quot; alt=&quot;Polyend Tracker&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Having a hardware &lt;a href=&quot;https://en.wikipedia.org/wiki/Music_tracker&quot;&gt;tracker&lt;/a&gt; seems a little odd of a choice, but a small polish company, &lt;a href=&quot;https://polyend.com/&quot;&gt;Polyend&lt;/a&gt; has really won me over.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.nngroup.com/books/emotional-design/&quot;&gt;Beautiful things work better&lt;/a&gt; and the machine is up there with &lt;a href=&quot;https://www.elektron.se/&quot;&gt;Elektron&lt;/a&gt; boxes. There are &lt;a href=&quot;https://dirtywave.com/&quot;&gt;more compact machines&lt;/a&gt; on the horizon, but over the weekend I was able to sit down outside and lay the basics of a track down. I have later finalized it in a &lt;a href=&quot;https://en.wikipedia.org/wiki/Digital_audio_workstation&quot;&gt;DAW&lt;/a&gt;, based on the track stems you can export. Not sitting behind a computer and still arrange electronic music is a great luxury.&lt;/p&gt;
+
+&lt;p&gt;So without further ado, here’s my weekend track:&lt;/p&gt;
+&lt;audio controls=&quot;&quot;&gt;
+&lt;source src=&quot;whatami.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
+&lt;source src=&quot;whatami.aac&quot; type=&quot;audio/aac&quot; /&gt;
+&lt;a href=&quot;https://soundcloud.com/jimmac/what-am-i&quot;&gt;What am I? on Soundcloud&lt;/a&gt;.
+&lt;/audio&gt;
+
+&lt;p&gt;&lt;a href=&quot;/2021/100kph/&quot;&gt;Previously&lt;/a&gt;,
+&lt;a href=&quot;/2021/jammin-on-elektron/&quot;&gt;Previously&lt;/a&gt;,
+&lt;a href=&quot;/2021/elektronic/&quot;&gt;Previously&lt;/a&gt;.&lt;/p&gt;</content><author><name>Jakub Steiner</name><email>jimmac@gmail.com</email></author><category term="synth" /><category term="Polyend" /><category term="tracker" /><summary type="html"></summary></entry><entry><title type="html">125BPM vs 100KPH</title><link href="https://blog.jimmac.eu/2021/100kph/" rel="alternate" type="text/html" title="125BPM vs 100KPH" /><published>2021-05-20T00:00:00+02:00</published><updated>2021-05-20T00:00:00+02:00</updated><id>https://blog.jimmac.eu/2021/100kph</id><content type="html" xml:base="https://blog.jimmac.eu/2021/100kph/">&lt;p&gt;&lt;img src=&quot;DIandDT.png&quot; alt=&quot;Elektron Digitone + Digitakt&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I avoid fiddling with batteries in the house, so I soldered up a &lt;a href=&quot;battery.jpg&quot;&gt;4S Li-Ion pack in the garden&lt;/a&gt; and tested a high speed cruise in the usual spot. Jammed a bit on my elektron boxes and here I present a super long test flight that’s now almost watchable.&lt;/p&gt;
 
@@ -232,31 +247,4 @@ git checkout master
 git worktree add ../gtk3 gtk-3-24
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;At this point you can open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gtk3&lt;/code&gt; project in Builder and works as if those were not closely interconnected. But every commit is ‘visible’ in the other project.&lt;/p&gt;</content><author><name>Jakub Steiner</name><email>jimmac@gmail.com</email></author><category term="work" /><category term="git" /><category term="gnome" /><summary type="html"></summary></entry><entry><title type="html">Animated Tour</title><link href="https://blog.jimmac.eu/2021/animated-tour/" rel="alternate" type="text/html" title="Animated Tour" /><published>2021-02-05T00:00:00+01:00</published><updated>2021-02-05T00:00:00+01:00</updated><id>https://blog.jimmac.eu/2021/animated-tour</id><content type="html" xml:base="https://blog.jimmac.eu/2021/animated-tour/">&lt;p&gt;We’ve &lt;a href=&quot;/2015/svg-animation/&quot;&gt;struggled&lt;/a&gt; with bringing subtle animation to GNOME in the past. There is interest in bringing it in &lt;a href=&quot;https://gitlab.gnome.org/GNOME/gtk/-/tree/wip/otte/lottie&quot;&gt;some shape&lt;/a&gt; or form to &lt;em&gt;gtk4&lt;/em&gt;. The bad news is the tools are still lacking on the production side. There’s not much past &lt;a href=&quot;https://glaxnimate.mattbas.org/&quot;&gt;Glaxanimate&lt;/a&gt; to do even simple transforms.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;sketch-ws.png&quot; alt=&quot;Tour Storyboard&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;While we iterated on the &lt;a href=&quot;https://gitlab.gnome.org/Teams/Design/os-mockups/-/issues/79&quot;&gt;GNOME 40 onboarding&lt;/a&gt;, it became clear a subtle animation for the touch gestures would really help. And because the CSS machinery in gtk is fairly capable, I experimented implementing such a thing with good’ol &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@keyframes&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;While anything more complex would be a nightmare, animating the hand going back and forth is well served by a simple CSS rule:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@keyframes left-and-right {
-    from { background-position: 40% 30%, center 30%, center; }
-    to { background-position: 60% 30%, center 30%, center; }
-}
-
-.page:nth-child(6) {   /* left right */
-  background: url('/org/gnome/Tour/hand-fg.svg'),
-              url('/org/gnome/Tour/leftright-bg.svg');
-  background-repeat: no-repeat;
-  background-position: center 30%;
-  animation: left-and-right 2s ease-in-out infinite alternate;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;It’s a bit fragile, but a first shy step for animations in the UI. Hopefully first of many.&lt;/p&gt;
-
-&lt;video controls=&quot;&quot; autoplay=&quot;&quot; loop=&quot;&quot; class=&quot;image full&quot;&gt;
-&lt;source src=&quot;https://blog.jimmac.eu/2021/animated-tour/css-anim.webm&quot; type=&quot;video/webm&quot; /&gt;
-&lt;source src=&quot;https://blog.jimmac.eu/2021/animated-tour/css-anim.mp4&quot; type=&quot;video/mp4&quot; /&gt;
-&lt;/video&gt;</content><author><name>Jakub Steiner</name><email>jimmac@gmail.com</email></author><category term="work" /><category term="design" /><category term="gnome" /><summary type="html">We’ve struggled with bringing subtle animation to GNOME in the past. There is interest in bringing it in some shape or form to gtk4. The bad news is the tools are still lacking on the production side. There’s not much past Glaxanimate to do even simple transforms.</summary></entry></feed>
+&lt;p&gt;At this point you can open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gtk3&lt;/code&gt; project in Builder and works as if those were not closely interconnected. But every commit is ‘visible’ in the other project.&lt;/p&gt;</content><author><name>Jakub Steiner</name><email>jimmac@gmail.com</email></author><category term="work" /><category term="git" /><category term="gnome" /><summary type="html"></summary></entry></feed>
