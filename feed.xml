@@ -1,6 +1,23 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://blog.jimmac.eu/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.jimmac.eu/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2021-05-24T09:31:53+02:00</updated><id>https://blog.jimmac.eu/feed.xml</id><title type="html">Even a Stopped Clock</title><subtitle>Random musings of a semi-sane designer from lesser Europe.</subtitle><author><name>Jakub Steiner</name><email>jimmac@gmail.com</email></author><entry><title type="html">What am I?</title><link href="https://blog.jimmac.eu/2021/what-am-i/" rel="alternate" type="text/html" title="What am I?" /><published>2021-05-24T00:00:00+02:00</published><updated>2021-05-24T00:00:00+02:00</updated><id>https://blog.jimmac.eu/2021/what-am-i</id><content type="html" xml:base="https://blog.jimmac.eu/2021/what-am-i/">&lt;p&gt;&lt;img src=&quot;polyend.jpg&quot; alt=&quot;Polyend Tracker&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://blog.jimmac.eu/feed.xml" rel="self" type="application/atom+xml" /><link href="https://blog.jimmac.eu/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2021-06-07T15:26:28+02:00</updated><id>https://blog.jimmac.eu/feed.xml</id><title type="html">Even a Stopped Clock</title><subtitle>Random musings of a semi-sane designer from lesser Europe.</subtitle><author><name>Jakub Steiner</name><email>jimmac@gmail.com</email></author><entry><title type="html">Troubled Minister</title><link href="https://blog.jimmac.eu/2021/troubled-minister/" rel="alternate" type="text/html" title="Troubled Minister" /><published>2021-06-07T00:00:00+02:00</published><updated>2021-06-07T00:00:00+02:00</updated><id>https://blog.jimmac.eu/2021/troubled-minister</id><content type="html" xml:base="https://blog.jimmac.eu/2021/troubled-minister/">&lt;p&gt;&lt;img src=&quot;dj-strobe.gif&quot; alt=&quot;DJ Strobe&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Having a hardware &lt;a href=&quot;https://en.wikipedia.org/wiki/Music_tracker&quot;&gt;tracker&lt;/a&gt; seems a little odd of a choice, but a small polish company, &lt;a href=&quot;https://polyend.com/&quot;&gt;Polyend&lt;/a&gt; has really won me over.&lt;/p&gt;
+&lt;p&gt;Another weekend arrangement made mostly in Polyend Tracker. Video footage assembled from my fpv flights around Liberec over the course of past few weeks.&lt;/p&gt;
+
+&lt;p&gt;Listen right here:&lt;/p&gt;
+&lt;audio controls=&quot;&quot;&gt;
+&lt;source src=&quot;troubled-minister.mp3&quot; type=&quot;audio/mpeg&quot; /&gt;
+&lt;source src=&quot;troubled-minister.aac&quot; type=&quot;audio/aac&quot; /&gt;
+&lt;a href=&quot;https://soundcloud.com/jimmac/what-am-i&quot;&gt;What am I? on Soundcloud&lt;/a&gt;.
+&lt;/audio&gt;
+
+&lt;p&gt;Watch a video:&lt;/p&gt;
+&lt;iframe title=&quot;vimeo-player&quot; src=&quot;https://player.vimeo.com/video/559931348&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href=&quot;/2021/what-am-i/&quot;&gt;Previously&lt;/a&gt;,
+&lt;a href=&quot;/2021/100kph/&quot;&gt;Previously&lt;/a&gt;,
+&lt;a href=&quot;/2021/jammin-on-elektron/&quot;&gt;Previously&lt;/a&gt;,
+&lt;a href=&quot;/2021/elektronic/&quot;&gt;Previously&lt;/a&gt;.&lt;/p&gt;</content><author><name>Jakub Steiner</name><email>jimmac@gmail.com</email></author><category term="synth" /><category term="Polyend" /><category term="tracker" /><category term="fpv" /><summary type="html"></summary></entry><entry><title type="html">What am I?</title><link href="https://blog.jimmac.eu/2021/what-am-i/" rel="alternate" type="text/html" title="What am I?" /><published>2021-05-24T00:00:00+02:00</published><updated>2021-05-24T00:00:00+02:00</updated><id>https://blog.jimmac.eu/2021/what-am-i</id><content type="html" xml:base="https://blog.jimmac.eu/2021/what-am-i/">&lt;p&gt;&lt;img src=&quot;polyend.jpg&quot; alt=&quot;Polyend Tracker&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Having a hardware &lt;a href=&quot;https://en.wikipedia.org/wiki/Music_tracker&quot;&gt;tracker&lt;/a&gt; seems a little odd of a choice, but a small Polish company, &lt;a href=&quot;https://polyend.com/&quot;&gt;Polyend&lt;/a&gt; has really won me over.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.nngroup.com/books/emotional-design/&quot;&gt;Beautiful things work better&lt;/a&gt; and the machine is up there with &lt;a href=&quot;https://www.elektron.se/&quot;&gt;Elektron&lt;/a&gt; boxes. There are &lt;a href=&quot;https://dirtywave.com/&quot;&gt;more compact machines&lt;/a&gt; on the horizon, but over the weekend I was able to sit down outside and lay the basics of a track down. I have later finalized it in a &lt;a href=&quot;https://en.wikipedia.org/wiki/Digital_audio_workstation&quot;&gt;DAW&lt;/a&gt;, based on the track stems you can export. Not sitting behind a computer and still arrange electronic music is a great luxury.&lt;/p&gt;
 
@@ -233,18 +250,4 @@ about the Perseverance landing, I didn’t realize NASA has actually published t
 
 &lt;p&gt;&lt;img src=&quot;IMG_1891.jpeg&quot; alt=&quot;photo1&quot; /&gt;
 &lt;img src=&quot;IMG_1898.jpeg&quot; alt=&quot;photo4&quot; /&gt;
-&lt;img src=&quot;IMG_1892.jpeg&quot; alt=&quot;photo5&quot; /&gt;&lt;/p&gt;</content><author><name>Jakub Steiner</name><email>jimmac@gmail.com</email></author><category term="photo" /><category term="iphone" /><summary type="html">I still can’t get over the magic coming out of the minuscule sensor at night.</summary></entry><entry><title type="html">Git Worktree — Concurrent Development</title><link href="https://blog.jimmac.eu/2021/git-worktree/" rel="alternate" type="text/html" title="Git Worktree — Concurrent Development" /><published>2021-02-06T00:00:00+01:00</published><updated>2021-02-06T00:00:00+01:00</updated><id>https://blog.jimmac.eu/2021/git-worktree</id><content type="html" xml:base="https://blog.jimmac.eu/2021/git-worktree/">&lt;p&gt;&lt;img src=&quot;git-worktree.png&quot; alt=&quot;git worktree&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Sometimes you have to sit on two chairs at the same time. No, I don’t mean to give you east-European political advice. I mean developing things in two concurrent branches can be a pain with the constant switching.&lt;/p&gt;
-
-&lt;p&gt;In my case I need to develop a stylesheet for both &lt;em&gt;gtk3&lt;/em&gt; and &lt;em&gt;gtk4&lt;/em&gt; at the same time, usually having to compare the two running concurrently. &lt;a href=&quot;https://blogs.gnome.org/mclasen/&quot;&gt;Matthias&lt;/a&gt; recently introduced me to the secret cabal of people knowing about &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git worktree&lt;/code&gt;. Thanks to it you can have two branches of the same project checked out at the same time, not only saving you the (cheap) drive space, but keeping a single history so &lt;em&gt;cherry picking&lt;/em&gt; and diffing between the two doesn’t need to involve refreshing remotes or jumping through other hoops.&lt;/p&gt;
-
-&lt;p&gt;So let’s take a look at my scenario. I have gtk checked out in &lt;a href=&quot;https://flathub.org/apps/details/org.gnome.Builder&quot;&gt;Builder&lt;/a&gt;, by default going to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~/Projects/gtk&lt;/code&gt;. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;master&lt;/code&gt; branch equates to the new goodness of &lt;em&gt;gtk4&lt;/em&gt;. Pushing the &lt;em&gt;run&lt;/em&gt; button will build me &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gtk4-widget-factory&lt;/code&gt; ready to test the stylesheet. But to have the gtk3 equivalent run side by side, I don’t use a duplicate of the repo, but instead created a worktree copy:&lt;/p&gt;
-
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd ~/Projects/gtk
-git checkout -tb gtk-3-24 origin/gtk-3-24 
-git checkout master 
-git worktree add ../gtk3 gtk-3-24
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;At this point you can open the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gtk3&lt;/code&gt; project in Builder and works as if those were not closely interconnected. But every commit is ‘visible’ in the other project.&lt;/p&gt;</content><author><name>Jakub Steiner</name><email>jimmac@gmail.com</email></author><category term="work" /><category term="git" /><category term="gnome" /><summary type="html"></summary></entry></feed>
+&lt;img src=&quot;IMG_1892.jpeg&quot; alt=&quot;photo5&quot; /&gt;&lt;/p&gt;</content><author><name>Jakub Steiner</name><email>jimmac@gmail.com</email></author><category term="photo" /><category term="iphone" /><summary type="html">I still can’t get over the magic coming out of the minuscule sensor at night.</summary></entry></feed>
