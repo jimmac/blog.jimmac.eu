@@ -1,6 +1,13 @@
 [
   
     {
+      "title"    : "Pixels",
+      "tags"     : "pixels, aseprite, gnome",
+      "url"      : "/2021/pixels/",
+      "date"     : "2021-06-22 00:00:00 +0200"
+    } ,
+  
+    {
       "title"    : "Troubled Minister",
       "tags"     : "synth, Polyend, tracker, fpv",
       "url"      : "/2021/troubled-minister/",
