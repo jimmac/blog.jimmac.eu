@@ -15,6 +15,6 @@ Unfortunately it uses the documents themselves to store things like canvas posit
 
 Luckily you can at least give up the ability to store the canvas position for the greater good of not having merge conflicts, if you manage to convince your peers to change its defaults. Which is what this blog post is about :)
 
-To change these defaults, you have to dive into the thinck forrest that is Inkscape's preferences (`Edit > Preferences`). You'll find then in the `Interface > Windows` section. The default being the unfortunate `Save and restore window geometry for each document` needs to be changed either to `Don't save window geometry` or `Remember to use last window's geometry`.
+To change these defaults, you have to dive into the thick forrest that is Inkscape's preferences (`Edit > Preferences`). You'll find then in the `Interface > Windows` section. The default being the unfortunate `Save and restore window geometry for each document` needs to be changed either to `Don't save window geometry` or `Remember to use last window's geometry`.
 
 From now on, rebasing [icon-development-kit](https://gitlab.gnome.org/Teams/Design/icon-development-kit) won't cause any more grey hair for you!
