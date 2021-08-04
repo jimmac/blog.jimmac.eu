@@ -1,6 +1,6 @@
 ---
 title: Avoid Head Spinning
-date: 2021-08-04
+date: 2021-08-05
 tags:
 - inkscape
 - svg
