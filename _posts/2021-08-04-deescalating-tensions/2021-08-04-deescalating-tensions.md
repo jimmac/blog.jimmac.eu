@@ -18,3 +18,5 @@ Luckily you can at least give up the ability to store the canvas position for th
 To change these defaults, you have to dive into the thick forrest that is Inkscape's preferences (`Edit > Preferences`). You'll find then in the `Interface > Windows` section. The default being the unfortunate `Save and restore window geometry for each document` needs to be changed either to `Don't save window geometry` or `Remember to use last window's geometry`.
 
 From now on, rebasing [icon-development-kit](https://gitlab.gnome.org/Teams/Design/icon-development-kit) won't cause any more grey hair for you!
+
+Update: Turns out, despite me testing before posting, only `Don't save window geometry` is safe. Even window geometry appears to be saved into the document.
