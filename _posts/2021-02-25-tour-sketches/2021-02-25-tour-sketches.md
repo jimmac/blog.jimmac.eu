@@ -5,6 +5,7 @@ tags:
 - gnome
 - design
 - work
+- sketch
 ---
 
 [comment]: <> <a href="{{ site.url }}{{ page.url }}">absolute links</a>
