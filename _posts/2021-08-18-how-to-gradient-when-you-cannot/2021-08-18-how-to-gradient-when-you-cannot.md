@@ -79,7 +79,7 @@ Let me show you how it's done in [Inkscape](https://flathub.org/apps/details/org
 
 <video controls autoplay loop class="image full">
 <source src="{{site.url}}{{page.url}}inkscape-10fps.webm" type="video/webm">
-<source src="{{site.url}}{{page.url}}inkscape-10fps" type="video/mp4">
+<source src="http://jimmac.musichall.cz/stuff/blog/inkscape-10fps.mp4" type="video/mp4"><!-- safari is very picky -->
 </video>
 
 * The first step will be to create our spinner in its linear form. Create a rectangle, convert it into a shape with `Ctrl+Shift+C` and subdivide one of the sides a couple of times using the `Add Node` button in the context menubar.
