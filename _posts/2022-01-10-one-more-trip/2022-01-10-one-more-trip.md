@@ -26,7 +26,7 @@ In 2022 I'd like to
 * Continue using the gear I have and not buy any more. I have way more gear than I need. I'm going to sell some I don't actually enjoy using anymore, but even splitting time between the [Digitone](https://www.elektron.se/products/digitone/), [Digitakt](https://www.elektron.se/products/digitakt/), [Polyend Tracker](https://polyend.com/tracker/) and [Dirtywave M8](https://dirtywave.com/) is making me feel unfocused. If I only had a synth room where I could just walk in and jam :)
 * Continue posting on this ancient platform called WWW. Before I figure out a replacement for comments, feel free to [tweet at me](https://twitter.com/jimmac) or [toot](https://mastodon.social/web/@jimmac).
 
-A little late with wishing you a better 2022 than 2020 was! I didn't even catch 2021 flew by.
+A little late with wishing you a better 2022 than 2020 was! I didn't even catch 2021 fly by.
 
 [comment]: <> <a href="{{ site.url }}{{ page.url }}">absolute links</a>
 [comment]: [Previously]({% post_url 2021-02-25-tour-sketches/2021-02-25-tour-sketches %}).
