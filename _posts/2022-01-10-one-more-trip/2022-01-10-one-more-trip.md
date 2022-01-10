@@ -7,7 +7,6 @@ tags:
 - synths
 - 2021
 ---
-# One More Trip Around the Sun
 
 It's been exactly one year since I've done the foolish thing and changed my blog backend to write more. And to my own surprise it worked. Let me look back at 2021 from a rather narrow perspective of what I usually write about. Perhaps to your disappointment most of it is personal, not professional.
 
