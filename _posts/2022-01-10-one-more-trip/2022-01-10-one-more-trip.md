@@ -21,7 +21,7 @@ I've also come back to pixel art, even though the joy is a lot tainted by the to
 
 In 2022 I'd like to 
 
-* Replace my reliance on iPad and Apple Pencil. Would be nice to use a small screen tablet on my Fedora instead. Just plug it when I need it, run [GIMP](https://gimp.org) or [Aseprite](https://www.aseprite.org/) in the same time it takes me with Procreate and Pixaki.
+* Replace my reliance on iPad and Apple Pencil. Would be nice to use a [small screen tablet on my Fedora instead](https://gitlab.gnome.org/GNOME/gnome-control-center/-/issues/1392). Just plug it when I need it, run [GIMP](https://gimp.org) or [Aseprite](https://www.aseprite.org/) in the same time it takes me with Procreate and Pixaki.
 * Embrace Fedora for music making. While I'm not a heavy Ableton Live user, I should totally embrace [Bitwig](https://flathub.org/apps/details/com.bitwig.BitwigStudio) instead as it's conveniently available as a Flatpak. The Pipewire revolution also made [Renoise](https://www.renoise.com/) usable for me again, so maybe I'll give it another stab.
 * Continue using the gear I have and not buy any more. I have way more gear than I need. I'm going to sell some I don't actually enjoy using anymore, but even splitting time between the [Digitone](https://www.elektron.se/products/digitone/), [Digitakt](https://www.elektron.se/products/digitakt/), [Polyend Tracker](https://polyend.com/tracker/) and [Dirtywave M8](https://dirtywave.com/) is making me feel unfocused. If I only had a synth room where I could just walk in and jam :)
 * Continue posting on this ancient platform called WWW. Before I figure out a replacement for comments, feel free to [tweet at me](https://twitter.com/jimmac) or [toot](https://mastodon.social/web/@jimmac).
