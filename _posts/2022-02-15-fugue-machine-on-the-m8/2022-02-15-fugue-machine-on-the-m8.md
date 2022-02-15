@@ -1,6 +1,6 @@
 ---
 title: Fugue Machine on the M8
-date: 2022-01-01
+date: 2022-02-15
 tags:
 - tracker
 - synth
