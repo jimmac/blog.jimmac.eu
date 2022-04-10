@@ -5,6 +5,7 @@ tags:
 - blender
 - nasa
 - youtube
+- ingenuity
 ---
 
 [comment]: <> <div class="inlineimgs" markdown="1">
