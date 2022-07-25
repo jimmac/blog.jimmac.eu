@@ -19,7 +19,6 @@ Something that sounded unlikely became a great success with [24 flights](https:/
 
 The music was composed on the [Dirtywave M8 Tracker](https://dirtywave.com/), went straight from the device, no mastering. The time constraints of [weeklybeats](https://weeklybeats.com/) is brutal. I used a hint to the *Close Encounters of the Third Kind* main theme, but because the flight is unrealistically dynamic, it leans on a mangled classic [Jungle Jungle](https://free-sample-packs.com/junglejungle-1989-1999-sample-pack/) break.
 
-[Previously]({% post_url  2021-03-22-ingenuity-fpv/2021-03-22-ingenuity-fpv %})
+Thanks to the C-Base crew for taking good care of us and the GNOME Fundation to support the travel (mostly on the surface).
 
-[comment]: <> <a href="{{ site.url }}{{ page.url }}">absolute links</a>
-[comment]: [Previously]({% post_url 2021-02-25-tour-sketches/2021-02-25-tour-sketches %}).
+![Supported by the GNOME Foundation](sponsored.png)
