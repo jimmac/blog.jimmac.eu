@@ -12,7 +12,8 @@
   @extend %clearfix;
   z-index: 100;
   background-color: transparentize($white,.1);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 // Navigation
