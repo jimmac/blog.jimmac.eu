@@ -1,2 +1,2 @@
 # blog.jimmac.eu
-My latest attempt to stop using Facebook
+My random music and pixel creations and the ocassional work post on GNOME design.
