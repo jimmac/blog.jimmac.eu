@@ -58,9 +58,8 @@ I've been practicing the art of animation a little too in an effort to promote G
 <style type="text/css">
 .pixelicons {
 	display: grid;
-	/* grid-template-columns: repeat(3,1fr); */
-	grid-template-columns: repeat(auto-fit, minmax(128px,1fr));
-	gap: 64px;
+	grid-template-columns: repeat(2,1fr);
+	gap: 4rem;
 }
 .pixelicons img {
 	display: block;
@@ -68,6 +67,14 @@ I've been practicing the art of animation a little too in an effort to promote G
 	image-rendering: crisp-edges; image-rendering: pixelated;
 	transition: transform 600ms ease-out;
 	align-self: center;
+}
+
+@media only screen and (min-width: 640px) {
+	.pixelicons { grid-template-columns: repeat(4,1fr); gap: 3rem; }
+	.pixelicons img:nth-child(10n) {
+		grid-column: span 2;
+		grid-row: span 2;
+	}
 }
 .pixelicons img:hover {
 	transition: transform 100ms ease-out;
@@ -78,6 +85,8 @@ I've been practicing the art of animation a little too in an effort to promote G
 	width: 32px;
 	transform: scale(1);
 }
+
+
 </style>
 
 [Previously]({% post_url 2021-10-13-mopixels/2021-10-13-mopixels %})
