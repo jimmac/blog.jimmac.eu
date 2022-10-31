@@ -57,7 +57,7 @@ Just like [last year]({% post_url 2021-11-01-pixel-inktober/2021-11-01-pixel-ink
 	width: 100%; height: auto;
 	/* image-rendering: crisp-edges; */  
 	/* image-rendering: pixelated; */
-	transition: transform 600ms ease-out;
+	transition-duration: 0;
 	align-self: center;
 }
 
@@ -70,15 +70,16 @@ Just like [last year]({% post_url 2021-11-01-pixel-inktober/2021-11-01-pixel-ink
 }
 .pixelicons img:hover {
 	transition: transform 100ms ease-out;
-	transform: scale(1.2);
+	transform: scale(1.5);
+	image-rendering: crisp-edges;
+	image-rendering: pixelated;
 }
 .pixelicons img:active {
-	transition: none;
 	width: 135px;
-	transform: scale(2);
+	transform: scale(3);
 	transition: none;
-	image-rendering: crisp-edges;  
-	image-rendering: pixelated; 
+	image-rendering: crisp-edges;
+	image-rendering: pixelated;
 }
 </style>
 
