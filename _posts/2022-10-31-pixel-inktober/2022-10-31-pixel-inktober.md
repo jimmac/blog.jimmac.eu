@@ -11,37 +11,37 @@ tags:
 Just like [last year]({% post_url 2021-11-01-pixel-inktober/2021-11-01-pixel-inktober %}), October was filled with quick pixel dailies. I decided to only post [on mastodon](https://mastodon.social/@jimmac), but due to the twitter exodus couldn't quite post the 30kB images for the two remaining days. Good old blog post it is!
 
 ![x](sheet.png)
-![x](01.gif){:.big}
-![x](02.png)
-![x](03.gif)
-![x](04.png)
-![x](05.png)
-![x](06.png)
-![x](07.png){:.big}
-![x](08.png){:.big}
-![x](09.png)
-![x](10.png)
-![x](11.png)
-![x](12.png)
-![x](13.png)
-![x](14.png){:.big}
-![x](15.png){:.big}
-![x](16.gif)
-![x](17.png)
-![x](18.png)
-![x](19.png)
-![x](20.png)
-![x](21.png)
-![x](22.png)
-![x](23.gif)
-![x](24.png)
-![x](25.png){:.big}
-![x](26.png)
-![x](27.png){:.big}
-![x](28.png){:.big}
-![x](29.png)
-![x](30.png)
-![x](31.png)
+![1. Gargoyle](01.gif){:.big}
+![2. Scurry](02.png)
+![3. Bat](03.gif)
+![4. Scallop](04.png)
+![5. Flame](05.png)
+![6. Bouquet](06.png)
+![7. Trip](07.png){:.big}
+![8. Match](08.png){:.big}
+![9. Nest](09.png)
+![10. Crabby](10.png)
+![11. Eagle](11.png)
+![12. Forget](12.png)
+![13. Kind](13.png)
+![14. Empty](14.png){:.big}
+![15. Armadillo](15.png){:.big}
+![16. Fowl](16.gif)
+![17. Salty](17.png)
+![18. Scrape](18.png)
+![19. Ponytail](19.png)
+![20. Bluff](20.png)
+![21. Bad Dog](21.png)
+![22. Heist](22.png)
+![23. Booger](23.gif)
+![24. Fairy](24.png)
+![25. Tempting](25.png){:.big}
+![26. Ego](26.png)
+![27. Snack](27.png){:.big}
+![28. Camping](28.png){:.big}
+![29. Uh-oh](29.png)
+![30. Gear](30.png)
+![31. Farm](31.png)
 {:.pixelicons}
 
 
