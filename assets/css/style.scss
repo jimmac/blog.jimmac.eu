@@ -17,3 +17,7 @@ img.full {
   width: 100%;
   height: auto;
 }
+img.pixels {
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
