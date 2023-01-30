@@ -22,5 +22,6 @@ Another exciting development is the continued use of geometry nodes in Blender. 
 <iframe title="Creative Freedom Summit 2023 - 1/17/2023, 1:30:52 PM" src="https://peertube.linuxrocks.online/videos/embed/915eb55b-124a-42d7-9010-b21125be1378?start=27m25s" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="315" frameborder="0"></iframe>
 
 
+[Previously]({% post_url 2022-08-08-gnome43-wallpapers/2022-08-08-gnome43-wallpapers %}),
 [Previously]({% post_url  archive/2020-09-01-shelved-wallpapers-2/2020-09-01-shelved-wallpapers-2 %}),
 [Previously]({% post_url  archive/2018-02-12-shelved-wallpapers/2018-02-12-shelved-wallpapers %})
