@@ -19,7 +19,7 @@ The default wallpaper stays true to our brand, but the supplementary set has und
 
 Another exciting development is the continued use of geometry nodes in Blender. Although the tool has a steep learning curve, I'm starting to enjoy my time with it. I gave a talk on geometry nodes and its use for GNOME wallpaper design at the Fedora Creative Freedom Summit. You can watch the stream archive recording [here](https://peertube.linuxrocks.online/w/iX9QkY4nCa2nPAzV8nC3BS?start=27m25s) (and [part2](https://peertube.linuxrocks.online/w/4kBcQfDBLAAJDQcdkDwZow)).
 
-<iframe title="Creative Freedom Summit 2023 - 1/17/2023, 1:30:52 PM" src="https://peertube.linuxrocks.online/videos/embed/915eb55b-124a-42d7-9010-b21125be1378?start=27m25s" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" width="560" height="315" frameborder="0"></iframe>
+<iframe title="Visual Programming with Geometry Nodes in Blender - Jakub Steiner - Creative Freedom Summit 2023" src="https://peertube.linuxrocks.online/videos/embed/7f0043e0-a8ed-4f8c-a93b-e7da7c399bae" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" frameborder="0"></iframe>
 
 
 [Previously]({% post_url 2022-08-08-gnome43-wallpapers/2022-08-08-gnome43-wallpapers %}),
