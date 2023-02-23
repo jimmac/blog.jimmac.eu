@@ -19,7 +19,7 @@ Thus there is no better time to refresh what has become a little dated, Flathub'
 
 [![Brand Guidelines](brand.webp)](https://github.com/flathub/website/files/10815847/brand-guide.pdf)
 
-Take a peek at the [brand guidelines](https://github.com/flathub/website/files/10815847/brand-guide.pdf) to learn more about the new Flatpak brand or [download the logos](https://github.com/flathub/website/files/10815849/flathub-branding.zip) in scalable format. The download buttons for app websites are also [available](https://github.com/flathub/website/files/10814600/download-button.zip).
+Take a peek at the [brand guidelines](https://github.com/flathub/website/files/10815847/brand-guide.pdf) to learn more about the new Flathub brand or [download the logos](https://github.com/flathub/website/files/10815849/flathub-branding.zip) in scalable format. The download buttons for app websites are also [available](https://github.com/flathub/website/files/10814600/download-button.zip).
 
 ![Flathub Light WIP](flathub-l.webp)
 ![Flathub Dark WIP](flathub-d.webp)
