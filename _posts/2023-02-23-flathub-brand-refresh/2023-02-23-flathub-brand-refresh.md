@@ -46,6 +46,6 @@ If you've read until this point, you deserve a treat! Here's some eye candy from
 }
 </style>
 
-Big shoutout to [Razze](https://osna.social/@razze) for his ongoing work on the website and implementing the brand so quickly. Many thank yous to [Tobias Bernard](https://tobiasbernard.com/) for significant involvment in this during the [Berlin Mini GUADEC]({% post_url 2022-07-25-Berlin-GUADEC/2022-07-25-Berlin-GUADEC %}) and [Václav Vančura](https://vancura.dev/) for sensible feedback.
+Big shoutout to [razze](https://osna.social/@razze) for his ongoing work on the website and implementing the brand so quickly. Many thank yous to [Tobias Bernard](https://tobiasbernard.com/) for significant involvment in this during the [Berlin Mini GUADEC]({% post_url 2022-07-25-Berlin-GUADEC/2022-07-25-Berlin-GUADEC %}) and [Václav Vančura](https://vancura.dev/) for sensible feedback.
 
 [Previously]({% post_url 2022-06-13-flatpak-refresh/2022-06-13-flatpak-refresh %})
