@@ -95,7 +95,7 @@
     }}"
   />
   {% if page.image %}
-  <meta property="og:image" content="{{ page.image | absolute_url }}" />
+  <meta property="og:image" content="{{ page.url | absolute_url }}{{ page.image }}" />
   {% else %}
   <meta property="og:image" content="{{ site.image | absolute_url }}" />
   {% endif %}

@@ -1,6 +1,7 @@
 ---
 title: Colorful HIG
 date: 2023-10-27
+image: hig-fullcolor.webp
 tags:
 - work
 - gnome
