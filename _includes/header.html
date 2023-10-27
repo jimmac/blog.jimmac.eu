@@ -128,7 +128,7 @@
     }}"
   />
   {% if page.image %}
-  <meta name="twitter:image" content="{{ page.image | absolute_url }}" />
+  <meta name="twitter:image" content="{{ page.url | absolute_url }}{{ page.image }}" />
   {% else %}
   <meta name="twitter:image" content="{{ site.image | absolute_url }}" />
   {% endif %} {% feed_meta %}
