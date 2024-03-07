@@ -29,7 +29,7 @@ In essence, client-side grain in JPEG-XL isn't simply added noise, but a sophist
 
 ![Wallpaper 5](wall-5.webp)
 
-The fresh batch of wallpapers includes evolutions of the existing assets as well as new additions. A few material/shape studies have been added as well as simple 2D shape textures. Thanks to the lovely JPEG-XL grain describe earlier, it's not just [Inkscape](https://inkscape.org) and [Blender](https://blender.org) that [were used](https://gitlab.gnome.org/Teams/Design/wallpaper-assets/-/blob/master/46/experiments/py/geo.py?ref_type=heads).
+The fresh batch of wallpapers includes evolutions of the existing assets as well as new additions. A few material/shape studies have been added as well as simple 2D shape textures. Thanks to the lovely JPEG-XL grain described earlier, it's not just [Inkscape](https://inkscape.org) and [Blender](https://blender.org) that [were used](https://gitlab.gnome.org/Teams/Design/wallpaper-assets/-/blob/master/46/experiments/py/geo.py?ref_type=heads).
 
 I hope you're going to pick at least one of the wallpapers when GNOME 46 releases later next week as your favorite. Let me know [on fediverse](https://mastodon.social/@jimmac)!
 
