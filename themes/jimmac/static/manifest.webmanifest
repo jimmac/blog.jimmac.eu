@@ -1,0 +1,20 @@
+{
+  "name": "Paweł Grzybek | pawelgrzybek.com",
+  "short_name": "Paweł Grzybek",
+  "author": "Paweł Grzybek",
+  "description": "Hi, I'm Paweł, a software developer from Poland, now living in Northampton, UK. I do stuff on the web, write about it, and listen to funky and jazz records after hours.",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff"
+}

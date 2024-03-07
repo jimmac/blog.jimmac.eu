@@ -1,0 +1,43 @@
+<figure>
+  <picture>
+    {{- $destination := .Get "src" -}}
+    {{- $extension := path.Ext $destination -}}
+    {{- $resources := .Page.Resources -}}
+  
+    {{- $avifPath:= replace $destination $extension ".avif" -}}
+    {{- $avifPathDark:= replace $destination $extension "-dark.avif" -}}
+    {{- $webpPath:= replace $destination $extension ".webp" -}}
+    {{- $webpPathDark:= replace $destination $extension "-dark.webp" -}}
+    {{- $pathDark:= replace $destination $extension (print "-dark" $extension) -}}
+    {{- $altText := .Get "alt" -}}
+
+    {{- with $resources.GetMatch $avifPath -}}
+    <source srcset="{{- $avifPath -}}" type="image/avif" {{- with $resources.GetMatch $avifPathDark -}} media="(prefers-color-scheme: light)" {{- end -}} >
+    {{- end -}}
+    {{- with $resources.GetMatch $avifPathDark -}}
+    <source srcset="{{- $avifPathDark -}}" type="image/avif" {{- with $resources.GetMatch $avifPath -}} media="(prefers-color-scheme: dark)" {{- end -}}>
+    {{- end -}}
+    {{- with $resources.GetMatch $webpPath -}}
+    <source srcset="{{- $webpPath -}}" type="image/webp" {{- with $resources.GetMatch $webpPathDark -}} media="(prefers-color-scheme: light)" {{- end -}} >
+    {{- end -}}
+    {{- with $resources.GetMatch $webpPathDark -}}
+    <source srcset="{{- $webpPathDark -}}" type="image/webp" {{- with $resources.GetMatch $webpPath -}} media="(prefers-color-scheme: dark)" {{- end -}}>
+    {{- end -}}
+    {{- with $resources.GetMatch $pathDark -}}
+    <source srcset="{{- $pathDark -}}" media="(prefers-color-scheme: dark)">
+    {{- end -}}
+  
+    {{- with $resources.GetMatch $destination -}}
+      <img
+        src="{{- .Permalink -}}"
+        alt="{{- $altText -}}"
+        loading="lazy"
+        decoding="async"
+        width="{{- .Width -}}"
+        height="{{- .Height -}}"
+      />
+    {{- end -}}
+  </picture>
+  
+  <figcaption>{{ .Get "caption" }}</figcaption>
+</figure>

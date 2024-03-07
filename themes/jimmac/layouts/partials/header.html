@@ -1,0 +1,27 @@
+<div class="wrapper wrapper--wide">
+  <header class="header">
+    <a class="header__skip" href="#main">Skip to content</a>
+
+    <nav class="header__nav">
+      <ul class="header__list">
+        <li class="header__item header__item--logo">
+          <a class="header__logo" href="/" title="Homepage">Jakub Steiner</a>
+        </li>
+        <li class="header__item">
+          <a {{ if eq .RelPermalink "/posts/" }}aria-current="page"{{ end }} href="/posts" title="Posts">Blog Posts</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="header-theme js-theme" aria-label="Theme picker">
+      <div class="header-theme__label">Theme:</div>
+      <button class="header-theme__button" aria-pressed="true" value="system" >System</button>
+      <button class="header-theme__button" aria-pressed="false" value="light" >Light</button>
+      <button class="header-theme__button" aria-pressed="false" value="dark" >Dark</button>
+    </section>
+
+  </header>
+</div>
+
+
+

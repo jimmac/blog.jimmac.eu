@@ -1,0 +1,15 @@
+name = "jimmac"
+license = "MIT"
+licenselink = ""
+description = ""
+homepage = "https://blog.jimmac.eu"
+tags = []
+features = []
+min_version = "0.41.0"
+
+[author]
+  name = "Paweł Grzybek"
+  homepage = "https://pawelgrzybek.com"
+[author]
+  name = "Jakub Steiner"
+  homepage = "https://jimmac.eu"

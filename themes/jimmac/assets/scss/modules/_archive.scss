@@ -1,0 +1,24 @@
+.archive {
+  margin-inline-start: 0;
+  list-style: none;
+}
+
+.archive__item {
+  margin-block-end: calc(var(--lh) / 2);
+}
+
+.archive__link {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--color-text);
+
+  &:hover {
+    color: var(--color-link);
+  }
+}
+
+.archive__meta {
+  opacity: 0.3;
+  margin: 0;
+  font-size: calc(var(--fz) / var(--type-scale));
+}

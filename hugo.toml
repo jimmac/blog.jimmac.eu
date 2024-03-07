@@ -1,0 +1,33 @@
+baseURL = "https://blog.jimmac.eu/"
+title = "Even a Stopped Clock"
+disableKinds = ["taxonomy", "term"]
+pygmentsUseClasses = true
+enableRobotsTXT = true
+theme = ['jimmac']
+
+[params]
+  description = "Musings of a visual designer from the lesser Europe"
+
+[frontmatter]
+  date  = [":filename", ":default"]
+
+[permalinks]
+  posts = "/:slug/"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[outputFormats.RSS]
+  baseName = "feed"
+
+[outputFormats.JSON]
+  baseName = "feed"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.parser]
+      wrapStandAloneImageWithinParagraph = false
+    [markup.goldmark.extensions]
+      footnote = true

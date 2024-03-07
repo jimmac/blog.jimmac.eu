@@ -1,0 +1,47 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="author" content="Jakub Steiner - {{ .Site.BaseURL }}">
+  {{ hugo.Generator }}
+
+  <title>{{ if eq .IsHome true }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ .Summary }}">
+
+  {{ "<!-- Safari tab bar -->" | safeHTML }}
+  <meta name="theme-color" content="hsl(255 0% 100%)" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="hsl(210 15% 15%)" media="(prefers-color-scheme: dark)" />
+
+  {{ "<!-- Open graph data -->" | safeHTML }}
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  <meta property="og:title" content="{{ if eq .IsHome true }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
+  <meta property="og:url" content="{{ .Permalink | absURL }}">
+  <meta property="og:type" content="{{ if eq .Type "page" }}website{{ else }}article{{ end }}">
+  <meta property="og:description" content="{{ .Summary }}">
+  <meta property="og:image" content="{{ if (and .Page.File (os.FileExists (path.Join "content" .Page.File.Dir "og.jpg" )) ) }}{{ urls.JoinPath .Page.Permalink "og.jpg" }}{{ else }}{{ urls.JoinPath .Site.BaseURL "og.jpg" }}{{ end }}">
+
+  {{ "<!-- Twitter Card -->" | safeHTML }}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@pawelgrzybek" />
+  <meta name="twitter:creator" content="@pawelgrzybek" />
+
+  {{ "<!-- Standard Stuff -->" | safeHTML }}
+  <link rel="canonical" href="{{ .Permalink | absURL }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href="{{ .Site.BaseURL }}feed.xml" />
+  <link rel="alternate" type="application/feed+json" title="{{ .Site.Title }}" href="{{ .Site.BaseURL }}feed.json" />
+
+  {{ "<!-- Favicons -->" | safeHTML }}
+  {{ "<!-- https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs -->" | safeHTML }}
+  <link rel="icon" href="/favicon.ico" sizes="32x32"><!-- 32×32 -->
+  <link rel="icon" href="/icon.svg" type="image/svg+xml"><!-- 16×16 -->
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png"><!-- 180×180 -->
+  <link rel="manifest" href="/manifest.webmanifest">
+  
+  {{ "<!-- This is required to enable viewTransition API -->" | safeHTML }}
+  {{ "<!-- This is required to enable viewTransition API for navigations -->" | safeHTML }}
+  {{ "<!-- It is an experimental implementation -->" | safeHTML }}
+  <meta name="view-transition" content="same-origin" />
+
+  {{ "<!-- Styles -->" | safeHTML }}
+  {{- $styles := resources.Get "scss/styles.scss" | toCSS (dict "outputStyle" "compressed") | minify }}
+  <style>{{ $styles.Content | safeCSS }}</style>
+</head>

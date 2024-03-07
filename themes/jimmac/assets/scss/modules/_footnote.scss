@@ -1,0 +1,17 @@
+a[href^="#fn"] {
+  text-decoration: none;
+}
+
+a[href^="#fn:"] {
+  &::before {
+    content: "[";
+  }
+
+  &::after {
+    content: "]";
+  }
+}
+
+.footnotes hr {
+  margin-block-end: var(--lh);
+}
