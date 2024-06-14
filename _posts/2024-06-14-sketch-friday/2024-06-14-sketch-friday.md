@@ -7,7 +7,7 @@ tags:
 - procreate
 ---
 
-I've been posting a few sketches on [my mastodon](https://mastodon.social/@jimmac) every Friday. They are mostly sketches of [application icon process](https://gitlab.gnome.org/Teams/Design/app-icon-requests/-/issues/43), but not always. Follow, like, subscribe!
+I've been posting a few sketches on [my mastodon](https://mastodon.social/@jimmac) every Friday. They are mostly sketches of [application icon design process](https://gitlab.gnome.org/Teams/Design/app-icon-requests/-/issues/43), but not always. Follow, like, subscribe!
 
 ![04e5ae648d8b3640](04e5ae648d8b3640.png)
 ![Exhibit2](Exhibit2.png)
