@@ -57,6 +57,8 @@ Lastly, there’s `Symbolic Soup`, which is, well... a bit chaotic. It might not
 
 If you're wondering about the strange square aspect ratio, take a look at the wallpaper sizing guide in our [GNOME Interface Guidelines](https://developer.gnome.org/hig/reference/backgrounds.html).
 
+Also worth noting is the fact that all of these wallpapers have been created by humans. While I've experimented with image generation for some parts of the workflow in some of of my personal projects, all this work is *AIgen-free* and [explicitly credited](https://gitlab.gnome.org/GNOME/gnome-backgrounds/-/blob/main/AUTHORS?ref_type=heads).
+
 <style type="text/css">
 .walls {
 	display: grid;
