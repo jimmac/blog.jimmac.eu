@@ -10,20 +10,20 @@ tags:
 - art
 ---
 
-With the 47 release out, it's my bi-annual duty to bore you with detail about the wallpapers. To many, these are just little trinkets, stickers that go along the product. But GNOME wallpapers are the aesthetic pillars of the project and carriers of the visual brand. The characteristic blue default with the dark top bar is a key visual anchor.
+With GNOME 47 out, it’s time for my bi-annual wallpaper deep dive. For many, these may seem like simple background images, but GNOME wallpapers are the visual anchors of the project, defining its aesthetic and identity. The signature blue wallpaper with its dark top bar remains a key part of that.
 
 ![GNOME 47 Wallpapers](wallpapers-l.webp)
 
-GNOME 47 doesn't ship with dramatic changes to the default blue wallpaper. It has been slightly tweaked, but the main motive, rounded triangles remain. The small touch that some may have noticed is that the dark variant mimicks the real world in that the aperture of the camera opens up wider and thus the depth of field is shallower for dark.
+In this release, GNOME 47 doesn’t overhaul the default blue wallpaper. It's more of a subtle tweak than a full redesign. The familiar rounded triangles remain, but here’s something neat: the dark variant mimics real-world camera behavior. When it's darker, the camera’s aperture widens, creating a shallower depth of field. A small but nice touch for those who notice these things.
 
 <video controls nosound autoplay loop class="image full">
 <source src="{{site.url}}{{page.url}}focus.webm" type="video/webm">
 <source src="{{site.url}}{{page.url}}focus.mp4" type="video/mp4">
 </video>
 
-The supplemental wallpapers is where most of the updates happened this cycle though.
+The real action this cycle, though, is in the supplemental wallpapers.
 
-There have not been that many removals as the filesize of the JXL wallpapers isn't pushing us too much to remove old cruft, so it's mainly an issue of providing enough variation and not repeat ourselves much visually. We want to have a fairly varied selection. Notably photographic wallpapers [are still missing](https://gitlab.gnome.org/GNOME/gnome-backgrounds/-/issues/20), hopefully we can address that thorn in the future.
+We haven’t had to remove much this time around, thanks to the JXL format keeping file sizes manageable. The focus has been on variety rather than cutting old designs. We aim to keep things fresh, though you might notice that photographic wallpapers are still missing (we’ll get to that eventually, [promise](https://gitlab.gnome.org/GNOME/gnome-backgrounds/-/issues/20).
 
 In terms of fine tuning changes, the classic, `Pixels` has been updated to feature newer apps from [GNOME Circle](https://circle.gnome.org).
 
@@ -32,15 +32,15 @@ In terms of fine tuning changes, the classic, `Pixels` has been updated to featu
 <source src="{{site.url}}{{page.url}}pixels-timelapse.mp4" type="video/mp4">
 </video>
 
-The dark variant of `Pills` has received some lighting and shading updates and features a subtle sub surface scattering shading. 
+The dark variant of `Pills` also got some love with lighting and shading tweaks, including a subtle subsurface scattering effect.
 
-As for new additions, this release has quite a few. I've worked with Dominik Baran to deliver a tube-map-inspired vector wallpaper, which I'm a big fan of. As a wink to the Vera Molnar a simple geometric `Mollnar` is making use of the SVG format.
+As for the new wallpapers, there are a few cool additions this release. I collaborated with *Dominik Baran* to create a tube-map-inspired vector wallpaper, which I’m particularly into. There’s also `Mollnar`, a nod to Vera Molnar, using simple geometric shapes in SVG format.
 
-Majorty of our wallpapers are still bitmap, as our renderers don't quite provide means to fight color banding. Some designs are much more efficient as simple vector artowk though. Other platforms seem to lean into mesh gradients which we also currently have to render into bitmaps. 
+Most of our wallpapers are still bitmaps, largely because our rendering tools don’t yet handle color banding well with vectors. For now, even designs that would work better as vectors—like mesh gradients—get converted to bitmaps.
 
-Some more abstract shapes have been introduced -- `Sheet` and `Swoosh`. Can't have enough pixel icons, so a few variants of oldschool single bit aesthetic comes with `LCD` and `LCD-rainbow`. Both are rendered with a simulated screen vibe, even though the realism breaks apart in the color gradient variant.
+We’ve introduced some new abstract designs as well -- meet `Sheet` and `Swoosh`. And for fans of pixel art, we’ve added `LCD` and its colorful sibling, `LCD-rainbow`. Both give off that retro screen vibe, even if the color gradient realism isn’t real-world accurate.
 
-And last but not least a bit of visually overwheling `Symbolic Soup`, which will probably not appeal to everyone, but provides some variety in the default selection. 
+Lastly, there’s `Symbolic Soup`, which is, well... a bit chaotic. It might not be everyone’s cup of tea, but it definitely adds variety.
 
 ## Preview
 
