@@ -1,7 +1,7 @@
 ---
 title: GNOME 47 Wallpapers
 date: 2024-09-24
-image: wallpapers.webp
+image: walls.png
 tags:
 - work
 - gnome
