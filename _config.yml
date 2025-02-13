@@ -81,6 +81,7 @@ exclude:
   - lighthouse.png
   - klise-*.gem
   - klise.gemspec
+  - "_posts/*/*.svg"
 
 # Plugins
 plugins:
