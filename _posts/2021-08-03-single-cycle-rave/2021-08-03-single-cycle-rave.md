@@ -27,7 +27,11 @@ Listen right here:
 </audio>
 
 Watch a video:
+<!-- vimeo is a racket
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/582257195" width="640" height="360" frameborder="0" allowfullscreen><a href="https://vimeo.com/582257195">Watch on Vimeo</a></iframe>
+-->
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BY53z4srXos?si=Ai4UX6iZxbVLijyO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 [Previously]({% post_url  2021-06-07-troubled-minister/2021-06-07-troubled-minister %}),
 [Previously]({% post_url  2021-05-24-what-am-i/2021-05-24-what-am-i %}),

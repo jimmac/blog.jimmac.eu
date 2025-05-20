@@ -12,8 +12,11 @@ It's been exactly one year since I've done the foolish thing and changed my blog
 
 I've produced a [fraction of my drone videos](https://www.youtube.com/c/JakubSteiner/videos) from the past years in 2021 and haven't practiced or raced nearly at all this year. This void has been fully filled by music and synthesizers. After two decades of hiatus I enjoy making music again. Fully aware how crude and awful I am at it, there isn't any other medium where I enjoy my own creations as much as music.
 
+<!-- vimeo is a racket
 <div style="padding:56.25% 0 0 0;position:relative; margin-bottom: 4rem"><iframe src="https://player.vimeo.com/video/659013844?h=7c5e2e6e6d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="M8: Pentatonic Bells"><a href="https://vimeo.com/659013844"><img alt="" src="https://i.vimeocdn.com/video/1330929646-551100facd07bfea08afa1f58508c42ad9660dcbc18f8abfa5e8f8eae175b352-d?mw=700&mh=394"></a></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+-->
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0tShCs6BMrE?si=-IBul5PXzQS5cQSR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 I've also come back to pixel art, even though the joy is a lot tainted by the tools I use. Very convenient, very direct, so much fun, very proprietary. 
 

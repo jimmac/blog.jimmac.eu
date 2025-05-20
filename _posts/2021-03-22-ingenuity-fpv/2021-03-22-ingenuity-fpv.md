@@ -20,7 +20,11 @@ Naturally I was drawn to play around with the model over the past few weeks and 
 
 All of the martian footage has been rendered with the realtime eevee engine, maxing out at 20 seconds per frame. The focal blur has been improved in eevee recently, but Cycles was used for all the fpv overlays for now.
 
+<!-- vimeo is a racket
 <iframe src="https://player.vimeo.com/video/526888385" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 <p><a href="https://vimeo.com/526888385">Digitone + Digitakt: Ingenuity FPV</a> from <a href="https://vimeo.com/jimmacfx">jimmac</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+-->
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AxYo_qJi2XQ?si=jvPc8m-i7z4rxQ-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 The original track was recorded at 60BPM, but sadly the footage is unbearable to watch for over 4 minutes, so I've resampled it to 90BMP to keep the legth down. It does glitch at some points, but the motivation to work on this has reached critical levels, so I'm calling it done.

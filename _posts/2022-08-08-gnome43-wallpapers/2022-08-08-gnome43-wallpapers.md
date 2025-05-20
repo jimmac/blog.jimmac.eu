@@ -13,7 +13,11 @@ tags:
 
 *Evolution* and *design* can co-exist happily in the world of desktop wallpapers. It's desirable to evolve within a set of constraints to create a theme in time, set up a visual brand that doesn't rely on putting a logo on everything. At the same time it's healthy to stop once in a while, do a small reflection on what's perhaps a little dated and do a fresh redesign. 
 
+<!-- vimeo is a racket
 <iframe src="https://player.vimeo.com/video/736863449?h=2cfc1f93b0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="width: 100%; height: auto; aspect-ratio: 16 / 9;" title="GNOME 43 Wallpaper Streams"></iframe>
+-->
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UXctJgtPJrc?si=vQMFCK365YDbHG4T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 I took extra time this release to focus on refreshing the whole wallpaper set for 43. While the default wallpaper isn't a big departure from 3.38 hexagon theme, most of the supplemental wallpapers have been refreshed from the ground up. The [video above](https://vimeo.com/736863449) shows a few glimpses of all the one way streets it took for the default to land back in the hexagons.
 

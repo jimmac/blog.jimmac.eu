@@ -19,9 +19,12 @@ To make [Boatswain](https://feaneron.com/2022/03/17/boatswain-your-stream-deck-a
 
 Sadly I've already invested in [an appliance that covers my video streaming and recording needs](https://www.blackmagicdesign.com/products/atemmini), so I wasn't going to buy the gear to test how things look. Instead I made the device virtual, and rendered an approximation of it in [Blender](https://flathub.org/apps/details/org.blender.Blender).
 
+<!-- vimeo is a racket 
 <iframe src="https://player.vimeo.com/video/697659862?h=41eb37e115&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="width: 100%; height: auto; aspect-ratio: 16 / 9;"></iframe>
 <script src="https://player.vimeo.com/api/player.js"></script>
+-->
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RAv6eNpBnBY?si=8GraybI2ZjzOFSXx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 For [GNOME wallpapers](https://gitlab.gnome.org/GNOME/gnome-backgrounds/) there are cases where I have to resort to waiting on Cycles, but if you compare this 2 minute render (left) to the 0.5s render (right) it's really not worth it in many cases. 
 

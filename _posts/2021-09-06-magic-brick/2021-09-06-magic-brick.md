@@ -18,5 +18,9 @@ Ever since I switched from photo to video as my default media format of capturin
 All of these fields have been getting steady improvements and I always fantasize how my young self would react to seeing footage taken from a tiny little rectangle I carry around in my pocket. 
 It is just incredible that the footage below is hand held and the cameraman is not driving a onewheel or using a gimbal, steadycam or some other aid. Just ninja walking. When do we stop calling these magic bricks phones?
 
+<!-- vimeo is a racket
 <iframe src="https://player.vimeo.com/video/598486554?h=0280aa9489" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 <p><small><a href="https://vimeo.com/598486554">Skate Your Name: Patrik</a> from <a href="https://vimeo.com/jimmacfx">jimmac</a> on <a href="https://vimeo.com">Vimeo</a>. Music arranged on <a href="https://polyend.com/tracker/">Polyend Tracker</a>.</small></p>
+-->
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Kg9hSbVFzSk?si=Ocz2lBBKqQpfHRJt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

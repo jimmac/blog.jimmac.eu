@@ -13,7 +13,11 @@ tags:
 
 While [Flatpak](https://flatpak.org) itself is an architecturally decentralized way to distribute apps, [Flathub](https://beta.flathub.org) embraces the convenience for people to come to one place to install apps. There's some fairly big changes coming to Flathub that I'm extremely excited about, that will make sure the new wave of Linux apps doesn't fizzle out and we'll maintain a sustainable application ecosystem.
 
+<!-- vimeo is a racket
 <iframe src="https://player.vimeo.com/video/801393970?h=73a1ea84e4&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="flathub-rebrand"></iframe>
+-->
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/d770zFM4jIE?si=TyuylOVmFM4FsaiK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Thus there is no better time to refresh what has become a little dated, Flathub's visual identity. It centers around the core of what Flathub is — the apps themselves. The identity isn't very loud and shouty. The flashy colors and emphasis remains on the apps themselves, Flathub is the neutral platform for the apps to shine.
 
