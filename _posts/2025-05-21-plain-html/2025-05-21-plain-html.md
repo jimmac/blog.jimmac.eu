@@ -23,9 +23,7 @@ At SUSE I've tasted the DRY principles while working on a Rails project, SUSE St
 
 People are often surprised to see major projects like [gnome.org](https://www.gnome.org), [brand.gnome.org](https://brand.gnome.org), [circle.gnome.org](https://circle.gnome.org) and my own [jimmac.eu](https://jimmac.eu) built with plain HTML. Yes you *do repeat yourself* and inconsistencies creep in. But with integrated version control and web based editors, fixes are a click away. More people can edit plain HTML than any bespoke stack.
 
-Do I miss some form of `include()`? Sure. Would I reach for  Jekyll+markdown someone else is responsible for the content? Probably. But for focused, small sites, nothing beats good old HTML.
+Do I miss some form of `include()`? Sure. Would I reach for Jekyll+markdown when someone else is responsible for the content? Probably. But for focused, small sites, nothing beats good old HTML.
 
-[comment]: <> <a href="{{ site.url }}{{ page.url }}">absolute links</a>
-[comment]: [Previously]({% post_url 2021-02-25-tour-sketches/2021-02-25-tour-sketches %}).
 
 
