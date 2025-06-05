@@ -19,6 +19,8 @@ html {
   width: 100vW;
 }
 
+@view-transition { navigation: auto; } /* fancy transitions */
+
 body,
 h1,
 h2,
