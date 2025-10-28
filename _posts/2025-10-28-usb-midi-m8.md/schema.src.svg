@@ -24,11 +24,11 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
      showgrid="false"
-     inkscape:zoom="2.8284271"
-     inkscape:cx="195.16147"
-     inkscape:cy="176.7767"
-     inkscape:window-width="2229"
-     inkscape:window-height="1195"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="287.43891"
+     inkscape:cy="189.50462"
+     inkscape:window-width="2520"
+     inkscape:window-height="1173"
      inkscape:window-x="26"
      inkscape:window-y="23"
      inkscape:window-maximized="0"
@@ -50,6 +50,23 @@
   </sodipodi:namedview>
   <defs
      id="defs1">
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect1"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,10.331029,0,1 @ F,0,1,1,0,10.331029,0,1 @ F,0,0,1,0,0,0,1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
     <inkscape:path-effect
        effect="fillet_chamfer"
        id="path-effect25"
@@ -1806,9 +1823,9 @@
          style="text-align:center;text-anchor:middle;fill:#1a5fb4;stroke-width:2.00001">Unpowered USB HUB</tspan></text>
     <path
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;stroke:#1a5fb4;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.894118;-inkscape-stroke:none;paint-order:markers fill stroke;stop-color:#000000;stop-opacity:1"
-       d="m 224,200 v 10 h -60 v 10"
+       d="m 224,200 a 10.166862,10.166862 135.93281 0 1 -10.33103,10 H 174.33103 A 10.166862,10.166862 135.93281 0 0 164,220"
        id="path20"
-       inkscape:path-effect="#path-effect25"
+       inkscape:path-effect="#path-effect1"
        inkscape:original-d="m 224,200 v 10 h -60 v 10" />
     <rect
        style="font-variation-settings:normal;opacity:1;fill:#5e5c64;fill-opacity:1;stroke:#241f31;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.894118;paint-order:markers fill stroke"
