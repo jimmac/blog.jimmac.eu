@@ -1,0 +1,12 @@
+I"k<p>This post is very unlikely for you. It’s for future me.</p>
+
+<p>The little magic box that is the <a href="https://dirtywave.com/">Dirtywave M8 tracker</a> is pretty well supported in Linux. It works great as an audio device (input and output), it does usb midi and you can also use its remote display using <a href="https://github.com/laamaa/m8c">laamaa’s m8c</a> which now also does audio monitoring.</p>
+
+<p>M8c isn’t an app, so it’s a bit of a hassle to build it and use it from within a <a href="https://containertoolbx.org/">toolbx</a>. Regular Linux distro chore. In addition, to update its firmware, which <a href="https://trash80.com/">Timothy</a> pushes very frequently and brings <a href="https://www.youtube.com/watch?v=DivKR6x5-Uo">amazing new functionality</a>, requires adding udev rules to have the device writable by a user. Which is what this post is about. I have no clue what I’m doing, but having this config in <code class="language-plaintext highlighter-rouge">/etc/udev/rules.d/50-myusb.rules</code> (first is the regular device for m8c and the latter is the second stage of the firmware update using <a href="https://github.com/Koromix/tytools/releases">tytools</a>):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SUBSYSTEMS=="usb", ATTRS{idVendor}=="16c0", ATTRS{idProduct}=="048a", GROUP="users", MODE="0666"
+KERNEL=="hidraw*", ATTRS{idVendor}=="16c0", GROUP="users", MODE="0666"
+</code></pre></div></div>
+
+<p>Enjoy my last track, <a href="https://music.jimmac.eu/sines">Sines of our fathers</a> if you don’t care of any of the above ;)</p>
+:ET

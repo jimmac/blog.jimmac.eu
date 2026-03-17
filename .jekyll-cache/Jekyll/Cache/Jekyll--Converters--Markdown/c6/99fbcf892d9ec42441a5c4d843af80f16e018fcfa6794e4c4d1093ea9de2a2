@@ -1,0 +1,80 @@
+I"²
+<p>To keep the habbit alive, I continue to do a <a href="/2021/mopixels/">daily pixel routine</a>, now covering almost all of the <a href="https://circle.gnome.org">GNOME Circle</a> apps.</p>
+
+<p class="pixelicons"><img src="IMG_0425.PNG" alt="x" />
+<img src="IMG_0426.PNG" alt="x" />
+<img src="IMG_0427.PNG" alt="x" />
+<img src="IMG_0428.PNG" alt="x" />
+<img src="IMG_0429.PNG" alt="x" />
+<img src="IMG_0430.PNG" alt="x" />
+<img src="IMG_0431.PNG" alt="x" />
+<img src="IMG_0432.PNG" alt="x" />
+<img src="IMG_0433.PNG" alt="x" />
+<img src="IMG_0434.PNG" alt="x" />
+<img src="IMG_0435.PNG" alt="x" />
+<img src="IMG_0436.PNG" alt="x" />
+<img src="IMG_0437.PNG" alt="x" />
+<img src="IMG_0439.PNG" alt="x" />
+<img src="IMG_0440.PNG" alt="x" />
+<img src="IMG_0441.PNG" alt="x" />
+<img src="IMG_0442.PNG" alt="x" />
+<img src="IMG_0443.PNG" alt="x" />
+<img src="IMG_0444.PNG" alt="x" />
+<img src="IMG_0445.PNG" alt="x" />
+<img src="IMG_0446.PNG" alt="x" />
+<img src="IMG_0447.PNG" alt="x" />
+<img src="IMG_0448.PNG" alt="x" />
+<img src="IMG_0449.PNG" alt="x" />
+<img src="IMG_0450.PNG" alt="x" />
+<img src="IMG_0451.PNG" alt="x" />
+<img src="IMG_0452.PNG" alt="x" />
+<img src="IMG_0453.PNG" alt="x" />
+<img src="IMG_0454.PNG" alt="x" />
+<img src="IMG_0455.PNG" alt="x" />
+<img src="IMG_0456.PNG" alt="x" />
+<img src="IMG_0457.PNG" alt="x" />
+<img src="IMG_0458.PNG" alt="x" />
+<img src="IMG_0459.PNG" alt="x" />
+<img src="IMG_0460.PNG" alt="x" />
+<img src="IMG_0461.PNG" alt="x" />
+<img src="IMG_0463.PNG" alt="x" />
+<img src="IMG_0464.PNG" alt="x" /></p>
+
+<p>Iâ€™ve been practicing the art of animation a little too in an effort to promote GNOME Circle on <a href="https://twitter.com/jimmac">Twitter</a> and <a href="https://mastodon.social/web/@jimmac">Mastodon</a>. Presenting all these GIFs would probably not be kind to <a href="http://planet.gnome.org">Planet GNOME</a> readers though. Perhaps I could compose a video in the future (no GIF support in Blender, strangely!). Keep grinding your (pointless) skills, kids!</p>
+
+<style type="text/css">
+.pixelicons {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	gap: 4rem;
+}
+.pixelicons img {
+	display: block;
+	width: 100%; height: auto;
+	image-rendering: crisp-edges; image-rendering: pixelated;
+	transition: transform 600ms ease-out;
+	align-self: center;
+}
+
+@media only screen and (min-width: 640px) {
+	.pixelicons { grid-template-columns: repeat(4,1fr); gap: 3rem; }
+	.pixelicons img:nth-child(10n) {
+		grid-column: span 2;
+		grid-row: span 2;
+	}
+}
+.pixelicons img:hover {
+	transition: transform 100ms ease-out;
+	transform: scale(1.2);
+}
+.pixelicons img:active {
+	transition: none;
+	width: 32px;
+	transform: scale(1);
+}
+
+
+</style>
+
+<p><a href="/2021/mopixels/">Previously</a></p>
+:ET

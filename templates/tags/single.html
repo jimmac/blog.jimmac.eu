@@ -1,0 +1,22 @@
+{% import "macros.html" as macros %}
+{% extends "base.html" %}
+
+{% block body %}
+<div class="wrapper">
+  <header class="header">
+    <h1 class="header-title center">{{ term.name | upper }}.</h1>
+  </header>
+  <main class="page-content" aria-label="Content">
+    {% for post in term.pages %}
+      <article class="post-item">
+        <span class="post-item-date">{{ post.date | date(format="%b %d, %Y") }}</span>
+        <h3 class="post-item-title">
+          <a href="{{ post.permalink }}">{{ post.title }}</a>
+        </h3>
+      </article>
+    {% endfor %}
+  </main>
+  <footer class="footer"></footer>
+  <script src="/assets/js/main.js" defer="defer"></script>
+</div>
+{% endblock body %}

@@ -1,0 +1,60 @@
+I"<p>Builder has been absolutely wonderful for a designer to dive in and fix up graphics assets for Application. It allows to easily build and test run patches before submitting a merge/pull request on apps hosted on gitlab or github. Ideally you’d press the <code class="language-plaintext highlighter-rouge">run button</code> and voilá.</p>
+
+<p>What has been far from wonderful — doing even one line fixes for the GNOME Shell was very hard to test for anyone not building shell daily. getting the environment ready every release has been a chore. From virtual machines, jhbuild, toolbox, jhbuild in VMs to jhbuild in toolbox there was a dozen of way to fail building the latest shell.</p>
+
+<p><img src="toolbox.gif" alt="Toolbox/Podman targets in Builder" class="pixels full" /></p>
+
+<p>Builder 43, impressively marathoned into perfection, features (among many other things) the ability to target <a href="https://containertoolbx.org">Toolbox</a>/podman containers as development environments. So I was really happy to see <a href="https://mastodon.social/@dylanmccall@mastodon.online/109243458052123633">Bylan McCall</a> have a nested session going on the run button.</p>
+
+<p>Now I couldn’t get the full detailed receipe out of him, but as they say it’s easier to get the internet prove you wrong than to give you advice, here’s my terrible way (with some help from the most authoritative capacities that probably don’t want anything to do with this pkexec hack):</p>
+
+<p>1) Create a toolbx container and install all gnome-shell dependencies.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>toolbox create shell
+toolbox enter shell
+sudo dnf install gnome-shell mutter ninja-build meson
+sudo dnf builddep gnome-shell mutter
+</code></pre></div></div>
+
+<p>While at the beginning of a cycle packages cover most of the dependencies, at the later stages you’ll have to build more things (Usually <code class="language-plaintext highlighter-rouge">gsettings-desktop-schemas</code>, <code class="language-plaintext highlighter-rouge">libgweather</code>, <code class="language-plaintext highlighter-rouge">gjs</code>, <code class="language-plaintext highlighter-rouge">gcr</code> and <code class="language-plaintext highlighter-rouge">mutter</code>). We’re in a container so I just oldschool brute install to <code class="language-plaintext highlighter-rouge">--prefix=/usr</code>. To build mutter for example I’d</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir ~/Projects
+cd ~/Projects
+git clone https://gitlab.gnome.org/GNOME/mutter.git
+cd mutter
+meson --prefix=/usr build '-Dman=false'
+ninja -C build
+sudo ninja -C build install
+</code></pre></div></div>
+
+<p>So assuming we have successfuly built shell in the <code class="language-plaintext highlighter-rouge">shell</code> toolbox container, we’ll move over to Builder.</p>
+
+<p>2) In Builder, open the project we cloned to <code class="language-plaintext highlighter-rouge">~/Projects/gnome-shell</code>. Create a new configuration (<code class="language-plaintext highlighter-rouge">Alt+,</code>) by duplicating the <code class="language-plaintext highlighter-rouge">Default</code>. Change the runtime to <code class="language-plaintext highlighter-rouge">shell</code> (the toolbx containers are below the usual flatpak runtimes). Set the <em>Installation Prefix</em> to <code class="language-plaintext highlighter-rouge">/usr</code>. Don’t forget to make it active (<code class="language-plaintext highlighter-rouge">Make Active</code>).</p>
+
+<p>3) Still in configuration, in the <code class="language-plaintext highlighter-rouge">Commands</code> section, create a new command (call it <em>Run Nested Shell</em>):</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dbus-run-session gnome-shell --wayland --nested
+</code></pre></div></div>
+<p>At the bottom of the dialog <code class="language-plaintext highlighter-rouge">add a Variable</code>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MUTTER_DEBUG_DUMMY_MODE_SPECS=1920x1080
+</code></pre></div></div>
+<p>This will make the shell run at least in HD, rather than the super tiny default size.</p>
+
+<p>4) In the <em>Application</em> section, change the <code class="language-plaintext highlighter-rouge">Run Command</code> from <em>Automatically Discover</em> to our <em>Run Nested Shell</em>. Now we only need to do the last nasty bit to allow for the install to <code class="language-plaintext highlighter-rouge">/usr</code> to succeed.</p>
+
+<p>5) Open a new <em>runtime terminal</em> (<code class="language-plaintext highlighter-rouge">Ctrl+Alt+T</code>) and replace pkexec with a <code class="language-plaintext highlighter-rouge">just-do-it</code> script. It’s a container, it’s fiiiiine, chill.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /usr/bin
+mv pkexec pkexec.orig
+</code></pre></div></div>
+
+<p>Now with your preferred CLI editor create the following shell script in place of pkexec:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/bin/bash
+su -c "$*"
+</code></pre></div></div>
+
+<p>Set it executable with <code class="language-plaintext highlighter-rouge">chmod +x pkexec</code>.</p>
+
+<p><img src="build-config.webp" alt="Build Configurations" /></p>
+
+<p>Now pressing the run button should build your shell, install it and run the nested session. Hopefully stylesheet patches will be less painful now, maybe?</p>
+
+<p>Please do not hesistate to <a href="https://mastodon.social/@jimmac">toot at me</a> what the proper way is rather than installing to <code class="language-plaintext highlighter-rouge">/usr</code></p>
+:ET

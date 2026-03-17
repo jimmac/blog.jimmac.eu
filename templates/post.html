@@ -1,0 +1,91 @@
+{% import "macros.html" as macros %}
+{% extends "base.html" %}
+
+{% block body %}
+<div class="wrapper post">
+  <main class="page-content" aria-label="Content">
+    <article itemscope itemtype="https://schema.org/BlogPosting">
+
+      <header class="header">
+        {% if page.taxonomies.tags %}
+        <div class="tags">
+          <span itemprop="keywords">
+            {% for tag in page.taxonomies.tags %}
+            <a class="tag" href="{{ get_taxonomy_url(kind='tags', name=tag) }}">{{ tag | upper }}</a>{% if not loop.last %},{% endif %}
+            {% endfor %}
+          </span>
+        </div>
+        {% endif %}
+
+        <h1 class="header-title" itemprop="headline">{{ page.title }}</h1>
+
+        {% if page.date %}
+        <div class="post-meta">
+          <time datetime="{{ page.date | date(format='%+') }}" itemprop="datePublished">
+            {{ page.date | date(format="%b %d, %Y") }}
+          </time>
+          <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+            <span itemprop="name">{{ config.extra.author.name }}</span>
+          </span>
+          {% if page.extra.modified %}
+          <time hidden datetime="{{ page.extra.modified }}" itemprop="dateModified">
+            {{ page.extra.modified }}
+          </time>
+          {% endif %}
+          <span hidden itemprop="publisher" itemtype="Person">{{ config.extra.author.name }}</span>
+          {% if page.extra.image %}
+          <span hidden itemprop="image">{{ page.extra.image }}</span>
+          {% endif %}
+          <span hidden itemprop="mainEntityOfPage">{{ page.summary }}</span>
+        </div>
+        {% endif %}
+      </header>
+
+      <div class="page-content" itemprop="articleBody">
+        {{ page.content | safe }}
+        {% if page.extra.tweet %}
+        <p>Comments on this article on
+          <a href="https://twitter.com/{{ config.extra.author.twitter }}/status/{{ page.extra.tweet }}">Twitter</a>.
+        </p>
+        {% endif %}
+      </div>
+    </article>
+
+    {% if page.extra.comments %}
+      <script src="https://utteranc.es/client.js"
+        repo="username/reponame"
+        issue-term="pathname"
+        label="✨ comment ✨"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+      </script>
+    {% endif %}
+
+  </main>
+
+  {% if page.extra.modified %}
+    <small class="post-updated-at">updated_at {{ page.extra.modified }}</small>
+  {% endif %}
+
+  {% if page.lower or page.higher %}
+  <nav class="post-nav">
+    {% if page.lower %}
+    <a class="post-nav-item post-nav-prev" href="{{ page.lower.permalink }}">
+      <div class="nav-arrow">Previous</div>
+      <span class="post-title">{{ page.lower.title }}</span>
+    </a>
+    {% endif %}
+    {% if page.higher %}
+    <a class="post-nav-item post-nav-next" href="{{ page.higher.permalink }}">
+      <div class="nav-arrow">Next</div>
+      <span class="post-title">{{ page.higher.title }}</span>
+    </a>
+    {% endif %}
+  </nav>
+  {% endif %}
+
+  <footer class="footer"></footer>
+  <script src="/assets/js/main.js" defer="defer"></script>
+</div>
+{% endblock body %}

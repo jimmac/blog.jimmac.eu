@@ -1,0 +1,23 @@
+I"R
+<p><img src="connections-hope.png" alt="Connections: Hope" /></p>
+
+<div class="inlineimgs">
+  <p><a href="connections-1.png"><img src="connections-1.png" alt="" /></a>
+<a href="connections-2.png"><img src="connections-2.png" alt="" /></a>
+<a href="connections-3.png"><img src="connections-3.png" alt="" /></a>
+<a href="connections-4.png"><img src="connections-4.png" alt="" /></a></p>
+</div>
+
+<p>GNOME 41 is now UI frozen, so without spoiling the release much, I’d like to share some of the explorations that led to some of the onboarding in both app space (mostly <a href="https://flathub.org/apps/details/org.gnome.Connections">Connections</a>) and the new <a href="https://gitlab.gnome.org/GNOME/gnome-tour">Tour</a>.</p>
+
+<p><img src="tour-6.png" alt="Tour: Welcome" /></p>
+
+<div class="inlineimgs">
+  <p><a href="tour-1.png"><img src="tour-1.png" alt="" /></a>
+<a href="tour-7.png"><img src="tour-7.png" alt="" /></a>
+<a href="tour-3.png"><img src="tour-3.png" alt="" /></a>
+<a href="tour-4.png"><img src="tour-4.png" alt="" /></a></p>
+</div>
+
+<p><a href="/2021/tour-sketches/">Previously</a>.</p>
+:ET

@@ -1,0 +1,44 @@
+{% import "macros.html" as macros %}
+{% extends "base.html" %}
+
+{% block body %}
+<div class="wrapper">
+  <header class="header">
+    <h1 class="header-title center" itemprop="headline">Archive.</h1>
+  </header>
+  <main class="page-content" aria-label="Content">
+
+    <div class="search-article">
+      <label for="search-input" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+          fill="none" stroke="rgba(128,128,128,0.8)" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </label>
+      <input type="search" id="search-input" placeholder="Find some articles here" aria-label="Search">
+    </div>
+    <ul id="search-results"></ul>
+
+    {% set_global current_year = "" %}
+    {% set posts = get_section(path="posts/_index.md") %}
+    {% for post in posts.pages %}
+      {% set year = post.date | date(format="%Y") %}
+      {% if year != current_year %}
+        <h2>{{ year }}</h2>
+        {% set_global current_year = year %}
+      {% endif %}
+      <article class="post-item">
+        <h3 class="post-item-title">
+          <a href="{{ post.permalink }}">{{ post.title }}</a>
+        </h3>
+      </article>
+    {% endfor %}
+
+  </main>
+  <footer class="footer"></footer>
+  <script src="/assets/js/main.js" defer="defer"></script>
+  <script src="/assets/js/search.js"></script>
+</div>
+{% endblock body %}
