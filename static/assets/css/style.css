@@ -934,6 +934,15 @@ pre.highlight, pre {
 img.centered { display: block; margin: auto; }
 img.full     { display: block; width: 100%; }
 
+audio[controls] {
+  display: block;
+  width: 80%;
+  margin: 1.5em auto;
+  border-radius: 64px;
+  background: var(--color-code-bg);
+  accent-color: var(--color-link);
+}
+
 img.fullcoloricon {
   display: block;
   width: 256px;
