@@ -30,6 +30,7 @@
         {% set_global current_year = year %}
       {% endif %}
       <article class="post-item">
+        <span class="post-item-date">{{ post.date | date(format="%b %d") }}</span>
         <h3 class="post-item-title">
           <a href="{{ post.permalink }}">{{ post.title }}</a>
         </h3>
