@@ -934,6 +934,7 @@ pre.highlight, pre {
 img.centered { display: block; margin: auto; }
 img.full     { display: block; width: 100%; }
 
+/* native fallback if JS hasn't loaded */
 audio[controls] {
   display: block;
   width: 80%;
@@ -941,6 +942,102 @@ audio[controls] {
   border-radius: 64px;
   background: var(--color-code-bg);
   accent-color: var(--color-link);
+}
+
+/* ============================================================
+   CUSTOM AUDIO PLAYER
+   ============================================================ */
+
+.audio-player {
+  width: 60%;
+  margin: 1.5em auto;
+  padding: 1.25rem 1.5rem;
+  border-radius: 16px;
+  background: var(--color-code-bg);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-xs);
+  @media (max-width: 768px) { width: 100%; }
+}
+
+.audio-player audio { display: none; }
+
+.ap-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.ap-controls button {
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: var(--color-text);
+  cursor: pointer;
+  padding: 0;
+  line-height: 0;
+  transition: color 150ms, transform 150ms;
+}
+.ap-controls button:hover {
+  color: var(--color-link);
+}
+.ap-controls button:active {
+  transform: scale(0.92);
+}
+
+.ap-seek svg {
+  width: 36px;
+  height: 36px;
+}
+
+.ap-play {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--color-link) !important;
+  color: var(--color-bg) !important;
+  display: grid;
+  place-items: center;
+}
+.ap-play:hover {
+  background: var(--color-link-hover) !important;
+  color: var(--color-bg) !important;
+}
+.ap-play svg {
+  width: 26px;
+  height: 26px;
+}
+.ap-play .icon-pause { display: none; }
+.playing .ap-play .icon-play  { display: none; }
+.playing .ap-play .icon-pause { display: block; }
+
+.ap-progress {
+  margin-top: 1rem;
+}
+
+.ap-track {
+  height: 6px;
+  border-radius: 3px;
+  background: var(--color-subtle);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.ap-fill {
+  height: 100%;
+  width: 0;
+  background: var(--color-link);
+  border-radius: 3px;
+  transition: width 100ms linear;
+}
+
+.ap-time {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.4rem;
+  color: var(--color-muted);
+  font-size: 0.8rem;
 }
 
 img.fullcoloricon {
