@@ -12,7 +12,7 @@
   }));
 
   function updateYearHeadings() {
-    document.querySelectorAll(".page-content h2").forEach((h2) => {
+    document.querySelectorAll("main h2").forEach((h2) => {
       let next = h2.nextElementSibling;
       let hasVisible = false;
       while (next && next.tagName !== "H2") {
@@ -30,7 +30,7 @@
     const q = query.trim().toLowerCase();
     if (q.length < 2) {
       articles.forEach(({ el }) => (el.style.display = ""));
-      document.querySelectorAll(".page-content h2").forEach((h) => (h.style.display = ""));
+      document.querySelectorAll("main h2").forEach((h) => (h.style.display = ""));
       searchResults.innerHTML = "";
       return;
     }
