@@ -1,0 +1,38 @@
+base_url = "https://blog.jimmac.eu"
+title = "Even a Stopped Clock"
+description = "Random musings of a semi-sane designer from lesser Europe."
+default_language = "en"
+
+compile_sass = false
+
+taxonomies = [
+  { name = "tags", feed = true },
+]
+generate_feeds = true
+feed_filenames = ["feed.xml"]
+
+[markdown]
+
+[markdown.highlighting]
+light_theme = "github-light"
+dark_theme = "github-dark"
+
+[extra]
+mode = "dark"
+
+[extra.author]
+name = "Jakub Steiner"
+bio = "Musings of a visual designer from the lesser Europe"
+username = "jimmac"
+github = "jimmac"
+twitter = "jimmac"
+email = "jimmac@gmail.com"
+avatar = "/assets/img/avatar.svg"
+
+[extra.menus]
+items = [
+  { title = "posts",     url = "/",          external = false },
+  { title = "archive",   url = "/archive/",  external = false },
+  { title = "about",     url = "/about/",    external = false },
+  { title = "portfolio", url = "https://jimmac.eu", external = true },
+]

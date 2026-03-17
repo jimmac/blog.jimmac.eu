@@ -1,0 +1,40 @@
+I"
+<p>I’ve created a <a href="https://pipewire.org/">couple</a> <a href="https://fleet-commander.org/">of</a> <a href="https://containertoolbx.org/">minisites</a> for key OS components, built using no frameworks, but plain CSS. Just having CSS grid and variables made it viable for me to avoid using frameworks recently. Having <a href="https://www.w3.org/TR/html-imports/">includes/imports</a> one wouldn’t even need <a href="https://jekyllrb.com/">Jekyll</a>.</p>
+
+<div class="inlineimgs">
+  <p><a href="Flatpak_Website.png"><img src="Flatpak_Website.png" alt="" /></a>
+<a href="Fleet_Commander.png"><img src="Fleet_Commander.png" alt="" /></a>
+<a href="Toolbox_Packages_Within.png"><img src="Toolbox_Packages_Within.png" alt="" /></a>
+<a href="ZBus_Website.png"><img src="ZBus_Website.png" alt="" /></a></p>
+</div>
+
+<p>The founding stone on all of these is the pixel art, which is now becoming my favorite art form.</p>
+
+<p class="pixels"><img src="flatpak.gif" alt="Flatpak" />
+<img src="fleetcommander.gif" alt="Fleet Comander" />
+<img src="toolbox.gif" alt="Toolbox" />
+<img src="zbus.gif" alt="Zbus" /></p>
+
+<style type="text/css">
+.pixels {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	/* grid-template-columns: repeat(auto-fit, minmax(150px,1fr)); */
+	gap: 16px;
+}
+.pixels img {
+	display: block;
+	width: 100%; height: auto;
+	image-rendering: crisp-edges; image-rendering: pixelated;
+	transition: transform 600ms ease-out;
+	align-self: center;
+}
+.pixels img:active {
+	transition: none;
+	width: 135px;
+	transform: scale(1);
+}
+</style>
+
+<p>If you maintain an upstream OS component and are looking to replace a wiki or a markdown readme with a simple site, I’ve <a href="https://github.com/jimmac/os-component-website">created a template</a> to get you started quickly.</p>
+:ET

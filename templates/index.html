@@ -1,0 +1,21 @@
+{% import "macros.html" as macros %}
+{% extends "base.html" %}
+
+{% block body %}
+<div class="wrapper">
+  {{ macros::author() }}
+  <main aria-label="Content">
+    <h3 class="posts-item-note" aria-label="Recent Posts">Recent Posts</h3>
+    {% set posts_section = get_section(path="posts/_index.md") %}
+    {% for post in posts_section.pages | slice(end=5) %}
+    <article class="post-item">
+      <span class="post-item-date">{{ post.date | date(format="%b %d, %Y") }}</span>
+      <h4 class="post-item-title">
+        <a href="{{ post.permalink }}">{{ post.title }}</a>
+      </h4>
+    </article>
+    {% endfor %}
+  </main>
+  {{ macros::footer() }}
+</div>
+{% endblock body %}

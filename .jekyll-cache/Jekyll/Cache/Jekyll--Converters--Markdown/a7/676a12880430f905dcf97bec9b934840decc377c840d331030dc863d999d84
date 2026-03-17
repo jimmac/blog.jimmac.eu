@@ -1,0 +1,26 @@
+I"�<p>The M8 has extensive USB audio and MIDI capabilities, but it cannot be a USB MIDI host. So you can control other devices through USB MIDI, but cannot sent to it over USB.</p>
+
+<h1 id="control-surface--pots-for-m8">Control Surface &amp; Pots for M8</h1>
+
+<p>Controlling things via USB devices has to be done through the old TRS (A) jacks. There’s two devices that can aid in that. I’ve used the <a href="https://retrokits.com/shop/rk006/">RK06</a> which is very featureful, but in a very clumsy plastic case and USB micro cable that has a splitter for the HOST part and USB Power in. It also sometimes doesn’t reset properly when having multiple USB devices attached through a hub. The last bit is why I even bother with this setup.</p>
+
+<p>The Dirtywave M8 has amazing support for the <a href="https://novationmusic.com/products/launchpad-pro-mk3">Novation Launchpad Pro MK3</a>. Majority of peolpe hook it up directly to the M8 using the TRS MIDI cables. The Launchpad lacks any sort of pots or encoders though. Thus the need to fuss with USB dongles. What you need is to use the Launchpad Pro as a USB controller and shun at the reliable MIDI connection. The RK06 allows to combine multiple USB devices attached through an unpowered USB hub. Because I am flabbergasted how I did things here’s a schema that works.</p>
+
+<p><img src="schema.svg" alt="Retrokits RK06 schema" /></p>
+
+<p>If it doesn’t work, unplug the RK06 and turn LPPro off and on in the M8. I hate this setup but it is the only compact one that works (after some fiddling that you absolutely hate when doing a gig).</p>
+
+<h1 id="intech-knot">Intech Knot</h1>
+
+<p>The Hungarians behind the Grid USB controlles (with first class Linux support) have a USB&gt;MIDI device called <a href="https://intech.studio/landing/shop/knot">Knot</a>. It has one great feature of a switch between TRS A/B for the non-standard devices. It is way less fiddly than the RK06, uses nice aluminium housing and is sturdier. Hoewer it doesn’t seem to work with the Launchpad Pro via USB and it seems to be completely confused by a USB hub, so it’s not useful for my use case of multiple USB controllers.</p>
+
+<p><img src="knot.webp" alt="Clean setup with Knot&amp;Grid" /></p>
+
+<h1 id="non-compact-but-reliable">Non-compact but Reliable</h1>
+
+<p>Novation came out with the <a href="https://novationmusic.com/products/launch-control-xl">Launch Control XL</a>, which sadly replaced pots in the old one with encoders (absolute vs relative movement), but added midi in/ou/through with a MIDI mixer even. That way you can avoid USB altogether and get a reliable setup with control surfaces and encoders and sliders.</p>
+
+<p><img src="m8-po16-lpp-mk3.webp" alt="Launchpar Pro and Intech PO16 via USB handled by RK06" /></p>
+
+<p>One day someone comes up with a compact midi capable pots to play along with Launchpad Pro ;) This post has been brought to you by an old man who forgets things.</p>
+:ET

@@ -1,0 +1,18 @@
+{% import "macros.html" as macros %}
+<!DOCTYPE html>
+<html lang="{{ lang | default(value=config.default_language) }}">
+{{ macros::head(
+    title=title | default(value=""),
+    description=description | default(value=""),
+    url=current_url | default(value=config.base_url),
+    image=og_image | default(value=""),
+    lang=lang | default(value=config.default_language)
+) }}
+<body>
+
+  {{ macros::navbar(current_path=current_path | default(value="")) }}
+
+  {% block body %}{% endblock body %}
+
+</body>
+</html>

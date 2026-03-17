@@ -1,0 +1,19 @@
+{% import "macros.html" as macros %}
+{% extends "base.html" %}
+
+{% block body %}
+<div class="wrapper">
+  <main aria-label="Content">
+    <div class="not-found">
+      <div class="container">
+        <div class="title">404</div>
+        <img alt="404" src="/assets/img/404.svg">
+        <p class="phrase">Oopsie.</p>
+        <a class="solution" href="{{ config.base_url }}">back home</a>
+      </div>
+    </div>
+  </main>
+  <footer class="footer"></footer>
+  <script src="/assets/js/main.js" defer="defer"></script>
+</div>
+{% endblock body %}
