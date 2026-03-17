@@ -16,11 +16,11 @@ Like most people I don't use my phone to do calls. Apart from failing to avoid a
 
 I've owned (and still do) a decent number of cameras. Some of them I have really fond memories of, such as the Panasonic GF1. Mostly for its 20mm pancake lens I didn't sell along with the body when the time came, but kept it until a worthy body came along. That was the beast of a video camera I use until today, the GH5. Most of my [drone video b-roll](https://www.youtube.com/watch?v=MTLVFsEaOCg) is shot with it and its amazing slow motion. On my drone trips I've always been making a decision whether to take the best camera I have (gh5) or a compact one (Sony rx100m4). The latter wasn't even close to the big guy, but it was easy to fit into the bag and for the few establishing shots was good enough. Surprisingly the iphone 6 plus I had back then had better stabilisation than the RX100. But preferred the Sony for the colors and not having such oversharpened phone look.
 
-<div class="inlineimgs" markdown="1">
-[![Růžová](IMG_0973-min.jpeg)](IMG_0973-min.jpeg)
-[![Černá Nisa](IMG_1633-min.jpeg)](IMG_1633-min.jpeg)
-[![Frosty tree](IMG_1655-min.jpeg)](IMG_1655-min.jpeg)
-[![Maliník](IMG_1369-min.jpeg)](IMG_1369-min.jpeg)
+<div class="inlineimgs">
+<a href="IMG_0973-min.jpeg"><img src="IMG_0973-min.jpeg" alt="Růžová"></a>
+<a href="IMG_1633-min.jpeg"><img src="IMG_1633-min.jpeg" alt="Černá Nisa"></a>
+<a href="IMG_1655-min.jpeg"><img src="IMG_1655-min.jpeg" alt="Frosty tree"></a>
+<a href="IMG_1369-min.jpeg"><img src="IMG_1369-min.jpeg" alt="Maliník"></a>
 </div>
 
 One thing that really peaked my interest when Apple unrolled the iPhone 11 was the wide angle. Very unsharp on the corners and quite poor wrt capturing light, I was really hooked on the superwides being bombarded by gopro footage (and doing a lot of that bombardment myself). Even though the primary lens on the 12 is way better, the ultrawide shots have something that really appeals to me.

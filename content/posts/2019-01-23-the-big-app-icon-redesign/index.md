@@ -32,11 +32,11 @@ Making these icons takes quite a bit of experience and craftsmanship, and many o
 - The wider industry has moved on from the detailed icon styles of the 2000s, which gives new users the impression that our software is outdated.
 - Cross-platform apps tend to ship with very simple, flat icons these days. The contrast between these icons and our super detailed ones can be quite jarring. 
 
-<div class="inlineimgs" markdown="1">
-![Peek](peek.png)
-![Firefox](firefox.png)
-![Skype](skype.png)
-![Spotify](spotify.png)
+<div class="inlineimgs">
+<img src="peek.png" alt="Peek">
+<img src="firefox.png" alt="Firefox">
+<img src="skype.png" alt="Skype">
+<img src="spotify.png" alt="Spotify">
 </div>
 
 # A New Beginning
@@ -52,15 +52,15 @@ The first step is having clearer guidelines and [more constraints](/blog/2017-01
 </video>
 
 
-<div class="inlineimgs" markdown="1">
-![Template](Template.png)
-![Template2](Template2.png)
-![Template3](Template3.png)
-![Template4](Template4.png)
-![Round icon](icon-round.svg)
-![Landscape](icon-landscape.svg)
-![Portrait](icon-portrait.svg)
-![Square](icon-square.svg)
+<div class="inlineimgs">
+<img src="Template.png" alt="Template">
+<img src="Template2.png" alt="Template2">
+<img src="Template3.png" alt="Template3">
+<img src="Template4.png" alt="Template4">
+<img src="icon-round.svg" alt="Round icon">
+<img src="icon-landscape.svg" alt="Landscape">
+<img src="icon-portrait.svg" alt="Portrait">
+<img src="icon-square.svg" alt="Square">
 </div>
 
 The style is very **geometric**, making it easy to reuse and adapt elements from other icons. We're also removing baked-in drop shadows in favour of drawing them automatically from the icon's alpha channel in GTK/Shell depending on the rendering context. In most cases 3rd party icons don't come with baked in shadows and this makes icons easier to draw and ensures consistent shadows.
@@ -80,11 +80,11 @@ This means the workflow changes from drawing 6 icons to just one (plus one symbo
 
 <p>Having this single source of truth makes it orders of magnitude easier to iterate on different metaphors for individual icons, update the style as a whole, and a number of other exciting things we're working towards.</p>
 
-<div class="inlineimgs" markdown="1">
-![Darktable](nightly-darktable.svg)
-![Games](nightly-games.svg)
-![PasswordSafe](nightly-passwordsafe.svg)
-![Fragments](nightly-fragments.svg)
+<div class="inlineimgs">
+<img src="nightly-darktable.svg" alt="Darktable">
+<img src="nightly-games.svg" alt="Games">
+<img src="nightly-passwordsafe.svg" alt="PasswordSafe">
+<img src="nightly-fragments.svg" alt="Fragments">
 </div>
 
 We've also been working on improving design tooling as part of this initiative. [Icon Preview](https://flathub.org/apps/details/org.gnome.IconPreview), a new app by [Zander Brown](https://github.com/ZanderBrown), is designed to make the icon design workflow smoother and faster. It allows you to quickly get started from a template, preview an icon in various contexts as you're designing it, and then finally optimizing and exporting the SVG to use in apps. The latter part is not quite ready yet, but the app already works great for the former two use cases.

@@ -28,9 +28,10 @@ Building a brand on neutral greys isn't quite an easy sell, but precisely target
 
 If you've read until this point, you deserve a treat! Here's some eye candy from the early stages of the process. Wallpapers derived from the elemental shapes of the logomark. Clearly off limits now, but can't just throw them away, can I?
 
-[![Flathub Patterns](flathub-patterns.webp)](wallpaper.svg)
-[![Flathub Candy](flathub-candy.webp)](wallpaper3D.webp)
-{.tiledscr}
+<div class="tiledscr">
+<a href="wallpaper.svg"><img src="flathub-patterns.webp" alt="Flathub Patterns"></a>
+<a href="wallpaper3D.webp"><img src="flathub-candy.webp" alt="Flathub Candy"></a>
+</div>
 
 <style type="text/css">
 .tiledscr {

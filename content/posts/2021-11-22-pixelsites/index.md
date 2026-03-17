@@ -9,20 +9,21 @@ tags = ["gnome", "design", "work", "sketch", "art", "pixaki"]
 
 I've created a [couple](https://pipewire.org/) [of](https://fleet-commander.org/) [minisites](https://containertoolbx.org/) for key OS components, built using no frameworks, but plain CSS. Just having CSS grid and variables made it viable for me to avoid using frameworks recently. Having [includes/imports](https://www.w3.org/TR/html-imports/) one wouldn't even need [Jekyll](https://jekyllrb.com/).
 
-<div class="inlineimgs" markdown="1">
-[![](Flatpak_Website.png)](Flatpak_Website.png)
-[![](Fleet_Commander.png)](Fleet_Commander.png)
-[![](Toolbox_Packages_Within.png)](Toolbox_Packages_Within.png)
-[![](ZBus_Website.png)](ZBus_Website.png)
+<div class="inlineimgs">
+<a href="Flatpak_Website.png"><img src="Flatpak_Website.png" alt=""></a>
+<a href="Fleet_Commander.png"><img src="Fleet_Commander.png" alt=""></a>
+<a href="Toolbox_Packages_Within.png"><img src="Toolbox_Packages_Within.png" alt=""></a>
+<a href="ZBus_Website.png"><img src="ZBus_Website.png" alt=""></a>
 </div>
 
 The founding stone on all of these is the pixel art, which is now becoming my favorite art form.
 
-![Flatpak](flatpak.gif)
-![Fleet Comander](fleetcommander.gif)
-![Toolbox](toolbox.gif)
-![Zbus](zbus.gif)
-{.pixels}
+<div class="pixels">
+<img src="flatpak.gif" alt="Flatpak">
+<img src="fleetcommander.gif" alt="Fleet Comander">
+<img src="toolbox.gif" alt="Toolbox">
+<img src="zbus.gif" alt="Zbus">
+</div>
 
 <style type="text/css">
 .pixels {

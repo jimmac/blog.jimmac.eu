@@ -933,3 +933,22 @@ pre.highlight, pre {
 
 img.centered { display: block; margin: auto; }
 img.full     { display: block; width: 100%; }
+
+img.pixels,
+.pixels img {
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
+.pixels {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.pixels img {
+  display: block;
+  width: 100%;
+  height: auto;
+  align-self: center;
+}
