@@ -6,7 +6,7 @@
   <header class="header">
     <h1 class="header-title center">Tags.</h1>
   </header>
-  <main class="page-content" aria-label="Content">
+  <main aria-label="Content">
     <div class="archive-tags">
       <a class="tag-item" href="#">all</a>
       {% for term in terms %}
@@ -17,8 +17,8 @@
     {% for term in terms %}
       <h2 id="{{ term.name }}">{{ term.name | upper }}</h2>
       {% for post in term.pages %}
-        <article class="post-item" id="results-container">
-          <span class="post-item-date">{{ post.date | date(format="%b %d, %Y") }}</span>
+        <article class="post-item">
+          <span class="post-item-date">{{ post.date | date(format="%b %d") }}</span>
           <h3 class="post-item-title">
             <a href="{{ post.permalink }}">{{ post.title }}</a>
           </h3>
