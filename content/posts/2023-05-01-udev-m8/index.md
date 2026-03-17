@@ -5,8 +5,7 @@ date = 2023-05-01
 tags = ["dirtywave", "M8", "tracker", "music", "linux"]
 +++
 
-<!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->
-This post is very unlikely for you. It's for future me.
+This post is very unlikely for you. It's for future me. 
 
 The little magic box that is the [Dirtywave M8 tracker](https://dirtywave.com/) is pretty well supported in Linux. It works great as an audio device (input and output), it does usb midi and you can also use its remote display using [laamaa's m8c](https://github.com/laamaa/m8c) which now also does audio monitoring.
 

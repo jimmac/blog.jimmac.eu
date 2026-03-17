@@ -8,39 +8,40 @@ tags = ["pixel", "pixaki", "aseprite", "art"]
 
 Just like [last year](/posts/pixel-inktober/), October was filled with quick pixel dailies. I decided to only post [on mastodon](https://mastodon.social/@jimmac), but due to the twitter exodus couldn't quite post the 30kB images for the two remaining days. Good old blog post it is!
 
-![x](sheet.png)
-![1. Gargoyle](01.gif){.big}
-![2. Scurry](02.png)
-![3. Bat](03.gif)
-![4. Scallop](04.png)
-![5. Flame](05.png)
-![6. Bouquet](06.png)
-![7. Trip](07.png){.big}
-![8. Match](08.png){.big}
-![9. Nest](09.png)
-![10. Crabby](10.png)
-![11. Eagle](11.png)
-![12. Forget](12.png)
-![13. Kind](13.png)
-![14. Empty](14.png){.big}
-![15. Armadillo](15.png){.big}
-![16. Fowl](16.gif)
-![17. Salty](17.png)
-![18. Scrape](18.png)
-![19. Ponytail](19.png)
-![20. Bluff](20.png)
-![21. Bad Dog](21.png)
-![22. Heist](22.png)
-![23. Booger](23.gif)
-![24. Fairy](24.png)
-![25. Tempting](25.png){.big}
-![26. Ego](26.png)
-![27. Snack](27.png){.big}
-![28. Camping](28.png){.big}
-![29. Uh-oh](29.png)
-![30. Gear](30.png)
-![31. Farm](31.png)
-{.pixelicons}
+<div class="pixelicons">
+<img src="sheet.png" alt="x">
+<img src="01.gif" alt="1. Gargoyle" class="big">
+<img src="02.png" alt="2. Scurry">
+<img src="03.gif" alt="3. Bat">
+<img src="04.png" alt="4. Scallop">
+<img src="05.png" alt="5. Flame">
+<img src="06.png" alt="6. Bouquet">
+<img src="07.png" alt="7. Trip" class="big">
+<img src="08.png" alt="8. Match" class="big">
+<img src="09.png" alt="9. Nest">
+<img src="10.png" alt="10. Crabby">
+<img src="11.png" alt="11. Eagle">
+<img src="12.png" alt="12. Forget">
+<img src="13.png" alt="13. Kind">
+<img src="14.png" alt="14. Empty" class="big">
+<img src="15.png" alt="15. Armadillo" class="big">
+<img src="16.gif" alt="16. Fowl">
+<img src="17.png" alt="17. Salty">
+<img src="18.png" alt="18. Scrape">
+<img src="19.png" alt="19. Ponytail">
+<img src="20.png" alt="20. Bluff">
+<img src="21.png" alt="21. Bad Dog">
+<img src="22.png" alt="22. Heist">
+<img src="23.gif" alt="23. Booger">
+<img src="24.png" alt="24. Fairy">
+<img src="25.png" alt="25. Tempting" class="big">
+<img src="26.png" alt="26. Ego">
+<img src="27.png" alt="27. Snack" class="big">
+<img src="28.png" alt="28. Camping" class="big">
+<img src="29.png" alt="29. Uh-oh">
+<img src="30.png" alt="30. Gear">
+<img src="31.png" alt="31. Farm">
+</div>
 
 
 <style type="text/css">

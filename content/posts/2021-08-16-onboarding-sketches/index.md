@@ -9,22 +9,22 @@ tags = ["gnome", "design", "work", "sketch"]
 
 ![Connections: Hope](connections-hope.png)
 
-<div class="inlineimgs" markdown="1">
-[![](connections-1.png)](connections-1.png)
-[![](connections-2.png)](connections-2.png)
-[![](connections-3.png)](connections-3.png)
-[![](connections-4.png)](connections-4.png)
+<div class="inlineimgs">
+<a href="connections-1.png"><img src="connections-1.png" alt=""></a>
+<a href="connections-2.png"><img src="connections-2.png" alt=""></a>
+<a href="connections-3.png"><img src="connections-3.png" alt=""></a>
+<a href="connections-4.png"><img src="connections-4.png" alt=""></a>
 </div>
 
 GNOME 41 is now UI frozen, so without spoiling the release much, I'd like to share some of the explorations that led to some of the onboarding in both app space (mostly [Connections](https://flathub.org/apps/details/org.gnome.Connections)) and the new [Tour](https://gitlab.gnome.org/GNOME/gnome-tour).
 
 ![Tour: Welcome](tour-6.png)
 
-<div class="inlineimgs" markdown="1">
-[![](tour-1.png)](tour-1.png)
-[![](tour-7.png)](tour-7.png)
-[![](tour-3.png)](tour-3.png)
-[![](tour-4.png)](tour-4.png)
+<div class="inlineimgs">
+<a href="tour-1.png"><img src="tour-1.png" alt=""></a>
+<a href="tour-7.png"><img src="tour-7.png" alt=""></a>
+<a href="tour-3.png"><img src="tour-3.png" alt=""></a>
+<a href="tour-4.png"><img src="tour-4.png" alt=""></a>
 </div>
 
 [Previously](/posts/tour-sketches/).

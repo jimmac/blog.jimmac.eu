@@ -8,39 +8,40 @@ tags = ["pixel", "pixaki", "art", "inktober"]
 
 For the first time ever I actually finished a [monthly challenge](https://inktober.com/).
 
-![0. Pixel Inktober](IMG_0287.PNG)
-![1. Crystal](IMG_0288.PNG)
-![2. Suit](IMG_0289.PNG)
-![3. Vessel](IMG_0290.GIF)
-![4. Knot](IMG_0291.PNG)
-![5. Raven](IMG_0292.PNG)
-![6. Spirit](IMG_0293.PNG)
-![7. Fan](IMG_0294.GIF)
-![8. Watch](IMG_0295.PNG)
-![9. Pressure](IMG_0297.GIF)
-![10. Pick](IMG_0298.GIF)
-![11. Sour](IMG_0299.PNG)
-![12. Stuck](IMG_0300.PNG)
-![13. Roof](IMG_0301.PNG)
-![14. Tick](IMG_0303.PNG)
-![15. Helmet](IMG_0304.PNG)
-![16. Compass](IMG_0305.PNG)
-![17. Collide](IMG_0306.GIF)
-![18. Moon](IMG_0307.GIF)
-![19. Loop](IMG_0308.PNG)
-![20. Sprout](IMG_0309.PNG)
-![21. Fuzzy](IMG_0310.PNG)
-![22. Open](IMG_0311.PNG)
-![23. Leak](IMG_0313.GIF)
-![24. Extinct](IMG_0314.PNG)
-![25. Splat](IMG_0315.GIF)
-![26. Connect](IMG_0316.PNG)
-![27. Spark](IMG_0317.PNG)
-![28. Crispy](IMG_0318.PNG)
-![29. Patch](IMG_0319.PNG)
-![30. Slither](IMG_0320.GIF)
-![31. Risk](IMG_0321.PNG)
-{.pixels}
+<div class="pixels">
+<img src="IMG_0287.PNG" alt="0. Pixel Inktober">
+<img src="IMG_0288.PNG" alt="1. Crystal">
+<img src="IMG_0289.PNG" alt="2. Suit">
+<img src="IMG_0290.GIF" alt="3. Vessel">
+<img src="IMG_0291.PNG" alt="4. Knot">
+<img src="IMG_0292.PNG" alt="5. Raven">
+<img src="IMG_0293.PNG" alt="6. Spirit">
+<img src="IMG_0294.GIF" alt="7. Fan">
+<img src="IMG_0295.PNG" alt="8. Watch">
+<img src="IMG_0297.GIF" alt="9. Pressure">
+<img src="IMG_0298.GIF" alt="10. Pick">
+<img src="IMG_0299.PNG" alt="11. Sour">
+<img src="IMG_0300.PNG" alt="12. Stuck">
+<img src="IMG_0301.PNG" alt="13. Roof">
+<img src="IMG_0303.PNG" alt="14. Tick">
+<img src="IMG_0304.PNG" alt="15. Helmet">
+<img src="IMG_0305.PNG" alt="16. Compass">
+<img src="IMG_0306.GIF" alt="17. Collide">
+<img src="IMG_0307.GIF" alt="18. Moon">
+<img src="IMG_0308.PNG" alt="19. Loop">
+<img src="IMG_0309.PNG" alt="20. Sprout">
+<img src="IMG_0310.PNG" alt="21. Fuzzy">
+<img src="IMG_0311.PNG" alt="22. Open">
+<img src="IMG_0313.GIF" alt="23. Leak">
+<img src="IMG_0314.PNG" alt="24. Extinct">
+<img src="IMG_0315.GIF" alt="25. Splat">
+<img src="IMG_0316.PNG" alt="26. Connect">
+<img src="IMG_0317.PNG" alt="27. Spark">
+<img src="IMG_0318.PNG" alt="28. Crispy">
+<img src="IMG_0319.PNG" alt="29. Patch">
+<img src="IMG_0320.GIF" alt="30. Slither">
+<img src="IMG_0321.PNG" alt="31. Risk">
+</div>
 
 <style type="text/css">
 .pixels {

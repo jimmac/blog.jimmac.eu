@@ -13,55 +13,55 @@ To combine exploration with usefulness, I imagined mixing up of the new applicat
 
 Sadly the result is visually [way too overwhelming](https://gitlab.gnome.org/GNOME/gnome-backgrounds/-/blob/wip/jimmac/prefers-dark-light/backgrounds/pixels-d.png), but the assets created can at least please your nostalgia bone here on planet GNOME (unless it becomes a mess without the stylesheet, we'll see). Stay curious!
 
-![x](IMG_0257.PNG)
-![x](IMG_0250.PNG)
-![x](IMG_0258.PNG)
-![x](IMG_0248.PNG)
-![x](IMG_0223.PNG)
-![x](IMG_0228.PNG)
-![x](IMG_0259.PNG)
-![x](IMG_0230.PNG)
-![x](IMG_0265.PNG)
-![x](IMG_0242.PNG)
-![x](IMG_0256.PNG)
-![x](IMG_0254.PNG)
-![x](IMG_0219.PNG)
-![x](IMG_0252.PNG)
-![x](IMG_0226.PNG)
-![x](IMG_0233.PNG)
-![x](IMG_0247.PNG)
-![x](IMG_0260.PNG)
-![x](IMG_0222.PNG)
-![x](IMG_0221.PNG)
-![x](IMG_0224.PNG)
-![x](IMG_0251.PNG)
-![x](IMG_0266.PNG)
-![x](IMG_0227.PNG)
-![x](IMG_0246.PNG)
-![x](IMG_0244.PNG)
-![x](IMG_0241.PNG)
-![x](IMG_0253.PNG)
-![x](IMG_0231.PNG)
-![x](IMG_0264.PNG)
-![x](IMG_0255.PNG)
-![x](IMG_0229.PNG)
-![x](IMG_0234.PNG)
-![x](IMG_0240.PNG)
-![x](IMG_0237.PNG)
-![x](IMG_0225.PNG)
-![x](IMG_0262.PNG)
-![x](IMG_0263.PNG)
-![x](IMG_0236.PNG)
-![x](IMG_0249.PNG)
-![x](IMG_0261.PNG)
-![x](IMG_0239.PNG)
-![x](IMG_0235.PNG)
-![x](IMG_0245.PNG)
-![x](IMG_0243.PNG)
-![x](IMG_0238.PNG)
-![x](IMG_0232.PNG)
-{.pixelicons}
-
+<div class="pixelicons">
+<img src="IMG_0257.PNG" alt="">
+<img src="IMG_0250.PNG" alt="">
+<img src="IMG_0258.PNG" alt="">
+<img src="IMG_0248.PNG" alt="">
+<img src="IMG_0223.PNG" alt="">
+<img src="IMG_0228.PNG" alt="">
+<img src="IMG_0259.PNG" alt="">
+<img src="IMG_0230.PNG" alt="">
+<img src="IMG_0265.PNG" alt="">
+<img src="IMG_0242.PNG" alt="">
+<img src="IMG_0256.PNG" alt="">
+<img src="IMG_0254.PNG" alt="">
+<img src="IMG_0219.PNG" alt="">
+<img src="IMG_0252.PNG" alt="">
+<img src="IMG_0226.PNG" alt="">
+<img src="IMG_0233.PNG" alt="">
+<img src="IMG_0247.PNG" alt="">
+<img src="IMG_0260.PNG" alt="">
+<img src="IMG_0222.PNG" alt="">
+<img src="IMG_0221.PNG" alt="">
+<img src="IMG_0224.PNG" alt="">
+<img src="IMG_0251.PNG" alt="">
+<img src="IMG_0266.PNG" alt="">
+<img src="IMG_0227.PNG" alt="">
+<img src="IMG_0246.PNG" alt="">
+<img src="IMG_0244.PNG" alt="">
+<img src="IMG_0241.PNG" alt="">
+<img src="IMG_0253.PNG" alt="">
+<img src="IMG_0231.PNG" alt="">
+<img src="IMG_0264.PNG" alt="">
+<img src="IMG_0255.PNG" alt="">
+<img src="IMG_0229.PNG" alt="">
+<img src="IMG_0234.PNG" alt="">
+<img src="IMG_0240.PNG" alt="">
+<img src="IMG_0237.PNG" alt="">
+<img src="IMG_0225.PNG" alt="">
+<img src="IMG_0262.PNG" alt="">
+<img src="IMG_0263.PNG" alt="">
+<img src="IMG_0236.PNG" alt="">
+<img src="IMG_0249.PNG" alt="">
+<img src="IMG_0261.PNG" alt="">
+<img src="IMG_0239.PNG" alt="">
+<img src="IMG_0235.PNG" alt="">
+<img src="IMG_0245.PNG" alt="">
+<img src="IMG_0243.PNG" alt="">
+<img src="IMG_0238.PNG" alt="">
+<img src="IMG_0232.PNG" alt="">
+</div>
 <style type="text/css">
 .pixelicons {
 	display: grid;
