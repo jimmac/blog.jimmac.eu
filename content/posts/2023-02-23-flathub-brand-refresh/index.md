@@ -5,7 +5,7 @@ date = 2023-02-23
 tags = ["flatpak", "flathub", "design", "work", "brand"]
 +++
 
-[comment]: <> <a href="{{ site.url }}{{ page.url }}">absolute links</a>
+<!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->
 
 While [Flatpak](https://flatpak.org) itself is an architecturally decentralized way to distribute apps, [Flathub](https://beta.flathub.org) embraces the convenience for people to come to one place to install apps. There's some fairly big changes coming to Flathub that I'm extremely excited about, that will make sure the new wave of Linux apps doesn't fizzle out and we'll maintain a sustainable application ecosystem.
 
@@ -30,7 +30,7 @@ If you've read until this point, you deserve a treat! Here's some eye candy from
 
 [![Flathub Patterns](flathub-patterns.webp)](wallpaper.svg)
 [![Flathub Candy](flathub-candy.webp)](wallpaper3D.webp)
-{:.tiledscr}
+{.tiledscr}
 
 <style type="text/css">
 .tiledscr {
@@ -46,6 +46,6 @@ If you've read until this point, you deserve a treat! Here's some eye candy from
 }
 </style>
 
-Big shoutout to [razze](https://osna.social/@razze) for his ongoing work on the website and implementing the brand so quickly. Many thank yous to [Tobias Bernard](https://tobiasbernard.com/) for significant involvment in this during the [Berlin Mini GUADEC]({% post_url 2022-07-25-Berlin-GUADEC/2022-07-25-Berlin-GUADEC %}) and [Václav Vančura](https://vancura.dev/) for sensible feedback.
+Big shoutout to [razze](https://osna.social/@razze) for his ongoing work on the website and implementing the brand so quickly. Many thank yous to [Tobias Bernard](https://tobiasbernard.com/) for significant involvment in this during the [Berlin Mini GUADEC](/posts/Berlin-GUADEC/) and [Václav Vančura](https://vancura.dev/) for sensible feedback.
 
-[Previously]({% post_url 2022-06-13-flatpak-refresh/2022-06-13-flatpak-refresh %})
+[Previously](/posts/flatpak-refresh/)

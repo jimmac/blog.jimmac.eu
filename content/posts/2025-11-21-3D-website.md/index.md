@@ -6,7 +6,7 @@ image = "3D-sharecard.webp"
 tags = ["gnome", "webdesign", "blender", "3D", "work"]
 +++
 
-Hey Kids! Other than raving about [GNOME.org](https://www.gnome.org) being a [static HTML]({% post_url 2025-05-21-plain-html/2025-05-21-plain-html %}), there's one more aspect I'd like to get back to in this writing exercise called a blog post. 
+Hey Kids! Other than raving about [GNOME.org](https://www.gnome.org) being a [static HTML](/posts/plain-html/), there's one more aspect I'd like to get back to in this writing exercise called a blog post. 
 
 ![Share card gets updated every release too](3D-sharecard.webp)
 

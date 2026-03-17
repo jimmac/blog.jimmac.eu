@@ -29,4 +29,4 @@ I always enjoy processes where I only give a hint of direction and just enjoy th
 
 Don't expect Tinlicker or Jon Hokins yet, but I'm hopeful that this time next year I will still be posting about my music.
 
-[Previously]({% post_url 2021-02-02-elektronic/2021-02-02-elektronic %}).
+[Previously](/posts/elektronic/).

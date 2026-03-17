@@ -5,7 +5,7 @@ date = 2021-02-05
 tags = ["work", "design", "gnome"]
 +++
 
-We've [struggled]({% post_url archive/2015-10-13-svg-animation/2015-10-13-svg-animation %}) with bringing subtle animation to GNOME in the past. There is interest in bringing it in [some shape](https://gitlab.gnome.org/GNOME/gtk/-/tree/wip/otte/lottie) or form to *gtk4*. The bad news is the tools are still lacking on the production side. There's not much past [Glaxanimate](https://glaxnimate.mattbas.org/) to do even simple transforms.
+We've [struggled](/posts/svg-animation/) with bringing subtle animation to GNOME in the past. There is interest in bringing it in [some shape](https://gitlab.gnome.org/GNOME/gtk/-/tree/wip/otte/lottie) or form to *gtk4*. The bad news is the tools are still lacking on the production side. There's not much past [Glaxanimate](https://glaxnimate.mattbas.org/) to do even simple transforms.
 
 ![Tour Storyboard](sketch-ws.png)
 

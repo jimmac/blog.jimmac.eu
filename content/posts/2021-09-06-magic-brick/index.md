@@ -5,8 +5,8 @@ date = 2021-09-06
 tags = ["iphone", "video", "stabilization", "skate"]
 +++
 
-[comment]: <> <a href="{{ site.url }}{{ page.url }}">absolute links</a>
-[comment]: [Previously]({% post_url 2021-02-25-tour-sketches/2021-02-25-tour-sketches %}).
+<!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->
+[comment]: [Previously](/posts/tour-sketches/).
 
 My first encounter with a digital camera was around 1996 when my university IT department acquired the [Apple Quicktake 100](https://en.wikipedia.org/wiki/Apple_QuickTake). While the quality of the output was laughable compared to the analog counterparts, the convenience of such a device was clear. It wasn't too long after that when I got my first digital camera, the Ricoh RDC-5000 which I used to capture the new worlds I vistited. Many devices followed.
 

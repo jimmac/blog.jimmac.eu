@@ -5,7 +5,7 @@ date = 2022-06-13
 tags = ["flatpak", "design", "work", "brand"]
 +++
 
-[comment]: <> <a href="{{ site.url }}{{ page.url }}">absolute links</a>
+<!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->
 
 ![Flatpak](flatpak.png)
 

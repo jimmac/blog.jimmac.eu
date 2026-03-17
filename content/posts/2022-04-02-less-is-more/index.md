@@ -27,8 +27,8 @@ I hope a proper spring comes soon as I can't wait to FPV. This one pack in the g
 
 
 
-[Previously]({% post_url  2021-12-19-dnb/2021-12-19-dnb %}),
-[Previously]({% post_url  2022-02-15-fugue-machine-on-the-m8/2022-02-15-fugue-machine-on-the-m8 %}),
-[Previously]({% post_url  2021-09-12-chiptune/2021-09-12-chiptune %}),
-[Previously]({% post_url  2021-08-03-single-cycle-rave/2021-08-03-single-cycle-rave %}),
-[Previously]({% post_url  2021-06-07-troubled-minister/2021-06-07-troubled-minister %}).
+[Previously](/posts/dnb/),
+[Previously](/posts/fugue-machine-on-the-m8/),
+[Previously](/posts/chiptune/),
+[Previously](/posts/single-cycle-rave/),
+[Previously](/posts/troubled-minister/).

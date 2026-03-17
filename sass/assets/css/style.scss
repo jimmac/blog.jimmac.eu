@@ -65,3 +65,14 @@ $on-widescreen: 1152px;
 // Import sass files
 @import "klise/base", "klise/layout", "klise/post",
   "klise/miscellaneous", "klise/syntax", "klise/dark";
+  
+img {
+
+  &.centered {
+    display: block;
+  }
+  &.full {
+    display: block;
+    width: 100%;
+  }
+}

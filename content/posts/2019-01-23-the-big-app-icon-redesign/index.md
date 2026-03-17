@@ -5,8 +5,6 @@ date = 2019-01-23
 tags = ["design", "icon", "inkscape", "gnome", "work"]
 +++
 
-<p style="display: none;">If your're reading this on Planet Gnome, please visit the <a href="{{ site.url }}{{ page.url }}">article on my site</a> to enjoy the inline CSS effects.</p>
-
 # The Revolution is Coming
 
 As you may have heard, GNOME 3.32 is going to come with a radical new icon style and new guidelines for app developers. This post aims to give some background on why this was needed, our goals with the initiative, and our exciting plans for the future.
@@ -14,20 +12,17 @@ As you may have heard, GNOME 3.32 is going to come with a radical new icon style
 # The Problem
 Our current icon style dates back all the way to the early 00s and the original [Tango](http://tango.freedesktop.org/Tango_Icon_Theme_Guidelines). One of the foundational ideas behind Tango was that each icon is drawn at multiple sizes, in order to look pixel-perfect in every context. This means that if you want to make an app icon you're not drawing one, but up to 7 separate icons (symbolic, 16px, 22px, 24px, 32px, 48px, and 512px).
 
-
-![Xchat](xchat.png){:class='centered'}
-
-<div class="inlineimgs" markdown="1">
-![Boxes](boxes.png)
-![Builder](builder.png)
-![GIMP](gimp.png)
-![Gitg](gitg.png)
-![Inkscape](inkscape.png)
-![Music](music.png)
-![Photos](photos.png)
-![Recipe](recipe.png)
+<img src="xchat.png" alt="Xchat" class="centered">
+<div class="inlineimgs">
+<img src="boxes.png" alt="Boxes">
+<img src="builder.png" alt="Builder">
+<img src="gimp.png" alt="GIMP">
+<img src="gitg.png" alt="Gitg">
+<img src="inkscape.png" alt="Inkscape">
+<img src="music.png" alt="Music">
+<img src="photos.png" alt="Photos">
+<img src="recipe.png" alt="Recipe">
 </div>
-
 Making these icons takes quite a bit of experience and craftsmanship, and many of our high-detail icons are more [art than design](/blog/2018-07-18-detail-considered-harmful/). However, as a part of our design system the style has not succeeded, and is in dire need of reform. Some of the major issues:
 
 - Many of the sizes aren't being used anywhere in the OS, and haven't been for the better part of a decade. Since we use either large sizes or symbolics in most contexts, the pixel-hinted small sizes are rarely seen by anyone.

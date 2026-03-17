@@ -55,5 +55,5 @@ For inline images, the approach that seems more straight forward and I've taken 
 
 GNOME *Human Interface Guidelines* are written in restructured text/Sphinx, however. Escaping to html for images/pictures would be quite cumbersome, but luckily dark mode is supported in the furo theme (and derivates) using the `only-light` and `only-dark` classes. The markup gets a little chatty, but still quite legible. There's some iterations to be made, but in terms of legibility it's finally a bit more accessible.
 
-![New HIG light](hig-fullcolor.webp){:.full}
-![New HIG dark](hig-fullcolor-dark.webp){:.full}
+<img src="hig-fullcolor.webp" alt="New HIG light" class="full">
+<img src="hig-fullcolor-dark.webp" alt="New HIG dark" class="full">

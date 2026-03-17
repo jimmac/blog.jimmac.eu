@@ -5,7 +5,7 @@ date = 2021-11-22
 tags = ["gnome", "design", "work", "sketch", "art", "pixaki"]
 +++
 
-[comment]: <> <a href="{{ site.url }}{{ page.url }}">absolute links</a>
+<!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->
 
 I've created a [couple](https://pipewire.org/) [of](https://fleet-commander.org/) [minisites](https://containertoolbx.org/) for key OS components, built using no frameworks, but plain CSS. Just having CSS grid and variables made it viable for me to avoid using frameworks recently. Having [includes/imports](https://www.w3.org/TR/html-imports/) one wouldn't even need [Jekyll](https://jekyllrb.com/).
 
@@ -22,7 +22,7 @@ The founding stone on all of these is the pixel art, which is now becoming my fa
 ![Fleet Comander](fleetcommander.gif)
 ![Toolbox](toolbox.gif)
 ![Zbus](zbus.gif)
-{:.pixels}
+{.pixels}
 
 <style type="text/css">
 .pixels {

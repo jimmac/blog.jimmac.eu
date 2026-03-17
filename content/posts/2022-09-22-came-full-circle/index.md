@@ -5,7 +5,7 @@ date = 2022-09-22
 tags = ["gnome", "design", "icon", "pixel", "art", "pixaki"]
 +++
 
-As mentioned in the [previous post]({% post_url 2022-09-16-evenmopixels/2022-09-16-evenmopixels %}) I've been creating these short pixel art animations for [twitter](https://twitter.com/jimmac) and [mastodon](https://mastodon.social/web/@jimmac) to promote the lovely apps that sprung up under the umbrella of the [GNOME Circle project](https://circle.gnome.org). 
+As mentioned in the [previous post](/posts/evenmopixels/) I've been creating these short pixel art animations for [twitter](https://twitter.com/jimmac) and [mastodon](https://mastodon.social/web/@jimmac) to promote the lovely apps that sprung up under the umbrella of the [GNOME Circle project](https://circle.gnome.org). 
 
 I was surprised the video gets actually quite long. It's true that a little something every day really adds up. The music was composed on the [Dirtywave M8](https://dirtywave.com) and the composite and sequence assembled in [Blender](https://blender.org).
 

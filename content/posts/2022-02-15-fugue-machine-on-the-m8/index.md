@@ -24,5 +24,5 @@ I'm not going to be spamming the [planet](https://planet.gnome.org) with every t
 
 I really enjoy stepping back into my tracking shoes after two decades, especially when I ran into the old [Buzz](https://en.wikipedia.org/wiki/Jeskola_Buzz) crew on the Dirtywave Discord server. Shout out to [Ilya](https://weeklybeats.com/ilzxc) and [Noggin'](https://weeklybeats.com/noggin) who've made my re-entry to music super enjoyable.
 
-[comment]: <> <a href="{{ site.url }}{{ page.url }}">absolute links</a>
-[comment]: [Previously]({% post_url 2021-02-25-tour-sketches/2021-02-25-tour-sketches %}).
+<!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->
+[comment]: [Previously](/posts/tour-sketches/).

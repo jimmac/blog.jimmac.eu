@@ -60,7 +60,7 @@ Sadly the result is visually [way too overwhelming](https://gitlab.gnome.org/GNO
 ![x](IMG_0243.PNG)
 ![x](IMG_0238.PNG)
 ![x](IMG_0232.PNG)
-{:.pixelicons}
+{.pixelicons}
 
 <style type="text/css">
 .pixelicons {

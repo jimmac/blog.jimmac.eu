@@ -18,6 +18,6 @@ Another exciting development is the continued use of geometry nodes in Blender. 
 <iframe title="Visual Programming with Geometry Nodes in Blender - Jakub Steiner - Creative Freedom Summit 2023" src="https://peertube.linuxrocks.online/videos/embed/7f0043e0-a8ed-4f8c-a93b-e7da7c399bae" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" frameborder="0"></iframe>
 
 
-[Previously]({% post_url 2022-08-08-gnome43-wallpapers/2022-08-08-gnome43-wallpapers %}),
-[Previously]({% post_url  archive/2020-09-01-shelved-wallpapers-2/2020-09-01-shelved-wallpapers-2 %}),
-[Previously]({% post_url  archive/2018-02-12-shelved-wallpapers/2018-02-12-shelved-wallpapers %})
+[Previously](/posts/gnome43-wallpapers/),
+[Previously](/posts/shelved-wallpapers-2/),
+[Previously](/posts/shelved-wallpapers/)

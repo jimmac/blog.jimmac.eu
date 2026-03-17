@@ -5,8 +5,8 @@ date = 2021-12-19
 tags = ["tracker", "synth", "dirtywave", "m8"]
 +++
 
-[comment]: <> <a href="{{ site.url }}{{ page.url }}">absolute links</a>
-[comment]: [Previously]({% post_url 2021-02-25-tour-sketches/2021-02-25-tour-sketches %}).
+<!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->
+[comment]: [Previously](/posts/tour-sketches/).
 
 ![M8](m8.jpg)
 
@@ -38,10 +38,10 @@ I've also been learning the ropes of Blender's geometry nodes recently. While on
 
 I also have to mention the absolutely bonkers amazing visual identity of the M8 project. It just couldn't be more hip. This is also my very last gear acquisition. For sure.
 
-[Previously]({% post_url  2021-09-12-chiptune/2021-09-12-chiptune %}),
-[Previously]({% post_url  2021-08-03-single-cycle-rave/2021-08-03-single-cycle-rave %}),
-[Previously]({% post_url  2021-06-07-troubled-minister/2021-06-07-troubled-minister %}),
-[Previously]({% post_url  2021-05-24-what-am-i/2021-05-24-what-am-i %}),
-[Previously]({% post_url  2021-05-20-100kph/2021-05-20-100kph %}),
-[Previously]({% post_url  2021-04-16-jammin-on-elektron/2021-04-16-jammin-on-elektron %}),
-[Previously]({% post_url 2021-02-02-elektronic/2021-02-02-elektronic %}).
+[Previously](/posts/chiptune/),
+[Previously](/posts/single-cycle-rave/),
+[Previously](/posts/troubled-minister/),
+[Previously](/posts/what-am-i/),
+[Previously](/posts/100kph/),
+[Previously](/posts/jammin-on-elektron/),
+[Previously](/posts/elektronic/).

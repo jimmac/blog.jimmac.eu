@@ -17,6 +17,6 @@ So without further ado, here's my weekend track:
 <a href="https://soundcloud.com/jimmac/what-am-i">What am I? on Soundcloud</a>.
 </audio>
 
-[Previously]({% post_url  2021-05-20-100kph/2021-05-20-100kph %}),
-[Previously]({% post_url  2021-04-16-jammin-on-elektron/2021-04-16-jammin-on-elektron %}),
-[Previously]({% post_url 2021-02-02-elektronic/2021-02-02-elektronic %}).
+[Previously](/posts/100kph/),
+[Previously](/posts/jammin-on-elektron/),
+[Previously](/posts/elektronic/).

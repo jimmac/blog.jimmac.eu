@@ -29,8 +29,8 @@ The fresh batch of wallpapers includes evolutions of the existing assets as well
 
 I hope you're going to pick at least one of the wallpapers when GNOME 46 releases later next week as your favorite. Let me know [on fediverse](https://mastodon.social/@jimmac)!
 
-[Previously]({% post_url 2023-10-05-gnome45-wallpapers/2023-10-05-gnome45-wallpapers %}),
-[Previously]({% post_url 2023-01-30-gnome44-wallpapers/2023-01-30-gnome44-wallpapers %}),
-[Previously]({% post_url 2022-08-08-gnome43-wallpapers/2022-08-08-gnome43-wallpapers %}),
-[Previously]({% post_url  archive/2020-09-01-shelved-wallpapers-2/2020-09-01-shelved-wallpapers-2 %}),
-[Previously]({% post_url  archive/2018-02-12-shelved-wallpapers/2018-02-12-shelved-wallpapers %})
+[Previously](/posts/gnome45-wallpapers/),
+[Previously](/posts/gnome44-wallpapers/),
+[Previously](/posts/gnome43-wallpapers/),
+[Previously](/posts/shelved-wallpapers-2/),
+[Previously](/posts/shelved-wallpapers/)

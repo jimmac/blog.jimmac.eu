@@ -5,7 +5,7 @@ date = 2021-02-25
 tags = ["gnome", "design", "work", "sketch"]
 +++
 
-[comment]: <> <a href="{{ site.url }}{{ page.url }}">absolute links</a>
+<!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->
 
 ![Welcome](Tour_Welcome 1.png)
 
@@ -18,7 +18,7 @@ One of the things that came up during [user testing](https://blogs.gnome.org/she
 [![Touch](Tour_Up_And_Down_For_Overview.png)](Tour_Up_And_Down_For_Overview.png)
 </div>
 
-Because you can soon experience GNOME 40 yourself, here's a few sketches of the exploratory phase. Be sure to check out some background on how the [animations were done]({% post_url 2021-02-05-animated-tour/2021-02-05-animated-tour %}).
+Because you can soon experience GNOME 40 yourself, here's a few sketches of the exploratory phase. Be sure to check out some background on how the [animations were done](/posts/animated-tour/).
 
 ![Press Super](Tour_Press_Super.png)
 

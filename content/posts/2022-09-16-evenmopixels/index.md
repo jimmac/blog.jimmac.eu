@@ -5,7 +5,7 @@ date = 2022-09-16
 tags = ["pixel", "pixaki", "gnome", "design", "art", "wallpaper", "icon"]
 +++
 
-To keep the habbit alive, I continue to do a [daily pixel routine]({% post_url 2021-10-13-mopixels/2021-10-13-mopixels %}), now covering almost all of the [GNOME Circle](https://circle.gnome.org) apps.
+To keep the habbit alive, I continue to do a [daily pixel routine](/posts/mopixels/), now covering almost all of the [GNOME Circle](https://circle.gnome.org) apps.
 
 ![x](IMG_0425.PNG)
 ![x](IMG_0426.PNG)
@@ -45,7 +45,7 @@ To keep the habbit alive, I continue to do a [daily pixel routine]({% post_url 2
 ![x](IMG_0461.PNG)
 ![x](IMG_0463.PNG)
 ![x](IMG_0464.PNG)
-{:.pixelicons}
+{.pixelicons}
 
 I've been practicing the art of animation a little too in an effort to promote GNOME Circle on [Twitter](https://twitter.com/jimmac) and [Mastodon](https://mastodon.social/web/@jimmac). Presenting all these GIFs would probably not be kind to [Planet GNOME](http://planet.gnome.org) readers though. Perhaps I could compose a video in the future (no GIF support in Blender, strangely!). Keep grinding your (pointless) skills, kids!
 
@@ -83,4 +83,4 @@ I've been practicing the art of animation a little too in an effort to promote G
 
 </style>
 
-[Previously]({% post_url 2021-10-13-mopixels/2021-10-13-mopixels %})
+[Previously](/posts/mopixels/)

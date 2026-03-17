@@ -41,16 +41,17 @@ Lastly, there’s `Symbolic Soup`, which is, well... a bit chaotic. It might not
 
 ## Preview
 
-[![LCD](lcd-d.webp)](lcd-d.jxl)
-[![Pills](pills-d.webp)](pills-d.jxl)
-[![Map](map-d.svg)](map-d.svg){:.big}
-[![Mollnar](mollnar-d.svg)](mollnar-d.svg)
-[![LCD Raindow](lcd-rainbow-l.webp)](lcd-rainbow-l.jxl)
-[![Pixels](pixels-d.webp)](pixels-d.jxl){:.big}
-[![Sheet](sheet-l.webp)](sheet-l.jxl)
-[![Swoosh](swoosh-l.webp)](swoosh-l.jxl)
-[![Symbolic Soup](symbolic-soup-d.webp)](symbolic-soup-d.jxl)
-{:.walls}
+<div class="walls">
+<a href="lcd-d.jxl"><img src="lcd-d.webp" alt="LCD"></a>
+<a href="pills-d.jxl"><img src="pills-d.webp" alt="Pills"></a>
+<a href="map-d.svg"><img src="map-d.svg" alt="Map" class="big"></a>
+<a href="mollnar-d.svg"><img src="mollnar-d.svg" alt="Mollnar"></a>
+<a href="lcd-rainbow-l.jxl"><img src="lcd-rainbow-l.webp" alt="LCD Raindow"></a>
+<a href="pixels-d.jxl"><img src="pixels-d.webp" alt="Pixels" class="big"></a>
+<a href="sheet-l.jxl"><img src="sheet-l.webp" alt="Sheet"></a>
+<a href="swoosh-l.jxl"><img src="swoosh-l.webp" alt="Swoosh"></a>
+<a href="symbolic-soup-d.jxl"><img src="symbolic-soup-d.webp" alt="Symbolic Soup"></a>
+</div>
 
 If you're wondering about the strange square aspect ratio, take a look at the wallpaper sizing guide in our [GNOME Interface Guidelines](https://developer.gnome.org/hig/reference/backgrounds.html).
 

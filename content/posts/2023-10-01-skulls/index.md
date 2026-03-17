@@ -28,7 +28,7 @@ You can give the game a [shot here](https://jimmac.github.io/pico-shed/skulls.ht
 
 Let me know what you think of it and post your high scores at me on [Mastodon/Fediverse](https://mastodon.social/@jimmac)!
 
-![Skull Buster Sprites](skulls-sprites.png){:.pixels.full}
+<img src="skulls-sprites.png" alt="Skull Buster Sprites" class="pixels full">
 
 I'm not planning to ever make another game, but I will definitely use the PICO8 platform to do some small interactive demos for projects like [Weeklybeats](https://weeklybeats.com/). It's dope!
 

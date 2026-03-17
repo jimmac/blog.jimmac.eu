@@ -5,8 +5,8 @@ date = 2021-08-18
 tags = ["work", "gnome", "inkscape", "tutorial"]
 +++
 
-[comment]: <> <a href="{{ site.url }}{{ page.url }}">absolute links</a>
-[comment]: [Previously]({% post_url 2021-02-25-tour-sketches/2021-02-25-tour-sketches %}).
+<!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->
+[comment]: [Previously](/posts/tour-sketches/).
 
 While this topic isn't anything new (the asset in question is probably a decade old) I never shared a dirty little secret about some of our symbolic assets.
 

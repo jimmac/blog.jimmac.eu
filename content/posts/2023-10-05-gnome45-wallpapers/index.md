@@ -17,7 +17,7 @@ There have been updates to the existing set, the surprisingly popular [Blobs](ht
 
 Weirdly named [Morphogenesis](https://gitlab.gnome.org/GNOME/gnome-backgrounds/-/blob/gnome-45/backgrounds/morphogenesis-l.svg?ref_type=heads) is one of my favorite additions this release. Based around a concept of reactive diffusion, described by none other than [Allan Turing](https://www.dna.caltech.edu/courses/cs191/paperscs191/turing.pdf), features a little easter egg if you're into chasing those down.
 
-[Previously]({% post_url 2023-01-30-gnome44-wallpapers/2023-01-30-gnome44-wallpapers %}),
-[Previously]({% post_url 2022-08-08-gnome43-wallpapers/2022-08-08-gnome43-wallpapers %}),
-[Previously]({% post_url  archive/2020-09-01-shelved-wallpapers-2/2020-09-01-shelved-wallpapers-2 %}),
-[Previously]({% post_url  archive/2018-02-12-shelved-wallpapers/2018-02-12-shelved-wallpapers %})
+[Previously](/posts/gnome44-wallpapers/),
+[Previously](/posts/gnome43-wallpapers/),
+[Previously](/posts/shelved-wallpapers-2/),
+[Previously](/posts/shelved-wallpapers/)

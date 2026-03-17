@@ -40,7 +40,7 @@ For the first time ever I actually finished a [monthly challenge](https://inktob
 ![29. Patch](IMG_0319.PNG)
 ![30. Slither](IMG_0320.GIF)
 ![31. Risk](IMG_0321.PNG)
-{:.pixels}
+{.pixels}
 
 <style type="text/css">
 .pixels {

@@ -6,7 +6,7 @@ tags = ["blender", "inkscape", "icon", "design"]
 +++
 Mentioning my ever lasting adoration of the [realtime engine in Blender on twitter](https://twitter.com/jimmac/status/1512533410677469188) kind of exploded (for my standards), so I figured I'd write a blog post.
 
-![Boatswain](com.feaneron.Boatswain.svg){: .fullcoloricon}
+<img src="com.feaneron.Boatswain.svg" alt="Boatswain" class="fullcoloricon">
 
 [Georges](https://feaneron.com/) wrote a great little app to configure [Elgato Stream Deck](https://www.elgato.com/en/stream-deck) buttons on non-proprietary platforms. I've been following Georges' ventures [into streaming](https://www.youtube.com/c/GeorgesStavracas/videos). He's done amazing job promoting GNOME development and has been helping with [OBS](https://obsproject.com/) a lot too.
 
@@ -33,5 +33,5 @@ There was some interest in how the shader is set up, so I'm happily making the f
 
 To do it properly, I'd probably want to improve the actual display shader to rasterize the bitmaps in a more sophisticated manner than just displaying a bitmap with no filtering. But I'd say even this basic setup has served the purpose of checking the viability of a symbol rendered on a lousy display.
 
-[comment]: <> <a href="{{ site.url }}{{ page.url }}">absolute links</a>
-[comment]: [Previously]({% post_url 2021-02-25-tour-sketches/2021-02-25-tour-sketches %}).
+<!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->
+[comment]: [Previously](/posts/tour-sketches/).

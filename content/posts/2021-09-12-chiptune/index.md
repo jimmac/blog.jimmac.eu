@@ -6,8 +6,8 @@ image = "chiptune.gif"
 tags = ["tracker", "polyend", "synth", "sxfr", "pixel", "aseprite", "pixaki"]
 +++
 
-[comment]: <> <a href="{{ site.url }}{{ page.url }}">absolute links</a>
-[comment]: [Previously]({% post_url 2021-02-25-tour-sketches/2021-02-25-tour-sketches %}).
+<!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->
+[comment]: [Previously](/posts/tour-sketches/).
 
 [![Null Amusement](chiptune.gif)](https://soundcloud.com/jimmac/null-amusement)
 
@@ -27,9 +27,9 @@ As for the visuals, I've used way many more tools than you'd expect. The icon as
 
 ![Blender VSE](blender-vse.png)
 
-[Previously]({% post_url  2021-08-03-single-cycle-rave/2021-08-03-single-cycle-rave %}),
-[Previously]({% post_url  2021-06-07-troubled-minister/2021-06-07-troubled-minister %}),
-[Previously]({% post_url  2021-05-24-what-am-i/2021-05-24-what-am-i %}),
-[Previously]({% post_url  2021-05-20-100kph/2021-05-20-100kph %}),
-[Previously]({% post_url  2021-04-16-jammin-on-elektron/2021-04-16-jammin-on-elektron %}),
-[Previously]({% post_url 2021-02-02-elektronic/2021-02-02-elektronic %}).
+[Previously](/posts/single-cycle-rave/),
+[Previously](/posts/troubled-minister/),
+[Previously](/posts/what-am-i/),
+[Previously](/posts/100kph/),
+[Previously](/posts/jammin-on-elektron/),
+[Previously](/posts/elektronic/).

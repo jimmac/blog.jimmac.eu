@@ -22,7 +22,7 @@ Watch a video:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eJegcgeaa5Q?si=t5F8sl7T17p6ED3_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-[Previously]({% post_url  2021-05-24-what-am-i/2021-05-24-what-am-i %}),
-[Previously]({% post_url  2021-05-20-100kph/2021-05-20-100kph %}),
-[Previously]({% post_url  2021-04-16-jammin-on-elektron/2021-04-16-jammin-on-elektron %}),
-[Previously]({% post_url 2021-02-02-elektronic/2021-02-02-elektronic %}).
+[Previously](/posts/what-am-i/),
+[Previously](/posts/100kph/),
+[Previously](/posts/jammin-on-elektron/),
+[Previously](/posts/elektronic/).
