@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Even a Stopped Clock - blender</title>
+    <subtitle>Random musings of a semi-sane designer from lesser Europe.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://blog.jimmac.eu/tags/blender/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://blog.jimmac.eu"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-11-21T00:00:00+00:00</updated>
+    <id>https://blog.jimmac.eu/tags/blender/atom.xml</id>
+    <entry xml:lang="en">
+        <title>12 months instead of 12 minutes</title>
+        <published>2025-11-21T00:00:00+00:00</published>
+        <updated>2025-11-21T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/3d-website-md/"/>
+        <id>https://blog.jimmac.eu/posts/3d-website-md/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/3d-website-md/">&lt;p&gt;Hey Kids! Other than raving about &lt;a href=&quot;https:&#x2F;&#x2F;www.gnome.org&quot;&gt;GNOME.org&lt;&#x2F;a&gt; being a &lt;a href=&quot;&#x2F;posts&#x2F;plain-html&#x2F;&quot;&gt;static HTML&lt;&#x2F;a&gt;, there&#x27;s one more aspect I&#x27;d like to get back to in this writing exercise called a blog post. &lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;3d-website-md&#x2F;3D-sharecard.webp&quot; alt=&quot;Share card gets updated every release too&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;ve recently come across an apalling genAI website for a project I hold deerly so I thought I&#x27;d give a glimpse on how we used to do things in the olden days. It is probably not going to be done this way anymore in the enshittified timeline we ended up in. The two options available these days are — a quickly generated slop website or no website at all, because privately owned social media is where it&#x27;s at.&lt;&#x2F;p&gt;
+&lt;p&gt;The wanna-be-catchy title of this post comes from the fact the website underwent &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;Teams&#x2F;Websites&#x2F;www.gnome.org&#x2F;-&#x2F;commits&#x2F;main?ref_type=HEADS&quot;&gt;numerous iterations&lt;&#x2F;a&gt; (iterations is the core principle of good design) spanning over a year before we introduced the redesign.&lt;&#x2F;p&gt;
+&lt;p&gt;So how did we end up with a 3D model of a laptop for the hero image on the GNOME website, rather than something generated in a couple of seconds and a &lt;a href=&quot;https:&#x2F;&#x2F;www.ft.com&#x2F;content&#x2F;1d468bd2-6712-4cdd-ac71-21e0ace2d048?utm_source=chatgpt.com&quot;&gt;small town worth of drinking water&lt;&#x2F;a&gt; or a simple SVG illustration?&lt;&#x2F;p&gt;
+&lt;p&gt;The hero image is static now, but used to be a scroll based animation at the early days. It could have become a simple vector style illustration, but I really enjoy the light interaction of the screen and the laptop, especially between the light and dark variants. Toggling dark mode has been my favorite fidget spinner.&lt;&#x2F;p&gt;
+&lt;p&gt;Creating light&#x2F;dark variants is a bit tedious to do manually every release, but automating still a bit too hard to pull off (the taking screenshots of a nightly OS bit). There&#x27;s also the fun of picking a theme for the screenshot rather than doing the same thing over and over. Doing the screenshooting manually meant automating the rest, as a 6 month cycle is enough time to forget how things are done. The process is held together with duct tape, I mean a python script, that renders the website image assets from the few screenshots captured using &lt;a href=&quot;https:&#x2F;&#x2F;os.gnome.org&quot;&gt;GNOME OS&lt;&#x2F;a&gt; running inside &lt;a href=&quot;https:&#x2F;&#x2F;flathub.org&#x2F;en&#x2F;apps&#x2F;org.gnome.Boxes&quot;&gt;Boxes&lt;&#x2F;a&gt;. Two great invisible things made by amazing individuals that could go away in an instant and that thought gives me a dose of anxiety.&lt;&#x2F;p&gt;
+&lt;picture&gt;
+    &lt;source srcset=&quot;dark.webp&quot; media=&quot;(prefers-color-scheme: dark)&quot; &#x2F;&gt;
+    &lt;img src=&quot;light.webp&quot; &#x2F;&gt;
+&lt;&#x2F;picture&gt;
+&lt;p&gt;This does take a minute to render on a laptop (CPU only Cycles), but is a matter of a single invocation and a git commit. So far it has survived a couple of Blender releases, so fingers crossed for the future.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;blogs.gnome.org&#x2F;sophieh&#x2F;author&#x2F;sophieh&#x2F;&quot;&gt;Sophie&lt;&#x2F;a&gt; has recently been looking &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;Teams&#x2F;Websites&#x2F;www.gnome.org&#x2F;-&#x2F;merge_requests&#x2F;71&quot;&gt;into translations&lt;&#x2F;a&gt;, so we might reconsider that 3D approach if translated screenshots become viable (and have them contained in an SVG similar to how &lt;a href=&quot;https:&#x2F;&#x2F;os.gnome.org&quot;&gt;os.gnome.org&lt;&#x2F;a&gt; is done). So far the 3D hero has always been in sync with the release, unlike in our Wordpress days. Fingers crossed.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Ingenuity&#x27;s One Year of Mars Flights</title>
+        <published>2022-04-10T00:00:00+00:00</published>
+        <updated>2022-04-10T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/one-year-of-mars-flights/"/>
+        <id>https://blog.jimmac.eu/posts/one-year-of-mars-flights/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/one-year-of-mars-flights/">&lt;p&gt;Next week it&#x27;s going to be a year since Ingenuity made the first flight in an atmosphere of another planet. An atmosphere with about 1% of density of the one on Earth.&lt;&#x2F;p&gt;
+&lt;!-- vimeo is a racket
+&lt;iframe src=&quot;https:&#x2F;&#x2F;player.vimeo.com&#x2F;video&#x2F;686244806?h=f8f41b2cd3&amp;amp;badge=0&amp;amp;autopause=0&amp;amp;player_id=0&amp;amp;app_id=58479&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; picture-in-picture&quot; allowfullscreen style=&quot;width: 100%; height: auto; aspect-ratio: 16 &#x2F; 9;&quot; title=&quot;Ingenuity&amp;amp;#039;s One Year of Mars Flights&quot;&gt;&lt;&#x2F;iframe&gt;
+--&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;s7NoLm4xUB4?si=tMataTVDVRIGsrLB&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;Something that sounded unlikely became a great success with &lt;a href=&quot;https:&#x2F;&#x2F;mars.nasa.gov&#x2F;technology&#x2F;helicopter&#x2F;#Flight-Log&quot;&gt;24 flights&lt;&#x2F;a&gt; so far. To celebrate the occasion I revisited an older project of mine and used more appropriate footage shot by my friend &lt;a href=&quot;https:&#x2F;&#x2F;www.vojtechpollak.com&#x2F;&quot;&gt;VOPO&lt;&#x2F;a&gt; at Fuertaventura, Canary Islands. I rendered some overlays of the Ingenuity model kindly provided by NASA.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;one-year-of-mars-flights&#x2F;ingenuity-and-perseverance.webp&quot; alt=&quot;Ingenuity with Perseverance&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The music was composed on the &lt;a href=&quot;https:&#x2F;&#x2F;dirtywave.com&#x2F;&quot;&gt;Dirtywave M8 Tracker&lt;&#x2F;a&gt;, went straight from the device, no mastering. The time constraints of &lt;a href=&quot;https:&#x2F;&#x2F;weeklybeats.com&#x2F;&quot;&gt;weeklybeats&lt;&#x2F;a&gt; is brutal. I used a hint to the &lt;em&gt;Close Encounters of the Third Kind&lt;&#x2F;em&gt; main theme, but because the flight is unrealistically dynamic, it leans on a mangled classic &lt;a href=&quot;https:&#x2F;&#x2F;free-sample-packs.com&#x2F;junglejungle-1989-1999-sample-pack&#x2F;&quot;&gt;Jungle Jungle&lt;&#x2F;a&gt; break.&lt;&#x2F;p&gt;
+&lt;p&gt;Thanks to the C-Base crew for taking good care of us and the GNOME Fundation to support the travel (mostly on the surface).&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;one-year-of-mars-flights&#x2F;sponsored.png&quot; alt=&quot;Supported by the GNOME Foundation&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Blender Eevee is Magic</title>
+        <published>2022-04-09T00:00:00+00:00</published>
+        <updated>2022-04-09T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/blender-eevee-is-magic/"/>
+        <id>https://blog.jimmac.eu/posts/blender-eevee-is-magic/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/blender-eevee-is-magic/">&lt;p&gt;Mentioning my ever lasting adoration of the &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;jimmac&#x2F;status&#x2F;1512533410677469188&quot;&gt;realtime engine in Blender on twitter&lt;&#x2F;a&gt; kind of exploded (for my standards), so I figured I&#x27;d write a blog post.&lt;&#x2F;p&gt;
+&lt;img src=&quot;com.feaneron.Boatswain.svg&quot; alt=&quot;Boatswain&quot; class=&quot;fullcoloricon&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;feaneron.com&#x2F;&quot;&gt;Georges&lt;&#x2F;a&gt; wrote a great little app to configure &lt;a href=&quot;https:&#x2F;&#x2F;www.elgato.com&#x2F;en&#x2F;stream-deck&quot;&gt;Elgato Stream Deck&lt;&#x2F;a&gt; buttons on non-proprietary platforms. I&#x27;ve been following Georges&#x27; ventures &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;c&#x2F;GeorgesStavracas&#x2F;videos&quot;&gt;into streaming&lt;&#x2F;a&gt;. He&#x27;s done amazing job promoting GNOME development and has been helping with &lt;a href=&quot;https:&#x2F;&#x2F;obsproject.com&#x2F;&quot;&gt;OBS&lt;&#x2F;a&gt; a lot too.&lt;&#x2F;p&gt;
+&lt;p&gt;To make &lt;a href=&quot;https:&#x2F;&#x2F;feaneron.com&#x2F;2022&#x2F;03&#x2F;17&#x2F;boatswain-your-stream-deck-app-for-linux&#x2F;&quot;&gt;Boatswain&lt;&#x2F;a&gt; work great by default, rather than just presenting people with a monstrous &lt;a href=&quot;https:&#x2F;&#x2F;zachholman.com&#x2F;posts&#x2F;shit-work&#x2F;&quot;&gt;shit work&lt;&#x2F;a&gt; mountain to even get going, Georges &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;World&#x2F;boatswain&#x2F;-&#x2F;issues&#x2F;18&quot;&gt;needed some graphical assets&lt;&#x2F;a&gt; to have the configurator ship with ready made presets. &lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;blender-eevee-is-magic&#x2F;scr-boatswain.png&quot; alt=&quot;Boatswain Screenshot&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Sadly I&#x27;ve already invested in &lt;a href=&quot;https:&#x2F;&#x2F;www.blackmagicdesign.com&#x2F;products&#x2F;atemmini&quot;&gt;an appliance that covers my video streaming and recording needs&lt;&#x2F;a&gt;, so I wasn&#x27;t going to buy the gear to test how things look. Instead I made the device virtual, and rendered an approximation of it in &lt;a href=&quot;https:&#x2F;&#x2F;flathub.org&#x2F;apps&#x2F;details&#x2F;org.blender.Blender&quot;&gt;Blender&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;!-- vimeo is a racket 
+&lt;iframe src=&quot;https:&#x2F;&#x2F;player.vimeo.com&#x2F;video&#x2F;697659862?h=41eb37e115&amp;amp;badge=0&amp;amp;autopause=0&amp;amp;player_id=0&amp;amp;app_id=58479&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; picture-in-picture&quot; allowfullscreen style=&quot;width: 100%; height: auto; aspect-ratio: 16 &#x2F; 9;&quot;&gt;&lt;&#x2F;iframe&gt;
+&lt;script src=&quot;https:&#x2F;&#x2F;player.vimeo.com&#x2F;api&#x2F;player.js&quot;&gt;&lt;&#x2F;script&gt;
+--&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;RAv6eNpBnBY?si=8GraybI2ZjzOFSXx&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;For &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-backgrounds&#x2F;&quot;&gt;GNOME wallpapers&lt;&#x2F;a&gt; there are cases where I have to resort to waiting on Cycles, but if you compare this 2 minute render (left) to the 0.5s render (right) it&#x27;s really not worth it in many cases. &lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;blender-eevee-is-magic&#x2F;171-stream-deck.webp&quot; alt=&quot;Cycles left, Eevee right&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Personally switching to AMD GPUs a couple of years back has removed much pain updating the OS and the reason I was allowed to do that is Eevee.&lt;&#x2F;p&gt;
+&lt;p&gt;There was some interest in how the shader is set up, so I&#x27;m happily making the file &lt;a href=&quot;https:&#x2F;&#x2F;www.blendswap.com&#x2F;blend&#x2F;29924&quot;&gt;available for dissection&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;To do it properly, I&#x27;d probably want to improve the actual display shader to rasterize the bitmaps in a more sophisticated manner than just displaying a bitmap with no filtering. But I&#x27;d say even this basic setup has served the purpose of checking the viability of a symbol rendered on a lousy display.&lt;&#x2F;p&gt;
+&lt;!-- &lt;a href=&quot;{{ site.url }}{{ page.url }}&quot;&gt;absolute links&lt;&#x2F;a&gt; --&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Ingenuity FPV</title>
+        <published>2021-03-22T00:00:00+00:00</published>
+        <updated>2021-03-22T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/ingenuity-fpv/"/>
+        <id>https://blog.jimmac.eu/posts/ingenuity-fpv/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/ingenuity-fpv/">&lt;!-- &lt;div class=&quot;inlineimgs&quot; markdown=&quot;1&quot;&gt; --&gt;
+&lt;!-- &lt;a href=&quot;{{ site.url }}{{ page.url }}&quot;&gt;absolute links&lt;&#x2F;a&gt; --&gt;
+&lt;p&gt;When I &lt;a href=&quot;&#x2F;posts&#x2F;perseverance&#x2F;&quot;&gt;previously posted&lt;&#x2F;a&gt;
+about the Perseverance landing, I didn&#x27;t realize NASA has actually published textured models of &lt;a href=&quot;https:&#x2F;&#x2F;mars.nasa.gov&#x2F;resources&#x2F;25042&#x2F;mars-perseverance-rover-3d-model&#x2F;&quot;&gt;the lander&lt;&#x2F;a&gt; and it&#x27;s cute not-so-little maritan helicopter, &lt;a href=&quot;https:&#x2F;&#x2F;mars.nasa.gov&#x2F;resources&#x2F;25043&#x2F;mars-ingenuity-helicopter-3d-model&#x2F;&quot;&gt;Ingenuity&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;ingenuity-fpv&#x2F;ingenuity-fpv.png&quot; alt=&quot;Ingenuity ripping&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Naturally I was drawn to play around with the model over the past few weeks and after posting a little &lt;a href=&quot;https:&#x2F;&#x2F;www.instagram.com&#x2F;p&#x2F;CLpfH-KHNHg&#x2F;&quot;&gt;Instagram test&lt;&#x2F;a&gt;, a more elaborate &lt;a href=&quot;https:&#x2F;&#x2F;www.instagram.com&#x2F;reel&#x2F;CLuEO-fFzRi&#x2F;&quot;&gt;Instagram Reel&lt;&#x2F;a&gt;, I was naturally bound to theme some of my fpv flights as martian exploration. I&#x27;m glad I managed to create one before the actual Ingenuity test flight, because the strict lockdown really limits any fitting location right now.&lt;&#x2F;p&gt;
+&lt;p&gt;All of the martian footage has been rendered with the realtime eevee engine, maxing out at 20 seconds per frame. The focal blur has been improved in eevee recently, but Cycles was used for all the fpv overlays for now.&lt;&#x2F;p&gt;
+&lt;!-- vimeo is a racket
+&lt;iframe src=&quot;https:&#x2F;&#x2F;player.vimeo.com&#x2F;video&#x2F;526888385&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; picture-in-picture&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;vimeo.com&#x2F;526888385&quot;&gt;Digitone + Digitakt: Ingenuity FPV&lt;&#x2F;a&gt; from &lt;a href=&quot;https:&#x2F;&#x2F;vimeo.com&#x2F;jimmacfx&quot;&gt;jimmac&lt;&#x2F;a&gt; on &lt;a href=&quot;https:&#x2F;&#x2F;vimeo.com&quot;&gt;Vimeo&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+--&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;AxYo_qJi2XQ?si=jvPc8m-i7z4rxQ-k&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;The original track was recorded at 60BPM, but sadly the footage is unbearable to watch for over 4 minutes, so I&#x27;ve resampled it to 90BMP to keep the legth down. It does glitch at some points, but the motivation to work on this has reached critical levels, so I&#x27;m calling it done.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Even a Stopped Clock - ximian</title>
+    <subtitle>Random musings of a semi-sane designer from lesser Europe.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://blog.jimmac.eu/tags/ximian/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://blog.jimmac.eu"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2004-10-17T00:00:00+00:00</updated>
+    <id>https://blog.jimmac.eu/tags/ximian/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Industrial Gtk Engine Fixups</title>
+        <published>2004-10-17T00:00:00+00:00</published>
+        <updated>2004-10-17T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/industrial-gtk-engine-fixups/"/>
+        <id>https://blog.jimmac.eu/posts/industrial-gtk-engine-fixups/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/industrial-gtk-engine-fixups/">&lt;p&gt;There are two things I&#x27;d like to see implemented in the industrial engine.
+As it stands it is pretty much impossible to tell what entry widget has focus
+if you don&#x27;t count the blinking of the cursor which depending on your settings
+can be pretty hard.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;industrial-gtk-engine-fixups&#x2F;selected-entry.gif&quot; alt=&quot;Selected Entry&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The other thing is rather cosmetic. I wouldn&#x27;t mind giving more visual clue
+on what tab is currently selected by adding the selection tripe, similar to
+what XP does.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;industrial-gtk-engine-fixups&#x2F;newtabs.png&quot; alt=&quot;New Tabs&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Oh and once Industrial is in gnome-themes, I&#x27;d love to see the &lt;a href=&quot;http:&#x2F;&#x2F;bugzilla.ximian.com&#x2F;show_bug.cgi?id=45579&quot;&gt;sodipodi ruler bug&lt;&#x2F;a&gt; squashed. Pwetty pwueese!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

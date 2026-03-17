@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Even a Stopped Clock - fpv</title>
+    <subtitle>Random musings of a semi-sane designer from lesser Europe.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://blog.jimmac.eu/tags/fpv/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://blog.jimmac.eu"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-09-04T00:00:00+00:00</updated>
+    <id>https://blog.jimmac.eu/tags/fpv/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Klatovy FPV</title>
+        <published>2024-09-04T00:00:00+00:00</published>
+        <updated>2024-09-04T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/klatovy/"/>
+        <id>https://blog.jimmac.eu/posts/klatovy/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/klatovy/">&lt;p&gt;They say you can&#x27;t forget how to ride a bicycle. Well I don&#x27;t think it applies to FPV racing. Haven&#x27;t touched the sticks in a year. But that does not make me not hang out with old buddies at the longest running event in Czechia.&lt;&#x2F;p&gt;
+&lt;video controls autoplay loop class=&quot;image full&quot;&gt;
+&lt;source src=&quot;klatovy-timelapse.webm&quot; type=&quot;video&#x2F;webm&quot;&gt;
+&lt;source src=&quot;klatovy-timelapse.mp4&quot; type=&quot;video&#x2F;mp4&quot;&gt;
+&lt;img src=&quot;klatovy-sketch.png&quot; title=&quot;Sketch of the Klatovy Poster&quot; &#x2F;&gt;
+&lt;&#x2F;video&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;klatovy&#x2F;klatovy-crt.png&quot; alt=&quot;Klatovy poster as Pixelart (CRT emulation)&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Looking Back at 2023</title>
+        <published>2024-01-02T00:00:00+00:00</published>
+        <updated>2024-01-02T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/look-back/"/>
+        <id>https://blog.jimmac.eu/posts/look-back/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/look-back/">&lt;p&gt;Congratulations on finishing yet another ride around the Sol with me. Here&#x27;s some noteworthy events from it from the perspective of a dust spec.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;music&quot;&gt;Music&lt;&#x2F;h1&gt;
+&lt;p&gt;While of course I&#x27;m stuck in my young taste like everybody else, I do try to pick up some new music. This year I&#x27;ve discovered &lt;em&gt;Venjent&lt;&#x2F;em&gt; doing a &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;shorts&#x2F;iYf7Hlme9s4&quot;&gt;silly skit&lt;&#x2F;a&gt; (he&#x27;s fully aware of that being how people discover his music and really leans into it). In surreal turn of events I went to see him in a club, looking like a misplaced pensioner at 1am, when he finally spun his set. But I seriously enjoy how he can transform the &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=A4bpaKnWg5M&quot;&gt;absolute silliness&lt;&#x2F;a&gt; into a total banger I play on repeat.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;jimmac.bandcamp.com&#x2F;album&#x2F;take-frequent-breaks&quot;&gt;&lt;img src=&quot;take_breaks.webp&quot; alt=&quot;Take Frequent Breaks&quot; class=&quot;full&quot;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;ve published some music of my own as well. After &lt;a href=&quot;https:&#x2F;&#x2F;jimmac.bandcamp.com&#x2F;album&#x2F;desync&quot;&gt;Desync&lt;&#x2F;a&gt; assembled from material from weeklybeats 22 came &lt;a href=&quot;https:&#x2F;&#x2F;jimmac.bandcamp.com&#x2F;album&#x2F;solar-coffee&quot;&gt;Solar Coffee&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;jimmac.bandcamp.com&#x2F;album&#x2F;take-frequent-breaks&quot;&gt;Take Frequent Breaks&lt;&#x2F;a&gt; right at the end of the year. I doubt I&#x27;ll release anything this year, because &lt;a href=&quot;https:&#x2F;&#x2F;weeklybeats.com&quot;&gt;Weekly Beats 24&lt;&#x2F;a&gt; will probably suck all my energy for music production. Hopefully I&#x27;ll enjoy it as much as the first half of 22 :)&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;fpv&quot;&gt;FPV&lt;&#x2F;h1&gt;
+&lt;p&gt;From about 3 videos a week in 2018 I&#x27;m down to about 3 a year. One might say I&#x27;ve thrown the towel in, but I still enjoy a decent tree surf from time to time. &lt;&#x2F;p&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;QMTmC736Um4?si=P4vJY5Di5pMoJLEl&quot; title=&quot;Take Frequent Breaks&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;I&#x27;ve completely dropped the ball when it comes to racing though. Didn&#x27;t even qualify in Klatovy this year, because absolutely everyone has been training like crazy. It&#x27;s been lovely to hang around with the weirdos in the three competitions I attended.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Ingenuity&#x27;s One Year of Mars Flights</title>
+        <published>2022-04-10T00:00:00+00:00</published>
+        <updated>2022-04-10T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/one-year-of-mars-flights/"/>
+        <id>https://blog.jimmac.eu/posts/one-year-of-mars-flights/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/one-year-of-mars-flights/">&lt;p&gt;Next week it&#x27;s going to be a year since Ingenuity made the first flight in an atmosphere of another planet. An atmosphere with about 1% of density of the one on Earth.&lt;&#x2F;p&gt;
+&lt;!-- vimeo is a racket
+&lt;iframe src=&quot;https:&#x2F;&#x2F;player.vimeo.com&#x2F;video&#x2F;686244806?h=f8f41b2cd3&amp;amp;badge=0&amp;amp;autopause=0&amp;amp;player_id=0&amp;amp;app_id=58479&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; picture-in-picture&quot; allowfullscreen style=&quot;width: 100%; height: auto; aspect-ratio: 16 &#x2F; 9;&quot; title=&quot;Ingenuity&amp;amp;#039;s One Year of Mars Flights&quot;&gt;&lt;&#x2F;iframe&gt;
+--&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;s7NoLm4xUB4?si=tMataTVDVRIGsrLB&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;Something that sounded unlikely became a great success with &lt;a href=&quot;https:&#x2F;&#x2F;mars.nasa.gov&#x2F;technology&#x2F;helicopter&#x2F;#Flight-Log&quot;&gt;24 flights&lt;&#x2F;a&gt; so far. To celebrate the occasion I revisited an older project of mine and used more appropriate footage shot by my friend &lt;a href=&quot;https:&#x2F;&#x2F;www.vojtechpollak.com&#x2F;&quot;&gt;VOPO&lt;&#x2F;a&gt; at Fuertaventura, Canary Islands. I rendered some overlays of the Ingenuity model kindly provided by NASA.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;one-year-of-mars-flights&#x2F;ingenuity-and-perseverance.webp&quot; alt=&quot;Ingenuity with Perseverance&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The music was composed on the &lt;a href=&quot;https:&#x2F;&#x2F;dirtywave.com&#x2F;&quot;&gt;Dirtywave M8 Tracker&lt;&#x2F;a&gt;, went straight from the device, no mastering. The time constraints of &lt;a href=&quot;https:&#x2F;&#x2F;weeklybeats.com&#x2F;&quot;&gt;weeklybeats&lt;&#x2F;a&gt; is brutal. I used a hint to the &lt;em&gt;Close Encounters of the Third Kind&lt;&#x2F;em&gt; main theme, but because the flight is unrealistically dynamic, it leans on a mangled classic &lt;a href=&quot;https:&#x2F;&#x2F;free-sample-packs.com&#x2F;junglejungle-1989-1999-sample-pack&#x2F;&quot;&gt;Jungle Jungle&lt;&#x2F;a&gt; break.&lt;&#x2F;p&gt;
+&lt;p&gt;Thanks to the C-Base crew for taking good care of us and the GNOME Fundation to support the travel (mostly on the surface).&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;one-year-of-mars-flights&#x2F;sponsored.png&quot; alt=&quot;Supported by the GNOME Foundation&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Droneman</title>
+        <published>2022-02-14T00:00:00+00:00</published>
+        <updated>2022-02-14T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/droneman/"/>
+        <id>https://blog.jimmac.eu/posts/droneman/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/droneman/">&lt;p&gt;Probably only a fraction of you had a chance to see &lt;a href=&quot;https:&#x2F;&#x2F;www.imdb.com&#x2F;title&#x2F;tt10288320&#x2F;&quot;&gt;Droneman&lt;&#x2F;a&gt; in a theatre. It&#x27;s available on Netflix, so perhaps not universally, but ever so slightly more available to a global audience. Why would I be plugging a movie? Because it&#x27;s &lt;a href=&quot;https:&#x2F;&#x2F;www.imdb.com&#x2F;name&#x2F;nm12369333&#x2F;&quot;&gt;my only entry in IMDB&lt;&#x2F;a&gt; and features a spectacular performance by my son, that&#x27;s why!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;droneman&#x2F;droneman.png&quot; alt=&quot;Droneman&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Single Cycle Rave</title>
+        <published>2021-08-03T00:00:00+00:00</published>
+        <updated>2021-08-03T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/single-cycle-rave/"/>
+        <id>https://blog.jimmac.eu/posts/single-cycle-rave/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/single-cycle-rave/">&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;single-cycle-rave&#x2F;SingleCycleRave.jpg&quot; alt=&quot;Single Cycle Rave&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;While I&#x27;ve really enjoyed the &lt;a href=&quot;https:&#x2F;&#x2F;www.elektron.se&#x2F;wp-content&#x2F;uploads&#x2F;2021&#x2F;06&#x2F;Digitakt_OS1.30_readme.html&quot;&gt;new firmware&lt;&#x2F;a&gt; with an extra LFO on the Elektron Digitakt, I haven&#x27;t posted anything because the next day recording never had the same power as when I head-banged the tune in bed the previous night (the sole reason why everything is backlit on the Digitakt, don&#x27;t let them live performers tell you otherwise).&lt;&#x2F;p&gt;
+&lt;p&gt;But I have to break through the creator&#x27;s block and start posting again, because I really want to get good at this. &lt;&#x2F;p&gt;
+&lt;p&gt;Some pointless technicalities: Digitakt is a drum machine that allows to loop even super tiny samples so what you get is a very versatile oscillator to furter shape with EQ and effects. I am still terrible and slow, but there is definitely joy in &lt;em&gt;playing&lt;&#x2F;em&gt; versus &lt;a href=&quot;&#x2F;posts&#x2F;what-am-i&#x2F;&quot;&gt;programming a pattern in a tracker&lt;&#x2F;a&gt;. Sure it feels a bit odd to keep the amazing Digitone off, but I feel like I always spoit the broth by adding and adding more. This track benefts from the minimalistic constraints I think.&lt;&#x2F;p&gt;
+&lt;p&gt;The drone footage taken from a few shoots in 2021. It&#x27;s never enough to make a video out of it, so I&#x27;m happy it&#x27;s usable as seasoning to my synth vids (haven&#x27;t been flying half as much as I want despite conditions being amazing).&lt;&#x2F;p&gt;
+&lt;p&gt;Enjoy!&lt;&#x2F;p&gt;
+&lt;p&gt;Listen right here:
+&lt;audio controls&gt;&lt;&#x2F;p&gt;
+&lt;source src=&quot;SingleCycleRave.mp3&quot; type=&quot;audio&#x2F;mpeg&quot;&gt;
+&lt;source src=&quot;SingleCycleRave.aac&quot; type=&quot;audio&#x2F;aac&quot;&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;jimmac.bandcamp.com&#x2F;track&#x2F;single-cycle-rave&quot;&gt;Single Cycle Rave on Bandcamp&lt;&#x2F;a&gt;.
+&lt;&#x2F;audio&gt;
+&lt;p&gt;Watch a video:&lt;&#x2F;p&gt;
+&lt;!-- vimeo is a racket
+&lt;iframe title=&quot;vimeo-player&quot; src=&quot;https:&#x2F;&#x2F;player.vimeo.com&#x2F;video&#x2F;582257195&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;a href=&quot;https:&#x2F;&#x2F;vimeo.com&#x2F;582257195&quot;&gt;Watch on Vimeo&lt;&#x2F;a&gt;&lt;&#x2F;iframe&gt;
+--&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;BY53z4srXos?si=Ai4UX6iZxbVLijyO&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;posts&#x2F;troubled-minister&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;what-am-i&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;100kph&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;jammin-on-elektron&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;elektronic&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Troubled Minister</title>
+        <published>2021-06-07T00:00:00+00:00</published>
+        <updated>2021-06-07T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/troubled-minister/"/>
+        <id>https://blog.jimmac.eu/posts/troubled-minister/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/troubled-minister/">&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;troubled-minister&#x2F;dj-strobe.gif&quot; alt=&quot;DJ Strobe&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Another weekend arrangement made mostly in Polyend Tracker. Video footage assembled from my fpv flights around Liberec over the course of past few weeks.&lt;&#x2F;p&gt;
+&lt;p&gt;Listen right here:
+&lt;audio controls&gt;&lt;&#x2F;p&gt;
+&lt;source src=&quot;troubled-minister.mp3&quot; type=&quot;audio&#x2F;mpeg&quot;&gt;
+&lt;source src=&quot;troubled-minister.aac&quot; type=&quot;audio&#x2F;aac&quot;&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;soundcloud.com&#x2F;jimmac&#x2F;what-am-i&quot;&gt;What am I? on Soundcloud&lt;&#x2F;a&gt;.
+&lt;&#x2F;audio&gt;
+&lt;p&gt;Watch a video:&lt;&#x2F;p&gt;
+&lt;!-- vimeo is a racket
+&lt;iframe title=&quot;vimeo-player&quot; src=&quot;https:&#x2F;&#x2F;player.vimeo.com&#x2F;video&#x2F;559931348&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+--&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;eJegcgeaa5Q?si=t5F8sl7T17p6ED3_&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;posts&#x2F;what-am-i&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;100kph&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;jammin-on-elektron&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;elektronic&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>125BPM vs 100KPH</title>
+        <published>2021-05-20T00:00:00+00:00</published>
+        <updated>2021-05-20T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/100kph/"/>
+        <id>https://blog.jimmac.eu/posts/100kph/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/100kph/">&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;100kph&#x2F;DIandDT.png&quot; alt=&quot;Elektron Digitone + Digitakt&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I avoid fiddling with batteries in the house, so I soldered up a &lt;a href=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;100kph&#x2F;battery.jpg&quot;&gt;4S Li-Ion pack in the garden&lt;&#x2F;a&gt; and tested a high speed cruise in the usual spot. Jammed a bit on my elektron boxes and here I present a super long test flight that&#x27;s now almost watchable.&lt;&#x2F;p&gt;
+&lt;iframe title=&quot;vimeo-player&quot; src=&quot;https:&#x2F;&#x2F;player.vimeo.com&#x2F;video&#x2F;552584366&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;posts&#x2F;jammin-on-elektron&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;elektronic&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>DJI FPV Video Out</title>
+        <published>2021-05-12T00:00:00+00:00</published>
+        <updated>2021-05-12T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/dji-fpv-video-out/"/>
+        <id>https://blog.jimmac.eu/posts/dji-fpv-video-out/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/dji-fpv-video-out/">&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;dji-fpv-video-out&#x2F;djifpv.png&quot; alt=&quot;DJI FPV&quot; &#x2F;&gt;
+Glad I refrained from buying the overpriced &lt;a href=&quot;https:&#x2F;&#x2F;www.dji.com&#x2F;cz&#x2F;smart-controller&quot;&gt;DJI Smart controller&lt;&#x2F;a&gt; just to get video out from the fpv goggles. Turns out somebody &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;fpv-wtf&#x2F;voc-poc&quot;&gt;figured out how it does it&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Ingenuity FPV</title>
+        <published>2021-03-22T00:00:00+00:00</published>
+        <updated>2021-03-22T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/ingenuity-fpv/"/>
+        <id>https://blog.jimmac.eu/posts/ingenuity-fpv/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/ingenuity-fpv/">&lt;!-- &lt;div class=&quot;inlineimgs&quot; markdown=&quot;1&quot;&gt; --&gt;
+&lt;!-- &lt;a href=&quot;{{ site.url }}{{ page.url }}&quot;&gt;absolute links&lt;&#x2F;a&gt; --&gt;
+&lt;p&gt;When I &lt;a href=&quot;&#x2F;posts&#x2F;perseverance&#x2F;&quot;&gt;previously posted&lt;&#x2F;a&gt;
+about the Perseverance landing, I didn&#x27;t realize NASA has actually published textured models of &lt;a href=&quot;https:&#x2F;&#x2F;mars.nasa.gov&#x2F;resources&#x2F;25042&#x2F;mars-perseverance-rover-3d-model&#x2F;&quot;&gt;the lander&lt;&#x2F;a&gt; and it&#x27;s cute not-so-little maritan helicopter, &lt;a href=&quot;https:&#x2F;&#x2F;mars.nasa.gov&#x2F;resources&#x2F;25043&#x2F;mars-ingenuity-helicopter-3d-model&#x2F;&quot;&gt;Ingenuity&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;ingenuity-fpv&#x2F;ingenuity-fpv.png&quot; alt=&quot;Ingenuity ripping&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Naturally I was drawn to play around with the model over the past few weeks and after posting a little &lt;a href=&quot;https:&#x2F;&#x2F;www.instagram.com&#x2F;p&#x2F;CLpfH-KHNHg&#x2F;&quot;&gt;Instagram test&lt;&#x2F;a&gt;, a more elaborate &lt;a href=&quot;https:&#x2F;&#x2F;www.instagram.com&#x2F;reel&#x2F;CLuEO-fFzRi&#x2F;&quot;&gt;Instagram Reel&lt;&#x2F;a&gt;, I was naturally bound to theme some of my fpv flights as martian exploration. I&#x27;m glad I managed to create one before the actual Ingenuity test flight, because the strict lockdown really limits any fitting location right now.&lt;&#x2F;p&gt;
+&lt;p&gt;All of the martian footage has been rendered with the realtime eevee engine, maxing out at 20 seconds per frame. The focal blur has been improved in eevee recently, but Cycles was used for all the fpv overlays for now.&lt;&#x2F;p&gt;
+&lt;!-- vimeo is a racket
+&lt;iframe src=&quot;https:&#x2F;&#x2F;player.vimeo.com&#x2F;video&#x2F;526888385&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; picture-in-picture&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;vimeo.com&#x2F;526888385&quot;&gt;Digitone + Digitakt: Ingenuity FPV&lt;&#x2F;a&gt; from &lt;a href=&quot;https:&#x2F;&#x2F;vimeo.com&#x2F;jimmacfx&quot;&gt;jimmac&lt;&#x2F;a&gt; on &lt;a href=&quot;https:&#x2F;&#x2F;vimeo.com&quot;&gt;Vimeo&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+--&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;AxYo_qJi2XQ?si=jvPc8m-i7z4rxQ-k&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;The original track was recorded at 60BPM, but sadly the footage is unbearable to watch for over 4 minutes, so I&#x27;ve resampled it to 90BMP to keep the legth down. It does glitch at some points, but the motivation to work on this has reached critical levels, so I&#x27;m calling it done.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

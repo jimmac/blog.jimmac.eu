@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Even a Stopped Clock - wallpaper</title>
+    <subtitle>Random musings of a semi-sane designer from lesser Europe.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://blog.jimmac.eu/tags/wallpaper/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://blog.jimmac.eu"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-12-08T00:00:00+00:00</updated>
+    <id>https://blog.jimmac.eu/tags/wallpaper/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Dithering</title>
+        <published>2025-12-08T00:00:00+00:00</published>
+        <updated>2025-12-08T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/dithering/"/>
+        <id>https://blog.jimmac.eu/posts/dithering/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/dithering/">&lt;p&gt;One of the new additions to the &lt;strong&gt;GNOME 49&lt;&#x2F;strong&gt; wallpaper set is &lt;em&gt;Dithered Sun&lt;&#x2F;em&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;tobiasbernard.com&#x2F;&quot;&gt;Tobias&lt;&#x2F;a&gt;. It uses dithering not as a technical workaround for color banding, but as an &lt;em&gt;artistic&lt;&#x2F;em&gt; device.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;dithering&#x2F;halftone.webp&quot; alt=&quot;Halftone app&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Tobias initially planned to use &lt;a href=&quot;https:&#x2F;&#x2F;flathub.org&#x2F;en&#x2F;apps&#x2F;io.github.tfuxu.Halftone&quot;&gt;Halftone&lt;&#x2F;a&gt; — a great example of a GNOME app with a focused scope and a pleasantly streamlined experience. However, I suggested that a custom dithering method and finer control over color depth would help execute the idea better. A long time ago, Hans Peter Jensen responded to my request for arbitrary color-depth dithering in GIMP by writing a custom GEGL op.&lt;&#x2F;p&gt;
+&lt;p&gt;Now, since the younger generation may be understandably intimidated by GIMP’s somewhat… &lt;em&gt;vintage&lt;&#x2F;em&gt; interface, I promised to write a short guide on how to process your images to get a nice ordered dither pattern without going overboard on reducing colors. And with &lt;em&gt;only a bit of time&lt;&#x2F;em&gt; passing since the amazing GUADEC in Brescia, I’m finally delivering on that promise. Better late than later.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;dithering&#x2F;gegl-dither.webp&quot; alt=&quot;GEGL dithering op&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I’ve historically used the GEGL dithering operation to work around potential color banding on lower-quality displays. In Tobias’ wallpaper, though, the dithering is a core element of the artwork itself. While it can cause issues when scaling (filtering can introduce moiré patterns), there’s a real beauty to the structured patterns of Bayer dithering.&lt;&#x2F;p&gt;
+&lt;p&gt;You will find the GEGL Op in &lt;code&gt;Color &amp;gt; Dither&lt;&#x2F;code&gt; menu. The filter&#x2F;op parameters don’t allow you to set the number of colors directly—only the per-channel color depth (in bits). For full-color dithers I tend to use &lt;strong&gt;12-bit&lt;&#x2F;strong&gt;. I personally like the &lt;code&gt;Bayer&lt;&#x2F;code&gt; ordered dither, though there are plenty of algorithms to choose from, and depending on your artwork, another might suit you better. I usually save my preferred settings as a preset for easier recall next time (find &lt;code&gt;Presets&lt;&#x2F;code&gt; at the top of the dialog).&lt;&#x2F;p&gt;
+&lt;p&gt;Happy dithering!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>HDR Wallpapers</title>
+        <published>2025-09-17T00:00:00+00:00</published>
+        <updated>2025-09-17T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/wallpapers-2025/"/>
+        <id>https://blog.jimmac.eu/posts/wallpapers-2025/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/wallpapers-2025/">&lt;p&gt;GNOME 49 brought another round of &lt;a href=&quot;https:&#x2F;&#x2F;release.gnome.org&#x2F;49&#x2F;#wallpapers&quot;&gt;changes to the default wallpaper set&lt;&#x2F;a&gt; — some new additions, and a few removals too. Not just to keep the old &lt;em&gt;GNOME Design loves to delete things trope&lt;&#x2F;em&gt; alive, but to make room for fresh work and reduce stylistic overlap.&lt;&#x2F;p&gt;
+&lt;p&gt;Our goal has always been to provide a varied collection of abstract wallpapers. (Light&#x2F;dark photographic sets are still on the wish list — we’ll get there, promise! 😉). When we introduce new designs, some of the older ones naturally have to step aside.&lt;&#x2F;p&gt;
+&lt;p&gt;We’ve actually been shipping wallpapers in high bit depth formats for quite a while, even back when the GNOME display pipeline (based on gdk-pixbuf) was limited to 8-bit output. That changed in GNOME 49. Thanks to Sophie’s Glycin, we now have a color-managed pipeline that makes full use of modern hardware — even if you’re still on an SDR display.&lt;&#x2F;p&gt;
+&lt;p&gt;So what does that mean for wallpapers? Well, with HDR displays (using OLED or Mini-LED panels), you can push brightness and contrast to extremes — bright enough to feel like a flashlight in your face. That’s great for games and movies, but it’s not something you want staring back at you from the desktop all day. With wallpapers, subtlety matters.&lt;&#x2F;p&gt;
+&lt;p&gt;The new set takes advantage of wider color gamuts (Display P3 instead of sRGB) and higher precision (16-bit per channel instead of 8-bit). That translates to smoother gradients, richer tones, and more depth — without the blinding highlights. Think of it as HDR done tastefully: more range to play with, but in service of calm, everyday visuals rather than spectacle.&lt;&#x2F;p&gt;
+&lt;video controls nosound loop class=&quot;image full&quot; poster=&quot;timelapse.webp&quot;&gt;
+&lt;source src=&quot;timelapse.webm&quot; type=&quot;video&#x2F;webm&quot;&gt;
+&lt;source src=&quot;timelapse.mp4&quot; type=&quot;video&#x2F;mp4&quot;&gt;
+&lt;&#x2F;video&gt;
+&lt;p&gt;Personally, I still think HDR makes the most sense today in games, videos, and fullscreen photography, where those deep contrasts and bright highlights can really shine. On the desktop, apps and creative tools still need to catch up. Blender, for instance, already shows it&#x27;s colormanaged HDR preview pipeline on macOS, and HDR display support is expected to land for Wayland in Blender 5.0.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>GNOME 47 Wallpapers</title>
+        <published>2024-09-24T00:00:00+00:00</published>
+        <updated>2024-09-24T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/wallpapers-2024/"/>
+        <id>https://blog.jimmac.eu/posts/wallpapers-2024/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/wallpapers-2024/">&lt;p&gt;With GNOME 47 out, it’s time for my bi-annual wallpaper deep dive. For many, these may seem like simple background images, but GNOME wallpapers are the visual anchors of the project, defining its aesthetic and identity. The signature blue wallpaper with its dark top bar remains a key part of that.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;wallpapers-2024&#x2F;wallpapers-l.webp&quot; alt=&quot;GNOME 47 Wallpapers&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;In this release, GNOME 47 doesn’t overhaul the default blue wallpaper. It&#x27;s more of a subtle tweak than a full redesign. The familiar rounded triangles remain, but here’s something neat: the dark variant mimics real-world camera behavior. When it&#x27;s darker, the camera’s aperture widens, creating a shallower depth of field. A small but nice touch for those who notice these things.&lt;&#x2F;p&gt;
+&lt;video controls nosound autoplay loop class=&quot;image full&quot;&gt;
+&lt;source src=&quot;focus.webm&quot; type=&quot;video&#x2F;webm&quot;&gt;
+&lt;source src=&quot;focus.mp4&quot; type=&quot;video&#x2F;mp4&quot;&gt;
+&lt;&#x2F;video&gt;
+&lt;p&gt;The real action this cycle, though, is in the supplemental wallpapers.&lt;&#x2F;p&gt;
+&lt;p&gt;We haven’t had to remove much this time around, thanks to the JXL format keeping file sizes manageable. The focus has been on variety rather than cutting old designs. We aim to keep things fresh, though you might notice that photographic wallpapers are still missing (we’ll get to that eventually, &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-backgrounds&#x2F;-&#x2F;issues&#x2F;20&quot;&gt;promise&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;In terms of fine tuning changes, the classic, &lt;code&gt;Pixels&lt;&#x2F;code&gt; has been updated to feature newer apps from &lt;a href=&quot;https:&#x2F;&#x2F;circle.gnome.org&quot;&gt;GNOME Circle&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;video controls nosound autoplay loop class=&quot;image full&quot;&gt;
+&lt;source src=&quot;pixels-timelapse.webm&quot; type=&quot;video&#x2F;webm&quot;&gt;
+&lt;source src=&quot;pixels-timelapse.mp4&quot; type=&quot;video&#x2F;mp4&quot;&gt;
+&lt;&#x2F;video&gt;
+&lt;p&gt;The dark variant of &lt;code&gt;Pills&lt;&#x2F;code&gt; also got some love with lighting and shading tweaks, including a subtle subsurface scattering effect.&lt;&#x2F;p&gt;
+&lt;p&gt;As for the new wallpapers, there are a few cool additions this release. I collaborated with &lt;em&gt;Dominik Baran&lt;&#x2F;em&gt; to create a tube-map-inspired vector wallpaper, which I’m particularly into. There’s also &lt;code&gt;Mollnar&lt;&#x2F;code&gt;, a nod to Vera Molnar, using simple geometric shapes in SVG format.&lt;&#x2F;p&gt;
+&lt;p&gt;Most of our wallpapers are still bitmaps, largely because our rendering tools don’t yet handle color banding well with vectors. For now, even designs that would work better as vectors—like mesh gradients—get converted to bitmaps.&lt;&#x2F;p&gt;
+&lt;p&gt;We’ve introduced some new abstract designs as well -- meet &lt;code&gt;Sheet&lt;&#x2F;code&gt; and &lt;code&gt;Swoosh&lt;&#x2F;code&gt;. And for fans of pixel art, we’ve added &lt;code&gt;LCD&lt;&#x2F;code&gt; and its colorful sibling, &lt;code&gt;LCD-rainbow&lt;&#x2F;code&gt;. Both give off that retro screen vibe, even if the color gradient realism isn’t real-world accurate.&lt;&#x2F;p&gt;
+&lt;p&gt;Lastly, there’s &lt;code&gt;Symbolic Soup&lt;&#x2F;code&gt;, which is, well... a bit chaotic. It might not be everyone’s cup of tea, but it definitely adds variety.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;preview&quot;&gt;Preview&lt;&#x2F;h2&gt;
+&lt;div class=&quot;walls&quot;&gt;
+&lt;a href=&quot;lcd-d.jxl&quot;&gt;&lt;img src=&quot;lcd-d.webp&quot; alt=&quot;LCD&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;pills-d.jxl&quot;&gt;&lt;img src=&quot;pills-d.webp&quot; alt=&quot;Pills&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;map-d.svg&quot;&gt;&lt;img src=&quot;map-d.svg&quot; alt=&quot;Map&quot; class=&quot;big&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;mollnar-d.svg&quot;&gt;&lt;img src=&quot;mollnar-d.svg&quot; alt=&quot;Mollnar&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;lcd-rainbow-l.jxl&quot;&gt;&lt;img src=&quot;lcd-rainbow-l.webp&quot; alt=&quot;LCD Raindow&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;pixels-d.jxl&quot;&gt;&lt;img src=&quot;pixels-d.webp&quot; alt=&quot;Pixels&quot; class=&quot;big&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;sheet-l.jxl&quot;&gt;&lt;img src=&quot;sheet-l.webp&quot; alt=&quot;Sheet&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;swoosh-l.jxl&quot;&gt;&lt;img src=&quot;swoosh-l.webp&quot; alt=&quot;Swoosh&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;symbolic-soup-d.jxl&quot;&gt;&lt;img src=&quot;symbolic-soup-d.webp&quot; alt=&quot;Symbolic Soup&quot;&gt;&lt;&#x2F;a&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;If you&#x27;re wondering about the strange square aspect ratio, take a look at the wallpaper sizing guide in our &lt;a href=&quot;https:&#x2F;&#x2F;developer.gnome.org&#x2F;hig&#x2F;reference&#x2F;backgrounds.html&quot;&gt;GNOME Interface Guidelines&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Also worth noting is the fact that all of these wallpapers have been created by humans. While I&#x27;ve experimented with image generation for some parts of the workflow in some of of my personal projects, all this work is &lt;em&gt;AIgen-free&lt;&#x2F;em&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-backgrounds&#x2F;-&#x2F;blob&#x2F;main&#x2F;AUTHORS?ref_type=heads&quot;&gt;explicitly credited&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;style type=&quot;text&#x2F;css&quot;&gt;
+.walls {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	gap: 1rem;
+	grid-auto-flow: row dense;
+}
+.walls img {
+	display: block;
+	width: 100%; height: auto;
+	transition-duration: 0;
+	align-self: center;
+}
+
+@media only screen and (min-width: 640px) {
+	.walls { grid-template-columns: repeat(4,1fr); }
+	.walls a.big {
+		grid-column: span 2;
+		grid-row: span 2;
+	}
+}
+&lt;&#x2F;style&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>GNOME 46 Wallpapers</title>
+        <published>2024-03-07T00:00:00+00:00</published>
+        <updated>2024-03-07T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/gnome46-wallpapers/"/>
+        <id>https://blog.jimmac.eu/posts/gnome46-wallpapers/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/gnome46-wallpapers/">&lt;p&gt;GNOME 46 is on its final stretch to be released. It&#x27;s been a custom to blog a little about the wallpaper selection, which is a big part of GNOME&#x27;s visual identity. &lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;gnome46-wallpapers&#x2F;wall-1.webp&quot; alt=&quot;Wallpaper 1&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The first notable change in 46 is that we&#x27;re finally delivering on the promise of bringing you a next generation image file format. Lots of performance issues had to be addressed first, apologies for the delay. While efficiency and filesize requirements might not be too high on the list outside of the geek crowd, there is one aspect of JPEG-XL that I am very excited about.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;gnome46-wallpapers&#x2F;wall-2.webp&quot; alt=&quot;Wallpaper 2&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;JPEG-XL allows the use of client-side synthesized grain. A method pioneered by Netflix&#x2F;AV1 I believe. Compression algorithms struggle with high frequency detail, which often introduce visible artifacts. JPEG-XL allows to decouple the grain component from the actual image data. This allows for significantly more efficient compression of images that inherently require noise, such as those in &lt;code&gt;gnome-backgrounds&lt;&#x2F;code&gt; — smooth gradients that would otherwise be susceptible to color banding. To achieve similar fidelity of the grain if it were baked in, a classic format like JPEG would need an order of magnitude larger filesize. Having the grain in the format itself also allows to skip various techniques in the rendering or compositing in the 3D software. &lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;gnome46-wallpapers&#x2F;wall-3.webp&quot; alt=&quot;Wallpaper 3&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Instead of compressing a noisy image, JPEG-XL allows to generate film-like grain as part of the decoding process. This synthesized grain combats issues like color banding while allowing a much more efficient compression on the original image data.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;gnome46-wallpapers&#x2F;wall-4.webp&quot; alt=&quot;Wallpaper 4&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;In essence, client-side grain in JPEG-XL isn&#x27;t simply added noise, but a sophisticated strategy for achieving both efficient compression and visually pleasing image quality, especially for images that would otherwise require inherent noise.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;gnome46-wallpapers&#x2F;wall-5.webp&quot; alt=&quot;Wallpaper 5&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The fresh batch of wallpapers includes evolutions of the existing assets as well as new additions. A few material&#x2F;shape studies have been added as well as simple 2D shape textures. Thanks to the lovely JPEG-XL grain described earlier, it&#x27;s not just &lt;a href=&quot;https:&#x2F;&#x2F;inkscape.org&quot;&gt;Inkscape&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;blender.org&quot;&gt;Blender&lt;&#x2F;a&gt; that &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;Teams&#x2F;Design&#x2F;wallpaper-assets&#x2F;-&#x2F;blob&#x2F;master&#x2F;46&#x2F;experiments&#x2F;py&#x2F;geo.py?ref_type=heads&quot;&gt;were used&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;I hope you&#x27;re going to pick at least one of the wallpapers when GNOME 46 releases later next week as your favorite. Let me know &lt;a href=&quot;https:&#x2F;&#x2F;mastodon.social&#x2F;@jimmac&quot;&gt;on fediverse&lt;&#x2F;a&gt;!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;posts&#x2F;gnome45-wallpapers&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;gnome44-wallpapers&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;gnome43-wallpapers&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;shelved-wallpapers-2&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;shelved-wallpapers&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>GNOME 45 Wallpapers</title>
+        <published>2023-10-05T00:00:00+00:00</published>
+        <updated>2023-10-05T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/gnome45-wallpapers/"/>
+        <id>https://blog.jimmac.eu/posts/gnome45-wallpapers/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/gnome45-wallpapers/">&lt;p&gt;With the &lt;a href=&quot;https:&#x2F;&#x2F;release.gnome.org&#x2F;45&#x2F;&quot;&gt;45 release out the door&lt;&#x2F;a&gt;, it would be a shame not to reveal some of the behind the scenes for the new wallpapers.&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;ll start off by mentioning a lovely new addition by David Lapshin, &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-backgrounds&#x2F;-&#x2F;issues&#x2F;37&quot;&gt;Amber&lt;&#x2F;a&gt;, leaning into Inkscape&#x27;s mesh gradients.&lt;&#x2F;p&gt;
+&lt;p&gt;The default has shown no dramatic departure from the triangles&#x2F;hexagons of the previous releases. The on-brand triangle theme has been kept, but the implementation is very different. The wallpaper is a result of a generated mesh using Blender&#x27;s geometry nodes and color gradients derived from a pre-existing wallpaper texture. You can check the whole thing out in the provided blender project files in &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;Teams&#x2F;Design&#x2F;wallpaper-assets&quot;&gt;wallpaper-assets&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;There have been updates to the existing set, the surprisingly popular &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-backgrounds&#x2F;-&#x2F;blob&#x2F;gnome-45&#x2F;backgrounds&#x2F;blobs-d.svg?ref_type=heads&quot;&gt;Blobs&lt;&#x2F;a&gt; have been tweaked, my personal favorite, &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-backgrounds&#x2F;-&#x2F;blob&#x2F;gnome-45&#x2F;backgrounds&#x2F;fold-l.jpg?ref_type=heads&quot;&gt;Fold&lt;&#x2F;a&gt; crops a bit better at the most common 16:9 aspect and &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-backgrounds&#x2F;-&#x2F;blob&#x2F;gnome-45&#x2F;backgrounds&#x2F;truchet-d.jpg?ref_type=heads&quot;&gt;Truchet&lt;&#x2F;a&gt; is round yet again. &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-backgrounds&#x2F;-&#x2F;blob&#x2F;gnome-45&#x2F;backgrounds&#x2F;pixels-d.jpg?ref_type=heads&quot;&gt;Pixels&lt;&#x2F;a&gt; have been updated to feature &lt;a href=&quot;https:&#x2F;&#x2F;circle.gnome.org&#x2F;&quot;&gt;Circle apps&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;iframe class=&quot;full&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;0U54yx9L_yM?si=Q4n4beYYZcoPAYG7&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;Weirdly named &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-backgrounds&#x2F;-&#x2F;blob&#x2F;gnome-45&#x2F;backgrounds&#x2F;morphogenesis-l.svg?ref_type=heads&quot;&gt;Morphogenesis&lt;&#x2F;a&gt; is one of my favorite additions this release. Based around a concept of reactive diffusion, described by none other than &lt;a href=&quot;https:&#x2F;&#x2F;www.dna.caltech.edu&#x2F;courses&#x2F;cs191&#x2F;paperscs191&#x2F;turing.pdf&quot;&gt;Allan Turing&lt;&#x2F;a&gt;, features a little easter egg if you&#x27;re into chasing those down.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;posts&#x2F;gnome44-wallpapers&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;gnome43-wallpapers&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;shelved-wallpapers-2&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;shelved-wallpapers&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>GNOME 44 Wallpapers</title>
+        <published>2023-01-30T00:00:00+00:00</published>
+        <updated>2023-01-30T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/gnome44-wallpapers/"/>
+        <id>https://blog.jimmac.eu/posts/gnome44-wallpapers/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/gnome44-wallpapers/">&lt;p&gt;As we gear up for the release of GNOME 44, let&#x27;s take a moment to reflect on the visual design updates.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;gnome44-wallpapers&#x2F;gnome44-wallpapers.webp&quot; alt=&quot;GNOME 44 Wallpapers&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;We&#x27;ve made big strides in visual consistency with the growing number of apps that have been ported to gtk4 and libadwaita, embracing the modern look. &lt;a href=&quot;https:&#x2F;&#x2F;samuelhewitt.com&#x2F;blog&quot;&gt;Sam&lt;&#x2F;a&gt; has also given the high-contrast style in GNOME Shell some love, keeping it in line with gtk&#x27;s updates last cycle.&lt;&#x2F;p&gt;
+&lt;p&gt;The default wallpaper stays true to our brand, but the supplementary set has undergone some bolder changes. From the popular simple shape blends to a nostalgic nod to the past with keypad and pixel art designs, there&#x27;s something for everyone. The pixelized icons made their debut in the last release, but this time we focus on &lt;a href=&quot;https:&#x2F;&#x2F;cicrcle.gnome.org&quot;&gt;GNOME Circle&lt;&#x2F;a&gt; apps, rather than the core apps.&lt;&#x2F;p&gt;
+&lt;p&gt;Another exciting development is the continued use of geometry nodes in Blender. Although the tool has a steep learning curve, I&#x27;m starting to enjoy my time with it. I gave a talk on geometry nodes and its use for GNOME wallpaper design at the Fedora Creative Freedom Summit. You can watch the stream archive recording &lt;a href=&quot;https:&#x2F;&#x2F;peertube.linuxrocks.online&#x2F;w&#x2F;iX9QkY4nCa2nPAzV8nC3BS?start=27m25s&quot;&gt;here&lt;&#x2F;a&gt; (and &lt;a href=&quot;https:&#x2F;&#x2F;peertube.linuxrocks.online&#x2F;w&#x2F;4kBcQfDBLAAJDQcdkDwZow&quot;&gt;part2&lt;&#x2F;a&gt;).&lt;&#x2F;p&gt;
+&lt;iframe title=&quot;Visual Programming with Geometry Nodes in Blender - Jakub Steiner - Creative Freedom Summit 2023&quot; src=&quot;https:&#x2F;&#x2F;peertube.linuxrocks.online&#x2F;videos&#x2F;embed&#x2F;7f0043e0-a8ed-4f8c-a93b-e7da7c399bae&quot; allowfullscreen=&quot;&quot; sandbox=&quot;allow-same-origin allow-scripts allow-popups&quot; frameborder=&quot;0&quot;&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;posts&#x2F;gnome43-wallpapers&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;shelved-wallpapers-2&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;shelved-wallpapers&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Even Mo&#x27; Pixels</title>
+        <published>2022-09-16T00:00:00+00:00</published>
+        <updated>2022-09-16T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/evenmopixels/"/>
+        <id>https://blog.jimmac.eu/posts/evenmopixels/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/evenmopixels/">&lt;p&gt;To keep the habbit alive, I continue to do a &lt;a href=&quot;&#x2F;posts&#x2F;mopixels&#x2F;&quot;&gt;daily pixel routine&lt;&#x2F;a&gt;, now covering almost all of the &lt;a href=&quot;https:&#x2F;&#x2F;circle.gnome.org&quot;&gt;GNOME Circle&lt;&#x2F;a&gt; apps.&lt;&#x2F;p&gt;
+&lt;p&gt;Good call. Empty alt attributes (alt=&amp;quot;&amp;quot;) are actually better for decorative images or icons since they tell screen readers to skip over them, rather than announcing &amp;quot;x&amp;quot; over and over again.&lt;&#x2F;p&gt;
+&lt;p&gt;Here is the updated block:&lt;&#x2F;p&gt;
+&lt;div class=&quot;pixelicons&quot;&gt;
+&lt;img src=&quot;IMG_0425.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0426.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0427.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0428.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0429.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0430.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0431.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0432.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0433.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0434.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0435.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0436.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0437.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0439.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0440.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0441.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0442.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0443.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0444.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0445.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0446.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0447.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0448.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0449.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0450.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0451.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0452.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0453.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0454.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0455.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0456.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0457.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0458.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0459.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0460.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0461.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0463.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0464.PNG&quot; alt=&quot;&quot;&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;I&#x27;ve been practicing the art of animation a little too in an effort to promote GNOME Circle on &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;jimmac&quot;&gt;Twitter&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;mastodon.social&#x2F;web&#x2F;@jimmac&quot;&gt;Mastodon&lt;&#x2F;a&gt;. Presenting all these GIFs would probably not be kind to &lt;a href=&quot;http:&#x2F;&#x2F;planet.gnome.org&quot;&gt;Planet GNOME&lt;&#x2F;a&gt; readers though. Perhaps I could compose a video in the future (no GIF support in Blender, strangely!). Keep grinding your (pointless) skills, kids!&lt;&#x2F;p&gt;
+&lt;style type=&quot;text&#x2F;css&quot;&gt;
+.pixelicons {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	gap: 4rem;
+}
+.pixelicons img {
+	display: block;
+	width: 100%; height: auto;
+	image-rendering: crisp-edges; image-rendering: pixelated;
+	transition: transform 600ms ease-out;
+	align-self: center;
+}
+
+@media only screen and (min-width: 640px) {
+	.pixelicons { grid-template-columns: repeat(4,1fr); gap: 3rem; }
+	.pixelicons img:nth-child(10n) {
+		grid-column: span 2;
+		grid-row: span 2;
+	}
+}
+.pixelicons img:hover {
+	transition: transform 100ms ease-out;
+	transform: scale(1.2);
+}
+.pixelicons img:active {
+	transition: none;
+	width: 32px;
+	transform: scale(1);
+}
+
+
+&lt;&#x2F;style&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;posts&#x2F;mopixels&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>GNOME 43 Wallpapers</title>
+        <published>2022-08-08T00:00:00+00:00</published>
+        <updated>2022-08-08T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/gnome43-wallpapers/"/>
+        <id>https://blog.jimmac.eu/posts/gnome43-wallpapers/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/gnome43-wallpapers/">&lt;h1 id=&quot;gnome-43-wallpapers&quot;&gt;GNOME 43 Wallpapers&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;em&gt;Evolution&lt;&#x2F;em&gt; and &lt;em&gt;design&lt;&#x2F;em&gt; can co-exist happily in the world of desktop wallpapers. It&#x27;s desirable to evolve within a set of constraints to create a theme in time, set up a visual brand that doesn&#x27;t rely on putting a logo on everything. At the same time it&#x27;s healthy to stop once in a while, do a small reflection on what&#x27;s perhaps a little dated and do a fresh redesign. &lt;&#x2F;p&gt;
+&lt;!-- vimeo is a racket
+&lt;iframe src=&quot;https:&#x2F;&#x2F;player.vimeo.com&#x2F;video&#x2F;736863449?h=2cfc1f93b0&amp;amp;badge=0&amp;amp;autopause=0&amp;amp;player_id=0&amp;amp;app_id=58479&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; picture-in-picture&quot; allowfullscreen style=&quot;width: 100%; height: auto; aspect-ratio: 16 &#x2F; 9;&quot; title=&quot;GNOME 43 Wallpaper Streams&quot;&gt;&lt;&#x2F;iframe&gt;
+--&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;UXctJgtPJrc?si=vQMFCK365YDbHG4T&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;I took extra time this release to focus on refreshing the whole wallpaper set for 43. While the default wallpaper isn&#x27;t a big departure from 3.38 hexagon theme, most of the supplemental wallpapers have been refreshed from the ground up. The &lt;a href=&quot;https:&#x2F;&#x2F;vimeo.com&#x2F;736863449&quot;&gt;video above&lt;&#x2F;a&gt; shows a few glimpses of all the one way streets it took for the default to land back in the hexagons.&lt;&#x2F;p&gt;
+&lt;p&gt;GNOME 42 was the first release to ship a bunch of SVG based wallpapers that embraced the flat colors and gradients and benefited from being just a few kilobytes in file size. It was also the first release to ship &lt;em&gt;dark preference&lt;&#x2F;em&gt; variants. All of that continues into 43.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;gnome43-wallpapers&#x2F;pixels-blender.webp&quot; alt=&quot;Pixels in Blender&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Major change comes from addressing a wide range of display aspect ratios with one wallpaper. 43 wallpapers should work fine on your ultrawides just as well as portrait displays. We also rely on WebP as the &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-shell&#x2F;-&#x2F;issues&#x2F;5457&quot;&gt;file format&lt;&#x2F;a&gt; getting a much better quality with a nice compression ratio (albeit lossy).&lt;&#x2F;p&gt;
+&lt;p&gt;What&#x27;s still missing are photographic wallpapers &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-backgrounds&#x2F;-&#x2F;issues&#x2F;20&quot;&gt;captured under different lighting&lt;&#x2F;a&gt;. Hopefully next release.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;docs.blender.org&#x2F;manual&#x2F;en&#x2F;latest&#x2F;modeling&#x2F;geometry_nodes&#x2F;index.html&quot;&gt;Blender&#x27;s geometry nodes&lt;&#x2F;a&gt; is an amazing tool to do generative art, yet I feel like I&#x27;ve already forgotten the small fraction of what can be done that I&#x27;ve learned during this cycle. Luckily there&#x27;s always the next release to do some repetition. Thanks to everyone following my struggles on the &lt;a href=&quot;http:&#x2F;&#x2F;twitch.tv&#x2F;jimmacfx&quot;&gt;twitch streams&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;The release is dedicated to &lt;a href=&quot;https:&#x2F;&#x2F;foundation.gnome.org&#x2F;2016&#x2F;02&#x2F;12&#x2F;remembering-thomas-wood&#x2F;&quot;&gt;Thomas Wood&lt;&#x2F;a&gt;, a long time maintainer of all things visual in GNOME.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Mo&#x27; Pixels</title>
+        <published>2021-10-13T00:00:00+00:00</published>
+        <updated>2021-10-13T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/mopixels/"/>
+        <id>https://blog.jimmac.eu/posts/mopixels/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/mopixels/">&lt;p&gt;Recently I&#x27;ve been indulging myself in pixel art again. One might assume that&#x27;s my comfort zone, but honestly I don&#x27;t feel like I&#x27;ve ever truly mastered it. &lt;&#x2F;p&gt;
+&lt;p&gt;The initial push came from &lt;a href=&quot;https:&#x2F;&#x2F;vancura.design&#x2F;&quot;&gt;my friend&lt;&#x2F;a&gt;, who quit his corporate job, to dive back into his passion and is &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;unientgames&#x2F;status&#x2F;1440048310962688000&quot;&gt;working on games&lt;&#x2F;a&gt;. Their first title is an oldschool pixel maze, (with a 2021 artistic twist, of course). His work inspired me to get back to pixel pushing.&lt;&#x2F;p&gt;
+&lt;p&gt;To combine exploration with usefulness, I imagined mixing up of the new application icon style with pixels to perhaps bring back the &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-backgrounds&#x2F;-&#x2F;blob&#x2F;gnome-3-36&#x2F;backgrounds&#x2F;Endless-shapes.jpg&quot;&gt;fun of colorful patterns&lt;&#x2F;a&gt; into a wallpaper.&lt;&#x2F;p&gt;
+&lt;p&gt;Sadly the result is visually &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-backgrounds&#x2F;-&#x2F;blob&#x2F;wip&#x2F;jimmac&#x2F;prefers-dark-light&#x2F;backgrounds&#x2F;pixels-d.png&quot;&gt;way too overwhelming&lt;&#x2F;a&gt;, but the assets created can at least please your nostalgia bone here on planet GNOME (unless it becomes a mess without the stylesheet, we&#x27;ll see). Stay curious!&lt;&#x2F;p&gt;
+&lt;div class=&quot;pixelicons&quot;&gt;
+&lt;img src=&quot;IMG_0257.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0250.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0258.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0248.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0223.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0228.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0259.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0230.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0265.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0242.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0256.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0254.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0219.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0252.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0226.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0233.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0247.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0260.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0222.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0221.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0224.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0251.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0266.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0227.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0246.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0244.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0241.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0253.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0231.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0264.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0255.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0229.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0234.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0240.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0237.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0225.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0262.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0263.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0236.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0249.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0261.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0239.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0235.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0245.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0243.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0238.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0232.PNG&quot; alt=&quot;&quot;&gt;
+&lt;&#x2F;div&gt;
+&lt;style type=&quot;text&#x2F;css&quot;&gt;
+.pixelicons {
+	display: grid;
+	&#x2F;* grid-template-columns: repeat(3,1fr); *&#x2F;
+	grid-template-columns: repeat(auto-fit, minmax(128px,1fr));
+	gap: 64px;
+}
+.pixelicons img {
+	display: block;
+	width: 100%; height: auto;
+	image-rendering: crisp-edges; image-rendering: pixelated;
+	transition: transform 600ms ease-out;
+	align-self: center;
+}
+.pixelicons img:hover {
+	transition: transform 100ms ease-out;
+	transform: scale(1.2);
+}
+.pixelicons img:active {
+	transition: none;
+	width: 32px;
+	transform: scale(1);
+}
+&lt;&#x2F;style&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Shelved Wallpapers, Part 2</title>
+        <published>2020-09-01T00:00:00+00:00</published>
+        <updated>2020-09-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/shelved-wallpapers-2/"/>
+        <id>https://blog.jimmac.eu/posts/shelved-wallpapers-2/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/shelved-wallpapers-2/">&lt;p&gt;Yet &lt;a href=&quot;&#x2F;posts&#x2F;shelved-wallpapers&#x2F;&quot;&gt;again&lt;&#x2F;a&gt; the iterations to produce the &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-backgrounds&quot;&gt;default and complimentary wallpapers&lt;&#x2F;a&gt; for 3.38 generated some variants that didn&#x27;t make the cut, but I&#x27;d like to share with fellow gnomies.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;http:&#x2F;&#x2F;jimmac.musichall.cz&#x2F;stuff&#x2F;stripes&#x2F;&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;shelved-wallpapers-2&#x2F;thumb.jpg&quot; alt=&quot;Stripes&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Shelved Wallpapers</title>
+        <published>2018-02-12T00:00:00+00:00</published>
+        <updated>2018-02-12T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/shelved-wallpapers/"/>
+        <id>https://blog.jimmac.eu/posts/shelved-wallpapers/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/shelved-wallpapers/">&lt;p&gt;GNOME 3.28 will release with another batch of new wallpapers that only a freaction of you will ever see. Apart from those I also made a few for different purposes that didn&#x27;t end up being used, but it would be a shame to keep shelved.&lt;&#x2F;p&gt;
+&lt;p&gt;So here&#x27;s a bit of isometric goodness I quite enjoy on my desktop, you might as well.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;10.png&quot;&gt;&lt;img src=&quot;10thumb.jpg&quot; alt=&quot;Wall1&quot; class=&quot;image full&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;10-1.png&quot;&gt;&lt;img src=&quot;10-1thumb.jpg&quot; alt=&quot;Wall2&quot; class=&quot;full&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;10-2.png&quot;&gt;&lt;img src=&quot;10-2thumb.jpg&quot; alt=&quot;Wall3&quot; class=&quot;full&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;10-3.png&quot;&gt;&lt;img src=&quot;10-3thumb.jpg&quot; alt=&quot;Wall4&quot; class=&quot;full&quot;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

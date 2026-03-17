@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Even a Stopped Clock - github</title>
+    <subtitle>Random musings of a semi-sane designer from lesser Europe.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://blog.jimmac.eu/tags/github/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://blog.jimmac.eu"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2021-05-12T00:00:00+00:00</updated>
+    <id>https://blog.jimmac.eu/tags/github/atom.xml</id>
+    <entry xml:lang="en">
+        <title>DJI FPV Video Out</title>
+        <published>2021-05-12T00:00:00+00:00</published>
+        <updated>2021-05-12T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/dji-fpv-video-out/"/>
+        <id>https://blog.jimmac.eu/posts/dji-fpv-video-out/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/dji-fpv-video-out/">&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;dji-fpv-video-out&#x2F;djifpv.png&quot; alt=&quot;DJI FPV&quot; &#x2F;&gt;
+Glad I refrained from buying the overpriced &lt;a href=&quot;https:&#x2F;&#x2F;www.dji.com&#x2F;cz&#x2F;smart-controller&quot;&gt;DJI Smart controller&lt;&#x2F;a&gt; just to get video out from the fpv goggles. Turns out somebody &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;fpv-wtf&#x2F;voc-poc&quot;&gt;figured out how it does it&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

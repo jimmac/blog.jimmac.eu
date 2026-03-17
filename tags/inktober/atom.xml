@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Even a Stopped Clock - inktober</title>
+    <subtitle>Random musings of a semi-sane designer from lesser Europe.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://blog.jimmac.eu/tags/inktober/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://blog.jimmac.eu"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2021-11-01T00:00:00+00:00</updated>
+    <id>https://blog.jimmac.eu/tags/inktober/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Pixel Inktober</title>
+        <published>2021-11-01T00:00:00+00:00</published>
+        <updated>2021-11-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/pixel-inktober-2021/"/>
+        <id>https://blog.jimmac.eu/posts/pixel-inktober-2021/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/pixel-inktober-2021/">&lt;p&gt;For the first time ever I actually finished a &lt;a href=&quot;https:&#x2F;&#x2F;inktober.com&#x2F;&quot;&gt;monthly challenge&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;div class=&quot;pixels&quot;&gt;
+&lt;img src=&quot;IMG_0287.PNG&quot; alt=&quot;0. Pixel Inktober&quot;&gt;
+&lt;img src=&quot;IMG_0288.PNG&quot; alt=&quot;1. Crystal&quot;&gt;
+&lt;img src=&quot;IMG_0289.PNG&quot; alt=&quot;2. Suit&quot;&gt;
+&lt;img src=&quot;IMG_0290.GIF&quot; alt=&quot;3. Vessel&quot;&gt;
+&lt;img src=&quot;IMG_0291.PNG&quot; alt=&quot;4. Knot&quot;&gt;
+&lt;img src=&quot;IMG_0292.PNG&quot; alt=&quot;5. Raven&quot;&gt;
+&lt;img src=&quot;IMG_0293.PNG&quot; alt=&quot;6. Spirit&quot;&gt;
+&lt;img src=&quot;IMG_0294.GIF&quot; alt=&quot;7. Fan&quot;&gt;
+&lt;img src=&quot;IMG_0295.PNG&quot; alt=&quot;8. Watch&quot;&gt;
+&lt;img src=&quot;IMG_0297.GIF&quot; alt=&quot;9. Pressure&quot;&gt;
+&lt;img src=&quot;IMG_0298.GIF&quot; alt=&quot;10. Pick&quot;&gt;
+&lt;img src=&quot;IMG_0299.PNG&quot; alt=&quot;11. Sour&quot;&gt;
+&lt;img src=&quot;IMG_0300.PNG&quot; alt=&quot;12. Stuck&quot;&gt;
+&lt;img src=&quot;IMG_0301.PNG&quot; alt=&quot;13. Roof&quot;&gt;
+&lt;img src=&quot;IMG_0303.PNG&quot; alt=&quot;14. Tick&quot;&gt;
+&lt;img src=&quot;IMG_0304.PNG&quot; alt=&quot;15. Helmet&quot;&gt;
+&lt;img src=&quot;IMG_0305.PNG&quot; alt=&quot;16. Compass&quot;&gt;
+&lt;img src=&quot;IMG_0306.GIF&quot; alt=&quot;17. Collide&quot;&gt;
+&lt;img src=&quot;IMG_0307.GIF&quot; alt=&quot;18. Moon&quot;&gt;
+&lt;img src=&quot;IMG_0308.PNG&quot; alt=&quot;19. Loop&quot;&gt;
+&lt;img src=&quot;IMG_0309.PNG&quot; alt=&quot;20. Sprout&quot;&gt;
+&lt;img src=&quot;IMG_0310.PNG&quot; alt=&quot;21. Fuzzy&quot;&gt;
+&lt;img src=&quot;IMG_0311.PNG&quot; alt=&quot;22. Open&quot;&gt;
+&lt;img src=&quot;IMG_0313.GIF&quot; alt=&quot;23. Leak&quot;&gt;
+&lt;img src=&quot;IMG_0314.PNG&quot; alt=&quot;24. Extinct&quot;&gt;
+&lt;img src=&quot;IMG_0315.GIF&quot; alt=&quot;25. Splat&quot;&gt;
+&lt;img src=&quot;IMG_0316.PNG&quot; alt=&quot;26. Connect&quot;&gt;
+&lt;img src=&quot;IMG_0317.PNG&quot; alt=&quot;27. Spark&quot;&gt;
+&lt;img src=&quot;IMG_0318.PNG&quot; alt=&quot;28. Crispy&quot;&gt;
+&lt;img src=&quot;IMG_0319.PNG&quot; alt=&quot;29. Patch&quot;&gt;
+&lt;img src=&quot;IMG_0320.GIF&quot; alt=&quot;30. Slither&quot;&gt;
+&lt;img src=&quot;IMG_0321.PNG&quot; alt=&quot;31. Risk&quot;&gt;
+&lt;&#x2F;div&gt;
+&lt;style type=&quot;text&#x2F;css&quot;&gt;
+.pixels {
+	display: grid;
+	&#x2F;* grid-template-columns: repeat(3,1fr); *&#x2F;
+	grid-template-columns: repeat(auto-fit, minmax(270px,1fr));
+	gap: 64px;
+}
+.pixels img {
+	display: block;
+	width: 270px; height: auto;
+	image-rendering: crisp-edges; image-rendering: pixelated;
+	transition: transform 600ms ease-out;
+	align-self: center;
+}
+.pixels img:active {
+	transition: none;
+	width: 135px;
+	transform: scale(1);
+}
+&lt;&#x2F;style&gt;
+&lt;p&gt;Off to the &lt;a href=&quot;https:&#x2F;&#x2F;nodevember.io&#x2F;&quot;&gt;Nodevember&lt;&#x2F;a&gt;!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

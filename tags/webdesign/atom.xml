@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Even a Stopped Clock - webdesign</title>
+    <subtitle>Random musings of a semi-sane designer from lesser Europe.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://blog.jimmac.eu/tags/webdesign/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://blog.jimmac.eu"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-11-21T00:00:00+00:00</updated>
+    <id>https://blog.jimmac.eu/tags/webdesign/atom.xml</id>
+    <entry xml:lang="en">
+        <title>12 months instead of 12 minutes</title>
+        <published>2025-11-21T00:00:00+00:00</published>
+        <updated>2025-11-21T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/3d-website-md/"/>
+        <id>https://blog.jimmac.eu/posts/3d-website-md/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/3d-website-md/">&lt;p&gt;Hey Kids! Other than raving about &lt;a href=&quot;https:&#x2F;&#x2F;www.gnome.org&quot;&gt;GNOME.org&lt;&#x2F;a&gt; being a &lt;a href=&quot;&#x2F;posts&#x2F;plain-html&#x2F;&quot;&gt;static HTML&lt;&#x2F;a&gt;, there&#x27;s one more aspect I&#x27;d like to get back to in this writing exercise called a blog post. &lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;3d-website-md&#x2F;3D-sharecard.webp&quot; alt=&quot;Share card gets updated every release too&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;ve recently come across an apalling genAI website for a project I hold deerly so I thought I&#x27;d give a glimpse on how we used to do things in the olden days. It is probably not going to be done this way anymore in the enshittified timeline we ended up in. The two options available these days are — a quickly generated slop website or no website at all, because privately owned social media is where it&#x27;s at.&lt;&#x2F;p&gt;
+&lt;p&gt;The wanna-be-catchy title of this post comes from the fact the website underwent &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;Teams&#x2F;Websites&#x2F;www.gnome.org&#x2F;-&#x2F;commits&#x2F;main?ref_type=HEADS&quot;&gt;numerous iterations&lt;&#x2F;a&gt; (iterations is the core principle of good design) spanning over a year before we introduced the redesign.&lt;&#x2F;p&gt;
+&lt;p&gt;So how did we end up with a 3D model of a laptop for the hero image on the GNOME website, rather than something generated in a couple of seconds and a &lt;a href=&quot;https:&#x2F;&#x2F;www.ft.com&#x2F;content&#x2F;1d468bd2-6712-4cdd-ac71-21e0ace2d048?utm_source=chatgpt.com&quot;&gt;small town worth of drinking water&lt;&#x2F;a&gt; or a simple SVG illustration?&lt;&#x2F;p&gt;
+&lt;p&gt;The hero image is static now, but used to be a scroll based animation at the early days. It could have become a simple vector style illustration, but I really enjoy the light interaction of the screen and the laptop, especially between the light and dark variants. Toggling dark mode has been my favorite fidget spinner.&lt;&#x2F;p&gt;
+&lt;p&gt;Creating light&#x2F;dark variants is a bit tedious to do manually every release, but automating still a bit too hard to pull off (the taking screenshots of a nightly OS bit). There&#x27;s also the fun of picking a theme for the screenshot rather than doing the same thing over and over. Doing the screenshooting manually meant automating the rest, as a 6 month cycle is enough time to forget how things are done. The process is held together with duct tape, I mean a python script, that renders the website image assets from the few screenshots captured using &lt;a href=&quot;https:&#x2F;&#x2F;os.gnome.org&quot;&gt;GNOME OS&lt;&#x2F;a&gt; running inside &lt;a href=&quot;https:&#x2F;&#x2F;flathub.org&#x2F;en&#x2F;apps&#x2F;org.gnome.Boxes&quot;&gt;Boxes&lt;&#x2F;a&gt;. Two great invisible things made by amazing individuals that could go away in an instant and that thought gives me a dose of anxiety.&lt;&#x2F;p&gt;
+&lt;picture&gt;
+    &lt;source srcset=&quot;dark.webp&quot; media=&quot;(prefers-color-scheme: dark)&quot; &#x2F;&gt;
+    &lt;img src=&quot;light.webp&quot; &#x2F;&gt;
+&lt;&#x2F;picture&gt;
+&lt;p&gt;This does take a minute to render on a laptop (CPU only Cycles), but is a matter of a single invocation and a git commit. So far it has survived a couple of Blender releases, so fingers crossed for the future.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;blogs.gnome.org&#x2F;sophieh&#x2F;author&#x2F;sophieh&#x2F;&quot;&gt;Sophie&lt;&#x2F;a&gt; has recently been looking &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;Teams&#x2F;Websites&#x2F;www.gnome.org&#x2F;-&#x2F;merge_requests&#x2F;71&quot;&gt;into translations&lt;&#x2F;a&gt;, so we might reconsider that 3D approach if translated screenshots become viable (and have them contained in an SVG similar to how &lt;a href=&quot;https:&#x2F;&#x2F;os.gnome.org&quot;&gt;os.gnome.org&lt;&#x2F;a&gt; is done). So far the 3D hero has always been in sync with the release, unlike in our Wordpress days. Fingers crossed.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

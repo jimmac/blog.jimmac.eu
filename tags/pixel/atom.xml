@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Even a Stopped Clock - pixel</title>
+    <subtitle>Random musings of a semi-sane designer from lesser Europe.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://blog.jimmac.eu/tags/pixel/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://blog.jimmac.eu"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2022-10-31T00:00:00+00:00</updated>
+    <id>https://blog.jimmac.eu/tags/pixel/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Pixel Inktober</title>
+        <published>2022-10-31T00:00:00+00:00</published>
+        <updated>2022-10-31T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/pixel-inktober-2022/"/>
+        <id>https://blog.jimmac.eu/posts/pixel-inktober-2022/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/pixel-inktober-2022/">&lt;p&gt;Just like &lt;a href=&quot;&#x2F;posts&#x2F;pixel-inktober&#x2F;&quot;&gt;last year&lt;&#x2F;a&gt;, October was filled with quick pixel dailies. I decided to only post &lt;a href=&quot;https:&#x2F;&#x2F;mastodon.social&#x2F;@jimmac&quot;&gt;on mastodon&lt;&#x2F;a&gt;, but due to the twitter exodus couldn&#x27;t quite post the 30kB images for the two remaining days. Good old blog post it is!&lt;&#x2F;p&gt;
+&lt;div class=&quot;pixelicons&quot;&gt;
+&lt;img src=&quot;sheet.png&quot; alt=&quot;x&quot;&gt;
+&lt;img src=&quot;01.gif&quot; alt=&quot;1. Gargoyle&quot; class=&quot;big&quot;&gt;
+&lt;img src=&quot;02.png&quot; alt=&quot;2. Scurry&quot;&gt;
+&lt;img src=&quot;03.gif&quot; alt=&quot;3. Bat&quot;&gt;
+&lt;img src=&quot;04.png&quot; alt=&quot;4. Scallop&quot;&gt;
+&lt;img src=&quot;05.png&quot; alt=&quot;5. Flame&quot;&gt;
+&lt;img src=&quot;06.png&quot; alt=&quot;6. Bouquet&quot;&gt;
+&lt;img src=&quot;07.png&quot; alt=&quot;7. Trip&quot; class=&quot;big&quot;&gt;
+&lt;img src=&quot;08.png&quot; alt=&quot;8. Match&quot; class=&quot;big&quot;&gt;
+&lt;img src=&quot;09.png&quot; alt=&quot;9. Nest&quot;&gt;
+&lt;img src=&quot;10.png&quot; alt=&quot;10. Crabby&quot;&gt;
+&lt;img src=&quot;11.png&quot; alt=&quot;11. Eagle&quot;&gt;
+&lt;img src=&quot;12.png&quot; alt=&quot;12. Forget&quot;&gt;
+&lt;img src=&quot;13.png&quot; alt=&quot;13. Kind&quot;&gt;
+&lt;img src=&quot;14.png&quot; alt=&quot;14. Empty&quot; class=&quot;big&quot;&gt;
+&lt;img src=&quot;15.png&quot; alt=&quot;15. Armadillo&quot; class=&quot;big&quot;&gt;
+&lt;img src=&quot;16.gif&quot; alt=&quot;16. Fowl&quot;&gt;
+&lt;img src=&quot;17.png&quot; alt=&quot;17. Salty&quot;&gt;
+&lt;img src=&quot;18.png&quot; alt=&quot;18. Scrape&quot;&gt;
+&lt;img src=&quot;19.png&quot; alt=&quot;19. Ponytail&quot;&gt;
+&lt;img src=&quot;20.png&quot; alt=&quot;20. Bluff&quot;&gt;
+&lt;img src=&quot;21.png&quot; alt=&quot;21. Bad Dog&quot;&gt;
+&lt;img src=&quot;22.png&quot; alt=&quot;22. Heist&quot;&gt;
+&lt;img src=&quot;23.gif&quot; alt=&quot;23. Booger&quot;&gt;
+&lt;img src=&quot;24.png&quot; alt=&quot;24. Fairy&quot;&gt;
+&lt;img src=&quot;25.png&quot; alt=&quot;25. Tempting&quot; class=&quot;big&quot;&gt;
+&lt;img src=&quot;26.png&quot; alt=&quot;26. Ego&quot;&gt;
+&lt;img src=&quot;27.png&quot; alt=&quot;27. Snack&quot; class=&quot;big&quot;&gt;
+&lt;img src=&quot;28.png&quot; alt=&quot;28. Camping&quot; class=&quot;big&quot;&gt;
+&lt;img src=&quot;29.png&quot; alt=&quot;29. Uh-oh&quot;&gt;
+&lt;img src=&quot;30.png&quot; alt=&quot;30. Gear&quot;&gt;
+&lt;img src=&quot;31.png&quot; alt=&quot;31. Farm&quot;&gt;
+&lt;&#x2F;div&gt;
+&lt;style type=&quot;text&#x2F;css&quot;&gt;
+.pixelicons {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	gap: 1rem;
+	grid-auto-flow: row dense;
+}
+.pixelicons img {
+	display: block;
+	width: 100%; height: auto;
+	&#x2F;* image-rendering: crisp-edges; *&#x2F;  
+	&#x2F;* image-rendering: pixelated; *&#x2F;
+	transition-duration: 0;
+	align-self: center;
+}
+
+@media only screen and (min-width: 640px) {
+	.pixelicons { grid-template-columns: repeat(4,1fr); }
+	.pixelicons img.big {
+		grid-column: span 2;
+		grid-row: span 2;
+	}
+}
+.pixelicons img:hover {
+	transition: transform 100ms ease-out;
+	transform: scale(1.5);
+	image-rendering: crisp-edges;
+	image-rendering: pixelated;
+}
+.pixelicons img:active {
+	width: 135px;
+	transform: scale(3);
+	transition: none;
+	image-rendering: crisp-edges;
+	image-rendering: pixelated;
+}
+&lt;&#x2F;style&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;posts&#x2F;pixel-inktober&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;, &lt;a href=&quot;&#x2F;posts&#x2F;evenmopixels&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;, &lt;a href=&quot;&#x2F;posts&#x2F;mopixels&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Came Full Circle</title>
+        <published>2022-09-22T00:00:00+00:00</published>
+        <updated>2022-09-22T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/came-full-circle/"/>
+        <id>https://blog.jimmac.eu/posts/came-full-circle/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/came-full-circle/">&lt;p&gt;As mentioned in the &lt;a href=&quot;&#x2F;posts&#x2F;evenmopixels&#x2F;&quot;&gt;previous post&lt;&#x2F;a&gt; I&#x27;ve been creating these short pixel art animations for &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;jimmac&quot;&gt;twitter&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;mastodon.social&#x2F;web&#x2F;@jimmac&quot;&gt;mastodon&lt;&#x2F;a&gt; to promote the lovely apps that sprung up under the umbrella of the &lt;a href=&quot;https:&#x2F;&#x2F;circle.gnome.org&quot;&gt;GNOME Circle project&lt;&#x2F;a&gt;. &lt;&#x2F;p&gt;
+&lt;p&gt;I was surprised the video gets actually quite long. It&#x27;s true that a little something every day really adds up. The music was composed on the &lt;a href=&quot;https:&#x2F;&#x2F;dirtywave.com&quot;&gt;Dirtywave M8&lt;&#x2F;a&gt; and the composite and sequence assembled in &lt;a href=&quot;https:&#x2F;&#x2F;blender.org&quot;&gt;Blender&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;!-- vimeo is a racket
+&lt;iframe title=&quot;vimeo-player&quot; src=&quot;https:&#x2F;&#x2F;player.vimeo.com&#x2F;video&#x2F;751178797?h=1f8fad1ec8&quot; width=&quot;640&quot; height=&quot;480&quot; frameborder=&quot;0&quot; allowfullscreen style=&quot;width: 100%; height: auto; aspect-ratio: 16 &#x2F; 9;&quot; title=&quot;GNOME Circle Pixels&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;vimeo.com&#x2F;751178797&quot;&gt;GNOME Circle Pixels&lt;&#x2F;a&gt;&lt;&#x2F;iframe&gt;
+--&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;0sMr8rlW26M?si=ypn1JiP2S75OHe3t&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;Please take the time to enjoy this fullscreen for that good&#x27;ol CRT feel. If you&#x27;re a maintainer or contributer to any of the apps featured, thank you!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Even Mo&#x27; Pixels</title>
+        <published>2022-09-16T00:00:00+00:00</published>
+        <updated>2022-09-16T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/evenmopixels/"/>
+        <id>https://blog.jimmac.eu/posts/evenmopixels/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/evenmopixels/">&lt;p&gt;To keep the habbit alive, I continue to do a &lt;a href=&quot;&#x2F;posts&#x2F;mopixels&#x2F;&quot;&gt;daily pixel routine&lt;&#x2F;a&gt;, now covering almost all of the &lt;a href=&quot;https:&#x2F;&#x2F;circle.gnome.org&quot;&gt;GNOME Circle&lt;&#x2F;a&gt; apps.&lt;&#x2F;p&gt;
+&lt;p&gt;Good call. Empty alt attributes (alt=&amp;quot;&amp;quot;) are actually better for decorative images or icons since they tell screen readers to skip over them, rather than announcing &amp;quot;x&amp;quot; over and over again.&lt;&#x2F;p&gt;
+&lt;p&gt;Here is the updated block:&lt;&#x2F;p&gt;
+&lt;div class=&quot;pixelicons&quot;&gt;
+&lt;img src=&quot;IMG_0425.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0426.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0427.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0428.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0429.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0430.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0431.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0432.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0433.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0434.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0435.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0436.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0437.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0439.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0440.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0441.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0442.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0443.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0444.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0445.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0446.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0447.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0448.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0449.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0450.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0451.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0452.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0453.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0454.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0455.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0456.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0457.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0458.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0459.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0460.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0461.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0463.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0464.PNG&quot; alt=&quot;&quot;&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;I&#x27;ve been practicing the art of animation a little too in an effort to promote GNOME Circle on &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;jimmac&quot;&gt;Twitter&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;mastodon.social&#x2F;web&#x2F;@jimmac&quot;&gt;Mastodon&lt;&#x2F;a&gt;. Presenting all these GIFs would probably not be kind to &lt;a href=&quot;http:&#x2F;&#x2F;planet.gnome.org&quot;&gt;Planet GNOME&lt;&#x2F;a&gt; readers though. Perhaps I could compose a video in the future (no GIF support in Blender, strangely!). Keep grinding your (pointless) skills, kids!&lt;&#x2F;p&gt;
+&lt;style type=&quot;text&#x2F;css&quot;&gt;
+.pixelicons {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	gap: 4rem;
+}
+.pixelicons img {
+	display: block;
+	width: 100%; height: auto;
+	image-rendering: crisp-edges; image-rendering: pixelated;
+	transition: transform 600ms ease-out;
+	align-self: center;
+}
+
+@media only screen and (min-width: 640px) {
+	.pixelicons { grid-template-columns: repeat(4,1fr); gap: 3rem; }
+	.pixelicons img:nth-child(10n) {
+		grid-column: span 2;
+		grid-row: span 2;
+	}
+}
+.pixelicons img:hover {
+	transition: transform 100ms ease-out;
+	transform: scale(1.2);
+}
+.pixelicons img:active {
+	transition: none;
+	width: 32px;
+	transform: scale(1);
+}
+
+
+&lt;&#x2F;style&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;posts&#x2F;mopixels&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Pixel Inktober</title>
+        <published>2021-11-01T00:00:00+00:00</published>
+        <updated>2021-11-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/pixel-inktober-2021/"/>
+        <id>https://blog.jimmac.eu/posts/pixel-inktober-2021/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/pixel-inktober-2021/">&lt;p&gt;For the first time ever I actually finished a &lt;a href=&quot;https:&#x2F;&#x2F;inktober.com&#x2F;&quot;&gt;monthly challenge&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;div class=&quot;pixels&quot;&gt;
+&lt;img src=&quot;IMG_0287.PNG&quot; alt=&quot;0. Pixel Inktober&quot;&gt;
+&lt;img src=&quot;IMG_0288.PNG&quot; alt=&quot;1. Crystal&quot;&gt;
+&lt;img src=&quot;IMG_0289.PNG&quot; alt=&quot;2. Suit&quot;&gt;
+&lt;img src=&quot;IMG_0290.GIF&quot; alt=&quot;3. Vessel&quot;&gt;
+&lt;img src=&quot;IMG_0291.PNG&quot; alt=&quot;4. Knot&quot;&gt;
+&lt;img src=&quot;IMG_0292.PNG&quot; alt=&quot;5. Raven&quot;&gt;
+&lt;img src=&quot;IMG_0293.PNG&quot; alt=&quot;6. Spirit&quot;&gt;
+&lt;img src=&quot;IMG_0294.GIF&quot; alt=&quot;7. Fan&quot;&gt;
+&lt;img src=&quot;IMG_0295.PNG&quot; alt=&quot;8. Watch&quot;&gt;
+&lt;img src=&quot;IMG_0297.GIF&quot; alt=&quot;9. Pressure&quot;&gt;
+&lt;img src=&quot;IMG_0298.GIF&quot; alt=&quot;10. Pick&quot;&gt;
+&lt;img src=&quot;IMG_0299.PNG&quot; alt=&quot;11. Sour&quot;&gt;
+&lt;img src=&quot;IMG_0300.PNG&quot; alt=&quot;12. Stuck&quot;&gt;
+&lt;img src=&quot;IMG_0301.PNG&quot; alt=&quot;13. Roof&quot;&gt;
+&lt;img src=&quot;IMG_0303.PNG&quot; alt=&quot;14. Tick&quot;&gt;
+&lt;img src=&quot;IMG_0304.PNG&quot; alt=&quot;15. Helmet&quot;&gt;
+&lt;img src=&quot;IMG_0305.PNG&quot; alt=&quot;16. Compass&quot;&gt;
+&lt;img src=&quot;IMG_0306.GIF&quot; alt=&quot;17. Collide&quot;&gt;
+&lt;img src=&quot;IMG_0307.GIF&quot; alt=&quot;18. Moon&quot;&gt;
+&lt;img src=&quot;IMG_0308.PNG&quot; alt=&quot;19. Loop&quot;&gt;
+&lt;img src=&quot;IMG_0309.PNG&quot; alt=&quot;20. Sprout&quot;&gt;
+&lt;img src=&quot;IMG_0310.PNG&quot; alt=&quot;21. Fuzzy&quot;&gt;
+&lt;img src=&quot;IMG_0311.PNG&quot; alt=&quot;22. Open&quot;&gt;
+&lt;img src=&quot;IMG_0313.GIF&quot; alt=&quot;23. Leak&quot;&gt;
+&lt;img src=&quot;IMG_0314.PNG&quot; alt=&quot;24. Extinct&quot;&gt;
+&lt;img src=&quot;IMG_0315.GIF&quot; alt=&quot;25. Splat&quot;&gt;
+&lt;img src=&quot;IMG_0316.PNG&quot; alt=&quot;26. Connect&quot;&gt;
+&lt;img src=&quot;IMG_0317.PNG&quot; alt=&quot;27. Spark&quot;&gt;
+&lt;img src=&quot;IMG_0318.PNG&quot; alt=&quot;28. Crispy&quot;&gt;
+&lt;img src=&quot;IMG_0319.PNG&quot; alt=&quot;29. Patch&quot;&gt;
+&lt;img src=&quot;IMG_0320.GIF&quot; alt=&quot;30. Slither&quot;&gt;
+&lt;img src=&quot;IMG_0321.PNG&quot; alt=&quot;31. Risk&quot;&gt;
+&lt;&#x2F;div&gt;
+&lt;style type=&quot;text&#x2F;css&quot;&gt;
+.pixels {
+	display: grid;
+	&#x2F;* grid-template-columns: repeat(3,1fr); *&#x2F;
+	grid-template-columns: repeat(auto-fit, minmax(270px,1fr));
+	gap: 64px;
+}
+.pixels img {
+	display: block;
+	width: 270px; height: auto;
+	image-rendering: crisp-edges; image-rendering: pixelated;
+	transition: transform 600ms ease-out;
+	align-self: center;
+}
+.pixels img:active {
+	transition: none;
+	width: 135px;
+	transform: scale(1);
+}
+&lt;&#x2F;style&gt;
+&lt;p&gt;Off to the &lt;a href=&quot;https:&#x2F;&#x2F;nodevember.io&#x2F;&quot;&gt;Nodevember&lt;&#x2F;a&gt;!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Mo&#x27; Pixels</title>
+        <published>2021-10-13T00:00:00+00:00</published>
+        <updated>2021-10-13T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/mopixels/"/>
+        <id>https://blog.jimmac.eu/posts/mopixels/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/mopixels/">&lt;p&gt;Recently I&#x27;ve been indulging myself in pixel art again. One might assume that&#x27;s my comfort zone, but honestly I don&#x27;t feel like I&#x27;ve ever truly mastered it. &lt;&#x2F;p&gt;
+&lt;p&gt;The initial push came from &lt;a href=&quot;https:&#x2F;&#x2F;vancura.design&#x2F;&quot;&gt;my friend&lt;&#x2F;a&gt;, who quit his corporate job, to dive back into his passion and is &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;unientgames&#x2F;status&#x2F;1440048310962688000&quot;&gt;working on games&lt;&#x2F;a&gt;. Their first title is an oldschool pixel maze, (with a 2021 artistic twist, of course). His work inspired me to get back to pixel pushing.&lt;&#x2F;p&gt;
+&lt;p&gt;To combine exploration with usefulness, I imagined mixing up of the new application icon style with pixels to perhaps bring back the &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-backgrounds&#x2F;-&#x2F;blob&#x2F;gnome-3-36&#x2F;backgrounds&#x2F;Endless-shapes.jpg&quot;&gt;fun of colorful patterns&lt;&#x2F;a&gt; into a wallpaper.&lt;&#x2F;p&gt;
+&lt;p&gt;Sadly the result is visually &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-backgrounds&#x2F;-&#x2F;blob&#x2F;wip&#x2F;jimmac&#x2F;prefers-dark-light&#x2F;backgrounds&#x2F;pixels-d.png&quot;&gt;way too overwhelming&lt;&#x2F;a&gt;, but the assets created can at least please your nostalgia bone here on planet GNOME (unless it becomes a mess without the stylesheet, we&#x27;ll see). Stay curious!&lt;&#x2F;p&gt;
+&lt;div class=&quot;pixelicons&quot;&gt;
+&lt;img src=&quot;IMG_0257.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0250.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0258.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0248.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0223.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0228.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0259.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0230.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0265.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0242.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0256.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0254.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0219.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0252.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0226.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0233.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0247.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0260.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0222.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0221.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0224.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0251.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0266.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0227.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0246.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0244.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0241.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0253.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0231.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0264.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0255.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0229.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0234.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0240.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0237.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0225.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0262.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0263.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0236.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0249.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0261.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0239.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0235.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0245.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0243.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0238.PNG&quot; alt=&quot;&quot;&gt;
+&lt;img src=&quot;IMG_0232.PNG&quot; alt=&quot;&quot;&gt;
+&lt;&#x2F;div&gt;
+&lt;style type=&quot;text&#x2F;css&quot;&gt;
+.pixelicons {
+	display: grid;
+	&#x2F;* grid-template-columns: repeat(3,1fr); *&#x2F;
+	grid-template-columns: repeat(auto-fit, minmax(128px,1fr));
+	gap: 64px;
+}
+.pixelicons img {
+	display: block;
+	width: 100%; height: auto;
+	image-rendering: crisp-edges; image-rendering: pixelated;
+	transition: transform 600ms ease-out;
+	align-self: center;
+}
+.pixelicons img:hover {
+	transition: transform 100ms ease-out;
+	transform: scale(1.2);
+}
+.pixelicons img:active {
+	transition: none;
+	width: 32px;
+	transform: scale(1);
+}
+&lt;&#x2F;style&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Null Amusement</title>
+        <published>2021-09-12T00:00:00+00:00</published>
+        <updated>2021-09-12T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/chiptune/"/>
+        <id>https://blog.jimmac.eu/posts/chiptune/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/chiptune/">&lt;!-- &lt;a href=&quot;{{ site.url }}{{ page.url }}&quot;&gt;absolute links&lt;&#x2F;a&gt; --&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;soundcloud.com&#x2F;jimmac&#x2F;null-amusement&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;chiptune&#x2F;chiptune.gif&quot; alt=&quot;Null Amusement&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Been old-school-pixel-pushin&#x27; recently, for a project I&#x27;ll hopefully reveal soon. But because I&#x27;ve also been really keen on music recently, a little side diversion happened that I&#x27;d like to share.&lt;&#x2F;p&gt;
+&lt;p&gt;It started with generating some samples using the good old &lt;a href=&quot;http:&#x2F;&#x2F;www.drpetter.se&#x2F;project_sfxr.html&quot;&gt;SXFR&lt;&#x2F;a&gt;. It&#x27;s a tiny sythesizer for generating cute oldschool chiptune&#x2F;game sound effects. Sadly it doesn&#x27;t exist as &lt;a href=&quot;https:&#x2F;&#x2F;flathub.org&quot;&gt;an app&lt;&#x2F;a&gt;, which is a shame.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;chiptune&#x2F;sxfr.png&quot; alt=&quot;SXFR&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Then it was off to &lt;a href=&quot;https:&#x2F;&#x2F;polyend.com&#x2F;tracker&#x2F;&quot;&gt;Polyend Tracker&lt;&#x2F;a&gt;, even if in this case I was sitting in front of my computer so the benefit of having a physical machine to take anywhere was sort of diminished. &lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;chiptune&#x2F;polyend.gif&quot; alt=&quot;Polyend Tracker&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;In any case the included instrument editor with all its effects and filters came handy. I exported the &lt;a href=&quot;https:&#x2F;&#x2F;soundcloud.com&#x2F;jimmac&#x2F;null-amusement&quot;&gt;full song&lt;&#x2F;a&gt; as well as a single pattern to use on the &lt;a href=&quot;https:&#x2F;&#x2F;www.instagram.com&#x2F;p&#x2F;CTuF6TKoQHw&#x2F;&quot;&gt;Instagram loop&lt;&#x2F;a&gt;. This time I did no mastering at all, just plain uploaded the track to &lt;a href=&quot;https:&#x2F;&#x2F;soundcloud.com&#x2F;jimmac&#x2F;null-amusement&quot;&gt;soundcloud&lt;&#x2F;a&gt; and called it done.&lt;&#x2F;p&gt;
+&lt;p&gt;As for the visuals, I&#x27;ve used way many more tools than you&#x27;d expect. The icon assets were mainly done in &lt;a href=&quot;https:&#x2F;&#x2F;pixaki.com&#x2F;&quot;&gt;Pixaki&lt;&#x2F;a&gt;, a fairly polished pixel editor for iPad. I have numerous beef with it for it being premium priced, mainly in the way it does layered animation, but it absolutely delivers on the immediacy and contrasts with filesystem diving of &lt;a href=&quot;https:&#x2F;&#x2F;www.aseprite.org&#x2F;&quot;&gt;Aseprite&lt;&#x2F;a&gt; which otherwise beats it bar none. Usually I convert GIFs exported from Aseprite or Pixaki using ffmpeg, but this time I needed to sync the animation to the sound, so I loaded up the GIF and the exported pattern from Tracker into Blender and with the &lt;em&gt;sound wave preview&lt;&#x2F;em&gt; that somehow isn&#x27;t on by default, it was a quick job in the VSE.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;chiptune&#x2F;blender-vse.png&quot; alt=&quot;Blender VSE&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;posts&#x2F;single-cycle-rave&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;troubled-minister&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;what-am-i&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;100kph&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;jammin-on-elektron&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;elektronic&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

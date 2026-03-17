@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Even a Stopped Clock - git</title>
+    <subtitle>Random musings of a semi-sane designer from lesser Europe.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://blog.jimmac.eu/tags/git/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://blog.jimmac.eu"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2021-08-04T00:00:00+00:00</updated>
+    <id>https://blog.jimmac.eu/tags/git/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Deescalating Tensions</title>
+        <published>2021-08-04T00:00:00+00:00</published>
+        <updated>2021-08-04T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/deescalating-tensions/"/>
+        <id>https://blog.jimmac.eu/posts/deescalating-tensions/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/deescalating-tensions/">&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;deescalating-tensions&#x2F;Inkscape.png&quot; alt=&quot;inkscape&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;One of the great attributes of &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Scalable_Vector_Graphics&quot;&gt;SVG&lt;&#x2F;a&gt; is that its text nature lends itself to be easily &lt;a href=&quot;https:&#x2F;&#x2F;git-scm.com&#x2F;&quot;&gt;version controlled&lt;&#x2F;a&gt;. &lt;a href=&quot;https:&#x2F;&#x2F;inkscape.org&quot;&gt;Inkscape&lt;&#x2F;a&gt; uses SVG as its native format (and extends it using its private namespace).&lt;&#x2F;p&gt;
+&lt;p&gt;Unfortunately it uses the documents themselves to store things like canvas position and zoom state. This instantly erases one of the benefits for easy version control as every change instantly turns into unsolvable conflict.&lt;&#x2F;p&gt;
+&lt;p&gt;Luckily you can at least give up the ability to store the canvas position for the greater good of not having merge conflicts, if you manage to convince your peers to change its defaults. Which is what this blog post is about :)&lt;&#x2F;p&gt;
+&lt;p&gt;To change these defaults, you have to dive into the thick forrest that is Inkscape&#x27;s preferences (&lt;code&gt;Edit &amp;gt; Preferences&lt;&#x2F;code&gt;). You&#x27;ll find then in the &lt;code&gt;Interface &amp;gt; Windows&lt;&#x2F;code&gt; section. The default being the unfortunate &lt;code&gt;Save and restore window geometry for each document&lt;&#x2F;code&gt; needs to be changed either to &lt;code&gt;Don&#x27;t save window geometry&lt;&#x2F;code&gt; or &lt;code&gt;Remember to use last window&#x27;s geometry&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;From now on, rebasing &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;Teams&#x2F;Design&#x2F;icon-development-kit&quot;&gt;icon-development-kit&lt;&#x2F;a&gt; won&#x27;t cause any more grey hair for you!&lt;&#x2F;p&gt;
+&lt;p&gt;Update: Turns out, despite me testing before posting, only &lt;code&gt;Don&#x27;t save window geometry&lt;&#x2F;code&gt; is safe. Even window geometry appears to be saved into the document.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Git Worktree — Concurrent Development</title>
+        <published>2021-02-06T00:00:00+00:00</published>
+        <updated>2021-02-06T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/git-worktree/"/>
+        <id>https://blog.jimmac.eu/posts/git-worktree/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/git-worktree/">&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;git-worktree&#x2F;git-worktree.png&quot; alt=&quot;git worktree&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Sometimes you have to sit on two chairs at the same time. No, I don&#x27;t mean to give you east-European political advice. I mean developing things in two concurrent branches can be a pain with the constant switching. &lt;&#x2F;p&gt;
+&lt;p&gt;In my case I need to develop a stylesheet for both &lt;em&gt;gtk3&lt;&#x2F;em&gt; and &lt;em&gt;gtk4&lt;&#x2F;em&gt; at the same time, usually having to compare the two running concurrently. &lt;a href=&quot;https:&#x2F;&#x2F;blogs.gnome.org&#x2F;mclasen&#x2F;&quot;&gt;Matthias&lt;&#x2F;a&gt; recently introduced me to the secret cabal of people knowing about &lt;code&gt;git worktree&lt;&#x2F;code&gt;. Thanks to it you can have two branches of the same project checked out at the same time, not only saving you the (cheap) drive space, but keeping a single history so &lt;em&gt;cherry picking&lt;&#x2F;em&gt; and diffing between the two doesn&#x27;t need to involve refreshing remotes or jumping through other hoops.&lt;&#x2F;p&gt;
+&lt;p&gt;So let&#x27;s take a look at my scenario. I have gtk checked out in &lt;a href=&quot;https:&#x2F;&#x2F;flathub.org&#x2F;apps&#x2F;details&#x2F;org.gnome.Builder&quot;&gt;Builder&lt;&#x2F;a&gt;, by default going to &lt;code&gt;~&#x2F;Projects&#x2F;gtk&lt;&#x2F;code&gt;. The &lt;code&gt;master&lt;&#x2F;code&gt; branch equates to the new goodness of &lt;em&gt;gtk4&lt;&#x2F;em&gt;. Pushing the &lt;em&gt;run&lt;&#x2F;em&gt; button will build me &lt;code&gt;gtk4-widget-factory&lt;&#x2F;code&gt; ready to test the stylesheet. But to have the gtk3 equivalent run side by side, I don&#x27;t use a duplicate of the repo, but instead created a worktree copy:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;cd ~&amp;#x2F;Projects&amp;#x2F;gtk
+git checkout -tb gtk-3-24 origin&amp;#x2F;gtk-3-24 
+git checkout master 
+git worktree add ..&amp;#x2F;gtk3 gtk-3-24
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;At this point you can open the &lt;code&gt;gtk3&lt;&#x2F;code&gt; project in Builder and works as if those were not closely interconnected. But every commit is &#x27;visible&#x27; in the other project.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

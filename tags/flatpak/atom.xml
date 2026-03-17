@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Even a Stopped Clock - flatpak</title>
+    <subtitle>Random musings of a semi-sane designer from lesser Europe.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://blog.jimmac.eu/tags/flatpak/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://blog.jimmac.eu"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-02-23T00:00:00+00:00</updated>
+    <id>https://blog.jimmac.eu/tags/flatpak/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Flathub Brand Refresh</title>
+        <published>2023-02-23T00:00:00+00:00</published>
+        <updated>2023-02-23T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/flathub-brand-refresh/"/>
+        <id>https://blog.jimmac.eu/posts/flathub-brand-refresh/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/flathub-brand-refresh/">&lt;!-- &lt;a href=&quot;{{ site.url }}{{ page.url }}&quot;&gt;absolute links&lt;&#x2F;a&gt; --&gt;
+&lt;p&gt;While &lt;a href=&quot;https:&#x2F;&#x2F;flatpak.org&quot;&gt;Flatpak&lt;&#x2F;a&gt; itself is an architecturally decentralized way to distribute apps, &lt;a href=&quot;https:&#x2F;&#x2F;beta.flathub.org&quot;&gt;Flathub&lt;&#x2F;a&gt; embraces the convenience for people to come to one place to install apps. There&#x27;s some fairly big changes coming to Flathub that I&#x27;m extremely excited about, that will make sure the new wave of Linux apps doesn&#x27;t fizzle out and we&#x27;ll maintain a sustainable application ecosystem.&lt;&#x2F;p&gt;
+&lt;!-- vimeo is a racket
+&lt;iframe src=&quot;https:&#x2F;&#x2F;player.vimeo.com&#x2F;video&#x2F;801393970?h=73a1ea84e4&amp;amp;badge=0&amp;amp;autopause=0&amp;amp;player_id=0&amp;amp;app_id=58479&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; picture-in-picture&quot; allowfullscreen title=&quot;flathub-rebrand&quot;&gt;&lt;&#x2F;iframe&gt;
+--&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;d770zFM4jIE?si=TyuylOVmFM4FsaiK&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;Thus there is no better time to refresh what has become a little dated, Flathub&#x27;s visual identity. It centers around the core of what Flathub is — the apps themselves. The identity isn&#x27;t very loud and shouty. The flashy colors and emphasis remains on the apps themselves, Flathub is the neutral platform for the apps to shine.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;flathub&#x2F;website&#x2F;files&#x2F;10815847&#x2F;brand-guide.pdf&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;flathub-brand-refresh&#x2F;brand.webp&quot; alt=&quot;Brand Guidelines&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Take a peek at the &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;flathub&#x2F;website&#x2F;files&#x2F;10815847&#x2F;brand-guide.pdf&quot;&gt;brand guidelines&lt;&#x2F;a&gt; to learn more about the new Flathub brand or &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;flathub&#x2F;website&#x2F;files&#x2F;10815849&#x2F;flathub-branding.zip&quot;&gt;download the logos&lt;&#x2F;a&gt; in scalable format. The download buttons for app websites are also &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;flathub&#x2F;website&#x2F;files&#x2F;10814600&#x2F;download-button.zip&quot;&gt;available&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;flathub-brand-refresh&#x2F;flathub-l.webp&quot; alt=&quot;Flathub Light WIP&quot; &#x2F;&gt;
+&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;flathub-brand-refresh&#x2F;flathub-d.webp&quot; alt=&quot;Flathub Dark WIP&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Building a brand on neutral greys isn&#x27;t quite an easy sell, but precisely targets the main point of the Flathub brand. It creates the stage for apps to shine. Flathub isn&#x27;t flashy by itself. It allows the apps to be at the center of your attention.&lt;&#x2F;p&gt;
+&lt;p&gt;If you&#x27;ve read until this point, you deserve a treat! Here&#x27;s some eye candy from the early stages of the process. Wallpapers derived from the elemental shapes of the logomark. Clearly off limits now, but can&#x27;t just throw them away, can I?&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;flathub-brand-refresh&#x2F;wallpaper.svg&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;flathub-brand-refresh&#x2F;flathub-patterns.webp&quot; alt=&quot;Flathub Patterns&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;flathub-brand-refresh&#x2F;wallpaper3D.webp&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;flathub-brand-refresh&#x2F;flathub-candy.webp&quot; alt=&quot;Flathub Candy&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
+{.tiledscr}&lt;&#x2F;p&gt;
+&lt;style type=&quot;text&#x2F;css&quot;&gt;
+.tiledscr {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	gap: 1rem;
+	grid-auto-flow: row dense;
+}
+.tiledscr img {
+	display: block;
+	width: 100%; height: auto;
+	align-self: center;
+}
+&lt;&#x2F;style&gt;
+&lt;p&gt;Big shoutout to &lt;a href=&quot;https:&#x2F;&#x2F;osna.social&#x2F;@razze&quot;&gt;razze&lt;&#x2F;a&gt; for his ongoing work on the website and implementing the brand so quickly. Many thank yous to &lt;a href=&quot;https:&#x2F;&#x2F;tobiasbernard.com&#x2F;&quot;&gt;Tobias Bernard&lt;&#x2F;a&gt; for significant involvment in this during the &lt;a href=&quot;&#x2F;posts&#x2F;Berlin-GUADEC&#x2F;&quot;&gt;Berlin Mini GUADEC&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;vancura.dev&#x2F;&quot;&gt;Václav Vančura&lt;&#x2F;a&gt; for sensible feedback.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;posts&#x2F;flatpak-refresh&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Flatpak Brand Refresh</title>
+        <published>2022-06-13T00:00:00+00:00</published>
+        <updated>2022-06-13T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/flatpak-refresh/"/>
+        <id>https://blog.jimmac.eu/posts/flatpak-refresh/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/flatpak-refresh/">&lt;!-- &lt;a href=&quot;{{ site.url }}{{ page.url }}&quot;&gt;absolute links&lt;&#x2F;a&gt; --&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;flatpak-refresh&#x2F;flatpak.png&quot; alt=&quot;Flatpak&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;flatpak.org&quot;&gt;Flatpak&lt;&#x2F;a&gt; has been at the center of the recent app renaissance, but its visual identity has remained fairly stale. &lt;&#x2F;p&gt;
+&lt;p&gt;Without diverging too much from the &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;flatpak&#x2F;flatpak.github.io&#x2F;issues&#x2F;537&quot;&gt;main elements of its visual identity&lt;&#x2F;a&gt; we&#x27;ve made it more contemporary. The logo in particular has been simplified to work in all of the size scenarios and visual complexity contexts.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;flatpak-refresh&#x2F;flatpak-logo.webp&quot; alt=&quot;Flatpak Logo&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;There&#x27;s definitely a few spots where the rebrand has yet to propagate to, so please refer to &lt;a href=&quot;https:&#x2F;&#x2F;flatpak.org&#x2F;img&#x2F;flatpak-logos.zip&quot;&gt;the guidelines&lt;&#x2F;a&gt; if you spot and old coat of paint.&lt;&#x2F;p&gt;
+&lt;p&gt;If you&#x27;re giving a talk on Flatpak, feel free to make use of the &lt;a href=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;flatpak-refresh&#x2F;impress-flatpak-template.otp&quot;&gt;LibreOffice Impress Template&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

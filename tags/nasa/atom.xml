@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Even a Stopped Clock - nasa</title>
+    <subtitle>Random musings of a semi-sane designer from lesser Europe.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://blog.jimmac.eu/tags/nasa/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://blog.jimmac.eu"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2022-04-10T00:00:00+00:00</updated>
+    <id>https://blog.jimmac.eu/tags/nasa/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Ingenuity&#x27;s One Year of Mars Flights</title>
+        <published>2022-04-10T00:00:00+00:00</published>
+        <updated>2022-04-10T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/one-year-of-mars-flights/"/>
+        <id>https://blog.jimmac.eu/posts/one-year-of-mars-flights/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/one-year-of-mars-flights/">&lt;p&gt;Next week it&#x27;s going to be a year since Ingenuity made the first flight in an atmosphere of another planet. An atmosphere with about 1% of density of the one on Earth.&lt;&#x2F;p&gt;
+&lt;!-- vimeo is a racket
+&lt;iframe src=&quot;https:&#x2F;&#x2F;player.vimeo.com&#x2F;video&#x2F;686244806?h=f8f41b2cd3&amp;amp;badge=0&amp;amp;autopause=0&amp;amp;player_id=0&amp;amp;app_id=58479&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; picture-in-picture&quot; allowfullscreen style=&quot;width: 100%; height: auto; aspect-ratio: 16 &#x2F; 9;&quot; title=&quot;Ingenuity&amp;amp;#039;s One Year of Mars Flights&quot;&gt;&lt;&#x2F;iframe&gt;
+--&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;s7NoLm4xUB4?si=tMataTVDVRIGsrLB&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;Something that sounded unlikely became a great success with &lt;a href=&quot;https:&#x2F;&#x2F;mars.nasa.gov&#x2F;technology&#x2F;helicopter&#x2F;#Flight-Log&quot;&gt;24 flights&lt;&#x2F;a&gt; so far. To celebrate the occasion I revisited an older project of mine and used more appropriate footage shot by my friend &lt;a href=&quot;https:&#x2F;&#x2F;www.vojtechpollak.com&#x2F;&quot;&gt;VOPO&lt;&#x2F;a&gt; at Fuertaventura, Canary Islands. I rendered some overlays of the Ingenuity model kindly provided by NASA.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;one-year-of-mars-flights&#x2F;ingenuity-and-perseverance.webp&quot; alt=&quot;Ingenuity with Perseverance&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The music was composed on the &lt;a href=&quot;https:&#x2F;&#x2F;dirtywave.com&#x2F;&quot;&gt;Dirtywave M8 Tracker&lt;&#x2F;a&gt;, went straight from the device, no mastering. The time constraints of &lt;a href=&quot;https:&#x2F;&#x2F;weeklybeats.com&#x2F;&quot;&gt;weeklybeats&lt;&#x2F;a&gt; is brutal. I used a hint to the &lt;em&gt;Close Encounters of the Third Kind&lt;&#x2F;em&gt; main theme, but because the flight is unrealistically dynamic, it leans on a mangled classic &lt;a href=&quot;https:&#x2F;&#x2F;free-sample-packs.com&#x2F;junglejungle-1989-1999-sample-pack&#x2F;&quot;&gt;Jungle Jungle&lt;&#x2F;a&gt; break.&lt;&#x2F;p&gt;
+&lt;p&gt;Thanks to the C-Base crew for taking good care of us and the GNOME Fundation to support the travel (mostly on the surface).&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;one-year-of-mars-flights&#x2F;sponsored.png&quot; alt=&quot;Supported by the GNOME Foundation&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Ingenuity FPV</title>
+        <published>2021-03-22T00:00:00+00:00</published>
+        <updated>2021-03-22T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/ingenuity-fpv/"/>
+        <id>https://blog.jimmac.eu/posts/ingenuity-fpv/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/ingenuity-fpv/">&lt;!-- &lt;div class=&quot;inlineimgs&quot; markdown=&quot;1&quot;&gt; --&gt;
+&lt;!-- &lt;a href=&quot;{{ site.url }}{{ page.url }}&quot;&gt;absolute links&lt;&#x2F;a&gt; --&gt;
+&lt;p&gt;When I &lt;a href=&quot;&#x2F;posts&#x2F;perseverance&#x2F;&quot;&gt;previously posted&lt;&#x2F;a&gt;
+about the Perseverance landing, I didn&#x27;t realize NASA has actually published textured models of &lt;a href=&quot;https:&#x2F;&#x2F;mars.nasa.gov&#x2F;resources&#x2F;25042&#x2F;mars-perseverance-rover-3d-model&#x2F;&quot;&gt;the lander&lt;&#x2F;a&gt; and it&#x27;s cute not-so-little maritan helicopter, &lt;a href=&quot;https:&#x2F;&#x2F;mars.nasa.gov&#x2F;resources&#x2F;25043&#x2F;mars-ingenuity-helicopter-3d-model&#x2F;&quot;&gt;Ingenuity&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;ingenuity-fpv&#x2F;ingenuity-fpv.png&quot; alt=&quot;Ingenuity ripping&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Naturally I was drawn to play around with the model over the past few weeks and after posting a little &lt;a href=&quot;https:&#x2F;&#x2F;www.instagram.com&#x2F;p&#x2F;CLpfH-KHNHg&#x2F;&quot;&gt;Instagram test&lt;&#x2F;a&gt;, a more elaborate &lt;a href=&quot;https:&#x2F;&#x2F;www.instagram.com&#x2F;reel&#x2F;CLuEO-fFzRi&#x2F;&quot;&gt;Instagram Reel&lt;&#x2F;a&gt;, I was naturally bound to theme some of my fpv flights as martian exploration. I&#x27;m glad I managed to create one before the actual Ingenuity test flight, because the strict lockdown really limits any fitting location right now.&lt;&#x2F;p&gt;
+&lt;p&gt;All of the martian footage has been rendered with the realtime eevee engine, maxing out at 20 seconds per frame. The focal blur has been improved in eevee recently, but Cycles was used for all the fpv overlays for now.&lt;&#x2F;p&gt;
+&lt;!-- vimeo is a racket
+&lt;iframe src=&quot;https:&#x2F;&#x2F;player.vimeo.com&#x2F;video&#x2F;526888385&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; picture-in-picture&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;vimeo.com&#x2F;526888385&quot;&gt;Digitone + Digitakt: Ingenuity FPV&lt;&#x2F;a&gt; from &lt;a href=&quot;https:&#x2F;&#x2F;vimeo.com&#x2F;jimmacfx&quot;&gt;jimmac&lt;&#x2F;a&gt; on &lt;a href=&quot;https:&#x2F;&#x2F;vimeo.com&quot;&gt;Vimeo&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+--&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;AxYo_qJi2XQ?si=jvPc8m-i7z4rxQ-k&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;The original track was recorded at 60BPM, but sadly the footage is unbearable to watch for over 4 minutes, so I&#x27;ve resampled it to 90BMP to keep the legth down. It does glitch at some points, but the motivation to work on this has reached critical levels, so I&#x27;m calling it done.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Perseverance Landing</title>
+        <published>2021-02-18T00:00:00+00:00</published>
+        <updated>2021-02-18T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/perseverance/"/>
+        <id>https://blog.jimmac.eu/posts/perseverance/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/perseverance/">&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;perseverance&#x2F;nasa.png&quot; alt=&quot;NASA Logo by Bruce Blackburn&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Things are hectic and busy here on Earth. &lt;a href=&quot;https:&#x2F;&#x2F;www.theguardian.com&#x2F;science&#x2F;2021&#x2F;feb&#x2F;17&#x2F;arctic-heating-winter-storms-climate-change&quot;&gt;We may have disrupted&lt;&#x2F;a&gt; the seeemingly eternal atmospheric streams by warming up the planet. We seem to be really terrible at dealing with a viral threat we&#x27;ve known about for a long time. We&#x27;re doing a lot of bad things as species.&lt;&#x2F;p&gt;
+&lt;p&gt;But today I won&#x27;t be bitching about our government failing to distribute vaccines handed to them on a silver platter. I&#x27;ll be admiring the work of another government agency that did amazingly organizing resources and talent and will be landing the Perseverance rover on Mars at 19:15 UTC.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=kPrbJ63qUc4&amp;amp;list=PLTiv_XWHnOZo89xfQyRUub76zNlQTLNrJ&amp;amp;index=1&quot;&gt;Join me and watch it here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

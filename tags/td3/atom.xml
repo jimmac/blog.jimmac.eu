@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Even a Stopped Clock - td3</title>
+    <subtitle>Random musings of a semi-sane designer from lesser Europe.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://blog.jimmac.eu/tags/td3/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://blog.jimmac.eu"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2022-04-02T00:00:00+00:00</updated>
+    <id>https://blog.jimmac.eu/tags/td3/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Less is More</title>
+        <published>2022-04-02T00:00:00+00:00</published>
+        <updated>2022-04-02T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/less-is-more/"/>
+        <id>https://blog.jimmac.eu/posts/less-is-more/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/less-is-more/">&lt;p&gt;Spending less and less time on each track in &lt;a href=&quot;https:&#x2F;&#x2F;weeklybeats.com&#x2F;jimmac&quot;&gt;Weeklybeats&lt;&#x2F;a&gt; is making me a little nervous as to whether I will be able to finish such a marathon.&lt;&#x2F;p&gt;
+&lt;audio controls&gt;
+&lt;source src=&quot;acid-basics.mp3&quot; type=&quot;audio&#x2F;mpeg&quot;&gt;
+&lt;source src=&quot;acid-basics.aac&quot; type=&quot;audio&#x2F;aac&quot;&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;soundcloud.com&#x2F;jimmac&#x2F;fugue&quot;&gt;Fugue on Soundcloud&lt;&#x2F;a&gt;.
+&lt;&#x2F;audio&gt;
+&lt;p&gt;However a radical constraint of a single hour to lay down a pattern and record a jam, perhaps spending a few extra minutes to produce a video, has been extremely satisfying. &lt;&#x2F;p&gt;
+&lt;!-- vimeo is a racket
+&lt;iframe title=&quot;vimeo-player&quot; src=&quot;https:&#x2F;&#x2F;player.vimeo.com&#x2F;video&#x2F;695157731&quot; width=&quot;100%&quot; style=&quot;aspect-ratio: 16 &#x2F; 9&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+--&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;Fqk1mnxcBMU?si=He3dAwVPTbleB3i_&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;Even not being able to figure out how to do dual mono mix on the M8 is not a show stopper in such scenario (apologies to every one using headphones).&lt;&#x2F;p&gt;
+&lt;p&gt;I hope a proper spring comes soon as I can&#x27;t wait to FPV. This one pack in the garden was &lt;em&gt;painful&lt;&#x2F;em&gt; on the fingers.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;posts&#x2F;dnb&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;fugue-machine-on-the-m8&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;chiptune&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;single-cycle-rave&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;troubled-minister&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

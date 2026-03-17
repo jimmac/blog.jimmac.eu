@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Even a Stopped Clock - music</title>
+    <subtitle>Random musings of a semi-sane designer from lesser Europe.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://blog.jimmac.eu/tags/music/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://blog.jimmac.eu"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-10-28T00:00:00+00:00</updated>
+    <id>https://blog.jimmac.eu/tags/music/atom.xml</id>
+    <entry xml:lang="en">
+        <title>USB MIDI Controllers on the M8</title>
+        <published>2025-10-28T00:00:00+00:00</published>
+        <updated>2025-10-28T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/usb-midi-m8/"/>
+        <id>https://blog.jimmac.eu/posts/usb-midi-m8/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/usb-midi-m8/">&lt;p&gt;The M8 has extensive USB audio and MIDI capabilities, but it cannot be a USB MIDI host. So you can control other devices through USB MIDI, but cannot sent to it over USB.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;control-surface-pots-for-m8&quot;&gt;Control Surface &amp;amp; Pots for M8&lt;&#x2F;h1&gt;
+&lt;p&gt;Controlling things via USB devices has to be done through the old TRS (A) jacks. There&#x27;s two devices that can aid in that. I&#x27;ve used the &lt;a href=&quot;https:&#x2F;&#x2F;retrokits.com&#x2F;shop&#x2F;rk006&#x2F;&quot;&gt;RK06&lt;&#x2F;a&gt; which is very featureful, but in a very clumsy plastic case and USB micro cable that has a splitter for the HOST part and USB Power in. It also sometimes doesn&#x27;t reset properly when having multiple USB devices attached through a hub. The last bit is why I even bother with this setup. &lt;&#x2F;p&gt;
+&lt;p&gt;The Dirtywave M8 has amazing support for the &lt;a href=&quot;https:&#x2F;&#x2F;novationmusic.com&#x2F;products&#x2F;launchpad-pro-mk3&quot;&gt;Novation Launchpad Pro MK3&lt;&#x2F;a&gt;. Majority of peolpe hook it up directly to the M8 using the TRS MIDI cables. The Launchpad lacks any sort of pots or encoders though. Thus the need to fuss with USB dongles. What you need is to use the Launchpad Pro as a USB controller and shun at the reliable MIDI connection. The RK06 allows to combine multiple USB devices attached through an unpowered USB hub. Because I am flabbergasted how I did things here&#x27;s a schema that works. &lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;usb-midi-m8&#x2F;schema.svg&quot; alt=&quot;Retrokits RK06 schema&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;If it doesn&#x27;t work, unplug the RK06 and turn LPPro off and on in the M8. I hate this setup but it is the only compact one that works (after some fiddling that you absolutely hate when doing a gig).&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;usb-midi-m8&#x2F;m8-po16-lpp-mk3.webp&quot; alt=&quot;Launchpar Pro and Intech PO16 via USB handled by RK06&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;intech-knot&quot;&gt;Intech Knot&lt;&#x2F;h1&gt;
+&lt;p&gt;The Hungarians behind the Grid USB controlles (with first class Linux support) have a USB&amp;gt;MIDI device called &lt;a href=&quot;https:&#x2F;&#x2F;intech.studio&#x2F;landing&#x2F;shop&#x2F;knot&quot;&gt;Knot&lt;&#x2F;a&gt;. It has one great feature of a switch between TRS A&#x2F;B for the non-standard devices. &lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;usb-midi-m8&#x2F;knot.webp&quot; alt=&quot;Clean setup with Knot&amp;amp;Grid&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;It is way less fiddly than the RK06, uses nice aluminium housing and is sturdier. Hoewer it doesn&#x27;t seem to work with the Launchpad Pro via USB and it seems to be completely confused by a USB hub, so it&#x27;s not useful for my use case of multiple USB controllers.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;non-compact-but-reliable&quot;&gt;Non-compact but Reliable&lt;&#x2F;h1&gt;
+&lt;p&gt;Novation came out with the &lt;a href=&quot;https:&#x2F;&#x2F;novationmusic.com&#x2F;products&#x2F;launch-control-xl&quot;&gt;Launch Control XL&lt;&#x2F;a&gt;, which sadly replaced pots in the old one with encoders (absolute vs relative movement), but added midi in&#x2F;ou&#x2F;through with a MIDI mixer even. That way you can avoid USB altogether and get a reliable setup with control surfaces and encoders and sliders. &lt;&#x2F;p&gt;
+&lt;p&gt;One day someone comes up with a compact midi capable pots to play along with Launchpad Pro ;) This post has been brought to you by an old man who forgets things.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>New Music</title>
+        <published>2024-09-03T00:00:00+00:00</published>
+        <updated>2024-09-03T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/new-music/"/>
+        <id>https://blog.jimmac.eu/posts/new-music/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/new-music/">&lt;p&gt;I haven&#x27;t done a good job posting to my blog this year and this is the first step to correct it. &lt;&#x2F;p&gt;
+&lt;p&gt;I often self-censor, thinking my thoughts aren&#x27;t worth a longer post, so I stick to quick &lt;a href=&quot;https:&#x2F;&#x2F;mastodon.social&#x2F;@jimmac&quot;&gt;updates on Mastodon&lt;&#x2F;a&gt; . But I’ve realized it’s valuable to have a place to revisit my thoughts, as I’ve done in the past.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;worthy-music&quot;&gt;Worthy Music&lt;&#x2F;h1&gt;
+&lt;p&gt;Like many, I often find myself gravitating towards the music that shaped my younger years. But I also seek out new music. Taking part in &lt;a href=&quot;https:&#x2F;&#x2F;weeklybeats.com&quot;&gt;Weekly Beats&lt;&#x2F;a&gt; helps a lot. That&#x27;s how I discovered a very talented artist with an unpronounceable name -- &lt;a href=&quot;https:&#x2F;&#x2F;gesceap.bandcamp.com&#x2F;&quot;&gt;Gesceap&lt;&#x2F;a&gt;. I&#x27;ve put him into the same genre box as Chris Leary aka Ochre, my old favorite. The tremendous detail of Gesceap&#x27;s work is that he produces on a tiny little piece of software called &lt;a href=&quot;https:&#x2F;&#x2F;nanoloop.com&#x2F;iphone&#x2F;index.html&quot;&gt;nanoloop&lt;&#x2F;a&gt;. His level of mastery within such a constrained world is truly remarkable.&lt;&#x2F;p&gt;
+&lt;iframe class=&quot;full&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;C1FFbwOMZrA?si=qeDyGJfZb_I3pgIY&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;Another artist I admire is &lt;a href=&quot;https:&#x2F;&#x2F;ivartryti.bandcamp.com&#x2F;&quot;&gt;Ivar Tryti&lt;&#x2F;a&gt;. Absolute master of the Elektron boxes, he performs all his tunes with robotic speed and precision, but the music stands on its own. Truly love the way he works with energy.&lt;&#x2F;p&gt;
+&lt;iframe class=&quot;full&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;VyKmR5lUvuY?si=aSzCzMd2IYUcc11L&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;h1 id=&quot;berlin-performance&quot;&gt;Berlin Performance&lt;&#x2F;h1&gt;
+&lt;p&gt;One of my personal highlights at this year’s mini GUADEC was the opportunity to demonstrate the &lt;a href=&quot;https:&#x2F;&#x2F;dirtywave.com&quot;&gt;Dirtywave M8&lt;&#x2F;a&gt;. While the device locked up three times during the show (eek) as I was sporting a beta build to be able to use the Novation Launchpad Pro. Tim only added support for it like a week prior.&lt;&#x2F;p&gt;
+&lt;p&gt;The crowd was amazing, and the performance went much better than I expected. I even kept going, drifting into DJ space and playing for over 2.5 hours.&lt;&#x2F;p&gt;
+&lt;iframe class=&quot;full&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;KfoFjA5NfWk?si=JbPquxpQGNP_XbvH&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Looking Back at 2023</title>
+        <published>2024-01-02T00:00:00+00:00</published>
+        <updated>2024-01-02T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/look-back/"/>
+        <id>https://blog.jimmac.eu/posts/look-back/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/look-back/">&lt;p&gt;Congratulations on finishing yet another ride around the Sol with me. Here&#x27;s some noteworthy events from it from the perspective of a dust spec.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;music&quot;&gt;Music&lt;&#x2F;h1&gt;
+&lt;p&gt;While of course I&#x27;m stuck in my young taste like everybody else, I do try to pick up some new music. This year I&#x27;ve discovered &lt;em&gt;Venjent&lt;&#x2F;em&gt; doing a &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;shorts&#x2F;iYf7Hlme9s4&quot;&gt;silly skit&lt;&#x2F;a&gt; (he&#x27;s fully aware of that being how people discover his music and really leans into it). In surreal turn of events I went to see him in a club, looking like a misplaced pensioner at 1am, when he finally spun his set. But I seriously enjoy how he can transform the &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=A4bpaKnWg5M&quot;&gt;absolute silliness&lt;&#x2F;a&gt; into a total banger I play on repeat.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;jimmac.bandcamp.com&#x2F;album&#x2F;take-frequent-breaks&quot;&gt;&lt;img src=&quot;take_breaks.webp&quot; alt=&quot;Take Frequent Breaks&quot; class=&quot;full&quot;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;ve published some music of my own as well. After &lt;a href=&quot;https:&#x2F;&#x2F;jimmac.bandcamp.com&#x2F;album&#x2F;desync&quot;&gt;Desync&lt;&#x2F;a&gt; assembled from material from weeklybeats 22 came &lt;a href=&quot;https:&#x2F;&#x2F;jimmac.bandcamp.com&#x2F;album&#x2F;solar-coffee&quot;&gt;Solar Coffee&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;jimmac.bandcamp.com&#x2F;album&#x2F;take-frequent-breaks&quot;&gt;Take Frequent Breaks&lt;&#x2F;a&gt; right at the end of the year. I doubt I&#x27;ll release anything this year, because &lt;a href=&quot;https:&#x2F;&#x2F;weeklybeats.com&quot;&gt;Weekly Beats 24&lt;&#x2F;a&gt; will probably suck all my energy for music production. Hopefully I&#x27;ll enjoy it as much as the first half of 22 :)&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;fpv&quot;&gt;FPV&lt;&#x2F;h1&gt;
+&lt;p&gt;From about 3 videos a week in 2018 I&#x27;m down to about 3 a year. One might say I&#x27;ve thrown the towel in, but I still enjoy a decent tree surf from time to time. &lt;&#x2F;p&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;QMTmC736Um4?si=P4vJY5Di5pMoJLEl&quot; title=&quot;Take Frequent Breaks&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;I&#x27;ve completely dropped the ball when it comes to racing though. Didn&#x27;t even qualify in Klatovy this year, because absolutely everyone has been training like crazy. It&#x27;s been lovely to hang around with the weirdos in the three competitions I attended.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Udev Rules for Dirtywave M8</title>
+        <published>2023-05-01T00:00:00+00:00</published>
+        <updated>2023-05-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/udev-m8/"/>
+        <id>https://blog.jimmac.eu/posts/udev-m8/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/udev-m8/">&lt;p&gt;This post is very unlikely for you. It&#x27;s for future me. &lt;&#x2F;p&gt;
+&lt;p&gt;The little magic box that is the &lt;a href=&quot;https:&#x2F;&#x2F;dirtywave.com&#x2F;&quot;&gt;Dirtywave M8 tracker&lt;&#x2F;a&gt; is pretty well supported in Linux. It works great as an audio device (input and output), it does usb midi and you can also use its remote display using &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;laamaa&#x2F;m8c&quot;&gt;laamaa&#x27;s m8c&lt;&#x2F;a&gt; which now also does audio monitoring.&lt;&#x2F;p&gt;
+&lt;p&gt;M8c isn&#x27;t an app, so it&#x27;s a bit of a hassle to build it and use it from within a &lt;a href=&quot;https:&#x2F;&#x2F;containertoolbx.org&#x2F;&quot;&gt;toolbx&lt;&#x2F;a&gt;. Regular Linux distro chore. In addition, to update its firmware, which &lt;a href=&quot;https:&#x2F;&#x2F;trash80.com&#x2F;&quot;&gt;Timothy&lt;&#x2F;a&gt; pushes very frequently and brings &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=DivKR6x5-Uo&quot;&gt;amazing new functionality&lt;&#x2F;a&gt;, requires adding udev rules to have the device writable by a user. Which is what this post is about. I have no clue what I&#x27;m doing, but having this config in &lt;code&gt;&#x2F;etc&#x2F;udev&#x2F;rules.d&#x2F;50-myusb.rules&lt;&#x2F;code&gt; (first is the regular device for m8c and the latter is the second stage of the firmware update using &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Koromix&#x2F;tytools&#x2F;releases&quot;&gt;tytools&lt;&#x2F;a&gt;):&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;SUBSYSTEMS==&amp;quot;usb&amp;quot;, ATTRS{idVendor}==&amp;quot;16c0&amp;quot;, ATTRS{idProduct}==&amp;quot;048a&amp;quot;, GROUP=&amp;quot;users&amp;quot;, MODE=&amp;quot;0666&amp;quot;
+KERNEL==&amp;quot;hidraw*&amp;quot;, ATTRS{idVendor}==&amp;quot;16c0&amp;quot;, GROUP=&amp;quot;users&amp;quot;, MODE=&amp;quot;0666&amp;quot;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Enjoy my last track, &lt;a href=&quot;https:&#x2F;&#x2F;music.jimmac.eu&#x2F;sines&quot;&gt;Sines of our fathers&lt;&#x2F;a&gt; if you don&#x27;t care of any of the above ;)&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>One More Trip Around the Sun</title>
+        <published>2022-01-10T00:00:00+00:00</published>
+        <updated>2022-01-10T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/one-more-trip/"/>
+        <id>https://blog.jimmac.eu/posts/one-more-trip/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/one-more-trip/">&lt;p&gt;It&#x27;s been exactly one year since I&#x27;ve done the foolish thing and changed my blog backend to write more. And to my own surprise it worked. Let me look back at 2021 from a rather narrow perspective of what I usually write about. Perhaps to your disappointment most of it is personal, not professional.&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;ve produced a &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;c&#x2F;JakubSteiner&#x2F;videos&quot;&gt;fraction of my drone videos&lt;&#x2F;a&gt; from the past years in 2021 and haven&#x27;t practiced or raced nearly at all this year. This void has been fully filled by music and synthesizers. After two decades of hiatus I enjoy making music again. Fully aware how crude and awful I am at it, there isn&#x27;t any other medium where I enjoy my own creations as much as music.&lt;&#x2F;p&gt;
+&lt;!-- vimeo is a racket
+&lt;div style=&quot;padding:56.25% 0 0 0;position:relative; margin-bottom: 4rem&quot;&gt;&lt;iframe src=&quot;https:&#x2F;&#x2F;player.vimeo.com&#x2F;video&#x2F;659013844?h=7c5e2e6e6d&amp;amp;badge=0&amp;amp;autopause=0&amp;amp;player_id=0&amp;amp;app_id=58479&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; picture-in-picture&quot; allowfullscreen style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; title=&quot;M8: Pentatonic Bells&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;vimeo.com&#x2F;659013844&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;https:&#x2F;&#x2F;i.vimeocdn.com&#x2F;video&#x2F;1330929646-551100facd07bfea08afa1f58508c42ad9660dcbc18f8abfa5e8f8eae175b352-d?mw=700&amp;mh=394&quot;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;iframe&gt;&lt;&#x2F;div&gt;&lt;script src=&quot;https:&#x2F;&#x2F;player.vimeo.com&#x2F;api&#x2F;player.js&quot;&gt;&lt;&#x2F;script&gt;
+--&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;0tShCs6BMrE?si=-IBul5PXzQS5cQSR&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;I&#x27;ve also come back to pixel art, even though the joy is a lot tainted by the tools I use. Very convenient, very direct, so much fun, very proprietary. &lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;one-more-trip&#x2F;libadwaita.gif&quot; alt=&quot;libadwaita&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;In 2022 I&#x27;d like to &lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Replace my reliance on iPad and Apple Pencil. Would be nice to use a &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-control-center&#x2F;-&#x2F;issues&#x2F;1392&quot;&gt;small screen tablet on my Fedora instead&lt;&#x2F;a&gt;. Just plug it when I need it, run &lt;a href=&quot;https:&#x2F;&#x2F;gimp.org&quot;&gt;GIMP&lt;&#x2F;a&gt; or &lt;a href=&quot;https:&#x2F;&#x2F;www.aseprite.org&#x2F;&quot;&gt;Aseprite&lt;&#x2F;a&gt; in the same time it takes me with Procreate and Pixaki.&lt;&#x2F;li&gt;
+&lt;li&gt;Embrace Fedora for music making. While I&#x27;m not a heavy Ableton Live user, I should totally embrace &lt;a href=&quot;https:&#x2F;&#x2F;flathub.org&#x2F;apps&#x2F;details&#x2F;com.bitwig.BitwigStudio&quot;&gt;Bitwig&lt;&#x2F;a&gt; instead as it&#x27;s conveniently available as a Flatpak. The Pipewire revolution also made &lt;a href=&quot;https:&#x2F;&#x2F;www.renoise.com&#x2F;&quot;&gt;Renoise&lt;&#x2F;a&gt; usable for me again, so maybe I&#x27;ll give it another stab.&lt;&#x2F;li&gt;
+&lt;li&gt;Continue using the gear I have and not buy any more. I have way more gear than I need. I&#x27;m going to sell some I don&#x27;t actually enjoy using anymore, but even splitting time between the &lt;a href=&quot;https:&#x2F;&#x2F;www.elektron.se&#x2F;products&#x2F;digitone&#x2F;&quot;&gt;Digitone&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;www.elektron.se&#x2F;products&#x2F;digitakt&#x2F;&quot;&gt;Digitakt&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;polyend.com&#x2F;tracker&#x2F;&quot;&gt;Polyend Tracker&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;dirtywave.com&#x2F;&quot;&gt;Dirtywave M8&lt;&#x2F;a&gt; is making me feel unfocused. If I only had a synth room where I could just walk in and jam :)&lt;&#x2F;li&gt;
+&lt;li&gt;Continue posting on this ancient platform called WWW. Before I figure out a replacement for comments, feel free to &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;jimmac&quot;&gt;tweet at me&lt;&#x2F;a&gt; or &lt;a href=&quot;https:&#x2F;&#x2F;mastodon.social&#x2F;web&#x2F;@jimmac&quot;&gt;toot&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;A little late with wishing you a better 2022 than 2020 was! I didn&#x27;t even catch 2021 fly by.&lt;&#x2F;p&gt;
+&lt;!-- &lt;a href=&quot;{{ site.url }}{{ page.url }}&quot;&gt;absolute links&lt;&#x2F;a&gt; --&gt;
+</content>
+        
+    </entry>
+</feed>

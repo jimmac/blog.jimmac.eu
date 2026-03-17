@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Even a Stopped Clock - svg</title>
+    <subtitle>Random musings of a semi-sane designer from lesser Europe.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://blog.jimmac.eu/tags/svg/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://blog.jimmac.eu"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2021-08-05T00:00:00+00:00</updated>
+    <id>https://blog.jimmac.eu/tags/svg/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Avoid Head Spinning</title>
+        <published>2021-08-05T00:00:00+00:00</published>
+        <updated>2021-08-05T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/avoid-your-head-spinning/"/>
+        <id>https://blog.jimmac.eu/posts/avoid-your-head-spinning/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/avoid-your-head-spinning/">&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;avoid-your-head-spinning&#x2F;Inkscape.png&quot; alt=&quot;inkscape&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;In a versatile tool like Inkscape, there are always features that aren&#x27;t for you. There are some that really get in your way though, like the recently added &lt;em&gt;canvas rotation&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;If you&#x27;re like me and constantly keep triggering it by accident (Blender zooming being Inkscape&#x27;s panning having to do with it), you&#x27;ll be happy to learn it can be completely disabled. Sip on your favorite beverage and dive into the thick preferences dialog again (&lt;code&gt;Edit&amp;gt;Preferences&lt;&#x2F;code&gt;), this time you&#x27;re searching for &lt;code&gt;Lock canvas rotation by default&lt;&#x2F;code&gt; in the &lt;code&gt;Interface&lt;&#x2F;code&gt; section. One more thing that might throw you off is that you need to restart Inkscape for the change to have any effect.&lt;&#x2F;p&gt;
+&lt;p&gt;If you don&#x27;t wish to go nuclear on the function, do note it can be reset from the status bar bottom right.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Deescalating Tensions</title>
+        <published>2021-08-04T00:00:00+00:00</published>
+        <updated>2021-08-04T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/deescalating-tensions/"/>
+        <id>https://blog.jimmac.eu/posts/deescalating-tensions/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/deescalating-tensions/">&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;deescalating-tensions&#x2F;Inkscape.png&quot; alt=&quot;inkscape&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;One of the great attributes of &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Scalable_Vector_Graphics&quot;&gt;SVG&lt;&#x2F;a&gt; is that its text nature lends itself to be easily &lt;a href=&quot;https:&#x2F;&#x2F;git-scm.com&#x2F;&quot;&gt;version controlled&lt;&#x2F;a&gt;. &lt;a href=&quot;https:&#x2F;&#x2F;inkscape.org&quot;&gt;Inkscape&lt;&#x2F;a&gt; uses SVG as its native format (and extends it using its private namespace).&lt;&#x2F;p&gt;
+&lt;p&gt;Unfortunately it uses the documents themselves to store things like canvas position and zoom state. This instantly erases one of the benefits for easy version control as every change instantly turns into unsolvable conflict.&lt;&#x2F;p&gt;
+&lt;p&gt;Luckily you can at least give up the ability to store the canvas position for the greater good of not having merge conflicts, if you manage to convince your peers to change its defaults. Which is what this blog post is about :)&lt;&#x2F;p&gt;
+&lt;p&gt;To change these defaults, you have to dive into the thick forrest that is Inkscape&#x27;s preferences (&lt;code&gt;Edit &amp;gt; Preferences&lt;&#x2F;code&gt;). You&#x27;ll find then in the &lt;code&gt;Interface &amp;gt; Windows&lt;&#x2F;code&gt; section. The default being the unfortunate &lt;code&gt;Save and restore window geometry for each document&lt;&#x2F;code&gt; needs to be changed either to &lt;code&gt;Don&#x27;t save window geometry&lt;&#x2F;code&gt; or &lt;code&gt;Remember to use last window&#x27;s geometry&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;From now on, rebasing &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;Teams&#x2F;Design&#x2F;icon-development-kit&quot;&gt;icon-development-kit&lt;&#x2F;a&gt; won&#x27;t cause any more grey hair for you!&lt;&#x2F;p&gt;
+&lt;p&gt;Update: Turns out, despite me testing before posting, only &lt;code&gt;Don&#x27;t save window geometry&lt;&#x2F;code&gt; is safe. Even window geometry appears to be saved into the document.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>SVG animation</title>
+        <published>2015-10-13T00:00:00+00:00</published>
+        <updated>2015-10-13T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/svg-animation/"/>
+        <id>https://blog.jimmac.eu/posts/svg-animation/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/svg-animation/">&lt;p&gt;I haven&#x27;t written a post in quite a while, so I decided to document my failure to come up with a viable alternative to the translatable animations we use in &lt;a href=&quot;https:&#x2F;&#x2F;help.gnome.org&#x2F;users&#x2F;gnome-help&#x2F;3.18&#x2F;getting-started.html.en&quot;&gt;Getting Started&lt;&#x2F;a&gt; documentation. So let&#x27;s start with what&#x27;s wrong with it. Despite being far more maintainable than a screencast, it&#x27;s still a major hassle to keep the videos in sync with the developing designs. Every translation requires a re-render of all the frames and it quickly grows into gigabytes per language.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;video&quot;&gt;Video&lt;&#x2F;h1&gt;
+&lt;video controls class=&quot;image full&quot;&gt;
+&lt;source src=&quot;gnome-windows-and-workspaces.webm&quot; type=&quot;video&#x2F;webm&quot;&gt;
+&lt;a href=&quot;gnome-windows-and-workspaces.webm&quot;&gt;Czech version of one of the Getting Started videos&lt;&#x2F;a&gt;
+&lt;&#x2F;video&gt;
+&lt;p&gt;If you&#x27;re interested in seeing how these were produced, see the &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=IhFcErztgeA&quot;&gt;Behind the Scenes of getting Started&lt;&#x2F;a&gt; video.&lt;&#x2F;p&gt;
+&lt;p&gt;The animations themselves aren&#x27;t super complex. Basic transforms (translation, scale and rotation) and opacity is all that&#x27;s needed. And because we are using translatable SVGs in Mallard, it was time to look into SVG animation. There are numerous options available to animate in SVG, which already gave me a hint that none of them will work properly for my use case. I hate being right. &lt;&#x2F;p&gt;
+&lt;h1 id=&quot;smil&quot;&gt;SMIL&lt;&#x2F;h1&gt;
+&lt;p&gt;I&#x27;ll starts with the one I like least. The inline garbage approach. SMIL. Each attribute of an SVG element is animateable. Creating a global sequence using this by hand is close to impossible. Its capabilities do include a few extras like animating an object &lt;em&gt;along a path&lt;&#x2F;em&gt;, but in general I cannot imagine editing this by hand. Incorporating Inkscape into the workflow seemed feasible first. Inkscape will not touch the XML it doesn&#x27;t know about. It will not clean out any of the animation stuff when you save. The xlink namespace definition to animate along path seems to have worked, but I can&#x27;t figure out some weird offsets. Groups usually get some matrix transforms as soon as you reposition them. It all may boil down to Inkscape using its own coordinate system, I don&#x27;t know. I haven&#x27;t succeeded to bolt some animation on the Inkscape generated SVG.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;svg-animation&#x2F;smil.svg&quot; alt=&quot;SMIL&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;css&quot;&gt;CSS&lt;&#x2F;h1&gt;
+&lt;p&gt;A much more appealing was the concept of using CSS animation. We do a lot of transitions and some animation in gtk+, so it would have been great to reuse the same technology here. While CSS transitions are spot on, animation with a sense of a global timeline is not really the use case for the web. Usually animation in the intended context is an individual transform happening after an event triggered. Creating a sequence of various objects animating in a global timeline is pretty awkward. Especially if you want to loop the whole animation infinitely. The only tools for your disposal is either a time offset or relative time keyframes, keeping all objects&#x27; animation the same length.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;svg-animation&#x2F;inline-css.svg&quot; alt=&quot;CSS Based animation of a #cursor1 with a JS playback reset button that doesn&#x27;t work. ;)&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I also ran into Firefox and Webkit interpreting &lt;code&gt;transform-origin&lt;&#x2F;code&gt; differently.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;.run-animation {
+  transform-origin: top left;
+  animation: cursor-move 2s ease 1s forwards, 
+                    fade-in 1s linear 0s, 
+                    cursor-click .25s ease 3s alternate 2;
+  }
+@keyframes fade-in {
+  from { opacity: 0;  }
+  to {  opacity: 1; }
+}
+@keyframes cursor-move {
+  from { opacity: 1;  }
+  to {  opacity: 1; transform: translate(100px,-100px);}
+}
+@keyframes cursor-click {
+  from { transform: translate(100px,-100px) scale(1); }
+  to { transform: translate(100px,-100px) scale(.5); }
+}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The above CSS uses &lt;code&gt;animation-delay&lt;&#x2F;code&gt;. It might be possible to have all keyframes last the same time and use the keyframes relative keyframing for timing (duplicate same keyframe to &amp;quot;hold&amp;quot;). I can&#x27;t imagine retiming or generally modify an existing animation hand constructed using CSS&#x27; keyframes though. A visual tool with a timeline would be necessary. &lt;&#x2F;p&gt;
+&lt;h1 id=&quot;javascript&quot;&gt;Javascript&lt;&#x2F;h1&gt;
+&lt;p&gt;There are many js based frameworks to aid creating and animating SVG documents in realtime, but none of them seem to aid me in creating a global complex animation using assets created in Inkscape. I looked at Google Webdesigner next.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;julian.com&#x2F;research&#x2F;velocity&#x2F;&quot;&gt;Velocity&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;snapsvg.io&#x2F;&quot;&gt;Snap SVG&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;raphaeljs.com&#x2F;&quot;&gt;Raphael&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;google-webdesigner&quot;&gt;Google Webdesigner&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.google.com&#x2F;webdesigner&#x2F;&quot;&gt;Google Webdesigner&lt;&#x2F;a&gt; has all the necessary visual tools like property keyframing and a global timeline. Sadly it produces a rather less self contained set of html, js and css files. I didn&#x27;t figure out a way how that could be brought into Mallard.&lt;&#x2F;p&gt;
+&lt;iframe class=&quot;image full&quot; height=600 src=&quot;http:&#x2F;&#x2F;127.0.0.1:4000&#x2F;assets&#x2F;statichtml&#x2F;2015-10-13-googledesign&#x2F;&quot;&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;In the end, even though the animations don&#x27;t seem to be that complex, maintaining them by hand doesn&#x27;t seem very doable. A visual editor is required. If Google Webdesigner can be taught to produce a standalone SVG or Mallard taught to use iframes, I&#x27;m all ear. Any pointers to a similar tool is also welcome.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Even a Stopped Clock - Elektron</title>
+    <subtitle>Random musings of a semi-sane designer from lesser Europe.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://blog.jimmac.eu/tags/elektron/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://blog.jimmac.eu"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2022-02-15T00:00:00+00:00</updated>
+    <id>https://blog.jimmac.eu/tags/elektron/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Fugue Machine on the M8</title>
+        <published>2022-02-15T00:00:00+00:00</published>
+        <updated>2022-02-15T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/fugue-machine-on-the-m8/"/>
+        <id>https://blog.jimmac.eu/posts/fugue-machine-on-the-m8/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/fugue-machine-on-the-m8/">&lt;p&gt;Since the start of the year I&#x27;ve been doing &lt;a href=&quot;https:&#x2F;&#x2F;weeklybeats.com&#x2F;&quot;&gt;weeklybeats&lt;&#x2F;a&gt;. So far it&#x27;s been possible mainly thanks to the &lt;a href=&quot;https:&#x2F;&#x2F;dirtywave.com&quot;&gt;Dirtywave M8&lt;&#x2F;a&gt;&#x27;s ability to be picked up, instantly turned on and creating. I have to admit to mostly composing in bed (and only occasionally waking up my better half by shaking to the beat).&lt;&#x2F;p&gt;
+&lt;audio controls&gt;
+&lt;source src=&quot;Fugue.mp3&quot; type=&quot;audio&#x2F;mpeg&quot;&gt;
+&lt;source src=&quot;Fugue.aac&quot; type=&quot;audio&#x2F;aac&quot;&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;soundcloud.com&#x2F;jimmac&#x2F;fugue&quot;&gt;Fugue on Soundcloud&lt;&#x2F;a&gt;.
+&lt;&#x2F;audio&gt;
+&lt;p&gt;I&#x27;m not going to be spamming the &lt;a href=&quot;https:&#x2F;&#x2F;planet.gnome.org&quot;&gt;planet&lt;&#x2F;a&gt; with every track, but I do want to share some that I feel worked out. This one is a jam done on the Digitakt (that I actually modified to run on a li-ion battery) and the M8 doing most of the heavy lifting. The track started by setting up &lt;a href=&quot;https:&#x2F;&#x2F;alexandernaut.com&#x2F;fuguemachine&#x2F;&quot;&gt;Fugue Machine&lt;&#x2F;a&gt; like sequence in the M8. A friend of mine suggested to spice the ambient with a bit of a beat, which I used a Digitakt for. I now map the mixer on the M8 onto the 8 encoders of the Digitakt, but for the jam I was still using the internal keypad.&lt;&#x2F;p&gt;
+&lt;!-- vimeo is a racket
+&lt;iframe title=&quot;vimeo-player&quot; src=&quot;https:&#x2F;&#x2F;player.vimeo.com&#x2F;video&#x2F;675661848?h=05105853cb&amp;amp;badge=0&amp;amp;autopause=0&amp;amp;player_id=0&amp;amp;app_id=58479&quot; width=&quot;100%&quot; style=&quot;aspect-ratio: 16 &#x2F; 9&quot; frameborder=&quot;0&quot; allowfullscreen&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;vimeo.com&#x2F;675661848&quot;&gt;Fugue&lt;&#x2F;a&gt;&lt;&#x2F;iframe&gt;
+--&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;7meFQrpH_i4?si=2JiTqsAxfIaffibX&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;I really enjoy stepping back into my tracking shoes after two decades, especially when I ran into the old &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Jeskola_Buzz&quot;&gt;Buzz&lt;&#x2F;a&gt; crew on the Dirtywave Discord server. Shout out to &lt;a href=&quot;https:&#x2F;&#x2F;weeklybeats.com&#x2F;ilzxc&quot;&gt;Ilya&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;weeklybeats.com&#x2F;noggin&quot;&gt;Noggin&#x27;&lt;&#x2F;a&gt; who&#x27;ve made my re-entry to music super enjoyable.&lt;&#x2F;p&gt;
+&lt;!-- &lt;a href=&quot;{{ site.url }}{{ page.url }}&quot;&gt;absolute links&lt;&#x2F;a&gt; --&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Single Cycle Rave</title>
+        <published>2021-08-03T00:00:00+00:00</published>
+        <updated>2021-08-03T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/single-cycle-rave/"/>
+        <id>https://blog.jimmac.eu/posts/single-cycle-rave/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/single-cycle-rave/">&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;single-cycle-rave&#x2F;SingleCycleRave.jpg&quot; alt=&quot;Single Cycle Rave&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;While I&#x27;ve really enjoyed the &lt;a href=&quot;https:&#x2F;&#x2F;www.elektron.se&#x2F;wp-content&#x2F;uploads&#x2F;2021&#x2F;06&#x2F;Digitakt_OS1.30_readme.html&quot;&gt;new firmware&lt;&#x2F;a&gt; with an extra LFO on the Elektron Digitakt, I haven&#x27;t posted anything because the next day recording never had the same power as when I head-banged the tune in bed the previous night (the sole reason why everything is backlit on the Digitakt, don&#x27;t let them live performers tell you otherwise).&lt;&#x2F;p&gt;
+&lt;p&gt;But I have to break through the creator&#x27;s block and start posting again, because I really want to get good at this. &lt;&#x2F;p&gt;
+&lt;p&gt;Some pointless technicalities: Digitakt is a drum machine that allows to loop even super tiny samples so what you get is a very versatile oscillator to furter shape with EQ and effects. I am still terrible and slow, but there is definitely joy in &lt;em&gt;playing&lt;&#x2F;em&gt; versus &lt;a href=&quot;&#x2F;posts&#x2F;what-am-i&#x2F;&quot;&gt;programming a pattern in a tracker&lt;&#x2F;a&gt;. Sure it feels a bit odd to keep the amazing Digitone off, but I feel like I always spoit the broth by adding and adding more. This track benefts from the minimalistic constraints I think.&lt;&#x2F;p&gt;
+&lt;p&gt;The drone footage taken from a few shoots in 2021. It&#x27;s never enough to make a video out of it, so I&#x27;m happy it&#x27;s usable as seasoning to my synth vids (haven&#x27;t been flying half as much as I want despite conditions being amazing).&lt;&#x2F;p&gt;
+&lt;p&gt;Enjoy!&lt;&#x2F;p&gt;
+&lt;p&gt;Listen right here:
+&lt;audio controls&gt;&lt;&#x2F;p&gt;
+&lt;source src=&quot;SingleCycleRave.mp3&quot; type=&quot;audio&#x2F;mpeg&quot;&gt;
+&lt;source src=&quot;SingleCycleRave.aac&quot; type=&quot;audio&#x2F;aac&quot;&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;jimmac.bandcamp.com&#x2F;track&#x2F;single-cycle-rave&quot;&gt;Single Cycle Rave on Bandcamp&lt;&#x2F;a&gt;.
+&lt;&#x2F;audio&gt;
+&lt;p&gt;Watch a video:&lt;&#x2F;p&gt;
+&lt;!-- vimeo is a racket
+&lt;iframe title=&quot;vimeo-player&quot; src=&quot;https:&#x2F;&#x2F;player.vimeo.com&#x2F;video&#x2F;582257195&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;a href=&quot;https:&#x2F;&#x2F;vimeo.com&#x2F;582257195&quot;&gt;Watch on Vimeo&lt;&#x2F;a&gt;&lt;&#x2F;iframe&gt;
+--&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;BY53z4srXos?si=Ai4UX6iZxbVLijyO&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;posts&#x2F;troubled-minister&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;what-am-i&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;100kph&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;jammin-on-elektron&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;elektronic&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>125BPM vs 100KPH</title>
+        <published>2021-05-20T00:00:00+00:00</published>
+        <updated>2021-05-20T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/100kph/"/>
+        <id>https://blog.jimmac.eu/posts/100kph/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/100kph/">&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;100kph&#x2F;DIandDT.png&quot; alt=&quot;Elektron Digitone + Digitakt&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I avoid fiddling with batteries in the house, so I soldered up a &lt;a href=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;100kph&#x2F;battery.jpg&quot;&gt;4S Li-Ion pack in the garden&lt;&#x2F;a&gt; and tested a high speed cruise in the usual spot. Jammed a bit on my elektron boxes and here I present a super long test flight that&#x27;s now almost watchable.&lt;&#x2F;p&gt;
+&lt;iframe title=&quot;vimeo-player&quot; src=&quot;https:&#x2F;&#x2F;player.vimeo.com&#x2F;video&#x2F;552584366&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;posts&#x2F;jammin-on-elektron&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;elektronic&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Jammin&#x27; on Elektron</title>
+        <published>2021-04-16T00:00:00+00:00</published>
+        <updated>2021-04-16T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/jammin-on-elektron/"/>
+        <id>https://blog.jimmac.eu/posts/jammin-on-elektron/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/jammin-on-elektron/">&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;jammin-on-elektron&#x2F;Digitone.png&quot; alt=&quot;Elektron Digitone&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;While I have a planned post about the Polyend Tracker, a marvelous music tracker in a box from Poland, I&#x27;m posting this short one about my newly found love of performing electronic music &amp;quot;live&amp;quot;.&lt;&#x2F;p&gt;
+&lt;p&gt;Obviously I have to preface this by saying that I am absoutely aware just how terrible I am. At the same time, there are very few things I do terribly, that bring me so much joy not only while I do them, but even when I get to listen to them back afterwards. I know I&#x27;m off here, I know I miss a quiet part after the energy rise there. And yet it feels like magic that &lt;em&gt;I&#x27;ve created that&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;!-- vimeo is a racket
+&lt;iframe title=&quot;vimeo-player&quot; src=&quot;https:&#x2F;&#x2F;player.vimeo.com&#x2F;video&#x2F;531996041&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+--&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;mQciyWnevFA?si=6FxVZ-quRM08R_sH&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;I always enjoy processes where I only give a hint of direction and just enjoy the ride while the result builds itself. Trackers felt great because they allow you to consistently adjust and build upon some foundations. The idea that I have to have a plan in my head and have to move fast enough not to screw up sounded terrible when I started. Even without involving other people, it felt stressful. But I stuck with it and now I actually enjoy the process. Yes, I do have to take multiple takes and have to fight my urge to do a 100% clean run, but learning to publish something is something that also doesn&#x27;t come naturally.&lt;&#x2F;p&gt;
+&lt;!--
+&lt;iframe title=&quot;vimeo-player&quot; src=&quot;https:&#x2F;&#x2F;player.vimeo.com&#x2F;video&#x2F;537374986&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+
+
+&lt;iframe title=&quot;vimeo-player&quot; src=&quot;https:&#x2F;&#x2F;player.vimeo.com&#x2F;video&#x2F;533270191&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+--&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;8Z17MhlIOJ8?si=ZNqCCaXNBTk38_rh&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;Don&#x27;t expect Tinlicker or Jon Hokins yet, but I&#x27;m hopeful that this time next year I will still be posting about my music.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;posts&#x2F;elektronic&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

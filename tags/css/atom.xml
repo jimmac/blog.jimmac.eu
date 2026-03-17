@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Even a Stopped Clock - css</title>
+    <subtitle>Random musings of a semi-sane designer from lesser Europe.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://blog.jimmac.eu/tags/css/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://blog.jimmac.eu"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-05-21T00:00:00+00:00</updated>
+    <id>https://blog.jimmac.eu/tags/css/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Ode to HTML</title>
+        <published>2025-05-21T00:00:00+00:00</published>
+        <updated>2025-05-21T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/plain-html/"/>
+        <id>https://blog.jimmac.eu/posts/plain-html/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/plain-html/">&lt;p&gt;I&#x27;m not a professional web designer. I’ve been making websites for decades, but I haven&#x27;t kept up with the latest browser quirks and common approaches. What I do have is a solid grasp of the web’s foundations—thanks to my time teaching IP networking at the university.&lt;&#x2F;p&gt;
+&lt;p&gt;My journey with Linux started when I struggled to get PHP running on Windows. (To my surprise, my student side project autoroku.cz kept running in production for years.)&lt;&#x2F;p&gt;
+&lt;!--
+The reason I ever got interested in Linux was partly due to the difficulties getting a PHP interpreter running on Windows (I was shocked to see my student freelance side job autoroku.cz continue to be run at production for years).
+--&gt;
+&lt;p&gt;At SUSE I&#x27;ve tasted the DRY principles while working on a Rails project, SUSE Studio.  I left PHP behind and embraced static site generators like &lt;a href=&quot;https:&#x2F;&#x2F;middlemanapp.com&#x2F;&quot;&gt;Middleman&lt;&#x2F;a&gt;, then &lt;a href=&quot;https:&#x2F;&#x2F;jekyllrb.com&#x2F;&quot;&gt;Jekyll&lt;&#x2F;a&gt; as it integrated into GitHub. But over time, maintenance fatigue pushed me further—back to basics. No SASS. No site generators. Just clean, modern HTML and CSS.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;plain-html&#x2F;web-design.webp&quot; alt=&quot;Javascript no thank you&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;People are often surprised to see major projects like &lt;a href=&quot;https:&#x2F;&#x2F;www.gnome.org&quot;&gt;gnome.org&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;brand.gnome.org&quot;&gt;brand.gnome.org&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;circle.gnome.org&quot;&gt;circle.gnome.org&lt;&#x2F;a&gt; and my own &lt;a href=&quot;https:&#x2F;&#x2F;jimmac.eu&quot;&gt;jimmac.eu&lt;&#x2F;a&gt; built with plain HTML. Yes you &lt;em&gt;do repeat yourself&lt;&#x2F;em&gt; and inconsistencies creep in. But with integrated version control and web based editors, fixes are a click away. More people can edit plain HTML than any bespoke stack.&lt;&#x2F;p&gt;
+&lt;p&gt;Do I miss some form of &lt;code&gt;include()&lt;&#x2F;code&gt;? Sure. Would I reach for Jekyll+markdown when someone else is responsible for the content? Probably. But for focused, small sites, nothing beats good old HTML.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>SVG animation</title>
+        <published>2015-10-13T00:00:00+00:00</published>
+        <updated>2015-10-13T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/svg-animation/"/>
+        <id>https://blog.jimmac.eu/posts/svg-animation/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/svg-animation/">&lt;p&gt;I haven&#x27;t written a post in quite a while, so I decided to document my failure to come up with a viable alternative to the translatable animations we use in &lt;a href=&quot;https:&#x2F;&#x2F;help.gnome.org&#x2F;users&#x2F;gnome-help&#x2F;3.18&#x2F;getting-started.html.en&quot;&gt;Getting Started&lt;&#x2F;a&gt; documentation. So let&#x27;s start with what&#x27;s wrong with it. Despite being far more maintainable than a screencast, it&#x27;s still a major hassle to keep the videos in sync with the developing designs. Every translation requires a re-render of all the frames and it quickly grows into gigabytes per language.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;video&quot;&gt;Video&lt;&#x2F;h1&gt;
+&lt;video controls class=&quot;image full&quot;&gt;
+&lt;source src=&quot;gnome-windows-and-workspaces.webm&quot; type=&quot;video&#x2F;webm&quot;&gt;
+&lt;a href=&quot;gnome-windows-and-workspaces.webm&quot;&gt;Czech version of one of the Getting Started videos&lt;&#x2F;a&gt;
+&lt;&#x2F;video&gt;
+&lt;p&gt;If you&#x27;re interested in seeing how these were produced, see the &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=IhFcErztgeA&quot;&gt;Behind the Scenes of getting Started&lt;&#x2F;a&gt; video.&lt;&#x2F;p&gt;
+&lt;p&gt;The animations themselves aren&#x27;t super complex. Basic transforms (translation, scale and rotation) and opacity is all that&#x27;s needed. And because we are using translatable SVGs in Mallard, it was time to look into SVG animation. There are numerous options available to animate in SVG, which already gave me a hint that none of them will work properly for my use case. I hate being right. &lt;&#x2F;p&gt;
+&lt;h1 id=&quot;smil&quot;&gt;SMIL&lt;&#x2F;h1&gt;
+&lt;p&gt;I&#x27;ll starts with the one I like least. The inline garbage approach. SMIL. Each attribute of an SVG element is animateable. Creating a global sequence using this by hand is close to impossible. Its capabilities do include a few extras like animating an object &lt;em&gt;along a path&lt;&#x2F;em&gt;, but in general I cannot imagine editing this by hand. Incorporating Inkscape into the workflow seemed feasible first. Inkscape will not touch the XML it doesn&#x27;t know about. It will not clean out any of the animation stuff when you save. The xlink namespace definition to animate along path seems to have worked, but I can&#x27;t figure out some weird offsets. Groups usually get some matrix transforms as soon as you reposition them. It all may boil down to Inkscape using its own coordinate system, I don&#x27;t know. I haven&#x27;t succeeded to bolt some animation on the Inkscape generated SVG.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;svg-animation&#x2F;smil.svg&quot; alt=&quot;SMIL&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;css&quot;&gt;CSS&lt;&#x2F;h1&gt;
+&lt;p&gt;A much more appealing was the concept of using CSS animation. We do a lot of transitions and some animation in gtk+, so it would have been great to reuse the same technology here. While CSS transitions are spot on, animation with a sense of a global timeline is not really the use case for the web. Usually animation in the intended context is an individual transform happening after an event triggered. Creating a sequence of various objects animating in a global timeline is pretty awkward. Especially if you want to loop the whole animation infinitely. The only tools for your disposal is either a time offset or relative time keyframes, keeping all objects&#x27; animation the same length.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;svg-animation&#x2F;inline-css.svg&quot; alt=&quot;CSS Based animation of a #cursor1 with a JS playback reset button that doesn&#x27;t work. ;)&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I also ran into Firefox and Webkit interpreting &lt;code&gt;transform-origin&lt;&#x2F;code&gt; differently.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;.run-animation {
+  transform-origin: top left;
+  animation: cursor-move 2s ease 1s forwards, 
+                    fade-in 1s linear 0s, 
+                    cursor-click .25s ease 3s alternate 2;
+  }
+@keyframes fade-in {
+  from { opacity: 0;  }
+  to {  opacity: 1; }
+}
+@keyframes cursor-move {
+  from { opacity: 1;  }
+  to {  opacity: 1; transform: translate(100px,-100px);}
+}
+@keyframes cursor-click {
+  from { transform: translate(100px,-100px) scale(1); }
+  to { transform: translate(100px,-100px) scale(.5); }
+}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The above CSS uses &lt;code&gt;animation-delay&lt;&#x2F;code&gt;. It might be possible to have all keyframes last the same time and use the keyframes relative keyframing for timing (duplicate same keyframe to &amp;quot;hold&amp;quot;). I can&#x27;t imagine retiming or generally modify an existing animation hand constructed using CSS&#x27; keyframes though. A visual tool with a timeline would be necessary. &lt;&#x2F;p&gt;
+&lt;h1 id=&quot;javascript&quot;&gt;Javascript&lt;&#x2F;h1&gt;
+&lt;p&gt;There are many js based frameworks to aid creating and animating SVG documents in realtime, but none of them seem to aid me in creating a global complex animation using assets created in Inkscape. I looked at Google Webdesigner next.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;julian.com&#x2F;research&#x2F;velocity&#x2F;&quot;&gt;Velocity&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;snapsvg.io&#x2F;&quot;&gt;Snap SVG&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;raphaeljs.com&#x2F;&quot;&gt;Raphael&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;google-webdesigner&quot;&gt;Google Webdesigner&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.google.com&#x2F;webdesigner&#x2F;&quot;&gt;Google Webdesigner&lt;&#x2F;a&gt; has all the necessary visual tools like property keyframing and a global timeline. Sadly it produces a rather less self contained set of html, js and css files. I didn&#x27;t figure out a way how that could be brought into Mallard.&lt;&#x2F;p&gt;
+&lt;iframe class=&quot;image full&quot; height=600 src=&quot;http:&#x2F;&#x2F;127.0.0.1:4000&#x2F;assets&#x2F;statichtml&#x2F;2015-10-13-googledesign&#x2F;&quot;&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;In the end, even though the animations don&#x27;t seem to be that complex, maintaining them by hand doesn&#x27;t seem very doable. A visual editor is required. If Google Webdesigner can be taught to produce a standalone SVG or Mallard taught to use iframes, I&#x27;m all ear. Any pointers to a similar tool is also welcome.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

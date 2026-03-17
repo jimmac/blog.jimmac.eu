@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Even a Stopped Clock - sketch</title>
+    <subtitle>Random musings of a semi-sane designer from lesser Europe.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://blog.jimmac.eu/tags/sketch/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://blog.jimmac.eu"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-09-04T00:00:00+00:00</updated>
+    <id>https://blog.jimmac.eu/tags/sketch/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Klatovy FPV</title>
+        <published>2024-09-04T00:00:00+00:00</published>
+        <updated>2024-09-04T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/klatovy/"/>
+        <id>https://blog.jimmac.eu/posts/klatovy/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/klatovy/">&lt;p&gt;They say you can&#x27;t forget how to ride a bicycle. Well I don&#x27;t think it applies to FPV racing. Haven&#x27;t touched the sticks in a year. But that does not make me not hang out with old buddies at the longest running event in Czechia.&lt;&#x2F;p&gt;
+&lt;video controls autoplay loop class=&quot;image full&quot;&gt;
+&lt;source src=&quot;klatovy-timelapse.webm&quot; type=&quot;video&#x2F;webm&quot;&gt;
+&lt;source src=&quot;klatovy-timelapse.mp4&quot; type=&quot;video&#x2F;mp4&quot;&gt;
+&lt;img src=&quot;klatovy-sketch.png&quot; title=&quot;Sketch of the Klatovy Poster&quot; &#x2F;&gt;
+&lt;&#x2F;video&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;klatovy&#x2F;klatovy-crt.png&quot; alt=&quot;Klatovy poster as Pixelart (CRT emulation)&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Sketch Friday</title>
+        <published>2024-06-14T00:00:00+00:00</published>
+        <updated>2024-06-14T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/sketch-friday/"/>
+        <id>https://blog.jimmac.eu/posts/sketch-friday/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/sketch-friday/">&lt;p&gt;I&#x27;ve been posting a few sketches on &lt;a href=&quot;https:&#x2F;&#x2F;mastodon.social&#x2F;@jimmac&quot;&gt;my mastodon&lt;&#x2F;a&gt; every Friday. They are mostly sketches of &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;Teams&#x2F;Design&#x2F;app-icon-requests&#x2F;-&#x2F;issues&#x2F;43&quot;&gt;application icon design process&lt;&#x2F;a&gt;, but not always. Follow, like, subscribe!&lt;&#x2F;p&gt;
+&lt;div class=&quot;sketches&quot;&gt;
+&lt;img src=&quot;04e5ae648d8b3640.png&quot; alt=&quot;04e5ae648d8b3640&quot;&gt;
+&lt;img src=&quot;Exhibit2.png&quot; alt=&quot;Exhibit2&quot;&gt;
+&lt;img src=&quot;05521b4858a9cdef.png&quot; alt=&quot;05521b4858a9cdef&quot;&gt;
+&lt;img src=&quot;Exhibit.png&quot; alt=&quot;Exhibit&quot;&gt;
+&lt;img src=&quot;0934a02f1c915ef7.png&quot; alt=&quot;0934a02f1c915ef7&quot; class=&quot;big&quot;&gt;
+&lt;img src=&quot;f340603a0cd5eb83.png&quot; alt=&quot;f340603a0cd5eb83&quot;&gt;
+&lt;img src=&quot;0f02657ab2fb4012.png&quot; alt=&quot;0f02657ab2fb4012&quot;&gt;
+&lt;img src=&quot;Gameeky%2010.png&quot; alt=&quot;Gameeky 10&quot;&gt;
+&lt;img src=&quot;1e6abb0c31ee6066.png&quot; alt=&quot;1e6abb0c31ee6066&quot;&gt;
+&lt;img src=&quot;Gameeky%2011.png&quot; alt=&quot;Gameeky 11&quot; class=&quot;big&quot;&gt;
+&lt;img src=&quot;286a44fb410d5ad3.png&quot; alt=&quot;286a44fb410d5ad3&quot;&gt;
+&lt;img src=&quot;Gameeky%208.png&quot; alt=&quot;Gameeky 8&quot;&gt;
+&lt;img src=&quot;2f6c03bd10824d1d.png&quot; alt=&quot;2f6c03bd10824d1d&quot;&gt;
+&lt;img src=&quot;Gimp%202.png&quot; alt=&quot;Gimp 2&quot;&gt;
+&lt;img src=&quot;48d49e6ce2bcebb5.png&quot; alt=&quot;48d49e6ce2bcebb5&quot;&gt;
+&lt;img src=&quot;Gimp.png&quot; alt=&quot;Gimp&quot;&gt;
+&lt;img src=&quot;5af3244c6aef1539.png&quot; alt=&quot;5af3244c6aef1539&quot;&gt;
+&lt;img src=&quot;Handbook_And_Developers.png&quot; alt=&quot;Handbook_And_Developers&quot;&gt;
+&lt;img src=&quot;Afternoon%203.png&quot; alt=&quot;Afternoon 3&quot;&gt;
+&lt;img src=&quot;Inkscape.png&quot; alt=&quot;Inkscape&quot;&gt;
+&lt;img src=&quot;Afternoon.png&quot; alt=&quot;Afternoon&quot;&gt;
+&lt;img src=&quot;Key_Rack%201.png&quot; alt=&quot;Key_Rack 1&quot;&gt;
+&lt;img src=&quot;AI.png&quot; alt=&quot;AI&quot;&gt;
+&lt;img src=&quot;Laptop%201.png&quot; alt=&quot;Laptop 1&quot;&gt;
+&lt;img src=&quot;Alpaca%201%202.png&quot; alt=&quot;Alpaca 1 2&quot;&gt;
+&lt;img src=&quot;Laptop3.png&quot; alt=&quot;Laptop3&quot;&gt;
+&lt;img src=&quot;Alpaca%202.png&quot; alt=&quot;Alpaca 2&quot;&gt;
+&lt;img src=&quot;Laptop.png&quot; alt=&quot;Laptop&quot;&gt;
+&lt;img src=&quot;Alpaca%204.png&quot; alt=&quot;Alpaca 4&quot; class=&quot;big&quot;&gt;
+&lt;img src=&quot;Luminance%201.png&quot; alt=&quot;Luminance 1&quot;&gt;
+&lt;img src=&quot;Alpaca.png&quot; alt=&quot;Alpaca&quot;&gt;
+&lt;img src=&quot;Memorize%201.png&quot; alt=&quot;Memorize 1&quot;&gt;
+&lt;img src=&quot;Aurea%203.png&quot; alt=&quot;Aurea 3&quot;&gt;
+&lt;img src=&quot;Memorize%202.png&quot; alt=&quot;Memorize 2&quot;&gt;
+&lt;img src=&quot;Aurea.png&quot; alt=&quot;Aurea&quot;&gt;
+&lt;img src=&quot;Memorize.png&quot; alt=&quot;Memorize&quot;&gt;
+&lt;img src=&quot;Captive_Portal4.png&quot; alt=&quot;Captive_Portal4&quot;&gt;
+&lt;img src=&quot;Mypaint.png&quot; alt=&quot;Mypaint&quot;&gt;
+&lt;img src=&quot;Captive_Portal5.png&quot; alt=&quot;Captive_Portal5&quot;&gt;
+&lt;img src=&quot;Nvidia_Toolbx.png&quot; alt=&quot;Nvidia_Toolbx&quot; class=&quot;big&quot;&gt;
+&lt;img src=&quot;cbad883c19680ae2.png&quot; alt=&quot;cbad883c19680ae2&quot;&gt;
+&lt;img src=&quot;Office_Runner%201.png&quot; alt=&quot;Office_Runner 1&quot;&gt;
+&lt;img src=&quot;cd2b1f4788bd40c9.png&quot; alt=&quot;cd2b1f4788bd40c9&quot;&gt;
+&lt;img src=&quot;Office_Runner.png&quot; alt=&quot;Office_Runner&quot;&gt;
+&lt;img src=&quot;Collector.png&quot; alt=&quot;Collector&quot;&gt;
+&lt;img src=&quot;Orca%202.png&quot; alt=&quot;Orca 2&quot; class=&quot;big&quot;&gt;
+&lt;img src=&quot;Convolution%202.png&quot; alt=&quot;Convolution 2&quot;&gt;
+&lt;img src=&quot;Orca.png&quot; alt=&quot;Orca&quot;&gt;
+&lt;img src=&quot;Convolution%203.png&quot; alt=&quot;Convolution 3&quot;&gt;
+&lt;img src=&quot;Papers%204.png&quot; alt=&quot;Papers 4&quot;&gt;
+&lt;img src=&quot;Convolution.png&quot; alt=&quot;Convolution&quot;&gt;
+&lt;img src=&quot;Papers%207.png&quot; alt=&quot;Papers 7&quot;&gt;
+&lt;img src=&quot;d6d20716bd43b122.png&quot; alt=&quot;d6d20716bd43b122&quot;&gt;
+&lt;img src=&quot;Plots%202.png&quot; alt=&quot;Plots 2&quot;&gt;
+&lt;img src=&quot;d711da1c0aeec75f.png&quot; alt=&quot;d711da1c0aeec75f&quot;&gt;
+&lt;img src=&quot;Power_Modes.png&quot; alt=&quot;Power_Modes&quot;&gt;
+&lt;img src=&quot;dabc00e72dc94dca.png&quot; alt=&quot;dabc00e72dc94dca&quot;&gt;
+&lt;img src=&quot;Seabird%202.png&quot; alt=&quot;Seabird 2&quot;&gt;
+&lt;img src=&quot;ddff8a8e07260602.png&quot; alt=&quot;ddff8a8e07260602&quot; class=&quot;big&quot;&gt;
+&lt;img src=&quot;Seabird.png&quot; alt=&quot;Seabird&quot;&gt;
+&lt;img src=&quot;Dew_Duct.png&quot; alt=&quot;Dew_Duct&quot;&gt;
+&lt;img src=&quot;Valuta%201.png&quot; alt=&quot;Valuta 1&quot;&gt;
+&lt;img src=&quot;Valuta.png&quot; alt=&quot;Valuta&quot;&gt;
+&lt;img src=&quot;e0d5efac768fe1aa.png&quot; alt=&quot;e0d5efac768fe1aa&quot;&gt;
+&lt;img src=&quot;Videos%202.png&quot; alt=&quot;Videos 2&quot;&gt;
+&lt;img src=&quot;Exhibit%201.png&quot; alt=&quot;Exhibit 1&quot;&gt;
+&lt;img src=&quot;Videos%203.png&quot; alt=&quot;Videos 3&quot;&gt;
+&lt;img src=&quot;Exhibit%202.png&quot; alt=&quot;Exhibit 2&quot;&gt;
+&lt;&#x2F;div&gt;
+&lt;style type=&quot;text&#x2F;css&quot;&gt;
+.sketches {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	gap: 1rem;
+	grid-auto-flow: row dense;
+}
+.sketches img {
+	display: block;
+	width: 100%; height: auto;
+	transition-duration: 0;
+	align-self: center;
+}
+
+@media only screen and (min-width: 640px) {
+	.sketches { grid-template-columns: repeat(4,1fr); }
+	.sketches img.big {
+		grid-column: span 2;
+		grid-row: span 2;
+	}
+}
+.sketches img:hover {
+	transition: transform 100ms ease-out;
+	transform: scale(1.5);
+	image-rendering: crisp-edges;
+	image-rendering: pixelated;
+}
+.sketches img:active {
+	width: 135px;
+	transform: scale(3);
+	transition: none;
+	image-rendering: crisp-edges;
+	image-rendering: pixelated;
+}
+&lt;&#x2F;style&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Pixel Sites</title>
+        <published>2021-11-22T00:00:00+00:00</published>
+        <updated>2021-11-22T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/pixelsites/"/>
+        <id>https://blog.jimmac.eu/posts/pixelsites/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/pixelsites/">&lt;!-- &lt;a href=&quot;{{ site.url }}{{ page.url }}&quot;&gt;absolute links&lt;&#x2F;a&gt; --&gt;
+&lt;p&gt;I&#x27;ve created a &lt;a href=&quot;https:&#x2F;&#x2F;pipewire.org&#x2F;&quot;&gt;couple&lt;&#x2F;a&gt; &lt;a href=&quot;https:&#x2F;&#x2F;fleet-commander.org&#x2F;&quot;&gt;of&lt;&#x2F;a&gt; &lt;a href=&quot;https:&#x2F;&#x2F;containertoolbx.org&#x2F;&quot;&gt;minisites&lt;&#x2F;a&gt; for key OS components, built using no frameworks, but plain CSS. Just having CSS grid and variables made it viable for me to avoid using frameworks recently. Having &lt;a href=&quot;https:&#x2F;&#x2F;www.w3.org&#x2F;TR&#x2F;html-imports&#x2F;&quot;&gt;includes&#x2F;imports&lt;&#x2F;a&gt; one wouldn&#x27;t even need &lt;a href=&quot;https:&#x2F;&#x2F;jekyllrb.com&#x2F;&quot;&gt;Jekyll&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;div class=&quot;inlineimgs&quot; markdown=&quot;1&quot;&gt;
+[![](Flatpak_Website.png)](Flatpak_Website.png)
+[![](Fleet_Commander.png)](Fleet_Commander.png)
+[![](Toolbox_Packages_Within.png)](Toolbox_Packages_Within.png)
+[![](ZBus_Website.png)](ZBus_Website.png)
+&lt;&#x2F;div&gt;
+&lt;p&gt;The founding stone on all of these is the pixel art, which is now becoming my favorite art form.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;pixelsites&#x2F;flatpak.gif&quot; alt=&quot;Flatpak&quot; &#x2F;&gt;
+&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;pixelsites&#x2F;fleetcommander.gif&quot; alt=&quot;Fleet Comander&quot; &#x2F;&gt;
+&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;pixelsites&#x2F;toolbox.gif&quot; alt=&quot;Toolbox&quot; &#x2F;&gt;
+&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;pixelsites&#x2F;zbus.gif&quot; alt=&quot;Zbus&quot; &#x2F;&gt;
+{.pixels}&lt;&#x2F;p&gt;
+&lt;style type=&quot;text&#x2F;css&quot;&gt;
+.pixels {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	&#x2F;* grid-template-columns: repeat(auto-fit, minmax(150px,1fr)); *&#x2F;
+	gap: 16px;
+}
+.pixels img {
+	display: block;
+	width: 100%; height: auto;
+	image-rendering: crisp-edges; image-rendering: pixelated;
+	transition: transform 600ms ease-out;
+	align-self: center;
+}
+.pixels img:active {
+	transition: none;
+	width: 135px;
+	transform: scale(1);
+}
+&lt;&#x2F;style&gt;
+&lt;p&gt;If you maintain an upstream OS component and are looking to replace a wiki or a markdown readme with a simple site, I&#x27;ve &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jimmac&#x2F;os-component-website&quot;&gt;created a template&lt;&#x2F;a&gt; to get you started quickly.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Onboarding Sketches</title>
+        <published>2021-08-16T00:00:00+00:00</published>
+        <updated>2021-08-16T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/onboarding-sketches/"/>
+        <id>https://blog.jimmac.eu/posts/onboarding-sketches/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/onboarding-sketches/">&lt;!-- &lt;a href=&quot;{{ site.url }}{{ page.url }}&quot;&gt;absolute links&lt;&#x2F;a&gt; --&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;onboarding-sketches&#x2F;connections-hope.png&quot; alt=&quot;Connections: Hope&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;div class=&quot;inlineimgs&quot;&gt;
+&lt;a href=&quot;connections-1.png&quot;&gt;&lt;img src=&quot;connections-1.png&quot; alt=&quot;&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;connections-2.png&quot;&gt;&lt;img src=&quot;connections-2.png&quot; alt=&quot;&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;connections-3.png&quot;&gt;&lt;img src=&quot;connections-3.png&quot; alt=&quot;&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;connections-4.png&quot;&gt;&lt;img src=&quot;connections-4.png&quot; alt=&quot;&quot;&gt;&lt;&#x2F;a&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;GNOME 41 is now UI frozen, so without spoiling the release much, I&#x27;d like to share some of the explorations that led to some of the onboarding in both app space (mostly &lt;a href=&quot;https:&#x2F;&#x2F;flathub.org&#x2F;apps&#x2F;details&#x2F;org.gnome.Connections&quot;&gt;Connections&lt;&#x2F;a&gt;) and the new &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-tour&quot;&gt;Tour&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;onboarding-sketches&#x2F;tour-6.png&quot; alt=&quot;Tour: Welcome&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;div class=&quot;inlineimgs&quot;&gt;
+&lt;a href=&quot;tour-1.png&quot;&gt;&lt;img src=&quot;tour-1.png&quot; alt=&quot;&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;tour-7.png&quot;&gt;&lt;img src=&quot;tour-7.png&quot; alt=&quot;&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;tour-3.png&quot;&gt;&lt;img src=&quot;tour-3.png&quot; alt=&quot;&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;tour-4.png&quot;&gt;&lt;img src=&quot;tour-4.png&quot; alt=&quot;&quot;&gt;&lt;&#x2F;a&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;posts&#x2F;tour-sketches&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Tour Sketches</title>
+        <published>2021-02-25T00:00:00+00:00</published>
+        <updated>2021-02-25T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/tour-sketches/"/>
+        <id>https://blog.jimmac.eu/posts/tour-sketches/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/tour-sketches/">&lt;!-- &lt;a href=&quot;{{ site.url }}{{ page.url }}&quot;&gt;absolute links&lt;&#x2F;a&gt; --&gt;
+&lt;p&gt;![Welcome](Tour_Welcome 1.png)&lt;&#x2F;p&gt;
+&lt;p&gt;One of the things that came up during &lt;a href=&quot;https:&#x2F;&#x2F;blogs.gnome.org&#x2F;shell-dev&#x2F;2021&#x2F;02&#x2F;15&#x2F;shell-ux-changes-the-research&#x2F;&quot;&gt;user testing&lt;&#x2F;a&gt; GNOME 40 was that people went through the &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-tour&quot;&gt;Tour&lt;&#x2F;a&gt; and all the abstract(ish) UI illustrations didn&#x27;t really help people orient themselves on screen. We did get positive feedback on the feel of the tour though. For the new Tour &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;Teams&#x2F;Design&#x2F;os-mockups&#x2F;-&#x2F;issues&#x2F;79&quot;&gt;we iterated&lt;&#x2F;a&gt; on some illustrations that help solidify &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;Teams&#x2F;Design&#x2F;app-illustrations&quot;&gt;the style&lt;&#x2F;a&gt; and give a nice welcoming vibe to the experience.&lt;&#x2F;p&gt;
+&lt;div class=&quot;inlineimgs&quot;&gt;
+&lt;a href=&quot;Tour_Arrange_Yourself.png&quot;&gt;&lt;img src=&quot;Tour_Arrange_Yourself.png&quot; alt=&quot;Arrange&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;Tour_Overview.png&quot;&gt;&lt;img src=&quot;Tour_Overview.png&quot; alt=&quot;Overview&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;Tour_Workspaces.png&quot;&gt;&lt;img src=&quot;Tour_Workspaces.png&quot; alt=&quot;Workspaces&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;Tour_Up_And_Down_For_Overview.png&quot;&gt;&lt;img src=&quot;Tour_Up_And_Down_For_Overview.png&quot; alt=&quot;Touch&quot;&gt;&lt;&#x2F;a&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;Because you can soon experience GNOME 40 yourself, here&#x27;s a few sketches of the exploratory phase. Be sure to check out some background on how the &lt;a href=&quot;&#x2F;posts&#x2F;animated-tour&#x2F;&quot;&gt;animations were done&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;tour-sketches&#x2F;Tour%EF%80%A2_Press_Super.png&quot; alt=&quot;Press Super&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;div class=&quot;inlineimgs&quot;&gt;
+&lt;a href=&quot;Tour_Welcome.png&quot;&gt;&lt;img src=&quot;Tour_Welcome.png&quot; alt=&quot;Welcome&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;Tour_Overview.png&quot;&gt;&lt;img src=&quot;Tour_Overview.png&quot; alt=&quot;Overview 2&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;TourWorkspaces.png&quot;&gt;&lt;img src=&quot;Tour_Workspaces.png&quot; alt=&quot;Workspaces 2&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;Tour_Workspaces.png&quot;&gt;&lt;img src=&quot;Tour_Workspaces.png&quot; alt=&quot;Workspaces&quot;&gt;&lt;&#x2F;a&gt;
+&lt;&#x2F;div&gt;
+</content>
+        
+    </entry>
+</feed>

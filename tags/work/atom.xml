@@ -1,0 +1,1089 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Even a Stopped Clock - work</title>
+    <subtitle>Random musings of a semi-sane designer from lesser Europe.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://blog.jimmac.eu/tags/work/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://blog.jimmac.eu"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-12-08T00:00:00+00:00</updated>
+    <id>https://blog.jimmac.eu/tags/work/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Dithering</title>
+        <published>2025-12-08T00:00:00+00:00</published>
+        <updated>2025-12-08T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/dithering/"/>
+        <id>https://blog.jimmac.eu/posts/dithering/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/dithering/">&lt;p&gt;One of the new additions to the &lt;strong&gt;GNOME 49&lt;&#x2F;strong&gt; wallpaper set is &lt;em&gt;Dithered Sun&lt;&#x2F;em&gt; by &lt;a href=&quot;https:&#x2F;&#x2F;tobiasbernard.com&#x2F;&quot;&gt;Tobias&lt;&#x2F;a&gt;. It uses dithering not as a technical workaround for color banding, but as an &lt;em&gt;artistic&lt;&#x2F;em&gt; device.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;dithering&#x2F;halftone.webp&quot; alt=&quot;Halftone app&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Tobias initially planned to use &lt;a href=&quot;https:&#x2F;&#x2F;flathub.org&#x2F;en&#x2F;apps&#x2F;io.github.tfuxu.Halftone&quot;&gt;Halftone&lt;&#x2F;a&gt; — a great example of a GNOME app with a focused scope and a pleasantly streamlined experience. However, I suggested that a custom dithering method and finer control over color depth would help execute the idea better. A long time ago, Hans Peter Jensen responded to my request for arbitrary color-depth dithering in GIMP by writing a custom GEGL op.&lt;&#x2F;p&gt;
+&lt;p&gt;Now, since the younger generation may be understandably intimidated by GIMP’s somewhat… &lt;em&gt;vintage&lt;&#x2F;em&gt; interface, I promised to write a short guide on how to process your images to get a nice ordered dither pattern without going overboard on reducing colors. And with &lt;em&gt;only a bit of time&lt;&#x2F;em&gt; passing since the amazing GUADEC in Brescia, I’m finally delivering on that promise. Better late than later.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;dithering&#x2F;gegl-dither.webp&quot; alt=&quot;GEGL dithering op&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I’ve historically used the GEGL dithering operation to work around potential color banding on lower-quality displays. In Tobias’ wallpaper, though, the dithering is a core element of the artwork itself. While it can cause issues when scaling (filtering can introduce moiré patterns), there’s a real beauty to the structured patterns of Bayer dithering.&lt;&#x2F;p&gt;
+&lt;p&gt;You will find the GEGL Op in &lt;code&gt;Color &amp;gt; Dither&lt;&#x2F;code&gt; menu. The filter&#x2F;op parameters don’t allow you to set the number of colors directly—only the per-channel color depth (in bits). For full-color dithers I tend to use &lt;strong&gt;12-bit&lt;&#x2F;strong&gt;. I personally like the &lt;code&gt;Bayer&lt;&#x2F;code&gt; ordered dither, though there are plenty of algorithms to choose from, and depending on your artwork, another might suit you better. I usually save my preferred settings as a preset for easier recall next time (find &lt;code&gt;Presets&lt;&#x2F;code&gt; at the top of the dialog).&lt;&#x2F;p&gt;
+&lt;p&gt;Happy dithering!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>12 months instead of 12 minutes</title>
+        <published>2025-11-21T00:00:00+00:00</published>
+        <updated>2025-11-21T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/3d-website-md/"/>
+        <id>https://blog.jimmac.eu/posts/3d-website-md/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/3d-website-md/">&lt;p&gt;Hey Kids! Other than raving about &lt;a href=&quot;https:&#x2F;&#x2F;www.gnome.org&quot;&gt;GNOME.org&lt;&#x2F;a&gt; being a &lt;a href=&quot;&#x2F;posts&#x2F;plain-html&#x2F;&quot;&gt;static HTML&lt;&#x2F;a&gt;, there&#x27;s one more aspect I&#x27;d like to get back to in this writing exercise called a blog post. &lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;3d-website-md&#x2F;3D-sharecard.webp&quot; alt=&quot;Share card gets updated every release too&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;ve recently come across an apalling genAI website for a project I hold deerly so I thought I&#x27;d give a glimpse on how we used to do things in the olden days. It is probably not going to be done this way anymore in the enshittified timeline we ended up in. The two options available these days are — a quickly generated slop website or no website at all, because privately owned social media is where it&#x27;s at.&lt;&#x2F;p&gt;
+&lt;p&gt;The wanna-be-catchy title of this post comes from the fact the website underwent &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;Teams&#x2F;Websites&#x2F;www.gnome.org&#x2F;-&#x2F;commits&#x2F;main?ref_type=HEADS&quot;&gt;numerous iterations&lt;&#x2F;a&gt; (iterations is the core principle of good design) spanning over a year before we introduced the redesign.&lt;&#x2F;p&gt;
+&lt;p&gt;So how did we end up with a 3D model of a laptop for the hero image on the GNOME website, rather than something generated in a couple of seconds and a &lt;a href=&quot;https:&#x2F;&#x2F;www.ft.com&#x2F;content&#x2F;1d468bd2-6712-4cdd-ac71-21e0ace2d048?utm_source=chatgpt.com&quot;&gt;small town worth of drinking water&lt;&#x2F;a&gt; or a simple SVG illustration?&lt;&#x2F;p&gt;
+&lt;p&gt;The hero image is static now, but used to be a scroll based animation at the early days. It could have become a simple vector style illustration, but I really enjoy the light interaction of the screen and the laptop, especially between the light and dark variants. Toggling dark mode has been my favorite fidget spinner.&lt;&#x2F;p&gt;
+&lt;p&gt;Creating light&#x2F;dark variants is a bit tedious to do manually every release, but automating still a bit too hard to pull off (the taking screenshots of a nightly OS bit). There&#x27;s also the fun of picking a theme for the screenshot rather than doing the same thing over and over. Doing the screenshooting manually meant automating the rest, as a 6 month cycle is enough time to forget how things are done. The process is held together with duct tape, I mean a python script, that renders the website image assets from the few screenshots captured using &lt;a href=&quot;https:&#x2F;&#x2F;os.gnome.org&quot;&gt;GNOME OS&lt;&#x2F;a&gt; running inside &lt;a href=&quot;https:&#x2F;&#x2F;flathub.org&#x2F;en&#x2F;apps&#x2F;org.gnome.Boxes&quot;&gt;Boxes&lt;&#x2F;a&gt;. Two great invisible things made by amazing individuals that could go away in an instant and that thought gives me a dose of anxiety.&lt;&#x2F;p&gt;
+&lt;picture&gt;
+    &lt;source srcset=&quot;dark.webp&quot; media=&quot;(prefers-color-scheme: dark)&quot; &#x2F;&gt;
+    &lt;img src=&quot;light.webp&quot; &#x2F;&gt;
+&lt;&#x2F;picture&gt;
+&lt;p&gt;This does take a minute to render on a laptop (CPU only Cycles), but is a matter of a single invocation and a git commit. So far it has survived a couple of Blender releases, so fingers crossed for the future.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;blogs.gnome.org&#x2F;sophieh&#x2F;author&#x2F;sophieh&#x2F;&quot;&gt;Sophie&lt;&#x2F;a&gt; has recently been looking &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;Teams&#x2F;Websites&#x2F;www.gnome.org&#x2F;-&#x2F;merge_requests&#x2F;71&quot;&gt;into translations&lt;&#x2F;a&gt;, so we might reconsider that 3D approach if translated screenshots become viable (and have them contained in an SVG similar to how &lt;a href=&quot;https:&#x2F;&#x2F;os.gnome.org&quot;&gt;os.gnome.org&lt;&#x2F;a&gt; is done). So far the 3D hero has always been in sync with the release, unlike in our Wordpress days. Fingers crossed.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>HDR Wallpapers</title>
+        <published>2025-09-17T00:00:00+00:00</published>
+        <updated>2025-09-17T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/wallpapers-2025/"/>
+        <id>https://blog.jimmac.eu/posts/wallpapers-2025/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/wallpapers-2025/">&lt;p&gt;GNOME 49 brought another round of &lt;a href=&quot;https:&#x2F;&#x2F;release.gnome.org&#x2F;49&#x2F;#wallpapers&quot;&gt;changes to the default wallpaper set&lt;&#x2F;a&gt; — some new additions, and a few removals too. Not just to keep the old &lt;em&gt;GNOME Design loves to delete things trope&lt;&#x2F;em&gt; alive, but to make room for fresh work and reduce stylistic overlap.&lt;&#x2F;p&gt;
+&lt;p&gt;Our goal has always been to provide a varied collection of abstract wallpapers. (Light&#x2F;dark photographic sets are still on the wish list — we’ll get there, promise! 😉). When we introduce new designs, some of the older ones naturally have to step aside.&lt;&#x2F;p&gt;
+&lt;p&gt;We’ve actually been shipping wallpapers in high bit depth formats for quite a while, even back when the GNOME display pipeline (based on gdk-pixbuf) was limited to 8-bit output. That changed in GNOME 49. Thanks to Sophie’s Glycin, we now have a color-managed pipeline that makes full use of modern hardware — even if you’re still on an SDR display.&lt;&#x2F;p&gt;
+&lt;p&gt;So what does that mean for wallpapers? Well, with HDR displays (using OLED or Mini-LED panels), you can push brightness and contrast to extremes — bright enough to feel like a flashlight in your face. That’s great for games and movies, but it’s not something you want staring back at you from the desktop all day. With wallpapers, subtlety matters.&lt;&#x2F;p&gt;
+&lt;p&gt;The new set takes advantage of wider color gamuts (Display P3 instead of sRGB) and higher precision (16-bit per channel instead of 8-bit). That translates to smoother gradients, richer tones, and more depth — without the blinding highlights. Think of it as HDR done tastefully: more range to play with, but in service of calm, everyday visuals rather than spectacle.&lt;&#x2F;p&gt;
+&lt;video controls nosound loop class=&quot;image full&quot; poster=&quot;timelapse.webp&quot;&gt;
+&lt;source src=&quot;timelapse.webm&quot; type=&quot;video&#x2F;webm&quot;&gt;
+&lt;source src=&quot;timelapse.mp4&quot; type=&quot;video&#x2F;mp4&quot;&gt;
+&lt;&#x2F;video&gt;
+&lt;p&gt;Personally, I still think HDR makes the most sense today in games, videos, and fullscreen photography, where those deep contrasts and bright highlights can really shine. On the desktop, apps and creative tools still need to catch up. Blender, for instance, already shows it&#x27;s colormanaged HDR preview pipeline on macOS, and HDR display support is expected to land for Wayland in Blender 5.0.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Ode to HTML</title>
+        <published>2025-05-21T00:00:00+00:00</published>
+        <updated>2025-05-21T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/plain-html/"/>
+        <id>https://blog.jimmac.eu/posts/plain-html/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/plain-html/">&lt;p&gt;I&#x27;m not a professional web designer. I’ve been making websites for decades, but I haven&#x27;t kept up with the latest browser quirks and common approaches. What I do have is a solid grasp of the web’s foundations—thanks to my time teaching IP networking at the university.&lt;&#x2F;p&gt;
+&lt;p&gt;My journey with Linux started when I struggled to get PHP running on Windows. (To my surprise, my student side project autoroku.cz kept running in production for years.)&lt;&#x2F;p&gt;
+&lt;!--
+The reason I ever got interested in Linux was partly due to the difficulties getting a PHP interpreter running on Windows (I was shocked to see my student freelance side job autoroku.cz continue to be run at production for years).
+--&gt;
+&lt;p&gt;At SUSE I&#x27;ve tasted the DRY principles while working on a Rails project, SUSE Studio.  I left PHP behind and embraced static site generators like &lt;a href=&quot;https:&#x2F;&#x2F;middlemanapp.com&#x2F;&quot;&gt;Middleman&lt;&#x2F;a&gt;, then &lt;a href=&quot;https:&#x2F;&#x2F;jekyllrb.com&#x2F;&quot;&gt;Jekyll&lt;&#x2F;a&gt; as it integrated into GitHub. But over time, maintenance fatigue pushed me further—back to basics. No SASS. No site generators. Just clean, modern HTML and CSS.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;plain-html&#x2F;web-design.webp&quot; alt=&quot;Javascript no thank you&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;People are often surprised to see major projects like &lt;a href=&quot;https:&#x2F;&#x2F;www.gnome.org&quot;&gt;gnome.org&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;brand.gnome.org&quot;&gt;brand.gnome.org&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;circle.gnome.org&quot;&gt;circle.gnome.org&lt;&#x2F;a&gt; and my own &lt;a href=&quot;https:&#x2F;&#x2F;jimmac.eu&quot;&gt;jimmac.eu&lt;&#x2F;a&gt; built with plain HTML. Yes you &lt;em&gt;do repeat yourself&lt;&#x2F;em&gt; and inconsistencies creep in. But with integrated version control and web based editors, fixes are a click away. More people can edit plain HTML than any bespoke stack.&lt;&#x2F;p&gt;
+&lt;p&gt;Do I miss some form of &lt;code&gt;include()&lt;&#x2F;code&gt;? Sure. Would I reach for Jekyll+markdown when someone else is responsible for the content? Probably. But for focused, small sites, nothing beats good old HTML.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>GNOME 47 Wallpapers</title>
+        <published>2024-09-24T00:00:00+00:00</published>
+        <updated>2024-09-24T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/wallpapers-2024/"/>
+        <id>https://blog.jimmac.eu/posts/wallpapers-2024/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/wallpapers-2024/">&lt;p&gt;With GNOME 47 out, it’s time for my bi-annual wallpaper deep dive. For many, these may seem like simple background images, but GNOME wallpapers are the visual anchors of the project, defining its aesthetic and identity. The signature blue wallpaper with its dark top bar remains a key part of that.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;wallpapers-2024&#x2F;wallpapers-l.webp&quot; alt=&quot;GNOME 47 Wallpapers&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;In this release, GNOME 47 doesn’t overhaul the default blue wallpaper. It&#x27;s more of a subtle tweak than a full redesign. The familiar rounded triangles remain, but here’s something neat: the dark variant mimics real-world camera behavior. When it&#x27;s darker, the camera’s aperture widens, creating a shallower depth of field. A small but nice touch for those who notice these things.&lt;&#x2F;p&gt;
+&lt;video controls nosound autoplay loop class=&quot;image full&quot;&gt;
+&lt;source src=&quot;focus.webm&quot; type=&quot;video&#x2F;webm&quot;&gt;
+&lt;source src=&quot;focus.mp4&quot; type=&quot;video&#x2F;mp4&quot;&gt;
+&lt;&#x2F;video&gt;
+&lt;p&gt;The real action this cycle, though, is in the supplemental wallpapers.&lt;&#x2F;p&gt;
+&lt;p&gt;We haven’t had to remove much this time around, thanks to the JXL format keeping file sizes manageable. The focus has been on variety rather than cutting old designs. We aim to keep things fresh, though you might notice that photographic wallpapers are still missing (we’ll get to that eventually, &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-backgrounds&#x2F;-&#x2F;issues&#x2F;20&quot;&gt;promise&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;In terms of fine tuning changes, the classic, &lt;code&gt;Pixels&lt;&#x2F;code&gt; has been updated to feature newer apps from &lt;a href=&quot;https:&#x2F;&#x2F;circle.gnome.org&quot;&gt;GNOME Circle&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;video controls nosound autoplay loop class=&quot;image full&quot;&gt;
+&lt;source src=&quot;pixels-timelapse.webm&quot; type=&quot;video&#x2F;webm&quot;&gt;
+&lt;source src=&quot;pixels-timelapse.mp4&quot; type=&quot;video&#x2F;mp4&quot;&gt;
+&lt;&#x2F;video&gt;
+&lt;p&gt;The dark variant of &lt;code&gt;Pills&lt;&#x2F;code&gt; also got some love with lighting and shading tweaks, including a subtle subsurface scattering effect.&lt;&#x2F;p&gt;
+&lt;p&gt;As for the new wallpapers, there are a few cool additions this release. I collaborated with &lt;em&gt;Dominik Baran&lt;&#x2F;em&gt; to create a tube-map-inspired vector wallpaper, which I’m particularly into. There’s also &lt;code&gt;Mollnar&lt;&#x2F;code&gt;, a nod to Vera Molnar, using simple geometric shapes in SVG format.&lt;&#x2F;p&gt;
+&lt;p&gt;Most of our wallpapers are still bitmaps, largely because our rendering tools don’t yet handle color banding well with vectors. For now, even designs that would work better as vectors—like mesh gradients—get converted to bitmaps.&lt;&#x2F;p&gt;
+&lt;p&gt;We’ve introduced some new abstract designs as well -- meet &lt;code&gt;Sheet&lt;&#x2F;code&gt; and &lt;code&gt;Swoosh&lt;&#x2F;code&gt;. And for fans of pixel art, we’ve added &lt;code&gt;LCD&lt;&#x2F;code&gt; and its colorful sibling, &lt;code&gt;LCD-rainbow&lt;&#x2F;code&gt;. Both give off that retro screen vibe, even if the color gradient realism isn’t real-world accurate.&lt;&#x2F;p&gt;
+&lt;p&gt;Lastly, there’s &lt;code&gt;Symbolic Soup&lt;&#x2F;code&gt;, which is, well... a bit chaotic. It might not be everyone’s cup of tea, but it definitely adds variety.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;preview&quot;&gt;Preview&lt;&#x2F;h2&gt;
+&lt;div class=&quot;walls&quot;&gt;
+&lt;a href=&quot;lcd-d.jxl&quot;&gt;&lt;img src=&quot;lcd-d.webp&quot; alt=&quot;LCD&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;pills-d.jxl&quot;&gt;&lt;img src=&quot;pills-d.webp&quot; alt=&quot;Pills&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;map-d.svg&quot;&gt;&lt;img src=&quot;map-d.svg&quot; alt=&quot;Map&quot; class=&quot;big&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;mollnar-d.svg&quot;&gt;&lt;img src=&quot;mollnar-d.svg&quot; alt=&quot;Mollnar&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;lcd-rainbow-l.jxl&quot;&gt;&lt;img src=&quot;lcd-rainbow-l.webp&quot; alt=&quot;LCD Raindow&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;pixels-d.jxl&quot;&gt;&lt;img src=&quot;pixels-d.webp&quot; alt=&quot;Pixels&quot; class=&quot;big&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;sheet-l.jxl&quot;&gt;&lt;img src=&quot;sheet-l.webp&quot; alt=&quot;Sheet&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;swoosh-l.jxl&quot;&gt;&lt;img src=&quot;swoosh-l.webp&quot; alt=&quot;Swoosh&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;symbolic-soup-d.jxl&quot;&gt;&lt;img src=&quot;symbolic-soup-d.webp&quot; alt=&quot;Symbolic Soup&quot;&gt;&lt;&#x2F;a&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;If you&#x27;re wondering about the strange square aspect ratio, take a look at the wallpaper sizing guide in our &lt;a href=&quot;https:&#x2F;&#x2F;developer.gnome.org&#x2F;hig&#x2F;reference&#x2F;backgrounds.html&quot;&gt;GNOME Interface Guidelines&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Also worth noting is the fact that all of these wallpapers have been created by humans. While I&#x27;ve experimented with image generation for some parts of the workflow in some of of my personal projects, all this work is &lt;em&gt;AIgen-free&lt;&#x2F;em&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-backgrounds&#x2F;-&#x2F;blob&#x2F;main&#x2F;AUTHORS?ref_type=heads&quot;&gt;explicitly credited&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;style type=&quot;text&#x2F;css&quot;&gt;
+.walls {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	gap: 1rem;
+	grid-auto-flow: row dense;
+}
+.walls img {
+	display: block;
+	width: 100%; height: auto;
+	transition-duration: 0;
+	align-self: center;
+}
+
+@media only screen and (min-width: 640px) {
+	.walls { grid-template-columns: repeat(4,1fr); }
+	.walls a.big {
+		grid-column: span 2;
+		grid-row: span 2;
+	}
+}
+&lt;&#x2F;style&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>GNOME 46 Wallpapers</title>
+        <published>2024-03-07T00:00:00+00:00</published>
+        <updated>2024-03-07T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/gnome46-wallpapers/"/>
+        <id>https://blog.jimmac.eu/posts/gnome46-wallpapers/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/gnome46-wallpapers/">&lt;p&gt;GNOME 46 is on its final stretch to be released. It&#x27;s been a custom to blog a little about the wallpaper selection, which is a big part of GNOME&#x27;s visual identity. &lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;gnome46-wallpapers&#x2F;wall-1.webp&quot; alt=&quot;Wallpaper 1&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The first notable change in 46 is that we&#x27;re finally delivering on the promise of bringing you a next generation image file format. Lots of performance issues had to be addressed first, apologies for the delay. While efficiency and filesize requirements might not be too high on the list outside of the geek crowd, there is one aspect of JPEG-XL that I am very excited about.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;gnome46-wallpapers&#x2F;wall-2.webp&quot; alt=&quot;Wallpaper 2&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;JPEG-XL allows the use of client-side synthesized grain. A method pioneered by Netflix&#x2F;AV1 I believe. Compression algorithms struggle with high frequency detail, which often introduce visible artifacts. JPEG-XL allows to decouple the grain component from the actual image data. This allows for significantly more efficient compression of images that inherently require noise, such as those in &lt;code&gt;gnome-backgrounds&lt;&#x2F;code&gt; — smooth gradients that would otherwise be susceptible to color banding. To achieve similar fidelity of the grain if it were baked in, a classic format like JPEG would need an order of magnitude larger filesize. Having the grain in the format itself also allows to skip various techniques in the rendering or compositing in the 3D software. &lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;gnome46-wallpapers&#x2F;wall-3.webp&quot; alt=&quot;Wallpaper 3&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Instead of compressing a noisy image, JPEG-XL allows to generate film-like grain as part of the decoding process. This synthesized grain combats issues like color banding while allowing a much more efficient compression on the original image data.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;gnome46-wallpapers&#x2F;wall-4.webp&quot; alt=&quot;Wallpaper 4&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;In essence, client-side grain in JPEG-XL isn&#x27;t simply added noise, but a sophisticated strategy for achieving both efficient compression and visually pleasing image quality, especially for images that would otherwise require inherent noise.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;gnome46-wallpapers&#x2F;wall-5.webp&quot; alt=&quot;Wallpaper 5&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The fresh batch of wallpapers includes evolutions of the existing assets as well as new additions. A few material&#x2F;shape studies have been added as well as simple 2D shape textures. Thanks to the lovely JPEG-XL grain described earlier, it&#x27;s not just &lt;a href=&quot;https:&#x2F;&#x2F;inkscape.org&quot;&gt;Inkscape&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;blender.org&quot;&gt;Blender&lt;&#x2F;a&gt; that &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;Teams&#x2F;Design&#x2F;wallpaper-assets&#x2F;-&#x2F;blob&#x2F;master&#x2F;46&#x2F;experiments&#x2F;py&#x2F;geo.py?ref_type=heads&quot;&gt;were used&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;I hope you&#x27;re going to pick at least one of the wallpapers when GNOME 46 releases later next week as your favorite. Let me know &lt;a href=&quot;https:&#x2F;&#x2F;mastodon.social&#x2F;@jimmac&quot;&gt;on fediverse&lt;&#x2F;a&gt;!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;posts&#x2F;gnome45-wallpapers&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;gnome44-wallpapers&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;gnome43-wallpapers&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;shelved-wallpapers-2&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;shelved-wallpapers&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Colorful HIG</title>
+        <published>2023-10-27T00:00:00+00:00</published>
+        <updated>2023-10-27T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/colorful-hig/"/>
+        <id>https://blog.jimmac.eu/posts/colorful-hig/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/colorful-hig/">&lt;p&gt;The refresh of the &lt;a href=&quot;https:&#x2F;&#x2F;developer.gnome.org&#x2F;hig&quot;&gt;Human Interface Guidelines&lt;&#x2F;a&gt; in both the content and presentation is something to be proud of, but there were a couple of areas that weren&#x27;t great. Where we don&#x27;t quite shine in the area of &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;Teams&#x2F;Design&#x2F;app-illustrations&#x2F;-&#x2F;blob&#x2F;master&#x2F;README.md?ref_type=heads&quot;&gt;blueprint illustration style&lt;&#x2F;a&gt; is the contrast for the dark mode. While in many cases a single graphic can work in the two contexts just fine, in other it struggles. And while we tried to address it in the HIG, it became clear we do need to do better.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;colorful-hig&#x2F;hig-contrast.webp&quot; alt=&quot;Low contrast for HIG blueprint illustrations&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;inline-svg-stylesheet&quot;&gt;Inline SVG Stylesheet&lt;&#x2F;h1&gt;
+&lt;p&gt;there&#x27;s a little trick I learned from &lt;a href=&quot;https:&#x2F;&#x2F;osna.social&#x2F;@razze&quot;&gt;razze&lt;&#x2F;a&gt; while working &lt;a href=&quot;https:&#x2F;&#x2F;flathub.org&quot;&gt;Flathub&lt;&#x2F;a&gt; — a single favicon working in both dark and light mode can be achieved using a single SVG. The SVG doesn&#x27;t have inline defined fills, but instead has a simple embedded &lt;code&gt;&amp;lt;style&amp;gt;&lt;&#x2F;code&gt; that defines the &lt;code&gt;g,path,rect,circle&lt;&#x2F;code&gt; and whatnot element styles and sets the &lt;code&gt;fill&lt;&#x2F;code&gt; there. For the dark mode it gets overriden with the &lt;code&gt;@media (prefers-color-scheme: dark){}&lt;&#x2F;code&gt; rule. While generally favicons are a single color stencil, it can work for fullcolor graphics (and more complex rules): &lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;css&quot; class=&quot;language-css &quot;&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&amp;lt;style&amp;gt;
+  rect.fg { fill: #5e5c64; }
+  path.bg { fill: #fff; }
+  @media (prefers-color-scheme: dark) {
+    rect.fg { fill: #fff; } 
+    path.bg { fill: #5e5c64; }
+  }
+&amp;lt;&amp;#x2F;style&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;This made me think of a similar approach working for inline images as well. Sadly there&#x27;s two obstacles. While the support for inline stylesheets in SVGs seems to be quite wide among browsers, &lt;a href=&quot;https:&#x2F;&#x2F;wiki.gnome.org&#x2F;Apps&#x2F;Web&quot;&gt;Epiphany&lt;&#x2F;a&gt; only seems to respect &lt;code&gt;prefers-color-scheme&lt;&#x2F;code&gt; when using the image directly (or the favicon case), but didn&#x27;t seem to work when emebded inside and html page as &lt;code&gt;&amp;lt;img&amp;gt;&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;The more severe issue is that producing such SVGs is a little cumbersome as you have to clean up the document generated by Inkscape, which likes to use &lt;code&gt;fill&lt;&#x2F;code&gt; attribute or inline css in &lt;code&gt;style&lt;&#x2F;code&gt;. While it generally doesn&#x27;t remove markup, it will reformat your markup and you will be fighting with it every time you need to edit the SVG visually rather than inside a text editor. &lt;&#x2F;p&gt;
+&lt;h1 id=&quot;html5-picture&quot;&gt;HTML5 Picture&lt;&#x2F;h1&gt;
+&lt;p&gt;For inline images, the approach that seems more straight forward and I&#x27;ve taken on many occasions is using the HTML5 &lt;code&gt;&amp;lt;picture&amp;gt;&lt;&#x2F;code&gt; element. It works great for providing dark mode variants using &lt;code&gt;source&lt;&#x2F;code&gt; with a &lt;code&gt;media&lt;&#x2F;code&gt; attribute as well as a neat accessibility feature of showing non-animated image variant for people who opt out:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;html&quot; class=&quot;language-html &quot;&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&amp;lt;picture&amp;gt;
+    &amp;lt;source srcset=&amp;quot;static.png&amp;quot; 
+        media=&amp;quot;(prefers-reduced-motion: reduce)&amp;quot; &amp;#x2F;&amp;gt;
+    &amp;lt;img src=&amp;quot;animated.gif&amp;quot; &amp;#x2F;&amp;gt;
+&amp;lt;&amp;#x2F;picture&amp;gt;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;picture&gt;
+    &lt;source srcset=&quot;fdosdk-dia.png&quot; media=&quot;(prefers-reduced-motion: reduce)&quot; &#x2F;&gt;
+    &lt;img src=&quot;fdosdk-dia.gif&quot; &#x2F;&gt;
+&lt;&#x2F;picture&gt;
+&lt;!-- vimeo is a racket
+&lt;div style=&quot;padding:75% 0 0 0;position:relative;&quot;&gt;&lt;iframe src=&quot;https:&#x2F;&#x2F;player.vimeo.com&#x2F;video&#x2F;878724389?h=a5216f4b20&amp;amp;badge=0&amp;amp;autopause=0&amp;amp;quality_selector=1&amp;amp;player_id=0&amp;amp;app_id=58479&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; picture-in-picture&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; title=&quot;prefers-reduced-motion&quot;&gt;&lt;&#x2F;iframe&gt;&lt;&#x2F;div&gt;&lt;script src=&quot;https:&#x2F;&#x2F;player.vimeo.com&#x2F;api&#x2F;player.js&quot;&gt;&lt;&#x2F;script&gt;
+--&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;KflnciWB6-c?si=7iR1SuiHF_s48Uih&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;h1 id=&quot;sphinx-rst&quot;&gt;Sphinx&#x2F;RST&lt;&#x2F;h1&gt;
+&lt;p&gt;GNOME &lt;em&gt;Human Interface Guidelines&lt;&#x2F;em&gt; are written in restructured text&#x2F;Sphinx, however. Escaping to html for images&#x2F;pictures would be quite cumbersome, but luckily dark mode is supported in the furo theme (and derivates) using the &lt;code&gt;only-light&lt;&#x2F;code&gt; and &lt;code&gt;only-dark&lt;&#x2F;code&gt; classes. The markup gets a little chatty, but still quite legible. There&#x27;s some iterations to be made, but in terms of legibility it&#x27;s finally a bit more accessible.&lt;&#x2F;p&gt;
+&lt;img src=&quot;hig-fullcolor.webp&quot; alt=&quot;New HIG light&quot; class=&quot;full&quot;&gt;
+&lt;img src=&quot;hig-fullcolor-dark.webp&quot; alt=&quot;New HIG dark&quot; class=&quot;full&quot;&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>GNOME 45 Wallpapers</title>
+        <published>2023-10-05T00:00:00+00:00</published>
+        <updated>2023-10-05T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/gnome45-wallpapers/"/>
+        <id>https://blog.jimmac.eu/posts/gnome45-wallpapers/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/gnome45-wallpapers/">&lt;p&gt;With the &lt;a href=&quot;https:&#x2F;&#x2F;release.gnome.org&#x2F;45&#x2F;&quot;&gt;45 release out the door&lt;&#x2F;a&gt;, it would be a shame not to reveal some of the behind the scenes for the new wallpapers.&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;ll start off by mentioning a lovely new addition by David Lapshin, &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-backgrounds&#x2F;-&#x2F;issues&#x2F;37&quot;&gt;Amber&lt;&#x2F;a&gt;, leaning into Inkscape&#x27;s mesh gradients.&lt;&#x2F;p&gt;
+&lt;p&gt;The default has shown no dramatic departure from the triangles&#x2F;hexagons of the previous releases. The on-brand triangle theme has been kept, but the implementation is very different. The wallpaper is a result of a generated mesh using Blender&#x27;s geometry nodes and color gradients derived from a pre-existing wallpaper texture. You can check the whole thing out in the provided blender project files in &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;Teams&#x2F;Design&#x2F;wallpaper-assets&quot;&gt;wallpaper-assets&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;There have been updates to the existing set, the surprisingly popular &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-backgrounds&#x2F;-&#x2F;blob&#x2F;gnome-45&#x2F;backgrounds&#x2F;blobs-d.svg?ref_type=heads&quot;&gt;Blobs&lt;&#x2F;a&gt; have been tweaked, my personal favorite, &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-backgrounds&#x2F;-&#x2F;blob&#x2F;gnome-45&#x2F;backgrounds&#x2F;fold-l.jpg?ref_type=heads&quot;&gt;Fold&lt;&#x2F;a&gt; crops a bit better at the most common 16:9 aspect and &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-backgrounds&#x2F;-&#x2F;blob&#x2F;gnome-45&#x2F;backgrounds&#x2F;truchet-d.jpg?ref_type=heads&quot;&gt;Truchet&lt;&#x2F;a&gt; is round yet again. &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-backgrounds&#x2F;-&#x2F;blob&#x2F;gnome-45&#x2F;backgrounds&#x2F;pixels-d.jpg?ref_type=heads&quot;&gt;Pixels&lt;&#x2F;a&gt; have been updated to feature &lt;a href=&quot;https:&#x2F;&#x2F;circle.gnome.org&#x2F;&quot;&gt;Circle apps&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;iframe class=&quot;full&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;0U54yx9L_yM?si=Q4n4beYYZcoPAYG7&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;Weirdly named &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-backgrounds&#x2F;-&#x2F;blob&#x2F;gnome-45&#x2F;backgrounds&#x2F;morphogenesis-l.svg?ref_type=heads&quot;&gt;Morphogenesis&lt;&#x2F;a&gt; is one of my favorite additions this release. Based around a concept of reactive diffusion, described by none other than &lt;a href=&quot;https:&#x2F;&#x2F;www.dna.caltech.edu&#x2F;courses&#x2F;cs191&#x2F;paperscs191&#x2F;turing.pdf&quot;&gt;Allan Turing&lt;&#x2F;a&gt;, features a little easter egg if you&#x27;re into chasing those down.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;posts&#x2F;gnome44-wallpapers&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;gnome43-wallpapers&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;shelved-wallpapers-2&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;shelved-wallpapers&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Flathub Brand Refresh</title>
+        <published>2023-02-23T00:00:00+00:00</published>
+        <updated>2023-02-23T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/flathub-brand-refresh/"/>
+        <id>https://blog.jimmac.eu/posts/flathub-brand-refresh/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/flathub-brand-refresh/">&lt;!-- &lt;a href=&quot;{{ site.url }}{{ page.url }}&quot;&gt;absolute links&lt;&#x2F;a&gt; --&gt;
+&lt;p&gt;While &lt;a href=&quot;https:&#x2F;&#x2F;flatpak.org&quot;&gt;Flatpak&lt;&#x2F;a&gt; itself is an architecturally decentralized way to distribute apps, &lt;a href=&quot;https:&#x2F;&#x2F;beta.flathub.org&quot;&gt;Flathub&lt;&#x2F;a&gt; embraces the convenience for people to come to one place to install apps. There&#x27;s some fairly big changes coming to Flathub that I&#x27;m extremely excited about, that will make sure the new wave of Linux apps doesn&#x27;t fizzle out and we&#x27;ll maintain a sustainable application ecosystem.&lt;&#x2F;p&gt;
+&lt;!-- vimeo is a racket
+&lt;iframe src=&quot;https:&#x2F;&#x2F;player.vimeo.com&#x2F;video&#x2F;801393970?h=73a1ea84e4&amp;amp;badge=0&amp;amp;autopause=0&amp;amp;player_id=0&amp;amp;app_id=58479&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; picture-in-picture&quot; allowfullscreen title=&quot;flathub-rebrand&quot;&gt;&lt;&#x2F;iframe&gt;
+--&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;d770zFM4jIE?si=TyuylOVmFM4FsaiK&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;Thus there is no better time to refresh what has become a little dated, Flathub&#x27;s visual identity. It centers around the core of what Flathub is — the apps themselves. The identity isn&#x27;t very loud and shouty. The flashy colors and emphasis remains on the apps themselves, Flathub is the neutral platform for the apps to shine.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;flathub&#x2F;website&#x2F;files&#x2F;10815847&#x2F;brand-guide.pdf&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;flathub-brand-refresh&#x2F;brand.webp&quot; alt=&quot;Brand Guidelines&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Take a peek at the &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;flathub&#x2F;website&#x2F;files&#x2F;10815847&#x2F;brand-guide.pdf&quot;&gt;brand guidelines&lt;&#x2F;a&gt; to learn more about the new Flathub brand or &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;flathub&#x2F;website&#x2F;files&#x2F;10815849&#x2F;flathub-branding.zip&quot;&gt;download the logos&lt;&#x2F;a&gt; in scalable format. The download buttons for app websites are also &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;flathub&#x2F;website&#x2F;files&#x2F;10814600&#x2F;download-button.zip&quot;&gt;available&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;flathub-brand-refresh&#x2F;flathub-l.webp&quot; alt=&quot;Flathub Light WIP&quot; &#x2F;&gt;
+&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;flathub-brand-refresh&#x2F;flathub-d.webp&quot; alt=&quot;Flathub Dark WIP&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Building a brand on neutral greys isn&#x27;t quite an easy sell, but precisely targets the main point of the Flathub brand. It creates the stage for apps to shine. Flathub isn&#x27;t flashy by itself. It allows the apps to be at the center of your attention.&lt;&#x2F;p&gt;
+&lt;p&gt;If you&#x27;ve read until this point, you deserve a treat! Here&#x27;s some eye candy from the early stages of the process. Wallpapers derived from the elemental shapes of the logomark. Clearly off limits now, but can&#x27;t just throw them away, can I?&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;flathub-brand-refresh&#x2F;wallpaper.svg&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;flathub-brand-refresh&#x2F;flathub-patterns.webp&quot; alt=&quot;Flathub Patterns&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;flathub-brand-refresh&#x2F;wallpaper3D.webp&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;flathub-brand-refresh&#x2F;flathub-candy.webp&quot; alt=&quot;Flathub Candy&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
+{.tiledscr}&lt;&#x2F;p&gt;
+&lt;style type=&quot;text&#x2F;css&quot;&gt;
+.tiledscr {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	gap: 1rem;
+	grid-auto-flow: row dense;
+}
+.tiledscr img {
+	display: block;
+	width: 100%; height: auto;
+	align-self: center;
+}
+&lt;&#x2F;style&gt;
+&lt;p&gt;Big shoutout to &lt;a href=&quot;https:&#x2F;&#x2F;osna.social&#x2F;@razze&quot;&gt;razze&lt;&#x2F;a&gt; for his ongoing work on the website and implementing the brand so quickly. Many thank yous to &lt;a href=&quot;https:&#x2F;&#x2F;tobiasbernard.com&#x2F;&quot;&gt;Tobias Bernard&lt;&#x2F;a&gt; for significant involvment in this during the &lt;a href=&quot;&#x2F;posts&#x2F;Berlin-GUADEC&#x2F;&quot;&gt;Berlin Mini GUADEC&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;vancura.dev&#x2F;&quot;&gt;Václav Vančura&lt;&#x2F;a&gt; for sensible feedback.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;posts&#x2F;flatpak-refresh&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>GNOME 44 Wallpapers</title>
+        <published>2023-01-30T00:00:00+00:00</published>
+        <updated>2023-01-30T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/gnome44-wallpapers/"/>
+        <id>https://blog.jimmac.eu/posts/gnome44-wallpapers/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/gnome44-wallpapers/">&lt;p&gt;As we gear up for the release of GNOME 44, let&#x27;s take a moment to reflect on the visual design updates.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;gnome44-wallpapers&#x2F;gnome44-wallpapers.webp&quot; alt=&quot;GNOME 44 Wallpapers&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;We&#x27;ve made big strides in visual consistency with the growing number of apps that have been ported to gtk4 and libadwaita, embracing the modern look. &lt;a href=&quot;https:&#x2F;&#x2F;samuelhewitt.com&#x2F;blog&quot;&gt;Sam&lt;&#x2F;a&gt; has also given the high-contrast style in GNOME Shell some love, keeping it in line with gtk&#x27;s updates last cycle.&lt;&#x2F;p&gt;
+&lt;p&gt;The default wallpaper stays true to our brand, but the supplementary set has undergone some bolder changes. From the popular simple shape blends to a nostalgic nod to the past with keypad and pixel art designs, there&#x27;s something for everyone. The pixelized icons made their debut in the last release, but this time we focus on &lt;a href=&quot;https:&#x2F;&#x2F;cicrcle.gnome.org&quot;&gt;GNOME Circle&lt;&#x2F;a&gt; apps, rather than the core apps.&lt;&#x2F;p&gt;
+&lt;p&gt;Another exciting development is the continued use of geometry nodes in Blender. Although the tool has a steep learning curve, I&#x27;m starting to enjoy my time with it. I gave a talk on geometry nodes and its use for GNOME wallpaper design at the Fedora Creative Freedom Summit. You can watch the stream archive recording &lt;a href=&quot;https:&#x2F;&#x2F;peertube.linuxrocks.online&#x2F;w&#x2F;iX9QkY4nCa2nPAzV8nC3BS?start=27m25s&quot;&gt;here&lt;&#x2F;a&gt; (and &lt;a href=&quot;https:&#x2F;&#x2F;peertube.linuxrocks.online&#x2F;w&#x2F;4kBcQfDBLAAJDQcdkDwZow&quot;&gt;part2&lt;&#x2F;a&gt;).&lt;&#x2F;p&gt;
+&lt;iframe title=&quot;Visual Programming with Geometry Nodes in Blender - Jakub Steiner - Creative Freedom Summit 2023&quot; src=&quot;https:&#x2F;&#x2F;peertube.linuxrocks.online&#x2F;videos&#x2F;embed&#x2F;7f0043e0-a8ed-4f8c-a93b-e7da7c399bae&quot; allowfullscreen=&quot;&quot; sandbox=&quot;allow-same-origin allow-scripts allow-popups&quot; frameborder=&quot;0&quot;&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;posts&#x2F;gnome43-wallpapers&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;shelved-wallpapers-2&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;shelved-wallpapers&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>New Alert Sounds</title>
+        <published>2022-08-15T00:00:00+00:00</published>
+        <updated>2022-08-15T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/new-alert-sounds/"/>
+        <id>https://blog.jimmac.eu/posts/new-alert-sounds/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/new-alert-sounds/">&lt;p&gt;In the classic analog synthesizer, a sound is created by a simple oscillator and then carving&#x2F;shaping the sound with filters. That&#x27;s why it&#x27;s sometimes called subtractive synthesis.&lt;&#x2F;p&gt;
+&lt;p&gt;The sound effects in the Settings&#x27; panel have been recreated with a method called &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Frequency_modulation_synthesis&quot;&gt;Frequency Modulation&lt;&#x2F;a&gt; where some oscillators aren&#x27;t used to generate the sound itself (carrier), but modulate it futher. Even here the significant role of filtering remains. In addition more complex sounds are achieved with so called layereing which is exactly what the name hints to, just using a bunch of sounds together in a mix.&lt;&#x2F;p&gt;
+&lt;p&gt;Sounds created for GNOME 43 were generated on a mini-computer called &lt;a href=&quot;https:&#x2F;&#x2F;www.pjrc.com&#x2F;store&#x2F;teensy41.html&quot;&gt;Teensy&lt;&#x2F;a&gt; (currently unavailable due to the global chip shortage), running software called &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;DirtyWave&#x2F;M8HeadlessFirmware&quot;&gt;Dirtywave Headless&lt;&#x2F;a&gt; written by &lt;a href=&quot;https:&#x2F;&#x2F;trash80.com&#x2F;&quot;&gt;Timothy Lamb&lt;&#x2F;a&gt;. The software includes other synthesizer engines, but majority of the sounds were made using the 4 operator FM engine. To further complicate things, my favorite algorithm is No.16 where all of the 4 oscillators are carriers, effectively being equivalent to a 4 oscillator analog synth.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;fm.svg&quot;
+alt=&quot;FM Synth Engine on the Dirtywave Headless. Image taken from the Dirtywave M8 Tracker manual.&quot;
+class=&quot;full&quot;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Finally everything was cleaned up in &lt;a href=&quot;https:&#x2F;&#x2F;flathub.org&#x2F;apps&#x2F;details&#x2F;org.audacityteam.Audacity&quot;&gt;Audacity&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;To form a complete circle, and to my genuine surprise, my old friend Noggin from the &lt;a href=&quot;http:&#x2F;&#x2F;jeskola.net&#x2F;buzz&#x2F;&quot;&gt;Jeskola Buzz&lt;&#x2F;a&gt; days has composed a great track using only samples from the &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-control-center&#x2F;-&#x2F;issues&#x2F;264&quot;&gt;gitlab issue&lt;&#x2F;a&gt; (my involvement with music trackers predates GNOME or Free software in general. An old friend indeed).&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;weeklybeats.com&#x2F;noggin&#x2F;music&#x2F;gnomesounds&quot;&gt;Take a listen&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;I wish I had published the project bundle to allow for easier adjustments, but &lt;a href=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;new-alert-sounds&#x2F;gnome-alerts.zip&quot;&gt;better late&lt;&#x2F;a&gt; than never.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>GNOME 43 Wallpapers</title>
+        <published>2022-08-08T00:00:00+00:00</published>
+        <updated>2022-08-08T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/gnome43-wallpapers/"/>
+        <id>https://blog.jimmac.eu/posts/gnome43-wallpapers/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/gnome43-wallpapers/">&lt;h1 id=&quot;gnome-43-wallpapers&quot;&gt;GNOME 43 Wallpapers&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;em&gt;Evolution&lt;&#x2F;em&gt; and &lt;em&gt;design&lt;&#x2F;em&gt; can co-exist happily in the world of desktop wallpapers. It&#x27;s desirable to evolve within a set of constraints to create a theme in time, set up a visual brand that doesn&#x27;t rely on putting a logo on everything. At the same time it&#x27;s healthy to stop once in a while, do a small reflection on what&#x27;s perhaps a little dated and do a fresh redesign. &lt;&#x2F;p&gt;
+&lt;!-- vimeo is a racket
+&lt;iframe src=&quot;https:&#x2F;&#x2F;player.vimeo.com&#x2F;video&#x2F;736863449?h=2cfc1f93b0&amp;amp;badge=0&amp;amp;autopause=0&amp;amp;player_id=0&amp;amp;app_id=58479&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; picture-in-picture&quot; allowfullscreen style=&quot;width: 100%; height: auto; aspect-ratio: 16 &#x2F; 9;&quot; title=&quot;GNOME 43 Wallpaper Streams&quot;&gt;&lt;&#x2F;iframe&gt;
+--&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;UXctJgtPJrc?si=vQMFCK365YDbHG4T&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;I took extra time this release to focus on refreshing the whole wallpaper set for 43. While the default wallpaper isn&#x27;t a big departure from 3.38 hexagon theme, most of the supplemental wallpapers have been refreshed from the ground up. The &lt;a href=&quot;https:&#x2F;&#x2F;vimeo.com&#x2F;736863449&quot;&gt;video above&lt;&#x2F;a&gt; shows a few glimpses of all the one way streets it took for the default to land back in the hexagons.&lt;&#x2F;p&gt;
+&lt;p&gt;GNOME 42 was the first release to ship a bunch of SVG based wallpapers that embraced the flat colors and gradients and benefited from being just a few kilobytes in file size. It was also the first release to ship &lt;em&gt;dark preference&lt;&#x2F;em&gt; variants. All of that continues into 43.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;gnome43-wallpapers&#x2F;pixels-blender.webp&quot; alt=&quot;Pixels in Blender&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Major change comes from addressing a wide range of display aspect ratios with one wallpaper. 43 wallpapers should work fine on your ultrawides just as well as portrait displays. We also rely on WebP as the &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-shell&#x2F;-&#x2F;issues&#x2F;5457&quot;&gt;file format&lt;&#x2F;a&gt; getting a much better quality with a nice compression ratio (albeit lossy).&lt;&#x2F;p&gt;
+&lt;p&gt;What&#x27;s still missing are photographic wallpapers &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-backgrounds&#x2F;-&#x2F;issues&#x2F;20&quot;&gt;captured under different lighting&lt;&#x2F;a&gt;. Hopefully next release.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;docs.blender.org&#x2F;manual&#x2F;en&#x2F;latest&#x2F;modeling&#x2F;geometry_nodes&#x2F;index.html&quot;&gt;Blender&#x27;s geometry nodes&lt;&#x2F;a&gt; is an amazing tool to do generative art, yet I feel like I&#x27;ve already forgotten the small fraction of what can be done that I&#x27;ve learned during this cycle. Luckily there&#x27;s always the next release to do some repetition. Thanks to everyone following my struggles on the &lt;a href=&quot;http:&#x2F;&#x2F;twitch.tv&#x2F;jimmacfx&quot;&gt;twitch streams&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;The release is dedicated to &lt;a href=&quot;https:&#x2F;&#x2F;foundation.gnome.org&#x2F;2016&#x2F;02&#x2F;12&#x2F;remembering-thomas-wood&#x2F;&quot;&gt;Thomas Wood&lt;&#x2F;a&gt;, a long time maintainer of all things visual in GNOME.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Berlin Mini GUADEC</title>
+        <published>2022-07-25T00:00:00+00:00</published>
+        <updated>2022-07-25T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/berlin-guadec/"/>
+        <id>https://blog.jimmac.eu/posts/berlin-guadec/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/berlin-guadec/">&lt;p&gt;&lt;a href=&quot;http:&#x2F;&#x2F;jimmac.musichall.cz&#x2F;photos&#x2F;2022_Berlin_Mirror_GUADEC&#x2F;&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;berlin-guadec&#x2F;cbase.webp&quot; alt=&quot;Mini GUADEC at C-Base Berlin&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The Berlin hackfest and conference wasn&#x27;t a polished, well organized experience like the usual GUADEC, it had the perfect Berlin flavor. The attendance topped my expectations and smaller groups formed to work on different aspects of the OS.&lt;&#x2F;p&gt;
+&lt;p&gt;GNOME shell&#x27;s &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;fmuellner&#x2F;quick-settings-extension&quot;&gt;quick settings&lt;&#x2F;a&gt;, the &lt;a href=&quot;https:&#x2F;&#x2F;blogs.gnome.org&#x2F;shell-dev&#x2F;2022&#x2F;05&#x2F;30&#x2F;towards-gnome-shell-on-mobile&#x2F;&quot;&gt;mobile form factor&lt;&#x2F;a&gt;, non-overlapped window management, Flathub and GNOME branding, video subsystems and others.&lt;&#x2F;p&gt;
+&lt;iframe class=&quot;full&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;S9wKTD0hcFY?si=q73gmtiZDHIbjzGK&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;I&#x27;ve shot a &lt;a href=&quot;http:&#x2F;&#x2F;jimmac.musichall.cz&#x2F;photos&#x2F;2022_Berlin_Mirror_GUADEC&#x2F;&quot;&gt;few photos&lt;&#x2F;a&gt; and edited the short &lt;a href=&quot;https:&#x2F;&#x2F;vimeo.com&#x2F;733288200&quot;&gt;video above&lt;&#x2F;a&gt;. Even the music was done during the night sessions at &lt;a href=&quot;https:&#x2F;&#x2F;www.c-base.org&#x2F;&quot;&gt;C-Base&lt;&#x2F;a&gt;. &lt;&#x2F;p&gt;
+&lt;p&gt;Big thanks to the C-Base crew for taking good care of us in all aspects -- audio-visual support for the talks and following the main event in Mexico, refreshments and even outside seating. Last but not least the GNOME Foundation for sponsoring the travel (mostly on the ground).&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;berlin-guadec&#x2F;sponsored.png&quot; alt=&quot;Sponsored by the GNOME Foundation&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Flatpak Brand Refresh</title>
+        <published>2022-06-13T00:00:00+00:00</published>
+        <updated>2022-06-13T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/flatpak-refresh/"/>
+        <id>https://blog.jimmac.eu/posts/flatpak-refresh/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/flatpak-refresh/">&lt;!-- &lt;a href=&quot;{{ site.url }}{{ page.url }}&quot;&gt;absolute links&lt;&#x2F;a&gt; --&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;flatpak-refresh&#x2F;flatpak.png&quot; alt=&quot;Flatpak&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;flatpak.org&quot;&gt;Flatpak&lt;&#x2F;a&gt; has been at the center of the recent app renaissance, but its visual identity has remained fairly stale. &lt;&#x2F;p&gt;
+&lt;p&gt;Without diverging too much from the &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;flatpak&#x2F;flatpak.github.io&#x2F;issues&#x2F;537&quot;&gt;main elements of its visual identity&lt;&#x2F;a&gt; we&#x27;ve made it more contemporary. The logo in particular has been simplified to work in all of the size scenarios and visual complexity contexts.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;flatpak-refresh&#x2F;flatpak-logo.webp&quot; alt=&quot;Flatpak Logo&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;There&#x27;s definitely a few spots where the rebrand has yet to propagate to, so please refer to &lt;a href=&quot;https:&#x2F;&#x2F;flatpak.org&#x2F;img&#x2F;flatpak-logos.zip&quot;&gt;the guidelines&lt;&#x2F;a&gt; if you spot and old coat of paint.&lt;&#x2F;p&gt;
+&lt;p&gt;If you&#x27;re giving a talk on Flatpak, feel free to make use of the &lt;a href=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;flatpak-refresh&#x2F;impress-flatpak-template.otp&quot;&gt;LibreOffice Impress Template&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Pixel Sites</title>
+        <published>2021-11-22T00:00:00+00:00</published>
+        <updated>2021-11-22T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/pixelsites/"/>
+        <id>https://blog.jimmac.eu/posts/pixelsites/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/pixelsites/">&lt;!-- &lt;a href=&quot;{{ site.url }}{{ page.url }}&quot;&gt;absolute links&lt;&#x2F;a&gt; --&gt;
+&lt;p&gt;I&#x27;ve created a &lt;a href=&quot;https:&#x2F;&#x2F;pipewire.org&#x2F;&quot;&gt;couple&lt;&#x2F;a&gt; &lt;a href=&quot;https:&#x2F;&#x2F;fleet-commander.org&#x2F;&quot;&gt;of&lt;&#x2F;a&gt; &lt;a href=&quot;https:&#x2F;&#x2F;containertoolbx.org&#x2F;&quot;&gt;minisites&lt;&#x2F;a&gt; for key OS components, built using no frameworks, but plain CSS. Just having CSS grid and variables made it viable for me to avoid using frameworks recently. Having &lt;a href=&quot;https:&#x2F;&#x2F;www.w3.org&#x2F;TR&#x2F;html-imports&#x2F;&quot;&gt;includes&#x2F;imports&lt;&#x2F;a&gt; one wouldn&#x27;t even need &lt;a href=&quot;https:&#x2F;&#x2F;jekyllrb.com&#x2F;&quot;&gt;Jekyll&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;div class=&quot;inlineimgs&quot; markdown=&quot;1&quot;&gt;
+[![](Flatpak_Website.png)](Flatpak_Website.png)
+[![](Fleet_Commander.png)](Fleet_Commander.png)
+[![](Toolbox_Packages_Within.png)](Toolbox_Packages_Within.png)
+[![](ZBus_Website.png)](ZBus_Website.png)
+&lt;&#x2F;div&gt;
+&lt;p&gt;The founding stone on all of these is the pixel art, which is now becoming my favorite art form.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;pixelsites&#x2F;flatpak.gif&quot; alt=&quot;Flatpak&quot; &#x2F;&gt;
+&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;pixelsites&#x2F;fleetcommander.gif&quot; alt=&quot;Fleet Comander&quot; &#x2F;&gt;
+&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;pixelsites&#x2F;toolbox.gif&quot; alt=&quot;Toolbox&quot; &#x2F;&gt;
+&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;pixelsites&#x2F;zbus.gif&quot; alt=&quot;Zbus&quot; &#x2F;&gt;
+{.pixels}&lt;&#x2F;p&gt;
+&lt;style type=&quot;text&#x2F;css&quot;&gt;
+.pixels {
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	&#x2F;* grid-template-columns: repeat(auto-fit, minmax(150px,1fr)); *&#x2F;
+	gap: 16px;
+}
+.pixels img {
+	display: block;
+	width: 100%; height: auto;
+	image-rendering: crisp-edges; image-rendering: pixelated;
+	transition: transform 600ms ease-out;
+	align-self: center;
+}
+.pixels img:active {
+	transition: none;
+	width: 135px;
+	transform: scale(1);
+}
+&lt;&#x2F;style&gt;
+&lt;p&gt;If you maintain an upstream OS component and are looking to replace a wiki or a markdown readme with a simple site, I&#x27;ve &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;jimmac&#x2F;os-component-website&quot;&gt;created a template&lt;&#x2F;a&gt; to get you started quickly.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>How to Gradient When You Can&#x27;t</title>
+        <published>2021-08-18T00:00:00+00:00</published>
+        <updated>2021-08-18T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/how-to-gradient-when-you-cannot/"/>
+        <id>https://blog.jimmac.eu/posts/how-to-gradient-when-you-cannot/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/how-to-gradient-when-you-cannot/">&lt;!-- &lt;a href=&quot;{{ site.url }}{{ page.url }}&quot;&gt;absolute links&lt;&#x2F;a&gt; --&gt;
+&lt;p&gt;While this topic isn&#x27;t anything new (the asset in question is probably a decade old) I never shared a dirty little secret about some of our symbolic assets.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;developer.gnome.org&#x2F;hig&#x2F;guidelines&#x2F;ui-icons.html&quot;&gt;UI icons&lt;&#x2F;a&gt; in GNOME are to a major extent &lt;em&gt;monochrome&lt;&#x2F;em&gt;. They behave like text and can be rendered with various foreground colors depending on context. In a small subset of icons we use partially shaded elements. Those are done as a solid fill as well, but lowered opacity. Then can still remain recolorable at runtime. &lt;&#x2F;p&gt;
+&lt;p&gt;What we don&#x27;t have is the ability to draw a &lt;em&gt;gradient&lt;&#x2F;em&gt; that remains recolorable, because we&#x27;d need more somphisticated machinery to rewrite the stops of the gradient definition. Or can we? Unless you&#x27;re reading this on &lt;a href=&quot;https:&#x2F;&#x2F;planet.gnome.org&#x2F;&quot;&gt;Planet&lt;&#x2F;a&gt; or in your fancy &lt;a href=&quot;https:&#x2F;&#x2F;flathub.org&#x2F;apps&#x2F;details&#x2F;com.gitlab.newsflash&quot;&gt;RSS reader&lt;&#x2F;a&gt;, you can see the spinner we&#x27;ve been using for well over 7 years now:&lt;&#x2F;p&gt;
+&lt;style type=&quot;text&#x2F;css&quot;&gt;
+#spinnerbg {
+	width: 50%;
+	min-width: 300px;
+	height: 300px;
+	margin: 32px auto;
+	background-color: #f0f0f0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 16px;
+	transition: all 1s ease-out;
+}
+
+body[data-theme=&quot;dark&quot;] #spinnerbg {
+	background-color: #0c0c0c;
+}
+
+#spinnerbg:hover,
+body[data-theme=&quot;dark&quot;] #spinnerbg:hover { 	
+	transform: scale(0.95); 
+	background-color: transparent;
+cursor: url(&quot;data:image&#x2F;svg+xml;utf8,&lt;svg xmlns=&#x27;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&#x27; width=&#x27;80&#x27; height=&#x27;96&#x27; viewport=&#x27;0 0 100 100&#x27; style=&#x27;fill:black;font-size:48px;&#x27;&gt;&lt;text y=&#x27;50%&#x27;&gt;🔍&lt;&#x2F;text&gt;&lt;&#x2F;svg&gt;&quot;) 16 0, auto;
+}
+
+#icon {
+	display: block;
+	width: 16px;
+	height: 16px;
+	transform: rotate(0deg);
+	animation: infirotation 1s linear infinite;
+	transition: all 1s ease-out;
+}
+	#icon path { fill: black; }
+	body[data-theme=&quot;dark&quot;] #icon path { fill: white; }
+	#icon:hover { animation-duration: 5s; }
+
+.container {
+	transition: transform 200ms ease-out;
+}
+#spinnerbg:hover .container {
+	transform: scale(16);
+}
+@keyframes infirotation {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(359deg); }
+}
+&lt;&#x2F;style&gt;
+&lt;section id=&quot;spinnerbg&quot;&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;p&gt;&lt;svg id=&quot;icon&quot; xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; width=&quot;16&quot; height=&quot;16&quot;&gt;&lt;path d=&quot;M7.979 1.055a1.474 1.474 0 0 0-.27.025c-3 .16-5.627 2.222-6.451 5.129A7.13 7.13 0 0 0 4.5 14.037a7.13 7.13 0 0 0 8.4-1.105 7.13 7.13 0 0 0 1.106-8.4c1.507 2.725 1.032 6.162-1.135 8.37-2.228 2.148-5.654 2.577-8.33 1.065-2.618-1.576-3.914-4.73-3.18-7.672-.708 2.948.623 6.072 3.221 7.601 2.654 1.471 6.026 1.005 8.174-1.109 2.094-2.168 2.514-5.528 1.037-8.133 1.453 2.618.992 5.956-1.096 8.075-2.137 2.067-5.464 2.484-8.033 1.025C2.146 12.244.888 9.182 1.6 6.357c-.685 2.832.604 5.863 3.103 7.327 2.547 1.417 5.821.963 7.88-1.07 2.014-2.078 2.42-5.34.997-7.837 1.4 2.51.951 5.75-1.056 7.778-2.048 1.988-5.276 2.391-7.737.986C2.37 12.098 1.15 9.125 1.838 6.418c-.662 2.714.59 5.655 2.988 7.053 2.439 1.363 5.614.923 7.582-1.032 1.935-1.987 2.329-5.152.96-7.54 1.345 2.402.91 5.544-1.018 7.482-1.958 1.908-5.089 2.299-7.442.947C2.59 11.951 1.411 9.071 2.076 6.48c-.639 2.598.574 5.446 2.873 6.778 2.331 1.31 5.408.882 7.286-.992 1.855-1.898 2.235-4.963.92-7.245 1.292 2.295.869 5.338-.979 7.186-1.867 1.829-4.9 2.206-7.145.908-2.219-1.31-3.36-4.1-2.718-6.574-.616 2.48.56 5.238 2.76 6.504 2.223 1.256 5.2.842 6.988-.953 1.775-1.807 2.143-4.774.88-6.947 1.239 2.187.83 5.13-.939 6.888-1.777 1.75-4.71 2.114-6.847.87-2.12-1.246-3.223-3.943-2.604-6.3-.593 2.364.544 5.03 2.645 6.229 2.115 1.203 4.993.801 6.69-.914 1.697-1.717 2.051-4.585.843-6.65 1.184 2.08.788 4.924-.9 6.591-1.688 1.67-4.522 2.021-6.551.83-2.02-1.179-3.085-3.785-2.489-6.025-.57 2.247.53 4.822 2.53 5.955 2.007 1.15 4.786.76 6.394-.875 1.616-1.627 1.958-4.395.803-6.353 1.131 1.971.747 4.717-.861 6.295-1.597 1.59-4.332 1.927-6.254.79-1.92-1.113-2.947-3.628-2.373-5.751-.547 2.13.513 4.614 2.414 5.681 1.9 1.096 4.58.72 6.097-.836 1.537-1.536 1.865-4.206.764-6.056 1.077 1.864.707 4.51-.822 5.998-1.507 1.51-4.143 1.835-5.957.752-1.82-1.047-2.808-3.47-2.258-5.477-.524 2.013.498 4.405 2.299 5.406 1.792 1.042 4.373.68 5.8-.797 1.457-1.446 1.773-4.016.725-5.76 1.024 1.757.666 4.305-.783 5.702-1.417 1.43-3.953 1.742-5.66.713-1.721-.981-2.672-3.314-2.145-5.203-.5 1.896.484 4.197 2.186 5.132 1.684.989 4.166.64 5.504-.757 1.377-1.357 1.68-3.828.685-5.463.97 1.649.626 4.097-.744 5.404-1.326 1.35-3.764 1.65-5.363.674-1.621-.915-2.534-3.155-2.03-4.928-.477 1.78.47 3.988 2.07 4.858 1.578.934 3.96.598 5.208-.72 1.297-1.266 1.587-3.638.646-5.165.917 1.54.585 3.89-.705 5.107-1.236 1.271-3.575 1.557-5.066.635-1.522-.849-2.395-2.999-1.914-4.654-.455 1.662.453 3.779 1.955 4.582 1.469.88 3.752.557 4.908-.68 1.217-1.176 1.494-3.447.607-4.865.875 1.425.577 3.685-.636 4.836-1.15 1.213-3.411 1.51-4.836.636-1.47-.797-2.343-2.904-1.867-4.507.39-1.626 2.197-3.013 3.869-2.97V4a1.474 1.474 0 0 0 .002 0 1.474 1.474 0 0 0 1.472-1.473 1.474 1.474 0 0 0-1.472-1.472 1.474 1.474 0 0 0-.002 0z&quot; style=&quot;marker:none&quot; color=&quot;#000&quot; overflow=&quot;visible&quot; fill=&quot;#474747&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;&#x2F;section&gt;
+&lt;p&gt;It actually isn&#x27;t filtered particularly well in Firefox, but is nice and clean in gtk. Firefox amplifies one of the big downsides of this method, it&#x27;s quite prone to moiré. If you hover over the spinner, it reveals the nasty hack how the fade to transparency has been achieved.&lt;&#x2F;p&gt;
+&lt;p&gt;Let me show you how it&#x27;s done in &lt;a href=&quot;https:&#x2F;&#x2F;flathub.org&#x2F;apps&#x2F;details&#x2F;org.inkscape.Inkscape&quot;&gt;Inkscape&lt;&#x2F;a&gt;. The UI is a bit of afterthought, but you can make actual objects follow a path. &lt;&#x2F;p&gt;
+&lt;video controls autoplay loop class=&quot;image full&quot;&gt;
+&lt;source src=&quot;inkscape-10fps.webm&quot; type=&quot;video&#x2F;webm&quot;&gt;
+&lt;source src=&quot;http:&#x2F;&#x2F;jimmac.musichall.cz&#x2F;stuff&#x2F;blog&#x2F;inkscape-10fps.mp4&quot; type=&quot;video&#x2F;mp4&quot;&gt;&lt;!-- safari is very picky --&gt;
+&lt;&#x2F;video&gt;
+&lt;ul&gt;
+&lt;li&gt;The first step will be to create our spinner in its linear form. Create a rectangle, convert it into a shape with &lt;code&gt;Ctrl+Shift+C&lt;&#x2F;code&gt; and subdivide one of the sides a couple of times using the &lt;code&gt;Add Node&lt;&#x2F;code&gt; button in the context menubar.&lt;&#x2F;li&gt;
+&lt;li&gt;To create the etch-gradient, select every even node on the side and move them horizontally.&lt;&#x2F;li&gt;
+&lt;li&gt;Next step is to create the curve this object will follow. The easiest is to use the &lt;code&gt;Ellipse&lt;&#x2F;code&gt; primitive and only make it go along around 270deg rather than a full circle.&lt;&#x2F;li&gt;
+&lt;li&gt;Now onto the magic. Putting shapes onto curves is done with a &lt;code&gt;pattern along curve&lt;&#x2F;code&gt; path effect found in the &lt;code&gt;path&lt;&#x2F;code&gt; menu. Despite the odd terminology, path effects can be previewed in real time and working with them is much easier than filters.
+Setting the source shape can be done multiple ways, but I found pasting from clipboard the easiest. If the source object is actually on canvas, the shape will remain &lt;em&gt;linked&lt;&#x2F;em&gt; and editing the source shape will result in the path effect updating on the target curve in real time, allowing iteration into perfection.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;I bet there is a filter that can produce halftoning out of a gradient, but who&#x27;s brave enough to spend an evening in the &lt;code&gt;filters&lt;&#x2F;code&gt; menu.&lt;&#x2F;p&gt;
+&lt;p&gt;The best thing about the spinner is that &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-software&#x2F;&quot;&gt;Software&lt;&#x2F;a&gt; is now getting a lot less of it. Phillip &amp;amp; Milan, thank you.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Onboarding Sketches</title>
+        <published>2021-08-16T00:00:00+00:00</published>
+        <updated>2021-08-16T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/onboarding-sketches/"/>
+        <id>https://blog.jimmac.eu/posts/onboarding-sketches/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/onboarding-sketches/">&lt;!-- &lt;a href=&quot;{{ site.url }}{{ page.url }}&quot;&gt;absolute links&lt;&#x2F;a&gt; --&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;onboarding-sketches&#x2F;connections-hope.png&quot; alt=&quot;Connections: Hope&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;div class=&quot;inlineimgs&quot;&gt;
+&lt;a href=&quot;connections-1.png&quot;&gt;&lt;img src=&quot;connections-1.png&quot; alt=&quot;&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;connections-2.png&quot;&gt;&lt;img src=&quot;connections-2.png&quot; alt=&quot;&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;connections-3.png&quot;&gt;&lt;img src=&quot;connections-3.png&quot; alt=&quot;&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;connections-4.png&quot;&gt;&lt;img src=&quot;connections-4.png&quot; alt=&quot;&quot;&gt;&lt;&#x2F;a&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;GNOME 41 is now UI frozen, so without spoiling the release much, I&#x27;d like to share some of the explorations that led to some of the onboarding in both app space (mostly &lt;a href=&quot;https:&#x2F;&#x2F;flathub.org&#x2F;apps&#x2F;details&#x2F;org.gnome.Connections&quot;&gt;Connections&lt;&#x2F;a&gt;) and the new &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-tour&quot;&gt;Tour&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;onboarding-sketches&#x2F;tour-6.png&quot; alt=&quot;Tour: Welcome&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;div class=&quot;inlineimgs&quot;&gt;
+&lt;a href=&quot;tour-1.png&quot;&gt;&lt;img src=&quot;tour-1.png&quot; alt=&quot;&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;tour-7.png&quot;&gt;&lt;img src=&quot;tour-7.png&quot; alt=&quot;&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;tour-3.png&quot;&gt;&lt;img src=&quot;tour-3.png&quot; alt=&quot;&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;tour-4.png&quot;&gt;&lt;img src=&quot;tour-4.png&quot; alt=&quot;&quot;&gt;&lt;&#x2F;a&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;posts&#x2F;tour-sketches&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>How to Symbolic Icon</title>
+        <published>2021-04-30T00:00:00+00:00</published>
+        <updated>2021-04-30T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/how-to-symbolic/"/>
+        <id>https://blog.jimmac.eu/posts/how-to-symbolic/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/how-to-symbolic/">&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;how-to-symbolic&#x2F;icon-tooling.svg&quot; alt=&quot;Icon Tooling&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Unlike &lt;a href=&quot;&#x2F;posts&#x2F;the-big-app-icon-redesign&#x2F;&quot;&gt;application icons&lt;&#x2F;a&gt;, the &lt;a href=&quot;https:&#x2F;&#x2F;teams.pages.gitlab.gnome.org&#x2F;Design&#x2F;hig-www&#x2F;guidelines&#x2F;ui-icons.html&quot;&gt;symbolic icons&lt;&#x2F;a&gt; don&#x27;t convey application identity, but rely on visual metaphor to describe an action (what a button in the UI does).&lt;&#x2F;p&gt;
+&lt;p&gt;GNOME has not used fullcolor icons in toolbars and most of the UI in many years. Instead we use symbols, adjusting legibility and their rendering the same way we do with text (recoloring the foreground and background as you can demo switching the dark theme on this blog post).&lt;&#x2F;p&gt;
+&lt;p&gt;{% include_relative symbols.svg %}&lt;&#x2F;p&gt;
+&lt;p&gt;But how does one create such an icon? Here&#x27;s a walkthrough of the process, using our 2021 tooling. While the actual drawing of shapes still happens in &lt;a href=&quot;https:&#x2F;&#x2F;flathub.org&#x2F;apps&#x2F;details&#x2F;org.inkscape.Inkscape&quot;&gt;Inkscape&lt;&#x2F;a&gt;, the workflow is now heavily supported by a suite of &lt;a href=&quot;https:&#x2F;&#x2F;tools.design.gnome.org&quot;&gt;design tools&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Before we dive into &lt;em&gt;creation&lt;&#x2F;em&gt; though, let&#x27;s start with a more common case: In many cases developers just want to pick and use an existing icon rather than attempting to create it or commission a designer.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;finding-an-icon&quot;&gt;Finding an Icon&lt;&#x2F;h2&gt;
+&lt;p&gt;Historically, looking up icons has been a matter of familiarizing yourself with the &lt;a href=&quot;https:&#x2F;&#x2F;developer.gnome.org&#x2F;icon-naming-spec&#x2F;&quot;&gt;icon naming spec&lt;&#x2F;a&gt;, which was built on the concept of &lt;em&gt;semantic naming&lt;&#x2F;em&gt;. However, it turns out developers really just want that symbol that &lt;em&gt;looks like a door&lt;&#x2F;em&gt;, rather than adhering to the strict semantic constraints. Combined with icon themes and evolving visual trends this semantic dream gradually faded over time.&lt;&#x2F;p&gt;
+&lt;p&gt;The very basic set of icons is provided directly by the &lt;a href=&quot;https:&#x2F;&#x2F;gtk.org&quot;&gt;toolkit&lt;&#x2F;a&gt;. For the most part it still adheres to the semantic names such as &lt;code&gt;edit-copy&lt;&#x2F;code&gt; or &lt;code&gt;menu-open&lt;&#x2F;code&gt; rather than descriptive names like &lt;code&gt;scissors&lt;&#x2F;code&gt; or &lt;code&gt;pencil&lt;&#x2F;code&gt;. The coverage of the set is &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gtk&#x2F;-&#x2F;tree&#x2F;master&#x2F;gtk&#x2F;icons&#x2F;scalable&quot;&gt;quite conservative&lt;&#x2F;a&gt; and you&#x27;re likely to need something that isn&#x27;t provided by GTK itself. &lt;&#x2F;p&gt;
+&lt;p&gt;Sounds like a lot of work? Lucky for you we have &lt;a href=&quot;https:&#x2F;&#x2F;flathub.org&#x2F;apps&#x2F;details&#x2F;org.gnome.design.IconLibrary&quot;&gt;Icon Library&lt;&#x2F;a&gt; to make this easy!&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;icon-library&quot;&gt;Icon Library&lt;&#x2F;h3&gt;
+&lt;p&gt;The app can help you not only to search for an appropriate icon using keywords, it can assist you distributing the assets along with your app (as a &lt;a href=&quot;https:&#x2F;&#x2F;developer.gnome.org&#x2F;gio&#x2F;stable&#x2F;GResource.html&quot;&gt;gresource&lt;&#x2F;a&gt;). While it&#x27;s on you as a developer to maintain the assets you bundle, no longer will your app break when you&#x27;ve used the &lt;code&gt;the wrench&lt;&#x2F;code&gt; icon when the designers followed a trend of using a pegged wheel for &lt;code&gt;preferences&lt;&#x2F;code&gt; or decided to drop an old or unused icon.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;flathub.org&#x2F;apps&#x2F;details&#x2F;org.gnome.design.IconLibrary&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;how-to-symbolic&#x2F;icon-library.png&quot; alt=&quot;Icon Library&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;It&#x27;s worth noting the app is also quite useful for designers, since you can also copy &amp;amp; paste icons into mockups easily.&lt;&#x2F;p&gt;
+&lt;p&gt;The application is currently being ported to &lt;a href=&quot;https:&#x2F;&#x2F;gtk.org&quot;&gt;GTK 4&lt;&#x2F;a&gt; so there&#x27;s a lot of moving parts in the air at the moment, but the latest release on Flathub is perfectly usable.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;creation&quot;&gt;Creation&lt;&#x2F;h2&gt;
+&lt;p&gt;So let&#x27;s assume the icons available don&#x27;t really fit your need and you need to create one from scratch. I should boldly proclaim that with no API-like maintenance burden, the design team is more than happy to fulfill app developers&#x27; requests. Especially apps aiming to be listed in &lt;a href=&quot;https:&#x2F;&#x2F;circle.gnome.org&quot;&gt;GNOME Circle&lt;&#x2F;a&gt;, feel free to request an icon &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;Teams&#x2F;Design&#x2F;icon-development-kit&#x2F;-&#x2F;issues&quot;&gt;on Gitlab&lt;&#x2F;a&gt;. &lt;&#x2F;p&gt;
+&lt;p&gt;The first step is always to figure out &lt;strong&gt;the metaphor&lt;&#x2F;strong&gt;. Sketching out some ideas on paper is a solid recommendation. Even if you think you&#x27;re no good at sketching, try it. In fact, especially when you&#x27;re not good at sketching, the process will help you identify very strong metaphors that convey the meaning even using a few squibbly lines. The more definition you provide, the harder it is to tell whether the function isn&#x27;t overshadowed by the form.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;how-to-symbolic&#x2F;sketching.png&quot; alt=&quot;Sketching&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Once you&#x27;re somewhat convinced a fitting metaphor can be executed on the 16x16 pixel grid, it&#x27;s time to reach for the tool to guide your throughout the process, &lt;a href=&quot;https:&#x2F;&#x2F;flathub.org&#x2F;apps&#x2F;details&#x2F;org.gnome.design.SymbolicPreview&quot;&gt;Symbolic Preview&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;a-handful&quot;&gt;A Handful&lt;&#x2F;h3&gt;
+&lt;p&gt;Let&#x27;s assume you have a small app that is very early in development and you decided to make it easy to report issues with it and need a &lt;code&gt;report bug&lt;&#x2F;code&gt; icon for the headerbar.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;how-to-symbolic&#x2F;pencil.jpg&quot; alt=&quot;Pencil&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;Symbolic Preview&lt;&#x2F;code&gt; either allows you to create a single symbolic or a sheet with many symbolics. In our first case, we&#x27;ll go for just one.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;how-to-symbolic&#x2F;single-vs-many.png&quot; alt=&quot;Single Symbolic&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;After providing a name for your icon (prefixing with app name can avoid some &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-screenshot&#x2F;-&#x2F;issues&#x2F;125&quot;&gt;theming issues&lt;&#x2F;a&gt;) a template is saved. Currently you have to do some file system surfing to open up the asset in &lt;a href=&quot;https:&#x2F;&#x2F;flathub.org&#x2F;apps&#x2F;details&#x2F;org.inkscape.Inkscape&quot;&gt;Inkscape&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;how-to-symbolic&#x2F;single-1.png&quot; alt=&quot;File Naming&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Symbolic preview can be used as its name suggests. Currently it doesn&#x27;t &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;World&#x2F;design&#x2F;symbolic-preview&#x2F;-&#x2F;issues&#x2F;26&quot;&gt;auto-reload&lt;&#x2F;a&gt; on changes, but hopefully that will come soon. &lt;&#x2F;p&gt;
+&lt;p&gt;There are some &lt;a href=&quot;https:&#x2F;&#x2F;teams.pages.gitlab.gnome.org&#x2F;Design&#x2F;hig-www&#x2F;guidelines&#x2F;ui-icons.html&quot;&gt;basic guidelines&lt;&#x2F;a&gt; on how to produce a GNOME symbolic icons, but to provide a &lt;em&gt;tl;dr&lt;&#x2F;em&gt; — &lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Use filled shapes to provide enough contrast&lt;&#x2F;li&gt;
+&lt;li&gt;Maintain the overall contrast not going edge to edge&lt;&#x2F;li&gt;
+&lt;li&gt;Main outline should not use a hairline stroke, 2px strokes are advised&lt;&#x2F;li&gt;
+&lt;li&gt;Convert strokes to outlines. The old toolchain allowed to use strokes as long as no fill was used on the same object, but it has been the source of many misrenderings. Just convert all strokes to outlines with &lt;code&gt;Path&amp;gt;Stroke to Path&lt;&#x2F;code&gt; in Inkscape.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;how-to-symbolic&#x2F;single-2.png&quot; alt=&quot;Symbolic Preview&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The app provides different color contexts and displays your icon among existing symbolics, not unlike what App Icon Preview does for app icons. Again, this is when you only need to ship a handful of icons with your app.&lt;&#x2F;p&gt;
+&lt;p&gt;Your needs may, however, exceed just a few. Maintaining lots of individual icons in separate files becomes daunting. Also, there is no need to see your icons in the context of others when they form a large enough set on their own. &lt;&#x2F;p&gt;
+&lt;p&gt;The same app we just used to create and test a single symbolic icon can be used to maintain a large set of symbolics in a single library file. The &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;Teams&#x2F;Design&#x2F;icon-development-kit&quot;&gt;icon-development-kit&lt;&#x2F;a&gt; that is the source for most of the icons you can search with &lt;a href=&quot;https:&#x2F;&#x2F;flathub.org&#x2F;apps&#x2F;details&#x2F;org.gnome.design.IconLibrary&quot;&gt;Icons Library&lt;&#x2F;a&gt; is also maintained this way. Let&#x27;s take a look how you can maintain a whole set of symbolics icons.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;a-lot&quot;&gt;A Lot&lt;&#x2F;h3&gt;
+&lt;p&gt;Unlike individual icons, for preview and export to work, this workflow is very Inkscape centered and there are numerous constraints to be mindful of, so let&#x27;s dive in.&lt;&#x2F;p&gt;
+&lt;h4 id=&quot;export-conventions&quot;&gt;Export Conventions&lt;&#x2F;h4&gt;
+&lt;p&gt;There are a few conventions you need to follow in order for the export to work. Icon devel kit describes the &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;Teams&#x2F;Design&#x2F;icon-development-kit&quot;&gt;conventions in detail&lt;&#x2F;a&gt;, but let&#x27;s sum them up here:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Each icon is a group (&lt;code&gt;&amp;lt;g&amp;gt;&lt;&#x2F;code&gt;). To force its size to be 16x16px, the icon should include a &lt;code&gt;&amp;lt;rect&amp;gt;&lt;&#x2F;code&gt; with no stroke or fill, that is exactly 16x16 and aligns to the pixel grid. This rectangle is removed during export.&lt;&#x2F;li&gt;
+&lt;li&gt;The name of the icon is taken from the &lt;code&gt;title&lt;&#x2F;code&gt; property of the group in the object properties in Inkscape (&lt;code&gt;Object&amp;gt;Object Properties&lt;&#x2F;code&gt;). (&lt;code&gt;&amp;lt;title&#x2F;&amp;gt;&lt;&#x2F;code&gt;).&lt;&#x2F;li&gt;
+&lt;li&gt;If you wish to omit an icon in the preview and export, don&#x27;t provide a name for it or append &lt;code&gt;-old&lt;&#x2F;code&gt; to it. This can be useful for some &#x27;build assets&#x27;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h4 id=&quot;metadata&quot;&gt;Metadata&lt;&#x2F;h4&gt;
+&lt;p&gt;While it&#x27;s mainly useful for maintaining a collection like icon-development-kit, you will save yourself time &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;World&#x2F;design&#x2F;symbolic-preview&#x2F;-&#x2F;issues&#x2F;31&quot;&gt;looking up your own assets&lt;&#x2F;a&gt; if you provide some metadata describing your icon. &lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;how-to-symbolic&#x2F;multiple-1.png&quot; alt=&quot;Sheet Preview&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Keywords for an icon are given as space separated words in the &lt;code&gt;label&lt;&#x2F;code&gt; attribute in object properties in Inkscape (&lt;code&gt;inkscape:label&lt;&#x2F;code&gt; attribute).&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;acknowledgments&quot;&gt;Acknowledgments&lt;&#x2F;h1&gt;
+&lt;p&gt;Jokingly we refer to the &lt;a href=&quot;https:&#x2F;&#x2F;tools.design.gnome.org&quot;&gt;design tool page&lt;&#x2F;a&gt; as the &lt;em&gt;Bilal page&lt;&#x2F;em&gt;. A huge thank you goes to &lt;a href=&quot;https:&#x2F;&#x2F;belmoussaoui.com&#x2F;&quot;&gt;Bilal Elmoussaoui&lt;&#x2F;a&gt; for writing brilliant apps for GNOME and making the design process a little less punishing.&lt;&#x2F;p&gt;
+&lt;style type=&quot;text&#x2F;css&quot;&gt;
+#symbols {
+  width: 100%;
+}
+
+#symbols g.symbolic { fill:#000; }
+body[data-theme=&quot;dark&quot;] #symbols g.symbolic {
+	fill:#fff; 
+}
+
+&lt;&#x2F;style&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Tour Sketches</title>
+        <published>2021-02-25T00:00:00+00:00</published>
+        <updated>2021-02-25T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/tour-sketches/"/>
+        <id>https://blog.jimmac.eu/posts/tour-sketches/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/tour-sketches/">&lt;!-- &lt;a href=&quot;{{ site.url }}{{ page.url }}&quot;&gt;absolute links&lt;&#x2F;a&gt; --&gt;
+&lt;p&gt;![Welcome](Tour_Welcome 1.png)&lt;&#x2F;p&gt;
+&lt;p&gt;One of the things that came up during &lt;a href=&quot;https:&#x2F;&#x2F;blogs.gnome.org&#x2F;shell-dev&#x2F;2021&#x2F;02&#x2F;15&#x2F;shell-ux-changes-the-research&#x2F;&quot;&gt;user testing&lt;&#x2F;a&gt; GNOME 40 was that people went through the &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-tour&quot;&gt;Tour&lt;&#x2F;a&gt; and all the abstract(ish) UI illustrations didn&#x27;t really help people orient themselves on screen. We did get positive feedback on the feel of the tour though. For the new Tour &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;Teams&#x2F;Design&#x2F;os-mockups&#x2F;-&#x2F;issues&#x2F;79&quot;&gt;we iterated&lt;&#x2F;a&gt; on some illustrations that help solidify &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;Teams&#x2F;Design&#x2F;app-illustrations&quot;&gt;the style&lt;&#x2F;a&gt; and give a nice welcoming vibe to the experience.&lt;&#x2F;p&gt;
+&lt;div class=&quot;inlineimgs&quot;&gt;
+&lt;a href=&quot;Tour_Arrange_Yourself.png&quot;&gt;&lt;img src=&quot;Tour_Arrange_Yourself.png&quot; alt=&quot;Arrange&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;Tour_Overview.png&quot;&gt;&lt;img src=&quot;Tour_Overview.png&quot; alt=&quot;Overview&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;Tour_Workspaces.png&quot;&gt;&lt;img src=&quot;Tour_Workspaces.png&quot; alt=&quot;Workspaces&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;Tour_Up_And_Down_For_Overview.png&quot;&gt;&lt;img src=&quot;Tour_Up_And_Down_For_Overview.png&quot; alt=&quot;Touch&quot;&gt;&lt;&#x2F;a&gt;
+&lt;&#x2F;div&gt;
+&lt;p&gt;Because you can soon experience GNOME 40 yourself, here&#x27;s a few sketches of the exploratory phase. Be sure to check out some background on how the &lt;a href=&quot;&#x2F;posts&#x2F;animated-tour&#x2F;&quot;&gt;animations were done&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;tour-sketches&#x2F;Tour%EF%80%A2_Press_Super.png&quot; alt=&quot;Press Super&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;div class=&quot;inlineimgs&quot;&gt;
+&lt;a href=&quot;Tour_Welcome.png&quot;&gt;&lt;img src=&quot;Tour_Welcome.png&quot; alt=&quot;Welcome&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;Tour_Overview.png&quot;&gt;&lt;img src=&quot;Tour_Overview.png&quot; alt=&quot;Overview 2&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;TourWorkspaces.png&quot;&gt;&lt;img src=&quot;Tour_Workspaces.png&quot; alt=&quot;Workspaces 2&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;Tour_Workspaces.png&quot;&gt;&lt;img src=&quot;Tour_Workspaces.png&quot; alt=&quot;Workspaces&quot;&gt;&lt;&#x2F;a&gt;
+&lt;&#x2F;div&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Git Worktree — Concurrent Development</title>
+        <published>2021-02-06T00:00:00+00:00</published>
+        <updated>2021-02-06T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/git-worktree/"/>
+        <id>https://blog.jimmac.eu/posts/git-worktree/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/git-worktree/">&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;git-worktree&#x2F;git-worktree.png&quot; alt=&quot;git worktree&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Sometimes you have to sit on two chairs at the same time. No, I don&#x27;t mean to give you east-European political advice. I mean developing things in two concurrent branches can be a pain with the constant switching. &lt;&#x2F;p&gt;
+&lt;p&gt;In my case I need to develop a stylesheet for both &lt;em&gt;gtk3&lt;&#x2F;em&gt; and &lt;em&gt;gtk4&lt;&#x2F;em&gt; at the same time, usually having to compare the two running concurrently. &lt;a href=&quot;https:&#x2F;&#x2F;blogs.gnome.org&#x2F;mclasen&#x2F;&quot;&gt;Matthias&lt;&#x2F;a&gt; recently introduced me to the secret cabal of people knowing about &lt;code&gt;git worktree&lt;&#x2F;code&gt;. Thanks to it you can have two branches of the same project checked out at the same time, not only saving you the (cheap) drive space, but keeping a single history so &lt;em&gt;cherry picking&lt;&#x2F;em&gt; and diffing between the two doesn&#x27;t need to involve refreshing remotes or jumping through other hoops.&lt;&#x2F;p&gt;
+&lt;p&gt;So let&#x27;s take a look at my scenario. I have gtk checked out in &lt;a href=&quot;https:&#x2F;&#x2F;flathub.org&#x2F;apps&#x2F;details&#x2F;org.gnome.Builder&quot;&gt;Builder&lt;&#x2F;a&gt;, by default going to &lt;code&gt;~&#x2F;Projects&#x2F;gtk&lt;&#x2F;code&gt;. The &lt;code&gt;master&lt;&#x2F;code&gt; branch equates to the new goodness of &lt;em&gt;gtk4&lt;&#x2F;em&gt;. Pushing the &lt;em&gt;run&lt;&#x2F;em&gt; button will build me &lt;code&gt;gtk4-widget-factory&lt;&#x2F;code&gt; ready to test the stylesheet. But to have the gtk3 equivalent run side by side, I don&#x27;t use a duplicate of the repo, but instead created a worktree copy:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;cd ~&amp;#x2F;Projects&amp;#x2F;gtk
+git checkout -tb gtk-3-24 origin&amp;#x2F;gtk-3-24 
+git checkout master 
+git worktree add ..&amp;#x2F;gtk3 gtk-3-24
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;At this point you can open the &lt;code&gt;gtk3&lt;&#x2F;code&gt; project in Builder and works as if those were not closely interconnected. But every commit is &#x27;visible&#x27; in the other project.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Animated Tour</title>
+        <published>2021-02-05T00:00:00+00:00</published>
+        <updated>2021-02-05T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/animated-tour/"/>
+        <id>https://blog.jimmac.eu/posts/animated-tour/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/animated-tour/">&lt;p&gt;We&#x27;ve &lt;a href=&quot;&#x2F;posts&#x2F;svg-animation&#x2F;&quot;&gt;struggled&lt;&#x2F;a&gt; with bringing subtle animation to GNOME in the past. There is interest in bringing it in &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gtk&#x2F;-&#x2F;tree&#x2F;wip&#x2F;otte&#x2F;lottie&quot;&gt;some shape&lt;&#x2F;a&gt; or form to &lt;em&gt;gtk4&lt;&#x2F;em&gt;. The bad news is the tools are still lacking on the production side. There&#x27;s not much past &lt;a href=&quot;https:&#x2F;&#x2F;glaxnimate.mattbas.org&#x2F;&quot;&gt;Glaxanimate&lt;&#x2F;a&gt; to do even simple transforms.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;animated-tour&#x2F;sketch-ws.png&quot; alt=&quot;Tour Storyboard&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;While we iterated on the &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;Teams&#x2F;Design&#x2F;os-mockups&#x2F;-&#x2F;issues&#x2F;79&quot;&gt;GNOME 40 onboarding&lt;&#x2F;a&gt;, it became clear a subtle animation for the touch gestures would really help. And because the CSS machinery in gtk is fairly capable, I experimented implementing such a thing with good&#x27;ol &lt;code&gt;@keyframes&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;While anything more complex would be a nightmare, animating the hand going back and forth is well served by a simple CSS rule:&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;@keyframes left-and-right {
+    from { background-position: 40% 30%, center 30%, center; }
+    to { background-position: 60% 30%, center 30%, center; }
+}
+
+.page:nth-child(6) {   &amp;#x2F;* left right *&amp;#x2F;
+  background: url(&amp;#x27;&amp;#x2F;org&amp;#x2F;gnome&amp;#x2F;Tour&amp;#x2F;hand-fg.svg&amp;#x27;),
+              url(&amp;#x27;&amp;#x2F;org&amp;#x2F;gnome&amp;#x2F;Tour&amp;#x2F;leftright-bg.svg&amp;#x27;);
+  background-repeat: no-repeat;
+  background-position: center 30%;
+  animation: left-and-right 2s ease-in-out infinite alternate;
+}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;It&#x27;s a bit fragile, but a first shy step for animations in the UI. Hopefully first of many.&lt;&#x2F;p&gt;
+&lt;video controls autoplay loop class=&quot;image full&quot;&gt;
+&lt;source src=&quot;css-anim.webm&quot; type=&quot;video&#x2F;webm&quot;&gt;
+&lt;source src=&quot;css-anim.mp4&quot; type=&quot;video&#x2F;mp4&quot;&gt;
+&lt;&#x2F;video&gt;</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Art vs Design</title>
+        <published>2020-04-06T00:00:00+00:00</published>
+        <updated>2020-04-06T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/art-vs-design/"/>
+        <id>https://blog.jimmac.eu/posts/art-vs-design/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/art-vs-design/">&lt;p&gt;Over the weekend I was forced to unload all my photos from my phone due to limited storage space. As I went through a nice capture of Builder nighly caught my attention and I couldn&#x27;t help but &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;jimmac&#x2F;status&#x2F;1246208150233112577&quot;&gt;post it on twitter&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;art-vs-design&#x2F;cyberdine.jpeg&quot; alt=&quot;&amp;quot;Cyberdyne Builder&amp;quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Obviously posting on twitter meant it was misunderstood immediately and quipped with entitled adjectives. And rather than responding on the wrong platform, I finally have an excuse to post on my blog again. So let&#x27;s take a look at the &lt;em&gt;horrible situation&lt;&#x2F;em&gt; we ended up with.&lt;&#x2F;p&gt;
+&lt;p&gt;Thanks to &lt;a href=&quot;https:&#x2F;&#x2F;flatpak.org&quot;&gt;Flatpak&lt;&#x2F;a&gt; you now have a way to install a stable and development versions of an app, concurrenly. You can easily tell them apart without resorting to Name suffices in the shell, where the actual name gets horribly truncated due to ellipsization, while still clearly being the same app on a first glimpse.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;art-vs-design&#x2F;boxes-nightly.jpg&quot; alt=&quot;&amp;quot;Stable and Nightly Boxes&amp;quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;There&#x27;s plenty of apps already making use of this. So how does an app developer get one? We actually have the tooling for that. If you have an app icon, you can easily generate a nightly variant with zero effort in most cases.&lt;&#x2F;p&gt;
+&lt;video class=&quot;full&quot; muted=&quot;&quot; controls=&quot;&quot;&gt;
+  &lt;source src=&quot;.&#x2F;nightly-icons.mp4&quot; type=&quot;video&#x2F;mp4&quot;&gt;
+  &lt;source src=&quot;.&#x2F;nightly-icons.webm&quot; type=&quot;video&#x2F;webm&quot;&gt;
+Your browser does not support the video tag.
+&lt;&#x2F;video&gt;
+&lt;p&gt;So what was the situation twitter was praising? Let&#x27;s count on how many GNOME applications shipped a custom nighly icon. Umm, how about &lt;strong&gt;zero&lt;&#x2F;strong&gt;?&lt;&#x2F;p&gt;
+&lt;p&gt;A pretty picture an artist spends hours on, modelling, texturing, lighting, adjusting for low resolution screens is &lt;em&gt;not&lt;&#x2F;em&gt; a visual framework nor a reasonable thing to ask app developers to do.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>The Big App Icon Redesign</title>
+        <published>2019-01-23T00:00:00+00:00</published>
+        <updated>2019-01-23T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/the-big-app-icon-redesign/"/>
+        <id>https://blog.jimmac.eu/posts/the-big-app-icon-redesign/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/the-big-app-icon-redesign/">&lt;h1 id=&quot;the-revolution-is-coming&quot;&gt;The Revolution is Coming&lt;&#x2F;h1&gt;
+&lt;p&gt;As you may have heard, GNOME 3.32 is going to come with a radical new icon style and new guidelines for app developers. This post aims to give some background on why this was needed, our goals with the initiative, and our exciting plans for the future.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;the-problem&quot;&gt;The Problem&lt;&#x2F;h1&gt;
+&lt;p&gt;Our current icon style dates back all the way to the early 00s and the original &lt;a href=&quot;http:&#x2F;&#x2F;tango.freedesktop.org&#x2F;Tango_Icon_Theme_Guidelines&quot;&gt;Tango&lt;&#x2F;a&gt;. One of the foundational ideas behind Tango was that each icon is drawn at multiple sizes, in order to look pixel-perfect in every context. This means that if you want to make an app icon you&#x27;re not drawing one, but up to 7 separate icons (symbolic, 16px, 22px, 24px, 32px, 48px, and 512px).&lt;&#x2F;p&gt;
+&lt;img src=&quot;xchat.png&quot; alt=&quot;Xchat&quot; class=&quot;centered&quot;&gt;
+&lt;div class=&quot;inlineimgs&quot;&gt;
+&lt;img src=&quot;boxes.png&quot; alt=&quot;Boxes&quot;&gt;
+&lt;img src=&quot;builder.png&quot; alt=&quot;Builder&quot;&gt;
+&lt;img src=&quot;gimp.png&quot; alt=&quot;GIMP&quot;&gt;
+&lt;img src=&quot;gitg.png&quot; alt=&quot;Gitg&quot;&gt;
+&lt;img src=&quot;inkscape.png&quot; alt=&quot;Inkscape&quot;&gt;
+&lt;img src=&quot;music.png&quot; alt=&quot;Music&quot;&gt;
+&lt;img src=&quot;photos.png&quot; alt=&quot;Photos&quot;&gt;
+&lt;img src=&quot;recipe.png&quot; alt=&quot;Recipe&quot;&gt;
+&lt;&#x2F;div&gt;
+Making these icons takes quite a bit of experience and craftsmanship, and many of our high-detail icons are more [art than design](&#x2F;blog&#x2F;2018-07-18-detail-considered-harmful&#x2F;). However, as a part of our design system the style has not succeeded, and is in dire need of reform. Some of the major issues:
+&lt;ul&gt;
+&lt;li&gt;Many of the sizes aren&#x27;t being used anywhere in the OS, and haven&#x27;t been for the better part of a decade. Since we use either large sizes or symbolics in most contexts, the pixel-hinted small sizes are rarely seen by anyone.&lt;&#x2F;li&gt;
+&lt;li&gt;Only a handful of people have the skills to draw icons in this style, and it can take weeks to do a single app icon. This means that iterating on the style is very hard, which is one of the reasons why our icon style has been stagnant for years.&lt;&#x2F;li&gt;
+&lt;li&gt;Very few third-party apps are following the guidelines. Our icons are simply too hard to draw for mere mortals, and as a result even the best third-party GNOME apps often have bad icons.&lt;&#x2F;li&gt;
+&lt;li&gt;We (GNOME Designers) don&#x27;t have the bandwidth to keep up with icon requests from developers, let alone update or evolve the style overall.&lt;&#x2F;li&gt;
+&lt;li&gt;The wider industry has moved on from the detailed icon styles of the 2000s, which gives new users the impression that our software is outdated.&lt;&#x2F;li&gt;
+&lt;li&gt;Cross-platform apps tend to ship with very simple, flat icons these days. The contrast between these icons and our super detailed ones can be quite jarring. &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;div class=&quot;inlineimgs&quot; markdown=&quot;1&quot;&gt;
+![Peek](peek.png)
+![Firefox](firefox.png)
+![Skype](skype.png)
+![Spotify](spotify.png)
+&lt;&#x2F;div&gt;
+&lt;h1 id=&quot;a-new-beginning&quot;&gt;A New Beginning&lt;&#x2F;h1&gt;
+&lt;p&gt;One of the major project-wide goals GNOME over the past years has been empowering app developers. A big reason for this initiative is that we realized that the current style is holding us back as an ecosystem. Just as &lt;a href=&quot;https:&#x2F;&#x2F;wiki.gnome.org&#x2F;Apps&#x2F;Builder&quot;&gt;Builder&lt;&#x2F;a&gt; is about providing a seamless development workflow, and &lt;a href=&quot;https:&#x2F;&#x2F;flatpak.org&#x2F;&quot;&gt;Flatpak&lt;&#x2F;a&gt; is about enabling direct distribution, this initiative is about making good icons more attainable for more apps.&lt;&#x2F;p&gt;
+&lt;p&gt;So, what would a system designed from the ground up to empower app developers&#x2F;designers to make good icons look like?&lt;&#x2F;p&gt;
+&lt;p&gt;The first step is having clearer guidelines and &lt;a href=&quot;&#x2F;blog&#x2F;2017-01-25-artistic-constraints&#x2F;&quot;&gt;more constraints&lt;&#x2F;a&gt;. The old style was all about eyeballing it and doing what feels right. That&#x27;s fine for &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;lapz&quot;&gt;veteran designers&lt;&#x2F;a&gt; used to the style, but makes it inaccessible to newcomers. The new style comes with a grid, a set of recommended base shapes, and a new color palette. We have also updated the section on &lt;a href=&quot;https:&#x2F;&#x2F;developer.gnome.org&#x2F;hig&#x2F;stable&#x2F;icon-design.html.en&quot;&gt;app icons&lt;&#x2F;a&gt; in the &lt;a href=&quot;https:&#x2F;&#x2F;developer.gnome.org&#x2F;hig&#x2F;stable&#x2F;&quot;&gt;HIG&lt;&#x2F;a&gt; with a lot more detailed information on how to design the icons.&lt;&#x2F;p&gt;
+&lt;video controls autoplay loop class=&quot;image full&quot;&gt;
+&lt;source src=&quot;color.webm&quot; type=&quot;video&#x2F;webm&quot;&gt;
+&lt;&#x2F;video&gt;
+&lt;div class=&quot;inlineimgs&quot; markdown=&quot;1&quot;&gt;
+![Template](Template.png)
+![Template2](Template2.png)
+![Template3](Template3.png)
+![Template4](Template4.png)
+![Round icon](icon-round.svg)
+![Landscape](icon-landscape.svg)
+![Portrait](icon-portrait.svg)
+![Square](icon-square.svg)
+&lt;&#x2F;div&gt;
+&lt;p&gt;The style is very &lt;strong&gt;geometric&lt;&#x2F;strong&gt;, making it easy to reuse and adapt elements from other icons. We&#x27;re also removing baked-in drop shadows in favour of drawing them automatically from the icon&#x27;s alpha channel in GTK&#x2F;Shell depending on the rendering context. In most cases 3rd party icons don&#x27;t come with baked in shadows and this makes icons easier to draw and ensures consistent shadows.&lt;&#x2F;p&gt;
+&lt;p&gt;Another cornerstone of this initiative is reducing the number of icons to be drawn: From now on, you only need one full color icon and a monochrome symbolic icon.&lt;&#x2F;p&gt;
+&lt;p&gt;The color icon is optimized for 64px (with a nominal size of 128px for historical reasons), but the simple geometric style without 1px strokes means that it also looks good larger &lt;em&gt;and&lt;&#x2F;em&gt; smaller.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;the-big-app-icon-redesign&#x2F;onesize.png&quot; alt=&quot;One size&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;This means the workflow changes from drawing 6 icons to just one (plus one symbolic icon). It also simplifies the way icons are shipped in apps. Instead of a a half dozen rendered PNGs, we can now ship a single color SVG (and a symbolic SVG). Thanks to the simple style most icons are only around 15kB.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;the-big-app-icon-redesign&#x2F;template-plus-symbolic.svg&quot; alt=&quot;Template with symbolic&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h1&gt;Welcome to the Future&lt;&#x2F;h1&gt;
+&lt;p&gt;Having this single source of truth makes it orders of magnitude easier to iterate on different metaphors for individual icons, update the style as a whole, and a number of other exciting things we&#x27;re working towards.&lt;&#x2F;p&gt;
+&lt;div class=&quot;inlineimgs&quot; markdown=&quot;1&quot;&gt;
+![Darktable](nightly-darktable.svg)
+![Games](nightly-games.svg)
+![PasswordSafe](nightly-passwordsafe.svg)
+![Fragments](nightly-fragments.svg)
+&lt;&#x2F;div&gt;
+&lt;p&gt;We&#x27;ve also been working on improving design tooling as part of this initiative. &lt;a href=&quot;https:&#x2F;&#x2F;flathub.org&#x2F;apps&#x2F;details&#x2F;org.gnome.IconPreview&quot;&gt;Icon Preview&lt;&#x2F;a&gt;, a new app by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ZanderBrown&quot;&gt;Zander Brown&lt;&#x2F;a&gt;, is designed to make the icon design workflow smoother and faster. It allows you to quickly get started from a template, preview an icon in various contexts as you&#x27;re designing it, and then finally optimizing and exporting the SVG to use in apps. The latter part is not quite ready yet, but the app already works great for the former two use cases.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;the-big-app-icon-redesign&#x2F;icon-preview.png&quot; alt=&quot;Icon Preview&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;let-s-make-beautiful-app-icons&quot;&gt;Let&#x27;s Make Beautiful App Icons!&lt;&#x2F;h1&gt;
+&lt;p&gt;If you&#x27;re a graphics designer and wish to bring consistency to the world of application icons, familiarize yourselves with &lt;a href=&quot;https:&#x2F;&#x2F;developer.gnome.org&#x2F;hig&#x2F;stable&#x2F;icon-design.html.en&quot;&gt;the style&lt;&#x2F;a&gt;, grab &lt;a href=&quot;https:&#x2F;&#x2F;flathub.org&#x2F;apps&#x2F;details&#x2F;org.gnome.IconPreview&quot;&gt;Icon Preview&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;flathub.org&#x2F;apps&#x2F;details&#x2F;org.inkscape.Inkscape&quot;&gt;Inkscape&lt;&#x2F;a&gt; and instead of patching up poor icons downstream with icon themes, please come join us &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;Initiatives&#x2F;issues&#x2F;2&quot;&gt;make beautiful upstream application icons&lt;&#x2F;a&gt;!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>SVG animation</title>
+        <published>2015-10-13T00:00:00+00:00</published>
+        <updated>2015-10-13T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/svg-animation/"/>
+        <id>https://blog.jimmac.eu/posts/svg-animation/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/svg-animation/">&lt;p&gt;I haven&#x27;t written a post in quite a while, so I decided to document my failure to come up with a viable alternative to the translatable animations we use in &lt;a href=&quot;https:&#x2F;&#x2F;help.gnome.org&#x2F;users&#x2F;gnome-help&#x2F;3.18&#x2F;getting-started.html.en&quot;&gt;Getting Started&lt;&#x2F;a&gt; documentation. So let&#x27;s start with what&#x27;s wrong with it. Despite being far more maintainable than a screencast, it&#x27;s still a major hassle to keep the videos in sync with the developing designs. Every translation requires a re-render of all the frames and it quickly grows into gigabytes per language.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;video&quot;&gt;Video&lt;&#x2F;h1&gt;
+&lt;video controls class=&quot;image full&quot;&gt;
+&lt;source src=&quot;gnome-windows-and-workspaces.webm&quot; type=&quot;video&#x2F;webm&quot;&gt;
+&lt;a href=&quot;gnome-windows-and-workspaces.webm&quot;&gt;Czech version of one of the Getting Started videos&lt;&#x2F;a&gt;
+&lt;&#x2F;video&gt;
+&lt;p&gt;If you&#x27;re interested in seeing how these were produced, see the &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=IhFcErztgeA&quot;&gt;Behind the Scenes of getting Started&lt;&#x2F;a&gt; video.&lt;&#x2F;p&gt;
+&lt;p&gt;The animations themselves aren&#x27;t super complex. Basic transforms (translation, scale and rotation) and opacity is all that&#x27;s needed. And because we are using translatable SVGs in Mallard, it was time to look into SVG animation. There are numerous options available to animate in SVG, which already gave me a hint that none of them will work properly for my use case. I hate being right. &lt;&#x2F;p&gt;
+&lt;h1 id=&quot;smil&quot;&gt;SMIL&lt;&#x2F;h1&gt;
+&lt;p&gt;I&#x27;ll starts with the one I like least. The inline garbage approach. SMIL. Each attribute of an SVG element is animateable. Creating a global sequence using this by hand is close to impossible. Its capabilities do include a few extras like animating an object &lt;em&gt;along a path&lt;&#x2F;em&gt;, but in general I cannot imagine editing this by hand. Incorporating Inkscape into the workflow seemed feasible first. Inkscape will not touch the XML it doesn&#x27;t know about. It will not clean out any of the animation stuff when you save. The xlink namespace definition to animate along path seems to have worked, but I can&#x27;t figure out some weird offsets. Groups usually get some matrix transforms as soon as you reposition them. It all may boil down to Inkscape using its own coordinate system, I don&#x27;t know. I haven&#x27;t succeeded to bolt some animation on the Inkscape generated SVG.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;svg-animation&#x2F;smil.svg&quot; alt=&quot;SMIL&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;css&quot;&gt;CSS&lt;&#x2F;h1&gt;
+&lt;p&gt;A much more appealing was the concept of using CSS animation. We do a lot of transitions and some animation in gtk+, so it would have been great to reuse the same technology here. While CSS transitions are spot on, animation with a sense of a global timeline is not really the use case for the web. Usually animation in the intended context is an individual transform happening after an event triggered. Creating a sequence of various objects animating in a global timeline is pretty awkward. Especially if you want to loop the whole animation infinitely. The only tools for your disposal is either a time offset or relative time keyframes, keeping all objects&#x27; animation the same length.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;svg-animation&#x2F;inline-css.svg&quot; alt=&quot;CSS Based animation of a #cursor1 with a JS playback reset button that doesn&#x27;t work. ;)&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I also ran into Firefox and Webkit interpreting &lt;code&gt;transform-origin&lt;&#x2F;code&gt; differently.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;.run-animation {
+  transform-origin: top left;
+  animation: cursor-move 2s ease 1s forwards, 
+                    fade-in 1s linear 0s, 
+                    cursor-click .25s ease 3s alternate 2;
+  }
+@keyframes fade-in {
+  from { opacity: 0;  }
+  to {  opacity: 1; }
+}
+@keyframes cursor-move {
+  from { opacity: 1;  }
+  to {  opacity: 1; transform: translate(100px,-100px);}
+}
+@keyframes cursor-click {
+  from { transform: translate(100px,-100px) scale(1); }
+  to { transform: translate(100px,-100px) scale(.5); }
+}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The above CSS uses &lt;code&gt;animation-delay&lt;&#x2F;code&gt;. It might be possible to have all keyframes last the same time and use the keyframes relative keyframing for timing (duplicate same keyframe to &amp;quot;hold&amp;quot;). I can&#x27;t imagine retiming or generally modify an existing animation hand constructed using CSS&#x27; keyframes though. A visual tool with a timeline would be necessary. &lt;&#x2F;p&gt;
+&lt;h1 id=&quot;javascript&quot;&gt;Javascript&lt;&#x2F;h1&gt;
+&lt;p&gt;There are many js based frameworks to aid creating and animating SVG documents in realtime, but none of them seem to aid me in creating a global complex animation using assets created in Inkscape. I looked at Google Webdesigner next.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;julian.com&#x2F;research&#x2F;velocity&#x2F;&quot;&gt;Velocity&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;snapsvg.io&#x2F;&quot;&gt;Snap SVG&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;raphaeljs.com&#x2F;&quot;&gt;Raphael&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;google-webdesigner&quot;&gt;Google Webdesigner&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.google.com&#x2F;webdesigner&#x2F;&quot;&gt;Google Webdesigner&lt;&#x2F;a&gt; has all the necessary visual tools like property keyframing and a global timeline. Sadly it produces a rather less self contained set of html, js and css files. I didn&#x27;t figure out a way how that could be brought into Mallard.&lt;&#x2F;p&gt;
+&lt;iframe class=&quot;image full&quot; height=600 src=&quot;http:&#x2F;&#x2F;127.0.0.1:4000&#x2F;assets&#x2F;statichtml&#x2F;2015-10-13-googledesign&#x2F;&quot;&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;In the end, even though the animations don&#x27;t seem to be that complex, maintaining them by hand doesn&#x27;t seem very doable. A visual editor is required. If Google Webdesigner can be taught to produce a standalone SVG or Mallard taught to use iframes, I&#x27;m all ear. Any pointers to a similar tool is also welcome.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Industrial Gtk Engine Fixups</title>
+        <published>2004-10-17T00:00:00+00:00</published>
+        <updated>2004-10-17T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/industrial-gtk-engine-fixups/"/>
+        <id>https://blog.jimmac.eu/posts/industrial-gtk-engine-fixups/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/industrial-gtk-engine-fixups/">&lt;p&gt;There are two things I&#x27;d like to see implemented in the industrial engine.
+As it stands it is pretty much impossible to tell what entry widget has focus
+if you don&#x27;t count the blinking of the cursor which depending on your settings
+can be pretty hard.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;industrial-gtk-engine-fixups&#x2F;selected-entry.gif&quot; alt=&quot;Selected Entry&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The other thing is rather cosmetic. I wouldn&#x27;t mind giving more visual clue
+on what tab is currently selected by adding the selection tripe, similar to
+what XP does.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;industrial-gtk-engine-fixups&#x2F;newtabs.png&quot; alt=&quot;New Tabs&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Oh and once Industrial is in gnome-themes, I&#x27;d love to see the &lt;a href=&quot;http:&#x2F;&#x2F;bugzilla.ximian.com&#x2F;show_bug.cgi?id=45579&quot;&gt;sodipodi ruler bug&lt;&#x2F;a&gt; squashed. Pwetty pwueese!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Even a Stopped Clock - usb</title>
+    <subtitle>Random musings of a semi-sane designer from lesser Europe.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://blog.jimmac.eu/tags/usb/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://blog.jimmac.eu"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-10-28T00:00:00+00:00</updated>
+    <id>https://blog.jimmac.eu/tags/usb/atom.xml</id>
+    <entry xml:lang="en">
+        <title>USB MIDI Controllers on the M8</title>
+        <published>2025-10-28T00:00:00+00:00</published>
+        <updated>2025-10-28T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/usb-midi-m8/"/>
+        <id>https://blog.jimmac.eu/posts/usb-midi-m8/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/usb-midi-m8/">&lt;p&gt;The M8 has extensive USB audio and MIDI capabilities, but it cannot be a USB MIDI host. So you can control other devices through USB MIDI, but cannot sent to it over USB.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;control-surface-pots-for-m8&quot;&gt;Control Surface &amp;amp; Pots for M8&lt;&#x2F;h1&gt;
+&lt;p&gt;Controlling things via USB devices has to be done through the old TRS (A) jacks. There&#x27;s two devices that can aid in that. I&#x27;ve used the &lt;a href=&quot;https:&#x2F;&#x2F;retrokits.com&#x2F;shop&#x2F;rk006&#x2F;&quot;&gt;RK06&lt;&#x2F;a&gt; which is very featureful, but in a very clumsy plastic case and USB micro cable that has a splitter for the HOST part and USB Power in. It also sometimes doesn&#x27;t reset properly when having multiple USB devices attached through a hub. The last bit is why I even bother with this setup. &lt;&#x2F;p&gt;
+&lt;p&gt;The Dirtywave M8 has amazing support for the &lt;a href=&quot;https:&#x2F;&#x2F;novationmusic.com&#x2F;products&#x2F;launchpad-pro-mk3&quot;&gt;Novation Launchpad Pro MK3&lt;&#x2F;a&gt;. Majority of peolpe hook it up directly to the M8 using the TRS MIDI cables. The Launchpad lacks any sort of pots or encoders though. Thus the need to fuss with USB dongles. What you need is to use the Launchpad Pro as a USB controller and shun at the reliable MIDI connection. The RK06 allows to combine multiple USB devices attached through an unpowered USB hub. Because I am flabbergasted how I did things here&#x27;s a schema that works. &lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;usb-midi-m8&#x2F;schema.svg&quot; alt=&quot;Retrokits RK06 schema&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;If it doesn&#x27;t work, unplug the RK06 and turn LPPro off and on in the M8. I hate this setup but it is the only compact one that works (after some fiddling that you absolutely hate when doing a gig).&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;usb-midi-m8&#x2F;m8-po16-lpp-mk3.webp&quot; alt=&quot;Launchpar Pro and Intech PO16 via USB handled by RK06&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;intech-knot&quot;&gt;Intech Knot&lt;&#x2F;h1&gt;
+&lt;p&gt;The Hungarians behind the Grid USB controlles (with first class Linux support) have a USB&amp;gt;MIDI device called &lt;a href=&quot;https:&#x2F;&#x2F;intech.studio&#x2F;landing&#x2F;shop&#x2F;knot&quot;&gt;Knot&lt;&#x2F;a&gt;. It has one great feature of a switch between TRS A&#x2F;B for the non-standard devices. &lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;usb-midi-m8&#x2F;knot.webp&quot; alt=&quot;Clean setup with Knot&amp;amp;Grid&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;It is way less fiddly than the RK06, uses nice aluminium housing and is sturdier. Hoewer it doesn&#x27;t seem to work with the Launchpad Pro via USB and it seems to be completely confused by a USB hub, so it&#x27;s not useful for my use case of multiple USB controllers.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;non-compact-but-reliable&quot;&gt;Non-compact but Reliable&lt;&#x2F;h1&gt;
+&lt;p&gt;Novation came out with the &lt;a href=&quot;https:&#x2F;&#x2F;novationmusic.com&#x2F;products&#x2F;launch-control-xl&quot;&gt;Launch Control XL&lt;&#x2F;a&gt;, which sadly replaced pots in the old one with encoders (absolute vs relative movement), but added midi in&#x2F;ou&#x2F;through with a MIDI mixer even. That way you can avoid USB altogether and get a reliable setup with control surfaces and encoders and sliders. &lt;&#x2F;p&gt;
+&lt;p&gt;One day someone comes up with a compact midi capable pots to play along with Launchpad Pro ;) This post has been brought to you by an old man who forgets things.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Even a Stopped Clock - skate</title>
+    <subtitle>Random musings of a semi-sane designer from lesser Europe.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://blog.jimmac.eu/tags/skate/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://blog.jimmac.eu"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2021-09-06T00:00:00+00:00</updated>
+    <id>https://blog.jimmac.eu/tags/skate/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Magic Bricks</title>
+        <published>2021-09-06T00:00:00+00:00</published>
+        <updated>2021-09-06T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/magic-brick/"/>
+        <id>https://blog.jimmac.eu/posts/magic-brick/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/magic-brick/">&lt;!-- &lt;a href=&quot;{{ site.url }}{{ page.url }}&quot;&gt;absolute links&lt;&#x2F;a&gt; --&gt;
+&lt;p&gt;My first encounter with a digital camera was around 1996 when my university IT department acquired the &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Apple_QuickTake&quot;&gt;Apple Quicktake 100&lt;&#x2F;a&gt;. While the quality of the output was laughable compared to the analog counterparts, the convenience of such a device was clear. It wasn&#x27;t too long after that when I got my first digital camera, the Ricoh RDC-5000 which I used to capture the new worlds I vistited. Many devices followed.&lt;&#x2F;p&gt;
+&lt;p&gt;Ever since I switched from photo to video as my default media format of capturing places and moments, there have been three major attributes I would seek out of a camera. A nice separation of subjects using shallow depth of field, a dreamy slow motion look using high frame rates and a pleasing image using optical or electronic stabilization.&lt;&#x2F;p&gt;
+&lt;p&gt;All of these fields have been getting steady improvements and I always fantasize how my young self would react to seeing footage taken from a tiny little rectangle I carry around in my pocket. 
+It is just incredible that the footage below is hand held and the cameraman is not driving a onewheel or using a gimbal, steadycam or some other aid. Just ninja walking. When do we stop calling these magic bricks phones?&lt;&#x2F;p&gt;
+&lt;!-- vimeo is a racket
+&lt;iframe src=&quot;https:&#x2F;&#x2F;player.vimeo.com&#x2F;video&#x2F;598486554?h=0280aa9489&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; picture-in-picture&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;&lt;small&gt;&lt;a href=&quot;https:&#x2F;&#x2F;vimeo.com&#x2F;598486554&quot;&gt;Skate Your Name: Patrik&lt;&#x2F;a&gt; from &lt;a href=&quot;https:&#x2F;&#x2F;vimeo.com&#x2F;jimmacfx&quot;&gt;jimmac&lt;&#x2F;a&gt; on &lt;a href=&quot;https:&#x2F;&#x2F;vimeo.com&quot;&gt;Vimeo&lt;&#x2F;a&gt;. Music arranged on &lt;a href=&quot;https:&#x2F;&#x2F;polyend.com&#x2F;tracker&#x2F;&quot;&gt;Polyend Tracker&lt;&#x2F;a&gt;.&lt;&#x2F;small&gt;&lt;&#x2F;p&gt;
+--&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;Kg9hSbVFzSk?si=Ocz2lBBKqQpfHRJt&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;</content>
+        
+    </entry>
+</feed>

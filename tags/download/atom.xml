@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Even a Stopped Clock - download</title>
+    <subtitle>Random musings of a semi-sane designer from lesser Europe.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://blog.jimmac.eu/tags/download/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://blog.jimmac.eu"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2020-09-01T00:00:00+00:00</updated>
+    <id>https://blog.jimmac.eu/tags/download/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Shelved Wallpapers, Part 2</title>
+        <published>2020-09-01T00:00:00+00:00</published>
+        <updated>2020-09-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/shelved-wallpapers-2/"/>
+        <id>https://blog.jimmac.eu/posts/shelved-wallpapers-2/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/shelved-wallpapers-2/">&lt;p&gt;Yet &lt;a href=&quot;&#x2F;posts&#x2F;shelved-wallpapers&#x2F;&quot;&gt;again&lt;&#x2F;a&gt; the iterations to produce the &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-backgrounds&quot;&gt;default and complimentary wallpapers&lt;&#x2F;a&gt; for 3.38 generated some variants that didn&#x27;t make the cut, but I&#x27;d like to share with fellow gnomies.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;http:&#x2F;&#x2F;jimmac.musichall.cz&#x2F;stuff&#x2F;stripes&#x2F;&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;shelved-wallpapers-2&#x2F;thumb.jpg&quot; alt=&quot;Stripes&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Shelved Wallpapers</title>
+        <published>2018-02-12T00:00:00+00:00</published>
+        <updated>2018-02-12T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/shelved-wallpapers/"/>
+        <id>https://blog.jimmac.eu/posts/shelved-wallpapers/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/shelved-wallpapers/">&lt;p&gt;GNOME 3.28 will release with another batch of new wallpapers that only a freaction of you will ever see. Apart from those I also made a few for different purposes that didn&#x27;t end up being used, but it would be a shame to keep shelved.&lt;&#x2F;p&gt;
+&lt;p&gt;So here&#x27;s a bit of isometric goodness I quite enjoy on my desktop, you might as well.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;10.png&quot;&gt;&lt;img src=&quot;10thumb.jpg&quot; alt=&quot;Wall1&quot; class=&quot;image full&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;10-1.png&quot;&gt;&lt;img src=&quot;10-1thumb.jpg&quot; alt=&quot;Wall2&quot; class=&quot;full&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;10-2.png&quot;&gt;&lt;img src=&quot;10-2thumb.jpg&quot; alt=&quot;Wall3&quot; class=&quot;full&quot;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;10-3.png&quot;&gt;&lt;img src=&quot;10-3thumb.jpg&quot; alt=&quot;Wall4&quot; class=&quot;full&quot;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

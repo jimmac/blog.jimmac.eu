@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Even a Stopped Clock - guadec</title>
+    <subtitle>Random musings of a semi-sane designer from lesser Europe.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://blog.jimmac.eu/tags/guadec/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://blog.jimmac.eu"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2022-07-25T00:00:00+00:00</updated>
+    <id>https://blog.jimmac.eu/tags/guadec/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Berlin Mini GUADEC</title>
+        <published>2022-07-25T00:00:00+00:00</published>
+        <updated>2022-07-25T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/berlin-guadec/"/>
+        <id>https://blog.jimmac.eu/posts/berlin-guadec/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/berlin-guadec/">&lt;p&gt;&lt;a href=&quot;http:&#x2F;&#x2F;jimmac.musichall.cz&#x2F;photos&#x2F;2022_Berlin_Mirror_GUADEC&#x2F;&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;berlin-guadec&#x2F;cbase.webp&quot; alt=&quot;Mini GUADEC at C-Base Berlin&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The Berlin hackfest and conference wasn&#x27;t a polished, well organized experience like the usual GUADEC, it had the perfect Berlin flavor. The attendance topped my expectations and smaller groups formed to work on different aspects of the OS.&lt;&#x2F;p&gt;
+&lt;p&gt;GNOME shell&#x27;s &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;fmuellner&#x2F;quick-settings-extension&quot;&gt;quick settings&lt;&#x2F;a&gt;, the &lt;a href=&quot;https:&#x2F;&#x2F;blogs.gnome.org&#x2F;shell-dev&#x2F;2022&#x2F;05&#x2F;30&#x2F;towards-gnome-shell-on-mobile&#x2F;&quot;&gt;mobile form factor&lt;&#x2F;a&gt;, non-overlapped window management, Flathub and GNOME branding, video subsystems and others.&lt;&#x2F;p&gt;
+&lt;iframe class=&quot;full&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;S9wKTD0hcFY?si=q73gmtiZDHIbjzGK&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;I&#x27;ve shot a &lt;a href=&quot;http:&#x2F;&#x2F;jimmac.musichall.cz&#x2F;photos&#x2F;2022_Berlin_Mirror_GUADEC&#x2F;&quot;&gt;few photos&lt;&#x2F;a&gt; and edited the short &lt;a href=&quot;https:&#x2F;&#x2F;vimeo.com&#x2F;733288200&quot;&gt;video above&lt;&#x2F;a&gt;. Even the music was done during the night sessions at &lt;a href=&quot;https:&#x2F;&#x2F;www.c-base.org&#x2F;&quot;&gt;C-Base&lt;&#x2F;a&gt;. &lt;&#x2F;p&gt;
+&lt;p&gt;Big thanks to the C-Base crew for taking good care of us in all aspects -- audio-visual support for the talks and following the main event in Mexico, refreshments and even outside seating. Last but not least the GNOME Foundation for sponsoring the travel (mostly on the ground).&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;berlin-guadec&#x2F;sponsored.png&quot; alt=&quot;Sponsored by the GNOME Foundation&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

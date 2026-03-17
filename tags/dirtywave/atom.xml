@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Even a Stopped Clock - dirtywave</title>
+    <subtitle>Random musings of a semi-sane designer from lesser Europe.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://blog.jimmac.eu/tags/dirtywave/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://blog.jimmac.eu"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-10-28T00:00:00+00:00</updated>
+    <id>https://blog.jimmac.eu/tags/dirtywave/atom.xml</id>
+    <entry xml:lang="en">
+        <title>USB MIDI Controllers on the M8</title>
+        <published>2025-10-28T00:00:00+00:00</published>
+        <updated>2025-10-28T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/usb-midi-m8/"/>
+        <id>https://blog.jimmac.eu/posts/usb-midi-m8/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/usb-midi-m8/">&lt;p&gt;The M8 has extensive USB audio and MIDI capabilities, but it cannot be a USB MIDI host. So you can control other devices through USB MIDI, but cannot sent to it over USB.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;control-surface-pots-for-m8&quot;&gt;Control Surface &amp;amp; Pots for M8&lt;&#x2F;h1&gt;
+&lt;p&gt;Controlling things via USB devices has to be done through the old TRS (A) jacks. There&#x27;s two devices that can aid in that. I&#x27;ve used the &lt;a href=&quot;https:&#x2F;&#x2F;retrokits.com&#x2F;shop&#x2F;rk006&#x2F;&quot;&gt;RK06&lt;&#x2F;a&gt; which is very featureful, but in a very clumsy plastic case and USB micro cable that has a splitter for the HOST part and USB Power in. It also sometimes doesn&#x27;t reset properly when having multiple USB devices attached through a hub. The last bit is why I even bother with this setup. &lt;&#x2F;p&gt;
+&lt;p&gt;The Dirtywave M8 has amazing support for the &lt;a href=&quot;https:&#x2F;&#x2F;novationmusic.com&#x2F;products&#x2F;launchpad-pro-mk3&quot;&gt;Novation Launchpad Pro MK3&lt;&#x2F;a&gt;. Majority of peolpe hook it up directly to the M8 using the TRS MIDI cables. The Launchpad lacks any sort of pots or encoders though. Thus the need to fuss with USB dongles. What you need is to use the Launchpad Pro as a USB controller and shun at the reliable MIDI connection. The RK06 allows to combine multiple USB devices attached through an unpowered USB hub. Because I am flabbergasted how I did things here&#x27;s a schema that works. &lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;usb-midi-m8&#x2F;schema.svg&quot; alt=&quot;Retrokits RK06 schema&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;If it doesn&#x27;t work, unplug the RK06 and turn LPPro off and on in the M8. I hate this setup but it is the only compact one that works (after some fiddling that you absolutely hate when doing a gig).&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;usb-midi-m8&#x2F;m8-po16-lpp-mk3.webp&quot; alt=&quot;Launchpar Pro and Intech PO16 via USB handled by RK06&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;intech-knot&quot;&gt;Intech Knot&lt;&#x2F;h1&gt;
+&lt;p&gt;The Hungarians behind the Grid USB controlles (with first class Linux support) have a USB&amp;gt;MIDI device called &lt;a href=&quot;https:&#x2F;&#x2F;intech.studio&#x2F;landing&#x2F;shop&#x2F;knot&quot;&gt;Knot&lt;&#x2F;a&gt;. It has one great feature of a switch between TRS A&#x2F;B for the non-standard devices. &lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;usb-midi-m8&#x2F;knot.webp&quot; alt=&quot;Clean setup with Knot&amp;amp;Grid&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;It is way less fiddly than the RK06, uses nice aluminium housing and is sturdier. Hoewer it doesn&#x27;t seem to work with the Launchpad Pro via USB and it seems to be completely confused by a USB hub, so it&#x27;s not useful for my use case of multiple USB controllers.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;non-compact-but-reliable&quot;&gt;Non-compact but Reliable&lt;&#x2F;h1&gt;
+&lt;p&gt;Novation came out with the &lt;a href=&quot;https:&#x2F;&#x2F;novationmusic.com&#x2F;products&#x2F;launch-control-xl&quot;&gt;Launch Control XL&lt;&#x2F;a&gt;, which sadly replaced pots in the old one with encoders (absolute vs relative movement), but added midi in&#x2F;ou&#x2F;through with a MIDI mixer even. That way you can avoid USB altogether and get a reliable setup with control surfaces and encoders and sliders. &lt;&#x2F;p&gt;
+&lt;p&gt;One day someone comes up with a compact midi capable pots to play along with Launchpad Pro ;) This post has been brought to you by an old man who forgets things.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>New Music</title>
+        <published>2024-09-03T00:00:00+00:00</published>
+        <updated>2024-09-03T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/new-music/"/>
+        <id>https://blog.jimmac.eu/posts/new-music/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/new-music/">&lt;p&gt;I haven&#x27;t done a good job posting to my blog this year and this is the first step to correct it. &lt;&#x2F;p&gt;
+&lt;p&gt;I often self-censor, thinking my thoughts aren&#x27;t worth a longer post, so I stick to quick &lt;a href=&quot;https:&#x2F;&#x2F;mastodon.social&#x2F;@jimmac&quot;&gt;updates on Mastodon&lt;&#x2F;a&gt; . But I’ve realized it’s valuable to have a place to revisit my thoughts, as I’ve done in the past.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;worthy-music&quot;&gt;Worthy Music&lt;&#x2F;h1&gt;
+&lt;p&gt;Like many, I often find myself gravitating towards the music that shaped my younger years. But I also seek out new music. Taking part in &lt;a href=&quot;https:&#x2F;&#x2F;weeklybeats.com&quot;&gt;Weekly Beats&lt;&#x2F;a&gt; helps a lot. That&#x27;s how I discovered a very talented artist with an unpronounceable name -- &lt;a href=&quot;https:&#x2F;&#x2F;gesceap.bandcamp.com&#x2F;&quot;&gt;Gesceap&lt;&#x2F;a&gt;. I&#x27;ve put him into the same genre box as Chris Leary aka Ochre, my old favorite. The tremendous detail of Gesceap&#x27;s work is that he produces on a tiny little piece of software called &lt;a href=&quot;https:&#x2F;&#x2F;nanoloop.com&#x2F;iphone&#x2F;index.html&quot;&gt;nanoloop&lt;&#x2F;a&gt;. His level of mastery within such a constrained world is truly remarkable.&lt;&#x2F;p&gt;
+&lt;iframe class=&quot;full&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;C1FFbwOMZrA?si=qeDyGJfZb_I3pgIY&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;Another artist I admire is &lt;a href=&quot;https:&#x2F;&#x2F;ivartryti.bandcamp.com&#x2F;&quot;&gt;Ivar Tryti&lt;&#x2F;a&gt;. Absolute master of the Elektron boxes, he performs all his tunes with robotic speed and precision, but the music stands on its own. Truly love the way he works with energy.&lt;&#x2F;p&gt;
+&lt;iframe class=&quot;full&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;VyKmR5lUvuY?si=aSzCzMd2IYUcc11L&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;h1 id=&quot;berlin-performance&quot;&gt;Berlin Performance&lt;&#x2F;h1&gt;
+&lt;p&gt;One of my personal highlights at this year’s mini GUADEC was the opportunity to demonstrate the &lt;a href=&quot;https:&#x2F;&#x2F;dirtywave.com&quot;&gt;Dirtywave M8&lt;&#x2F;a&gt;. While the device locked up three times during the show (eek) as I was sporting a beta build to be able to use the Novation Launchpad Pro. Tim only added support for it like a week prior.&lt;&#x2F;p&gt;
+&lt;p&gt;The crowd was amazing, and the performance went much better than I expected. I even kept going, drifting into DJ space and playing for over 2.5 hours.&lt;&#x2F;p&gt;
+&lt;iframe class=&quot;full&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;KfoFjA5NfWk?si=JbPquxpQGNP_XbvH&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Udev Rules for Dirtywave M8</title>
+        <published>2023-05-01T00:00:00+00:00</published>
+        <updated>2023-05-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/udev-m8/"/>
+        <id>https://blog.jimmac.eu/posts/udev-m8/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/udev-m8/">&lt;p&gt;This post is very unlikely for you. It&#x27;s for future me. &lt;&#x2F;p&gt;
+&lt;p&gt;The little magic box that is the &lt;a href=&quot;https:&#x2F;&#x2F;dirtywave.com&#x2F;&quot;&gt;Dirtywave M8 tracker&lt;&#x2F;a&gt; is pretty well supported in Linux. It works great as an audio device (input and output), it does usb midi and you can also use its remote display using &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;laamaa&#x2F;m8c&quot;&gt;laamaa&#x27;s m8c&lt;&#x2F;a&gt; which now also does audio monitoring.&lt;&#x2F;p&gt;
+&lt;p&gt;M8c isn&#x27;t an app, so it&#x27;s a bit of a hassle to build it and use it from within a &lt;a href=&quot;https:&#x2F;&#x2F;containertoolbx.org&#x2F;&quot;&gt;toolbx&lt;&#x2F;a&gt;. Regular Linux distro chore. In addition, to update its firmware, which &lt;a href=&quot;https:&#x2F;&#x2F;trash80.com&#x2F;&quot;&gt;Timothy&lt;&#x2F;a&gt; pushes very frequently and brings &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=DivKR6x5-Uo&quot;&gt;amazing new functionality&lt;&#x2F;a&gt;, requires adding udev rules to have the device writable by a user. Which is what this post is about. I have no clue what I&#x27;m doing, but having this config in &lt;code&gt;&#x2F;etc&#x2F;udev&#x2F;rules.d&#x2F;50-myusb.rules&lt;&#x2F;code&gt; (first is the regular device for m8c and the latter is the second stage of the firmware update using &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Koromix&#x2F;tytools&#x2F;releases&quot;&gt;tytools&lt;&#x2F;a&gt;):&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;SUBSYSTEMS==&amp;quot;usb&amp;quot;, ATTRS{idVendor}==&amp;quot;16c0&amp;quot;, ATTRS{idProduct}==&amp;quot;048a&amp;quot;, GROUP=&amp;quot;users&amp;quot;, MODE=&amp;quot;0666&amp;quot;
+KERNEL==&amp;quot;hidraw*&amp;quot;, ATTRS{idVendor}==&amp;quot;16c0&amp;quot;, GROUP=&amp;quot;users&amp;quot;, MODE=&amp;quot;0666&amp;quot;
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Enjoy my last track, &lt;a href=&quot;https:&#x2F;&#x2F;music.jimmac.eu&#x2F;sines&quot;&gt;Sines of our fathers&lt;&#x2F;a&gt; if you don&#x27;t care of any of the above ;)&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>New Alert Sounds</title>
+        <published>2022-08-15T00:00:00+00:00</published>
+        <updated>2022-08-15T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/new-alert-sounds/"/>
+        <id>https://blog.jimmac.eu/posts/new-alert-sounds/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/new-alert-sounds/">&lt;p&gt;In the classic analog synthesizer, a sound is created by a simple oscillator and then carving&#x2F;shaping the sound with filters. That&#x27;s why it&#x27;s sometimes called subtractive synthesis.&lt;&#x2F;p&gt;
+&lt;p&gt;The sound effects in the Settings&#x27; panel have been recreated with a method called &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Frequency_modulation_synthesis&quot;&gt;Frequency Modulation&lt;&#x2F;a&gt; where some oscillators aren&#x27;t used to generate the sound itself (carrier), but modulate it futher. Even here the significant role of filtering remains. In addition more complex sounds are achieved with so called layereing which is exactly what the name hints to, just using a bunch of sounds together in a mix.&lt;&#x2F;p&gt;
+&lt;p&gt;Sounds created for GNOME 43 were generated on a mini-computer called &lt;a href=&quot;https:&#x2F;&#x2F;www.pjrc.com&#x2F;store&#x2F;teensy41.html&quot;&gt;Teensy&lt;&#x2F;a&gt; (currently unavailable due to the global chip shortage), running software called &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;DirtyWave&#x2F;M8HeadlessFirmware&quot;&gt;Dirtywave Headless&lt;&#x2F;a&gt; written by &lt;a href=&quot;https:&#x2F;&#x2F;trash80.com&#x2F;&quot;&gt;Timothy Lamb&lt;&#x2F;a&gt;. The software includes other synthesizer engines, but majority of the sounds were made using the 4 operator FM engine. To further complicate things, my favorite algorithm is No.16 where all of the 4 oscillators are carriers, effectively being equivalent to a 4 oscillator analog synth.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;fm.svg&quot;
+alt=&quot;FM Synth Engine on the Dirtywave Headless. Image taken from the Dirtywave M8 Tracker manual.&quot;
+class=&quot;full&quot;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Finally everything was cleaned up in &lt;a href=&quot;https:&#x2F;&#x2F;flathub.org&#x2F;apps&#x2F;details&#x2F;org.audacityteam.Audacity&quot;&gt;Audacity&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;To form a complete circle, and to my genuine surprise, my old friend Noggin from the &lt;a href=&quot;http:&#x2F;&#x2F;jeskola.net&#x2F;buzz&#x2F;&quot;&gt;Jeskola Buzz&lt;&#x2F;a&gt; days has composed a great track using only samples from the &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-control-center&#x2F;-&#x2F;issues&#x2F;264&quot;&gt;gitlab issue&lt;&#x2F;a&gt; (my involvement with music trackers predates GNOME or Free software in general. An old friend indeed).&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;weeklybeats.com&#x2F;noggin&#x2F;music&#x2F;gnomesounds&quot;&gt;Take a listen&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;I wish I had published the project bundle to allow for easier adjustments, but &lt;a href=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;new-alert-sounds&#x2F;gnome-alerts.zip&quot;&gt;better late&lt;&#x2F;a&gt; than never.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Less is More</title>
+        <published>2022-04-02T00:00:00+00:00</published>
+        <updated>2022-04-02T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/less-is-more/"/>
+        <id>https://blog.jimmac.eu/posts/less-is-more/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/less-is-more/">&lt;p&gt;Spending less and less time on each track in &lt;a href=&quot;https:&#x2F;&#x2F;weeklybeats.com&#x2F;jimmac&quot;&gt;Weeklybeats&lt;&#x2F;a&gt; is making me a little nervous as to whether I will be able to finish such a marathon.&lt;&#x2F;p&gt;
+&lt;audio controls&gt;
+&lt;source src=&quot;acid-basics.mp3&quot; type=&quot;audio&#x2F;mpeg&quot;&gt;
+&lt;source src=&quot;acid-basics.aac&quot; type=&quot;audio&#x2F;aac&quot;&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;soundcloud.com&#x2F;jimmac&#x2F;fugue&quot;&gt;Fugue on Soundcloud&lt;&#x2F;a&gt;.
+&lt;&#x2F;audio&gt;
+&lt;p&gt;However a radical constraint of a single hour to lay down a pattern and record a jam, perhaps spending a few extra minutes to produce a video, has been extremely satisfying. &lt;&#x2F;p&gt;
+&lt;!-- vimeo is a racket
+&lt;iframe title=&quot;vimeo-player&quot; src=&quot;https:&#x2F;&#x2F;player.vimeo.com&#x2F;video&#x2F;695157731&quot; width=&quot;100%&quot; style=&quot;aspect-ratio: 16 &#x2F; 9&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+--&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;Fqk1mnxcBMU?si=He3dAwVPTbleB3i_&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;Even not being able to figure out how to do dual mono mix on the M8 is not a show stopper in such scenario (apologies to every one using headphones).&lt;&#x2F;p&gt;
+&lt;p&gt;I hope a proper spring comes soon as I can&#x27;t wait to FPV. This one pack in the garden was &lt;em&gt;painful&lt;&#x2F;em&gt; on the fingers.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;posts&#x2F;dnb&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;fugue-machine-on-the-m8&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;chiptune&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;single-cycle-rave&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;troubled-minister&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Fugue Machine on the M8</title>
+        <published>2022-02-15T00:00:00+00:00</published>
+        <updated>2022-02-15T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/fugue-machine-on-the-m8/"/>
+        <id>https://blog.jimmac.eu/posts/fugue-machine-on-the-m8/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/fugue-machine-on-the-m8/">&lt;p&gt;Since the start of the year I&#x27;ve been doing &lt;a href=&quot;https:&#x2F;&#x2F;weeklybeats.com&#x2F;&quot;&gt;weeklybeats&lt;&#x2F;a&gt;. So far it&#x27;s been possible mainly thanks to the &lt;a href=&quot;https:&#x2F;&#x2F;dirtywave.com&quot;&gt;Dirtywave M8&lt;&#x2F;a&gt;&#x27;s ability to be picked up, instantly turned on and creating. I have to admit to mostly composing in bed (and only occasionally waking up my better half by shaking to the beat).&lt;&#x2F;p&gt;
+&lt;audio controls&gt;
+&lt;source src=&quot;Fugue.mp3&quot; type=&quot;audio&#x2F;mpeg&quot;&gt;
+&lt;source src=&quot;Fugue.aac&quot; type=&quot;audio&#x2F;aac&quot;&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;soundcloud.com&#x2F;jimmac&#x2F;fugue&quot;&gt;Fugue on Soundcloud&lt;&#x2F;a&gt;.
+&lt;&#x2F;audio&gt;
+&lt;p&gt;I&#x27;m not going to be spamming the &lt;a href=&quot;https:&#x2F;&#x2F;planet.gnome.org&quot;&gt;planet&lt;&#x2F;a&gt; with every track, but I do want to share some that I feel worked out. This one is a jam done on the Digitakt (that I actually modified to run on a li-ion battery) and the M8 doing most of the heavy lifting. The track started by setting up &lt;a href=&quot;https:&#x2F;&#x2F;alexandernaut.com&#x2F;fuguemachine&#x2F;&quot;&gt;Fugue Machine&lt;&#x2F;a&gt; like sequence in the M8. A friend of mine suggested to spice the ambient with a bit of a beat, which I used a Digitakt for. I now map the mixer on the M8 onto the 8 encoders of the Digitakt, but for the jam I was still using the internal keypad.&lt;&#x2F;p&gt;
+&lt;!-- vimeo is a racket
+&lt;iframe title=&quot;vimeo-player&quot; src=&quot;https:&#x2F;&#x2F;player.vimeo.com&#x2F;video&#x2F;675661848?h=05105853cb&amp;amp;badge=0&amp;amp;autopause=0&amp;amp;player_id=0&amp;amp;app_id=58479&quot; width=&quot;100%&quot; style=&quot;aspect-ratio: 16 &#x2F; 9&quot; frameborder=&quot;0&quot; allowfullscreen&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;vimeo.com&#x2F;675661848&quot;&gt;Fugue&lt;&#x2F;a&gt;&lt;&#x2F;iframe&gt;
+--&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;7meFQrpH_i4?si=2JiTqsAxfIaffibX&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;I really enjoy stepping back into my tracking shoes after two decades, especially when I ran into the old &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Jeskola_Buzz&quot;&gt;Buzz&lt;&#x2F;a&gt; crew on the Dirtywave Discord server. Shout out to &lt;a href=&quot;https:&#x2F;&#x2F;weeklybeats.com&#x2F;ilzxc&quot;&gt;Ilya&lt;&#x2F;a&gt; and &lt;a href=&quot;https:&#x2F;&#x2F;weeklybeats.com&#x2F;noggin&quot;&gt;Noggin&#x27;&lt;&#x2F;a&gt; who&#x27;ve made my re-entry to music super enjoyable.&lt;&#x2F;p&gt;
+&lt;!-- &lt;a href=&quot;{{ site.url }}{{ page.url }}&quot;&gt;absolute links&lt;&#x2F;a&gt; --&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>M8 — Drum and Base</title>
+        <published>2021-12-19T00:00:00+00:00</published>
+        <updated>2021-12-19T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/dnb/"/>
+        <id>https://blog.jimmac.eu/posts/dnb/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/dnb/">&lt;!-- &lt;a href=&quot;{{ site.url }}{{ page.url }}&quot;&gt;absolute links&lt;&#x2F;a&gt; --&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;dnb&#x2F;m8.jpg&quot; alt=&quot;M8&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I drafted a post on how the &lt;a href=&quot;https:&#x2F;&#x2F;dirtywave.com&#x2F;&quot;&gt;Dirtywave M8&lt;&#x2F;a&gt; is an amazing synth, but given the time and the growing scope of that post, I&#x27;ll sum it up in a short blurb instead. For a single man project, this synth is a miracle. Very geeky, all shortcut driven, standing on the shoulders of tracker giants, particularly &lt;a href=&quot;https:&#x2F;&#x2F;www.littlesounddj.com&#x2F;lsd&#x2F;index.php&quot;&gt;LSDJ&lt;&#x2F;a&gt;, it has a solid workflow and most definitely isn&#x27;t a gimmick. You&#x27;ll have to do without any visual aid. This is what I love on the Elektron boxes, where the display really helps you understand what you&#x27;re doing when filtering or creating an LFO. All you have here are hex numbers and consistent shortcuts. But it sounds absolutely marvelous and allows you to create music &lt;em&gt;anywhere&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;d like to share two tracks I&#x27;ve learned the ropes of the device on, but also the genre itself. I&#x27;ve listened to DNB mainly through &lt;a href=&quot;https:&#x2F;&#x2F;soundcloud.com&#x2F;visionrecordings&quot;&gt;Noisia&#x2F;Vision radio podcast&lt;&#x2F;a&gt; that made my runs possible (I hated running all my life, but it&#x27;s really the best way to combat the negative effects of sitting behind a computer all day). But I&#x27;ve never actually tried producing a track within that DNB realm.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;jimmac.bandcamp.com&#x2F;track&#x2F;tengu&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;dnb&#x2F;Tengu.png&quot; alt=&quot;Tengu&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;audio controls&gt;
+&lt;source src=&quot;Tengu.mp3&quot; type=&quot;audio&#x2F;mpeg&quot;&gt;
+&lt;source src=&quot;Tengu.aac&quot; type=&quot;audio&#x2F;aac&quot;&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;jimmac.bandcamp.com&#x2F;track&#x2F;tengu&quot;&gt;Tengu on Bandcamp&lt;&#x2F;a&gt;.
+&lt;&#x2F;audio&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;dnb&#x2F;Woohan.jpg&quot; alt=&quot;Woohan&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;audio controls&gt;
+&lt;source src=&quot;Woohan.mp3&quot; type=&quot;audio&#x2F;mpeg&quot;&gt;
+&lt;source src=&quot;Woohan.aac&quot; type=&quot;audio&#x2F;aac&quot;&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;jimmac.bandcamp.com&#x2F;album&#x2F;woohan&quot;&gt;Woohan on Bandcamp&lt;&#x2F;a&gt;.
+&lt;&#x2F;audio&gt;
+&lt;p&gt;While I lean on samples for the beats, the base is all the internal FM (with multiple oscilator types, not just sine) and macrosynth engines.&lt;&#x2F;p&gt;
+&lt;p&gt;I&#x27;ve also been learning the ropes of Blender&#x27;s geometry nodes recently. While only scratching the surface, I created this visualizer for the track. The heavy lifting is done with baking the &lt;em&gt;sound to f-curves&lt;&#x2F;em&gt;, which is then somewhat tweaked to acceptable ranges with f-curve modifiers.&lt;&#x2F;p&gt;
+&lt;iframe title=&quot;vimeo-player&quot; src=&quot;https:&#x2F;&#x2F;player.vimeo.com&#x2F;video&#x2F;656135032?h=198d1aba55&quot; width=&quot;100%&quot; style=&quot;aspect-ratio: 9 &#x2F; 16&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;I also have to mention the absolutely bonkers amazing visual identity of the M8 project. It just couldn&#x27;t be more hip. This is also my very last gear acquisition. For sure.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;&#x2F;posts&#x2F;chiptune&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;single-cycle-rave&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;troubled-minister&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;what-am-i&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;100kph&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;jammin-on-elektron&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;,
+&lt;a href=&quot;&#x2F;posts&#x2F;elektronic&#x2F;&quot;&gt;Previously&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

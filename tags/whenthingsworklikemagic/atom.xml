@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Even a Stopped Clock - whenthingsworklikemagic</title>
+    <subtitle>Random musings of a semi-sane designer from lesser Europe.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://blog.jimmac.eu/tags/whenthingsworklikemagic/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://blog.jimmac.eu"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2021-08-02T00:00:00+00:00</updated>
+    <id>https://blog.jimmac.eu/tags/whenthingsworklikemagic/atom.xml</id>
+    <entry xml:lang="en">
+        <title>5G Backup</title>
+        <published>2021-08-02T00:00:00+00:00</published>
+        <updated>2021-08-02T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/5g-backup/"/>
+        <id>https://blog.jimmac.eu/posts/5g-backup/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/5g-backup/">&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;5g-backup&#x2F;5G_Backup.png&quot; alt=&quot;git worktree&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;When I get glimpses of the world outside of my FOSS bubble, I see all these tips and tricks articles how people can use their computers that provide something surprising or not universally known.&lt;&#x2F;p&gt;
+&lt;p&gt;The equivalent of this in the FOSS world is a 6 page wiki outlining how to produce a &lt;code&gt;smb.conf&lt;&#x2F;code&gt; to share files between two computers in 2021.&lt;&#x2F;p&gt;
+&lt;p&gt;To offset this depression, I&#x27;d like to present some cases when things work ... as they should.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;the-case-of-unreliable-internets&quot;&gt;The case of unreliable Internets&lt;&#x2F;h1&gt;
+&lt;p&gt;For the longest of times, I paid for two internet access providers, sporting a router that would fall back onto the other in case the first one had issues. This may sound like an overkill for a home connection, but you have to realize working from home isn&#x27;t something I&#x27;ve been doing for months, but years.&lt;&#x2F;p&gt;
+&lt;p&gt;So why did I stop? Well finally Czech republic has joined countries with somewhat reasonable limited &lt;a href=&quot;https:&#x2F;&#x2F;www.lupa.cz&#x2F;aktuality&#x2F;vodafone-uvadi-tarif-s-neomezenymi-daty-s-pevnym-pripojenim-a-ne-pro-jednotlivce&#x2F;&quot;&gt;unlimited data cellular connection&lt;&#x2F;a&gt;, so my 5G&#x2F;LTE can work like a reasonable fallback.&lt;&#x2F;p&gt;
+&lt;p&gt;Now the best part. How elaborate is the process of going online after my main ISP goes down?&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;First step is to hook up my iphone to the workstation using the lightning to usb cable.&lt;&#x2F;li&gt;
+&lt;li&gt;That&#x27;s it. There is no step 2.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;This obviously wouldn&#x27;t be as powerful of a set up guide if I explained you have to have &lt;code&gt;personal hotspot&lt;&#x2F;code&gt; enabled in ios, but honestly that&#x27;s all the configuration you need. NetworkManager detects the device as a usb ethernet device and because the route is down for your main one, will happily set up the default route to the new one.&lt;&#x2F;p&gt;
+&lt;p&gt;It works like magic. Like everything should.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

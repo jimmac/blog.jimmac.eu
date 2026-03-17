@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Even a Stopped Clock - inkscape</title>
+    <subtitle>Random musings of a semi-sane designer from lesser Europe.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://blog.jimmac.eu/tags/inkscape/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://blog.jimmac.eu"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2022-04-09T00:00:00+00:00</updated>
+    <id>https://blog.jimmac.eu/tags/inkscape/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Blender Eevee is Magic</title>
+        <published>2022-04-09T00:00:00+00:00</published>
+        <updated>2022-04-09T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/blender-eevee-is-magic/"/>
+        <id>https://blog.jimmac.eu/posts/blender-eevee-is-magic/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/blender-eevee-is-magic/">&lt;p&gt;Mentioning my ever lasting adoration of the &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;jimmac&#x2F;status&#x2F;1512533410677469188&quot;&gt;realtime engine in Blender on twitter&lt;&#x2F;a&gt; kind of exploded (for my standards), so I figured I&#x27;d write a blog post.&lt;&#x2F;p&gt;
+&lt;img src=&quot;com.feaneron.Boatswain.svg&quot; alt=&quot;Boatswain&quot; class=&quot;fullcoloricon&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;feaneron.com&#x2F;&quot;&gt;Georges&lt;&#x2F;a&gt; wrote a great little app to configure &lt;a href=&quot;https:&#x2F;&#x2F;www.elgato.com&#x2F;en&#x2F;stream-deck&quot;&gt;Elgato Stream Deck&lt;&#x2F;a&gt; buttons on non-proprietary platforms. I&#x27;ve been following Georges&#x27; ventures &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;c&#x2F;GeorgesStavracas&#x2F;videos&quot;&gt;into streaming&lt;&#x2F;a&gt;. He&#x27;s done amazing job promoting GNOME development and has been helping with &lt;a href=&quot;https:&#x2F;&#x2F;obsproject.com&#x2F;&quot;&gt;OBS&lt;&#x2F;a&gt; a lot too.&lt;&#x2F;p&gt;
+&lt;p&gt;To make &lt;a href=&quot;https:&#x2F;&#x2F;feaneron.com&#x2F;2022&#x2F;03&#x2F;17&#x2F;boatswain-your-stream-deck-app-for-linux&#x2F;&quot;&gt;Boatswain&lt;&#x2F;a&gt; work great by default, rather than just presenting people with a monstrous &lt;a href=&quot;https:&#x2F;&#x2F;zachholman.com&#x2F;posts&#x2F;shit-work&#x2F;&quot;&gt;shit work&lt;&#x2F;a&gt; mountain to even get going, Georges &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;World&#x2F;boatswain&#x2F;-&#x2F;issues&#x2F;18&quot;&gt;needed some graphical assets&lt;&#x2F;a&gt; to have the configurator ship with ready made presets. &lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;blender-eevee-is-magic&#x2F;scr-boatswain.png&quot; alt=&quot;Boatswain Screenshot&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Sadly I&#x27;ve already invested in &lt;a href=&quot;https:&#x2F;&#x2F;www.blackmagicdesign.com&#x2F;products&#x2F;atemmini&quot;&gt;an appliance that covers my video streaming and recording needs&lt;&#x2F;a&gt;, so I wasn&#x27;t going to buy the gear to test how things look. Instead I made the device virtual, and rendered an approximation of it in &lt;a href=&quot;https:&#x2F;&#x2F;flathub.org&#x2F;apps&#x2F;details&#x2F;org.blender.Blender&quot;&gt;Blender&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;!-- vimeo is a racket 
+&lt;iframe src=&quot;https:&#x2F;&#x2F;player.vimeo.com&#x2F;video&#x2F;697659862?h=41eb37e115&amp;amp;badge=0&amp;amp;autopause=0&amp;amp;player_id=0&amp;amp;app_id=58479&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; picture-in-picture&quot; allowfullscreen style=&quot;width: 100%; height: auto; aspect-ratio: 16 &#x2F; 9;&quot;&gt;&lt;&#x2F;iframe&gt;
+&lt;script src=&quot;https:&#x2F;&#x2F;player.vimeo.com&#x2F;api&#x2F;player.js&quot;&gt;&lt;&#x2F;script&gt;
+--&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;embed&#x2F;RAv6eNpBnBY?si=8GraybI2ZjzOFSXx&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;For &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-backgrounds&#x2F;&quot;&gt;GNOME wallpapers&lt;&#x2F;a&gt; there are cases where I have to resort to waiting on Cycles, but if you compare this 2 minute render (left) to the 0.5s render (right) it&#x27;s really not worth it in many cases. &lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;blender-eevee-is-magic&#x2F;171-stream-deck.webp&quot; alt=&quot;Cycles left, Eevee right&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Personally switching to AMD GPUs a couple of years back has removed much pain updating the OS and the reason I was allowed to do that is Eevee.&lt;&#x2F;p&gt;
+&lt;p&gt;There was some interest in how the shader is set up, so I&#x27;m happily making the file &lt;a href=&quot;https:&#x2F;&#x2F;www.blendswap.com&#x2F;blend&#x2F;29924&quot;&gt;available for dissection&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;To do it properly, I&#x27;d probably want to improve the actual display shader to rasterize the bitmaps in a more sophisticated manner than just displaying a bitmap with no filtering. But I&#x27;d say even this basic setup has served the purpose of checking the viability of a symbol rendered on a lousy display.&lt;&#x2F;p&gt;
+&lt;!-- &lt;a href=&quot;{{ site.url }}{{ page.url }}&quot;&gt;absolute links&lt;&#x2F;a&gt; --&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>How to Gradient When You Can&#x27;t</title>
+        <published>2021-08-18T00:00:00+00:00</published>
+        <updated>2021-08-18T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/how-to-gradient-when-you-cannot/"/>
+        <id>https://blog.jimmac.eu/posts/how-to-gradient-when-you-cannot/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/how-to-gradient-when-you-cannot/">&lt;!-- &lt;a href=&quot;{{ site.url }}{{ page.url }}&quot;&gt;absolute links&lt;&#x2F;a&gt; --&gt;
+&lt;p&gt;While this topic isn&#x27;t anything new (the asset in question is probably a decade old) I never shared a dirty little secret about some of our symbolic assets.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;developer.gnome.org&#x2F;hig&#x2F;guidelines&#x2F;ui-icons.html&quot;&gt;UI icons&lt;&#x2F;a&gt; in GNOME are to a major extent &lt;em&gt;monochrome&lt;&#x2F;em&gt;. They behave like text and can be rendered with various foreground colors depending on context. In a small subset of icons we use partially shaded elements. Those are done as a solid fill as well, but lowered opacity. Then can still remain recolorable at runtime. &lt;&#x2F;p&gt;
+&lt;p&gt;What we don&#x27;t have is the ability to draw a &lt;em&gt;gradient&lt;&#x2F;em&gt; that remains recolorable, because we&#x27;d need more somphisticated machinery to rewrite the stops of the gradient definition. Or can we? Unless you&#x27;re reading this on &lt;a href=&quot;https:&#x2F;&#x2F;planet.gnome.org&#x2F;&quot;&gt;Planet&lt;&#x2F;a&gt; or in your fancy &lt;a href=&quot;https:&#x2F;&#x2F;flathub.org&#x2F;apps&#x2F;details&#x2F;com.gitlab.newsflash&quot;&gt;RSS reader&lt;&#x2F;a&gt;, you can see the spinner we&#x27;ve been using for well over 7 years now:&lt;&#x2F;p&gt;
+&lt;style type=&quot;text&#x2F;css&quot;&gt;
+#spinnerbg {
+	width: 50%;
+	min-width: 300px;
+	height: 300px;
+	margin: 32px auto;
+	background-color: #f0f0f0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 16px;
+	transition: all 1s ease-out;
+}
+
+body[data-theme=&quot;dark&quot;] #spinnerbg {
+	background-color: #0c0c0c;
+}
+
+#spinnerbg:hover,
+body[data-theme=&quot;dark&quot;] #spinnerbg:hover { 	
+	transform: scale(0.95); 
+	background-color: transparent;
+cursor: url(&quot;data:image&#x2F;svg+xml;utf8,&lt;svg xmlns=&#x27;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&#x27; width=&#x27;80&#x27; height=&#x27;96&#x27; viewport=&#x27;0 0 100 100&#x27; style=&#x27;fill:black;font-size:48px;&#x27;&gt;&lt;text y=&#x27;50%&#x27;&gt;🔍&lt;&#x2F;text&gt;&lt;&#x2F;svg&gt;&quot;) 16 0, auto;
+}
+
+#icon {
+	display: block;
+	width: 16px;
+	height: 16px;
+	transform: rotate(0deg);
+	animation: infirotation 1s linear infinite;
+	transition: all 1s ease-out;
+}
+	#icon path { fill: black; }
+	body[data-theme=&quot;dark&quot;] #icon path { fill: white; }
+	#icon:hover { animation-duration: 5s; }
+
+.container {
+	transition: transform 200ms ease-out;
+}
+#spinnerbg:hover .container {
+	transform: scale(16);
+}
+@keyframes infirotation {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(359deg); }
+}
+&lt;&#x2F;style&gt;
+&lt;section id=&quot;spinnerbg&quot;&gt;
+&lt;div class=&quot;container&quot;&gt;
+&lt;p&gt;&lt;svg id=&quot;icon&quot; xmlns=&quot;http:&#x2F;&#x2F;www.w3.org&#x2F;2000&#x2F;svg&quot; width=&quot;16&quot; height=&quot;16&quot;&gt;&lt;path d=&quot;M7.979 1.055a1.474 1.474 0 0 0-.27.025c-3 .16-5.627 2.222-6.451 5.129A7.13 7.13 0 0 0 4.5 14.037a7.13 7.13 0 0 0 8.4-1.105 7.13 7.13 0 0 0 1.106-8.4c1.507 2.725 1.032 6.162-1.135 8.37-2.228 2.148-5.654 2.577-8.33 1.065-2.618-1.576-3.914-4.73-3.18-7.672-.708 2.948.623 6.072 3.221 7.601 2.654 1.471 6.026 1.005 8.174-1.109 2.094-2.168 2.514-5.528 1.037-8.133 1.453 2.618.992 5.956-1.096 8.075-2.137 2.067-5.464 2.484-8.033 1.025C2.146 12.244.888 9.182 1.6 6.357c-.685 2.832.604 5.863 3.103 7.327 2.547 1.417 5.821.963 7.88-1.07 2.014-2.078 2.42-5.34.997-7.837 1.4 2.51.951 5.75-1.056 7.778-2.048 1.988-5.276 2.391-7.737.986C2.37 12.098 1.15 9.125 1.838 6.418c-.662 2.714.59 5.655 2.988 7.053 2.439 1.363 5.614.923 7.582-1.032 1.935-1.987 2.329-5.152.96-7.54 1.345 2.402.91 5.544-1.018 7.482-1.958 1.908-5.089 2.299-7.442.947C2.59 11.951 1.411 9.071 2.076 6.48c-.639 2.598.574 5.446 2.873 6.778 2.331 1.31 5.408.882 7.286-.992 1.855-1.898 2.235-4.963.92-7.245 1.292 2.295.869 5.338-.979 7.186-1.867 1.829-4.9 2.206-7.145.908-2.219-1.31-3.36-4.1-2.718-6.574-.616 2.48.56 5.238 2.76 6.504 2.223 1.256 5.2.842 6.988-.953 1.775-1.807 2.143-4.774.88-6.947 1.239 2.187.83 5.13-.939 6.888-1.777 1.75-4.71 2.114-6.847.87-2.12-1.246-3.223-3.943-2.604-6.3-.593 2.364.544 5.03 2.645 6.229 2.115 1.203 4.993.801 6.69-.914 1.697-1.717 2.051-4.585.843-6.65 1.184 2.08.788 4.924-.9 6.591-1.688 1.67-4.522 2.021-6.551.83-2.02-1.179-3.085-3.785-2.489-6.025-.57 2.247.53 4.822 2.53 5.955 2.007 1.15 4.786.76 6.394-.875 1.616-1.627 1.958-4.395.803-6.353 1.131 1.971.747 4.717-.861 6.295-1.597 1.59-4.332 1.927-6.254.79-1.92-1.113-2.947-3.628-2.373-5.751-.547 2.13.513 4.614 2.414 5.681 1.9 1.096 4.58.72 6.097-.836 1.537-1.536 1.865-4.206.764-6.056 1.077 1.864.707 4.51-.822 5.998-1.507 1.51-4.143 1.835-5.957.752-1.82-1.047-2.808-3.47-2.258-5.477-.524 2.013.498 4.405 2.299 5.406 1.792 1.042 4.373.68 5.8-.797 1.457-1.446 1.773-4.016.725-5.76 1.024 1.757.666 4.305-.783 5.702-1.417 1.43-3.953 1.742-5.66.713-1.721-.981-2.672-3.314-2.145-5.203-.5 1.896.484 4.197 2.186 5.132 1.684.989 4.166.64 5.504-.757 1.377-1.357 1.68-3.828.685-5.463.97 1.649.626 4.097-.744 5.404-1.326 1.35-3.764 1.65-5.363.674-1.621-.915-2.534-3.155-2.03-4.928-.477 1.78.47 3.988 2.07 4.858 1.578.934 3.96.598 5.208-.72 1.297-1.266 1.587-3.638.646-5.165.917 1.54.585 3.89-.705 5.107-1.236 1.271-3.575 1.557-5.066.635-1.522-.849-2.395-2.999-1.914-4.654-.455 1.662.453 3.779 1.955 4.582 1.469.88 3.752.557 4.908-.68 1.217-1.176 1.494-3.447.607-4.865.875 1.425.577 3.685-.636 4.836-1.15 1.213-3.411 1.51-4.836.636-1.47-.797-2.343-2.904-1.867-4.507.39-1.626 2.197-3.013 3.869-2.97V4a1.474 1.474 0 0 0 .002 0 1.474 1.474 0 0 0 1.472-1.473 1.474 1.474 0 0 0-1.472-1.472 1.474 1.474 0 0 0-.002 0z&quot; style=&quot;marker:none&quot; color=&quot;#000&quot; overflow=&quot;visible&quot; fill=&quot;#474747&quot;&#x2F;&gt;&lt;&#x2F;svg&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;&#x2F;section&gt;
+&lt;p&gt;It actually isn&#x27;t filtered particularly well in Firefox, but is nice and clean in gtk. Firefox amplifies one of the big downsides of this method, it&#x27;s quite prone to moiré. If you hover over the spinner, it reveals the nasty hack how the fade to transparency has been achieved.&lt;&#x2F;p&gt;
+&lt;p&gt;Let me show you how it&#x27;s done in &lt;a href=&quot;https:&#x2F;&#x2F;flathub.org&#x2F;apps&#x2F;details&#x2F;org.inkscape.Inkscape&quot;&gt;Inkscape&lt;&#x2F;a&gt;. The UI is a bit of afterthought, but you can make actual objects follow a path. &lt;&#x2F;p&gt;
+&lt;video controls autoplay loop class=&quot;image full&quot;&gt;
+&lt;source src=&quot;inkscape-10fps.webm&quot; type=&quot;video&#x2F;webm&quot;&gt;
+&lt;source src=&quot;http:&#x2F;&#x2F;jimmac.musichall.cz&#x2F;stuff&#x2F;blog&#x2F;inkscape-10fps.mp4&quot; type=&quot;video&#x2F;mp4&quot;&gt;&lt;!-- safari is very picky --&gt;
+&lt;&#x2F;video&gt;
+&lt;ul&gt;
+&lt;li&gt;The first step will be to create our spinner in its linear form. Create a rectangle, convert it into a shape with &lt;code&gt;Ctrl+Shift+C&lt;&#x2F;code&gt; and subdivide one of the sides a couple of times using the &lt;code&gt;Add Node&lt;&#x2F;code&gt; button in the context menubar.&lt;&#x2F;li&gt;
+&lt;li&gt;To create the etch-gradient, select every even node on the side and move them horizontally.&lt;&#x2F;li&gt;
+&lt;li&gt;Next step is to create the curve this object will follow. The easiest is to use the &lt;code&gt;Ellipse&lt;&#x2F;code&gt; primitive and only make it go along around 270deg rather than a full circle.&lt;&#x2F;li&gt;
+&lt;li&gt;Now onto the magic. Putting shapes onto curves is done with a &lt;code&gt;pattern along curve&lt;&#x2F;code&gt; path effect found in the &lt;code&gt;path&lt;&#x2F;code&gt; menu. Despite the odd terminology, path effects can be previewed in real time and working with them is much easier than filters.
+Setting the source shape can be done multiple ways, but I found pasting from clipboard the easiest. If the source object is actually on canvas, the shape will remain &lt;em&gt;linked&lt;&#x2F;em&gt; and editing the source shape will result in the path effect updating on the target curve in real time, allowing iteration into perfection.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;I bet there is a filter that can produce halftoning out of a gradient, but who&#x27;s brave enough to spend an evening in the &lt;code&gt;filters&lt;&#x2F;code&gt; menu.&lt;&#x2F;p&gt;
+&lt;p&gt;The best thing about the spinner is that &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-software&#x2F;&quot;&gt;Software&lt;&#x2F;a&gt; is now getting a lot less of it. Phillip &amp;amp; Milan, thank you.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Avoid Head Spinning</title>
+        <published>2021-08-05T00:00:00+00:00</published>
+        <updated>2021-08-05T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/avoid-your-head-spinning/"/>
+        <id>https://blog.jimmac.eu/posts/avoid-your-head-spinning/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/avoid-your-head-spinning/">&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;avoid-your-head-spinning&#x2F;Inkscape.png&quot; alt=&quot;inkscape&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;In a versatile tool like Inkscape, there are always features that aren&#x27;t for you. There are some that really get in your way though, like the recently added &lt;em&gt;canvas rotation&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;If you&#x27;re like me and constantly keep triggering it by accident (Blender zooming being Inkscape&#x27;s panning having to do with it), you&#x27;ll be happy to learn it can be completely disabled. Sip on your favorite beverage and dive into the thick preferences dialog again (&lt;code&gt;Edit&amp;gt;Preferences&lt;&#x2F;code&gt;), this time you&#x27;re searching for &lt;code&gt;Lock canvas rotation by default&lt;&#x2F;code&gt; in the &lt;code&gt;Interface&lt;&#x2F;code&gt; section. One more thing that might throw you off is that you need to restart Inkscape for the change to have any effect.&lt;&#x2F;p&gt;
+&lt;p&gt;If you don&#x27;t wish to go nuclear on the function, do note it can be reset from the status bar bottom right.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Deescalating Tensions</title>
+        <published>2021-08-04T00:00:00+00:00</published>
+        <updated>2021-08-04T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/deescalating-tensions/"/>
+        <id>https://blog.jimmac.eu/posts/deescalating-tensions/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/deescalating-tensions/">&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;deescalating-tensions&#x2F;Inkscape.png&quot; alt=&quot;inkscape&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;One of the great attributes of &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Scalable_Vector_Graphics&quot;&gt;SVG&lt;&#x2F;a&gt; is that its text nature lends itself to be easily &lt;a href=&quot;https:&#x2F;&#x2F;git-scm.com&#x2F;&quot;&gt;version controlled&lt;&#x2F;a&gt;. &lt;a href=&quot;https:&#x2F;&#x2F;inkscape.org&quot;&gt;Inkscape&lt;&#x2F;a&gt; uses SVG as its native format (and extends it using its private namespace).&lt;&#x2F;p&gt;
+&lt;p&gt;Unfortunately it uses the documents themselves to store things like canvas position and zoom state. This instantly erases one of the benefits for easy version control as every change instantly turns into unsolvable conflict.&lt;&#x2F;p&gt;
+&lt;p&gt;Luckily you can at least give up the ability to store the canvas position for the greater good of not having merge conflicts, if you manage to convince your peers to change its defaults. Which is what this blog post is about :)&lt;&#x2F;p&gt;
+&lt;p&gt;To change these defaults, you have to dive into the thick forrest that is Inkscape&#x27;s preferences (&lt;code&gt;Edit &amp;gt; Preferences&lt;&#x2F;code&gt;). You&#x27;ll find then in the &lt;code&gt;Interface &amp;gt; Windows&lt;&#x2F;code&gt; section. The default being the unfortunate &lt;code&gt;Save and restore window geometry for each document&lt;&#x2F;code&gt; needs to be changed either to &lt;code&gt;Don&#x27;t save window geometry&lt;&#x2F;code&gt; or &lt;code&gt;Remember to use last window&#x27;s geometry&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;From now on, rebasing &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;Teams&#x2F;Design&#x2F;icon-development-kit&quot;&gt;icon-development-kit&lt;&#x2F;a&gt; won&#x27;t cause any more grey hair for you!&lt;&#x2F;p&gt;
+&lt;p&gt;Update: Turns out, despite me testing before posting, only &lt;code&gt;Don&#x27;t save window geometry&lt;&#x2F;code&gt; is safe. Even window geometry appears to be saved into the document.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>The Big App Icon Redesign</title>
+        <published>2019-01-23T00:00:00+00:00</published>
+        <updated>2019-01-23T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/the-big-app-icon-redesign/"/>
+        <id>https://blog.jimmac.eu/posts/the-big-app-icon-redesign/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/the-big-app-icon-redesign/">&lt;h1 id=&quot;the-revolution-is-coming&quot;&gt;The Revolution is Coming&lt;&#x2F;h1&gt;
+&lt;p&gt;As you may have heard, GNOME 3.32 is going to come with a radical new icon style and new guidelines for app developers. This post aims to give some background on why this was needed, our goals with the initiative, and our exciting plans for the future.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;the-problem&quot;&gt;The Problem&lt;&#x2F;h1&gt;
+&lt;p&gt;Our current icon style dates back all the way to the early 00s and the original &lt;a href=&quot;http:&#x2F;&#x2F;tango.freedesktop.org&#x2F;Tango_Icon_Theme_Guidelines&quot;&gt;Tango&lt;&#x2F;a&gt;. One of the foundational ideas behind Tango was that each icon is drawn at multiple sizes, in order to look pixel-perfect in every context. This means that if you want to make an app icon you&#x27;re not drawing one, but up to 7 separate icons (symbolic, 16px, 22px, 24px, 32px, 48px, and 512px).&lt;&#x2F;p&gt;
+&lt;img src=&quot;xchat.png&quot; alt=&quot;Xchat&quot; class=&quot;centered&quot;&gt;
+&lt;div class=&quot;inlineimgs&quot;&gt;
+&lt;img src=&quot;boxes.png&quot; alt=&quot;Boxes&quot;&gt;
+&lt;img src=&quot;builder.png&quot; alt=&quot;Builder&quot;&gt;
+&lt;img src=&quot;gimp.png&quot; alt=&quot;GIMP&quot;&gt;
+&lt;img src=&quot;gitg.png&quot; alt=&quot;Gitg&quot;&gt;
+&lt;img src=&quot;inkscape.png&quot; alt=&quot;Inkscape&quot;&gt;
+&lt;img src=&quot;music.png&quot; alt=&quot;Music&quot;&gt;
+&lt;img src=&quot;photos.png&quot; alt=&quot;Photos&quot;&gt;
+&lt;img src=&quot;recipe.png&quot; alt=&quot;Recipe&quot;&gt;
+&lt;&#x2F;div&gt;
+Making these icons takes quite a bit of experience and craftsmanship, and many of our high-detail icons are more [art than design](&#x2F;blog&#x2F;2018-07-18-detail-considered-harmful&#x2F;). However, as a part of our design system the style has not succeeded, and is in dire need of reform. Some of the major issues:
+&lt;ul&gt;
+&lt;li&gt;Many of the sizes aren&#x27;t being used anywhere in the OS, and haven&#x27;t been for the better part of a decade. Since we use either large sizes or symbolics in most contexts, the pixel-hinted small sizes are rarely seen by anyone.&lt;&#x2F;li&gt;
+&lt;li&gt;Only a handful of people have the skills to draw icons in this style, and it can take weeks to do a single app icon. This means that iterating on the style is very hard, which is one of the reasons why our icon style has been stagnant for years.&lt;&#x2F;li&gt;
+&lt;li&gt;Very few third-party apps are following the guidelines. Our icons are simply too hard to draw for mere mortals, and as a result even the best third-party GNOME apps often have bad icons.&lt;&#x2F;li&gt;
+&lt;li&gt;We (GNOME Designers) don&#x27;t have the bandwidth to keep up with icon requests from developers, let alone update or evolve the style overall.&lt;&#x2F;li&gt;
+&lt;li&gt;The wider industry has moved on from the detailed icon styles of the 2000s, which gives new users the impression that our software is outdated.&lt;&#x2F;li&gt;
+&lt;li&gt;Cross-platform apps tend to ship with very simple, flat icons these days. The contrast between these icons and our super detailed ones can be quite jarring. &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;div class=&quot;inlineimgs&quot; markdown=&quot;1&quot;&gt;
+![Peek](peek.png)
+![Firefox](firefox.png)
+![Skype](skype.png)
+![Spotify](spotify.png)
+&lt;&#x2F;div&gt;
+&lt;h1 id=&quot;a-new-beginning&quot;&gt;A New Beginning&lt;&#x2F;h1&gt;
+&lt;p&gt;One of the major project-wide goals GNOME over the past years has been empowering app developers. A big reason for this initiative is that we realized that the current style is holding us back as an ecosystem. Just as &lt;a href=&quot;https:&#x2F;&#x2F;wiki.gnome.org&#x2F;Apps&#x2F;Builder&quot;&gt;Builder&lt;&#x2F;a&gt; is about providing a seamless development workflow, and &lt;a href=&quot;https:&#x2F;&#x2F;flatpak.org&#x2F;&quot;&gt;Flatpak&lt;&#x2F;a&gt; is about enabling direct distribution, this initiative is about making good icons more attainable for more apps.&lt;&#x2F;p&gt;
+&lt;p&gt;So, what would a system designed from the ground up to empower app developers&#x2F;designers to make good icons look like?&lt;&#x2F;p&gt;
+&lt;p&gt;The first step is having clearer guidelines and &lt;a href=&quot;&#x2F;blog&#x2F;2017-01-25-artistic-constraints&#x2F;&quot;&gt;more constraints&lt;&#x2F;a&gt;. The old style was all about eyeballing it and doing what feels right. That&#x27;s fine for &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;lapz&quot;&gt;veteran designers&lt;&#x2F;a&gt; used to the style, but makes it inaccessible to newcomers. The new style comes with a grid, a set of recommended base shapes, and a new color palette. We have also updated the section on &lt;a href=&quot;https:&#x2F;&#x2F;developer.gnome.org&#x2F;hig&#x2F;stable&#x2F;icon-design.html.en&quot;&gt;app icons&lt;&#x2F;a&gt; in the &lt;a href=&quot;https:&#x2F;&#x2F;developer.gnome.org&#x2F;hig&#x2F;stable&#x2F;&quot;&gt;HIG&lt;&#x2F;a&gt; with a lot more detailed information on how to design the icons.&lt;&#x2F;p&gt;
+&lt;video controls autoplay loop class=&quot;image full&quot;&gt;
+&lt;source src=&quot;color.webm&quot; type=&quot;video&#x2F;webm&quot;&gt;
+&lt;&#x2F;video&gt;
+&lt;div class=&quot;inlineimgs&quot; markdown=&quot;1&quot;&gt;
+![Template](Template.png)
+![Template2](Template2.png)
+![Template3](Template3.png)
+![Template4](Template4.png)
+![Round icon](icon-round.svg)
+![Landscape](icon-landscape.svg)
+![Portrait](icon-portrait.svg)
+![Square](icon-square.svg)
+&lt;&#x2F;div&gt;
+&lt;p&gt;The style is very &lt;strong&gt;geometric&lt;&#x2F;strong&gt;, making it easy to reuse and adapt elements from other icons. We&#x27;re also removing baked-in drop shadows in favour of drawing them automatically from the icon&#x27;s alpha channel in GTK&#x2F;Shell depending on the rendering context. In most cases 3rd party icons don&#x27;t come with baked in shadows and this makes icons easier to draw and ensures consistent shadows.&lt;&#x2F;p&gt;
+&lt;p&gt;Another cornerstone of this initiative is reducing the number of icons to be drawn: From now on, you only need one full color icon and a monochrome symbolic icon.&lt;&#x2F;p&gt;
+&lt;p&gt;The color icon is optimized for 64px (with a nominal size of 128px for historical reasons), but the simple geometric style without 1px strokes means that it also looks good larger &lt;em&gt;and&lt;&#x2F;em&gt; smaller.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;the-big-app-icon-redesign&#x2F;onesize.png&quot; alt=&quot;One size&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;This means the workflow changes from drawing 6 icons to just one (plus one symbolic icon). It also simplifies the way icons are shipped in apps. Instead of a a half dozen rendered PNGs, we can now ship a single color SVG (and a symbolic SVG). Thanks to the simple style most icons are only around 15kB.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;the-big-app-icon-redesign&#x2F;template-plus-symbolic.svg&quot; alt=&quot;Template with symbolic&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h1&gt;Welcome to the Future&lt;&#x2F;h1&gt;
+&lt;p&gt;Having this single source of truth makes it orders of magnitude easier to iterate on different metaphors for individual icons, update the style as a whole, and a number of other exciting things we&#x27;re working towards.&lt;&#x2F;p&gt;
+&lt;div class=&quot;inlineimgs&quot; markdown=&quot;1&quot;&gt;
+![Darktable](nightly-darktable.svg)
+![Games](nightly-games.svg)
+![PasswordSafe](nightly-passwordsafe.svg)
+![Fragments](nightly-fragments.svg)
+&lt;&#x2F;div&gt;
+&lt;p&gt;We&#x27;ve also been working on improving design tooling as part of this initiative. &lt;a href=&quot;https:&#x2F;&#x2F;flathub.org&#x2F;apps&#x2F;details&#x2F;org.gnome.IconPreview&quot;&gt;Icon Preview&lt;&#x2F;a&gt;, a new app by &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ZanderBrown&quot;&gt;Zander Brown&lt;&#x2F;a&gt;, is designed to make the icon design workflow smoother and faster. It allows you to quickly get started from a template, preview an icon in various contexts as you&#x27;re designing it, and then finally optimizing and exporting the SVG to use in apps. The latter part is not quite ready yet, but the app already works great for the former two use cases.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;the-big-app-icon-redesign&#x2F;icon-preview.png&quot; alt=&quot;Icon Preview&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;let-s-make-beautiful-app-icons&quot;&gt;Let&#x27;s Make Beautiful App Icons!&lt;&#x2F;h1&gt;
+&lt;p&gt;If you&#x27;re a graphics designer and wish to bring consistency to the world of application icons, familiarize yourselves with &lt;a href=&quot;https:&#x2F;&#x2F;developer.gnome.org&#x2F;hig&#x2F;stable&#x2F;icon-design.html.en&quot;&gt;the style&lt;&#x2F;a&gt;, grab &lt;a href=&quot;https:&#x2F;&#x2F;flathub.org&#x2F;apps&#x2F;details&#x2F;org.gnome.IconPreview&quot;&gt;Icon Preview&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;flathub.org&#x2F;apps&#x2F;details&#x2F;org.inkscape.Inkscape&quot;&gt;Inkscape&lt;&#x2F;a&gt; and instead of patching up poor icons downstream with icon themes, please come join us &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;Initiatives&#x2F;issues&#x2F;2&quot;&gt;make beautiful upstream application icons&lt;&#x2F;a&gt;!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>SVG animation</title>
+        <published>2015-10-13T00:00:00+00:00</published>
+        <updated>2015-10-13T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/svg-animation/"/>
+        <id>https://blog.jimmac.eu/posts/svg-animation/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/svg-animation/">&lt;p&gt;I haven&#x27;t written a post in quite a while, so I decided to document my failure to come up with a viable alternative to the translatable animations we use in &lt;a href=&quot;https:&#x2F;&#x2F;help.gnome.org&#x2F;users&#x2F;gnome-help&#x2F;3.18&#x2F;getting-started.html.en&quot;&gt;Getting Started&lt;&#x2F;a&gt; documentation. So let&#x27;s start with what&#x27;s wrong with it. Despite being far more maintainable than a screencast, it&#x27;s still a major hassle to keep the videos in sync with the developing designs. Every translation requires a re-render of all the frames and it quickly grows into gigabytes per language.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;video&quot;&gt;Video&lt;&#x2F;h1&gt;
+&lt;video controls class=&quot;image full&quot;&gt;
+&lt;source src=&quot;gnome-windows-and-workspaces.webm&quot; type=&quot;video&#x2F;webm&quot;&gt;
+&lt;a href=&quot;gnome-windows-and-workspaces.webm&quot;&gt;Czech version of one of the Getting Started videos&lt;&#x2F;a&gt;
+&lt;&#x2F;video&gt;
+&lt;p&gt;If you&#x27;re interested in seeing how these were produced, see the &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=IhFcErztgeA&quot;&gt;Behind the Scenes of getting Started&lt;&#x2F;a&gt; video.&lt;&#x2F;p&gt;
+&lt;p&gt;The animations themselves aren&#x27;t super complex. Basic transforms (translation, scale and rotation) and opacity is all that&#x27;s needed. And because we are using translatable SVGs in Mallard, it was time to look into SVG animation. There are numerous options available to animate in SVG, which already gave me a hint that none of them will work properly for my use case. I hate being right. &lt;&#x2F;p&gt;
+&lt;h1 id=&quot;smil&quot;&gt;SMIL&lt;&#x2F;h1&gt;
+&lt;p&gt;I&#x27;ll starts with the one I like least. The inline garbage approach. SMIL. Each attribute of an SVG element is animateable. Creating a global sequence using this by hand is close to impossible. Its capabilities do include a few extras like animating an object &lt;em&gt;along a path&lt;&#x2F;em&gt;, but in general I cannot imagine editing this by hand. Incorporating Inkscape into the workflow seemed feasible first. Inkscape will not touch the XML it doesn&#x27;t know about. It will not clean out any of the animation stuff when you save. The xlink namespace definition to animate along path seems to have worked, but I can&#x27;t figure out some weird offsets. Groups usually get some matrix transforms as soon as you reposition them. It all may boil down to Inkscape using its own coordinate system, I don&#x27;t know. I haven&#x27;t succeeded to bolt some animation on the Inkscape generated SVG.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;svg-animation&#x2F;smil.svg&quot; alt=&quot;SMIL&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;css&quot;&gt;CSS&lt;&#x2F;h1&gt;
+&lt;p&gt;A much more appealing was the concept of using CSS animation. We do a lot of transitions and some animation in gtk+, so it would have been great to reuse the same technology here. While CSS transitions are spot on, animation with a sense of a global timeline is not really the use case for the web. Usually animation in the intended context is an individual transform happening after an event triggered. Creating a sequence of various objects animating in a global timeline is pretty awkward. Especially if you want to loop the whole animation infinitely. The only tools for your disposal is either a time offset or relative time keyframes, keeping all objects&#x27; animation the same length.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;svg-animation&#x2F;inline-css.svg&quot; alt=&quot;CSS Based animation of a #cursor1 with a JS playback reset button that doesn&#x27;t work. ;)&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;I also ran into Firefox and Webkit interpreting &lt;code&gt;transform-origin&lt;&#x2F;code&gt; differently.&lt;&#x2F;p&gt;
+&lt;pre&gt;&lt;code&gt;.run-animation {
+  transform-origin: top left;
+  animation: cursor-move 2s ease 1s forwards, 
+                    fade-in 1s linear 0s, 
+                    cursor-click .25s ease 3s alternate 2;
+  }
+@keyframes fade-in {
+  from { opacity: 0;  }
+  to {  opacity: 1; }
+}
+@keyframes cursor-move {
+  from { opacity: 1;  }
+  to {  opacity: 1; transform: translate(100px,-100px);}
+}
+@keyframes cursor-click {
+  from { transform: translate(100px,-100px) scale(1); }
+  to { transform: translate(100px,-100px) scale(.5); }
+}
+&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;The above CSS uses &lt;code&gt;animation-delay&lt;&#x2F;code&gt;. It might be possible to have all keyframes last the same time and use the keyframes relative keyframing for timing (duplicate same keyframe to &amp;quot;hold&amp;quot;). I can&#x27;t imagine retiming or generally modify an existing animation hand constructed using CSS&#x27; keyframes though. A visual tool with a timeline would be necessary. &lt;&#x2F;p&gt;
+&lt;h1 id=&quot;javascript&quot;&gt;Javascript&lt;&#x2F;h1&gt;
+&lt;p&gt;There are many js based frameworks to aid creating and animating SVG documents in realtime, but none of them seem to aid me in creating a global complex animation using assets created in Inkscape. I looked at Google Webdesigner next.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;julian.com&#x2F;research&#x2F;velocity&#x2F;&quot;&gt;Velocity&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;snapsvg.io&#x2F;&quot;&gt;Snap SVG&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;raphaeljs.com&#x2F;&quot;&gt;Raphael&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;google-webdesigner&quot;&gt;Google Webdesigner&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.google.com&#x2F;webdesigner&#x2F;&quot;&gt;Google Webdesigner&lt;&#x2F;a&gt; has all the necessary visual tools like property keyframing and a global timeline. Sadly it produces a rather less self contained set of html, js and css files. I didn&#x27;t figure out a way how that could be brought into Mallard.&lt;&#x2F;p&gt;
+&lt;iframe class=&quot;image full&quot; height=600 src=&quot;http:&#x2F;&#x2F;127.0.0.1:4000&#x2F;assets&#x2F;statichtml&#x2F;2015-10-13-googledesign&#x2F;&quot;&gt;&lt;&#x2F;iframe&gt;
+&lt;p&gt;In the end, even though the animations don&#x27;t seem to be that complex, maintaining them by hand doesn&#x27;t seem very doable. A visual editor is required. If Google Webdesigner can be taught to produce a standalone SVG or Mallard taught to use iframes, I&#x27;m all ear. Any pointers to a similar tool is also welcome.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

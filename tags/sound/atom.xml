@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Even a Stopped Clock - sound</title>
+    <subtitle>Random musings of a semi-sane designer from lesser Europe.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://blog.jimmac.eu/tags/sound/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://blog.jimmac.eu"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2022-08-15T00:00:00+00:00</updated>
+    <id>https://blog.jimmac.eu/tags/sound/atom.xml</id>
+    <entry xml:lang="en">
+        <title>New Alert Sounds</title>
+        <published>2022-08-15T00:00:00+00:00</published>
+        <updated>2022-08-15T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/new-alert-sounds/"/>
+        <id>https://blog.jimmac.eu/posts/new-alert-sounds/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/new-alert-sounds/">&lt;p&gt;In the classic analog synthesizer, a sound is created by a simple oscillator and then carving&#x2F;shaping the sound with filters. That&#x27;s why it&#x27;s sometimes called subtractive synthesis.&lt;&#x2F;p&gt;
+&lt;p&gt;The sound effects in the Settings&#x27; panel have been recreated with a method called &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Frequency_modulation_synthesis&quot;&gt;Frequency Modulation&lt;&#x2F;a&gt; where some oscillators aren&#x27;t used to generate the sound itself (carrier), but modulate it futher. Even here the significant role of filtering remains. In addition more complex sounds are achieved with so called layereing which is exactly what the name hints to, just using a bunch of sounds together in a mix.&lt;&#x2F;p&gt;
+&lt;p&gt;Sounds created for GNOME 43 were generated on a mini-computer called &lt;a href=&quot;https:&#x2F;&#x2F;www.pjrc.com&#x2F;store&#x2F;teensy41.html&quot;&gt;Teensy&lt;&#x2F;a&gt; (currently unavailable due to the global chip shortage), running software called &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;DirtyWave&#x2F;M8HeadlessFirmware&quot;&gt;Dirtywave Headless&lt;&#x2F;a&gt; written by &lt;a href=&quot;https:&#x2F;&#x2F;trash80.com&#x2F;&quot;&gt;Timothy Lamb&lt;&#x2F;a&gt;. The software includes other synthesizer engines, but majority of the sounds were made using the 4 operator FM engine. To further complicate things, my favorite algorithm is No.16 where all of the 4 oscillators are carriers, effectively being equivalent to a 4 oscillator analog synth.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;fm.svg&quot;
+alt=&quot;FM Synth Engine on the Dirtywave Headless. Image taken from the Dirtywave M8 Tracker manual.&quot;
+class=&quot;full&quot;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Finally everything was cleaned up in &lt;a href=&quot;https:&#x2F;&#x2F;flathub.org&#x2F;apps&#x2F;details&#x2F;org.audacityteam.Audacity&quot;&gt;Audacity&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;To form a complete circle, and to my genuine surprise, my old friend Noggin from the &lt;a href=&quot;http:&#x2F;&#x2F;jeskola.net&#x2F;buzz&#x2F;&quot;&gt;Jeskola Buzz&lt;&#x2F;a&gt; days has composed a great track using only samples from the &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.gnome.org&#x2F;GNOME&#x2F;gnome-control-center&#x2F;-&#x2F;issues&#x2F;264&quot;&gt;gitlab issue&lt;&#x2F;a&gt; (my involvement with music trackers predates GNOME or Free software in general. An old friend indeed).&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;weeklybeats.com&#x2F;noggin&#x2F;music&#x2F;gnomesounds&quot;&gt;Take a listen&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;I wish I had published the project bundle to allow for easier adjustments, but &lt;a href=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;new-alert-sounds&#x2F;gnome-alerts.zip&quot;&gt;better late&lt;&#x2F;a&gt; than never.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

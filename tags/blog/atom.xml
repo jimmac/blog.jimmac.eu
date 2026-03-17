@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Even a Stopped Clock - blog</title>
+    <subtitle>Random musings of a semi-sane designer from lesser Europe.</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://blog.jimmac.eu/tags/blog/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://blog.jimmac.eu"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2021-02-01T00:00:00+00:00</updated>
+    <id>https://blog.jimmac.eu/tags/blog/atom.xml</id>
+    <entry xml:lang="en">
+        <title>New Blog. In 2021!</title>
+        <published>2021-02-01T00:00:00+00:00</published>
+        <updated>2021-02-01T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.jimmac.eu/posts/new-blog/"/>
+        <id>https://blog.jimmac.eu/posts/new-blog/</id>
+        
+        <content type="html" xml:base="https://blog.jimmac.eu/posts/new-blog/">&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;blog.jimmac.eu&#x2F;posts&#x2F;new-blog&#x2F;bedrichov.jpeg&quot; alt=&quot;Bedřichov&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;In an effort to tone down my Facebook posts, I&#x27;ve looked into ways how to leverage the amazing &lt;a href=&quot;https:&#x2F;&#x2F;flathub.org&#x2F;apps&#x2F;details&#x2F;org.gnome.gitlab.somas.Apostrophe&quot;&gt;Apostrophe&lt;&#x2F;a&gt; app for writing simple markdown posts. &lt;&#x2F;p&gt;
+&lt;p&gt;Due to github integration and general availability I&#x27;ve settled with, sigh, &lt;a href=&quot;https:&#x2F;&#x2F;jekyllrb.com&#x2F;&quot;&gt;Jekyll&lt;&#x2F;a&gt;, abandoning the even more obscure &lt;a href=&quot;https:&#x2F;&#x2F;middlemanapp.com&#x2F;&quot;&gt;Middleman&lt;&#x2F;a&gt;. Thanks to toolbox and rvm, the version dependency hell might be manageable, but I&#x27;m mainly hoping to just rely on github to do all the heavylifting, while I rely on Apostrophone. We&#x27;ll see how it goes. &lt;&#x2F;p&gt;
+&lt;p&gt;The one downside of my hacky middleman setup is that I will need to manually port those blog posts over as it&#x27;s a mess. A lot of it is related to image and video links and some &lt;code&gt;rb -&amp;gt; md&lt;&#x2F;code&gt;. Many of the really old posts references images on long gone resources (&lt;code&gt;primates.ximian.com&lt;&#x2F;code&gt;?) and most just have broken links. I&#x27;ve started recovering some of the &lt;a href=&quot;&#x2F;posts&#x2F;new-zealand-part-1&#x2F;&quot;&gt;old gems&lt;&#x2F;a&gt;), but I&#x27;m definitely only going to resurrect a few.&lt;&#x2F;p&gt;
+&lt;p&gt;The main drive behind this futile attempt to post on a blog is to curate my own photos and articles myself. It is very backwards, but the ad algorithms that control all the social networks really make me mad that people, who actively try to follow someone&#x27;s work or thoughts, are spoon fed with other things, but what they explicitly selected as of importance to them is sometimes totally hidden. So there, fellow RSS readers, I&#x27;m back.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
