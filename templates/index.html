@@ -5,9 +5,29 @@
 <div class="wrapper">
   {{ macros::author() }}
   <main aria-label="Content">
-    <h3 class="posts-item-note" aria-label="Recent Posts">Recent Posts</h3>
     {% set posts_section = get_section(path="posts/_index.md") %}
-    {% for post in posts_section.pages | slice(end=5) %}
+
+    <div class="featured-grid">
+      {% for post in posts_section.pages | slice(end=3) %}
+      <article class="featured-card">
+        <a href="{{ post.permalink }}" class="featured-link">
+          {% if post.extra.image %}
+          <img class="featured-image" src="{{ post.path }}{{ post.extra.image }}" alt="" loading="lazy">
+          {% else %}
+          <div class="featured-placeholder" aria-hidden="true"></div>
+          {% endif %}
+          <div class="featured-body">
+            <time class="featured-date">{{ post.date | date(format="%b %d, %Y") }}</time>
+            <h2 class="featured-title">{{ post.title }}</h2>
+            <p class="featured-blurb">{{ post.content | striptags | truncate(length=120) }}</p>
+          </div>
+        </a>
+      </article>
+      {% endfor %}
+    </div>
+
+    <h3 class="posts-item-note" aria-label="Older Posts">Older Posts</h3>
+    {% for post in posts_section.pages | slice(start=3, end=12) %}
     <article class="post-item">
       <span class="post-item-date">{{ post.date | date(format="%b %d, %Y") }}</span>
       <h4 class="post-item-title">

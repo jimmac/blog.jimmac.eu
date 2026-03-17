@@ -1,9 +1,10 @@
 +++
 title = "12 months instead of 12 minutes"
 date = 2025-11-21
-image = "3D-sharecard.webp"
 [taxonomies]
 tags = ["gnome", "webdesign", "blender", "3D", "work"]
+[extra]
+image = "3D-sharecard.webp"
 +++
 
 Hey Kids! Other than raving about [GNOME.org](https://www.gnome.org) being a [static HTML](/posts/plain-html/), there's one more aspect I'd like to get back to in this writing exercise called a blog post. 

@@ -1,9 +1,10 @@
 +++
 title = "USB MIDI Controllers on the M8"
 date = 2025-10-28
-image = "knot.webp"
 [taxonomies]
 tags = ["dirtywave", "m8", "tracker", "music", "usb", "midi"]
+[extra]
+image = "knot.webp"
 +++
 
 The M8 has extensive USB audio and MIDI capabilities, but it cannot be a USB MIDI host. So you can control other devices through USB MIDI, but cannot sent to it over USB.

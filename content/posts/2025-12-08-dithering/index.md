@@ -1,9 +1,10 @@
 +++
 title = "Dithering"
 date = 2025-12-08
-image = "halftone.webp"
 [taxonomies]
 tags = ["gnome", "wallpaper", "gimp", "work"]
+[extra]
+image = "halftone.webp"
 +++
 
 One of the new additions to the **GNOME 49** wallpaper set is *Dithered Sun* by [Tobias](https://tobiasbernard.com/). It uses dithering not as a technical workaround for color banding, but as an *artistic* device.
