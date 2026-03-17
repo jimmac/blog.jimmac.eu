@@ -14,7 +14,7 @@ Tobias initially planned to use [Halftone](https://flathub.org/en/apps/io.github
 
 Now, since the younger generation may be understandably intimidated by GIMP’s somewhat… *vintage* interface, I promised to write a short guide on how to process your images to get a nice ordered dither pattern without going overboard on reducing colors. And with *only a bit of time* passing since the amazing GUADEC in Brescia, I’m finally delivering on that promise. Better late than later.
 
-![GEGL dithering op](gegl-dither.webp)
+<img src="gegl-dither.webp" alt="GEGL dithering op" class="centered">
 
 I’ve historically used the GEGL dithering operation to work around potential color banding on lower-quality displays. In Tobias’ wallpaper, though, the dithering is a core element of the artwork itself. While it can cause issues when scaling (filtering can introduce moiré patterns), there’s a real beauty to the structured patterns of Bayer dithering.
 
