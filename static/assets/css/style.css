@@ -536,7 +536,6 @@ table {
   font-weight: var(--weight-bold);
   font-variant-numeric: tabular-nums;
   font-feature-settings: "tnum" 1;
-  align-self: end;
 
   @media (max-width: 768px) { font-size: 16px; }
 }
