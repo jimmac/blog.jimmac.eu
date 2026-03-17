@@ -934,6 +934,14 @@ pre.highlight, pre {
 img.centered { display: block; margin: auto; }
 img.full     { display: block; width: 100%; }
 
+img.fullcoloricon {
+  display: block;
+  width: 256px;
+  height: 256px;
+  margin-inline: auto;
+  filter: drop-shadow(0 2px 5px rgba(0,0,0,0.5));
+}
+
 img.pixels,
 .pixels img {
   image-rendering: crisp-edges;

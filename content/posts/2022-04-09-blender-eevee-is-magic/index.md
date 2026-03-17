@@ -12,7 +12,7 @@ Mentioning my ever lasting adoration of the [realtime engine in Blender on twitt
 
 To make [Boatswain](https://feaneron.com/2022/03/17/boatswain-your-stream-deck-app-for-linux/) work great by default, rather than just presenting people with a monstrous [shit work](https://zachholman.com/posts/shit-work/) mountain to even get going, Georges [needed some graphical assets](https://gitlab.gnome.org/World/boatswain/-/issues/18) to have the configurator ship with ready made presets. 
 
-![Boatswain Screenshot](scr-boatswain.png)
+<img alt="Boatswain Screenshot" src="scr-boatswain.png" class="centered">
 
 Sadly I've already invested in [an appliance that covers my video streaming and recording needs](https://www.blackmagicdesign.com/products/atemmini), so I wasn't going to buy the gear to test how things look. Instead I made the device virtual, and rendered an approximation of it in [Blender](https://flathub.org/apps/details/org.blender.Blender).
 
