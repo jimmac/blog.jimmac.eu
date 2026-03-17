@@ -9,8 +9,8 @@ I haven't written a post in quite a while, so I decided to document my failure t
 # Video
 
 <video controls class="image full">
-<source src="{{site.url}}{{page.url}}gnome-windows-and-workspaces.webm" type="video/webm">
-<a href="{{site.url}}{{page.url}}gnome-windows-and-workspaces.webm">Czech version of one of the Getting Started videos</a>
+<source src="gnome-windows-and-workspaces.webm" type="video/webm">
+<a href="gnome-windows-and-workspaces.webm">Czech version of one of the Getting Started videos</a>
 </video>
 
 

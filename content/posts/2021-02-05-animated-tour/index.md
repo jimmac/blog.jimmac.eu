@@ -31,6 +31,6 @@ While anything more complex would be a nightmare, animating the hand going back 
 It's a bit fragile, but a first shy step for animations in the UI. Hopefully first of many.
 
 <video controls autoplay loop class="image full">
-<source src="{{site.url}}{{page.url}}css-anim.webm" type="video/webm">
-<source src="{{site.url}}{{page.url}}css-anim.mp4" type="video/mp4">
+<source src="css-anim.webm" type="video/webm">
+<source src="css-anim.mp4" type="video/mp4">
 </video>

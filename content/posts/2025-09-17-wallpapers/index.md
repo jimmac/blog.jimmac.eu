@@ -18,8 +18,8 @@ So what does that mean for wallpapers? Well, with HDR displays (using OLED or Mi
 The new set takes advantage of wider color gamuts (Display P3 instead of sRGB) and higher precision (16-bit per channel instead of 8-bit). That translates to smoother gradients, richer tones, and more depth — without the blinding highlights. Think of it as HDR done tastefully: more range to play with, but in service of calm, everyday visuals rather than spectacle.
 
 <video controls nosound loop class="image full" poster="timelapse.webp">
-<source src="{{site.url}}{{page.url}}timelapse.webm" type="video/webm">
-<source src="{{site.url}}{{page.url}}timelapse.mp4" type="video/mp4">
+<source src="timelapse.webm" type="video/webm">
+<source src="timelapse.mp4" type="video/mp4">
 </video>
 
 Personally, I still think HDR makes the most sense today in games, videos, and fullscreen photography, where those deep contrasts and bright highlights can really shine. On the desktop, apps and creative tools still need to catch up. Blender, for instance, already shows it's colormanaged HDR preview pipeline on macOS, and HDR display support is expected to land for Wayland in Blender 5.0.

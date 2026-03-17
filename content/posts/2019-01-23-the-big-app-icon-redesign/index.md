@@ -53,7 +53,7 @@ The first step is having clearer guidelines and [more constraints](/blog/2017-01
 
 
 <video controls autoplay loop class="image full">
-<source src="{{site.url}}{{page.url}}color.webm" type="video/webm">
+<source src="color.webm" type="video/webm">
 </video>
 
 

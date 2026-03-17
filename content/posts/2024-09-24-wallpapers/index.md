@@ -14,8 +14,8 @@ With GNOME 47 out, it’s time for my bi-annual wallpaper deep dive. For many, t
 In this release, GNOME 47 doesn’t overhaul the default blue wallpaper. It's more of a subtle tweak than a full redesign. The familiar rounded triangles remain, but here’s something neat: the dark variant mimics real-world camera behavior. When it's darker, the camera’s aperture widens, creating a shallower depth of field. A small but nice touch for those who notice these things.
 
 <video controls nosound autoplay loop class="image full">
-<source src="{{site.url}}{{page.url}}focus.webm" type="video/webm">
-<source src="{{site.url}}{{page.url}}focus.mp4" type="video/mp4">
+<source src="focus.webm" type="video/webm">
+<source src="focus.mp4" type="video/mp4">
 </video>
 
 The real action this cycle, though, is in the supplemental wallpapers.
@@ -25,8 +25,8 @@ We haven’t had to remove much this time around, thanks to the JXL format keepi
 In terms of fine tuning changes, the classic, `Pixels` has been updated to feature newer apps from [GNOME Circle](https://circle.gnome.org).
 
 <video controls nosound autoplay loop class="image full">
-<source src="{{site.url}}{{page.url}}pixels-timelapse.webm" type="video/webm">
-<source src="{{site.url}}{{page.url}}pixels-timelapse.mp4" type="video/mp4">
+<source src="pixels-timelapse.webm" type="video/webm">
+<source src="pixels-timelapse.mp4" type="video/mp4">
 </video>
 
 The dark variant of `Pills` also got some love with lighting and shading tweaks, including a subtle subsurface scattering effect.

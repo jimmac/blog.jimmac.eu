@@ -75,7 +75,7 @@ It actually isn't filtered particularly well in Firefox, but is nice and clean i
 Let me show you how it's done in [Inkscape](https://flathub.org/apps/details/org.inkscape.Inkscape). The UI is a bit of afterthought, but you can make actual objects follow a path. 
 
 <video controls autoplay loop class="image full">
-<source src="{{site.url}}{{page.url}}inkscape-10fps.webm" type="video/webm">
+<source src="inkscape-10fps.webm" type="video/webm">
 <source src="http://jimmac.musichall.cz/stuff/blog/inkscape-10fps.mp4" type="video/mp4"><!-- safari is very picky -->
 </video>
 
