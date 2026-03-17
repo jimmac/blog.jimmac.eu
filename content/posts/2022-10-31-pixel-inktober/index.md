@@ -3,7 +3,7 @@ title = "Pixel Inktober"
 slug = "pixel-inktober-2022"
 date = 2022-10-31
 [taxonomies]
-tags = ["pixel", "pixaki", "aseprite", "art"]
+tags = ["pixelart", "pixaki", "aseprite", "art"]
 +++
 
 Just like [last year](/posts/pixel-inktober/), October was filled with quick pixel dailies. I decided to only post [on mastodon](https://mastodon.social/@jimmac), but due to the twitter exodus couldn't quite post the 30kB images for the two remaining days. Good old blog post it is!

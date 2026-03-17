@@ -2,7 +2,7 @@
 title = "Ele[k]tronic"
 date = 2021-02-02
 [taxonomies]
-tags = ["synth", "tracker"]
+tags = ["synth", "tracker", "music"]
 +++
 ![Elektron Digitakt](digitakt.jpg)
 

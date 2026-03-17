@@ -3,7 +3,7 @@ title = "Pixel Inktober"
 slug = "pixel-inktober-2021"
 date = 2021-11-01
 [taxonomies]
-tags = ["pixel", "pixaki", "art", "inktober"]
+tags = ["pixelart", "pixaki", "art", "inktober"]
 +++
 
 For the first time ever I actually finished a [monthly challenge](https://inktober.com/).

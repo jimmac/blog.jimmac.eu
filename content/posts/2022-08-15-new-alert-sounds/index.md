@@ -2,7 +2,7 @@
 title = "New Alert Sounds"
 date = 2022-08-15
 [taxonomies]
-tags = ["work", "gnome", "design", "sound", "synth", "dirtywave", "m8", "tracker"]
+tags = ["work", "gnome", "design", "sound", "synth", "dirtywaveM8", "tracker", "music"]
 +++
 
 In the classic analog synthesizer, a sound is created by a simple oscillator and then carving/shaping the sound with filters. That's why it's sometimes called subtractive synthesis.

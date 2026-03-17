@@ -2,7 +2,7 @@
 title = "Jammin' on Elektron"
 date = 2021-04-16
 [taxonomies]
-tags = ["synth", "Elektron"]
+tags = ["synth", "elektron", "music"]
 +++
 ![Elektron Digitone](Digitone.png)
 

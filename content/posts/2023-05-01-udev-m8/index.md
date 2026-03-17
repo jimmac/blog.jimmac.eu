@@ -2,7 +2,7 @@
 title = "Udev Rules for Dirtywave M8"
 date = 2023-05-01
 [taxonomies]
-tags = ["dirtywave", "M8", "tracker", "music", "linux"]
+tags = ["dirtywaveM8", "tracker", "music", "linux"]
 +++
 
 This post is very unlikely for you. It's for future me. 

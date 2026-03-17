@@ -2,7 +2,7 @@
 title = "New Music"
 date = 2024-09-03
 [taxonomies]
-tags = ["music", "dirtywave", "tracker"]
+tags = ["music", "dirtywaveM8", "tracker"]
 +++
 
 I haven't done a good job posting to my blog this year and this is the first step to correct it. 

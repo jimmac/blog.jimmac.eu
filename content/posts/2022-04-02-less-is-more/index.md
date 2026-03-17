@@ -2,7 +2,7 @@
 title = "Less is More"
 date = 2022-04-02
 [taxonomies]
-tags = ["tracker", "synth", "dirtywave", "m8", "td3"]
+tags = ["tracker", "synth", "dirtywaveM8", "td3", "music"]
 +++
 
 Spending less and less time on each track in [Weeklybeats](https://weeklybeats.com/jimmac) is making me a little nervous as to whether I will be able to finish such a marathon.

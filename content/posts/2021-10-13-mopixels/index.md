@@ -2,7 +2,7 @@
 title = "Mo' Pixels"
 date = 2021-10-13
 [taxonomies]
-tags = ["pixel", "pixaki", "gnome", "design", "art", "wallpaper", "icon"]
+tags = ["pixelart", "pixaki", "gnome", "design", "art", "wallpaper", "icon"]
 +++
 
 Recently I've been indulging myself in pixel art again. One might assume that's my comfort zone, but honestly I don't feel like I've ever truly mastered it. 

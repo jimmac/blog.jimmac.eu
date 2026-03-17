@@ -3,7 +3,7 @@ title = "Autonomous Cameraman"
 date = 2024-09-09
 image = "neo.webp"
 [taxonomies]
-tags = ["drone", "camera", "photography", "dji"]
+tags = ["drone", "camera", "photo", "dji"]
 +++
 
 It’s been a while since I’ve annoyed you by mentioning drones, but here we are with DJI’s latest creation—the Neo. DJI is a giant, soulless corporation, but they’ve made some clever design decisions with this drone. It’s a flying camera that works without a phone or remote, and for about half the price of a GoPro, you get a self-sufficient, button-operated flying cameraman. Take it out, push a button, and off it goes, capturing footage like it knows what it's doing. It might also just simply be a response to the actually innovative HoverAir X1, just made extremely affordable.

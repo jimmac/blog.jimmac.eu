@@ -2,7 +2,7 @@
 title = "Single Cycle Rave"
 date = 2021-08-03
 [taxonomies]
-tags = ["synth", "elektron", "digitakt", "fpv"]
+tags = ["synth", "elektron", "digitakt", "fpv", "music"]
 +++
 ![Single Cycle Rave](SingleCycleRave.jpg)
 

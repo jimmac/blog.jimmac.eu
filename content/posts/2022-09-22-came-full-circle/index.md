@@ -2,7 +2,7 @@
 title = "Came Full Circle"
 date = 2022-09-22
 [taxonomies]
-tags = ["gnome", "design", "icon", "pixel", "art", "pixaki"]
+tags = ["gnome", "design", "icon", "pixelart", "art", "pixaki"]
 +++
 
 As mentioned in the [previous post](/posts/evenmopixels/) I've been creating these short pixel art animations for [twitter](https://twitter.com/jimmac) and [mastodon](https://mastodon.social/web/@jimmac) to promote the lovely apps that sprung up under the umbrella of the [GNOME Circle project](https://circle.gnome.org). 

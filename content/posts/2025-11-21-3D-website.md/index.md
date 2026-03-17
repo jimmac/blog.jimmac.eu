@@ -2,7 +2,7 @@
 title = "12 months instead of 12 minutes"
 date = 2025-11-21
 [taxonomies]
-tags = ["gnome", "webdesign", "blender", "3D", "work"]
+tags = ["gnome", "web", "blender", "3D", "work"]
 [extra]
 image = "3D-sharecard.webp"
 +++

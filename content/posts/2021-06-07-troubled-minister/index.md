@@ -2,7 +2,7 @@
 title = "Troubled Minister"
 date = 2021-06-07
 [taxonomies]
-tags = ["synth", "Polyend", "tracker", "fpv"]
+tags = ["synth", "polyend", "tracker", "fpv", "music"]
 +++
 ![DJ Strobe](dj-strobe.gif)
 

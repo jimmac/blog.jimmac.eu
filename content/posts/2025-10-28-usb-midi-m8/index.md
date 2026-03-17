@@ -2,7 +2,7 @@
 title = "USB MIDI Controllers on the M8"
 date = 2025-10-28
 [taxonomies]
-tags = ["dirtywave", "m8", "tracker", "music", "usb", "midi"]
+tags = ["dirtywaveM8", "tracker", "music", "usb", "midi"]
 [extra]
 image = "knot.webp"
 +++

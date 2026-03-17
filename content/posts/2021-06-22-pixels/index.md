@@ -2,7 +2,7 @@
 title = "Pixels"
 date = 2021-06-22
 [taxonomies]
-tags = ["pixels", "aseprite", "gnome"]
+tags = ["pixelart", "aseprite", "gnome"]
 +++
 ![Pixels](icons.gif)
 

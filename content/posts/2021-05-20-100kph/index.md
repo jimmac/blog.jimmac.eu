@@ -1,7 +1,7 @@
 +++
 title = "125BPM vs 100KPH"
 [taxonomies]
-tags = ["Elektron", "synth", "fpv"]
+tags = ["elektron", "synth", "fpv"]
 +++
 
 ![Elektron Digitone + Digitakt](DIandDT.png)

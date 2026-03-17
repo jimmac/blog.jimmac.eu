@@ -2,7 +2,7 @@
 title = "What am I?"
 date = 2021-05-24
 [taxonomies]
-tags = ["synth", "Polyend", "tracker"]
+tags = ["synth", "polyend", "tracker", "music"]
 +++
 ![Polyend Tracker](polyend.jpg)
 

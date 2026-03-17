@@ -2,7 +2,7 @@
 title = "Even Mo' Pixels"
 date = 2022-09-16
 [taxonomies]
-tags = ["pixel", "pixaki", "gnome", "design", "art", "wallpaper", "icon"]
+tags = ["pixelart", "pixaki", "gnome", "design", "art", "wallpaper", "icon"]
 +++
 
 To keep the habbit alive, I continue to do a [daily pixel routine](/posts/mopixels/), now covering almost all of the [GNOME Circle](https://circle.gnome.org) apps.
