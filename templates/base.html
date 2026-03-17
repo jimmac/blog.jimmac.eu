@@ -1,11 +1,16 @@
 {% import "macros.html" as macros %}
 <!DOCTYPE html>
 <html lang="{{ lang | default(value=config.default_language) }}">
+{% if page.extra.image is defined %}
+  {% set_global og_image = config.base_url ~ page.path ~ page.extra.image %}
+{% else %}
+  {% set_global og_image = "" %}
+{% endif %}
 {{ macros::head(
     title=title | default(value=""),
     description=description | default(value=""),
     url=current_url | default(value=config.base_url),
-    image=og_image | default(value=""),
+    image=og_image,
     lang=lang | default(value=config.default_language)
 ) }}
 <body>
