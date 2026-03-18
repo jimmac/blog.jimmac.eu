@@ -2,7 +2,6 @@
 title = "GNOME 50 Wallpapers"
 date = 2026-03-18
 slug = "gnome50-wallpapers"
-draft = true
 [taxonomies]
 tags = ["work", "gnome", "design", "wallpaper", "art"]
 [extra]
