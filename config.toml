@@ -25,7 +25,7 @@ name = "Jakub Steiner"
 bio = "Musings of a visual designer from the lesser Europe"
 username = "jimmac"
 github = "jimmac"
-twitter = "jimmac"
+mastodon = "https://mastodon.social/@jimmac"
 email = "jimmac@gmail.com"
 avatar = "/assets/img/avatar.svg"
 

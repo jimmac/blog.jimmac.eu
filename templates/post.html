@@ -43,24 +43,14 @@
 
       <div class="page-content" itemprop="articleBody">
         {{ page.content | safe }}
-        {% if page.extra.tweet %}
-        <p>Comments on this article on
-          <a href="https://twitter.com/{{ config.extra.author.twitter }}/status/{{ page.extra.tweet }}">Twitter</a>.
+        {% if page.extra.mastodon_url %}
+        <p>Discuss this post on
+          <a href="{{ page.extra.mastodon_url }}">Mastodon/Fediverse</a>.
         </p>
         {% endif %}
       </div>
     </article>
 
-    {% if page.extra.comments %}
-      <script src="https://utteranc.es/client.js"
-        repo="username/reponame"
-        issue-term="pathname"
-        label="✨ comment ✨"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-      </script>
-    {% endif %}
 
   </main>
 
