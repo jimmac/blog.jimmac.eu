@@ -1,5 +1,5 @@
 +++
-date = 2004-12-30
+date = 2004-12-30T12:00:00+00:00
 title = "New Zealand, Part 2/4"
 [taxonomies]
 tags = ["travel"]

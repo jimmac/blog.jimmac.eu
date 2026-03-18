@@ -16,9 +16,12 @@
     <link href="{{ post.permalink }}"/>
     <id>{{ post.permalink }}</id>
     <published>{{ post.date | date(format="%+") }}</published>
-    <updated>{{ post.date | date(format="%+") }}</updated>
-    <summary>{{ post.summary | default(value="") | striptags | truncate(length=200) }}</summary>
-    <content type="html"><![CDATA[{{ post.content | safe }}]]></content>
+    <updated>{% if post.updated %}{{ post.updated | date(format="%+") }}{% else %}{{ post.date | date(format="%+") }}{% endif %}</updated>
+    {% set summary_text = post.description | default(value="") %}
+    {% if summary_text == "" %}{% set summary_text = post.content | striptags | truncate(length=200) %}{% endif %}
+    {% if summary_text != "" %}<summary>{{ summary_text }}</summary>{% endif %}
+    {% set clean = post.content | regex_replace(pattern="(?s)<style[^>]*>.*?</style>", rep="") | regex_replace(pattern="(?s)<iframe[^>]*>.*?</iframe>", rep="") | regex_replace(pattern="(?s)<svg[^>]*>.*?</svg>", rep="") %}
+    <content type="html"><![CDATA[{{ clean | safe }}]]></content>
   </entry>
   {% endfor %}
 </feed>
