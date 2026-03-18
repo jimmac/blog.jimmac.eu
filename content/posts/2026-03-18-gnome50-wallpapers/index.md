@@ -6,15 +6,16 @@ slug = "gnome50-wallpapers"
 tags = ["work", "gnome", "design", "wallpaper", "art"]
 [extra]
 image = "thumb.png"
+mastodon_url = "https://mastodon.social/@jimmac/116252222590706940"
 +++
 
 GNOME 50 just got released! To celebrate, I thought it’d be fun to look into the background (*ding*) of the newest additions to the collection.
 
 While the general aesthetic remains consistent, you might be surprised to see the default shifting from the long-standing triangular theme to **hexagons**. 
 
-Well, maybe not *that* surprised if you’ve been following the `gnome-backgrounds` repo closely during the development cycle. We saw a rounded hexagon design surface back in 2024, but it was pulled after being deemed a bit too "flat" despite various lighting and color iterations. We’ve actually seen other hex designs pop up in 2020 and 2022, but they never quite got the **ultimate spot** as the default. Until now.
-
 <img src="default.webp" class="full" alt="Default Wallpaper in GNOME 50">
+
+Well, maybe not *that* surprised if you’ve been following the `gnome-backgrounds` repo closely during the development cycle. We saw a rounded hexagon design surface back in 2024, but it was pulled after being deemed a bit too "flat" despite various lighting and color iterations. We’ve actually seen other hex designs pop up in 2020 and 2022, but they never quite got the **ultimate spot** as the default. Until now.
 
 <div class="sketches">
 <img src="hex-1.webp" alt="Hexagon iteration 1">
