@@ -2,7 +2,7 @@
 title = "GNOME 43 Wallpapers"
 date = 2022-08-08
 [taxonomies]
-tags = ["work", "gnome", "design", "wallpaper", "art"]
+tags = ["work", "gnome", "design", "wallpaper", "art", "blender"]
 +++
 
 # GNOME 43 Wallpapers

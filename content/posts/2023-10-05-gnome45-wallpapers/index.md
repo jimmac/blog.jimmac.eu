@@ -2,7 +2,7 @@
 title = "GNOME 45 Wallpapers"
 date = 2023-10-05
 [taxonomies]
-tags = ["work", "gnome", "design", "wallpaper", "art"]
+tags = ["work", "gnome", "design", "wallpaper", "art", "blender"]
 +++
 
 With the [45 release out the door](https://release.gnome.org/45/), it would be a shame not to reveal some of the behind the scenes for the new wallpapers.

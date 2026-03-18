@@ -3,7 +3,7 @@ title = "GNOME 50 Wallpapers"
 date = 2026-03-18
 slug = "gnome50-wallpapers"
 [taxonomies]
-tags = ["work", "gnome", "design", "wallpaper", "art"]
+tags = ["work", "gnome", "design", "wallpaper", "art", "blender"]
 [extra]
 image = "thumb.png"
 mastodon_url = "https://mastodon.social/@jimmac/116252222590706940"

@@ -34,6 +34,9 @@
         <h3 class="post-item-title">
           <a href="{{ post.permalink }}">{{ post.title }}</a>
         </h3>
+        {% if post.taxonomies.tags %}
+          <span class="post-item-tags" hidden>{{ post.taxonomies.tags | join(sep=" ") }}</span>
+        {% endif %}
       </article>
     {% endfor %}
 

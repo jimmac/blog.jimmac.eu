@@ -3,7 +3,7 @@ title = "HDR Wallpapers"
 slug = "wallpapers-2025"
 date = 2025-09-17
 [taxonomies]
-tags = ["work", "gnome", "design", "wallpaper", "art"]
+tags = ["work", "gnome", "design", "wallpaper", "art", "blender"]
 [extra]
 image = "walls.webp"
 +++

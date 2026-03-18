@@ -2,7 +2,7 @@
 title = "M8 — Drum and Base"
 date = 2021-12-19
 [taxonomies]
-tags = ["tracker", "synth", "dirtywaveM8", "music"]
+tags = ["tracker", "synth", "dirtywaveM8", "music", "blender"]
 +++
 
 <!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->

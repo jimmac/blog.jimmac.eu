@@ -2,7 +2,7 @@
 title = "Null Amusement"
 date = 2021-09-12
 [taxonomies]
-tags = ["tracker", "polyend", "synth", "sxfr", "pixelart", "aseprite", "pixaki", "music"]
+tags = ["tracker", "polyend", "synth", "sxfr", "pixelart", "aseprite", "pixaki", "music", "blender"]
 [extra]
 image = "chiptune.gif"
 +++

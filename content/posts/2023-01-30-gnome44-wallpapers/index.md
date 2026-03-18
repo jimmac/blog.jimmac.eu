@@ -2,7 +2,7 @@
 title = "GNOME 44 Wallpapers"
 date = 2023-01-30
 [taxonomies]
-tags = ["work", "gnome", "design", "wallpaper", "art"]
+tags = ["work", "gnome", "design", "wallpaper", "art", "blender"]
 +++
 
 As we gear up for the release of GNOME 44, let's take a moment to reflect on the visual design updates.
