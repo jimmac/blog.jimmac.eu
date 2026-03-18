@@ -1036,7 +1036,7 @@ audio[controls] {
   background: var(--color-code-bg);
   font-family: var(--font-mono);
   font-size: var(--font-size-xs);
-  @media (max-width: 768px) { width: 100%; }
+  @media (max-width: 768px) { width: 80%; }
 }
 
 .audio-player audio { display: none; }
