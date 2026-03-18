@@ -1,9 +1,10 @@
 +++
 title = "Scavengers Reign"
 date = 2025-05-22
-image = "scavengers.webp"
 [taxonomies]
 tags = ["movie"]
+[extra]
+image = "scavengers.webp"
 +++
 
 ![Scavengers Reign](scavengers.webp)

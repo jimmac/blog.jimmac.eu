@@ -2,9 +2,10 @@
 title = "HDR Wallpapers"
 slug = "wallpapers-2025"
 date = 2025-09-17
-image = "walls.webp"
 [taxonomies]
 tags = ["work", "gnome", "design", "wallpaper", "art"]
+[extra]
+image = "walls.webp"
 +++
 
 GNOME 49 brought another round of [changes to the default wallpaper set](https://release.gnome.org/49/#wallpapers) — some new additions, and a few removals too. Not just to keep the old *GNOME Design loves to delete things trope* alive, but to make room for fresh work and reduce stylistic overlap.

@@ -2,9 +2,10 @@
 title = "GNOME 47 Wallpapers"
 slug = "wallpapers-2024"
 date = 2024-09-24
-image = "walls.png"
 [taxonomies]
 tags = ["work", "gnome", "design", "wallpaper", "art"]
+[extra]
+image = "walls.png"
 +++
 
 With GNOME 47 out, it’s time for my bi-annual wallpaper deep dive. For many, these may seem like simple background images, but GNOME wallpapers are the visual anchors of the project, defining its aesthetic and identity. The signature blue wallpaper with its dark top bar remains a key part of that.

@@ -1,9 +1,10 @@
 +++
 title = "Weyland"
 date = 2024-09-13
-image = "weyland.webp"
 [taxonomies]
 tags = ["movie"]
+[extra]
+image = "weyland.webp"
 +++
 
 ![Weyland Yutani Corp -- Building Better Worlds](weyland.webp)

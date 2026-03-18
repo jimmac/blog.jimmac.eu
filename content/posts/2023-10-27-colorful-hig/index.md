@@ -1,9 +1,10 @@
 +++
 title = "Colorful HIG"
 date = 2023-10-27
-image = "hig-fullcolor.webp"
 [taxonomies]
 tags = ["work", "gnome", "design", "web"]
+[extra]
+image = "hig-fullcolor.webp"
 +++
 
 The refresh of the [Human Interface Guidelines](https://developer.gnome.org/hig) in both the content and presentation is something to be proud of, but there were a couple of areas that weren't great. Where we don't quite shine in the area of [blueprint illustration style](https://gitlab.gnome.org/Teams/Design/app-illustrations/-/blob/master/README.md?ref_type=heads) is the contrast for the dark mode. While in many cases a single graphic can work in the two contexts just fine, in other it struggles. And while we tried to address it in the HIG, it became clear we do need to do better.

@@ -1,9 +1,10 @@
 +++
 title = "Null Amusement"
 date = 2021-09-12
-image = "chiptune.gif"
 [taxonomies]
 tags = ["tracker", "polyend", "synth", "sxfr", "pixelart", "aseprite", "pixaki", "music"]
+[extra]
+image = "chiptune.gif"
 +++
 
 <!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->
