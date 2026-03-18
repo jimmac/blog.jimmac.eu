@@ -465,18 +465,18 @@ table {
   color: inherit;
 }
 
-.featured-image {
+.featured-visual {
   width: 100%;
   aspect-ratio: 3 / 2;
-  object-fit: cover;
-  display: block;
   background: linear-gradient(135deg, var(--color-border), var(--color-subtle));
+  overflow: hidden;
 }
 
-.featured-placeholder {
+.featured-image {
   width: 100%;
-  aspect-ratio: 3 / 2;
-  background: linear-gradient(135deg, var(--color-border), var(--color-subtle));
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .featured-body {

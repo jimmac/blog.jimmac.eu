@@ -11,11 +11,11 @@
       {% for post in posts_section.pages | slice(end=3) %}
       <article class="featured-card">
         <a href="{{ post.permalink }}" class="featured-link">
-          {% if post.extra.image %}
-          <img class="featured-image" src="{{ post.path }}{{ post.extra.image }}" alt="" loading="lazy">
-          {% else %}
-          <div class="featured-placeholder" aria-hidden="true"></div>
-          {% endif %}
+          <div class="featured-visual" aria-hidden="true">
+            {% if post.extra.image %}
+            <img class="featured-image" src="{{ post.path }}{{ post.extra.image }}" alt="" loading="lazy" onerror="this.remove()">
+            {% endif %}
+          </div>
           <div class="featured-body">
             <time class="featured-date">{{ post.date | date(format="%b %d, %Y") }}</time>
             <h2 class="featured-title">{{ post.title }}</h2>
