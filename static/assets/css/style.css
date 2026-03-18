@@ -32,10 +32,10 @@
   --color-muted:      #6b7886;
   --color-code-bg:    #f6f6f6;
   --color-navbar-bg:  rgba(255, 255, 255, 0.9);
-}
+  --color-mark-bg:    #fffba0;
+  --color-mark-text:  #0d122b;
 
-@media (prefers-color-scheme: dark) {
-  :root {
+  @media (prefers-color-scheme: dark) {
     --color-bg:         #131418;
     --color-text:       #c7bebe;
     --color-heading:    #eaeaea;
@@ -46,6 +46,8 @@
     --color-muted:      #767f87;
     --color-code-bg:    #1b1d25;
     --color-navbar-bg:  rgba(19, 20, 24, 0.9);
+    --color-mark-bg:    rgba(255, 82, 119, 0.3);
+    --color-mark-text:  #fff;
   }
 }
 
@@ -247,8 +249,8 @@ sup {
 }
 
 mark, ::selection {
-  background: #fffba0;
-  color: var(--color-heading);
+  background: var(--color-mark-bg);
+  color: var(--color-mark-text);
 }
 
 /* ============================================================
