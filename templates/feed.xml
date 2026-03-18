@@ -21,6 +21,15 @@
     {% if summary_text == "" %}{% set summary_text = post.content | striptags | truncate(length=200) %}{% endif %}
     {% if summary_text != "" %}<summary>{{ summary_text }}</summary>{% endif %}
     {% set clean = post.content | regex_replace(pattern="(?s)<style[^>]*>.*?</style>", rep="") | regex_replace(pattern="(?s)<iframe[^>]*>.*?</iframe>", rep="") | regex_replace(pattern="(?s)<svg[^>]*>.*?</svg>", rep="") %}
+    {% set clean = clean | regex_replace(pattern='(src|href)="([^"]*)"', rep='$1="__ABS__$2"') %}
+    {% set clean = clean | replace(from="__ABS__https://", to="https://") %}
+    {% set clean = clean | replace(from="__ABS__http://", to="http://") %}
+    {% set clean = clean | replace(from="__ABS__//", to="//") %}
+    {% set clean = clean | replace(from="__ABS__#", to="#") %}
+    {% set clean = clean | replace(from="__ABS__data:", to="data:") %}
+    {% set clean = clean | replace(from="__ABS__mailto:", to="mailto:") %}
+    {% set clean = clean | replace(from="__ABS__/", to=config.base_url ~ "/") %}
+    {% set clean = clean | replace(from="__ABS__", to=post.permalink) %}
     <content type="html"><![CDATA[{{ clean | safe }}]]></content>
   </entry>
   {% endfor %}
