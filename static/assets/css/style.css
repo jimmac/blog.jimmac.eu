@@ -361,6 +361,14 @@ table {
     &:not(:last-child) { margin-right: 5px; }
     &.rss { position: relative; bottom: -3px; outline: none; }
     &.rss::after { content: none; }
+    &.external { flex-direction: row; gap: 0.3em; &::after { content: none; } }
+    &.external .icon-external {
+      width: 0.7em;
+      height: 0.7em;
+      fill: currentColor;
+      flex-shrink: 0;
+      align-self: center;
+    }
     &.active { opacity: 1; font-weight: 600; }
 
     @media (max-width: 768px) {
