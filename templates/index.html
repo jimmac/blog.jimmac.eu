@@ -28,12 +28,13 @@
 
     <h3 class="posts-item-note" aria-label="Older Posts">Older Posts</h3>
     {% for post in posts_section.pages | slice(start=3, end=12) %}
-    <article class="post-item">
-      <span class="post-item-date">{{ post.date | date(format="%b %d, %Y") }}</span>
-      <h4 class="post-item-title">
-        <a href="{{ post.permalink }}">{{ post.title }}</a>
-      </h4>
-    </article>
+      <a href="{{ post.permalink }}" class="post-item">
+        <span class="post-item-date">{{ post.date | date(format="%b %d, %Y") }}</span>
+        <h3 class="post-item-title">{{ post.title }}</h3>
+        {% if post.description %}
+          <p class="post-item-description">{{ post.description }}</p>
+        {% endif %}
+      </a>
     {% endfor %}
   </main>
   {{ macros::footer() }}
