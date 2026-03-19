@@ -6,6 +6,7 @@ date = 2026-03-19
 tags = ["art", "sketch", "procreate", "gnome"]
 [extra]
 image = "thumb.webp"
+mastodon_url = "https://mastodon.social/@jimmac/116256351468919965"
 +++
 
 Two years have passed since I last shared my Friday app icon sketches, but the sketching itself hasn't stopped. 
