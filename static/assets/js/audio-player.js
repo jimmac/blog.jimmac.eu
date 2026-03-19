@@ -173,12 +173,24 @@ async function fetchMeta(audio) {
   // prefer MP3 (ID3 is most common), fall back to M4A
   for (const src of [mp3, m4a].filter(Boolean)) {
     try {
-      const resp = await fetch(src.url, { headers: { Range: "bytes=0-65535" } });
-      const buf = await resp.arrayBuffer();
+      const INITIAL = 65536;
+      const MAX_TAG = 2 * 1024 * 1024; // don't fetch more than 2 MB for metadata
+      let resp = await fetch(src.url, { headers: { Range: `bytes=0-${INITIAL - 1}` } });
+      let buf = await resp.arrayBuffer();
       const d = new Uint8Array(buf);
       let meta = null;
-      if (d[0] === 0x49 && d[1] === 0x44 && d[2] === 0x33) meta = parseID3v2(buf);
-      else meta = parseMP4(buf);
+
+      if (d[0] === 0x49 && d[1] === 0x44 && d[2] === 0x33) {
+        const tagSize = synchsafeInt(d, 6) + 10;
+        if (tagSize > INITIAL && tagSize <= MAX_TAG) {
+          const full = await fetch(src.url, { headers: { Range: `bytes=0-${tagSize - 1}` } });
+          buf = await full.arrayBuffer();
+        }
+        meta = parseID3v2(buf);
+      } else {
+        meta = parseMP4(buf);
+      }
+
       if (meta && (meta.title || meta.artist || meta.picture)) return meta;
     } catch { /* network error, try next */ }
   }
