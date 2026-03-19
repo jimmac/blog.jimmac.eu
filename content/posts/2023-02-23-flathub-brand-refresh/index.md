@@ -1,8 +1,11 @@
 +++
 title = "Flathub Brand Refresh"
 date = 2023-02-23
+description = "Look behind the Flathub rebrand."
 [taxonomies]
 tags = ["flatpak", "flathub", "design", "work", "brand"]
+[extra]
+image = "brand.webp"
 +++
 
 <!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->

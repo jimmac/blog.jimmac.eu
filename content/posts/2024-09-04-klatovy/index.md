@@ -1,5 +1,6 @@
 +++
 title = "Klatovy FPV"
+description = "Hanging out at Czechia's longest-running FPV event, rusty sticks and all."
 date = 2024-09-04
 [taxonomies]
 tags = ["fpv", "drone", "racing", "sketch", "procreate", "pixaki", "pixelart"]

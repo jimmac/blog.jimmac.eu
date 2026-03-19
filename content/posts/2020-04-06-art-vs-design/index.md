@@ -1,5 +1,6 @@
 +++
 title = "Art vs Design"
+description = "Why nightly app icons aren't art crimes."
 date = 2020-04-06
 [taxonomies]
 tags = ["design", "art", "gnome", "icon", "work"]

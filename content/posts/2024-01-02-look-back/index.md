@@ -1,5 +1,6 @@
 +++
 title = "Looking Back at 2023"
+description = "A dust spec reflects on music, FPV, and another trip around the sun."
 date = 2024-01-02
 [taxonomies]
 tags = ["music", "art", "fpv"]

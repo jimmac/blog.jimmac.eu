@@ -1,5 +1,6 @@
 +++
 title = "The Big App Icon Redesign"
+description = "The why and how behind GNOME's radical new icon style."
 date = 2019-01-23
 [taxonomies]
 tags = ["design", "icon", "inkscape", "gnome", "work"]

@@ -1,5 +1,6 @@
 +++
 title = "SVG animation"
+description = "Chasing a viable SVG replacement for translated getting-started videos."
 date = 2015-10-13
 [taxonomies]
 tags = ["design", "css", "svg", "inkscape", "work"]

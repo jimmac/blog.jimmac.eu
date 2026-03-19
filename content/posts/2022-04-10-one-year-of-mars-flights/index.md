@@ -1,5 +1,6 @@
 +++
 title = "Ingenuity's One Year of Mars Flights"
+description = "Celebrating a year of Martian flights with Blender overlays and desert footage."
 date = 2022-04-10
 [taxonomies]
 tags = ["fpv", "blender", "nasa", "youtube", "ingenuity"]

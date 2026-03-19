@@ -1,5 +1,6 @@
 +++
 title = "Pixels"
+description = "GNOME icons reimagined for a 320x240 alternate universe."
 date = 2021-06-22
 [taxonomies]
 tags = ["pixelart", "aseprite", "gnome"]

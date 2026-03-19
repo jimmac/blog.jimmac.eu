@@ -1,5 +1,6 @@
 +++
 title = "Sketch Friday"
+description = "Sharing app icon design sketches on Mastodon every Friday."
 date = 2024-06-14
 [taxonomies]
 tags = ["art", "sketch", "procreate"]

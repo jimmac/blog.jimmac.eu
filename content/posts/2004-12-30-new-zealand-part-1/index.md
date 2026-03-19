@@ -1,6 +1,7 @@
 +++
 date = 2004-12-30
 title = "New Zealand, Part 1/4"
+description = "First leg of a road trip across New Zealand, near-misses included."
 [taxonomies]
 tags = ["travel"]
 +++

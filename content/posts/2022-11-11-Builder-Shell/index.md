@@ -1,5 +1,6 @@
 +++
 title = "Running Shell in Builder"
+description = "Testing GNOME Shell changes without the usual build nightmare."
 date = 2022-11-11
 [taxonomies]
 tags = ["gnome", "development", "shell"]

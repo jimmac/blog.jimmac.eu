@@ -1,5 +1,6 @@
 +++
 title = "Droneman"
+description = "My son's spectacular performance and my only IMDB credit."
 date = 2022-02-14
 [taxonomies]
 tags = ["personal", "fpv", "movie"]

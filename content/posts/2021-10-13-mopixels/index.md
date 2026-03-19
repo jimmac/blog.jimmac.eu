@@ -1,5 +1,6 @@
 +++
 title = "Mo' Pixels"
+description = "Daily pixel art practice mixing app icons with nostalgia."
 date = 2021-10-13
 [taxonomies]
 tags = ["pixelart", "pixaki", "gnome", "design", "art", "wallpaper", "icon"]

@@ -1,5 +1,6 @@
 +++
 title = "Shelved Wallpapers, Part 2"
+description = "More wallpaper variants that didn't make the 3.38 cut."
 date = 2020-09-01
 categories = "wallpaper"
 [taxonomies]

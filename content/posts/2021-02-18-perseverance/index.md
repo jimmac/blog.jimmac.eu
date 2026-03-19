@@ -1,5 +1,6 @@
 +++
 title = "Perseverance Landing"
+description = "Tuning in to watch NASA land a rover on Mars."
 date = 2021-02-18
 [taxonomies]
 tags = ["nasa", "youtube"]

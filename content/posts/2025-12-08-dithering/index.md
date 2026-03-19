@@ -1,5 +1,6 @@
 +++
 title = "Dithering"
+description = "Using GIMP's GEGL dithering as an artistic device in GNOME wallpapers."
 date = 2025-12-08
 [taxonomies]
 tags = ["gnome", "wallpaper", "gimp", "work"]

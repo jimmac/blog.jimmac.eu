@@ -1,5 +1,6 @@
 +++
 title = "One More Trip Around the Sun"
+description = "A narrow-angle look back at 2021 through synths and pixels."
 date = 2022-01-10
 [taxonomies]
 tags = ["personal", "music", "synth", "2021"]

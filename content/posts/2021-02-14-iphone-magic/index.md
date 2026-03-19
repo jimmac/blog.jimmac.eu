@@ -1,5 +1,6 @@
 +++
 title = "Night Mode Magic"
+description = "Marveling at what a tiny phone sensor can do in the dark."
 date = 2021-02-14
 [taxonomies]
 tags = ["photo", "iphone"]

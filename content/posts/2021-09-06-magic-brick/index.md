@@ -1,5 +1,6 @@
 +++
 title = "Magic Bricks"
+description = "Handheld iPhone footage so smooth it looks gimbal-stabilized."
 date = 2021-09-06
 [taxonomies]
 tags = ["iphone", "video", "stabilization", "skate"]

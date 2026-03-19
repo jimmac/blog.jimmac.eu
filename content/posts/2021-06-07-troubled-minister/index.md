@@ -1,5 +1,6 @@
 +++
 title = "Troubled Minister"
+description = "Weekend synth jam meets FPV flights around Liberec."
 date = 2021-06-07
 [taxonomies]
 tags = ["synth", "polyend", "tracker", "fpv", "music"]

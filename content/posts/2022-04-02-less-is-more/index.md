@@ -1,5 +1,6 @@
 +++
 title = "Less is More"
+description = "One-hour constraint jams keeping weeklybeats alive."
 date = 2022-04-02
 [taxonomies]
 tags = ["tracker", "synth", "dirtywaveM8", "td3", "music"]

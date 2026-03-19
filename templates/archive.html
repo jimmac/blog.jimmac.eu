@@ -29,15 +29,16 @@
         <h2>{{ year }}</h2>
         {% set_global current_year = year %}
       {% endif %}
-      <article class="post-item">
+      <a href="{{ post.permalink }}" class="post-item">
         <span class="post-item-date">{{ post.date | date(format="%b %d") }}</span>
-        <h3 class="post-item-title">
-          <a href="{{ post.permalink }}">{{ post.title }}</a>
-        </h3>
+        <h3 class="post-item-title">{{ post.title }}</h3>
+        {% if post.description %}
+          <p class="post-item-description">{{ post.description }}</p>
+        {% endif %}
         {% if post.taxonomies.tags %}
           <span class="post-item-tags" hidden>{{ post.taxonomies.tags | join(sep=" ") }}</span>
         {% endif %}
-      </article>
+      </a>
     {% endfor %}
 
   </main>

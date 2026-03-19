@@ -1,5 +1,6 @@
 +++
 title = "Pixel Inktober"
+description = "Another October of quick pixel dailies, now posted on Mastodon."
 slug = "pixel-inktober-2022"
 date = 2022-10-31
 [taxonomies]

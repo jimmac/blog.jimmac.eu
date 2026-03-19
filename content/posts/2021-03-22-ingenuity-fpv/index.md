@@ -1,5 +1,6 @@
 +++
 title = "Ingenuity FPV"
+description = "Rendering NASA's Mars helicopter in Blender and mixing it with FPV flights."
 [taxonomies]
 tags = ["fpv", "blender", "nasa", "youtube", "ingenuity"]
 +++

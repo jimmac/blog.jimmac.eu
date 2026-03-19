@@ -1,6 +1,7 @@
 +++
 date = 2005-01-11
 title = "New Zealand, Part 4/4"
+description = "Queenstown thrills, Fox Glacier, and the final stretch north."
 [taxonomies]
 tags = ["travel"]
 +++

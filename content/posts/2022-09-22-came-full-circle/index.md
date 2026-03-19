@@ -1,5 +1,6 @@
 +++
 title = "Came Full Circle"
+description = "All the pixel art app animations assembled into one video."
 date = 2022-09-22
 [taxonomies]
 tags = ["gnome", "design", "icon", "pixelart", "art", "pixaki", "blender"]

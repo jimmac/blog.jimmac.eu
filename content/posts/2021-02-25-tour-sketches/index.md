@@ -1,5 +1,6 @@
 +++
 title = "Tour Sketches"
+description = "Sketching illustrations for the GNOME 40 onboarding experience."
 date = 2021-02-25
 [taxonomies]
 tags = ["gnome", "design", "work", "sketch"]

@@ -1,5 +1,6 @@
 +++
 title = "Udev Rules for Dirtywave M8"
+description = "A note to future me on getting the M8 working on Linux."
 date = 2023-05-01
 [taxonomies]
 tags = ["dirtywaveM8", "tracker", "music", "linux"]

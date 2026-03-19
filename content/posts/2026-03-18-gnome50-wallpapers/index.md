@@ -1,5 +1,6 @@
 +++
 title = "GNOME 50 Wallpapers"
+description = "Hexagons finally claim the default spot in GNOME's wallpaper lineup."
 date = 2026-03-18
 slug = "gnome50-wallpapers"
 [taxonomies]

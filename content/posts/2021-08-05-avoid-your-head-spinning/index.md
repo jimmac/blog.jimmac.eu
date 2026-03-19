@@ -1,5 +1,6 @@
 +++
 title = "Avoid Head Spinning"
+description = "Disabling Inkscape's canvas rotation before it drives you mad."
 date = 2021-08-05
 [taxonomies]
 tags = ["inkscape", "svg"]

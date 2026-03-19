@@ -1,5 +1,6 @@
 +++
 title = "125BPM vs 100KPH"
+description = "Pairing a high-speed drone cruise with a live synth jam."
 [taxonomies]
 tags = ["elektron", "synth", "fpv"]
 +++

@@ -1,6 +1,7 @@
 +++
 date = 2004-12-30T12:00:00+00:00
 title = "New Zealand, Part 2/4"
+description = "From Moeraki Boulders to sea lions at Surat Bay."
 [taxonomies]
 tags = ["travel"]
 +++

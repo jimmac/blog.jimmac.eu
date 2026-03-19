@@ -1,5 +1,6 @@
 +++
 title = "How to Gradient When You Can't"
+description = "Faking recolorable gradients in monochrome symbolic icons."
 date = 2021-08-18
 [taxonomies]
 tags = ["work", "gnome", "inkscape", "tutorial"]

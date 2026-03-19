@@ -1,5 +1,6 @@
 +++
 title = "Even Mo' Pixels"
+description = "Continuing the daily pixel art routine across GNOME Circle apps."
 date = 2022-09-16
 [taxonomies]
 tags = ["pixelart", "pixaki", "gnome", "design", "art", "wallpaper", "icon"]

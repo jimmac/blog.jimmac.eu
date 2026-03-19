@@ -1,5 +1,6 @@
 +++
 title = "12 months instead of 12 minutes"
+description = "How we iterated on GNOME.org's 3D hero image the old-fashioned way."
 date = 2025-11-21
 [taxonomies]
 tags = ["gnome", "web", "blender", "3D", "work"]

@@ -1,6 +1,7 @@
 +++
 date = 2005-01-05
 title = "New Zealand, Part 3/4"
+description = "Milford Sound on a sunny day and waterfalls along the way."
 [taxonomies]
 tags = ["travel"]
 +++

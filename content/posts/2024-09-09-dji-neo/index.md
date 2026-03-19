@@ -1,5 +1,6 @@
 +++
 title = "Autonomous Cameraman"
+description = "DJI's tiny Neo drone is a button-operated flying cameraman."
 date = 2024-09-09
 [taxonomies]
 tags = ["drone", "camera", "photo", "dji"]

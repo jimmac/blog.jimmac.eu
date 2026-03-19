@@ -1,5 +1,6 @@
 +++
 title = "Scavengers Reign"
+description = "An animated series so good I already miss it after the last episode."
 date = 2025-05-22
 [taxonomies]
 tags = ["movie"]

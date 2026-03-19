@@ -19,7 +19,7 @@
           <div class="featured-body">
             <time class="featured-date">{{ post.date | date(format="%b %d, %Y") }}</time>
             <h2 class="featured-title">{{ post.title }}</h2>
-            <p class="featured-blurb">{{ post.content | striptags | truncate(length=120) }}</p>
+            <p class="featured-blurb">{% if post.description %}{{ post.description }}{% else %}{{ post.content | striptags | truncate(length=120) }}{% endif %}</p>
           </div>
         </a>
       </article>

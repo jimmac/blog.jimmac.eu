@@ -1,5 +1,6 @@
 +++
 title = "M8 — Drum and Base"
+description = "Learning drum and bass on the tiny miracle that is the Dirtywave M8."
 date = 2021-12-19
 [taxonomies]
 tags = ["tracker", "synth", "dirtywaveM8", "music", "blender"]

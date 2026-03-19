@@ -1,6 +1,7 @@
 +++
 date = 2004-10-17
 title = "Industrial Gtk Engine Fixups"
+description = "Tweaking focus cues and tab rendering in the Industrial engine."
 [taxonomies]
 tags = ["blastfromthepast", "work", "ximian"]
 +++

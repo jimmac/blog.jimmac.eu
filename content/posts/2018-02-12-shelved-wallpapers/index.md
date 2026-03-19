@@ -1,5 +1,6 @@
 +++
 title = "Shelved Wallpapers"
+description = "GNOME wallpaper outtakes too nice to keep shelved."
 date = 2018-02-12
 [taxonomies]
 tags = ["gnome", "design", "wallpaper", "download"]

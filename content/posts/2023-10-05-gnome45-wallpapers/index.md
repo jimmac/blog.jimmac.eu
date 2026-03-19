@@ -1,5 +1,6 @@
 +++
 title = "GNOME 45 Wallpapers"
+description = "Geometry nodes, mesh gradients, and the stories behind the 45 set."
 date = 2023-10-05
 [taxonomies]
 tags = ["work", "gnome", "design", "wallpaper", "art", "blender"]

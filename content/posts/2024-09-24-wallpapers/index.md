@@ -1,5 +1,6 @@
 +++
 title = "GNOME 47 Wallpapers"
+description = "Wallpaper deep dive for GNOME 47, including a simulated depth-of-field trick."
 slug = "wallpapers-2024"
 date = 2024-09-24
 [taxonomies]

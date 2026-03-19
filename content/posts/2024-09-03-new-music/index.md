@@ -1,5 +1,6 @@
 +++
 title = "New Music"
+description = "Discovering remarkable artists and remembering to actually blog about it."
 date = 2024-09-03
 [taxonomies]
 tags = ["music", "dirtywaveM8", "tracker"]

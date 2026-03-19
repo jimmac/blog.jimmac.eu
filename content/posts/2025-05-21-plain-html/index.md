@@ -1,5 +1,6 @@
 +++
 title = "Ode to HTML"
+description = "Going back to basics with clean HTML and CSS, no frameworks needed."
 date = 2025-05-21
 [taxonomies]
 tags = ["work", "web", "design", "css"]

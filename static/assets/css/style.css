@@ -529,8 +529,13 @@ table {
   border-top: 1px solid var(--color-border);
 
   &:first-child { border-top: none; }
+}
 
-  
+a.post-item {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover .post-item-title, &:focus .post-item-title { color: var(--color-heading); }
 }
 
 .post-item-date {
@@ -547,11 +552,14 @@ table {
   font-size: var(--font-size);
   font-weight: normal;
   letter-spacing: 0.1px;
+  color: var(--color-text);
+}
 
-  & a {
-    color: var(--color-text);
-    &:hover, &:focus { color: var(--color-heading); }
-  }
+.post-item-description {
+  grid-column: 2;
+  margin: -8px 0 0;
+  font-size: 0.7em;
+  color: var(--color-muted);
 }
 
 /* ============================================================

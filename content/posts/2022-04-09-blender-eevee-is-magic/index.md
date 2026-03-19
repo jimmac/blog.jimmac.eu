@@ -1,5 +1,6 @@
 +++
 title = "Blender Eevee is Magic"
+description = "Rendering Stream Deck button assets in Blender's realtime engine."
 date = 2022-04-09
 [taxonomies]
 tags = ["blender", "inkscape", "icon", "design"]

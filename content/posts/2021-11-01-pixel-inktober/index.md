@@ -1,5 +1,6 @@
 +++
 title = "Pixel Inktober"
+description = "Completing a monthly pixel art challenge for the first time."
 slug = "pixel-inktober-2021"
 date = 2021-11-01
 [taxonomies]

@@ -1,5 +1,6 @@
 +++
 title = "Berlin Mini GUADEC"
+description = "The imperfect, perfectly Berlin-flavored GNOME hackfest at C-Base."
 date = 2022-07-25
 [taxonomies]
 tags = ["work", "guadec", "gnome", "design", "travel"]

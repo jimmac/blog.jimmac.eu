@@ -1,5 +1,6 @@
 +++
 title = "Weyland"
+description = "Alien: Romulus exceeded my expectations — mainly because I had none."
 date = 2024-09-13
 [taxonomies]
 tags = ["movie"]
