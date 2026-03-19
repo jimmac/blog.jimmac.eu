@@ -216,7 +216,7 @@ a {
   text-decoration-color: var(--color-subtle);
   border-radius: 4px;
 
-  &:hover { color: var(--color-link); }
+  &:hover { color: var(--color-link); transition: color 200ms var(--bounce-ease); }
   outline: 0 solid color-mix(in srgb, var(--color-link) 60%, transparent);
   outline-offset: 0;
   transition: outline 200ms var(--bounce-ease),
@@ -369,7 +369,7 @@ table {
       pointer-events: none;
     }
 
-    &:hover { opacity: 1; }
+    &:hover { opacity: 1; transition: opacity 200ms var(--smooth-ease); }
     &:not(:last-child) { margin-right: 5px; }
     &.rss { position: relative; bottom: -3px; outline: none; }
     &.rss::after { content: none; }
@@ -729,6 +729,8 @@ a.post-item {
     &:hover {
       color: var(--color-bg);
       background-color: var(--color-link-hover);
+      transition: color 200ms var(--bounce-ease),
+                  background-color 200ms var(--bounce-ease);
       text-decoration: none;
     }
   }
