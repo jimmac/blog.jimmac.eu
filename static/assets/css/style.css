@@ -64,7 +64,7 @@
   transition: background-color 75ms ease-in, border-color 75ms ease-in;
 }
 
-html { width: 100vw; }
+html { width: 100vw; scroll-behavior: smooth; }
 
 @view-transition { navigation: auto; }
 
@@ -102,8 +102,8 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-heading);
   font-weight: var(--weight-bold);
 
+  scroll-margin-top: 80px;
   & + ul, & + ol { margin-top: 10px; }
-  @media (max-width: 768px) { scroll-margin-top: 65px; }
 
   & > a {
     text-decoration: none;
