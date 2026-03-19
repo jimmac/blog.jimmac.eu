@@ -816,6 +816,8 @@ a.post-item {
 .page-content {
   padding-top: 8px;
 
+  & img { border-radius: var(--radius); }
+
   & iframe { text-align: center; }
 
   & video,
@@ -839,7 +841,6 @@ a.post-item {
   }
 
   & figure {
-    & img { border-radius: 2px; }
     & figcaption {
       margin-top: 5px;
       font-style: italic;

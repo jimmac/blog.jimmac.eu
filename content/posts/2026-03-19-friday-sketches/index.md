@@ -8,12 +8,15 @@ tags = ["art", "sketch", "procreate", "gnome"]
 image = "thumb.webp"
 +++
 
-Two years have passed since I last shared picks from the Friday app icon sketches I do continue to share. 
+Two years have passed since I last shared my Friday app icon sketches, but the sketching itself hasn't stopped. 
+
+For me, it's the best way to figure out the right metaphors before we move to final pixels. These sketches are just one part of the GNOME Design Team's wider effort to keep our icons consistent and meaningful—it is an endeavor that’s been going on for years. 
+
+If you design a GNOME app following the [GNOME Design Guidelines](https://developer.gnome.org/hig/), feel free to [request](https://gitlab.gnome.org/Teams/Design/app-icon-requests/-/issues/new?issuable_template=request) an icon to be made for you. If you are serious and apply for inclusion in [GNOME Circle](https://circle.gnome.org), you are way more likely to get a designer's attention.
 
 <div class="image-grid pixelated-hover">
 <img src="Ai_Assistant.webp" alt="Ai Assistant" loading="lazy">
 <img src="Aria%201.webp" alt="Aria 1" loading="lazy">
-<img src="Aria.webp" alt="Aria" loading="lazy">
 <img src="Articulate_.webp" alt="Articulate" loading="lazy">
 <img src="Bazaar%201.webp" alt="Bazaar 1" loading="lazy">
 <img src="Bazaar%202.webp" alt="Bazaar 2" loading="lazy">
@@ -100,6 +103,7 @@ Two years have passed since I last shared picks from the Friday app icon sketche
 <img src="Reflection%202.webp" alt="Reflection 2" loading="lazy">
 <img src="Reflection%203.webp" alt="Reflection 3" loading="lazy">
 <img src="Reflection.webp" alt="Reflection" loading="lazy" class="big">
+<img src="Aria.webp" alt="Aria" loading="lazy">
 <img src="Rissole%201.webp" alt="Rissole 1" loading="lazy">
 <img src="Rissole%202.webp" alt="Rissole 2" loading="lazy">
 <img src="Rissole.webp" alt="Rissole" loading="lazy">
