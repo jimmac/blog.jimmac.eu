@@ -7,7 +7,7 @@ tags = ["icon", "design", "gnome", "work", "inkscape"]
 [extra]
 image = "pencil.jpg"
 +++
-![Icon Tooling](icon-tooling.svg)
+<img loading="lazy" src="icon-tooling.svg" alt="Icon Tooling">
 
 Unlike [application icons](/posts/the-big-app-icon-redesign/), the [symbolic icons](https://teams.pages.gitlab.gnome.org/Design/hig-www/guidelines/ui-icons.html) don't convey application identity, but rely on visual metaphor to describe an action (what a button in the UI does).
 
@@ -32,7 +32,7 @@ Sounds like a lot of work? Lucky for you we have [Icon Library](https://flathub.
 
 The app can help you not only to search for an appropriate icon using keywords, it can assist you distributing the assets along with your app (as a [gresource](https://developer.gnome.org/gio/stable/GResource.html)). While it's on you as a developer to maintain the assets you bundle, no longer will your app break when you've used the `the wrench` icon when the designers followed a trend of using a pegged wheel for `preferences` or decided to drop an old or unused icon.
 
-[![Icon Library](icon-library.png)](https://flathub.org/apps/details/org.gnome.design.IconLibrary)
+<a href="https://flathub.org/apps/details/org.gnome.design.IconLibrary"><img loading="lazy" src="icon-library.png" alt="Icon Library"></a>
 
 It's worth noting the app is also quite useful for designers, since you can also copy & paste icons into mockups easily.
 
@@ -44,7 +44,7 @@ So let's assume the icons available don't really fit your need and you need to c
 
 The first step is always to figure out **the metaphor**. Sketching out some ideas on paper is a solid recommendation. Even if you think you're no good at sketching, try it. In fact, especially when you're not good at sketching, the process will help you identify very strong metaphors that convey the meaning even using a few squibbly lines. The more definition you provide, the harder it is to tell whether the function isn't overshadowed by the form.
 
-![Sketching](sketching.png)
+<img loading="lazy" src="sketching.png" alt="Sketching">
 
 Once you're somewhat convinced a fitting metaphor can be executed on the 16x16 pixel grid, it's time to reach for the tool to guide your throughout the process, [Symbolic Preview](https://flathub.org/apps/details/org.gnome.design.SymbolicPreview).
 
@@ -52,15 +52,15 @@ Once you're somewhat convinced a fitting metaphor can be executed on the 16x16 p
 
 Let's assume you have a small app that is very early in development and you decided to make it easy to report issues with it and need a `report bug` icon for the headerbar.
 
-![Pencil](pencil.jpg)
+<img loading="lazy" src="pencil.jpg" alt="Pencil">
 
 `Symbolic Preview` either allows you to create a single symbolic or a sheet with many symbolics. In our first case, we'll go for just one.
 
-![Single Symbolic](single-vs-many.png)
+<img loading="lazy" src="single-vs-many.png" alt="Single Symbolic">
 
 After providing a name for your icon (prefixing with app name can avoid some [theming issues](https://gitlab.gnome.org/GNOME/gnome-screenshot/-/issues/125)) a template is saved. Currently you have to do some file system surfing to open up the asset in [Inkscape](https://flathub.org/apps/details/org.inkscape.Inkscape).
 
-![File Naming](single-1.png)
+<img loading="lazy" src="single-1.png" alt="File Naming">
 
 Symbolic preview can be used as its name suggests. Currently it doesn't [auto-reload](https://gitlab.gnome.org/World/design/symbolic-preview/-/issues/26) on changes, but hopefully that will come soon. 
 
@@ -71,7 +71,7 @@ There are some [basic guidelines](https://teams.pages.gitlab.gnome.org/Design/hi
 * Main outline should not use a hairline stroke, 2px strokes are advised
 * Convert strokes to outlines. The old toolchain allowed to use strokes as long as no fill was used on the same object, but it has been the source of many misrenderings. Just convert all strokes to outlines with `Path>Stroke to Path` in Inkscape.
 
-![Symbolic Preview](single-2.png)
+<img loading="lazy" src="single-2.png" alt="Symbolic Preview">
 
 The app provides different color contexts and displays your icon among existing symbolics, not unlike what App Icon Preview does for app icons. Again, this is when you only need to ship a handful of icons with your app.
 
@@ -93,7 +93,7 @@ There are a few conventions you need to follow in order for the export to work. 
 #### Metadata
 While it's mainly useful for maintaining a collection like icon-development-kit, you will save yourself time [looking up your own assets](https://gitlab.gnome.org/World/design/symbolic-preview/-/issues/31) if you provide some metadata describing your icon. 
 
-![Sheet Preview](multiple-1.png)
+<img loading="lazy" src="multiple-1.png" alt="Sheet Preview">
 
 Keywords for an icon are given as space separated words in the `label` attribute in object properties in Inkscape (`inkscape:label` attribute).
 

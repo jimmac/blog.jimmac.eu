@@ -10,7 +10,7 @@ Builder has been absolutely wonderful for a designer to dive in and fix up graph
 
 What has been far from wonderful &mdash; doing even one line fixes for the GNOME Shell was very hard to test for anyone not building shell daily. getting the environment ready every release has been a chore. From virtual machines, jhbuild, toolbox, jhbuild in VMs to jhbuild in toolbox there was a dozen of way to fail building the latest shell.
 
-<img src="toolbox.gif" alt="Toolbox/Podman targets in Builder" class="pixelated full">
+<img loading="lazy" src="toolbox.gif" alt="Toolbox/Podman targets in Builder" class="pixelated full">
 
 Builder 43, impressively marathoned into perfection, features (among many other things) the ability to target [Toolbox](https://containertoolbx.org)/podman containers as development environments. So I was really happy to see [Bylan McCall](https://mastodon.social/@dylanmccall@mastodon.online/109243458052123633) have a nested session going on the run button.
 

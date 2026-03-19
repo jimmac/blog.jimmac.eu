@@ -15,51 +15,51 @@ To combine exploration with usefulness, I imagined mixing up of the new applicat
 Sadly the result is visually [way too overwhelming](https://gitlab.gnome.org/GNOME/gnome-backgrounds/-/blob/wip/jimmac/prefers-dark-light/backgrounds/pixels-d.png), but the assets created can at least please your nostalgia bone here on planet GNOME (unless it becomes a mess without the stylesheet, we'll see). Stay curious!
 
 <div class="image-grid pixelated">
-<img src="IMG_0257.PNG" alt="">
-<img src="IMG_0250.PNG" alt="">
-<img src="IMG_0258.PNG" alt="">
-<img src="IMG_0248.PNG" alt="">
-<img src="IMG_0223.PNG" alt="">
-<img src="IMG_0228.PNG" alt="">
-<img src="IMG_0259.PNG" alt="">
-<img src="IMG_0230.PNG" alt="">
-<img src="IMG_0265.PNG" alt="">
-<img src="IMG_0242.PNG" alt="">
-<img src="IMG_0256.PNG" alt="">
-<img src="IMG_0254.PNG" alt="">
-<img src="IMG_0219.PNG" alt="">
-<img src="IMG_0252.PNG" alt="">
-<img src="IMG_0226.PNG" alt="">
-<img src="IMG_0233.PNG" alt="">
-<img src="IMG_0247.PNG" alt="">
-<img src="IMG_0260.PNG" alt="">
-<img src="IMG_0222.PNG" alt="">
-<img src="IMG_0221.PNG" alt="">
-<img src="IMG_0224.PNG" alt="">
-<img src="IMG_0251.PNG" alt="">
-<img src="IMG_0266.PNG" alt="">
-<img src="IMG_0227.PNG" alt="">
-<img src="IMG_0246.PNG" alt="">
-<img src="IMG_0244.PNG" alt="">
-<img src="IMG_0241.PNG" alt="">
-<img src="IMG_0253.PNG" alt="">
-<img src="IMG_0231.PNG" alt="">
-<img src="IMG_0264.PNG" alt="">
-<img src="IMG_0255.PNG" alt="">
-<img src="IMG_0229.PNG" alt="">
-<img src="IMG_0234.PNG" alt="">
-<img src="IMG_0240.PNG" alt="">
-<img src="IMG_0237.PNG" alt="">
-<img src="IMG_0225.PNG" alt="">
-<img src="IMG_0262.PNG" alt="">
-<img src="IMG_0263.PNG" alt="">
-<img src="IMG_0236.PNG" alt="">
-<img src="IMG_0249.PNG" alt="">
-<img src="IMG_0261.PNG" alt="">
-<img src="IMG_0239.PNG" alt="">
-<img src="IMG_0235.PNG" alt="">
-<img src="IMG_0245.PNG" alt="">
-<img src="IMG_0243.PNG" alt="">
-<img src="IMG_0238.PNG" alt="">
-<img src="IMG_0232.PNG" alt="">
+<img loading="lazy" src="IMG_0257.PNG" alt="">
+<img loading="lazy" src="IMG_0250.PNG" alt="">
+<img loading="lazy" src="IMG_0258.PNG" alt="">
+<img loading="lazy" src="IMG_0248.PNG" alt="">
+<img loading="lazy" src="IMG_0223.PNG" alt="">
+<img loading="lazy" src="IMG_0228.PNG" alt="">
+<img loading="lazy" src="IMG_0259.PNG" alt="">
+<img loading="lazy" src="IMG_0230.PNG" alt="">
+<img loading="lazy" src="IMG_0265.PNG" alt="">
+<img loading="lazy" src="IMG_0242.PNG" alt="">
+<img loading="lazy" src="IMG_0256.PNG" alt="">
+<img loading="lazy" src="IMG_0254.PNG" alt="">
+<img loading="lazy" src="IMG_0219.PNG" alt="">
+<img loading="lazy" src="IMG_0252.PNG" alt="">
+<img loading="lazy" src="IMG_0226.PNG" alt="">
+<img loading="lazy" src="IMG_0233.PNG" alt="">
+<img loading="lazy" src="IMG_0247.PNG" alt="">
+<img loading="lazy" src="IMG_0260.PNG" alt="">
+<img loading="lazy" src="IMG_0222.PNG" alt="">
+<img loading="lazy" src="IMG_0221.PNG" alt="">
+<img loading="lazy" src="IMG_0224.PNG" alt="">
+<img loading="lazy" src="IMG_0251.PNG" alt="">
+<img loading="lazy" src="IMG_0266.PNG" alt="">
+<img loading="lazy" src="IMG_0227.PNG" alt="">
+<img loading="lazy" src="IMG_0246.PNG" alt="">
+<img loading="lazy" src="IMG_0244.PNG" alt="">
+<img loading="lazy" src="IMG_0241.PNG" alt="">
+<img loading="lazy" src="IMG_0253.PNG" alt="">
+<img loading="lazy" src="IMG_0231.PNG" alt="">
+<img loading="lazy" src="IMG_0264.PNG" alt="">
+<img loading="lazy" src="IMG_0255.PNG" alt="">
+<img loading="lazy" src="IMG_0229.PNG" alt="">
+<img loading="lazy" src="IMG_0234.PNG" alt="">
+<img loading="lazy" src="IMG_0240.PNG" alt="">
+<img loading="lazy" src="IMG_0237.PNG" alt="">
+<img loading="lazy" src="IMG_0225.PNG" alt="">
+<img loading="lazy" src="IMG_0262.PNG" alt="">
+<img loading="lazy" src="IMG_0263.PNG" alt="">
+<img loading="lazy" src="IMG_0236.PNG" alt="">
+<img loading="lazy" src="IMG_0249.PNG" alt="">
+<img loading="lazy" src="IMG_0261.PNG" alt="">
+<img loading="lazy" src="IMG_0239.PNG" alt="">
+<img loading="lazy" src="IMG_0235.PNG" alt="">
+<img loading="lazy" src="IMG_0245.PNG" alt="">
+<img loading="lazy" src="IMG_0243.PNG" alt="">
+<img loading="lazy" src="IMG_0238.PNG" alt="">
+<img loading="lazy" src="IMG_0232.PNG" alt="">
 </div>

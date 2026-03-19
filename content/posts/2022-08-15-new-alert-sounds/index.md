@@ -12,7 +12,7 @@ The sound effects in the Settings' panel have been recreated with a method calle
 
 Sounds created for GNOME 43 were generated on a mini-computer called [Teensy](https://www.pjrc.com/store/teensy41.html) (currently unavailable due to the global chip shortage), running software called [Dirtywave Headless](https://github.com/DirtyWave/M8HeadlessFirmware) written by [Timothy Lamb](https://trash80.com/). The software includes other synthesizer engines, but majority of the sounds were made using the 4 operator FM engine. To further complicate things, my favorite algorithm is No.16 where all of the 4 oscillators are carriers, effectively being equivalent to a 4 oscillator analog synth.
 
-<img src="fm.svg"
+<img loading="lazy" src="fm.svg"
 alt="FM Synth Engine on the Dirtywave Headless. Image taken from the Dirtywave M8 Tracker manual."
 class="full">
 

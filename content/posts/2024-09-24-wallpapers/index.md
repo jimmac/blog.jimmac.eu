@@ -11,7 +11,7 @@ image = "walls.png"
 
 With GNOME 47 out, it’s time for my bi-annual wallpaper deep dive. For many, these may seem like simple background images, but GNOME wallpapers are the visual anchors of the project, defining its aesthetic and identity. The signature blue wallpaper with its dark top bar remains a key part of that.
 
-![GNOME 47 Wallpapers](wallpapers-l.webp)
+<img loading="lazy" src="wallpapers-l.webp" alt="GNOME 47 Wallpapers">
 
 In this release, GNOME 47 doesn’t overhaul the default blue wallpaper. It's more of a subtle tweak than a full redesign. The familiar rounded triangles remain, but here’s something neat: the dark variant mimics real-world camera behavior. When it's darker, the camera’s aperture widens, creating a shallower depth of field. A small but nice touch for those who notice these things.
 
@@ -44,15 +44,15 @@ Lastly, there’s `Symbolic Soup`, which is, well... a bit chaotic. It might not
 ## Preview
 
 <div class="image-grid">
-<a href="lcd-d.jxl"><img src="lcd-d.webp" alt="LCD"></a>
-<a href="pills-d.jxl"><img src="pills-d.webp" alt="Pills"></a>
-<a href="map-d.svg"><img src="map-d.svg" alt="Map" class="big"></a>
-<a href="mollnar-d.svg"><img src="mollnar-d.svg" alt="Mollnar"></a>
-<a href="lcd-rainbow-l.jxl"><img src="lcd-rainbow-l.webp" alt="LCD Raindow"></a>
-<a href="pixels-d.jxl"><img src="pixels-d.webp" alt="Pixels" class="big"></a>
-<a href="sheet-l.jxl"><img src="sheet-l.webp" alt="Sheet"></a>
-<a href="swoosh-l.jxl"><img src="swoosh-l.webp" alt="Swoosh"></a>
-<a href="symbolic-soup-d.jxl"><img src="symbolic-soup-d.webp" alt="Symbolic Soup"></a>
+<a href="lcd-d.jxl"><img loading="lazy" src="lcd-d.webp" alt="LCD"></a>
+<a href="pills-d.jxl"><img loading="lazy" src="pills-d.webp" alt="Pills"></a>
+<a href="map-d.svg"><img loading="lazy" src="map-d.svg" alt="Map" class="big"></a>
+<a href="mollnar-d.svg"><img loading="lazy" src="mollnar-d.svg" alt="Mollnar"></a>
+<a href="lcd-rainbow-l.jxl"><img loading="lazy" src="lcd-rainbow-l.webp" alt="LCD Raindow"></a>
+<a href="pixels-d.jxl"><img loading="lazy" src="pixels-d.webp" alt="Pixels" class="big"></a>
+<a href="sheet-l.jxl"><img loading="lazy" src="sheet-l.webp" alt="Sheet"></a>
+<a href="swoosh-l.jxl"><img loading="lazy" src="swoosh-l.webp" alt="Swoosh"></a>
+<a href="symbolic-soup-d.jxl"><img loading="lazy" src="symbolic-soup-d.webp" alt="Symbolic Soup"></a>
 </div>
 
 If you're wondering about the strange square aspect ratio, take a look at the wallpaper sizing guide in our [GNOME Interface Guidelines](https://developer.gnome.org/hig/reference/backgrounds.html).

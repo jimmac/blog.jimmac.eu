@@ -5,7 +5,7 @@ date = 2021-06-07
 [taxonomies]
 tags = ["synth", "polyend", "tracker", "fpv", "music"]
 +++
-<img alt="DJ Strobe" src="dj-strobe.gif" class="full">
+<img loading="lazy" alt="DJ Strobe" src="dj-strobe.gif" class="full">
 
 Another weekend arrangement made mostly in Polyend Tracker. Video footage assembled from my fpv flights around Liberec over the course of past few weeks.
 

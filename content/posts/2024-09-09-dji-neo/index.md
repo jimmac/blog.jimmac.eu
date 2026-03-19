@@ -11,7 +11,7 @@ image = "neo.webp"
 It’s been a while since I’ve annoyed you by mentioning drones, but here we are with DJI’s latest creation—the Neo. DJI is a giant, soulless corporation, but they’ve made some clever design decisions with this drone. It’s a flying camera that works without a phone or remote, and for about half the price of a GoPro, you get a self-sufficient, button-operated flying cameraman. Take it out, push a button, and off it goes, capturing footage like it knows what it's doing. It might also just simply be a response to the actually innovative HoverAir X1, just made extremely affordable.
 
 <!-- vimeo is a racket
-<iframe title="vimeo-player" src="https://player.vimeo.com/video/1007568748?h=4416493d62" frameborder="0" allowfullscreen><img alt="thumbnail for an external video of the DJI Neo" src="neo.webp"></iframe>
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/1007568748?h=4416493d62" frameborder="0" allowfullscreen><img loading="lazy" alt="thumbnail for an external video of the DJI Neo" src="neo.webp"></iframe>
 -->
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/b2Io9hGHNTw?si=KUUhi3cLzRLvq4n6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

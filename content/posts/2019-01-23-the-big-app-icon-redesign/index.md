@@ -13,16 +13,16 @@ As you may have heard, GNOME 3.32 is going to come with a radical new icon style
 # The Problem
 Our current icon style dates back all the way to the early 00s and the original [Tango](http://tango.freedesktop.org/Tango_Icon_Theme_Guidelines). One of the foundational ideas behind Tango was that each icon is drawn at multiple sizes, in order to look pixel-perfect in every context. This means that if you want to make an app icon you're not drawing one, but up to 7 separate icons (symbolic, 16px, 22px, 24px, 32px, 48px, and 512px).
 
-<img src="xchat.png" alt="Xchat" class="centered">
+<img loading="lazy" src="xchat.png" alt="Xchat" class="centered">
 <div class="inlineimgs">
-<img src="boxes.png" alt="Boxes">
-<img src="builder.png" alt="Builder">
-<img src="gimp.png" alt="GIMP">
-<img src="gitg.png" alt="Gitg">
-<img src="inkscape.png" alt="Inkscape">
-<img src="music.png" alt="Music">
-<img src="photos.png" alt="Photos">
-<img src="recipe.png" alt="Recipe">
+<img loading="lazy" src="boxes.png" alt="Boxes">
+<img loading="lazy" src="builder.png" alt="Builder">
+<img loading="lazy" src="gimp.png" alt="GIMP">
+<img loading="lazy" src="gitg.png" alt="Gitg">
+<img loading="lazy" src="inkscape.png" alt="Inkscape">
+<img loading="lazy" src="music.png" alt="Music">
+<img loading="lazy" src="photos.png" alt="Photos">
+<img loading="lazy" src="recipe.png" alt="Recipe">
 </div>
 Making these icons takes quite a bit of experience and craftsmanship, and many of our high-detail icons are more [art than design](/blog/2018-07-18-detail-considered-harmful/). However, as a part of our design system the style has not succeeded, and is in dire need of reform. Some of the major issues:
 
@@ -34,10 +34,10 @@ Making these icons takes quite a bit of experience and craftsmanship, and many o
 - Cross-platform apps tend to ship with very simple, flat icons these days. The contrast between these icons and our super detailed ones can be quite jarring. 
 
 <div class="inlineimgs">
-<img src="peek.png" alt="Peek">
-<img src="firefox.png" alt="Firefox">
-<img src="skype.png" alt="Skype">
-<img src="spotify.png" alt="Spotify">
+<img loading="lazy" src="peek.png" alt="Peek">
+<img loading="lazy" src="firefox.png" alt="Firefox">
+<img loading="lazy" src="skype.png" alt="Skype">
+<img loading="lazy" src="spotify.png" alt="Spotify">
 </div>
 
 # A New Beginning
@@ -54,14 +54,14 @@ The first step is having clearer guidelines and [more constraints](/blog/2017-01
 
 
 <div class="inlineimgs">
-<img src="Template.png" alt="Template">
-<img src="Template2.png" alt="Template2">
-<img src="Template3.png" alt="Template3">
-<img src="Template4.png" alt="Template4">
-<img src="icon-round.svg" alt="Round icon">
-<img src="icon-landscape.svg" alt="Landscape">
-<img src="icon-portrait.svg" alt="Portrait">
-<img src="icon-square.svg" alt="Square">
+<img loading="lazy" src="Template.png" alt="Template">
+<img loading="lazy" src="Template2.png" alt="Template2">
+<img loading="lazy" src="Template3.png" alt="Template3">
+<img loading="lazy" src="Template4.png" alt="Template4">
+<img loading="lazy" src="icon-round.svg" alt="Round icon">
+<img loading="lazy" src="icon-landscape.svg" alt="Landscape">
+<img loading="lazy" src="icon-portrait.svg" alt="Portrait">
+<img loading="lazy" src="icon-square.svg" alt="Square">
 </div>
 
 The style is very **geometric**, making it easy to reuse and adapt elements from other icons. We're also removing baked-in drop shadows in favour of drawing them automatically from the icon's alpha channel in GTK/Shell depending on the rendering context. In most cases 3rd party icons don't come with baked in shadows and this makes icons easier to draw and ensures consistent shadows.
@@ -70,11 +70,11 @@ Another cornerstone of this initiative is reducing the number of icons to be dra
 
 The color icon is optimized for 64px (with a nominal size of 128px for historical reasons), but the simple geometric style without 1px strokes means that it also looks good larger *and* smaller.
 
-![One size](onesize.png)
+<img loading="lazy" src="onesize.png" alt="One size">
 
 This means the workflow changes from drawing 6 icons to just one (plus one symbolic icon). It also simplifies the way icons are shipped in apps. Instead of a a half dozen rendered PNGs, we can now ship a single color SVG (and a symbolic SVG). Thanks to the simple style most icons are only around 15kB.
 
-![Template with symbolic](template-plus-symbolic.svg)
+<img loading="lazy" src="template-plus-symbolic.svg" alt="Template with symbolic">
 
 
 <h1>Welcome to the Future</h1>
@@ -82,15 +82,15 @@ This means the workflow changes from drawing 6 icons to just one (plus one symbo
 <p>Having this single source of truth makes it orders of magnitude easier to iterate on different metaphors for individual icons, update the style as a whole, and a number of other exciting things we're working towards.</p>
 
 <div class="inlineimgs">
-<img src="nightly-darktable.svg" alt="Darktable">
-<img src="nightly-games.svg" alt="Games">
-<img src="nightly-passwordsafe.svg" alt="PasswordSafe">
-<img src="nightly-fragments.svg" alt="Fragments">
+<img loading="lazy" src="nightly-darktable.svg" alt="Darktable">
+<img loading="lazy" src="nightly-games.svg" alt="Games">
+<img loading="lazy" src="nightly-passwordsafe.svg" alt="PasswordSafe">
+<img loading="lazy" src="nightly-fragments.svg" alt="Fragments">
 </div>
 
 We've also been working on improving design tooling as part of this initiative. [Icon Preview](https://flathub.org/apps/details/org.gnome.IconPreview), a new app by [Zander Brown](https://github.com/ZanderBrown), is designed to make the icon design workflow smoother and faster. It allows you to quickly get started from a template, preview an icon in various contexts as you're designing it, and then finally optimizing and exporting the SVG to use in apps. The latter part is not quite ready yet, but the app already works great for the former two use cases.
 
-![Icon Preview](icon-preview.png)
+<img loading="lazy" src="icon-preview.png" alt="Icon Preview">
 
 # Let's Make Beautiful App Icons!
 

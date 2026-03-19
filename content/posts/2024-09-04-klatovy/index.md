@@ -11,7 +11,7 @@ They say you can't forget how to ride a bicycle. Well I don't think it applies t
 <video controls autoplay loop class="image full">
 <source src="klatovy-timelapse.webm" type="video/webm">
 <source src="klatovy-timelapse.mp4" type="video/mp4">
-<img src="klatovy-sketch.png" title="Sketch of the Klatovy Poster" />
+<img loading="lazy" src="klatovy-sketch.png" title="Sketch of the Klatovy Poster" />
 </video>
 
 ![Klatovy poster as Pixelart (CRT emulation)](klatovy-crt.png)

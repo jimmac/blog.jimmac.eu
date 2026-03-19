@@ -12,7 +12,7 @@ Congratulations on finishing yet another ride around the Sol with me. Here's som
 
 While of course I'm stuck in my young taste like everybody else, I do try to pick up some new music. This year I've discovered *Venjent* doing a [silly skit](https://www.youtube.com/shorts/iYf7Hlme9s4) (he's fully aware of that being how people discover his music and really leans into it). In surreal turn of events I went to see him in a club, looking like a misplaced pensioner at 1am, when he finally spun his set. But I seriously enjoy how he can transform the [absolute silliness](https://www.youtube.com/watch?v=A4bpaKnWg5M) into a total banger I play on repeat.
 
-<a href="https://jimmac.bandcamp.com/album/take-frequent-breaks"><img src="take_breaks.webp" alt="Take Frequent Breaks" class="full"></a>
+<a href="https://jimmac.bandcamp.com/album/take-frequent-breaks"><img loading="lazy" src="take_breaks.webp" alt="Take Frequent Breaks" class="full"></a>
 
 I've published some music of my own as well. After [Desync](https://jimmac.bandcamp.com/album/desync) assembled from material from weeklybeats 22 came [Solar Coffee](https://jimmac.bandcamp.com/album/solar-coffee) and [Take Frequent Breaks](https://jimmac.bandcamp.com/album/take-frequent-breaks) right at the end of the year. I doubt I'll release anything this year, because [Weekly Beats 24](https://weeklybeats.com) will probably suck all my energy for music production. Hopefully I'll enjoy it as much as the first half of 22 :)
 

@@ -7,13 +7,13 @@ tags = ["blender", "inkscape", "icon", "design", "3D"]
 +++
 Mentioning my ever lasting adoration of the [realtime engine in Blender on twitter](https://twitter.com/jimmac/status/1512533410677469188) kind of exploded (for my standards), so I figured I'd write a blog post.
 
-<img src="com.feaneron.Boatswain.svg" alt="Boatswain" class="fullcoloricon">
+<img loading="lazy" src="com.feaneron.Boatswain.svg" alt="Boatswain" class="fullcoloricon">
 
 [Georges](https://feaneron.com/) wrote a great little app to configure [Elgato Stream Deck](https://www.elgato.com/en/stream-deck) buttons on non-proprietary platforms. I've been following Georges' ventures [into streaming](https://www.youtube.com/c/GeorgesStavracas/videos). He's done amazing job promoting GNOME development and has been helping with [OBS](https://obsproject.com/) a lot too.
 
 To make [Boatswain](https://feaneron.com/2022/03/17/boatswain-your-stream-deck-app-for-linux/) work great by default, rather than just presenting people with a monstrous [shit work](https://zachholman.com/posts/shit-work/) mountain to even get going, Georges [needed some graphical assets](https://gitlab.gnome.org/World/boatswain/-/issues/18) to have the configurator ship with ready made presets. 
 
-<img alt="Boatswain Screenshot" src="scr-boatswain.png" class="centered">
+<img loading="lazy" alt="Boatswain Screenshot" src="scr-boatswain.png" class="centered">
 
 Sadly I've already invested in [an appliance that covers my video streaming and recording needs](https://www.blackmagicdesign.com/products/atemmini), so I wasn't going to buy the gear to test how things look. Instead I made the device virtual, and rendered an approximation of it in [Blender](https://flathub.org/apps/details/org.blender.Blender).
 

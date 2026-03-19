@@ -24,7 +24,7 @@ Creating light/dark variants is a bit tedious to do manually every release, but 
 
 <picture>
     <source srcset="dark.webp" media="(prefers-color-scheme: dark)" />
-    <img src="light.webp" />
+    <img loading="lazy" src="light.webp" />
 </picture>
 
 This does take a minute to render on a laptop (CPU only Cycles), but is a matter of a single invocation and a git commit. So far it has survived a couple of Blender releases, so fingers crossed for the future.

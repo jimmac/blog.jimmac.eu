@@ -10,7 +10,7 @@ image = "hig-fullcolor.webp"
 
 The refresh of the [Human Interface Guidelines](https://developer.gnome.org/hig) in both the content and presentation is something to be proud of, but there were a couple of areas that weren't great. Where we don't quite shine in the area of [blueprint illustration style](https://gitlab.gnome.org/Teams/Design/app-illustrations/-/blob/master/README.md?ref_type=heads) is the contrast for the dark mode. While in many cases a single graphic can work in the two contexts just fine, in other it struggles. And while we tried to address it in the HIG, it became clear we do need to do better.
 
-![Low contrast for HIG blueprint illustrations](hig-contrast.webp)
+<img loading="lazy" src="hig-contrast.webp" alt="Low contrast for HIG blueprint illustrations">
 
 # Inline SVG Stylesheet
 
@@ -39,12 +39,12 @@ For inline images, the approach that seems more straight forward and I've taken 
 <picture>
     <source srcset="static.png" 
         media="(prefers-reduced-motion: reduce)" />
-    <img src="animated.gif" />
+    <img loading="lazy" src="animated.gif" />
 </picture>
 ```
 <picture>
     <source srcset="fdosdk-dia.png" media="(prefers-reduced-motion: reduce)" />
-    <img src="fdosdk-dia.gif" />
+    <img loading="lazy" src="fdosdk-dia.gif" />
 </picture>
 
 <!-- vimeo is a racket
@@ -57,5 +57,5 @@ For inline images, the approach that seems more straight forward and I've taken 
 
 GNOME *Human Interface Guidelines* are written in restructured text/Sphinx, however. Escaping to html for images/pictures would be quite cumbersome, but luckily dark mode is supported in the furo theme (and derivates) using the `only-light` and `only-dark` classes. The markup gets a little chatty, but still quite legible. There's some iterations to be made, but in terms of legibility it's finally a bit more accessible.
 
-<img src="hig-fullcolor.webp" alt="New HIG light" class="full">
-<img src="hig-fullcolor-dark.webp" alt="New HIG dark" class="full">
+<img loading="lazy" src="hig-fullcolor.webp" alt="New HIG light" class="full">
+<img loading="lazy" src="hig-fullcolor-dark.webp" alt="New HIG dark" class="full">
