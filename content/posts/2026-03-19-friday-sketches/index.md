@@ -154,3 +154,5 @@ If you design a GNOME app following the [GNOME Design Guidelines](https://develo
 <img src="Web_Apps.webp" alt="Web Apps" loading="lazy">
 <img src="eSIM_.webp" alt="eSIM" loading="lazy">
 </div>
+
+[Previously](/posts/sketch-friday/)
