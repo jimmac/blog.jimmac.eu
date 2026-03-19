@@ -34,7 +34,17 @@ While I lean on samples for the beats, the base is all the internal FM (with mul
 
 I've also been learning the ropes of Blender's geometry nodes recently. While only scratching the surface, I created this visualizer for the track. The heavy lifting is done with baking the *sound to f-curves*, which is then somewhat tweaked to acceptable ranges with f-curve modifiers.
 
-<iframe title="vimeo-player" src="https://player.vimeo.com/video/656135032?h=198d1aba55" width="100%" style="aspect-ratio: 9 / 16" frameborder="0" allowfullscreen></iframe>
+
+
+<iframe
+  style="aspect-ratio: 9 / 16"
+  src="https://www.youtube.com/embed/c-emI28oYOE" 
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  allowfullscreen>
+<a href="https://www.youtube.com/shorts/c-emI28oYOE">youtube short</a>
+</iframe>
 
 I also have to mention the absolutely bonkers amazing visual identity of the M8 project. It just couldn't be more hip. This is also my very last gear acquisition. For sure.
 
