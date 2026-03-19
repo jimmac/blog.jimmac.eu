@@ -14,11 +14,11 @@
       <div class="trigger-container">
         {% for item in config.extra.menus.items %}
           {% if item.external %}
-            <a class="menu-link" href="{{ item.url }}" target="_blank" rel="noopener">{{ item.title }}</a>
+            <a class="menu-link" href="{{ item.url }}" target="_blank" rel="noopener" data-text="{{ item.title }}">{{ item.title }}</a>
           {% elif current_path == item.url %}
-            <a class="menu-link active" href="{{ item.url }}">{{ item.title }}</a>
+            <a class="menu-link active" href="{{ item.url }}" data-text="{{ item.title }}">{{ item.title }}</a>
           {% else %}
-            <a class="menu-link" href="{{ item.url }}">{{ item.title }}</a>
+            <a class="menu-link" href="{{ item.url }}" data-text="{{ item.title }}">{{ item.title }}</a>
           {% endif %}
         {% endfor %}
         <a class="menu-link rss" href="/feed.xml">
