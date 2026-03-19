@@ -65,12 +65,16 @@
       <div class="nav-arrow">Previous</div>
       <span class="post-title">{{ page.lower.title }}</span>
     </a>
+    {% else %}
+    <span class="post-nav-item post-nav-prev"></span>
     {% endif %}
     {% if page.higher %}
     <a class="post-nav-item post-nav-next" href="{{ page.higher.permalink }}">
       <div class="nav-arrow">Next</div>
       <span class="post-title">{{ page.higher.title }}</span>
     </a>
+    {% else %}
+    <span class="post-nav-item post-nav-next"></span>
     {% endif %}
   </nav>
   {% endif %}
