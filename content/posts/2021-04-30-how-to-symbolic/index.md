@@ -3,6 +3,8 @@ title = "How to Symbolic Icon"
 date = 2021-04-30
 [taxonomies]
 tags = ["icon", "design", "gnome", "work"]
+[extra]
+image = "pencil.jpg"
 +++
 ![Icon Tooling](icon-tooling.svg)
 

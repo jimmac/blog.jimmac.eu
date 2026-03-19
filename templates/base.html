@@ -1,14 +1,24 @@
 {% import "macros.html" as macros %}
 <!DOCTYPE html>
 <html lang="{{ lang | default(value=config.default_language) }}">
-{% if page.extra.image is defined %}
+{% if page is defined and page.extra.image is defined %}
   {% set_global og_image = config.base_url ~ page.path ~ page.extra.image %}
 {% else %}
   {% set_global og_image = "" %}
 {% endif %}
+{% if page is defined %}
+  {% set_global page_title = page.title %}
+  {% set_global page_description = page.description | default(value="") %}
+{% elif section is defined %}
+  {% set_global page_title = section.title | default(value="") %}
+  {% set_global page_description = section.description | default(value="") %}
+{% else %}
+  {% set_global page_title = "" %}
+  {% set_global page_description = "" %}
+{% endif %}
 {{ macros::head(
-    title=title | default(value=""),
-    description=description | default(value=""),
+    title=page_title,
+    description=page_description,
     url=current_url | default(value=config.base_url),
     image=og_image,
     lang=lang | default(value=config.default_language)
