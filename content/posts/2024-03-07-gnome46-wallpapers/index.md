@@ -3,7 +3,7 @@ title = "GNOME 46 Wallpapers"
 description = "Bringing JPEG-XL and synthesized grain to GNOME wallpapers."
 date = 2024-03-07
 [taxonomies]
-tags = ["work", "gnome", "design", "wallpaper", "art", "blender"]
+tags = ["work", "gnome", "design", "wallpaper", "art", "blender", "inkscape"]
 +++
 
 GNOME 46 is on its final stretch to be released. It's been a custom to blog a little about the wallpaper selection, which is a big part of GNOME's visual identity. 

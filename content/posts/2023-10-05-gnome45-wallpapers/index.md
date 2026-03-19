@@ -3,7 +3,7 @@ title = "GNOME 45 Wallpapers"
 description = "Geometry nodes, mesh gradients, and the stories behind the 45 set."
 date = 2023-10-05
 [taxonomies]
-tags = ["work", "gnome", "design", "wallpaper", "art", "blender"]
+tags = ["work", "gnome", "design", "wallpaper", "art", "blender", "inkscape", "3D"]
 +++
 
 With the [45 release out the door](https://release.gnome.org/45/), it would be a shame not to reveal some of the behind the scenes for the new wallpapers.

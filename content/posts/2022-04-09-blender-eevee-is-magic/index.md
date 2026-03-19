@@ -3,7 +3,7 @@ title = "Blender Eevee is Magic"
 description = "Rendering Stream Deck button assets in Blender's realtime engine."
 date = 2022-04-09
 [taxonomies]
-tags = ["blender", "inkscape", "icon", "design"]
+tags = ["blender", "inkscape", "icon", "design", "3D"]
 +++
 Mentioning my ever lasting adoration of the [realtime engine in Blender on twitter](https://twitter.com/jimmac/status/1512533410677469188) kind of exploded (for my standards), so I figured I'd write a blog post.
 

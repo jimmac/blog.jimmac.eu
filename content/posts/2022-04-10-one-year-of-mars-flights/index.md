@@ -3,7 +3,7 @@ title = "Ingenuity's One Year of Mars Flights"
 description = "Celebrating a year of Martian flights with Blender overlays and desert footage."
 date = 2022-04-10
 [taxonomies]
-tags = ["fpv", "blender", "nasa", "youtube", "ingenuity"]
+tags = ["fpv", "blender", "nasa", "youtube", "ingenuity", "3D"]
 +++
 
 Next week it's going to be a year since Ingenuity made the first flight in an atmosphere of another planet. An atmosphere with about 1% of density of the one on Earth.

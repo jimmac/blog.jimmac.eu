@@ -3,7 +3,7 @@ title = "Builder Nightly"
 description = "Designing an icon to tell nightly builds apart from the stable app."
 date = 2018-03-14
 [taxonomies]
-tags = ["design", "icon", "flatpak", "gnome", "work", "blender"]
+tags = ["design", "icon", "flatpak", "gnome", "work", "blender", "3D"]
 [extra]
 image = "builder-nightly-icon.png"
 mastodon_url = "https://mastodon.social/@jimmac/116254904395768866"

@@ -18,7 +18,7 @@
       <h2 id="{{ term.name }}">{{ term.name | upper }}</h2>
       {% for post in term.pages %}
         <a href="{{ post.permalink }}" class="post-item">
-          <span class="post-item-date">{{ post.date | date(format="%b %d") }}</span>
+          <span class="post-item-date">{{ post.date | date(format="%b %d, %Y") }}</span>
           <h3 class="post-item-title">{{ post.title }}</h3>
           {% if post.description %}
             <p class="post-item-description">{{ post.description }}</p>
