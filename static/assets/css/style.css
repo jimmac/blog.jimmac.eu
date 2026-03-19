@@ -742,12 +742,26 @@ a.post-item {
 }
 
 .archive-tags {
-  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+
   & .tag-item {
-    padding: 1px 3px;
-    border-radius: 2px;
-    border: 1px solid rgba(128, 128, 128, 0.1);
-    background-color: rgba(128, 128, 128, 0.1);
+    color: var(--color-bg);
+    font-size: 0.8rem;
+    font-weight: var(--weight-bold);
+    text-decoration: none;
+    padding: 0.2em 0.65em;
+    border-radius: 9999px;
+    border: none;
+    background-color: var(--color-link);
+
+    &:hover {
+      color: var(--color-bg);
+      background-color: var(--color-link-hover);
+      text-decoration: none;
+    }
   }
 }
 

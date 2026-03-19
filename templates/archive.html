@@ -21,6 +21,18 @@
     </div>
     <ul id="search-results"></ul>
 
+    {% set taxonomy = get_taxonomy(kind="tags") %}
+    {% set_global sorted_terms = [] %}
+    {% for term in taxonomy.items %}
+      {% set_global sorted_terms = sorted_terms | concat(with=[term]) %}
+    {% endfor %}
+    {% set sorted_terms = sorted_terms | sort(attribute="pages") | reverse %}
+    <div class="archive-tags">
+      {% for term in sorted_terms | slice(end=10) %}
+        <a class="tag-item" href="{{ term.permalink }}">{{ term.name }}</a>
+      {% endfor %}
+    </div>
+
     {% set_global current_year = "" %}
     {% set posts = get_section(path="posts/_index.md") %}
     {% for post in posts.pages %}

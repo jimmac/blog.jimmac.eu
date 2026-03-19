@@ -17,12 +17,13 @@
     {% for term in terms %}
       <h2 id="{{ term.name }}">{{ term.name | upper }}</h2>
       {% for post in term.pages %}
-        <article class="post-item">
+        <a href="{{ post.permalink }}" class="post-item">
           <span class="post-item-date">{{ post.date | date(format="%b %d") }}</span>
-          <h3 class="post-item-title">
-            <a href="{{ post.permalink }}">{{ post.title }}</a>
-          </h3>
-        </article>
+          <h3 class="post-item-title">{{ post.title }}</h3>
+          {% if post.description %}
+            <p class="post-item-description">{{ post.description }}</p>
+          {% endif %}
+        </a>
       {% endfor %}
     {% endfor %}
   </main>

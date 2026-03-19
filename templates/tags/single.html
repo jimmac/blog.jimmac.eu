@@ -4,7 +4,7 @@
 {% block body %}
 <div class="wrapper">
   <header class="header">
-    <h1 class="header-title center">{{ term.name | upper }}.</h1>
+    <h1 class="header-title center"><a href="/tags" style="text-decoration:none;border:none;">&larr;</a> {{ term.name | upper }}.</h1>
   </header>
   <main aria-label="Content">
     {% for post in term.pages %}
