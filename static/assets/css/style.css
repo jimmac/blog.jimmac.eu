@@ -581,7 +581,8 @@ table {
 
 .post-item {
   display: grid;
-  gap: 16px;
+  column-gap: 16px;
+  row-gap: 0;
   grid-template-columns: auto 1fr;
   align-items: baseline;
   padding: 5px 0 6px;
@@ -616,7 +617,7 @@ a.post-item {
 
 .post-item-description {
   grid-column: 2;
-  margin: -8px 0 0;
+  margin: 0;
   font-size: 0.7em;
   color: var(--color-muted);
 }
