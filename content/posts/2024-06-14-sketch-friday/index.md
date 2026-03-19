@@ -9,74 +9,74 @@ tags = ["art", "sketch", "procreate"]
 I've been posting a few sketches on [my mastodon](https://mastodon.social/@jimmac) every Friday. They are mostly sketches of [application icon design process](https://gitlab.gnome.org/Teams/Design/app-icon-requests/-/issues/43), but not always. Follow, like, subscribe!
 
 <div class="sketches">
-<img src="04e5ae648d8b3640.png" alt="04e5ae648d8b3640">
-<img src="Exhibit2.png" alt="Exhibit2">
-<img src="05521b4858a9cdef.png" alt="05521b4858a9cdef">
-<img src="Exhibit.png" alt="Exhibit">
-<img src="0934a02f1c915ef7.png" alt="0934a02f1c915ef7" class="big">
-<img src="f340603a0cd5eb83.png" alt="f340603a0cd5eb83">
-<img src="0f02657ab2fb4012.png" alt="0f02657ab2fb4012">
-<img src="Gameeky%2010.png" alt="Gameeky 10">
-<img src="1e6abb0c31ee6066.png" alt="1e6abb0c31ee6066">
-<img src="Gameeky%2011.png" alt="Gameeky 11" class="big">
-<img src="286a44fb410d5ad3.png" alt="286a44fb410d5ad3">
-<img src="Gameeky%208.png" alt="Gameeky 8">
-<img src="2f6c03bd10824d1d.png" alt="2f6c03bd10824d1d">
-<img src="Gimp%202.png" alt="Gimp 2">
-<img src="48d49e6ce2bcebb5.png" alt="48d49e6ce2bcebb5">
-<img src="Gimp.png" alt="Gimp">
-<img src="5af3244c6aef1539.png" alt="5af3244c6aef1539">
-<img src="Handbook_And_Developers.png" alt="Handbook_And_Developers">
-<img src="Afternoon%203.png" alt="Afternoon 3">
-<img src="Inkscape.png" alt="Inkscape">
-<img src="Afternoon.png" alt="Afternoon">
-<img src="Key_Rack%201.png" alt="Key_Rack 1">
-<img src="AI.png" alt="AI">
-<img src="Laptop%201.png" alt="Laptop 1">
-<img src="Alpaca%201%202.png" alt="Alpaca 1 2">
-<img src="Laptop3.png" alt="Laptop3">
-<img src="Alpaca%202.png" alt="Alpaca 2">
-<img src="Laptop.png" alt="Laptop">
-<img src="Alpaca%204.png" alt="Alpaca 4" class="big">
-<img src="Luminance%201.png" alt="Luminance 1">
-<img src="Alpaca.png" alt="Alpaca">
-<img src="Memorize%201.png" alt="Memorize 1">
-<img src="Aurea%203.png" alt="Aurea 3">
-<img src="Memorize%202.png" alt="Memorize 2">
-<img src="Aurea.png" alt="Aurea">
-<img src="Memorize.png" alt="Memorize">
-<img src="Captive_Portal4.png" alt="Captive_Portal4">
-<img src="Mypaint.png" alt="Mypaint">
-<img src="Captive_Portal5.png" alt="Captive_Portal5">
-<img src="Nvidia_Toolbx.png" alt="Nvidia_Toolbx" class="big">
-<img src="cbad883c19680ae2.png" alt="cbad883c19680ae2">
-<img src="Office_Runner%201.png" alt="Office_Runner 1">
-<img src="cd2b1f4788bd40c9.png" alt="cd2b1f4788bd40c9">
-<img src="Office_Runner.png" alt="Office_Runner">
-<img src="Collector.png" alt="Collector">
-<img src="Orca%202.png" alt="Orca 2" class="big">
-<img src="Convolution%202.png" alt="Convolution 2">
-<img src="Orca.png" alt="Orca">
-<img src="Convolution%203.png" alt="Convolution 3">
-<img src="Papers%204.png" alt="Papers 4">
-<img src="Convolution.png" alt="Convolution">
-<img src="Papers%207.png" alt="Papers 7">
-<img src="d6d20716bd43b122.png" alt="d6d20716bd43b122">
-<img src="Plots%202.png" alt="Plots 2">
-<img src="d711da1c0aeec75f.png" alt="d711da1c0aeec75f">
-<img src="Power_Modes.png" alt="Power_Modes">
-<img src="dabc00e72dc94dca.png" alt="dabc00e72dc94dca">
-<img src="Seabird%202.png" alt="Seabird 2">
-<img src="ddff8a8e07260602.png" alt="ddff8a8e07260602" class="big">
-<img src="Seabird.png" alt="Seabird">
-<img src="Dew_Duct.png" alt="Dew_Duct">
-<img src="Valuta%201.png" alt="Valuta 1">
-<img src="Valuta.png" alt="Valuta">
-<img src="e0d5efac768fe1aa.png" alt="e0d5efac768fe1aa">
-<img src="Videos%202.png" alt="Videos 2">
-<img src="Exhibit%201.png" alt="Exhibit 1">
-<img src="Videos%203.png" alt="Videos 3">
-<img src="Exhibit%202.png" alt="Exhibit 2">
+<img src="04e5ae648d8b3640.webp" alt="04e5ae648d8b3640" loading="lazy">
+<img src="Exhibit2.webp" alt="Exhibit2" loading="lazy">
+<img src="05521b4858a9cdef.webp" alt="05521b4858a9cdef" loading="lazy">
+<img src="Exhibit.webp" alt="Exhibit" loading="lazy">
+<img src="0934a02f1c915ef7.webp" alt="0934a02f1c915ef7" class="big" loading="lazy">
+<img src="f340603a0cd5eb83.webp" alt="f340603a0cd5eb83" loading="lazy">
+<img src="0f02657ab2fb4012.webp" alt="0f02657ab2fb4012" loading="lazy">
+<img src="Gameeky%2010.webp" alt="Gameeky 10" loading="lazy">
+<img src="1e6abb0c31ee6066.webp" alt="1e6abb0c31ee6066" loading="lazy">
+<img src="Gameeky%2011.webp" alt="Gameeky 11" class="big" loading="lazy">
+<img src="286a44fb410d5ad3.webp" alt="286a44fb410d5ad3" loading="lazy">
+<img src="Gameeky%208.webp" alt="Gameeky 8" loading="lazy">
+<img src="2f6c03bd10824d1d.webp" alt="2f6c03bd10824d1d" loading="lazy">
+<img src="Gimp%202.webp" alt="Gimp 2" loading="lazy">
+<img src="48d49e6ce2bcebb5.webp" alt="48d49e6ce2bcebb5" loading="lazy">
+<img src="Gimp.webp" alt="Gimp" loading="lazy">
+<img src="5af3244c6aef1539.webp" alt="5af3244c6aef1539" loading="lazy">
+<img src="Handbook_And_Developers.webp" alt="Handbook_And_Developers" loading="lazy">
+<img src="Afternoon%203.webp" alt="Afternoon 3" loading="lazy">
+<img src="Inkscape.webp" alt="Inkscape" loading="lazy">
+<img src="Afternoon.webp" alt="Afternoon" loading="lazy">
+<img src="Key_Rack%201.webp" alt="Key_Rack 1" loading="lazy">
+<img src="AI.webp" alt="AI" loading="lazy">
+<img src="Laptop%201.webp" alt="Laptop 1" loading="lazy">
+<img src="Alpaca%201%202.webp" alt="Alpaca 1 2" loading="lazy">
+<img src="Laptop3.webp" alt="Laptop3" loading="lazy">
+<img src="Alpaca%202.webp" alt="Alpaca 2" loading="lazy">
+<img src="Laptop.webp" alt="Laptop" loading="lazy">
+<img src="Alpaca%204.webp" alt="Alpaca 4" class="big" loading="lazy">
+<img src="Luminance%201.webp" alt="Luminance 1" loading="lazy">
+<img src="Alpaca.webp" alt="Alpaca" loading="lazy">
+<img src="Memorize%201.webp" alt="Memorize 1" loading="lazy">
+<img src="Aurea%203.webp" alt="Aurea 3" loading="lazy">
+<img src="Memorize%202.webp" alt="Memorize 2" loading="lazy">
+<img src="Aurea.webp" alt="Aurea" loading="lazy">
+<img src="Memorize.webp" alt="Memorize" loading="lazy">
+<img src="Captive_Portal4.webp" alt="Captive_Portal4" loading="lazy">
+<img src="Mypaint.webp" alt="Mypaint" loading="lazy">
+<img src="Captive_Portal5.webp" alt="Captive_Portal5" loading="lazy">
+<img src="Nvidia_Toolbx.webp" alt="Nvidia_Toolbx" class="big" loading="lazy">
+<img src="cbad883c19680ae2.webp" alt="cbad883c19680ae2" loading="lazy">
+<img src="Office_Runner%201.webp" alt="Office_Runner 1" loading="lazy">
+<img src="cd2b1f4788bd40c9.webp" alt="cd2b1f4788bd40c9" loading="lazy">
+<img src="Office_Runner.webp" alt="Office_Runner" loading="lazy">
+<img src="Collector.webp" alt="Collector" loading="lazy">
+<img src="Orca%202.webp" alt="Orca 2" class="big" loading="lazy">
+<img src="Convolution%202.webp" alt="Convolution 2" loading="lazy">
+<img src="Orca.webp" alt="Orca" loading="lazy">
+<img src="Convolution%203.webp" alt="Convolution 3" loading="lazy">
+<img src="Papers%204.webp" alt="Papers 4" loading="lazy">
+<img src="Convolution.webp" alt="Convolution" loading="lazy">
+<img src="Papers%207.webp" alt="Papers 7" loading="lazy">
+<img src="d6d20716bd43b122.webp" alt="d6d20716bd43b122" loading="lazy">
+<img src="Plots%202.webp" alt="Plots 2" loading="lazy">
+<img src="d711da1c0aeec75f.webp" alt="d711da1c0aeec75f" loading="lazy">
+<img src="Power_Modes.webp" alt="Power_Modes" loading="lazy">
+<img src="dabc00e72dc94dca.webp" alt="dabc00e72dc94dca" loading="lazy">
+<img src="Seabird%202.webp" alt="Seabird 2" loading="lazy">
+<img src="ddff8a8e07260602.webp" alt="ddff8a8e07260602" class="big" loading="lazy">
+<img src="Seabird.webp" alt="Seabird" loading="lazy">
+<img src="Dew_Duct.webp" alt="Dew_Duct" loading="lazy">
+<img src="Valuta%201.webp" alt="Valuta 1" loading="lazy">
+<img src="Valuta.webp" alt="Valuta" loading="lazy">
+<img src="e0d5efac768fe1aa.webp" alt="e0d5efac768fe1aa" loading="lazy">
+<img src="Videos%202.webp" alt="Videos 2" loading="lazy">
+<img src="Exhibit%201.webp" alt="Exhibit 1" loading="lazy">
+<img src="Videos%203.webp" alt="Videos 3" loading="lazy">
+<img src="Exhibit%202.webp" alt="Exhibit 2" loading="lazy">
 </div>
 
 <style type="text/css">
