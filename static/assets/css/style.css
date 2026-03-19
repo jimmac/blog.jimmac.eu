@@ -1172,18 +1172,29 @@ img.fullcoloricon {
     height: auto;
     align-self: center;
     border-radius: var(--radius);
+    border: 5px solid transparent;
+    transition: transform 200ms var(--smooth-ease),
+                border-radius 200ms var(--smooth-ease),
+                border-color 200ms var(--smooth-ease);
+  }
+
+  & img:hover {
+    transform: scale(1.05);
+    border-radius: calc(var(--radius) * 2);
     transition: transform 200ms var(--bounce-ease),
                 border-radius 200ms var(--bounce-ease);
   }
 
-  & img:hover {
-    transform: scale(1.5);
-    border-radius: calc(var(--radius) * 2);
-  }
-
   & img:active {
     transform: scale(3);
-    transition: none;
+    border-color: var(--color-bg);
+    transition: transform 200ms var(--smooth-ease),
+                border-radius 200ms var(--smooth-ease),
+                border-color 200ms var(--smooth-ease);
+  }
+
+  & img.big:active {
+    transform: scale(1.5);
   }
 
   @media (min-width: 640px) {
