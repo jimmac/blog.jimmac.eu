@@ -24,6 +24,7 @@
   --width-narrow:   900px;
   --space:          30px;
   --bounce-ease:    cubic-bezier(0.34, 3, 0.64, 1);
+  --smooth-ease:    cubic-bezier(0.34, 1, 0.64, 1);
   --radius:         8px;
 
   /* Light palette */
@@ -428,7 +429,7 @@ table {
 
     & input[type="checkbox"]:checked ~ .trigger {
       position: fixed;
-      animation: 0.2s ease-in forwards fadein;
+      animation: 0.2s var(--smooth-ease) forwards fadein;
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -471,7 +472,7 @@ table {
     border-radius: 100%;
     user-select: none;
     background-color: var(--color-heading);
-    animation: 0.5s ease-in forwards fadein;
+    animation: 0.5s var(--smooth-ease) forwards fadein;
   }
 
   & .author-name {
@@ -503,7 +504,7 @@ table {
   border-radius: 12px;
   overflow: hidden;
   background: var(--color-code-bg);
-  transition: box-shadow 200ms var(--bounce-ease), transform 200ms var(--bounce-ease);
+  transition: box-shadow 200ms var(--smooth-ease), transform 200ms var(--bounce-ease);
 }
 .featured-card:hover {
   transform: translateY(-2px);
