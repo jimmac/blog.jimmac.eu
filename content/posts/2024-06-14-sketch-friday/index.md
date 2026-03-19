@@ -8,7 +8,7 @@ tags = ["art", "sketch", "procreate"]
 
 I've been posting a few sketches on [my mastodon](https://mastodon.social/@jimmac) every Friday. They are mostly sketches of [application icon design process](https://gitlab.gnome.org/Teams/Design/app-icon-requests/-/issues/43), but not always. Follow, like, subscribe!
 
-<div class="sketches">
+<div class="image-grid pixelated-hover">
 <img src="04e5ae648d8b3640.webp" alt="04e5ae648d8b3640" loading="lazy">
 <img src="Exhibit2.webp" alt="Exhibit2" loading="lazy">
 <img src="05521b4858a9cdef.webp" alt="05521b4858a9cdef" loading="lazy">
@@ -78,39 +78,3 @@ I've been posting a few sketches on [my mastodon](https://mastodon.social/@jimma
 <img src="Videos%203.webp" alt="Videos 3" loading="lazy">
 <img src="Exhibit%202.webp" alt="Exhibit 2" loading="lazy">
 </div>
-
-<style type="text/css">
-.sketches {
-	display: grid;
-	grid-template-columns: repeat(2,1fr);
-	gap: 1rem;
-	grid-auto-flow: row dense;
-}
-.sketches img {
-	display: block;
-	width: 100%; height: auto;
-	transition-duration: 0;
-	align-self: center;
-}
-
-@media only screen and (min-width: 640px) {
-	.sketches { grid-template-columns: repeat(4,1fr); }
-	.sketches img.big {
-		grid-column: span 2;
-		grid-row: span 2;
-	}
-}
-.sketches img:hover {
-	transition: transform 100ms ease-out;
-	transform: scale(1.5);
-	image-rendering: crisp-edges;
-	image-rendering: pixelated;
-}
-.sketches img:active {
-	width: 135px;
-	transform: scale(3);
-	transition: none;
-	image-rendering: crisp-edges;
-	image-rendering: pixelated;
-}
-</style>

@@ -31,24 +31,10 @@ Building a brand on neutral greys isn't quite an easy sell, but precisely target
 
 If you've read until this point, you deserve a treat! Here's some eye candy from the early stages of the process. Wallpapers derived from the elemental shapes of the logomark. Clearly off limits now, but can't just throw them away, can I?
 
-<div class="tiledscr">
+<div class="image-grid">
 <a href="wallpaper.svg"><img src="flathub-patterns.webp" alt="Flathub Patterns"></a>
 <a href="wallpaper3D.webp"><img src="flathub-candy.webp" alt="Flathub Candy"></a>
 </div>
-
-<style type="text/css">
-.tiledscr {
-	display: grid;
-	grid-template-columns: repeat(2,1fr);
-	gap: 1rem;
-	grid-auto-flow: row dense;
-}
-.tiledscr img {
-	display: block;
-	width: 100%; height: auto;
-	align-self: center;
-}
-</style>
 
 Big shoutout to [razze](https://osna.social/@razze) for his ongoing work on the website and implementing the brand so quickly. Many thank yous to [Tobias Bernard](https://tobiasbernard.com/) for significant involvment in this during the [Berlin Mini GUADEC](/posts/Berlin-GUADEC/) and [Václav Vančura](https://vancura.dev/) for sensible feedback.
 

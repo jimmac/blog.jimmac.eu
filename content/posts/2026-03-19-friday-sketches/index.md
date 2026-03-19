@@ -10,7 +10,7 @@ image = "thumb.webp"
 
 Two years have passed since I last shared picks from the Friday app icon sketches I do continue to share. 
 
-<div class="sketches">
+<div class="image-grid pixelated-hover">
 <img src="Ai_Assistant.webp" alt="Ai Assistant" loading="lazy">
 <img src="Aria%201.webp" alt="Aria 1" loading="lazy">
 <img src="Aria.webp" alt="Aria" loading="lazy">
@@ -149,39 +149,3 @@ Two years have passed since I last shared picks from the Friday app icon sketche
 <img src="Web_Apps.webp" alt="Web Apps" loading="lazy">
 <img src="eSIM_.webp" alt="eSIM" loading="lazy">
 </div>
-
-<style type="text/css">
-.sketches {
-	display: grid;
-	grid-template-columns: repeat(2,1fr);
-	gap: 1rem;
-	grid-auto-flow: row dense;
-}
-.sketches img {
-	display: block;
-	width: 100%; height: auto;
-	transition-duration: 0;
-	align-self: center;
-}
-
-@media only screen and (min-width: 640px) {
-	.sketches { grid-template-columns: repeat(4,1fr); }
-	.sketches img.big {
-		grid-column: span 2;
-		grid-row: span 2;
-	}
-}
-.sketches img:hover {
-	transition: transform 100ms ease-out;
-	transform: scale(1.5);
-	image-rendering: crisp-edges;
-	image-rendering: pixelated;
-}
-.sketches img:active {
-	width: 135px;
-	transform: scale(3);
-	transition: none;
-	image-rendering: crisp-edges;
-	image-rendering: pixelated;
-}
-</style>

@@ -43,7 +43,7 @@ Lastly, there’s `Symbolic Soup`, which is, well... a bit chaotic. It might not
 
 ## Preview
 
-<div class="walls">
+<div class="image-grid">
 <a href="lcd-d.jxl"><img src="lcd-d.webp" alt="LCD"></a>
 <a href="pills-d.jxl"><img src="pills-d.webp" alt="Pills"></a>
 <a href="map-d.svg"><img src="map-d.svg" alt="Map" class="big"></a>
@@ -58,26 +58,3 @@ Lastly, there’s `Symbolic Soup`, which is, well... a bit chaotic. It might not
 If you're wondering about the strange square aspect ratio, take a look at the wallpaper sizing guide in our [GNOME Interface Guidelines](https://developer.gnome.org/hig/reference/backgrounds.html).
 
 Also worth noting is the fact that all of these wallpapers have been created by humans. While I've experimented with image generation for some parts of the workflow in some of of my personal projects, all this work is *AIgen-free* and [explicitly credited](https://gitlab.gnome.org/GNOME/gnome-backgrounds/-/blob/main/AUTHORS?ref_type=heads).
-
-<style type="text/css">
-.walls {
-	display: grid;
-	grid-template-columns: repeat(2,1fr);
-	gap: 1rem;
-	grid-auto-flow: row dense;
-}
-.walls img {
-	display: block;
-	width: 100%; height: auto;
-	transition-duration: 0;
-	align-self: center;
-}
-
-@media only screen and (min-width: 640px) {
-	.walls { grid-template-columns: repeat(4,1fr); }
-	.walls a.big {
-		grid-column: span 2;
-		grid-row: span 2;
-	}
-}
-</style>

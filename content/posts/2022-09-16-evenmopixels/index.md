@@ -12,7 +12,7 @@ Good call. Empty alt attributes (alt="") are actually better for decorative imag
 
 Here is the updated block:
 
-<div class="pixelicons">
+<div class="image-grid pixelated">
 <img src="IMG_0425.PNG" alt="">
 <img src="IMG_0426.PNG" alt="">
 <img src="IMG_0427.PNG" alt="">
@@ -56,37 +56,12 @@ Here is the updated block:
 I've been practicing the art of animation a little too in an effort to promote GNOME Circle on [Twitter](https://twitter.com/jimmac) and [Mastodon](https://mastodon.social/web/@jimmac). Presenting all these GIFs would probably not be kind to [Planet GNOME](http://planet.gnome.org) readers though. Perhaps I could compose a video in the future (no GIF support in Blender, strangely!). Keep grinding your (pointless) skills, kids!
 
 <style type="text/css">
-.pixelicons {
-	display: grid;
-	grid-template-columns: repeat(2,1fr);
-	gap: 4rem;
-}
-.pixelicons img {
-	display: block;
-	width: 100%; height: auto;
-	image-rendering: crisp-edges; image-rendering: pixelated;
-	transition: transform 600ms ease-out;
-	align-self: center;
-}
-
-@media only screen and (min-width: 640px) {
-	.pixelicons { grid-template-columns: repeat(4,1fr); gap: 3rem; }
-	.pixelicons img:nth-child(10n) {
+@media (min-width: 640px) {
+	.image-grid img:nth-child(10n) {
 		grid-column: span 2;
 		grid-row: span 2;
 	}
 }
-.pixelicons img:hover {
-	transition: transform 100ms ease-out;
-	transform: scale(1.2);
-}
-.pixelicons img:active {
-	transition: none;
-	width: 32px;
-	transform: scale(1);
-}
-
-
 </style>
 
 [Previously](/posts/mopixels/)

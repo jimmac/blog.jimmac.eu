@@ -9,7 +9,7 @@ tags = ["pixelart", "pixaki", "art", "inktober"]
 
 For the first time ever I actually finished a [monthly challenge](https://inktober.com/).
 
-<div class="pixels">
+<div class="image-grid pixelated">
 <img src="IMG_0287.PNG" alt="0. Pixel Inktober">
 <img src="IMG_0288.PNG" alt="1. Crystal">
 <img src="IMG_0289.PNG" alt="2. Suit">
@@ -43,26 +43,5 @@ For the first time ever I actually finished a [monthly challenge](https://inktob
 <img src="IMG_0320.GIF" alt="30. Slither">
 <img src="IMG_0321.PNG" alt="31. Risk">
 </div>
-
-<style type="text/css">
-.pixels {
-	display: grid;
-	/* grid-template-columns: repeat(3,1fr); */
-	grid-template-columns: repeat(auto-fit, minmax(270px,1fr));
-	gap: 64px;
-}
-.pixels img {
-	display: block;
-	width: 270px; height: auto;
-	image-rendering: crisp-edges; image-rendering: pixelated;
-	transition: transform 600ms ease-out;
-	align-self: center;
-}
-.pixels img:active {
-	transition: none;
-	width: 135px;
-	transform: scale(1);
-}
-</style>
 
 Off to the [Nodevember](https://nodevember.io/)!

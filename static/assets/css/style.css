@@ -24,6 +24,7 @@
   --width-narrow:   900px;
   --space:          30px;
   --bounce-ease:    cubic-bezier(0.34, 3, 0.64, 1);
+  --radius:         8px;
 
   /* Light palette */
   --color-bg:         #ffffff;
@@ -1210,21 +1211,58 @@ img.fullcoloricon {
   filter: drop-shadow(0 2px 5px rgba(0,0,0,0.5));
 }
 
-img.pixels,
-.pixels img {
+img.pixels {
   image-rendering: crisp-edges;
   image-rendering: pixelated;
 }
 
-.pixels {
+/* ============================================================
+   IMAGE GRID  (sketches, pixel art, wallpapers, screenshots)
+   ============================================================ */
+
+.image-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-}
+  grid-auto-flow: row dense;
 
-.pixels img {
-  display: block;
-  width: 100%;
-  height: auto;
-  align-self: center;
+  & img {
+    display: block;
+    width: 100%;
+    height: auto;
+    align-self: center;
+    border-radius: var(--radius);
+    transition: transform 200ms var(--bounce-ease),
+                border-radius 200ms var(--bounce-ease);
+  }
+
+  & img:hover {
+    transform: scale(1.5);
+    border-radius: calc(var(--radius) * 2);
+  }
+
+  & img:active {
+    transform: scale(3);
+    transition: none;
+  }
+
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(4, 1fr);
+
+    & img.big, & a.big {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+  }
+
+  &.pixelated img {
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+  }
+
+  &.pixelated-hover img:hover,
+  &.pixelated-hover img:active {
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+  }
 }

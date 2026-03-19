@@ -14,7 +14,7 @@ To combine exploration with usefulness, I imagined mixing up of the new applicat
 
 Sadly the result is visually [way too overwhelming](https://gitlab.gnome.org/GNOME/gnome-backgrounds/-/blob/wip/jimmac/prefers-dark-light/backgrounds/pixels-d.png), but the assets created can at least please your nostalgia bone here on planet GNOME (unless it becomes a mess without the stylesheet, we'll see). Stay curious!
 
-<div class="pixelicons">
+<div class="image-grid pixelated">
 <img src="IMG_0257.PNG" alt="">
 <img src="IMG_0250.PNG" alt="">
 <img src="IMG_0258.PNG" alt="">
@@ -63,27 +63,3 @@ Sadly the result is visually [way too overwhelming](https://gitlab.gnome.org/GNO
 <img src="IMG_0238.PNG" alt="">
 <img src="IMG_0232.PNG" alt="">
 </div>
-<style type="text/css">
-.pixelicons {
-	display: grid;
-	/* grid-template-columns: repeat(3,1fr); */
-	grid-template-columns: repeat(auto-fit, minmax(128px,1fr));
-	gap: 64px;
-}
-.pixelicons img {
-	display: block;
-	width: 100%; height: auto;
-	image-rendering: crisp-edges; image-rendering: pixelated;
-	transition: transform 600ms ease-out;
-	align-self: center;
-}
-.pixelicons img:hover {
-	transition: transform 100ms ease-out;
-	transform: scale(1.2);
-}
-.pixelicons img:active {
-	transition: none;
-	width: 32px;
-	transform: scale(1);
-}
-</style>
