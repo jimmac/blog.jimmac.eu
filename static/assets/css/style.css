@@ -398,6 +398,7 @@ table {
       opacity: 0.8;
       display: block;
       &::after { content: none; }
+      &.external::after { content: none; }
     }
   }
 
@@ -453,6 +454,10 @@ table {
       box-sizing: border-box;
       font-size: 1.1em;
       &:not(:last-child) { margin: 0; padding: 2px 0; }
+    }
+
+    & input[type="checkbox"]:checked ~ .trigger .menu-link.external::after {
+      content: "";
     }
   }
 }
