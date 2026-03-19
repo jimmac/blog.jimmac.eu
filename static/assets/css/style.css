@@ -550,6 +550,7 @@ table {
   line-height: 1.3;
   margin: 0 0 0.5rem;
   color: var(--color-heading);
+  text-wrap: balance;
 }
 
 .featured-blurb {
