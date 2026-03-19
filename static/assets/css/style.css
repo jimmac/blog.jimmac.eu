@@ -1172,10 +1172,10 @@ img.fullcoloricon {
     height: auto;
     align-self: center;
     border-radius: var(--radius);
-    border: 5px solid transparent;
+    outline: 0 solid transparent;
     transition: transform 200ms var(--smooth-ease),
                 border-radius 200ms var(--smooth-ease),
-                border-color 200ms var(--smooth-ease);
+                outline 200ms var(--smooth-ease);
   }
 
   & img:hover {
@@ -1187,10 +1187,12 @@ img.fullcoloricon {
 
   & img:active {
     transform: scale(3);
-    border-color: var(--color-bg);
+    outline: 200vmax solid rgb(from var(--color-bg) r g b / 0.8);
+    z-index: 10;
+    cursor: zoom-in;
     transition: transform 200ms var(--smooth-ease),
                 border-radius 200ms var(--smooth-ease),
-                border-color 200ms var(--smooth-ease);
+                outline 200ms var(--smooth-ease);
   }
 
   & img.big:active {
