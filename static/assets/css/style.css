@@ -30,8 +30,8 @@
   --color-bg:         #ffffff;
   --color-text:       #434648;
   --color-heading:    #0d122b;
-  --color-link:       #003fff;
-  --color-link-hover: #0036c7;
+  --color-link:       #3584E4;
+  --color-link-hover: #62A0EA;
   --color-border:     #ececec;
   --color-subtle:     #d2c7c7;
   --color-muted:      #6b7886;
@@ -44,8 +44,8 @@
     --color-bg:         #131418;
     --color-text:       #c7bebe;
     --color-heading:    #eaeaea;
-    --color-link:       #ff5277;
-    --color-link-hover: #ff2957;
+    --color-link:       #62A0EA;
+    --color-link-hover: #3584E4;
     --color-border:     #1b1d25;
     --color-subtle:     #4a4d56;
     --color-muted:      #767f87;
