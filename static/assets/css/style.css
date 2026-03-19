@@ -1193,14 +1193,13 @@ img.fullcoloricon {
     }
   }
 
-  &.pixelated img {
-    image-rendering: crisp-edges;
-    image-rendering: pixelated;
-  }
+  &.pixelated img { image-rendering: pixelated; }
 
   &.pixelated-hover img:hover,
-  &.pixelated-hover img:active {
-    image-rendering: crisp-edges;
-    image-rendering: pixelated;
-  }
+  &.pixelated-hover img:active { image-rendering: pixelated; }
+}
+
+.pixelated {
+  image-rendering: pixelated;
+  & img { image-rendering: pixelated; }
 }
