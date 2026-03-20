@@ -1021,6 +1021,7 @@ audio[controls] {
    ============================================================ */
 
 .audio-player {
+  position: relative;
   width: 100%;
   max-width: 22rem;
   margin: 1.5em auto;
@@ -1178,6 +1179,30 @@ audio[controls] {
     color: var(--color-muted);
     font-size: 0.8rem;
   }
+
+  .ap-levels {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    height: 24px;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+    span {
+      width: 2px;
+      height: 100%;
+      border-radius: 1.5px;
+      background: var(--color-link);
+      transform: scaleY(0.05);
+      transform-origin: center;
+      transition: transform 0.1s ease-out;
+    }
+  }
+
+  &.playing .ap-levels { opacity: 1; }
 }
 
 img.fullcoloricon {

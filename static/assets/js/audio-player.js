@@ -1,3 +1,6 @@
+let _ctx;
+function getCtx() { return _ctx || (_ctx = new AudioContext()); }
+
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("audio[controls]").forEach(initPlayer);
 });
@@ -263,7 +266,12 @@ function initPlayer(audio) {
   timeDur.textContent = "0:00";
   timeRow.append(timeCur, timeDur);
 
-  player.append(metaRow, controls, progress, timeRow);
+  // --- level bars ---
+  const levels = document.createElement("div");
+  levels.className = "ap-levels";
+  const bars = Array.from({ length: 7 }, () => levels.appendChild(document.createElement("span")));
+
+  player.append(metaRow, controls, progress, timeRow, levels);
   audio.parentNode.insertBefore(player, audio);
   player.appendChild(audio);
 
@@ -274,15 +282,48 @@ function initPlayer(audio) {
   btnBack.addEventListener("click", () => { audio.currentTime = Math.max(0, audio.currentTime - 15); });
   btnFwd.addEventListener("click", () => { audio.currentTime = Math.min(audio.duration, audio.currentTime + 15); });
 
-  audio.addEventListener("play", () => player.classList.add("playing"));
-  audio.addEventListener("pause", () => player.classList.remove("playing"));
+  // --- analyser for level bars ---
+  let analyser, freqData, rafId;
+  const BINS  = [3, 5, 8, 12, 17, 22, 28];
+  const FLOOR = [0.55, 0.35, 0.15, 0.05, 0.1, 0.2, 0.35];
+  const CEIL  = [0.2, 0.4, 0.7, 0.85, 0.7, 0.4, 0.2];
+  function initAnalyser() {
+    if (analyser) return;
+    try {
+      const ctx = getCtx();
+      const src = ctx.createMediaElementSource(audio);
+      analyser = ctx.createAnalyser();
+      analyser.fftSize = 64;
+      freqData = new Uint8Array(analyser.frequencyBinCount);
+      src.connect(analyser);
+      analyser.connect(ctx.destination);
+    } catch { /* cross-origin or unsupported – bars stay flat */ }
+  }
+  function tickLevels() {
+    if (!analyser) return;
+    analyser.getByteFrequencyData(freqData);
+    for (let i = 0; i < BINS.length; i++) {
+      const raw = freqData[BINS[i]] / 255;
+      const normed = Math.min(1, Math.max(0, raw - FLOOR[i]) / (1 - FLOOR[i]));
+      const v = Math.pow(normed, 0.6) * CEIL[i];
+      bars[i].style.transform = `scaleY(${0.05 + v * 0.95})`;
+    }
+    rafId = requestAnimationFrame(tickLevels);
+  }
+
+  audio.addEventListener("play", () => {
+    player.classList.add("playing");
+    initAnalyser();
+    tickLevels();
+  });
+  audio.addEventListener("pause", () => { player.classList.remove("playing"); cancelAnimationFrame(rafId); });
   audio.addEventListener("loadedmetadata", () => { timeDur.textContent = formatTime(audio.duration); });
   audio.addEventListener("timeupdate", () => {
     const pct = audio.duration ? (audio.currentTime / audio.duration) * 100 : 0;
     fill.style.width = pct + "%";
     timeCur.textContent = formatTime(audio.currentTime);
   });
-  audio.addEventListener("ended", () => player.classList.remove("playing"));
+  audio.addEventListener("ended", () => { player.classList.remove("playing"); cancelAnimationFrame(rafId); });
 
   track.addEventListener("click", (e) => {
     const ratio = e.offsetX / track.offsetWidth;
