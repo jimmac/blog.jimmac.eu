@@ -292,7 +292,7 @@ mark, ::selection {
 
   &::after { content: ""; display: table; clear: both; }
 
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     max-width: calc(var(--width-narrow) - var(--space));
     padding-right: 20px;
     padding-left: 20px;
@@ -387,7 +387,7 @@ table {
     }
     &.active { opacity: 1; font-weight: 600; }
 
-    @media (max-width: 768px) {
+    @media (max-width: 800px) {
       opacity: 0.8;
       display: block;
       &::after { content: none; }
@@ -395,7 +395,7 @@ table {
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     position: fixed;
     top: 0; left: 0; right: 0;
     z-index: 2;
@@ -464,7 +464,7 @@ table {
   margin-bottom: 7.2rem;
   text-align: center;
 
-  @media (max-width: 768px) { margin-bottom: 3em; }
+  @media (max-width: 800px) { margin-bottom: 3em; }
 
   & .author-avatar {
     width: 70px;
@@ -497,7 +497,7 @@ table {
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
   margin-bottom: 3rem;
-  @media (max-width: 900px) { grid-template-columns: 1fr; }
+  @media (max-width: 800px) { grid-template-columns: 1fr; }
 }
 
 .featured-card {
@@ -577,12 +577,16 @@ table {
   display: grid;
   column-gap: 16px;
   row-gap: 0;
-  grid-template-columns: clamp(5.5rem, 28vw, 8.75rem) 1fr;
+  grid-template-columns: 15rem 1fr;
   align-items: baseline;
   padding: 5px 0 6px;
   border-top: 1px solid var(--color-border);
 
   &:first-child { border-top: none; }
+
+  @media (max-width: 800px) {
+    grid-template-columns: max-content 1fr;
+  }
 }
 
 a.post-item {
@@ -599,7 +603,7 @@ a.post-item {
   font-feature-settings: "tnum" 1;
   text-align: right;
 
-  @media (max-width: 768px) { font-size: 16px; }
+  @media (max-width: 800px) { font-size: 16px; }
 }
 
 .post-item-title {
@@ -627,7 +631,7 @@ a.post-item {
   margin-bottom: 2em;
   text-align: center;
 
-  @media (max-width: 768px) { margin-top: 3em; }
+  @media (max-width: 800px) { margin-top: 3em; }
 }
 
 /* ============================================================
@@ -703,7 +707,7 @@ a.post-item {
     &::-webkit-search-results-decoration { display: none; }
   }
 
-  @media (max-width: 768px) { width: 100%; }
+  @media (max-width: 800px) { width: 100%; }
 }
 
 #search-results {
@@ -742,7 +746,7 @@ a.post-item {
    ============================================================ */
 
 .wrapper.post {
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -770,7 +774,7 @@ a.post-item {
     margin-bottom: 20px;
 
     &.center { text-align: center; }
-    @media (max-width: 768px) { font-size: 1.9em; }
+    @media (max-width: 800px) { font-size: 1.9em; }
   }
 }
 
@@ -813,7 +817,7 @@ a.post-item {
     display: block;
     width: 100%;
     min-height: 400px;
-    @media (max-width: 768px) { min-height: inherit; }
+    @media (max-width: 800px) { min-height: inherit; }
   }
 
   & img.centered { display: block; margin: auto; }
@@ -926,7 +930,7 @@ a.post-item {
     &.post-nav-next { text-align: right; padding-left: 20px; margin-left: auto; }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     display: block;
     font-size: var(--font-size-sm);
 
@@ -969,7 +973,7 @@ pre {
   display: block;
   overflow-x: auto;
 
-  @media (max-width: 768px) {
+  @media (max-width: 800px) {
     margin: 0 calc(51% - 51vw);
     padding-left: 20px;
   }
@@ -1024,7 +1028,7 @@ audio[controls] {
   font-family: var(--font-mono);
   font-size: var(--font-size-xs);
 
-  @media (max-width: 768px) { width: 80%; }
+  @media (max-width: 800px) { width: 80%; }
 
   audio { display: none; }
 
