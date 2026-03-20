@@ -4,6 +4,9 @@ description = "Making a track outdoors on a hardware tracker from Poland."
 date = 2021-05-24
 [taxonomies]
 tags = ["synth", "polyend", "tracker", "music"]
+[extra]
+image = "polyend.jpg"
+mastodon_url = "https://mastodon.social/@jimmac/116261056271010945"
 +++
 ![Polyend Tracker](polyend.jpg)
 
