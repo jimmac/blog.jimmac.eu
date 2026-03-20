@@ -294,7 +294,11 @@ function initPlayer(audio) {
     if (!meta) return;
     if (meta.title) metaTitle.textContent = meta.title;
     if (meta.artist) metaArtist.textContent = meta.artist;
-    if (meta.picture) { metaArt.src = meta.picture; metaArt.hidden = false; }
+    if (meta.picture) {
+      metaArt.src = meta.picture;
+      metaArt.hidden = false;
+      metaRow.classList.add("ap-meta--with-art");
+    }
     if (meta.title || meta.artist) metaRow.hidden = false;
   });
 }

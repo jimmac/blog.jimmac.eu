@@ -1008,7 +1008,8 @@ img.full     { display: block; width: 100%; }
 /* native fallback if JS hasn't loaded */
 audio[controls] {
   display: block;
-  width: 80%;
+  width: 100%;
+  max-width: 22rem;
   margin: 1.5em auto;
   border-radius: 64px;
   background: var(--color-code-bg);
@@ -1020,15 +1021,14 @@ audio[controls] {
    ============================================================ */
 
 .audio-player {
-  width: 60%;
+  width: 100%;
+  max-width: 22rem;
   margin: 1.5em auto;
   padding: 1.25rem 1.5rem;
   border-radius: calc(var(--radius) * 4);
   background: var(--color-code-bg);
   font-family: var(--font-mono);
   font-size: var(--font-size-xs);
-
-  @media (max-width: 800px) { width: 80%; }
 
   audio { display: none; }
 
@@ -1056,7 +1056,7 @@ audio[controls] {
     }
 
     .ap-meta-title {
-      font-family: var(--font-body);
+      font-family: var(--font-sans);
       font-weight: var(--weight-bold);
       font-size: var(--font-size-sm);
       color: var(--color-heading);
@@ -1067,12 +1067,37 @@ audio[controls] {
     }
 
     .ap-meta-artist {
+      font-family: var(--font-sans);
       font-size: var(--font-size-xs);
       color: var(--color-muted);
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
       max-width: 100%;
+    }
+
+    &.ap-meta--with-art {
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 0.75rem;
+
+      .ap-meta-art {
+        width: 80px;
+        height: 80px;
+        flex-shrink: 0;
+      }
+
+      .ap-meta-text {
+        align-items: flex-start;
+        text-align: left;
+        flex: 1;
+      }
+
+      .ap-meta-title,
+      .ap-meta-artist {
+        max-width: 100%;
+      }
     }
   }
 
