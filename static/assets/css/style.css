@@ -1023,13 +1023,17 @@ audio[controls] {
 .audio-player {
   position: relative;
   width: 100%;
-  max-width: 22rem;
+  max-width: 70%;
   margin: 1.5em auto;
   padding: 1.25rem 1.5rem;
   border-radius: calc(var(--radius) * 4);
   background: var(--color-code-bg);
   font-family: var(--font-mono);
   font-size: var(--font-size-xs);
+
+  @media (min-width: 800px) {
+    max-width: 22rem;
+  }
 
   audio { display: none; }
 
