@@ -23,6 +23,9 @@
           {% if post.description %}
             <p class="post-item-description">{{ post.description }}</p>
           {% endif %}
+          {% if post.taxonomies.tags %}
+            <span class="post-item-tags" hidden>{{ post.taxonomies.tags | join(sep=" ") }}</span>
+          {% endif %}
         </a>
       {% endfor %}
     {% endfor %}

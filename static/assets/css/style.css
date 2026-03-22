@@ -585,7 +585,7 @@ table {
   &:first-child { border-top: none; }
 
   @media (max-width: 800px) {
-    grid-template-columns: max-content 1fr;
+    grid-template-columns: 8rem 1fr; /* max-content is variable per row */
   }
 }
 
