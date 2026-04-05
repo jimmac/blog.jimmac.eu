@@ -6,6 +6,7 @@ date = 2026-04-05
 tags = ["travel", "music", "japan", "photo"]
 [extra]
 image = "rain.webp"
+mastodon_url = "https://mastodon.social/@jimmac/116353294692367877"
 +++
 
 Last year we went to Japan to finally visit friends after two decades of planning to. Because they live in Fukuoka, we only ended up visiting Hiroshima, Kyoto and Osaka afterwards. We loved it there and as soon as cheap flights became available, booked another one for Tokio, to be legally allowed to cross off Japan as visited.
