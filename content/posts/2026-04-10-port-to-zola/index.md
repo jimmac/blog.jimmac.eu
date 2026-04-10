@@ -6,6 +6,7 @@ date = 2026-04-10
 tags = ["blog", "tech"]
 [extra]
 image = "zola.webp"
+mastodon_url = "https://mastodon.social/@jimmac/116379797906555784"
 +++
 
 ![Zola](zola.webp)
