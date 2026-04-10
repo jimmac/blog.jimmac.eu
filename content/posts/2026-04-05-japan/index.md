@@ -9,6 +9,8 @@ image = "rain.webp"
 mastodon_url = "https://mastodon.social/@jimmac/116353294692367877"
 +++
 
+[![Japan Trip 2026](japan2026.webp)](https://photo.jimmac.eu)
+
 Last year we went to Japan to finally visit friends after two decades of planning to. Because they live in Fukuoka, we only ended up visiting Hiroshima, Kyoto and Osaka afterwards. We loved it there and as soon as cheap flights became available, booked another one for Tokio, to be legally allowed to cross off Japan as visited.
 
 Now if I were to book the trip today, I probably wouldn't. It's quite a gamble given the geopolitical situation and Asia running out of oil. But making it back, it's been as good as the first one. Visiting only Tokio with a short trip to Kawaguchiko in the Sakura blooming season worked out great.
