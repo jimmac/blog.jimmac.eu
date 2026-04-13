@@ -1217,6 +1217,17 @@ img.fullcoloricon {
   filter: drop-shadow(0 2px 5px rgba(0,0,0,0.5));
 }
 
+/* libadwaita-style icon drop shadow for fullcolor app icons */
+.icon-dropshadow img,
+img.icon-dropshadow {
+  filter:
+    drop-shadow(0  1px 12px rgb(0 0 6 / 5%))
+    drop-shadow(0 -1px  0   rgb(0 0 6 / 5%))
+    drop-shadow(1px  0  0   rgb(0 0 6 / 10%))
+    drop-shadow(0  1px  0   rgb(0 0 6 / 30%))
+    drop-shadow(-1px 0  0   rgb(0 0 6 / 10%));
+}
+
 /* ============================================================
    IMAGE GRID  (sketches, pixel art, wallpapers, screenshots)
    ============================================================ */
@@ -1233,10 +1244,12 @@ img.fullcoloricon {
     height: auto;
     align-self: center;
     border-radius: var(--radius);
-    outline: 0 solid transparent;
+    background-color: transparent;
+    box-shadow: 0 0 0 0 transparent;
     transition: transform 200ms var(--smooth-ease),
                 border-radius 200ms var(--smooth-ease),
-                outline 200ms var(--smooth-ease);
+                box-shadow 200ms var(--smooth-ease),
+                background-color 200ms var(--smooth-ease);
   }
 
   & img:hover {
@@ -1248,12 +1261,14 @@ img.fullcoloricon {
 
   & img:active {
     transform: scale(3);
-    outline: 200vmax solid rgb(from var(--color-bg) r g b / 0.8);
+    box-shadow: 0 0 0 200vmax rgb(from var(--color-bg) r g b / 0.8);
+    background-color: rgb(from var(--color-bg) r g b / 0.8);
     z-index: 10;
     cursor: zoom-in;
     transition: transform 200ms var(--smooth-ease),
                 border-radius 200ms var(--smooth-ease),
-                outline 200ms var(--smooth-ease);
+                box-shadow 200ms var(--smooth-ease),
+                background-color 200ms var(--smooth-ease);
   }
 
   & img.big:active {
