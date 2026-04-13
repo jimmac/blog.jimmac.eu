@@ -6,7 +6,7 @@ date = 2026-04-13
 tags = ["blog", "tech", "gnome", "work"]
 [extra]
 image = "release.webp"
-mastodon_url = "https://mastodon.social/@jimmac/116379797906555784"
+mastodon_url = "https://mastodon.social/@jimmac/116396962857435861"
 +++
 
 After successfully moving *this* blog to [Zola](/posts/port-to-zola/), doubts got suppressed and I couldn't resist porting the [GNOME Release Notes](https://release.gnome.org) too.
