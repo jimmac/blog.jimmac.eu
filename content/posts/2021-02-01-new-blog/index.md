@@ -2,7 +2,7 @@
 title = "New Blog. In 2021!"
 description = "Ditching social media algorithms for good old RSS."
 [taxonomies]
-tags = ["blog", "photo"]
+tags = ["blog", "photo","tech"]
 +++
 ![Bedřichov](bedrichov.jpeg)
 
