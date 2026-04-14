@@ -1,0 +1,38 @@
+{% import "macros.html" as macros %}
+{% extends "base.html" %}
+
+{% block body %}
+<div class="wrapper">
+  <header class="about-header">
+    <img class="about-avatar" src="{{ config.extra.author.avatar }}" alt="{{ config.extra.author.name }}" />
+    <h1 class="about-name">{{ config.extra.author.name }}</h1>
+  </header>
+
+  <main aria-label="Content">
+    <div class="featured-grid">
+      {% for card in page.extra.cards %}
+      <article class="featured-card">
+        <a href="{{ card.url }}" class="featured-link">
+          <div class="featured-visual" data-accent="{{ card.accent }}" aria-hidden="true">
+            {% if card.image %}
+            <img class="featured-image" src="/assets/img/{{ card.image }}" alt="" loading="lazy" onerror="this.remove()">
+            {% endif %}
+          </div>
+          <div class="featured-body">
+            <span class="featured-date">{{ card.label }}</span>
+            <h2 class="featured-title">{{ card.title }}</h2>
+            <p class="featured-blurb">{{ card.blurb }}</p>
+          </div>
+        </a>
+      </article>
+      {% endfor %}
+    </div>
+
+    <div class="about-body">
+      {{ page.content | safe }}
+    </div>
+  </main>
+
+  {{ macros::footer() }}
+</div>
+{% endblock body %}
