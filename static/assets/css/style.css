@@ -842,7 +842,7 @@ a.post-item {
     color: var(--color-link);
     text-decoration: none;
 
-    &[href^="http"]:not(.tag)::after {
+    &[href^="http"]:not(.tag):not(:has(img))::after {
       content: "";
       display: inline-block;
       width: 0.65em;
