@@ -84,6 +84,6 @@ A good icon is one of those small things that makes an app feel real &mdash; fin
 
 If you need a faster turnaround or just want to work with someone who's been helping out with GNOME's visual identity for as long as I can remember &mdash; [Hylke Bons](https://planetpeanut.studio/services#app-icons) offers app icon design for open source projects through his studio, Planet Peanut. Hylke has been a core contributor to GNOME's icon work for well over a decade. You'll be in great hands. 
 
-His service has a great freebie for FOSS projects &mdash; funded by community sponsors. You get three sketches to choose from, a final SVG, and a symbolic variant, all following the GNOME icon guidelines. If your project uses an OSI-approved license and is on Flathub, you're eligible. Consider [sponsoring his work](https://planetpeanut.studio/services#app-icons) if you can &mdash; even a small amount helps keep the pipeline going.
+His service has a great freebie for FOSS projects &mdash; funded by community sponsors. You get three sketches to choose from, a final SVG, and a symbolic variant, all following the GNOME icon guidelines. If your project uses an OSI-approved license and is intended to be distributed through Flathub, you're eligible. Consider [sponsoring his work](https://planetpeanut.studio/services#app-icons) if you can &mdash; even a small amount helps keep the pipeline going.
 
 [Previously](/posts/friday-sketches/), [Previously](/posts/sketch-friday/).
