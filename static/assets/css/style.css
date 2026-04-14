@@ -962,6 +962,15 @@ code {
   word-break: normal;
   word-wrap: normal;
   font-size: inherit;
+
+  &:not(pre &) {
+    white-space: normal;
+    font-size: var(--font-size-sm);
+    background: var(--color-code-bg);
+    color: var(--color-heading);
+    padding: 0.3em 0.6em;
+    border-radius: calc(var(--radius) / 2);
+  }
 }
 
 pre {
