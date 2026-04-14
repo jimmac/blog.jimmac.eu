@@ -6,7 +6,7 @@ date = 2026-04-14
 tags = ["design", "icon", "gnome", "work"]
 [extra]
 image = "thumb.webp"
-mastodon_url = ""
+mastodon_url = "https://mastodon.social/@jimmac/116401876030076912"
 +++
 
 Back in 2019, we undertook [a radical overhaul](/posts/the-big-app-icon-redesign/) of how GNOME app icons work. The old Tango-era style required drawing up to seven separate sizes per icon and a truckload of detail. A task so demanding that only a handful of people could do it. The "new" style is geometric, colorful, and most importantly — *achievable*. But redesigning the system was just the first step. We needed to actually get better icons into the hands of app developers, as those should be in control of their brand identity. That's where [app-icon-requests](https://gitlab.gnome.org/Teams/Design/app-icon-requests) came in.
