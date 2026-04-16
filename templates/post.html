@@ -43,6 +43,9 @@
           <span itemprop="author" itemscope itemtype="https://schema.org/Person">
             <span itemprop="name">{{ config.extra.author.name }}</span>
           </span>
+          {% if page.reading_time %}
+          <span class="reading-time">{{ page.reading_time }} min read</span>
+          {% endif %}
           {% if page.extra.modified %}
           <time hidden datetime="{{ page.extra.modified }}" itemprop="dateModified">
             {{ page.extra.modified }}

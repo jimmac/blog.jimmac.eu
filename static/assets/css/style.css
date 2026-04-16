@@ -801,6 +801,21 @@ a.post-item {
   & span[itemprop="author"] {
     border-bottom: 1px dotted var(--color-border);
   }
+
+  & .reading-time {
+    margin-left: 1.5em;
+    position: relative;
+
+    &::before {
+      background: var(--color-border);
+      bottom: 1px;
+      content: " ";
+      height: 2px;
+      position: absolute;
+      left: -20px;
+      width: 12px;
+    }
+  }
 }
 
 .page-content {
