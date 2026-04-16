@@ -6,6 +6,7 @@ date = 2021-09-12
 tags = ["tracker", "polyend", "synth", "sxfr", "pixelart", "aseprite", "pixaki", "music", "blender"]
 [extra]
 image = "chiptune.gif"
+audio = "speech.opus"
 +++
 
 <!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->

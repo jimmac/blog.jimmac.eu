@@ -6,6 +6,7 @@ date = 2025-10-28
 tags = ["dirtywaveM8", "tracker", "music", "usb", "midi"]
 [extra]
 image = "knot.webp"
+audio = "speech.opus"
 +++
 
 The M8 has extensive USB audio and MIDI capabilities, but it cannot be a USB MIDI host. So you can control other devices through USB MIDI, but cannot sent to it over USB.

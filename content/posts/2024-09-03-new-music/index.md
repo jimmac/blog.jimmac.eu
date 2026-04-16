@@ -4,6 +4,8 @@ description = "Discovering remarkable artists and remembering to actually blog a
 date = 2024-09-03
 [taxonomies]
 tags = ["music", "dirtywaveM8", "tracker"]
+[extra]
+audio = "speech.opus"
 +++
 
 I haven't done a good job posting to my blog this year and this is the first step to correct it. 

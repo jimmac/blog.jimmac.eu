@@ -6,6 +6,7 @@ date = 2015-10-21
 tags = ["design", "blender", "wallpaper", "gnome", "work", "gimp", "inkscape", "3D"]
 [extra]
 image = "adwaita-318.jpg"
+audio = "speech.opus"
 +++
 
 Part of [GNOME](http://gnome.org)'s visual identity are the default wallpapers. Ever since GNOME3 was released, regardless of the release version, you can tell a stock GNOME desktop from afar. Unlike what most Linux distributions do, we don't change the wallpaper thematically from release to release and there is a strong focus on *continuity*.

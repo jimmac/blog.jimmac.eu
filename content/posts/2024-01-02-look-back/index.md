@@ -4,6 +4,8 @@ description = "A dust spec reflects on music, FPV, and another trip around the s
 date = 2024-01-02
 [taxonomies]
 tags = ["music", "art", "fpv"]
+[extra]
+audio = "speech.opus"
 +++
 
 Congratulations on finishing yet another ride around the Sol with me. Here's some noteworthy events from it from the perspective of a dust spec.

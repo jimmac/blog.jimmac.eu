@@ -6,6 +6,7 @@ date = 2024-09-13
 tags = ["movie"]
 [extra]
 image = "weyland.webp"
+audio = "speech.opus"
 +++
 
 ![Weyland Yutani Corp -- Building Better Worlds](weyland.webp)

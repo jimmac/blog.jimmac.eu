@@ -4,6 +4,8 @@ description = "Rediscovering the joy of making electronic music after a 20-year 
 date = 2021-02-02
 [taxonomies]
 tags = ["synth", "tracker", "music"]
+[extra]
+audio = "speech.opus"
 +++
 ![Elektron Digitakt](digitakt.jpg)
 

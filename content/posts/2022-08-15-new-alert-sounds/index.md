@@ -4,6 +4,8 @@ description = "Crafting GNOME 43 alert sounds on a Teensy running Dirtywave firm
 date = 2022-08-15
 [taxonomies]
 tags = ["work", "gnome", "design", "sound", "synth", "dirtywaveM8", "tracker", "music"]
+[extra]
+audio = "speech.opus"
 +++
 
 In the classic analog synthesizer, a sound is created by a simple oscillator and then carving/shaping the sound with filters. That's why it's sometimes called subtractive synthesis.

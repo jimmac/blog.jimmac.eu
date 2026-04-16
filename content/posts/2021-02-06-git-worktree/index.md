@@ -4,6 +4,8 @@ description = "Running gtk3 and gtk4 side by side without the checkout dance."
 date = 2021-02-06
 [taxonomies]
 tags = ["work", "git", "gnome"]
+[extra]
+audio = "speech.opus"
 +++
 
 ![git worktree](git-worktree.png)

@@ -4,6 +4,8 @@ title = "New Zealand, Part 1/4"
 description = "First leg of a road trip across New Zealand, near-misses included."
 [taxonomies]
 tags = ["travel"]
+[extra]
+audio = "speech.opus"
 +++
 
 Since it's about 5000 pictures and 13.3GB to go through, I'll be posting my New Zealand images in batches. This first batch covers the first three days of the trip with a single shot from the 38 hour flight ;). Czech republic is almost exactly on the other side of the globe and we had a lot of waiting between the flights (`PRG>AMS>KUL>AUC>CHR`).

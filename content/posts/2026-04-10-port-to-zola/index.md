@@ -7,6 +7,7 @@ tags = ["blog", "tech"]
 [extra]
 image = "zola.webp"
 mastodon_url = "https://mastodon.social/@jimmac/116379797906555784"
+audio = "speech.opus"
 +++
 
 ![Zola](zola.webp)

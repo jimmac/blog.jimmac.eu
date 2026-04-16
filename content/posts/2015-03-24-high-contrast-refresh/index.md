@@ -6,6 +6,7 @@ date = 2015-03-24
 tags = ["gnome", "design", "icon", "highcontrast", "work"]
 [extra]
 image = "hc-shell.png"
+audio = "speech.opus"
 +++
 
 ![](hc-shell.png)

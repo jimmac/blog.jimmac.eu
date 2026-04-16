@@ -4,6 +4,8 @@ description = "Breaking through creator's block with single-cycle waveforms on t
 date = 2021-08-03
 [taxonomies]
 tags = ["synth", "elektron", "digitakt", "fpv", "music"]
+[extra]
+audio = "speech.opus"
 +++
 ![Single Cycle Rave](SingleCycleRave.jpg)
 

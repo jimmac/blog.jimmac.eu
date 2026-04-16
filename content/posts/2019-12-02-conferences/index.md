@@ -6,6 +6,7 @@ date = 2019-12-02
 tags = ["gnome", "design", "travel", "guadec", "work"]
 [extra]
 image = "sponsored-by-foundation.png"
+audio = "speech.opus"
 +++
 
 This year I haven't done any drone-related travelling. The sponsorship deal fell through and [Rotorama](https://www.rotorama.cz/racing-team) didn't participate in [DCL](https://www.dcl.aero/). I admit I haven't been practicing as much as I would need to to do any better in the local races either.

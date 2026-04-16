@@ -8,6 +8,7 @@ tags = ["work", "gnome", "design", "wallpaper", "art", "blender"]
 [extra]
 image = "thumb.png"
 mastodon_url = "https://mastodon.social/@jimmac/116252222590706940"
+audio = "speech.opus"
 +++
 
 GNOME 50 just got released! To celebrate, I thought it’d be fun to look into the background (*ding*) of the newest additions to the collection.

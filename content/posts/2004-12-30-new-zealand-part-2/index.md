@@ -4,6 +4,8 @@ title = "New Zealand, Part 2/4"
 description = "From Moeraki Boulders to sea lions at Surat Bay."
 [taxonomies]
 tags = ["travel"]
+[extra]
+audio = "speech.opus"
 +++
 
 ![Moeraki Boulders](dsc_8437.jpg)

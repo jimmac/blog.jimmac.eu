@@ -6,6 +6,7 @@ date = 2015-12-10
 tags = ["font", "design", "gnome", "work"]
 [extra]
 image = "bluezones.jpg"
+audio = "speech.opus"
 +++
 
 GNOME's default UI typeface Cantarell gained a new maintainer, Nikolaus Waxweiler. Nikolaus was on a holy crusade to improve the state of text rendering on Linux by improving [FreeType](http://freetype.org/) and lobbying for changes in different projects. While he continues on those efforts, bug reports hinted (pun intended) that GNOME's font rendered worse as FreeType improved so he went on to investigate why. It turns out that Cantarell had many metric related issues and its development was quite stagnant.

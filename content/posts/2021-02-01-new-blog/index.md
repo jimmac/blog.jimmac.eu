@@ -3,6 +3,8 @@ title = "New Blog. In 2021!"
 description = "Ditching social media algorithms for good old RSS."
 [taxonomies]
 tags = ["blog", "photo","tech"]
+[extra]
+audio = "speech.opus"
 +++
 ![Bedřichov](bedrichov.jpeg)
 

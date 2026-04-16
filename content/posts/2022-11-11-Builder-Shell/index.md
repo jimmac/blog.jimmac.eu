@@ -4,6 +4,8 @@ description = "Testing GNOME Shell changes without the usual build nightmare."
 date = 2022-11-11
 [taxonomies]
 tags = ["gnome", "development", "shell"]
+[extra]
+audio = "speech.opus"
 +++
 
 Builder has been absolutely wonderful for a designer to dive in and fix up graphics assets for Application. It allows to easily build and test run patches before submitting a merge/pull request on apps hosted on gitlab or github. Ideally you'd press the `run button` and voilá.

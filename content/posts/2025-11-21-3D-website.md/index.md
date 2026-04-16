@@ -6,6 +6,7 @@ date = 2025-11-21
 tags = ["gnome", "web", "blender", "3D", "work"]
 [extra]
 image = "3D-sharecard.webp"
+audio = "speech.opus"
 +++
 
 Hey Kids! Other than raving about [GNOME.org](https://www.gnome.org) being a [static HTML](/posts/plain-html/), there's one more aspect I'd like to get back to in this writing exercise called a blog post. 

@@ -6,6 +6,7 @@ description = "Look behind the Flathub rebrand."
 tags = ["flatpak", "flathub", "design", "work", "brand"]
 [extra]
 image = "brand.webp"
+audio = "speech.opus"
 +++
 
 <!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->

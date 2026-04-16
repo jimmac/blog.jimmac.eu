@@ -4,6 +4,8 @@ description = "When a 5G phone just works as an internet fallback."
 date = 2021-08-02
 [taxonomies]
 tags = ["gnome", "whenthingsworklikemagic"]
+[extra]
+audio = "speech.opus"
 +++
 
 ![git worktree](5G_Backup.png)

@@ -4,6 +4,8 @@ description = "A weeklybeats jam combining the Digitakt and M8 in a fugue-like s
 date = 2022-02-15
 [taxonomies]
 tags = ["tracker", "synth", "dirtywaveM8", "digitakt", "elektron", "music"]
+[extra]
+audio = "speech.opus"
 +++
 
 Since the start of the year I've been doing [weeklybeats](https://weeklybeats.com/). So far it's been possible mainly thanks to the [Dirtywave M8](https://dirtywave.com)'s ability to be picked up, instantly turned on and creating. I have to admit to mostly composing in bed (and only occasionally waking up my better half by shaking to the beat).

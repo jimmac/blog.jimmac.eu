@@ -4,6 +4,8 @@ description = "Learning drum and bass on the tiny miracle that is the Dirtywave 
 date = 2021-12-19
 [taxonomies]
 tags = ["tracker", "synth", "dirtywaveM8", "music", "blender", "3D"]
+[extra]
+audio = "speech.opus"
 +++
 
 <!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->

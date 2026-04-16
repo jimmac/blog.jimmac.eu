@@ -6,6 +6,7 @@ date = 2023-10-01
 tags = ["game", "gamedev", "pixelart"]
 [extra]
 image = "skulls-sprites.png"
+audio = "speech.opus"
 +++
 
 I've been wanting to make a game for as long as I remember. Granted I don't remember much, it's been on my mind since I was about 10. But somehow it never happened. Regardless how low of a bar I've set, I've never gotten to it. Until today!

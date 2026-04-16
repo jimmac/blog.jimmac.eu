@@ -4,6 +4,8 @@ description = "A handy GNOME Circle app for lossless image compression."
 date = 2021-02-04
 [taxonomies]
 tags = ["app", "flathub"]
+[extra]
+audio = "speech.opus"
 +++
 
 While the app got some spotlight on [GNOME Circle](https://circle.gnome.org), I found it super handy to my own use that I decided to write about it here as well.

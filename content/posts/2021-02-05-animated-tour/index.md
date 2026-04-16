@@ -4,6 +4,8 @@ description = "Using CSS keyframes to animate the GNOME 40 onboarding tour."
 date = 2021-02-05
 [taxonomies]
 tags = ["work", "design", "gnome"]
+[extra]
+audio = "speech.opus"
 +++
 
 We've [struggled](/posts/svg-animation/) with bringing subtle animation to GNOME in the past. There is interest in bringing it in [some shape](https://gitlab.gnome.org/GNOME/gtk/-/tree/wip/otte/lottie) or form to *gtk4*. The bad news is the tools are still lacking on the production side. There's not much past [Glaxanimate](https://glaxnimate.mattbas.org/) to do even simple transforms.

@@ -4,6 +4,8 @@ description = "Faking recolorable gradients in monochrome symbolic icons."
 date = 2021-08-18
 [taxonomies]
 tags = ["work", "gnome", "inkscape", "tutorial"]
+[extra]
+audio = "speech.opus"
 +++
 
 <!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->

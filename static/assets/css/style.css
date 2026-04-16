@@ -1218,6 +1218,89 @@ audio[controls] {
   &.playing .ap-levels { opacity: 1; }
 }
 
+/* ============================================================
+   INLINE TTS PLAYER (compact, beside post title)
+   ============================================================ */
+
+.tts-button {
+  appearance: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  display: none;
+  align-items: center;
+  gap: 8px;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+  margin-left: 8px;
+  color: var(--color-muted);
+  transition: color 150ms var(--bounce-ease);
+
+  &:hover { color: var(--color-link); }
+  &:active { transform: scale(0.92); }
+}
+
+.tts-icon {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  transition: opacity 0.2s, width 0.2s;
+}
+
+.tts-levels {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  height: 36px;
+  opacity: 0;
+  max-width: 0;
+  overflow: hidden;
+  transition: opacity 0.3s, max-width 0.3s;
+
+  span {
+    display: block;
+    width: 3px;
+    height: 100%;
+    border-radius: 1.5px;
+    background: var(--color-link);
+    transform: scaleY(0.05);
+    transform-origin: center;
+    transition: transform 0.1s ease-out;
+  }
+}
+
+.tts-duration {
+  font-family: var(--font-mono);
+  font-size: 20px;
+  font-weight: var(--weight-normal);
+  color: var(--color-muted);
+  opacity: 0;
+  max-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: opacity 0.3s, max-width 0.3s;
+}
+
+.tts-button.tts-playing {
+  .tts-icon {
+    opacity: 0;
+    width: 0;
+    overflow: hidden;
+  }
+
+  .tts-levels {
+    opacity: 1;
+    max-width: 80px;
+  }
+
+  .tts-duration {
+    opacity: 1;
+    max-width: 80px;
+  }
+}
+
 img.fullcoloricon {
   display: block;
   width: 256px;

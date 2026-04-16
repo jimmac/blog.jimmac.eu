@@ -17,7 +17,23 @@
         </div>
         {% endif %}
 
-        <h1 class="header-title" itemprop="headline">{{ page.title }}</h1>
+        <h1 class="header-title" itemprop="headline">
+          {{ page.title }}
+          {%- if page.extra.audio %}
+          <button class="tts-button"
+                  aria-label="Read the article using artificial voice"
+                  title="Read the article using artificial voice"
+                  data-src="{{ page.extra.audio }}">
+            <svg class="tts-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <circle cx="9" cy="12" r="3.5"/>
+              <path d="M14.5 8.5a5.3 5.3 0 0 1 0 7" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+              <path d="M17 6a8.5 8.5 0 0 1 0 12" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            </svg>
+            <span class="tts-levels" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>
+            <span class="tts-duration"></span>
+          </button>
+          {%- endif %}
+        </h1>
 
         {% if page.date %}
         <div class="post-meta">

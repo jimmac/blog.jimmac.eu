@@ -7,6 +7,7 @@ tags = ["travel", "music", "japan", "photo"]
 [extra]
 image = "rain.webp"
 mastodon_url = "https://mastodon.social/@jimmac/116353294692367877"
+audio = "speech.opus"
 +++
 
 [![Japan Trip 2026](japan2026.webp)](https://photo.jimmac.eu)

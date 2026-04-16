@@ -6,6 +6,7 @@ date = 2014-06-14
 tags = ["adwaita", "gnome", "design", "widget", "theme", "work"]
 [extra]
 image = "adwaita-314.svg"
+audio = "speech.opus"
 +++
 
 Now that the controversial 3.12 tab design has been validated by Apple, we're ready to tackle new challenges with the widgetry™.

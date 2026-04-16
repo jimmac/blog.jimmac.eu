@@ -4,6 +4,8 @@ description = "A narrow-angle look back at 2021 through synths and pixels."
 date = 2022-01-10
 [taxonomies]
 tags = ["personal", "music", "synth", "2021"]
+[extra]
+audio = "speech.opus"
 +++
 
 It's been exactly one year since I've done the foolish thing and changed my blog backend to write more. And to my own surprise it worked. Let me look back at 2021 from a rather narrow perspective of what I usually write about. Perhaps to your disappointment most of it is personal, not professional.

@@ -6,6 +6,7 @@ date = 2025-05-22
 tags = ["movie"]
 [extra]
 image = "scavengers.webp"
+audio = "speech.opus"
 +++
 
 ![Scavengers Reign](scavengers.webp)

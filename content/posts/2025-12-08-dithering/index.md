@@ -6,6 +6,7 @@ date = 2025-12-08
 tags = ["gnome", "wallpaper", "gimp", "work"]
 [extra]
 image = "halftone.webp"
+audio = "speech.opus"
 +++
 
 One of the new additions to the **GNOME 49** wallpaper set is *Dithered Sun* by [Tobias](https://tobiasbernard.com/). It uses dithering not as a technical workaround for color banding, but as an *artistic* device.

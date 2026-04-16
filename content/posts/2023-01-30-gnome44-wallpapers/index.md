@@ -4,6 +4,8 @@ description = "Behind the scenes of GNOME 44's wallpaper set, mesh gradients and
 date = 2023-01-30
 [taxonomies]
 tags = ["work", "gnome", "design", "wallpaper", "art", "blender", "3D"]
+[extra]
+audio = "speech.opus"
 +++
 
 As we gear up for the release of GNOME 44, let's take a moment to reflect on the visual design updates.

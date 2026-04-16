@@ -4,6 +4,8 @@ description = "Finding joy in terrible live performances on Elektron boxes."
 date = 2021-04-16
 [taxonomies]
 tags = ["synth", "elektron", "music"]
+[extra]
+audio = "speech.opus"
 +++
 ![Elektron Digitone](Digitone.png)
 

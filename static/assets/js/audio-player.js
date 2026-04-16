@@ -3,6 +3,7 @@ function getCtx() { return _ctx || (_ctx = new AudioContext()); }
 
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("audio[controls]").forEach(initPlayer);
+  document.querySelectorAll(".tts-button").forEach(initTTSPlayer);
 });
 
 function formatTime(s) {
@@ -349,4 +350,99 @@ function makeBtn(cls, svg) {
   btn.className = cls;
   btn.innerHTML = svg;
   return btn;
+}
+
+/* ----------------------------------------------------------------
+   Inline TTS player (compact, beside post title)
+   ---------------------------------------------------------------- */
+
+function initTTSPlayer(button) {
+  const audio = document.createElement("audio");
+  audio.preload = "metadata";
+  const source = document.createElement("source");
+  source.src = button.dataset.src;
+  source.type = "audio/ogg; codecs=opus";
+  audio.appendChild(source);
+  audio.style.display = "none";
+  button.appendChild(audio);
+
+  button.style.display = "inline-flex";
+
+  const durationEl = button.querySelector(".tts-duration");
+  const bars = Array.from(button.querySelectorAll(".tts-levels span"));
+
+  audio.addEventListener("loadedmetadata", () => {
+    if (isFinite(audio.duration)) {
+      durationEl.textContent = formatTime(audio.duration);
+    }
+  });
+
+  // Also try durationchange for Opus files that report duration late
+  audio.addEventListener("durationchange", () => {
+    if (isFinite(audio.duration) && audio.duration > 0) {
+      durationEl.textContent = formatTime(audio.duration);
+    }
+  });
+
+  let analyser, freqData, rafId;
+  const BINS  = [3, 5, 8, 12, 17, 22, 28];
+  const FLOOR = [0.55, 0.35, 0.15, 0.05, 0.1, 0.2, 0.35];
+  const CEIL  = [0.2, 0.4, 0.7, 0.85, 0.7, 0.4, 0.2];
+
+  function initAnalyser() {
+    if (analyser) return;
+    try {
+      const ctx = getCtx();
+      const src = ctx.createMediaElementSource(audio);
+      analyser = ctx.createAnalyser();
+      analyser.fftSize = 64;
+      freqData = new Uint8Array(analyser.frequencyBinCount);
+      src.connect(analyser);
+      analyser.connect(ctx.destination);
+    } catch { /* cross-origin or unsupported */ }
+  }
+
+  function tick() {
+    if (!analyser) return;
+    analyser.getByteFrequencyData(freqData);
+    for (let i = 0; i < BINS.length; i++) {
+      const raw = freqData[BINS[i]] / 255;
+      const normed = Math.min(1, Math.max(0, raw - FLOOR[i]) / (1 - FLOOR[i]));
+      const v = Math.pow(normed, 0.6) * CEIL[i];
+      bars[i].style.transform = `scaleY(${0.05 + v * 0.95})`;
+    }
+    rafId = requestAnimationFrame(tick);
+  }
+
+  button.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (audio.paused) audio.play(); else audio.pause();
+  });
+
+  audio.addEventListener("play", () => {
+    button.classList.add("tts-playing");
+    initAnalyser();
+    tick();
+  });
+
+  audio.addEventListener("pause", () => {
+    button.classList.remove("tts-playing");
+    cancelAnimationFrame(rafId);
+  });
+
+  audio.addEventListener("timeupdate", () => {
+    if (isFinite(audio.duration)) {
+      const remaining = audio.duration - audio.currentTime;
+      durationEl.textContent = formatTime(remaining);
+    }
+  });
+
+  audio.addEventListener("ended", () => {
+    button.classList.remove("tts-playing");
+    cancelAnimationFrame(rafId);
+    audio.currentTime = 0;
+    if (isFinite(audio.duration)) {
+      durationEl.textContent = formatTime(audio.duration);
+    }
+  });
 }

@@ -3,6 +3,8 @@ title = "iPhone 12 mini"
 description = "Singing praise to a magic pocket camera that happens to make calls."
 [taxonomies]
 tags = ["photo", "iphone", "live"]
+[extra]
+audio = "speech.opus"
 +++
 
 <img loading="lazy" src="IMG_0554-min.jpeg" alt="Ještěd">

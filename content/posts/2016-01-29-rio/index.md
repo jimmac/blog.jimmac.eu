@@ -6,6 +6,7 @@ date = 2016-01-29
 tags = ["gnome", "design", "travel", "work", "ux"]
 [extra]
 image = "notes.jpg"
+audio = "speech.opus"
 +++
 
 I was really pleased to see [Endless](https://endlessm.com/), the little company with big plans, initiate a [GNOME Design hackfest in Rio](https://wiki.gnome.org/Hackfests/UxDesign2016).

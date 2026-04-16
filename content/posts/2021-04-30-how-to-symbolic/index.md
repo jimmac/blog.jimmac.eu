@@ -6,6 +6,7 @@ date = 2021-04-30
 tags = ["icon", "design", "gnome", "work", "inkscape"]
 [extra]
 image = "pencil.jpg"
+audio = "speech.opus"
 +++
 <img loading="lazy" src="icon-tooling.svg" alt="Icon Tooling">
 
