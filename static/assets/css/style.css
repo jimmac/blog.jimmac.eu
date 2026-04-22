@@ -1343,31 +1343,24 @@ img.icon-dropshadow {
 
 .post-footer {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
-  gap: 1em;
+  gap: 0.6em;
   margin-top: 3em;
 }
 
 .related-posts {
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
   gap: 0.4em;
 }
 
 .related-label {
-  font-size: var(--font-size-xs);
+  width: 100%;
+  font-size: 0.7rem;
   color: var(--color-muted);
-  margin-right: 0.2em;
-
-  @media (max-width: 640px) {
-    width: 100%;
-    font-size: 0.7rem;
-    margin-left: 0.8em;
-    margin-bottom: -0.1em;
-  }
+  margin-left: 0.8em;
+  margin-bottom: -0.1em;
 }
 
 .post-footer .related-link {
@@ -1390,6 +1383,7 @@ img.icon-dropshadow {
   display: inline-flex;
   align-items: center;
   gap: 0.5em;
+  margin-top: 0.6em;
   padding: 0.55em 1.2em;
   border-radius: 9999px;
   border: none;
