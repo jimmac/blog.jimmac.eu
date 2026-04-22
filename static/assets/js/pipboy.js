@@ -398,6 +398,7 @@
           drawArt(art);
           drawOSD(buffer);
           p.background(10);
+          p.resetShader();
           p.image(buffer, -p.width / 2, -p.height / 2, p.width, p.height);
 
           if (crtEnabled) {
