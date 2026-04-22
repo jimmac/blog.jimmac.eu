@@ -6,6 +6,12 @@ date = 2024-09-03
 tags = ["music", "dirtywaveM8", "tracker"]
 [extra]
 audio = "speech.opus"
+related = [
+  "posts/2024-01-02-look-back/index.md",
+  "posts/2023-05-01-udev-m8/index.md",
+  "posts/2022-08-15-new-alert-sounds/index.md",
+  "posts/2022-04-02-less-is-more/index.md",
+]
 +++
 
 I haven't done a good job posting to my blog this year and this is the first step to correct it. 

@@ -8,6 +8,11 @@ tags = ["travel", "music", "japan", "photo"]
 image = "rain.webp"
 mastodon_url = "https://mastodon.social/@jimmac/116353294692367877"
 audio = "speech.opus"
+related = [
+  "posts/2024-09-09-dji-neo/index.md",
+  "posts/2021-02-14-iphone-magic/index.md",
+  "posts/2021-02-03-iphone12-mini/index.md",
+]
 +++
 
 [![Japan Trip 2026](japan2026.webp)](https://photo.jimmac.eu)

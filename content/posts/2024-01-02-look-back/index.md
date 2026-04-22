@@ -6,6 +6,11 @@ date = 2024-01-02
 tags = ["music", "art", "fpv"]
 [extra]
 audio = "speech.opus"
+related = [
+  "posts/2023-05-01-udev-m8/index.md",
+  "posts/2022-08-15-new-alert-sounds/index.md",
+  "posts/2022-01-10-one-more-trip/index.md",
+]
 +++
 
 Congratulations on finishing yet another ride around the Sol with me. Here's some noteworthy events from it from the perspective of a dust spec.

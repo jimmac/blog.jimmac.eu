@@ -7,6 +7,9 @@ tags = ["movie"]
 [extra]
 image = "weyland.webp"
 audio = "speech.opus"
+related = [
+  "posts/2022-02-14-droneman/index.md",
+]
 +++
 
 ![Weyland Yutani Corp -- Building Better Worlds](weyland.webp)

@@ -4,6 +4,12 @@ title = "New Zealand, Part 4/4"
 description = "Queenstown thrills, Fox Glacier, and the final stretch north."
 [taxonomies]
 tags = ["travel"]
+[extra]
+related = [
+  "posts/2005-01-05-new-zealand-part-3/index.md",
+  "posts/2004-12-30-new-zealand-part-2/index.md",
+  "posts/2004-12-30-new-zealand-part-1/index.md",
+]
 +++
 ![Some mysterious pond somewhere in NZ](dsc_9410.jpg)
 

@@ -4,6 +4,12 @@ description = "All the pixel art app animations assembled into one video."
 date = 2022-09-22
 [taxonomies]
 tags = ["gnome", "design", "icon", "pixelart", "art", "pixaki", "blender"]
+[extra]
+related = [
+  "posts/2022-04-09-blender-eevee-is-magic/index.md",
+  "posts/2021-04-30-how-to-symbolic/index.md",
+  "posts/2019-01-23-the-big-app-icon-redesign/index.md",
+]
 +++
 
 As mentioned in the [previous post](/posts/evenmopixels/) I've been creating these short pixel art animations for [twitter](https://twitter.com/jimmac) and [mastodon](https://mastodon.social/web/@jimmac) to promote the lovely apps that sprung up under the umbrella of the [GNOME Circle project](https://circle.gnome.org). 

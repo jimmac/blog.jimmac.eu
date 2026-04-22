@@ -6,6 +6,11 @@ date = 2022-01-10
 tags = ["personal", "music", "synth", "2021"]
 [extra]
 audio = "speech.opus"
+related = [
+  "posts/2021-12-19-dnb/index.md",
+  "posts/2021-09-12-chiptune/index.md",
+  "posts/2021-08-03-single-cycle-rave/index.md",
+]
 +++
 
 It's been exactly one year since I've done the foolish thing and changed my blog backend to write more. And to my own surprise it worked. Let me look back at 2021 from a rather narrow perspective of what I usually write about. Perhaps to your disappointment most of it is personal, not professional.

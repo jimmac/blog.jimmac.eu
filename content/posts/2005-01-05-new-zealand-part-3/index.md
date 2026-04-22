@@ -6,6 +6,10 @@ description = "Milford Sound on a sunny day and waterfalls along the way."
 tags = ["travel"]
 [extra]
 audio = "speech.opus"
+related = [
+  "posts/2004-12-30-new-zealand-part-2/index.md",
+  "posts/2004-12-30-new-zealand-part-1/index.md",
+]
 +++
 
 The farm we stayed at was really close to the nice Purakaunui falls. Met some photographers there and they obviously didn't think much of my "why carry a tripod when I can just stick the cam on a railing, eh?". The method works really well for the lazy bastards like myself though. Especially when I saw a poor fella carry around a big camera bag on the Tongariro crossing track.

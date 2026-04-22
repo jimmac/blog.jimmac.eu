@@ -6,6 +6,11 @@ date = 2022-02-15
 tags = ["tracker", "synth", "dirtywaveM8", "digitakt", "elektron", "music"]
 [extra]
 audio = "speech.opus"
+related = [
+  "posts/2022-01-10-one-more-trip/index.md",
+  "posts/2021-12-19-dnb/index.md",
+  "posts/2021-09-12-chiptune/index.md",
+]
 +++
 
 Since the start of the year I've been doing [weeklybeats](https://weeklybeats.com/). So far it's been possible mainly thanks to the [Dirtywave M8](https://dirtywave.com)'s ability to be picked up, instantly turned on and creating. I have to admit to mostly composing in bed (and only occasionally waking up my better half by shaking to the beat).

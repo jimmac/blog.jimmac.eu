@@ -7,6 +7,11 @@ tags = ["icon", "design", "gnome", "work", "inkscape"]
 [extra]
 image = "pencil.jpg"
 audio = "speech.opus"
+related = [
+  "posts/2020-04-06-art-vs-design/index.md",
+  "posts/2019-01-23-the-big-app-icon-redesign/index.md",
+  "posts/2015-03-24-high-contrast-refresh/index.md",
+]
 +++
 <img loading="lazy" src="icon-tooling.svg" alt="Icon Tooling">
 

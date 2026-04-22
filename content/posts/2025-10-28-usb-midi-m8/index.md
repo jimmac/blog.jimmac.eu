@@ -7,6 +7,12 @@ tags = ["dirtywaveM8", "tracker", "music", "usb", "midi"]
 [extra]
 image = "knot.webp"
 audio = "speech.opus"
+related = [
+  "posts/2024-09-03-new-music/index.md",
+  "posts/2023-05-01-udev-m8/index.md",
+  "posts/2022-08-15-new-alert-sounds/index.md",
+  "posts/2022-02-15-fugue-machine-on-the-m8/index.md",
+]
 +++
 
 The M8 has extensive USB audio and MIDI capabilities, but it cannot be a USB MIDI host. So you can control other devices through USB MIDI, but cannot sent to it over USB.

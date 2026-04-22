@@ -6,6 +6,11 @@ date = 2020-04-06
 tags = ["design", "art", "gnome", "icon", "work"]
 [extra]
 audio = "speech.opus"
+related = [
+  "posts/2019-01-23-the-big-app-icon-redesign/index.md",
+  "posts/2018-07-18-detail-considered-harmful/index.md",
+  "posts/2018-03-14-builder-nightly/index.md",
+]
 +++
 
 Over the weekend I was forced to unload all my photos from my phone due to limited storage space. As I went through a nice capture of Builder nighly caught my attention and I couldn't help but [post it on twitter](https://twitter.com/jimmac/status/1246208150233112577).

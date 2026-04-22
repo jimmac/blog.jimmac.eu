@@ -9,8 +9,10 @@ image = "thumb.webp"
 mastodon_url = "https://mastodon.social/@jimmac/116401876030076912"
 audio = "speech.opus"
 related = [
-  "posts/2026-03-19-friday-sketches/index.md",
-  "posts/2024-06-14-sketch-friday/index.md",
+  "posts/2022-09-22-came-full-circle/index.md",
+  "posts/2021-04-30-how-to-symbolic/index.md",
+  "posts/2019-01-23-the-big-app-icon-redesign/index.md",
+  "posts/2018-07-18-detail-considered-harmful/index.md",
 ]
 +++
 

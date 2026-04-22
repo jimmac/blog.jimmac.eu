@@ -7,6 +7,10 @@ tags = ["movie"]
 [extra]
 image = "scavengers.webp"
 audio = "speech.opus"
+related = [
+  "posts/2024-09-13-weyland/index.md",
+  "posts/2022-02-14-droneman/index.md",
+]
 +++
 
 ![Scavengers Reign](scavengers.webp)

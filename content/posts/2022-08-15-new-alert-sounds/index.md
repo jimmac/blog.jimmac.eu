@@ -6,6 +6,11 @@ date = 2022-08-15
 tags = ["work", "gnome", "design", "sound", "synth", "dirtywaveM8", "tracker", "music"]
 [extra]
 audio = "speech.opus"
+related = [
+  "posts/2022-04-02-less-is-more/index.md",
+  "posts/2022-02-15-fugue-machine-on-the-m8/index.md",
+  "posts/2021-12-19-dnb/index.md",
+]
 +++
 
 In the classic analog synthesizer, a sound is created by a simple oscillator and then carving/shaping the sound with filters. That's why it's sometimes called subtractive synthesis.

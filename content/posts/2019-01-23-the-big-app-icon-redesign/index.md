@@ -6,6 +6,12 @@ date = 2019-01-23
 tags = ["design", "icon", "inkscape", "gnome", "work"]
 [extra]
 audio = "speech.opus"
+related = [
+  "posts/2018-07-18-detail-considered-harmful/index.md",
+  "posts/2018-03-14-builder-nightly/index.md",
+  "posts/2017-03-31-recipe-icon/index.md",
+  "posts/2013-12-05-updated-app-icons/index.md",
+]
 +++
 
 # The Revolution is Coming

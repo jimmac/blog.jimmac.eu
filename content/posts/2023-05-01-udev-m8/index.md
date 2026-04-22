@@ -6,6 +6,11 @@ date = 2023-05-01
 tags = ["dirtywaveM8", "tracker", "music", "linux"]
 [extra]
 audio = "speech.opus"
+related = [
+  "posts/2022-08-15-new-alert-sounds/index.md",
+  "posts/2022-02-15-fugue-machine-on-the-m8/index.md",
+  "posts/2021-12-19-dnb/index.md",
+]
 +++
 
 This post is very unlikely for you. It's for future me. 

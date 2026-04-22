@@ -7,6 +7,11 @@ tags = ["design", "icon", "gnome", "work"]
 [extra]
 image = "appgrid.svg"
 audio = "speech.opus"
+related = [
+  "posts/2018-03-14-builder-nightly/index.md",
+  "posts/2017-03-31-recipe-icon/index.md",
+  "posts/2013-12-05-updated-app-icons/index.md",
+]
 +++
 
 Ever since the dawn of times, we've been crafting pixel perfect icons, specifically adhering to the target resolution. As we moved on, we've kept with the times and added these highly detailed high resolution and 3D modelled app icons that WebOS and MacOS X introduced.

@@ -7,6 +7,9 @@ tags = ["gnome", "design", "icon", "highcontrast", "work"]
 [extra]
 image = "hc-shell.png"
 audio = "speech.opus"
+related = [
+  "posts/2013-12-05-updated-app-icons/index.md",
+]
 +++
 
 ![](hc-shell.png)

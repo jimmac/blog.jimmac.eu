@@ -8,6 +8,11 @@ tags = ["design", "icon", "flatpak", "gnome", "work", "blender", "3D"]
 image = "builder-nightly-icon.png"
 mastodon_url = "https://mastodon.social/@jimmac/116254904395768866"
 audio = "speech.opus"
+related = [
+  "posts/2017-03-31-recipe-icon/index.md",
+  "posts/2015-03-24-high-contrast-refresh/index.md",
+  "posts/2013-12-05-updated-app-icons/index.md",
+]
 +++
 
 One of the great aspects of the [Flatpak model](http://flatpak.org), apart from separating apps from the OS, is that you can have multiple versions of the same app installed concurrently. You can rely on the stable release while trying things out in the development or nightly built version. This creates a need to easily identify the two versions apart when launching it with the shell.
