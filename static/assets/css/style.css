@@ -853,7 +853,7 @@ a.post-item {
     }
   }
 
-  & a {
+  & a:not(.mastodon-discuss) {
     color: var(--color-link);
     text-decoration: none;
 
@@ -1333,6 +1333,38 @@ img.icon-dropshadow {
     drop-shadow(1px  0  0   rgb(0 0 6 / 10%))
     drop-shadow(0  1px  0   rgb(0 0 6 / 30%))
     drop-shadow(-1px 0  0   rgb(0 0 6 / 10%));
+}
+
+/* ============================================================
+   MASTODON DISCUSS BUTTON
+   ============================================================ */
+
+.mastodon-discuss {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-top: 1em;
+  padding: 0.55em 1.2em;
+  border-radius: 9999px;
+  border: none;
+  background: var(--color-code-bg);
+  color: var(--color-text);
+  font-size: var(--font-size-sm);
+  font-weight: var(--weight-bold);
+  text-decoration: none;
+  transition: background-color 150ms var(--smooth-ease), color 150ms var(--smooth-ease);
+
+  &:hover {
+    background: var(--color-link);
+    color: var(--color-code-bg);
+  }
+}
+
+.mastodon-icon {
+  width: 1.1em;
+  height: 1.1em;
+  fill: currentColor;
+  flex-shrink: 0;
 }
 
 /* ============================================================
