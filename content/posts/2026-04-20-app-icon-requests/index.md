@@ -8,6 +8,10 @@ tags = ["design", "icon", "gnome", "work"]
 image = "thumb.webp"
 mastodon_url = "https://mastodon.social/@jimmac/116401876030076912"
 audio = "speech.opus"
+related = [
+  "posts/2026-03-19-friday-sketches/index.md",
+  "posts/2024-06-14-sketch-friday/index.md",
+]
 +++
 
 Back in 2019, we undertook [a radical overhaul](/posts/the-big-app-icon-redesign/) of how GNOME app icons work. The old Tango-era style required drawing up to seven separate sizes per icon and a truckload of detail. A task so demanding that only a handful of people could do it. The "new" style is geometric, colorful, but mainly *achievable*. Redesigning the system was just the first step. We needed to actually get better icons into the hands of app developers, as those should be in control of their brand identity. That's where [app-icon-requests](https://gitlab.gnome.org/Teams/Design/app-icon-requests) came in.
@@ -86,5 +90,3 @@ A good icon is one of those small things that makes an app feel real &mdash; fin
 If you need a faster turnaround or just want to work with someone who's been helping out with GNOME's visual identity for as long as I can remember &mdash; [Hylke Bons](https://planetpeanut.studio/services#app-icons) offers app icon design for open source projects through his studio, Planet Peanut. Hylke has been a core contributor to GNOME's icon work for well over a decade. You'll be in great hands. 
 
 His service has a great freebie for FOSS projects &mdash; funded by community sponsors. You get three sketches to choose from, a final SVG, and a symbolic variant, all following the GNOME icon guidelines. If your project uses an OSI-approved license and is intended to be distributed through Flathub, you're eligible. Consider [sponsoring his work](https://planetpeanut.studio/services#app-icons) if you can &mdash; even a small amount helps keep the pipeline going.
-
-[Previously](/posts/friday-sketches/), [Previously](/posts/sketch-friday/).

@@ -6,6 +6,13 @@ date = 2024-03-07
 tags = ["work", "gnome", "design", "wallpaper", "art", "blender", "inkscape"]
 [extra]
 audio = "speech.opus"
+related = [
+  "posts/2023-10-05-gnome45-wallpapers/index.md",
+  "posts/2023-01-30-gnome44-wallpapers/index.md",
+  "posts/2022-08-08-gnome43-wallpapers/index.md",
+  "posts/2020-09-01-shelved-wallpapers-2/index.md",
+  "posts/2018-02-12-shelved-wallpapers/index.md",
+]
 +++
 
 GNOME 46 is on its final stretch to be released. It's been a custom to blog a little about the wallpaper selection, which is a big part of GNOME's visual identity. 
@@ -31,9 +38,3 @@ In essence, client-side grain in JPEG-XL isn't simply added noise, but a sophist
 The fresh batch of wallpapers includes evolutions of the existing assets as well as new additions. A few material/shape studies have been added as well as simple 2D shape textures. Thanks to the lovely JPEG-XL grain described earlier, it's not just [Inkscape](https://inkscape.org) and [Blender](https://blender.org) that [were used](https://gitlab.gnome.org/Teams/Design/wallpaper-assets/-/blob/master/46/experiments/py/geo.py?ref_type=heads).
 
 I hope you're going to pick at least one of the wallpapers when GNOME 46 releases later next week as your favorite. Let me know [on fediverse](https://mastodon.social/@jimmac)!
-
-[Previously](/posts/gnome45-wallpapers/),
-[Previously](/posts/gnome44-wallpapers/),
-[Previously](/posts/gnome43-wallpapers/),
-[Previously](/posts/shelved-wallpapers-2/),
-[Previously](/posts/shelved-wallpapers/)

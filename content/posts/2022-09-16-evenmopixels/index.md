@@ -4,6 +4,10 @@ description = "Continuing the daily pixel art routine across GNOME Circle apps."
 date = 2022-09-16
 [taxonomies]
 tags = ["pixelart", "pixaki", "gnome", "design", "art", "wallpaper", "icon"]
+[extra]
+related = [
+  "posts/2021-10-13-mopixels/index.md",
+]
 +++
 
 To keep the habbit alive, I continue to do a [daily pixel routine](/posts/mopixels/), now covering almost all of the [GNOME Circle](https://circle.gnome.org) apps.
@@ -63,5 +67,3 @@ I've been practicing the art of animation a little too in an effort to promote G
 	}
 }
 </style>
-
-[Previously](/posts/mopixels/)

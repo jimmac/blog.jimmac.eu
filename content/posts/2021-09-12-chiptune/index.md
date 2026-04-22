@@ -7,6 +7,14 @@ tags = ["tracker", "polyend", "synth", "sxfr", "pixelart", "aseprite", "pixaki",
 [extra]
 image = "chiptune.gif"
 audio = "speech.opus"
+related = [
+  "posts/2021-08-03-single-cycle-rave/index.md",
+  "posts/2021-06-07-troubled-minister/index.md",
+  "posts/2021-05-24-what-am-i/index.md",
+  "posts/2021-05-20-100kph/index.md",
+  "posts/2021-04-16-jammin-on-elektron/index.md",
+  "posts/2021-02-02-elektronic/index.md",
+]
 +++
 
 <!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->
@@ -29,10 +37,3 @@ In any case the included instrument editor with all its effects and filters came
 As for the visuals, I've used way many more tools than you'd expect. The icon assets were mainly done in [Pixaki](https://pixaki.com/), a fairly polished pixel editor for iPad. I have numerous beef with it for it being premium priced, mainly in the way it does layered animation, but it absolutely delivers on the immediacy and contrasts with filesystem diving of [Aseprite](https://www.aseprite.org/) which otherwise beats it bar none. Usually I convert GIFs exported from Aseprite or Pixaki using ffmpeg, but this time I needed to sync the animation to the sound, so I loaded up the GIF and the exported pattern from Tracker into Blender and with the *sound wave preview* that somehow isn't on by default, it was a quick job in the VSE.
 
 <img loading="lazy" src="blender-vse.png" alt="Blender VSE">
-
-[Previously](/posts/single-cycle-rave/),
-[Previously](/posts/troubled-minister/),
-[Previously](/posts/what-am-i/),
-[Previously](/posts/100kph/),
-[Previously](/posts/jammin-on-elektron/),
-[Previously](/posts/elektronic/).

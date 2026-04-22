@@ -8,6 +8,12 @@ tags = ["work", "gnome", "design", "wallpaper", "art", "blender"]
 [extra]
 image = "walls.webp"
 audio = "speech.opus"
+related = [
+  "posts/2024-09-24-wallpapers/index.md",
+  "posts/2024-03-07-gnome46-wallpapers/index.md",
+  "posts/2023-10-05-gnome45-wallpapers/index.md",
+  "posts/2023-01-30-gnome44-wallpapers/index.md",
+]
 +++
 
 GNOME 49 brought another round of [changes to the default wallpaper set](https://release.gnome.org/49/#wallpapers) — some new additions, and a few removals too. Not just to keep the old *GNOME Design loves to delete things trope* alive, but to make room for fresh work and reduce stylistic overlap.

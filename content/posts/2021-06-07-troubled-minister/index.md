@@ -4,6 +4,13 @@ description = "Weekend synth jam meets FPV flights around Liberec."
 date = 2021-06-07
 [taxonomies]
 tags = ["synth", "polyend", "tracker", "fpv", "music"]
+[extra]
+related = [
+  "posts/2021-05-24-what-am-i/index.md",
+  "posts/2021-05-20-100kph/index.md",
+  "posts/2021-04-16-jammin-on-elektron/index.md",
+  "posts/2021-02-02-elektronic/index.md",
+]
 +++
 <img loading="lazy" alt="DJ Strobe" src="dj-strobe.gif" class="full">
 
@@ -22,8 +29,3 @@ Watch a video:
 -->
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eJegcgeaa5Q?si=t5F8sl7T17p6ED3_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-[Previously](/posts/what-am-i/),
-[Previously](/posts/100kph/),
-[Previously](/posts/jammin-on-elektron/),
-[Previously](/posts/elektronic/).

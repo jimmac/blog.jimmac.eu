@@ -7,6 +7,9 @@ tags = ["flatpak", "flathub", "design", "work", "brand"]
 [extra]
 image = "brand.webp"
 audio = "speech.opus"
+related = [
+  "posts/2022-06-13-flatpak-refresh/index.md",
+]
 +++
 
 <!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->
@@ -38,5 +41,3 @@ If you've read until this point, you deserve a treat! Here's some eye candy from
 </div>
 
 Big shoutout to [razze](https://osna.social/@razze) for his ongoing work on the website and implementing the brand so quickly. Many thank yous to [Tobias Bernard](https://tobiasbernard.com/) for significant involvment in this during the [Berlin Mini GUADEC](/posts/Berlin-GUADEC/) and [Václav Vančura](https://vancura.dev/) for sensible feedback.
-
-[Previously](/posts/flatpak-refresh/)

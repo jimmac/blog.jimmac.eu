@@ -6,6 +6,11 @@ date = 2023-01-30
 tags = ["work", "gnome", "design", "wallpaper", "art", "blender", "3D"]
 [extra]
 audio = "speech.opus"
+related = [
+  "posts/2022-08-08-gnome43-wallpapers/index.md",
+  "posts/2020-09-01-shelved-wallpapers-2/index.md",
+  "posts/2018-02-12-shelved-wallpapers/index.md",
+]
 +++
 
 As we gear up for the release of GNOME 44, let's take a moment to reflect on the visual design updates.
@@ -19,8 +24,3 @@ The default wallpaper stays true to our brand, but the supplementary set has und
 Another exciting development is the continued use of geometry nodes in Blender. Although the tool has a steep learning curve, I'm starting to enjoy my time with it. I gave a talk on geometry nodes and its use for GNOME wallpaper design at the Fedora Creative Freedom Summit. You can watch the stream archive recording [here](https://peertube.linuxrocks.online/w/iX9QkY4nCa2nPAzV8nC3BS?start=27m25s) (and [part2](https://peertube.linuxrocks.online/w/4kBcQfDBLAAJDQcdkDwZow)).
 
 <iframe title="Visual Programming with Geometry Nodes in Blender - Jakub Steiner - Creative Freedom Summit 2023" src="https://peertube.linuxrocks.online/videos/embed/7f0043e0-a8ed-4f8c-a93b-e7da7c399bae" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups" frameborder="0"></iframe>
-
-
-[Previously](/posts/gnome43-wallpapers/),
-[Previously](/posts/shelved-wallpapers-2/),
-[Previously](/posts/shelved-wallpapers/)

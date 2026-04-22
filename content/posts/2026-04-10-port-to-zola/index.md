@@ -8,6 +8,9 @@ tags = ["blog", "tech"]
 image = "zola.webp"
 mastodon_url = "https://mastodon.social/@jimmac/116379797906555784"
 audio = "speech.opus"
+related = [
+  "posts/2021-02-01-new-blog/index.md",
+]
 +++
 
 ![Zola](zola.webp)
@@ -48,5 +51,3 @@ Beyond speed, I've been cleaning up things the old theme dragged along:
 - **Legibility**: I'm getting older, and apparently so are my readers. Font sizes bumped up, contrast dialled in. What looked crisp at 30 looks muddy at 50.
 
 The site's cleaner now, light by default, faster to build, and I don't need to invoke Ruby just to write a blog post. The experience was so damn good, it motivated me to jump at a much larger project I'm hopefully going to post about next.
-
-[Previously](/posts/new-blog/).

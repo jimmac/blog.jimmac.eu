@@ -6,6 +6,15 @@ date = 2021-12-19
 tags = ["tracker", "synth", "dirtywaveM8", "music", "blender", "3D"]
 [extra]
 audio = "speech.opus"
+related = [
+  "posts/2021-09-12-chiptune/index.md",
+  "posts/2021-08-03-single-cycle-rave/index.md",
+  "posts/2021-06-07-troubled-minister/index.md",
+  "posts/2021-05-24-what-am-i/index.md",
+  "posts/2021-05-20-100kph/index.md",
+  "posts/2021-04-16-jammin-on-elektron/index.md",
+  "posts/2021-02-02-elektronic/index.md",
+]
 +++
 
 <!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->
@@ -50,11 +59,3 @@ I've also been learning the ropes of Blender's geometry nodes recently. While on
 </iframe>
 
 I also have to mention the absolutely bonkers amazing visual identity of the M8 project. It just couldn't be more hip. This is also my very last gear acquisition. For sure.
-
-[Previously](/posts/chiptune/),
-[Previously](/posts/single-cycle-rave/),
-[Previously](/posts/troubled-minister/),
-[Previously](/posts/what-am-i/),
-[Previously](/posts/100kph/),
-[Previously](/posts/jammin-on-elektron/),
-[Previously](/posts/elektronic/).

@@ -7,6 +7,9 @@ tags = ["art", "sketch", "procreate", "gnome"]
 [extra]
 image = "thumb.webp"
 mastodon_url = "https://mastodon.social/@jimmac/116256351468919965"
+related = [
+  "posts/2024-06-14-sketch-friday/index.md",
+]
 +++
 
 Two years have passed since I last shared my Friday app icon sketches, but the sketching itself hasn't stopped. 
@@ -154,5 +157,3 @@ If you design a GNOME app following the [GNOME Design Guidelines](https://develo
 <img src="Web_Apps.webp" alt="Web Apps" loading="lazy">
 <img src="eSIM_.webp" alt="eSIM" loading="lazy">
 </div>
-
-[Previously](/posts/sketch-friday/)

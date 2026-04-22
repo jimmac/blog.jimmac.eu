@@ -4,6 +4,10 @@ description = "Explorations behind the GNOME 41 onboarding illustrations."
 date = 2021-08-16
 [taxonomies]
 tags = ["gnome", "design", "work", "sketch"]
+[extra]
+related = [
+  "posts/2021-02-25-tour-sketches/index.md",
+]
 +++
 
 <!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->
@@ -27,5 +31,3 @@ GNOME 41 is now UI frozen, so without spoiling the release much, I'd like to sha
 <a href="tour-3.png"><img loading="lazy" src="tour-3.png" alt=""></a>
 <a href="tour-4.png"><img loading="lazy" src="tour-4.png" alt=""></a>
 </div>
-
-[Previously](/posts/tour-sketches/).

@@ -4,6 +4,14 @@ description = "One-hour constraint jams keeping weeklybeats alive."
 date = 2022-04-02
 [taxonomies]
 tags = ["tracker", "synth", "dirtywaveM8", "td3", "music"]
+[extra]
+related = [
+  "posts/2021-12-19-dnb/index.md",
+  "posts/2022-02-15-fugue-machine-on-the-m8/index.md",
+  "posts/2021-09-12-chiptune/index.md",
+  "posts/2021-08-03-single-cycle-rave/index.md",
+  "posts/2021-06-07-troubled-minister/index.md",
+]
 +++
 
 Spending less and less time on each track in [Weeklybeats](https://weeklybeats.com/jimmac) is making me a little nervous as to whether I will be able to finish such a marathon.
@@ -25,11 +33,3 @@ However a radical constraint of a single hour to lay down a pattern and record a
 Even not being able to figure out how to do dual mono mix on the M8 is not a show stopper in such scenario (apologies to every one using headphones).
 
 I hope a proper spring comes soon as I can't wait to FPV. This one pack in the garden was *painful* on the fingers.
-
-
-
-[Previously](/posts/dnb/),
-[Previously](/posts/fugue-machine-on-the-m8/),
-[Previously](/posts/chiptune/),
-[Previously](/posts/single-cycle-rave/),
-[Previously](/posts/troubled-minister/).

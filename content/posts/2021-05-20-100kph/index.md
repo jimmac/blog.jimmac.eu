@@ -3,6 +3,11 @@ title = "125BPM vs 100KPH"
 description = "Pairing a high-speed drone cruise with a live synth jam."
 [taxonomies]
 tags = ["elektron", "synth", "fpv"]
+[extra]
+related = [
+  "posts/2021-04-16-jammin-on-elektron/index.md",
+  "posts/2021-02-02-elektronic/index.md",
+]
 +++
 
 ![Elektron Digitone + Digitakt](DIandDT.png)
@@ -12,6 +17,3 @@ I avoid fiddling with batteries in the house, so I soldered up a [4S Li-Ion pack
 
 
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/552584366" width="640" height="360" frameborder="0" allowfullscreen></iframe>
-
-[Previously](/posts/jammin-on-elektron/),
-[Previously](/posts/elektronic/).

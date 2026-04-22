@@ -6,6 +6,11 @@ date = 2022-08-08
 tags = ["work", "gnome", "design", "wallpaper", "art", "blender", "3D"]
 [extra]
 audio = "speech.opus"
+related = [
+  "posts/2020-09-01-shelved-wallpapers-2/index.md",
+  "posts/2018-02-12-shelved-wallpapers/index.md",
+  "posts/2015-10-21-wallpapers/index.md",
+]
 +++
 
 # GNOME 43 Wallpapers

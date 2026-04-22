@@ -8,6 +8,12 @@ tags = ["work", "gnome", "design", "wallpaper", "art"]
 [extra]
 image = "walls.png"
 audio = "speech.opus"
+related = [
+  "posts/2024-03-07-gnome46-wallpapers/index.md",
+  "posts/2023-10-05-gnome45-wallpapers/index.md",
+  "posts/2023-01-30-gnome44-wallpapers/index.md",
+  "posts/2022-08-08-gnome43-wallpapers/index.md",
+]
 +++
 
 With GNOME 47 out, it’s time for my bi-annual wallpaper deep dive. For many, these may seem like simple background images, but GNOME wallpapers are the visual anchors of the project, defining its aesthetic and identity. The signature blue wallpaper with its dark top bar remains a key part of that.

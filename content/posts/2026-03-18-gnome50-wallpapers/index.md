@@ -9,6 +9,12 @@ tags = ["work", "gnome", "design", "wallpaper", "art", "blender"]
 image = "thumb.png"
 mastodon_url = "https://mastodon.social/@jimmac/116252222590706940"
 audio = "speech.opus"
+related = [
+  "posts/2025-09-17-wallpapers/index.md",
+  "posts/2024-09-24-wallpapers/index.md",
+  "posts/2024-03-07-gnome46-wallpapers/index.md",
+  "posts/2023-10-05-gnome45-wallpapers/index.md",
+]
 +++
 
 GNOME 50 just got released! To celebrate, I thought it’d be fun to look into the background (*ding*) of the newest additions to the collection.

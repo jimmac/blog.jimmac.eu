@@ -6,6 +6,12 @@ date = 2023-10-05
 tags = ["work", "gnome", "design", "wallpaper", "art", "blender", "inkscape", "3D"]
 [extra]
 audio = "speech.opus"
+related = [
+  "posts/2023-01-30-gnome44-wallpapers/index.md",
+  "posts/2022-08-08-gnome43-wallpapers/index.md",
+  "posts/2020-09-01-shelved-wallpapers-2/index.md",
+  "posts/2018-02-12-shelved-wallpapers/index.md",
+]
 +++
 
 With the [45 release out the door](https://release.gnome.org/45/), it would be a shame not to reveal some of the behind the scenes for the new wallpapers.
@@ -19,8 +25,3 @@ There have been updates to the existing set, the surprisingly popular [Blobs](ht
 <iframe class="full" src="https://www.youtube.com/embed/0U54yx9L_yM?si=Q4n4beYYZcoPAYG7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Weirdly named [Morphogenesis](https://gitlab.gnome.org/GNOME/gnome-backgrounds/-/blob/gnome-45/backgrounds/morphogenesis-l.svg?ref_type=heads) is one of my favorite additions this release. Based around a concept of reactive diffusion, described by none other than [Allan Turing](https://www.dna.caltech.edu/courses/cs191/paperscs191/turing.pdf), features a little easter egg if you're into chasing those down.
-
-[Previously](/posts/gnome44-wallpapers/),
-[Previously](/posts/gnome43-wallpapers/),
-[Previously](/posts/shelved-wallpapers-2/),
-[Previously](/posts/shelved-wallpapers/)

@@ -6,6 +6,9 @@ date = 2021-04-16
 tags = ["synth", "elektron", "music"]
 [extra]
 audio = "speech.opus"
+related = [
+  "posts/2021-02-02-elektronic/index.md",
+]
 +++
 ![Elektron Digitone](Digitone.png)
 
@@ -31,5 +34,3 @@ I always enjoy processes where I only give a hint of direction and just enjoy th
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8Z17MhlIOJ8?si=ZNqCCaXNBTk38_rh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Don't expect Tinlicker or Jon Hokins yet, but I'm hopeful that this time next year I will still be posting about my music.
-
-[Previously](/posts/elektronic/).

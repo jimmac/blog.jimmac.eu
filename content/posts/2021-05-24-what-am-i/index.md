@@ -7,6 +7,11 @@ tags = ["synth", "polyend", "tracker", "music"]
 [extra]
 image = "polyend.jpg"
 mastodon_url = "https://mastodon.social/@jimmac/116261056271010945"
+related = [
+  "posts/2021-05-20-100kph/index.md",
+  "posts/2021-04-16-jammin-on-elektron/index.md",
+  "posts/2021-02-02-elektronic/index.md",
+]
 +++
 ![Polyend Tracker](polyend.jpg)
 
@@ -20,7 +25,3 @@ So without further ado, here's my weekend track:
 <source src="whatami.aac" type="audio/aac">
 <a href="https://soundcloud.com/jimmac/what-am-i">What am I? on Soundcloud</a>.
 </audio>
-
-[Previously](/posts/100kph/),
-[Previously](/posts/jammin-on-elektron/),
-[Previously](/posts/elektronic/).

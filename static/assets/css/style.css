@@ -40,6 +40,7 @@
   --color-navbar-bg:  rgba(255, 255, 255, 0.9);
   --color-mark-bg:    #fffba0;
   --color-mark-text:  #0d122b;
+  --color-on-accent:  #ffffff;
 
   @media (prefers-color-scheme: dark) {
     --color-bg:         #131418;
@@ -54,6 +55,7 @@
     --color-navbar-bg:  rgba(19, 20, 24, 0.9);
     --color-mark-bg:    rgba(255, 82, 119, 0.3);
     --color-mark-text:  #fff;
+    --color-on-accent:  #ffffff;
   }
 }
 
@@ -853,7 +855,7 @@ a.post-item {
     }
   }
 
-  & a:not(.mastodon-discuss) {
+  & a:not(.mastodon-discuss):not(.related-link) {
     color: var(--color-link);
     text-decoration: none;
 
@@ -1336,14 +1338,58 @@ img.icon-dropshadow {
 }
 
 /* ============================================================
-   MASTODON DISCUSS BUTTON
+   POST FOOTER (related posts + mastodon button)
    ============================================================ */
 
-.mastodon-discuss {
+.post-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1em;
+  margin-top: 3em;
+}
+
+.related-posts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4em;
+}
+
+.related-label {
+  font-size: var(--font-size-xs);
+  color: var(--color-muted);
+  margin-right: 0.2em;
+
+  @media (max-width: 640px) {
+    width: 100%;
+    font-size: 0.7rem;
+    margin-left: 0.8em;
+    margin-bottom: -0.1em;
+  }
+}
+
+.post-footer .related-link {
+  display: inline-block;
+  padding: 0.3em 0.8em;
+  border-radius: 9999px;
+  background: var(--color-code-bg);
+  color: var(--color-text);
+  font-size: var(--font-size-xs);
+  text-decoration: none;
+  transition: background-color 150ms var(--smooth-ease), color 150ms var(--smooth-ease);
+
+  &:hover {
+    background: var(--color-link);
+    color: var(--color-on-accent);
+  }
+}
+
+.post-footer .mastodon-discuss {
   display: inline-flex;
   align-items: center;
   gap: 0.5em;
-  margin-top: 1em;
   padding: 0.55em 1.2em;
   border-radius: 9999px;
   border: none;
@@ -1352,11 +1398,13 @@ img.icon-dropshadow {
   font-size: var(--font-size-sm);
   font-weight: var(--weight-bold);
   text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
   transition: background-color 150ms var(--smooth-ease), color 150ms var(--smooth-ease);
 
   &:hover {
     background: var(--color-link);
-    color: var(--color-code-bg);
+    color: var(--color-on-accent);
   }
 }
 

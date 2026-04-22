@@ -6,6 +6,13 @@ date = 2021-08-03
 tags = ["synth", "elektron", "digitakt", "fpv", "music"]
 [extra]
 audio = "speech.opus"
+related = [
+  "posts/2021-06-07-troubled-minister/index.md",
+  "posts/2021-05-24-what-am-i/index.md",
+  "posts/2021-05-20-100kph/index.md",
+  "posts/2021-04-16-jammin-on-elektron/index.md",
+  "posts/2021-02-02-elektronic/index.md",
+]
 +++
 ![Single Cycle Rave](SingleCycleRave.jpg)
 
@@ -32,9 +39,3 @@ Watch a video:
 -->
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/BY53z4srXos?si=Ai4UX6iZxbVLijyO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-[Previously](/posts/troubled-minister/),
-[Previously](/posts/what-am-i/),
-[Previously](/posts/100kph/),
-[Previously](/posts/jammin-on-elektron/),
-[Previously](/posts/elektronic/).
