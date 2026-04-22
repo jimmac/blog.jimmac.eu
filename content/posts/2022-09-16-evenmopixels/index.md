@@ -16,7 +16,7 @@ Good call. Empty alt attributes (alt="") are actually better for decorative imag
 
 Here is the updated block:
 
-<div class="image-grid pixelated">
+<div id="crt-evenmopixels" class="image-grid pixelated">
 <img loading="lazy" src="IMG_0425.PNG" alt="">
 <img loading="lazy" src="IMG_0426.PNG" alt="">
 <img loading="lazy" src="IMG_0427.PNG" alt="">
@@ -59,11 +59,25 @@ Here is the updated block:
 
 I've been practicing the art of animation a little too in an effort to promote GNOME Circle on [Twitter](https://twitter.com/jimmac) and [Mastodon](https://mastodon.social/web/@jimmac). Presenting all these GIFs would probably not be kind to [Planet GNOME](http://planet.gnome.org) readers though. Perhaps I could compose a video in the future (no GIF support in Blender, strangely!). Keep grinding your (pointless) skills, kids!
 
-<style type="text/css">
-@media (min-width: 640px) {
-	.image-grid img:nth-child(10n) {
-		grid-column: span 2;
-		grid-row: span 2;
-	}
-}
-</style>
+<script src="/assets/js/p5.min.js"></script>
+<script src="/assets/js/pipboy.js"></script>
+<script>
+PipBoy({
+  container: 'crt-evenmopixels',
+  srcs: [
+    'IMG_0425.PNG','IMG_0426.PNG','IMG_0427.PNG','IMG_0428.PNG',
+    'IMG_0429.PNG','IMG_0430.PNG','IMG_0431.PNG','IMG_0432.PNG',
+    'IMG_0433.PNG','IMG_0434.PNG','IMG_0435.PNG','IMG_0436.PNG',
+    'IMG_0437.PNG','IMG_0439.PNG','IMG_0440.PNG','IMG_0441.PNG',
+    'IMG_0442.PNG','IMG_0443.PNG','IMG_0444.PNG','IMG_0445.PNG',
+    'IMG_0446.PNG','IMG_0447.PNG','IMG_0448.PNG','IMG_0449.PNG',
+    'IMG_0450.PNG','IMG_0451.PNG','IMG_0452.PNG','IMG_0453.PNG',
+    'IMG_0454.PNG','IMG_0455.PNG','IMG_0456.PNG','IMG_0457.PNG',
+    'IMG_0458.PNG','IMG_0459.PNG','IMG_0460.PNG','IMG_0461.PNG',
+    'IMG_0463.PNG','IMG_0464.PNG'
+  ],
+  width: 32,
+  height: 32,
+  pad: 72
+});
+</script>
