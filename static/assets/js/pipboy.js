@@ -378,7 +378,7 @@
           var scaleY = 1.0 - squish * 0.85;
           var drawW = p.width * scaleX;
           var drawH = p.height * scaleY;
-          p.clear();
+          p.background(10);
           p.image(buffer, -drawW / 2, -drawH / 2, drawW, drawH);
 
           if (crtEnabled) {
@@ -397,7 +397,7 @@
           var art = artworks[currentIndex];
           drawArt(art);
           drawOSD(buffer);
-          p.clear();
+          p.background(10);
           p.image(buffer, -p.width / 2, -p.height / 2, p.width, p.height);
 
           if (crtEnabled) {
