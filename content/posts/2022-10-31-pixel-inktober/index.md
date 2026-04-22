@@ -15,7 +15,7 @@ related = [
 
 Just like [last year](/posts/pixel-inktober/), October was filled with quick pixel dailies. I decided to only post [on mastodon](https://mastodon.social/@jimmac), but due to the twitter exodus couldn't quite post the 30kB images for the two remaining days. Good old blog post it is!
 
-<div class="image-grid pixelated-hover">
+<div id="crt-inktober" class="image-grid pixelated-hover">
 <img loading="lazy" src="sheet.png" alt="x">
 <img loading="lazy" src="01.gif" alt="1. Gargoyle" class="big">
 <img loading="lazy" src="02.png" alt="2. Scurry">
@@ -49,3 +49,22 @@ Just like [last year](/posts/pixel-inktober/), October was filled with quick pix
 <img loading="lazy" src="30.png" alt="30. Gear">
 <img loading="lazy" src="31.png" alt="31. Farm">
 </div>
+
+<script src="/assets/js/p5.min.js"></script>
+<script src="/assets/js/pipboy.js"></script>
+<script>
+PipBoy({
+  container: 'crt-inktober',
+  srcs: [
+    'sheet.png',
+    '01.gif','02.png','03.gif','04.png','05.png','06.png',
+    '07.png','08.png','09.png','10.png','11.png','12.png',
+    '13.png','14.png','15.png','16.gif','17.png','18.png',
+    '19.png','20.png','21.png','22.png','23.gif','24.png',
+    '25.png','26.png','27.png','28.png','29.png','30.png',
+    '31.png'
+  ],
+  width: 135,
+  height: 135
+});
+</script>

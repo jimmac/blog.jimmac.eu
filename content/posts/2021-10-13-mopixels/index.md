@@ -14,7 +14,7 @@ To combine exploration with usefulness, I imagined mixing up of the new applicat
 
 Sadly the result is visually [way too overwhelming](https://gitlab.gnome.org/GNOME/gnome-backgrounds/-/blob/wip/jimmac/prefers-dark-light/backgrounds/pixels-d.png), but the assets created can at least please your nostalgia bone here on planet GNOME (unless it becomes a mess without the stylesheet, we'll see). Stay curious!
 
-<div class="image-grid pixelated">
+<div id="crt-mopixels" class="image-grid pixelated">
 <img loading="lazy" src="IMG_0257.PNG" alt="">
 <img loading="lazy" src="IMG_0250.PNG" alt="">
 <img loading="lazy" src="IMG_0258.PNG" alt="">
@@ -63,3 +63,28 @@ Sadly the result is visually [way too overwhelming](https://gitlab.gnome.org/GNO
 <img loading="lazy" src="IMG_0238.PNG" alt="">
 <img loading="lazy" src="IMG_0232.PNG" alt="">
 </div>
+
+<script src="/assets/js/p5.min.js"></script>
+<script src="/assets/js/pipboy.js"></script>
+<script>
+PipBoy({
+  container: 'crt-mopixels',
+  srcs: [
+    'IMG_0257.PNG','IMG_0250.PNG','IMG_0258.PNG','IMG_0248.PNG',
+    'IMG_0223.PNG','IMG_0228.PNG','IMG_0259.PNG','IMG_0230.PNG',
+    'IMG_0265.PNG','IMG_0242.PNG','IMG_0256.PNG','IMG_0254.PNG',
+    'IMG_0219.PNG','IMG_0252.PNG','IMG_0226.PNG','IMG_0233.PNG',
+    'IMG_0247.PNG','IMG_0260.PNG','IMG_0222.PNG','IMG_0221.PNG',
+    'IMG_0224.PNG','IMG_0251.PNG','IMG_0266.PNG','IMG_0227.PNG',
+    'IMG_0246.PNG','IMG_0244.PNG','IMG_0241.PNG','IMG_0253.PNG',
+    'IMG_0231.PNG','IMG_0264.PNG','IMG_0255.PNG','IMG_0229.PNG',
+    'IMG_0234.PNG','IMG_0240.PNG','IMG_0237.PNG','IMG_0225.PNG',
+    'IMG_0262.PNG','IMG_0263.PNG','IMG_0236.PNG','IMG_0249.PNG',
+    'IMG_0261.PNG','IMG_0239.PNG','IMG_0235.PNG','IMG_0245.PNG',
+    'IMG_0243.PNG','IMG_0238.PNG','IMG_0232.PNG'
+  ],
+  width: 32,
+  height: 32,
+  pad: 72
+});
+</script>

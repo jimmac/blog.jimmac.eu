@@ -13,9 +13,6 @@ feed_filenames = ["feed.xml"]
 
 [markdown]
 
-[markdown.highlighting]
-light_theme = "github-light"
-dark_theme = "github-dark"
 
 [extra]
 mode = "dark"
