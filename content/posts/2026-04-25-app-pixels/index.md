@@ -1,8 +1,7 @@
 +++
 title = "Revert That Vector Nonsense!"
 description = "GNOME app icons were meant to be pixels. None of that SVG BS."
-date = 2026-04-18T19:00:00
-draft = true
+date = 2026-04-25
 [taxonomies]
 tags = ["pixelart", "icons", "gnome"]
 [extra]
