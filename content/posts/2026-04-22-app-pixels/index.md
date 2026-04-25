@@ -14,9 +14,9 @@ related = [
 ]
 +++
 
-A few years back I did a [quick exploration](/posts/pixels/) of what GNOME app icons might look like in an alternate universe where we kept on using `VGA`. Chiselling pixels away is therapeutic. So while there is absolutely no use for these, I keep on making them.
+A few years back I did a [quick exploration](/posts/pixels/) of what GNOME app icons might look like in an alternate universe where we kept on using `VGA` displays. Chiselling pixels away is therapeutic. So while there is absolutely no use for these, I keep on making them if only to bring some attention to what really matters for GNOME, having nice apps.
 
-Here's a batch of mostly [GNOME Circle](https://circle.gnome.org) app icons, with some 3rd party ones thrown in. 
+Here's a batch of mostly [GNOME Circle](https://circle.gnome.org) app icons, with some [3rd party](https://flathub.org) ones thrown in. 
 
 <div id="crt-container" class="image-grid pixelated">
 <img src="app-icons-crt-01.png" alt="Pixel art GNOME app icons, batch 1">
@@ -28,7 +28,7 @@ Here's a batch of mostly [GNOME Circle](https://circle.gnome.org) app icons, wit
 <img src="app-icons-crt-07.png" alt="Pixel art GNOME app icons, batch 7">
 </div>
 
-If you're reading this [on my site](/posts/app-pixels/) rather than [Planet GNOME](https://planet.gnome.org) or an RSS Reader, you can enjoy them with some glorious CRT shader display.
+If you're reading this [on my site](/posts/app-pixels/) rather than [Planet GNOME](https://planet.gnome.org) or some flickering terminal in an abandoned Vault, then congratulations. You've stumbled upon a working Pip-Boy module! Found it half-buried under irradiated rubble, its phosphor display still humming with that familiar green glow. Enjoy these icons the way the dwellers of Vault 101 were always meant to, one glorious scanline at a time.
 
 <script src="/assets/js/p5.min.js"></script>
 <script src="/assets/js/pipboy.js"></script>
