@@ -21,7 +21,6 @@
     uniform float u_glitchIntensity;
     uniform float u_glitchSeed;
     uniform float u_flickerAmount;
-    uniform float u_enabled;
 
     #define SCREEN_CURVATURE 0.02
     #define SCAN_LINE_AMOUNT 0.6
@@ -102,10 +101,6 @@
 
     void main() {
       vec2 uv = vTexCoord;
-      if (u_enabled < 0.5) {
-        gl_FragColor = texture2D(tex0, uv);
-        return;
-      }
       vec2 res = u_srcResolution;
 
       vec2 pos = warp(uv);
@@ -172,17 +167,12 @@
     varying vec2 vTexCoord;
     uniform sampler2D tex0;
     uniform vec2 texelSize;
-    uniform float u_enabled;
 
     #define BLOOM_SPREAD 3.0
     #define BLOOM_GLOW 0.12
 
     void main() {
       vec2 uv = vTexCoord;
-      if (u_enabled < 0.5) {
-        gl_FragColor = texture2D(tex0, uv);
-        return;
-      }
       vec4 sum = vec4(0.0);
       for (float x = -2.0; x <= 2.0; x++) {
         for (float y = -2.0; y <= 2.0; y++) {
@@ -325,7 +315,6 @@
 
       p.setup = function () {
         p.pixelDensity(1);
-        p.setAttributes('alpha', false);
         var sz = calcSize();
         var cnv = p.createCanvas(sz.w, sz.h, p.WEBGL);
         cnv.parent(cfg.container);
@@ -342,7 +331,6 @@
       };
 
       p.draw = function () {
-        p.resetShader();
         var cs = channelSwitch;
         if (cs.active) {
           cs.timer--;
@@ -393,7 +381,6 @@
           p.background(10);
           p.image(buffer, -drawW / 2, -drawH / 2, drawW, drawH);
 
-          crtShader.setUniform('u_enabled', crtEnabled ? 1.0 : 0.0);
           if (crtEnabled) {
             var flicker = 0.6 + Math.sin(progress * Math.PI * 4) * 0.4;
             crtShader.setUniform('u_time', p.millis() / 1000.0);
@@ -401,10 +388,9 @@
             crtShader.setUniform('u_glitchIntensity', Math.sin(progress * Math.PI) * 0.8);
             crtShader.setUniform('u_glitchSeed', p.random(1000));
             crtShader.setUniform('u_flickerAmount', flicker);
+            p.filter(crtShader);
+            p.filter(bloomShader);
           }
-          p.filter(crtShader);
-          bloomShader.setUniform('u_enabled', crtEnabled ? 1.0 : 0.0);
-          p.filter(bloomShader);
 
           if (cs.timer <= 0) cs.active = false;
         } else {
@@ -414,7 +400,6 @@
           p.background(10);
           p.image(buffer, -p.width / 2, -p.height / 2, p.width, p.height);
 
-          crtShader.setUniform('u_enabled', crtEnabled ? 1.0 : 0.0);
           if (crtEnabled) {
             updateGlitch(p);
             var flicker = 1.0;
@@ -424,10 +409,9 @@
             crtShader.setUniform('u_glitchIntensity', glitch.active ? glitch.intensity : 0.0);
             crtShader.setUniform('u_glitchSeed', glitch.seed);
             crtShader.setUniform('u_flickerAmount', flicker);
+            p.filter(crtShader);
+            p.filter(bloomShader);
           }
-          p.filter(crtShader);
-          bloomShader.setUniform('u_enabled', crtEnabled ? 1.0 : 0.0);
-          p.filter(bloomShader);
         }
       };
 
