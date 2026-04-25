@@ -6,6 +6,7 @@ date = 2026-04-25
 tags = ["pixelart", "icons", "gnome"]
 [extra]
 image = "app-icons-crt-01.png"
+mastodon_url="https://mastodon.social/@jimmac/116466467250232097"
 related = [
   "posts/2021-06-22-pixels/index.md",
   "posts/2022-10-31-pixel-inktober/index.md",
