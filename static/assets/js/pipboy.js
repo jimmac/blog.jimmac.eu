@@ -242,7 +242,7 @@
     var nextBtn = document.createElement('button');
     nextBtn.textContent = '[ NEXT ]';
     var toggleBtn = document.createElement('button');
-    toggleBtn.textContent = '[ CRT ]';
+    toggleBtn.innerHTML = '[ <span class="led"></span> CRT ]';
     toggleBtn.className = 'active';
 
     var navGroup = document.createElement('div');
