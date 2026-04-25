@@ -276,16 +276,22 @@
       function drawOSD(buf) {
         if (osd.timer <= 0) return;
         osd.timer--;
-        if (osd.timer < 30) osd.alpha = Math.round(255 * osd.timer / 30);
         var scale = buf.height / srcH;
         var size = Math.max(22, Math.round(scale * 12));
+        var glitchPhase = osd.timer < 6;
+        if (glitchPhase && Math.random() < 0.3) return;
+        var xOff = glitchPhase ? (Math.random() - 0.5) * buf.width * 0.03 : 0;
         buf.smooth();
         buf.push();
         buf.textFont(osdFont);
         buf.textSize(size);
         buf.textAlign(buf.LEFT, buf.TOP);
-        buf.fill(255, 255, 255, osd.alpha);
-        buf.text(osd.text, buf.width * 0.04, buf.height * 0.05);
+        if (glitchPhase) {
+          buf.fill(50, 205, 50);
+        } else {
+          buf.fill(255, 255, 255);
+        }
+        buf.text(osd.text, buf.width * 0.04 + xOff, buf.height * 0.05);
         buf.pop();
         buf.noSmooth();
       }
