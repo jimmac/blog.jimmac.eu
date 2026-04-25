@@ -315,6 +315,7 @@
 
       p.setup = function () {
         p.pixelDensity(1);
+        p.setAttributes('alpha', false);
         var sz = calcSize();
         var cnv = p.createCanvas(sz.w, sz.h, p.WEBGL);
         cnv.parent(cfg.container);
@@ -331,6 +332,7 @@
       };
 
       p.draw = function () {
+        p.resetShader();
         var cs = channelSwitch;
         if (cs.active) {
           cs.timer--;
@@ -398,7 +400,6 @@
           drawArt(art);
           drawOSD(buffer);
           p.background(10);
-          p.resetShader();
           p.image(buffer, -p.width / 2, -p.height / 2, p.width, p.height);
 
           if (crtEnabled) {
