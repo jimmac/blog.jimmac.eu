@@ -487,7 +487,6 @@
     toggleBtn.addEventListener('click', function () {
       crtEnabled = !crtEnabled;
       toggleBtn.classList.toggle('active', crtEnabled);
-      container.style.background = crtEnabled ? '#0a0a0a' : 'transparent';
     });
   };
 })();
