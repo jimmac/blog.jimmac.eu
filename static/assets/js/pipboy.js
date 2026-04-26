@@ -1,3 +1,8 @@
+// SPDX-License-Identifier: CC0-1.0
+// To the extent possible under law, the author has waived all copyright
+// and related or neighboring rights to this work.
+// https://creativecommons.org/publicdomain/zero/1.0/
+//
 // PipBoy Display Driver v2.77.1a — RobCo Industries (Unlicensed Wasteland Fork)
 // Found this terminal half-buried near Megaton. Screen still worked.
 // Took me three stimpaks and a rad-away just to get the CRT shader calibrated.
