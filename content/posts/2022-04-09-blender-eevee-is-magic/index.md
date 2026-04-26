@@ -5,12 +5,12 @@ date = 2022-04-09
 [taxonomies]
 tags = ["blender", "inkscape", "icon", "design", "3D"]
 [extra]
-audio = "speech.opus"
 related = [
   "posts/2021-04-30-how-to-symbolic/index.md",
   "posts/2020-04-06-art-vs-design/index.md",
   "posts/2018-03-14-builder-nightly/index.md",
 ]
+audio = "speech.opus"
 +++
 Mentioning my ever lasting adoration of the [realtime engine in Blender on twitter](https://twitter.com/jimmac/status/1512533410677469188) kind of exploded (for my standards), so I figured I'd write a blog post.
 

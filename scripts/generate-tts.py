@@ -76,6 +76,10 @@ def has_audio(front_matter):
 
 def strip_markdown(text):
     """Convert markdown body to plain text suitable for TTS."""
+    # Remove script tags and their contents
+    text = re.sub(r"<script\b[^>]*>.*?</script>", "", text, flags=re.DOTALL | re.IGNORECASE)
+    # Remove style tags and their contents
+    text = re.sub(r"<style\b[^>]*>.*?</style>", "", text, flags=re.DOTALL | re.IGNORECASE)
     # Remove HTML blocks and inline HTML
     text = re.sub(r"<[^>]+>", "", text)
     # Remove images
