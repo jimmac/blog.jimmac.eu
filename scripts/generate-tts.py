@@ -80,6 +80,8 @@ def strip_markdown(text):
     text = re.sub(r"<script\b[^>]*>.*?</script>", "", text, flags=re.DOTALL | re.IGNORECASE)
     # Remove style tags and their contents
     text = re.sub(r"<style\b[^>]*>.*?</style>", "", text, flags=re.DOTALL | re.IGNORECASE)
+    # Remove code blocks (fenced code) - must be before HTML removal
+    text = re.sub(r"```[a-z]*\n.*?\n```", "", text, flags=re.DOTALL)
     # Remove HTML blocks and inline HTML
     text = re.sub(r"<[^>]+>", "", text)
     # Remove images
@@ -99,8 +101,6 @@ def strip_markdown(text):
     text = re.sub(r"_{1,3}([^_]+)_{1,3}", r"\1", text)
     # Remove inline code
     text = re.sub(r"`([^`]*)`", r"\1", text)
-    # Remove code fences
-    text = re.sub(r"^```.*$", "", text, flags=re.MULTILINE)
     # Remove horizontal rules
     text = re.sub(r"^[-*_]{3,}\s*$", "", text, flags=re.MULTILINE)
     # Remove blockquote markers
@@ -111,26 +111,37 @@ def strip_markdown(text):
 
 
 def patch_front_matter(path, front_matter, body):
-    """Add audio field to [extra] section and write back."""
+    """Add or update audio field in [extra] section and write back."""
     lines = front_matter.splitlines()
     new_lines = []
     patched = False
     in_extra = False
 
     for line in lines:
-        new_lines.append(line)
         stripped = line.strip()
+
+        # Check if we're entering [extra] section
         if stripped == "[extra]":
             in_extra = True
+            new_lines.append(line)
             continue
-        if in_extra and not patched:
-            # Insert after the last existing key in [extra],
-            # or right after [extra] if it's empty
-            if stripped.startswith("[") or stripped == "":
-                # We've left [extra] or hit a blank line — insert before this
-                new_lines.insert(-1, f'audio = "{OUTPUT_NAME}"')
+
+        # If we're in [extra] and hit an existing audio line, replace it
+        if in_extra and re.match(r'^audio\s*=', stripped):
+            if not patched:
+                new_lines.append(f'audio = "{OUTPUT_NAME}"')
                 patched = True
-                in_extra = False
+            # Skip any additional audio lines
+            continue
+
+        # If we're leaving [extra] section, add audio if we haven't yet
+        if in_extra and stripped.startswith("["):
+            if not patched:
+                new_lines.append(f'audio = "{OUTPUT_NAME}"')
+                patched = True
+            in_extra = False
+
+        new_lines.append(line)
 
     # If [extra] was the last section and we haven't patched yet
     if in_extra and not patched:
@@ -198,7 +209,7 @@ def generate_audio(text, output_path, sample_rate):
     return True
 
 
-def process_post(post_dir, sample_rate, dry_run=False):
+def process_post(post_dir, sample_rate, dry_run=False, enforce_min_words=True, force=False):
     """Process a single post directory."""
     index_path = os.path.join(post_dir, "index.md")
     if not os.path.exists(index_path):
@@ -210,7 +221,7 @@ def process_post(post_dir, sample_rate, dry_run=False):
         print(f"  Skipping {post_dir}: could not parse front matter")
         return
 
-    if has_audio(front_matter):
+    if not force and has_audio(front_matter):
         print(f"  Skipping {post_dir}: already has audio")
         return
 
@@ -225,7 +236,7 @@ def process_post(post_dir, sample_rate, dry_run=False):
     spoken_text = f"{title}.\n\n{plain_text}" if title else plain_text
     word_count = len(spoken_text.split())
 
-    if word_count < MIN_WORDS:
+    if enforce_min_words and word_count < MIN_WORDS:
         print(f"  Skipping {post_dir}: only {word_count} words (minimum {MIN_WORDS})")
         return
 
@@ -248,6 +259,7 @@ def main():
     parser = argparse.ArgumentParser(description="Generate TTS audio for blog posts")
     parser.add_argument("post_dir", nargs="?", help="Path to a post directory")
     parser.add_argument("--all", action="store_true", help="Process all posts")
+    parser.add_argument("--force", action="store_true", help="Regenerate even if audio exists")
     parser.add_argument("--dry-run", action="store_true", help="Show what would be done")
     args = parser.parse_args()
 
@@ -267,9 +279,12 @@ def main():
         posts = sorted(glob.glob("content/posts/*/"))
         print(f"Found {len(posts)} post directories")
         for post_dir in posts:
-            process_post(post_dir.rstrip("/"), sample_rate, args.dry_run)
+            process_post(post_dir.rstrip("/"), sample_rate, args.dry_run,
+                        enforce_min_words=True, force=args.force)
     else:
-        process_post(args.post_dir.rstrip("/"), sample_rate, args.dry_run)
+        # When explicitly specifying a post, skip the word count check and force regeneration
+        process_post(args.post_dir.rstrip("/"), sample_rate, args.dry_run,
+                    enforce_min_words=False, force=True)
 
 
 if __name__ == "__main__":
