@@ -12,6 +12,7 @@ related = [
   "posts/2022-10-31-pixel-inktober/index.md",
   "posts/2021-10-13-mopixels/index.md",
 ]
+audio = "speech.opus"
 +++
 
 A few years back I did a [quick exploration](/posts/pixels/) of what GNOME app icons might look like in an alternate universe where we kept on using `VGA` displays. Chiselling pixels away is therapeutic. So while there is absolutely no use for these, I keep on making them if only to bring some attention to what really matters for GNOME, having nice apps.

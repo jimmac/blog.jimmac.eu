@@ -5,12 +5,27 @@ import argparse
 import glob
 import json
 import os
+import platform
 import re
 import subprocess
 import sys
 
-PIPER = os.path.expanduser("~/Applications/piper/piper")
-MODEL = os.path.expanduser("~/Applications/piper/voices/en_US-joe-medium.onnx")
+# Platform-specific paths
+if platform.system() == "Darwin":  # macOS
+    # Use Python piper-tts package (native ARM64 support)
+    # Try to find piper in PATH first, then check user pip bin directory
+    import shutil
+    piper_path = shutil.which("piper")
+    if not piper_path:
+        # Construct path based on current Python version
+        py_version = f"{sys.version_info.major}.{sys.version_info.minor}"
+        piper_path = os.path.expanduser(f"~/Library/Python/{py_version}/bin/piper")
+    PIPER = piper_path
+    MODEL = os.path.expanduser("~/Applications/piper/voices/en_US-joe-medium.onnx")
+else:  # Linux
+    PIPER = os.path.expanduser("~/Applications/piper/piper")
+    MODEL = os.path.expanduser("~/Applications/piper/voices/en_US-joe-medium.onnx")
+
 MODEL_CONFIG = MODEL + ".json"
 OUTPUT_NAME = "speech.opus"
 MIN_WORDS = 150
