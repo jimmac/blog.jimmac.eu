@@ -1,7 +1,8 @@
-image: ghcr.io/getzola/zola:v0.20.0
+image: archlinux:latest
 
 pages:
   script:
+    - pacman -Sy --noconfirm zola
     - zola build
   artifacts:
     paths:
