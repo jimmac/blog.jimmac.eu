@@ -2,6 +2,7 @@
 title = "How to Symbolic Icon"
 description = "A walkthrough of creating GNOME symbolic icons with 2021 tooling."
 date = 2021-04-30
+aliases = ["/2021/how-to-symbolic/"]
 [taxonomies]
 tags = ["icon", "design", "gnome", "work", "inkscape"]
 [extra]

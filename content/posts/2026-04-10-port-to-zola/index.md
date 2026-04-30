@@ -2,6 +2,7 @@
 title = "Moving to Zola"
 description = "Finally ditching Jekyll for something modern."
 date = 2026-04-10
+aliases = ["/2026/port-to-zola/"]
 [taxonomies]
 tags = ["blog", "tech"]
 [extra]

@@ -1,5 +1,6 @@
 +++
 title = "New Blog. In 2021!"
+aliases = ["/2021/new-blog/"]
 description = "Ditching social media algorithms for good old RSS."
 [taxonomies]
 tags = ["blog", "photo","tech"]

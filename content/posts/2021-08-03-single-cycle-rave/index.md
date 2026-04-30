@@ -2,6 +2,7 @@
 title = "Single Cycle Rave"
 description = "Breaking through creator's block with single-cycle waveforms on the Digitakt."
 date = 2021-08-03
+aliases = ["/2021/single-cycle-rave/"]
 [taxonomies]
 tags = ["synth", "elektron", "digitakt", "fpv", "music"]
 [extra]

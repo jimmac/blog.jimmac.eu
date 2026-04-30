@@ -2,6 +2,7 @@
 title = "New Cantarell Maintainer"
 description = "How Nikolaus Waxweiler fixed Cantarell's hinting and brought GNOME's typeface back to shape."
 date = 2015-12-10
+aliases = ["/2015/new-cantarell-maintainer/"]
 [taxonomies]
 tags = ["font", "design", "gnome", "work"]
 [extra]

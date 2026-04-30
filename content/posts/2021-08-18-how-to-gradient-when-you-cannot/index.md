@@ -2,6 +2,7 @@
 title = "How to Gradient When You Can't"
 description = "Faking recolorable gradients in monochrome symbolic icons."
 date = 2021-08-18
+aliases = ["/2021/how-to-gradient-when-you-cannot/"]
 [taxonomies]
 tags = ["work", "gnome", "inkscape", "tutorial"]
 [extra]

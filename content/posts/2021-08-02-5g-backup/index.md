@@ -2,6 +2,7 @@
 title = "5G Backup"
 description = "When a 5G phone just works as an internet fallback."
 date = 2021-08-02
+aliases = ["/2021/5g-backup/"]
 [taxonomies]
 tags = ["gnome", "whenthingsworklikemagic"]
 [extra]

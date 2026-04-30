@@ -6,6 +6,8 @@ tags:
 - design
 - inkscape
 - svg
+aliases:
+- /2006/gorilla-resurrected/
 ---
 
 

@@ -1,5 +1,6 @@
 +++
 date = 2005-01-05
+aliases = ["/2005/new-zealand-part-3/"]
 title = "New Zealand, Part 3/4"
 description = "Milford Sound on a sunny day and waterfalls along the way."
 [taxonomies]

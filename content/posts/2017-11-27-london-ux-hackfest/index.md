@@ -2,6 +2,7 @@
 title = "London UX Hackfest"
 description = "Designers and developers refocusing on the GNOME Shell experience."
 date = 2017-11-27
+aliases = ["/2017/london-ux-hackfest/"]
 [taxonomies]
 tags = ["ux", "design", "travel", "gnome", "work"]
 [extra]

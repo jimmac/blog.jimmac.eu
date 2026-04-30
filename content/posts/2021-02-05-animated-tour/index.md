@@ -2,6 +2,7 @@
 title = "Animated Tour"
 description = "Using CSS keyframes to animate the GNOME 40 onboarding tour."
 date = 2021-02-05
+aliases = ["/2021/animated-tour/"]
 [taxonomies]
 tags = ["work", "design", "gnome"]
 [extra]

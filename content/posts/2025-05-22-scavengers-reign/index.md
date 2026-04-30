@@ -2,6 +2,7 @@
 title = "Scavengers Reign"
 description = "An animated series so good I already miss it after the last episode."
 date = 2025-05-22
+aliases = ["/2025/scavengers-reign/"]
 [taxonomies]
 tags = ["movie"]
 [extra]

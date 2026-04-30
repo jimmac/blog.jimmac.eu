@@ -2,6 +2,7 @@
 title = "Updated App Icons"
 description = "Kicking off the high-resolution app icon initiative for GNOME 3.12."
 date = 2013-12-05
+aliases = ["/2013/updated-app-icons/"]
 [taxonomies]
 tags = ["gnome", "design", "icon", "work"]
 [extra]

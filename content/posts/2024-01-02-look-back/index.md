@@ -2,6 +2,7 @@
 title = "Looking Back at 2023"
 description = "A dust spec reflects on music, FPV, and another trip around the sun."
 date = 2024-01-02
+aliases = ["/2024/look-back/"]
 [taxonomies]
 tags = ["music", "art", "fpv"]
 [extra]

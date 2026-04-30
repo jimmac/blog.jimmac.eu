@@ -2,6 +2,7 @@
 title = "Making of GNOME 3.14"
 description = "A behind-the-scenes promo video showing the design work that goes into a GNOME release."
 date = 2014-09-17
+aliases = ["/2014/making-of-gnome-3-14/"]
 [taxonomies]
 tags = ["design", "gnome", "work"]
 +++

@@ -2,6 +2,7 @@
 title = "release.gnome.org refactor"
 description = "After successfully moving this blog to Zola, doubts got suppressed and I found my favorite SSG."
 date = 2026-04-13
+aliases = ["/2026/release-gnome-zola/"]
 [taxonomies]
 tags = ["blog", "tech", "gnome", "work"]
 [extra]

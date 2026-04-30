@@ -3,6 +3,7 @@ title = "HDR Wallpapers"
 description = "GNOME 49 wallpapers embrace wider gamuts and higher bit depth."
 slug = "wallpapers-2025"
 date = 2025-09-17
+aliases = ["/2025/wallpapers/"]
 [taxonomies]
 tags = ["work", "gnome", "design", "wallpaper", "art", "blender"]
 [extra]

@@ -2,6 +2,7 @@
 title = "Night Mode Magic"
 description = "Marveling at what a tiny phone sensor can do in the dark."
 date = 2021-02-14
+aliases = ["/2021/iphone-magic/"]
 [taxonomies]
 tags = ["photo", "iphone"]
 [extra]

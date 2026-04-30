@@ -2,6 +2,7 @@
 title = "Rio"
 description = "GNOME design hackfest in Rio — visiting favelas, meeting users, and bridging Endless and GNOME."
 date = 2016-01-29
+aliases = ["/2016/rio/"]
 [taxonomies]
 tags = ["gnome", "design", "travel", "work", "ux"]
 [extra]

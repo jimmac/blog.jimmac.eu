@@ -2,6 +2,7 @@
 title = "Null Amusement"
 description = "Pixel art meets chiptune sound effects from SXFR."
 date = 2021-09-12
+aliases = ["/2021/chiptune/"]
 [taxonomies]
 tags = ["tracker", "polyend", "synth", "sxfr", "pixelart", "aseprite", "pixaki", "music", "blender"]
 [extra]

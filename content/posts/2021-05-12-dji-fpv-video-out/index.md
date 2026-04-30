@@ -1,5 +1,6 @@
 +++
 title = "DJI FPV Video Out"
+aliases = ["/2021/dji-fpv-video-out/"]
 description = "Someone cracked video out from DJI FPV goggles without the Smart controller."
 [taxonomies]
 tags = ["fpv", "dji", "github"]

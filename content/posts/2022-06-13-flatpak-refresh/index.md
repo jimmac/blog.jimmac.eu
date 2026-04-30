@@ -2,6 +2,7 @@
 title = "Flatpak Brand Refresh"
 description = "A contemporary update for Flatpak's visual identity."
 date = 2022-06-13
+aliases = ["/2022/flatpak-refresh/"]
 [taxonomies]
 tags = ["flatpak", "design", "work", "brand"]
 +++

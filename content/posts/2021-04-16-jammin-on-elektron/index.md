@@ -2,6 +2,7 @@
 title = "Jammin' on Elektron"
 description = "Finding joy in terrible live performances on Elektron boxes."
 date = 2021-04-16
+aliases = ["/2021/jammin-on-elektron/"]
 [taxonomies]
 tags = ["synth", "elektron", "music"]
 [extra]

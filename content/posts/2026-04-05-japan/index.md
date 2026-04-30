@@ -2,6 +2,7 @@
 title = "Japan"
 description = "Visiting Japan is special. Skipping Tokio last time meant we had to come back."
 date = 2026-04-05
+aliases = ["/2026/japan/"]
 [taxonomies]
 tags = ["travel", "music", "japan", "photo"]
 [extra]

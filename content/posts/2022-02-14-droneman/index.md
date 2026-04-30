@@ -2,6 +2,7 @@
 title = "Droneman"
 description = "My son's spectacular performance and my only IMDB credit."
 date = 2022-02-14
+aliases = ["/2022/droneman/"]
 [taxonomies]
 tags = ["personal", "fpv", "movie"]
 +++

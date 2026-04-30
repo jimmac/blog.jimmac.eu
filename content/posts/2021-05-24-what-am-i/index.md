@@ -2,6 +2,7 @@
 title = "What am I?"
 description = "Making a track outdoors on a hardware tracker from Poland."
 date = 2021-05-24
+aliases = ["/2021/what-am-i/"]
 [taxonomies]
 tags = ["synth", "polyend", "tracker", "music"]
 [extra]

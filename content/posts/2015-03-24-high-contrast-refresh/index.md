@@ -2,6 +2,7 @@
 title = "High Contrast Refresh"
 description = "Replacing fuzzy double-stroked PNGs with crisp recolorable SVG symbolics."
 date = 2015-03-24
+aliases = ["/2015/high-contrast-refresh/"]
 [taxonomies]
 tags = ["gnome", "design", "icon", "highcontrast", "work"]
 [extra]

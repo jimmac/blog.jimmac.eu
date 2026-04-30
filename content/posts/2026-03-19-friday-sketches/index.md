@@ -2,6 +2,7 @@
 title = "Friday Sketches (part 2)"
 description = "Continuing to share app icon design sketches on Mastodon every Friday."
 date = 2026-03-19
+aliases = ["/2026/friday-sketches/"]
 [taxonomies]
 tags = ["art", "sketch", "procreate", "gnome"]
 [extra]

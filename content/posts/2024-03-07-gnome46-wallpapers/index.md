@@ -2,6 +2,7 @@
 title = "GNOME 46 Wallpapers"
 description = "Bringing JPEG-XL and synthesized grain to GNOME wallpapers."
 date = 2024-03-07
+aliases = ["/2024/gnome46-wallpapers/"]
 [taxonomies]
 tags = ["work", "gnome", "design", "wallpaper", "art", "blender", "inkscape"]
 [extra]

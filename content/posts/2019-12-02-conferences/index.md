@@ -2,6 +2,7 @@
 title = "Conferences"
 description = "A year of FOSS travel — Berlin icon hackfest, GUADEC Thessaloniki, and Shell hackfest in The Hague."
 date = 2019-12-02
+aliases = ["/2019/conferences/"]
 [taxonomies]
 tags = ["gnome", "design", "travel", "guadec", "work"]
 [extra]

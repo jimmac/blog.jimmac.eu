@@ -2,6 +2,7 @@
 title = "Colorful HIG"
 description = "Making HIG illustrations work in dark mode with inline SVG tricks."
 date = 2023-10-27
+aliases = ["/2023/colorful-hig/"]
 [taxonomies]
 tags = ["work", "gnome", "design", "web"]
 [extra]

@@ -1,5 +1,6 @@
 +++
 date = 2004-10-17
+aliases = ["/2004/industrial-gtk-engine-fixups/"]
 title = "Industrial Gtk Engine Fixups"
 description = "Tweaking focus cues and tab rendering in the Industrial engine."
 [taxonomies]

@@ -2,6 +2,7 @@
 title = "Shelved Wallpapers, Part 2"
 description = "More wallpaper variants that didn't make the 3.38 cut."
 date = 2020-09-01
+aliases = ["/2020/shelved-wallpapers-2/"]
 categories = "wallpaper"
 [taxonomies]
 tags = ["gnome", "design", "wallpaper", "download"]

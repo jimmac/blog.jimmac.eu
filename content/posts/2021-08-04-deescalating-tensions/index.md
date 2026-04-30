@@ -2,6 +2,7 @@
 title = "Deescalating Tensions"
 description = "Taming Inkscape so it stops ruining your SVG diffs."
 date = 2021-08-04
+aliases = ["/2021/deescalating-tensions/"]
 [taxonomies]
 tags = ["inkscape", "svg", "git"]
 [extra]

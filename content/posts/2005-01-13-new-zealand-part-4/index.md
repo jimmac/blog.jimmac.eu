@@ -1,5 +1,6 @@
 +++
 date = 2005-01-11
+aliases = ["/2005/new-zealand-part-4/"]
 title = "New Zealand, Part 4/4"
 description = "Queenstown thrills, Fox Glacier, and the final stretch north."
 [taxonomies]

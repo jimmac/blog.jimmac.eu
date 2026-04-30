@@ -2,6 +2,7 @@
 title = "Detail Considered Harmful"
 description = "Why our complex multi-size icon guidelines need a radical rethink."
 date = 2018-07-18
+aliases = ["/2018/detail-considered-harmful/"]
 [taxonomies]
 tags = ["design", "icon", "gnome", "work"]
 [extra]

@@ -2,6 +2,7 @@
 title = "New Alert Sounds"
 description = "Crafting GNOME 43 alert sounds on a Teensy running Dirtywave firmware."
 date = 2022-08-15
+aliases = ["/2022/new-alert-sounds/"]
 [taxonomies]
 tags = ["work", "gnome", "design", "sound", "synth", "dirtywaveM8", "tracker", "music"]
 [extra]

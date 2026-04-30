@@ -2,6 +2,7 @@
 title = "Skull Buster"
 description = "Finally making a game after wanting to since I was ten."
 date = 2023-10-01
+aliases = ["/2023/skulls/"]
 [taxonomies]
 tags = ["game", "gamedev", "pixelart"]
 [extra]

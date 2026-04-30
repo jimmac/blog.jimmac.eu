@@ -2,6 +2,7 @@
 title = "Ele[k]tronic"
 description = "Rediscovering the joy of making electronic music after a 20-year break."
 date = 2021-02-02
+aliases = ["/2021/elektronic/"]
 [taxonomies]
 tags = ["synth", "tracker", "music"]
 [extra]

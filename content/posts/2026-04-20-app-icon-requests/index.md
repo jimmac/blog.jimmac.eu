@@ -2,6 +2,7 @@
 title = "120+ Icons and Counting"
 description = "How the GNOME Design Team's app-icon-requests project has boosted app icon quality across the Linux desktop, and how you can help."
 date = 2026-04-14
+aliases = ["/2026/app-icon-requests/"]
 [taxonomies]
 tags = ["design", "icon", "gnome", "work"]
 [extra]

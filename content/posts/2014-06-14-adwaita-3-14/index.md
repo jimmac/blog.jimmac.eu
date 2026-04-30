@@ -2,6 +2,7 @@
 title = "Adwaita 3.14"
 description = "Major surgery on GNOME's default theme — fewer colors, no engine, all SASS."
 date = 2014-06-14
+aliases = ["/2014/adwaita-3-14/"]
 [taxonomies]
 tags = ["adwaita", "gnome", "design", "widget", "theme", "work"]
 [extra]

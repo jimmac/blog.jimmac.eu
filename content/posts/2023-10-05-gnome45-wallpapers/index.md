@@ -2,6 +2,7 @@
 title = "GNOME 45 Wallpapers"
 description = "Geometry nodes, mesh gradients, and the stories behind the 45 set."
 date = 2023-10-05
+aliases = ["/2023/gnome45-wallpapers/"]
 [taxonomies]
 tags = ["work", "gnome", "design", "wallpaper", "art", "blender", "inkscape", "3D"]
 [extra]

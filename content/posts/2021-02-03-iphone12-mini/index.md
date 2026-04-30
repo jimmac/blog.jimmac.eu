@@ -1,5 +1,6 @@
 +++
 title = "iPhone 12 mini"
+aliases = ["/2021/iphone12-mini/"]
 description = "Singing praise to a magic pocket camera that happens to make calls."
 [taxonomies]
 tags = ["photo", "iphone", "live"]

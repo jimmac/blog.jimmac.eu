@@ -1,6 +1,7 @@
 +++
 title = "Flathub Brand Refresh"
 date = 2023-02-23
+aliases = ["/2023/flathub-brand-refresh/"]
 description = "Look behind the Flathub rebrand."
 [taxonomies]
 tags = ["flatpak", "flathub", "design", "work", "brand"]

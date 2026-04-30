@@ -2,6 +2,7 @@
 title = "Fugue Machine on the M8"
 description = "A weeklybeats jam combining the Digitakt and M8 in a fugue-like sequence."
 date = 2022-02-15
+aliases = ["/2022/fugue-machine-on-the-m8/"]
 [taxonomies]
 tags = ["tracker", "synth", "dirtywaveM8", "digitakt", "elektron", "music"]
 [extra]

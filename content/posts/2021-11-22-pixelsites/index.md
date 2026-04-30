@@ -2,6 +2,7 @@
 title = "Pixel Sites"
 description = "Building mini-sites for FOSS projects with plain CSS and pixel art."
 date = 2021-11-22
+aliases = ["/2021/pixelsites/"]
 [taxonomies]
 tags = ["gnome", "design", "work", "sketch", "art", "pixaki"]
 +++

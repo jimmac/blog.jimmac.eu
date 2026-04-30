@@ -2,6 +2,7 @@
 title = "Recipe Icon"
 description = "A quick video walkthrough of designing an app icon for GNOME Recipes."
 date = 2017-03-31
+aliases = ["/2017/recipe-icon/"]
 [taxonomies]
 tags = ["icon", "design", "gnome", "work"]
 [extra]

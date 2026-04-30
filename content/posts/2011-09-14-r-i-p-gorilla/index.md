@@ -5,6 +5,8 @@ tags:
 - design
 - inkscape
 - svg
+aliases:
+- /2011/r-i-p-gorilla/
 ---
 
 Someone asked me the other day if I plan to resume work on my pet project, Gorilla. I thought it's worth replying in public.

@@ -2,6 +2,7 @@
 title = "Wallpapers"
 description = "How Blender, noise, and obsessive light play shape GNOME's default wallpapers."
 date = 2015-10-21
+aliases = ["/2015/wallpapers/"]
 [taxonomies]
 tags = ["design", "blender", "wallpaper", "gnome", "work", "gimp", "inkscape", "3D"]
 [extra]

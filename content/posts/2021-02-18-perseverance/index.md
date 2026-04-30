@@ -2,6 +2,7 @@
 title = "Perseverance Landing"
 description = "Tuning in to watch NASA land a rover on Mars."
 date = 2021-02-18
+aliases = ["/2021/perseverance/"]
 [taxonomies]
 tags = ["nasa", "youtube"]
 +++

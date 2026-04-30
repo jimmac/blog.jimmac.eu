@@ -2,6 +2,7 @@
 title = "GNOME 43 Wallpapers"
 description = "A fresh redesign of the full GNOME wallpaper set for 43."
 date = 2022-08-08
+aliases = ["/2022/gnome43-wallpapers/"]
 [taxonomies]
 tags = ["work", "gnome", "design", "wallpaper", "art", "blender", "3D"]
 [extra]

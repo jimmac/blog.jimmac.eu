@@ -2,6 +2,7 @@
 title = "Curtail"
 description = "A handy GNOME Circle app for lossless image compression."
 date = 2021-02-04
+aliases = ["/2021/curtail/"]
 [taxonomies]
 tags = ["app", "flathub"]
 [extra]

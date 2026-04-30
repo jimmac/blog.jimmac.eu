@@ -2,6 +2,7 @@
 title = "Magic Bricks"
 description = "Handheld iPhone footage so smooth it looks gimbal-stabilized."
 date = 2021-09-06
+aliases = ["/2021/magic-brick/"]
 [taxonomies]
 tags = ["iphone", "video", "stabilization", "skate"]
 [extra]

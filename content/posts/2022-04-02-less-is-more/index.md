@@ -2,6 +2,7 @@
 title = "Less is More"
 description = "One-hour constraint jams keeping weeklybeats alive."
 date = 2022-04-02
+aliases = ["/2022/less-is-more/"]
 [taxonomies]
 tags = ["tracker", "synth", "dirtywaveM8", "td3", "music"]
 [extra]

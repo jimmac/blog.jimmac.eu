@@ -2,6 +2,7 @@
 title = "Onboarding Sketches"
 description = "Explorations behind the GNOME 41 onboarding illustrations."
 date = 2021-08-16
+aliases = ["/2021/onboarding-sketches/"]
 [taxonomies]
 tags = ["gnome", "design", "work", "sketch"]
 [extra]

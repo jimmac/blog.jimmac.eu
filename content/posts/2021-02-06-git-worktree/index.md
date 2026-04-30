@@ -2,6 +2,7 @@
 title = "Git Worktree — Concurrent Development"
 description = "Running gtk3 and gtk4 side by side without the checkout dance."
 date = 2021-02-06
+aliases = ["/2021/git-worktree/"]
 [taxonomies]
 tags = ["work", "git", "gnome"]
 [extra]
