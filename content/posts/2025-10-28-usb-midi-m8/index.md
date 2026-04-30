@@ -2,6 +2,7 @@
 title = "USB MIDI Controllers on the M8"
 description = "Wrangling USB MIDI dongles to add pots and pads to the M8."
 date = 2025-10-28
+aliases = ["/2025/usb-midi-m8/"]
 [taxonomies]
 tags = ["dirtywaveM8", "tracker", "music", "usb", "midi"]
 [extra]
