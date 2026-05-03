@@ -22,7 +22,7 @@ Last year we went to Japan to finally visit friends after two decades of plannin
 
 Now if I were to book the trip today, I probably wouldn't. It's quite a gamble given the geopolitical situation and Asia running out of oil. But making it back, it's been as good as the first one. Visiting only Tokio with a short trip to Kawaguchiko in the Sakura blooming season worked out great.
 
-At the start of the year I promised myself to shoot my Fuji more. And I don't mean the volcano, I mean the my X-T20. I haven't kept the promise at all, always relying on the iphone. Luckily for the trip I didn't chicken out carrying the extra weight and I think it paid off. I did only take my 35mm, as the desire to carry gear has really faded away with the years. As we walked over 120km in the few days my back didn't feel very young even with the little gear I did have. 
+At the start of the year, I promised myself I'd shoot my Fuji more. And no, I don't mean the volcano, I mean the X-T20. I haven't exactly kept that promise, usually just falling back on my iPhone instead. Luckily, I didn't chicken out of carrying the extra weight for this trip, and I think it really paid off! I did stick strictly to my 35mm lens, since my desire to haul heavy gear has definitely faded over the years. And honestly, after walking over 120km in just a few days, my back was already reminding me I'm not getting any younger, even with the minimal setup!
 
 While the difference in quality isn't quite visible on [Pixelfed](https://pixelfed.social/jimmac) or my [photo website](https://photo.jimmac.eu/) (I don't post to Instagram anymore), working through the set on a 4K display has been a pleasure. Bigger sensor is a bigger sensor.
 
