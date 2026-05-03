@@ -252,6 +252,25 @@ chunks = chunk_text(text, max_words=150)
 chunks = chunk_text(text, max_words=75)
 ```
 
+### Custom pronunciation
+
+If certain words or names are mispronounced, add them to the pronunciation dictionary in `scripts/generate-tts.py`:
+
+```python
+# Around line 29
+PRONUNCIATION_FIXES = {
+    "gesceap": "yeh-SHAP",        # IPA: /jeˈʃæ͜ɑp/
+    "Gesceap": "yeh-SHAP",
+    "your-word": "phonetic spelling",
+}
+```
+
+Tips for phonetic respelling:
+- Use simple phonetic spelling (e.g., "yeh-SHAP" instead of IPA)
+- Add both lowercase and capitalized versions
+- Test different respellings to find what sounds best
+- Hyphens can help emphasize syllable breaks
+
 ### Paralinguistic tags
 
 Add emotion tags to your blog posts (they'll be preserved through markdown stripping):

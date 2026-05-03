@@ -28,6 +28,14 @@ MIN_WORDS = 150
 # Reference audio for voice cloning
 VOICE_REFERENCE = os.path.join(os.path.dirname(__file__), "voice_reference_10s.wav")
 
+# Pronunciation dictionary - map words to phonetic respellings
+# IPA: /jeˈʃæ͜ɑp/ -> phonetic: "yeh-SHAP"
+PRONUNCIATION_FIXES = {
+    "gesceap": "yeh-SHAP",
+    "Gesceap": "yeh-SHAP",
+    "GNOME": "NOME",
+}
+
 # Global model instance (initialized on first use)
 _chatterbox_model = None
 
@@ -179,6 +187,14 @@ def patch_front_matter(path, front_matter, body):
         f.write(f"+++\n{new_front_matter}\n+++{body}")
 
 
+def fix_pronunciation(text):
+    """Replace words with phonetic respellings for better TTS pronunciation."""
+    for word, respelling in PRONUNCIATION_FIXES.items():
+        # Use word boundaries to avoid partial matches
+        text = re.sub(rf'\b{re.escape(word)}\b', respelling, text, flags=re.IGNORECASE)
+    return text
+
+
 def chunk_text(text, max_words=100):
     """Split text into chunks by sentences, respecting max word count."""
     # Split into sentences
@@ -302,6 +318,10 @@ def process_post(post_dir, dry_run=False, enforce_min_words=True, force=False):
 
     # Prepend title as spoken intro
     spoken_text = f"{title}.\n\n{plain_text}" if title else plain_text
+
+    # Apply pronunciation fixes
+    spoken_text = fix_pronunciation(spoken_text)
+
     word_count = len(spoken_text.split())
 
     if enforce_min_words and word_count < MIN_WORDS:
