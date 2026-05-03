@@ -1,4 +1,4 @@
-#!/Users/jsteiner/src/blog.jimmac.eu/venv-py310/bin/python
+#!/usr/bin/env python
 """Test Chatterbox TTS with a short sample."""
 
 import torch

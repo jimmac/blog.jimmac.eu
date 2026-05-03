@@ -1,4 +1,4 @@
-#!/Users/jsteiner/src/blog.jimmac.eu/venv-py310/bin/python
+#!/usr/bin/env python
 """Generate text-to-speech audio for blog posts using Chatterbox TTS."""
 
 import argparse
@@ -36,10 +36,22 @@ def get_chatterbox_model():
     """Get or initialize the Chatterbox TTS model (singleton)."""
     global _chatterbox_model
     if _chatterbox_model is None:
-        # Determine device (cuda if available, else cpu)
         device = "cuda" if torch.cuda.is_available() else "cpu"
-        print(f"Initializing Chatterbox TTS model on {device}...", file=sys.stderr)
+        if device == "cpu":
+            torch.set_num_threads(os.cpu_count())
+            torch.set_num_interop_threads(min(4, os.cpu_count()))
+            print(f"Initializing Chatterbox TTS model on CPU ({os.cpu_count()} threads)...", file=sys.stderr)
+        else:
+            print(f"Initializing Chatterbox TTS model on {device}...", file=sys.stderr)
         _chatterbox_model = ChatterboxTurboTTS.from_pretrained(device=device)
+        if device == "cpu":
+            try:
+                _chatterbox_model = torch.compile(_chatterbox_model, mode="reduce-overhead")
+                print("  torch.compile() applied", file=sys.stderr)
+            except Exception as e:
+                import traceback
+                print(f"  torch.compile() not available:", file=sys.stderr)
+                traceback.print_exc(file=sys.stderr)
     return _chatterbox_model
 
 
@@ -204,8 +216,8 @@ def generate_audio(text, output_path):
     for i, chunk in enumerate(chunks, 1):
         print(f"  Chunk {i}/{len(chunks)}...", file=sys.stderr)
         try:
-            wav = model.generate(chunk, audio_prompt_path=VOICE_REFERENCE)
-            # Convert to numpy
+            with torch.inference_mode():
+                wav = model.generate(chunk, audio_prompt_path=VOICE_REFERENCE)
             audio_np = wav.cpu().numpy()
             if audio_np.ndim == 2:
                 audio_np = audio_np[0]
