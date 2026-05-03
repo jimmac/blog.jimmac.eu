@@ -1,2 +1,16 @@
 public/
 .aider*
+venv/
+venv-py310/
+
+# TTS temporary files
+test_chatterbox_output.wav
+scripts/voice_reference.wav
+scripts/voice_reference_short.wav
+
+# But keep the 10s reference used by the script
+!scripts/voice_reference_10s.wav
+
+# Python cache
+*.pyc
+__pycache__/

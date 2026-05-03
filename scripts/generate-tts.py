@@ -1,40 +1,46 @@
-#!/usr/bin/env python3
-"""Generate text-to-speech audio for blog posts using Piper TTS."""
+#!/Users/jsteiner/src/blog.jimmac.eu/venv-py310/bin/python
+"""Generate text-to-speech audio for blog posts using Chatterbox TTS."""
 
 import argparse
 import glob
-import json
 import os
-import platform
 import re
 import subprocess
 import sys
+import tempfile
 
-# Platform-specific paths
-if platform.system() == "Darwin":  # macOS
-    # Use Python piper-tts package (native ARM64 support)
-    # Try to find piper in PATH first, then check user pip bin directory
-    import shutil
-    piper_path = shutil.which("piper")
-    if not piper_path:
-        # Construct path based on current Python version
-        py_version = f"{sys.version_info.major}.{sys.version_info.minor}"
-        piper_path = os.path.expanduser(f"~/Library/Python/{py_version}/bin/piper")
-    PIPER = piper_path
-    MODEL = os.path.expanduser("~/Applications/piper/voices/en_US-joe-medium.onnx")
-else:  # Linux
-    PIPER = os.path.expanduser("~/Applications/piper/piper")
-    MODEL = os.path.expanduser("~/Applications/piper/voices/en_US-joe-medium.onnx")
+# Chatterbox imports
+try:
+    from chatterbox.tts_turbo import ChatterboxTurboTTS
+    import torch
+    import numpy as np
+    from scipy.io import wavfile
+    # Set default dtype to float32 to avoid dtype mismatch errors
+    torch.set_default_dtype(torch.float32)
+except ImportError as e:
+    print(f"Error: Missing required packages. Install with: pip install chatterbox-tts torch scipy", file=sys.stderr)
+    print(f"Details: {e}", file=sys.stderr)
+    sys.exit(1)
 
-MODEL_CONFIG = MODEL + ".json"
 OUTPUT_NAME = "speech.opus"
 MIN_WORDS = 150
 
+# Reference audio for voice cloning
+VOICE_REFERENCE = os.path.join(os.path.dirname(__file__), "voice_reference_10s.wav")
 
-def get_sample_rate():
-    with open(MODEL_CONFIG) as f:
-        config = json.load(f)
-    return config["audio"]["sample_rate"]
+# Global model instance (initialized on first use)
+_chatterbox_model = None
+
+
+def get_chatterbox_model():
+    """Get or initialize the Chatterbox TTS model (singleton)."""
+    global _chatterbox_model
+    if _chatterbox_model is None:
+        # Determine device (cuda if available, else cpu)
+        device = "cuda" if torch.cuda.is_available() else "cpu"
+        print(f"Initializing Chatterbox TTS model on {device}...", file=sys.stderr)
+        _chatterbox_model = ChatterboxTurboTTS.from_pretrained(device=device)
+    return _chatterbox_model
 
 
 def parse_post(path):
@@ -160,58 +166,105 @@ def patch_front_matter(path, front_matter, body):
         f.write(f"+++\n{new_front_matter}\n+++{body}")
 
 
-def generate_audio(text, output_path, sample_rate):
-    """Run Piper TTS and encode to Opus via ffmpeg."""
-    piper_cmd = [
-        PIPER,
-        "--model", MODEL,
-        "--output_raw",
-        "--sentence_silence", "0.3",
-    ]
+def chunk_text(text, max_words=100):
+    """Split text into chunks by sentences, respecting max word count."""
+    # Split into sentences
+    sentences = re.split(r'(?<=[.!?])\s+', text)
+    chunks = []
+    current_chunk = []
+    current_words = 0
+
+    for sentence in sentences:
+        sentence_words = len(sentence.split())
+        if current_words + sentence_words > max_words and current_chunk:
+            chunks.append(' '.join(current_chunk))
+            current_chunk = [sentence]
+            current_words = sentence_words
+        else:
+            current_chunk.append(sentence)
+            current_words += sentence_words
+
+    if current_chunk:
+        chunks.append(' '.join(current_chunk))
+
+    return chunks
+
+
+def generate_audio(text, output_path):
+    """Generate TTS using Chatterbox and encode to Opus via ffmpeg."""
+    model = get_chatterbox_model()
+
+    # Split text into chunks to avoid tokenizer truncation
+    chunks = chunk_text(text, max_words=100)
+    print(f"  Generating {len(chunks)} chunk(s)...", file=sys.stderr)
+
+    all_audio = []
+
+    for i, chunk in enumerate(chunks, 1):
+        print(f"  Chunk {i}/{len(chunks)}...", file=sys.stderr)
+        try:
+            wav = model.generate(chunk, audio_prompt_path=VOICE_REFERENCE)
+            # Convert to numpy
+            audio_np = wav.cpu().numpy()
+            if audio_np.ndim == 2:
+                audio_np = audio_np[0]
+            all_audio.append(audio_np)
+        except Exception as e:
+            print(f"  Chatterbox generation failed on chunk {i}: {e}", file=sys.stderr)
+            return False
+
+    # Concatenate all audio chunks
+    if not all_audio:
+        print(f"  No audio generated", file=sys.stderr)
+        return False
+
+    combined_audio = np.concatenate(all_audio)
+
+    # Save to temporary WAV file
+    with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as tmp_wav:
+        tmp_wav_path = tmp_wav.name
+
+    try:
+        # Normalize to int16 range
+        audio_np = np.clip(combined_audio, -1.0, 1.0)
+        audio_int16 = (audio_np * 32767).astype(np.int16)
+        # Save using scipy
+        wavfile.write(tmp_wav_path, model.sr, audio_int16)
+    except Exception as e:
+        print(f"  Failed to save WAV: {e}", file=sys.stderr)
+        import traceback
+        traceback.print_exc()
+        if os.path.exists(tmp_wav_path):
+            os.unlink(tmp_wav_path)
+        return False
+
+    # Convert WAV to Opus using ffmpeg
     ffmpeg_cmd = [
         "ffmpeg", "-y",
-        "-f", "s16le",
-        "-ar", str(sample_rate),
-        "-ac", "1",
-        "-i", "pipe:",
+        "-i", tmp_wav_path,
         "-c:a", "libopus",
         "-b:a", "32k",
         "-application", "voip",
         output_path,
     ]
 
-    piper = subprocess.Popen(
-        piper_cmd,
-        stdin=subprocess.PIPE,
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-    )
-    ffmpeg = subprocess.Popen(
+    result = subprocess.run(
         ffmpeg_cmd,
-        stdin=piper.stdout,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
     )
 
-    # Close piper's stdout in parent so ffmpeg gets EOF when piper finishes
-    piper.stdout.close()
-    piper.stdin.write(text.encode("utf-8"))
-    piper.stdin.close()
+    # Clean up temp file
+    os.unlink(tmp_wav_path)
 
-    _, ffmpeg_err = ffmpeg.communicate()
-    piper.wait()
-
-    if piper.returncode != 0:
-        print(f"  Piper failed (exit {piper.returncode})", file=sys.stderr)
-        return False
-    if ffmpeg.returncode != 0:
-        print(f"  ffmpeg failed: {ffmpeg_err.decode()}", file=sys.stderr)
+    if result.returncode != 0:
+        print(f"  ffmpeg failed: {result.stderr.decode()}", file=sys.stderr)
         return False
 
     return True
 
 
-def process_post(post_dir, sample_rate, dry_run=False, enforce_min_words=True, force=False):
+def process_post(post_dir, dry_run=False, enforce_min_words=True, force=False):
     """Process a single post directory."""
     index_path = os.path.join(post_dir, "index.md")
     if not os.path.exists(index_path):
@@ -247,7 +300,7 @@ def process_post(post_dir, sample_rate, dry_run=False, enforce_min_words=True, f
         return
 
     output_path = os.path.join(post_dir, OUTPUT_NAME)
-    if not generate_audio(spoken_text, output_path, sample_rate):
+    if not generate_audio(spoken_text, output_path):
         return
 
     size = os.path.getsize(output_path)
@@ -258,7 +311,7 @@ def process_post(post_dir, sample_rate, dry_run=False, enforce_min_words=True, f
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Generate TTS audio for blog posts")
+    parser = argparse.ArgumentParser(description="Generate TTS audio for blog posts using Chatterbox")
     parser.add_argument("post_dir", nargs="?", help="Path to a post directory")
     parser.add_argument("--all", action="store_true", help="Process all posts")
     parser.add_argument("--force", action="store_true", help="Regenerate even if audio exists")
@@ -268,24 +321,19 @@ def main():
     if not args.post_dir and not args.all:
         parser.error("Provide a post directory or use --all")
 
-    if not os.path.exists(PIPER):
-        print(f"Piper not found at {PIPER}", file=sys.stderr)
+    if not os.path.exists(VOICE_REFERENCE):
+        print(f"Voice reference file not found at {VOICE_REFERENCE}", file=sys.stderr)
         sys.exit(1)
-    if not os.path.exists(MODEL):
-        print(f"Voice model not found at {MODEL}", file=sys.stderr)
-        sys.exit(1)
-
-    sample_rate = get_sample_rate()
 
     if args.all:
         posts = sorted(glob.glob("content/posts/*/"))
         print(f"Found {len(posts)} post directories")
         for post_dir in posts:
-            process_post(post_dir.rstrip("/"), sample_rate, args.dry_run,
+            process_post(post_dir.rstrip("/"), args.dry_run,
                         enforce_min_words=True, force=args.force)
     else:
         # When explicitly specifying a post, skip the word count check and force regeneration
-        process_post(args.post_dir.rstrip("/"), sample_rate, args.dry_run,
+        process_post(args.post_dir.rstrip("/"), args.dry_run,
                     enforce_min_words=False, force=True)
 
 
