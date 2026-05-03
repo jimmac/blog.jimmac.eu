@@ -102,8 +102,9 @@ def strip_markdown(text):
     text = text.replace("&amp;", "&")
     text = text.replace("&lt;", "<")
     text = text.replace("&gt;", ">")
-    # Remove heading markers
-    text = re.sub(r"^#{1,6}\s+", "", text, flags=re.MULTILINE)
+    # Convert headings to text with pauses
+    # Add double period after headings to create a longer pause
+    text = re.sub(r"^#{1,6}\s+(.+?)$", r"\1..", text, flags=re.MULTILINE)
     # Remove bold/italic markers
     text = re.sub(r"\*{1,3}([^*]+)\*{1,3}", r"\1", text)
     text = re.sub(r"_{1,3}([^_]+)_{1,3}", r"\1", text)
