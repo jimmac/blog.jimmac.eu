@@ -5,6 +5,8 @@ date = 2024-06-14
 aliases = ["/2024/sketch-friday/"]
 [taxonomies]
 tags = ["art", "sketch", "procreate", "gimp"]
+[extra]
+image = "04e5ae648d8b3640.webp"
 +++
 
 I've been posting a few sketches on [my mastodon](https://mastodon.social/@jimmac) every Friday. They are mostly sketches of [application icon design process](https://gitlab.gnome.org/Teams/Design/app-icon-requests/-/issues/43), but not always. Follow, like, subscribe!

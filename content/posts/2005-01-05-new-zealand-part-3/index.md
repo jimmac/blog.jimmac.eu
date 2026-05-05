@@ -6,6 +6,7 @@ description = "Milford Sound on a sunny day and waterfalls along the way."
 [taxonomies]
 tags = ["travel"]
 [extra]
+image = "dsc_8959.jpg"
 audio = "speech.opus"
 related = [
   "posts/2004-12-30-new-zealand-part-2/index.md",

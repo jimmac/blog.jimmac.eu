@@ -7,6 +7,7 @@ aliases = ["/2022/pixel-inktober/"]
 [taxonomies]
 tags = ["pixelart", "pixaki", "aseprite", "art"]
 [extra]
+image = "sheet.png"
 related = [
   "posts/2021-11-01-pixel-inktober/index.md",
   "posts/2022-09-16-evenmopixels/index.md",

@@ -6,6 +6,7 @@ description = "First leg of a road trip across New Zealand, near-misses included
 [taxonomies]
 tags = ["travel"]
 [extra]
+image = "dsc_7782.jpg"
 audio = "speech.opus"
 +++
 

@@ -6,6 +6,7 @@ aliases = ["/2022/new-alert-sounds/"]
 [taxonomies]
 tags = ["work", "gnome", "design", "sound", "synth", "dirtywaveM8", "tracker", "music"]
 [extra]
+image = "fm.svg"
 audio = "speech.opus"
 related = [
   "posts/2022-04-02-less-is-more/index.md",

@@ -5,6 +5,7 @@ description = "Singing praise to a magic pocket camera that happens to make call
 [taxonomies]
 tags = ["photo", "iphone", "live"]
 [extra]
+image = "IMG_0554-min.jpeg"
 audio = "speech.opus"
 +++
 

@@ -6,6 +6,7 @@ aliases = ["/2022/evenmopixels/"]
 [taxonomies]
 tags = ["pixelart", "pixaki", "gnome", "design", "art", "wallpaper", "icon"]
 [extra]
+image = "IMG_0425.PNG"
 related = [
   "posts/2021-10-13-mopixels/index.md",
 ]

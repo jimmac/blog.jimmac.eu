@@ -6,6 +6,7 @@ aliases = ["/2021/jammin-on-elektron/"]
 [taxonomies]
 tags = ["synth", "elektron", "music"]
 [extra]
+image = "Digitone.png"
 audio = "speech.opus"
 related = [
   "posts/2021-02-02-elektronic/index.md",

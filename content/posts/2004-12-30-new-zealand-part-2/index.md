@@ -6,6 +6,7 @@ description = "From Moeraki Boulders to sea lions at Surat Bay."
 [taxonomies]
 tags = ["travel"]
 [extra]
+image = "dsc_8437.jpg"
 audio = "speech.opus"
 related = [
   "posts/2004-12-30-new-zealand-part-1/index.md",

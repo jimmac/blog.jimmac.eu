@@ -6,6 +6,7 @@ aliases = ["/2021/iphone-magic/"]
 [taxonomies]
 tags = ["photo", "iphone"]
 [extra]
+image = "IMG_1891.jpeg"
 related = [
   "posts/2021-02-03-iphone12-mini/index.md",
 ]

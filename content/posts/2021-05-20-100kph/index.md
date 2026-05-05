@@ -5,6 +5,7 @@ description = "Pairing a high-speed drone cruise with a live synth jam."
 [taxonomies]
 tags = ["elektron", "synth", "fpv"]
 [extra]
+image = "DIandDT.png"
 related = [
   "posts/2021-04-16-jammin-on-elektron/index.md",
   "posts/2021-02-02-elektronic/index.md",

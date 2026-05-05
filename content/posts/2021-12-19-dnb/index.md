@@ -6,6 +6,7 @@ aliases = ["/2021/dnb/"]
 [taxonomies]
 tags = ["tracker", "synth", "dirtywaveM8", "music", "blender", "3D"]
 [extra]
+image = "m8.jpg"
 audio = "speech.opus"
 related = [
   "posts/2021-09-12-chiptune/index.md",

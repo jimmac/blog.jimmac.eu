@@ -6,6 +6,7 @@ aliases = ["/2022/gnome43-wallpapers/"]
 [taxonomies]
 tags = ["work", "gnome", "design", "wallpaper", "art", "blender", "3D"]
 [extra]
+image = "pixels-blender.webp"
 audio = "speech.opus"
 related = [
   "posts/2020-09-01-shelved-wallpapers-2/index.md",

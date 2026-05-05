@@ -5,6 +5,8 @@ date = 2021-06-22
 aliases = ["/2021/pixels/"]
 [taxonomies]
 tags = ["pixelart", "aseprite", "gnome"]
+[extra]
+image = "icons.gif"
 +++
 ![Pixels](icons.gif)
 

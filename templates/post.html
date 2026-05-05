@@ -71,7 +71,12 @@
           <span class="related-label">Related</span>
           {% for path in page.extra.related %}
             {% set rel = get_page(path=path) %}
-            <a class="related-link" href="{{ rel.permalink }}">{{ rel.title }}</a>
+            <a class="related-link" href="{{ rel.permalink }}">
+              {{ rel.title }}
+              {% if rel.extra.image %}
+              <img class="related-thumb" src="{{ rel.permalink }}{{ rel.extra.image }}" alt="{{ rel.title }}" loading="lazy">
+              {% endif %}
+            </a>
           {% endfor %}
         </div>
         {% endif %}

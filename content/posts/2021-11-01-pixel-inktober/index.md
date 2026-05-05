@@ -6,6 +6,8 @@ date = 2021-11-01
 aliases = ["/2021/pixel-inktober/"]
 [taxonomies]
 tags = ["pixelart", "pixaki", "art", "inktober"]
+[extra]
+image = "IMG_0287.PNG"
 +++
 
 For the first time ever I actually finished a [monthly challenge](https://inktober.com/).

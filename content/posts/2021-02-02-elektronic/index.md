@@ -6,6 +6,7 @@ aliases = ["/2021/elektronic/"]
 [taxonomies]
 tags = ["synth", "tracker", "music"]
 [extra]
+image = "digitakt.jpg"
 audio = "speech.opus"
 +++
 ![Elektron Digitakt](digitakt.jpg)

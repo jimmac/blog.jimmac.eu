@@ -6,6 +6,7 @@ aliases = ["/2022/one-more-trip/"]
 [taxonomies]
 tags = ["personal", "music", "synth", "2021"]
 [extra]
+image = "libadwaita.gif"
 related = [
   "posts/2021-12-19-dnb/index.md",
   "posts/2021-09-12-chiptune/index.md",

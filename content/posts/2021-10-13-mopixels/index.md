@@ -5,6 +5,8 @@ date = 2021-10-13
 aliases = ["/2021/mopixels/"]
 [taxonomies]
 tags = ["pixelart", "pixaki", "gnome", "design", "art", "wallpaper", "icon"]
+[extra]
+image = "IMG_0257.PNG"
 +++
 
 Recently I've been indulging myself in pixel art again. One might assume that's my comfort zone, but honestly I don't feel like I've ever truly mastered it. 

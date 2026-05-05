@@ -5,6 +5,7 @@ description = "Ditching social media algorithms for good old RSS."
 [taxonomies]
 tags = ["blog", "photo","tech"]
 [extra]
+image = "bedrichov.jpeg"
 audio = "speech.opus"
 +++
 ![Bedřichov](bedrichov.jpeg)

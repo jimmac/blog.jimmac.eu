@@ -6,6 +6,7 @@ aliases = ["/2021/troubled-minister/"]
 [taxonomies]
 tags = ["synth", "polyend", "tracker", "fpv", "music"]
 [extra]
+image = "dj-strobe.gif"
 related = [
   "posts/2021-05-24-what-am-i/index.md",
   "posts/2021-05-20-100kph/index.md",

@@ -6,6 +6,7 @@ aliases = ["/2021/single-cycle-rave/"]
 [taxonomies]
 tags = ["synth", "elektron", "digitakt", "fpv", "music"]
 [extra]
+image = "SingleCycleRave.jpg"
 audio = "speech.opus"
 related = [
   "posts/2021-06-07-troubled-minister/index.md",

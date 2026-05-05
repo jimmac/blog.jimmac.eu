@@ -6,6 +6,7 @@ aliases = ["/2018/shelved-wallpapers/"]
 [taxonomies]
 tags = ["gnome", "design", "wallpaper", "download"]
 [extra]
+image = "10thumb.jpg"
 related = [
   "posts/2015-10-21-wallpapers/index.md",
 ]

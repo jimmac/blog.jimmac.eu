@@ -6,6 +6,7 @@ aliases = ["/2019/the-big-app-icon-redesign/"]
 [taxonomies]
 tags = ["design", "icon", "inkscape", "gnome", "work"]
 [extra]
+image = "icon-preview.png"
 audio = "speech.opus"
 related = [
   "posts/2018-07-18-detail-considered-harmful/index.md",

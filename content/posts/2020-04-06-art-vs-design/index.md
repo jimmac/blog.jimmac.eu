@@ -6,6 +6,7 @@ aliases = ["/2020/art-vs-design/"]
 [taxonomies]
 tags = ["design", "art", "gnome", "icon", "work"]
 [extra]
+image = "cyberdine.jpeg"
 audio = "speech.opus"
 related = [
   "posts/2019-01-23-the-big-app-icon-redesign/index.md",

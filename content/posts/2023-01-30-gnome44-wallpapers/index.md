@@ -6,6 +6,7 @@ aliases = ["/2023/gnome44-wallpapers/"]
 [taxonomies]
 tags = ["work", "gnome", "design", "wallpaper", "art", "blender", "3D"]
 [extra]
+image = "gnome44-wallpapers.webp"
 audio = "speech.opus"
 related = [
   "posts/2022-08-08-gnome43-wallpapers/index.md",

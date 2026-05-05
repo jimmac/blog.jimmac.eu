@@ -6,6 +6,7 @@ aliases = ["/2022/blender-eevee-is-magic/"]
 [taxonomies]
 tags = ["blender", "inkscape", "icon", "design", "3D"]
 [extra]
+image = "171-stream-deck.webp"
 related = [
   "posts/2021-04-30-how-to-symbolic/index.md",
   "posts/2020-04-06-art-vs-design/index.md",

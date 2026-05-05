@@ -7,6 +7,7 @@ categories = "wallpaper"
 [taxonomies]
 tags = ["gnome", "design", "wallpaper", "download"]
 [extra]
+image = "thumb.jpg"
 related = [
   "posts/2018-02-12-shelved-wallpapers/index.md",
   "posts/2015-10-21-wallpapers/index.md",

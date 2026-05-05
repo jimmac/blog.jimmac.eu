@@ -5,6 +5,8 @@ date = 2021-02-25
 aliases = ["/2021/tour-sketches/"]
 [taxonomies]
 tags = ["gnome", "design", "work", "sketch"]
+[extra]
+image = "Tour_Welcome 1.png"
 +++
 
 <!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->

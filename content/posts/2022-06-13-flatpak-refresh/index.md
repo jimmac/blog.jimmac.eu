@@ -5,6 +5,8 @@ date = 2022-06-13
 aliases = ["/2022/flatpak-refresh/"]
 [taxonomies]
 tags = ["flatpak", "design", "work", "brand"]
+[extra]
+image = "flatpak.png"
 +++
 
 <!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->

@@ -6,6 +6,7 @@ aliases = ["/2024/look-back/"]
 [taxonomies]
 tags = ["music", "art", "fpv"]
 [extra]
+image = "take_breaks.webp"
 audio = "speech.opus"
 related = [
   "posts/2023-05-01-udev-m8/index.md",
