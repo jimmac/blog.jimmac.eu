@@ -99,16 +99,16 @@ body {
 
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, ul, ol, dl, figure {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-block-start: 10px;
+  margin-block-end: 10px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--color-heading);
   font-weight: var(--weight-bold);
 
-  scroll-margin-top: 80px;
-  & + ul, & + ol { margin-top: 10px; }
+  scroll-margin-block-start: 80px;
+  & + ul, & + ol { margin-block-start: 10px; }
 
   & > a {
     text-decoration: none;
@@ -123,7 +123,7 @@ strong, b {
 }
 
 hr {
-  border-bottom: 0;
+  border-block-end: 0;
   border-style: solid;
   border-color: var(--color-border);
 }
@@ -171,10 +171,10 @@ ul {
   & li::before {
     content: "\FE63";
     display: inline-block;
-    top: -1px;
+    inset-block-start: -1px;
     width: 1.2em;
     position: relative;
-    margin-left: -1.3em;
+    margin-inline-start: -1.3em;
     font-weight: 700;
   }
 }
@@ -191,9 +191,9 @@ ol {
       content: counter(li);
       display: inline-block;
       width: 1em;
-      margin-right: 0.5em;
-      margin-left: -1.6em;
-      text-align: right;
+      margin-inline-end: 0.5em;
+      margin-inline-start: -1.6em;
+      text-align: end;
       direction: rtl;
       font-weight: var(--weight-bold);
       font-size: var(--font-size-sm);
@@ -202,17 +202,17 @@ ol {
 }
 
 ul, ol {
-  margin-top: 0;
-  margin-left: var(--space);
+  margin-block-start: 0;
+  margin-inline-start: var(--space);
 }
 
 li {
-  padding-bottom: 1px;
-  padding-top: 1px;
+  padding-block-end: 1px;
+  padding-block-start: 1px;
   color: var(--color-heading);
 
   &::before { color: var(--color-heading); }
-  & > ul, & > ol { margin-bottom: 2px; margin-top: 0; }
+  & > ul, & > ol { margin-block-end: 2px; margin-block-start: 0; }
 }
 
 a {
@@ -237,7 +237,7 @@ a {
   width: 0.7em;
   height: 0.7em;
   vertical-align: middle;
-  margin-left: 0.2em;
+  margin-inline-start: 0.2em;
   background-color: currentColor;
   -webkit-mask-image: var(--icon-external);
   mask-image: var(--icon-external);
@@ -255,14 +255,14 @@ blockquote {
   font-style: italic;
   text-align: center;
   opacity: 0.9;
-  border-top: 1px solid var(--color-border);
-  border-bottom: 1px solid var(--color-border);
+  border-block-start: 1px solid var(--color-border);
+  border-block-end: 1px solid var(--color-border);
   padding: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-inline-start: 10px;
+  margin-inline-end: 10px;
   font-size: 1em;
 
-  & > :last-child { margin-bottom: 0; margin-top: 0; }
+  & > :last-child { margin-block-end: 0; margin-block-start: 0; }
 }
 
 u     { text-decoration-color: var(--color-subtle); }
@@ -270,11 +270,11 @@ small { font-size: var(--font-size-sm); }
 
 sup {
   border-radius: 10%;
-  top: -3px;
-  left: 2px;
+  inset-block-start: -3px;
+  inset-inline-start: 2px;
   font-size: small;
   position: relative;
-  margin-right: 2px;
+  margin-inline-end: 2px;
 }
 
 mark, ::selection {
@@ -289,17 +289,17 @@ mark, ::selection {
 .wrapper {
   max-width: calc(var(--width-narrow) - var(--space) * 2);
   position: relative;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: var(--space);
-  padding-left: var(--space);
+  margin-inline-end: auto;
+  margin-inline-start: auto;
+  padding-inline-end: var(--space);
+  padding-inline-start: var(--space);
 
   &::after { content: ""; display: table; clear: both; }
 
   @media (max-width: 800px) {
     max-width: calc(var(--width-narrow) - var(--space));
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-inline-end: 20px;
+    padding-inline-start: 20px;
   }
 }
 
@@ -309,14 +309,14 @@ mark, ::selection {
 
 table {
   width: 100%;
-  margin-top: 15px;
+  margin-block-start: 15px;
   border-collapse: collapse;
   font-size: var(--font-size-sm);
 
   & thead {
     font-weight: var(--weight-bold);
     color: var(--color-heading);
-    border-bottom: 1px solid var(--color-border);
+    border-block-end: 1px solid var(--color-border);
   }
 
   & th, & td, & tr {
@@ -333,10 +333,10 @@ table {
   height: auto;
   max-width: calc(var(--width-wide) - var(--space) * 2);
   position: sticky;
-  top: 0;
-  margin-right: auto;
-  margin-left: auto;
-  border-bottom: 1px solid var(--color-border);
+  inset-block-start: 0;
+  margin-inline-end: auto;
+  margin-inline-start: auto;
+  border-block-end: 1px solid var(--color-border);
   padding: 15px var(--space);
   z-index: 100;
   background-color: var(--color-navbar-bg);
@@ -349,7 +349,7 @@ table {
 .menu {
   user-select: none;
 
-  & .trigger { float: right; }
+  & .trigger { float: right; float: inline-end; }
   & .menu-trigger { display: none; }
   & .menu-icon { display: none; }
 
@@ -374,7 +374,7 @@ table {
     }
 
     &:hover { opacity: 1; transition: opacity 200ms var(--smooth-ease); }
-    &:not(:last-child) { margin-right: 5px; }
+    &:not(:last-child) { margin-inline-end: 5px; }
     &.rss { position: relative; bottom: -3px; outline: none; }
     &.rss::after { content: none; }
     &.external {
@@ -401,22 +401,22 @@ table {
 
   @media (max-width: 800px) {
     position: fixed;
-    top: 0; left: 0; right: 0;
+    inset-block-start: 0; inset-inline-start: 0; inset-inline-end: 0;
     z-index: 2;
     text-align: center;
     height: 50px;
     background-color: var(--color-bg);
-    border-bottom: 1px solid var(--color-border);
+    border-block-end: 1px solid var(--color-border);
 
     & .menu-icon {
       display: block;
       position: absolute;
-      right: 0;
+      inset-inline-end: 0;
       width: 50px;
       height: 23px;
       line-height: 0;
-      padding-top: 13px;
-      padding-bottom: 15px;
+      padding-block-start: 13px;
+      padding-block-end: 15px;
       cursor: pointer;
       text-align: center;
       z-index: 1;
@@ -443,7 +443,7 @@ table {
       isolation: isolate;
       height: 100vh;
       width: 100%;
-      top: 0;
+      inset-block-start: 0;
     }
 
     & .menu-link {
@@ -464,11 +464,11 @@ table {
    ============================================================ */
 
 .author {
-  margin-top: 6.3rem;
-  margin-bottom: 7.2rem;
+  margin-block-start: 6.3rem;
+  margin-block-end: 7.2rem;
   text-align: center;
 
-  @media (max-width: 800px) { margin-bottom: 3em; }
+  @media (max-width: 800px) { margin-block-end: 3em; }
 
   & .author-avatar {
     width: 70px;
@@ -481,7 +481,7 @@ table {
 
   & .author-name {
     font-size: 1.7em;
-    margin-bottom: 2px;
+    margin-block-end: 2px;
   }
 
   & .author-bio {
@@ -500,7 +500,7 @@ table {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
-  margin-bottom: 3rem;
+  margin-block-end: 3rem;
   @media (max-width: 800px) { grid-template-columns: 1fr; }
 }
 
@@ -547,7 +547,7 @@ table {
 .featured-date {
   font-size: 0.8rem;
   color: var(--color-muted);
-  margin-bottom: 0.35rem;
+  margin-block-end: 0.35rem;
 }
 
 .featured-title {
@@ -573,7 +573,7 @@ table {
 .posts-item-note {
   font-size: var(--font-size);
   font-weight: var(--weight-bold);
-  margin-bottom: 5px;
+  margin-block-end: 5px;
   color: var(--color-heading);
 }
 
@@ -584,9 +584,9 @@ table {
   grid-template-columns: 15rem 1fr;
   align-items: baseline;
   padding: 5px 0 6px;
-  border-top: 1px solid var(--color-border);
+  border-block-start: 1px solid var(--color-border);
 
-  &:first-child { border-top: none; }
+  &:first-child { border-block-start: none; }
 
   @media (max-width: 800px) {
     grid-template-columns: 8rem 1fr; /* max-content is variable per row */
@@ -605,7 +605,7 @@ a.post-item {
   font-weight: var(--weight-bold);
   font-variant-numeric: tabular-nums;
   font-feature-settings: "tnum" 1;
-  text-align: right;
+  text-align: end;
 
   @media (max-width: 800px) { font-size: 16px; }
 }
@@ -631,11 +631,11 @@ a.post-item {
    ============================================================ */
 
 .footer {
-  margin-top: 8em;
-  margin-bottom: 2em;
+  margin-block-start: 8em;
+  margin-block-end: 2em;
   text-align: center;
 
-  @media (max-width: 800px) { margin-top: 3em; }
+  @media (max-width: 800px) { margin-block-start: 3em; }
 }
 
 /* ============================================================
@@ -677,8 +677,8 @@ a.post-item {
 
   & label[for="search-input"] {
     position: absolute;
-    top: 50%;
-    left: 12px;
+    inset-block-start: 50%;
+    inset-inline-start: 12px;
     transform: translateY(-50%);
     line-height: 0;
     pointer-events: none;
@@ -716,7 +716,7 @@ a.post-item {
 
 #search-results {
   text-align: center;
-  & li { text-align: left; }
+  & li { text-align: start; }
 }
 
 .archive-tags {
@@ -751,17 +751,17 @@ a.post-item {
 
 .wrapper.post {
   @media (max-width: 800px) {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-inline-start: 15px;
+    padding-inline-end: 15px;
   }
 }
 
 .header {
-  margin-top: 7.8em;
-  margin-bottom: 3em;
+  margin-block-start: 7.8em;
+  margin-block-end: 3em;
 
   & .tags {
-    margin-left: 3px;
+    margin-inline-start: 3px;
     letter-spacing: 0.5px;
 
     & .tag {
@@ -774,8 +774,8 @@ a.post-item {
   & .header-title {
     font-size: 2em;
     line-height: 1.2;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-block-start: 10px;
+    margin-block-end: 20px;
 
     &.center { text-align: center; }
     @media (max-width: 800px) { font-size: 1.9em; }
@@ -783,47 +783,47 @@ a.post-item {
 }
 
 .post-meta {
-  padding-top: 3px;
+  padding-block-start: 3px;
   line-height: 1.3;
   color: var(--color-muted);
 
   & time {
     position: relative;
-    margin-right: 1.5em;
+    margin-inline-end: 1.5em;
 
     &::after {
       background: var(--color-border);
-      bottom: 1px;
+      inset-block-end: 1px;
       content: " ";
       height: 2px;
       position: absolute;
-      right: -20px;
+      inset-inline-end: -20px;
       width: 12px;
     }
   }
 
   & span[itemprop="author"] {
-    border-bottom: 1px dotted var(--color-border);
+    border-block-end: 1px dotted var(--color-border);
   }
 
   & .reading-time {
-    margin-left: 1.5em;
+    margin-inline-start: 1.5em;
     position: relative;
 
     &::before {
       background: var(--color-border);
-      bottom: 1px;
+      inset-block-end: 1px;
       content: " ";
       height: 2px;
       position: absolute;
-      left: -20px;
+      inset-inline-start: -20px;
       width: 12px;
     }
   }
 }
 
 .page-content {
-  padding-top: 8px;
+  padding-block-start: 8px;
 
   & img { border-radius: var(--radius); }
 
@@ -851,7 +851,7 @@ a.post-item {
 
   & figure {
     & figcaption {
-      margin-top: 5px;
+      margin-block-start: 5px;
       font-style: italic;
       font-size: var(--font-size-sm);
     }
@@ -867,7 +867,7 @@ a.post-item {
       width: 0.65em;
       height: 0.65em;
       vertical-align: middle;
-      margin-left: 0.15em;
+      margin-inline-start: 0.15em;
       background-color: currentColor;
       -webkit-mask-image: var(--icon-external);
       mask-image: var(--icon-external);
@@ -883,15 +883,15 @@ a.post-item {
 
   & > p {
     margin: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-block-start: 15px;
+    padding-block-end: 15px;
   }
 
   & ul.task-list {
     list-style: none;
     margin: 0;
     & li::before { content: ""; }
-    & li input[type="checkbox"] { margin-right: 10px; }
+    & li input[type="checkbox"] { margin-inline-end: 10px; }
   }
 
   & dl dt { font-weight: var(--weight-bold); }
@@ -899,13 +899,13 @@ a.post-item {
   & h1, & h2, & h3, & h4, & h5, & h6 {
     color: var(--color-heading);
     font-weight: var(--weight-bold);
-    margin-top: var(--space);
-    margin-bottom: 0;
+    margin-block-start: var(--space);
+    margin-block-end: 0;
   }
 
   & h1 { font-size: 30px; }
   & h2 { font-size: 27.5px; }
-  & h3 { font-size: 25px; padding-bottom: 4px; }
+  & h3 { font-size: 25px; padding-block-end: 4px; }
   & h4 { font-size: 25px; }
   & h5 { font-size: var(--font-size); }
   & h6 { font-size: var(--font-size-sm); }
@@ -918,12 +918,12 @@ a.post-item {
 .post-nav {
   display: flex;
   position: relative;
-  margin-top: 5em;
-  border-top: 1px solid var(--color-border);
+  margin-block-start: 5em;
+  border-block-start: 1px solid var(--color-border);
   line-height: 1.4;
 
   & .post-nav-item {
-    border-bottom: 0;
+    border-block-end: 0;
     font-weight: var(--weight-bold);
     padding: 10px 0;
     width: 50%;
@@ -942,11 +942,11 @@ a.post-item {
       font-weight: var(--weight-normal);
       font-size: var(--font-size-sm);
       color: var(--color-muted);
-      margin-bottom: 3px;
+      margin-block-end: 3px;
     }
 
-    &.post-nav-prev { padding-right: 20px; }
-    &.post-nav-next { text-align: right; padding-left: 20px; margin-left: auto; }
+    &.post-nav-prev { padding-inline-end: 20px; }
+    &.post-nav-next { text-align: end; padding-inline-start: 20px; margin-inline-start: auto; }
   }
 
   @media (max-width: 800px) {
@@ -957,9 +957,9 @@ a.post-item {
       display: block;
       width: 100%;
       &.post-nav-next {
-        border-left: 0;
-        padding-left: 0;
-        border-top: 1px solid var(--color-border);
+        border-inline-start: 0;
+        padding-inline-start: 0;
+        border-block-start: 1px solid var(--color-border);
       }
     }
   }
@@ -1007,14 +1007,14 @@ pre {
 
   @media (max-width: 800px) {
     margin: 0 calc(51% - 51vw);
-    padding-left: 20px;
+    padding-inline-start: 20px;
   }
 
   & > code {
     width: 100%;
     max-width: 50rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
     line-height: 1.5;
     display: block;
     border: 0;
@@ -1075,7 +1075,7 @@ audio[controls] {
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
-    margin-bottom: 1rem;
+    margin-block-end: 1rem;
 
     .ap-meta-art {
       width: 120px;
@@ -1128,7 +1128,7 @@ audio[controls] {
 
       .ap-meta-text {
         align-items: flex-start;
-        text-align: left;
+        text-align: start;
         flex: 1;
       }
 
@@ -1189,7 +1189,7 @@ audio[controls] {
   }
 
   .ap-progress {
-    margin-top: 1rem;
+    margin-block-start: 1rem;
 
     .ap-track {
       height: 6px;
@@ -1212,15 +1212,15 @@ audio[controls] {
   .ap-time {
     display: flex;
     justify-content: space-between;
-    margin-top: 0.4rem;
+    margin-block-start: 0.4rem;
     color: var(--color-muted);
     font-size: 0.8rem;
   }
 
   .ap-levels {
     position: absolute;
-    right: 1.5rem;
-    top: 1.25rem;
+    inset-inline-end: 1.5rem;
+    inset-block-start: 1.25rem;
     display: flex;
     align-items: center;
     gap: 2px;
@@ -1257,8 +1257,8 @@ audio[controls] {
   gap: 8px;
   vertical-align: middle;
   position: relative;
-  top: -2px;
-  margin-left: 8px;
+  inset-block-start: -2px;
+  margin-inline-start: 8px;
   color: var(--color-muted);
   transition: color 150ms var(--bounce-ease);
 
@@ -1353,7 +1353,7 @@ img.icon-dropshadow {
   flex-direction: column;
   align-items: flex-start;
   gap: 0.6em;
-  margin-top: 3em;
+  margin-block-start: 3em;
 }
 
 .related-posts {
@@ -1366,8 +1366,8 @@ img.icon-dropshadow {
   width: 100%;
   font-size: 0.7rem;
   color: var(--color-muted);
-  margin-left: 0.8em;
-  margin-bottom: -0.1em;
+  margin-inline-start: 0.8em;
+  margin-block-end: -0.1em;
 }
 
 .post-footer .related-link {
@@ -1403,8 +1403,8 @@ img.icon-dropshadow {
   margin: 0;
   position: absolute;
   /* Fallback for browsers without anchor positioning */
-  bottom: 100%;
-  left: 50%;
+  inset-block-end: 100%;
+  inset-inline-start: 50%;
   translate: -50% -0.6em;
   width: 18rem;
   max-width: 80vw;
@@ -1423,10 +1423,10 @@ img.icon-dropshadow {
   @supports (anchor-name: --a) {
     position-anchor: --related;
     position-area: top center;
-    bottom: auto;
-    left: auto;
+    inset-block-end: auto;
+    inset-inline-start: auto;
     translate: none;
-    margin-bottom: 0.6em;
+    margin-block-end: 0.6em;
   }
 
   @media (hover: none) {
@@ -1449,7 +1449,7 @@ img.icon-dropshadow {
     font-style: normal;
     line-height: 1.4;
     color: var(--color-muted);
-    text-align: left;
+    text-align: start;
   }
 
   & .related-desc {
@@ -1469,7 +1469,7 @@ img.icon-dropshadow {
   display: inline-flex;
   align-items: center;
   gap: 0.5em;
-  margin-top: 0.6em;
+  margin-block-start: 0.6em;
   padding: 0.55em 1.2em;
   border-radius: 9999px;
   border: none;
@@ -1585,9 +1585,9 @@ img.icon-dropshadow {
   & .crt-controls {
     display: flex;
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    inset-block-end: 0;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
     justify-content: space-between;
     align-items: center;
     gap: .8rem;
@@ -1637,7 +1637,7 @@ img.icon-dropshadow {
         background: #1a3a1a;
         vertical-align: middle;
         position: relative;
-        top: -1px;
+        inset-block-start: -1px;
         transition: all 150ms ease;
       }
 
@@ -1678,8 +1678,8 @@ img.icon-dropshadow {
    ============================================================ */
 
 .about-header {
-  margin-top: 6.3rem;
-  margin-bottom: 3rem;
+  margin-block-start: 6.3rem;
+  margin-block-end: 3rem;
   text-align: center;
 }
 
@@ -1694,7 +1694,7 @@ img.icon-dropshadow {
 
 .about-name {
   font-size: 1.7em;
-  margin-bottom: 2px;
+  margin-block-end: 2px;
 }
 
 .about-intro {
@@ -1713,7 +1713,7 @@ img.icon-dropshadow {
 }
 
 .about-body {
-  margin-top: 2rem;
+  margin-block-start: 2rem;
   line-height: 1.688;
   color: var(--color-text);
 
@@ -1728,7 +1728,7 @@ img.icon-dropshadow {
 
 .featured-visual[data-accent="design"] .featured-image {
   object-fit: cover;
-  object-position: left;
+  object-position: inline-start;
 }
 
 /* Per-card accent gradients */
