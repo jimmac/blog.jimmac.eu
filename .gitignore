@@ -3,6 +3,7 @@ public/
 venv/
 venv-py310/
 venv-xpu/
+.DS_Store
 
 # TTS temporary files
 test_chatterbox_output.wav

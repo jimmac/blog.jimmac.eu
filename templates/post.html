@@ -74,7 +74,12 @@
             <a class="related-link" href="{{ rel.permalink }}">
               {{ rel.title }}
               {% if rel.extra.image %}
-              <img class="related-thumb" src="{{ rel.permalink }}{{ rel.extra.image }}" alt="{{ rel.title }}" loading="lazy">
+              <figure class="related-preview">
+                <img class="related-thumb" src="{{ rel.permalink }}{{ rel.extra.image }}" alt="{{ rel.title }}" loading="lazy">
+                {% if rel.description %}
+                <figcaption class="related-desc">{{ rel.description | truncate(length=120) }}</figcaption>
+                {% endif %}
+              </figure>
               {% endif %}
             </a>
           {% endfor %}

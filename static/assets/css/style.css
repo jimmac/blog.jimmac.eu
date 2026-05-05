@@ -1391,7 +1391,7 @@ img.icon-dropshadow {
     background: var(--color-link);
     color: var(--color-on-accent);
 
-    & .related-thumb {
+    & .related-preview {
       opacity: 1;
       scale: 1;
       pointer-events: auto;
@@ -1399,7 +1399,8 @@ img.icon-dropshadow {
   }
 }
 
-.post-footer .related-thumb {
+.post-footer .related-preview {
+  margin: 0;
   position: absolute;
   /* Fallback for browsers without anchor positioning */
   bottom: 100%;
@@ -1407,10 +1408,12 @@ img.icon-dropshadow {
   translate: -50% -0.6em;
   width: 18rem;
   max-width: 80vw;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+  margin: 0;
+  padding: 0;
   border-radius: 0.6rem;
+  background: var(--color-code-bg);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
   opacity: 0;
   scale: 0.96;
   pointer-events: none;
@@ -1428,6 +1431,25 @@ img.icon-dropshadow {
 
   @media (hover: none) {
     display: none;
+  }
+
+  & .related-thumb {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 0;
+  }
+
+  & .related-desc {
+    display: block;
+    margin: 0;
+    padding: 0.5em 0.8em 0.6em;
+    font-size: 0.8rem;
+    font-style: normal;
+    line-height: 1.4;
+    color: var(--color-muted);
+    text-align: left;
   }
 }
 
