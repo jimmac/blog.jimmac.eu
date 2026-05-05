@@ -2,6 +2,7 @@ public/
 .aider*
 venv/
 venv-py310/
+venv-xpu/
 
 # TTS temporary files
 test_chatterbox_output.wav
