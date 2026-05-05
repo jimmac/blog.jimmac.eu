@@ -76,9 +76,11 @@
               {% if rel.extra.image %}
               <figure class="related-preview">
                 <img class="related-thumb" src="{{ rel.permalink }}{{ rel.extra.image }}" alt="{{ rel.title }}" loading="lazy">
-                {% if rel.description %}
-                <figcaption class="related-desc">{{ rel.description | truncate(length=120) }}</figcaption>
-                {% endif %}
+                <figcaption class="related-caption">
+                  {% if rel.description %}<span class="related-desc">{{ rel.description | truncate(length=120) }}</span>{% endif %}
+                  {% if rel.description and rel.date %}<span class="related-sep">·</span>{% endif %}
+                  {% if rel.date %}<time class="related-year" datetime="{{ rel.date | date(format='%+') }}">{{ rel.date | date(format='%Y') }}</time>{% endif %}
+                </figcaption>
               </figure>
               {% endif %}
             </a>

@@ -1441,7 +1441,7 @@ img.icon-dropshadow {
     border-radius: 0;
   }
 
-  & .related-desc {
+  & .related-caption {
     display: block;
     margin: 0;
     padding: 0.5em 0.8em 0.6em;
@@ -1450,6 +1450,18 @@ img.icon-dropshadow {
     line-height: 1.4;
     color: var(--color-muted);
     text-align: left;
+  }
+
+  & .related-desc {
+    font-weight: var(--weight-bold);
+  }
+
+  & .related-sep {
+    margin: 0 0.3em;
+  }
+
+  & .related-year {
+    font-size: 0.7rem;
   }
 }
 
