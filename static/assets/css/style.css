@@ -1373,6 +1373,8 @@ img.icon-dropshadow {
 .post-footer .related-link {
   display: inline-block;
   position: relative;
+  anchor-name: --related;
+  anchor-scope: --related;
   padding: 0.3em 0.8em;
   border-radius: 9999px;
   background: var(--color-code-bg);
@@ -1380,6 +1382,10 @@ img.icon-dropshadow {
   font-size: var(--font-size-xs);
   text-decoration: none;
   transition: background-color 150ms var(--smooth-ease), color 150ms var(--smooth-ease);
+
+  @supports (anchor-name: --a) {
+    position: static;
+  }
 
   &:hover {
     background: var(--color-link);
@@ -1395,6 +1401,7 @@ img.icon-dropshadow {
 
 .post-footer .related-thumb {
   position: absolute;
+  /* Fallback for browsers without anchor positioning */
   bottom: 100%;
   left: 50%;
   translate: -50% -0.6em;
@@ -1409,6 +1416,15 @@ img.icon-dropshadow {
   pointer-events: none;
   transition: opacity 200ms var(--smooth-ease), scale 200ms var(--smooth-ease);
   z-index: 100;
+
+  @supports (anchor-name: --a) {
+    position-anchor: --related;
+    position-area: top center;
+    bottom: auto;
+    left: auto;
+    translate: none;
+    margin-bottom: 0.6em;
+  }
 
   @media (hover: none) {
     display: none;
