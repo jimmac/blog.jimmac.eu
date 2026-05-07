@@ -4,7 +4,7 @@ description = "Discovering remarkable artists and remembering to actually blog a
 date = 2024-09-03
 aliases = ["/2024/new-music/"]
 [taxonomies]
-tags = ["music", "dirtywaveM8", "tracker"]
+tags = ["music", "dirtywaveM8", "tracker", "weeklybeats"]
 [extra]
 audio = "speech.opus"
 related = [

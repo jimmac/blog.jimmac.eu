@@ -4,7 +4,7 @@ description = "All the pixel art app animations assembled into one video."
 date = 2022-09-22
 aliases = ["/2022/came-full-circle/"]
 [taxonomies]
-tags = ["gnome", "design", "icon", "pixelart", "art", "pixaki", "blender"]
+tags = ["gnome", "design", "icon", "pixelart", "art", "pixaki", "blender", "chiptune"]
 [extra]
 related = [
   "posts/2022-04-09-blender-eevee-is-magic/index.md",
