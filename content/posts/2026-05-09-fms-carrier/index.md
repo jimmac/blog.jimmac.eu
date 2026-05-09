@@ -11,6 +11,7 @@ related = [
   "posts/2022-09-22-came-full-circle/index.md",
   "posts/2021-04-16-jammin-on-elektron/index.md",
 ]
+audio = "speech.opus"
 +++
 
 I'm a sucker for pixel art and very constrained music grooveboxes. While I'm not into chiptunes, they sure are a cultural phenomenon.
