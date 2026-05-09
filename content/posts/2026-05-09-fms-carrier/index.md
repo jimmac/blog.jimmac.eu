@@ -5,8 +5,8 @@ date = 2026-05-09
 aliases = ["/2026/fms-carrier/"]
 [taxonomies]
 tags = ["music", "tracker", "synth", "pixelart", "chiptune", "weeklybeats"]
-mastodon_url="https://mastodon.social/@jimmac/116544702166472774"
 [extra]
+mastodon_url="https://mastodon.social/@jimmac/116544702166472774"
 image = "Fms.png"
 related = [
   "posts/2022-09-22-came-full-circle/index.md",
