@@ -12,6 +12,7 @@ related = [
   "posts/2025-05-22-scavengers-reign/index.md",
 ]
 
+audio = "speech.opus"
 +++
 
 <img loading="lazy" src="backrooms.webp" alt="Backrooms" class="full">
