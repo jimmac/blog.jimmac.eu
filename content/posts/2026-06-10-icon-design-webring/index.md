@@ -5,7 +5,7 @@ date = 2026-06-10
 [taxonomies]
 tags = ["web", "design", "icon", "gnome", "nostalgia"]
 [extra]
-image = "chapterize.webp"
+image = "under-construction.png"
 +++
 
 Terry Godier wrote a beautiful essay ["The Boring Internet"](https://www.terrygodier.com/the-boring-internet/). The internet isn't dying, he argues, just the commercial veneer glued on top of it is. Underneath all the engagement metrics and algorithmic feeds, there's still an older, slower, more federated web. One built on protocols nobody owns. RSS feeds still work (thank you, Aaron), people can set up websites and blogs.
@@ -14,7 +14,7 @@ Terry Godier wrote a beautiful essay ["The Boring Internet"](https://www.terrygo
 
 Don't worry, I haven't pushed too many pixels and gone a little cuckoo. But it's a fun exercise to remind what the web once was. We'll silently skip over the fact that I actually started using *gopher* first, but even web surfing didn't begin on a search engine back in the day. It was [web rings](https://en.wikipedia.org/wiki/Webring), later followed by index sites.
 
-<img loading="lazy" src="under-construction.apng" alt="Under Construction" class="pixelated full">
+<img src="under-construction.apng" alt="Under Construction" class="pixelated full">
 
 ## Start
 
