@@ -14,7 +14,12 @@ Terry Godier wrote a beautiful essay ["The Boring Internet"](https://www.terrygo
 
 Don't worry, I haven't pushed too many pixels and gone a little cuckoo. But it's a fun exercise to remind what the web once was. We'll silently skip over the fact that I actually started using *gopher* first, but even web surfing didn't begin on a search engine back in the day. It was [web rings](https://en.wikipedia.org/wiki/Webring), later followed by index sites.
 
-<img src="under-construction.apng" alt="Under Construction" class="pixelated full">
+<figure>
+  <picture>
+    <source srcset="under-construction.png" media="(prefers-reduced-motion: reduce)">
+    <img src="under-construction.apng" alt="Under Construction" class="pixelated full">
+  </picture>
+</figure>
 
 ## Start
 
