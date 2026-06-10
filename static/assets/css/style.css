@@ -9,7 +9,7 @@
   color-scheme: light dark;
 
   /* Typography */
-  --font-sans:      Inter, -apple-system, sans-serif;
+  --font-sans:      'Inter var', Inter, -apple-system, sans-serif;
   --font-mono:      "Departure Mono", monospace;
   --font-size:      20px;
   --font-size-sm:   17.5px;
@@ -850,6 +850,8 @@ a.post-item {
   }
 
   & figure {
+    margin: 1.5em 0;
+    & > img { width: 100%; }
     & figcaption {
       margin-block-start: 5px;
       font-style: italic;

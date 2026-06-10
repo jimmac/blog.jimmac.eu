@@ -18,8 +18,7 @@ Adwaita has grown into a fairly complex theme. We make sure unfocused windows ar
 
 There's a number of improvements we aimed to achieve. Limiting the number of distinct colors and making most colors derived makes it easier to adjust the overall feel of the theme and I'm sure 3rd party themers will enjoy this too. Not relying on image assets for majority of the drawing makes the workflow much more flexible as well. Many of the small graphical elements now make use of the icon theme assets so these remain recolorable based on the context, similar to how text is treated.
 
-![](sass-goodness.png)
-*We still rely on some image assets, but even that is much more manageable with [SASS](http://sass-lang.com/).*
+<figure><img loading="lazy" src="sass-goodness.png" alt="SASS Goodness"><figcaption>We still rely on some image assets, but even that is much more manageable with <a href="http://sass-lang.com/">SASS</a>.</figcaption></figure>
 
 [Benjamin](http://blogs.gnome.org/otte/) has been working hard to move the theme closer to the familiar CSS box model, further minimizing the reliance on odd property hacks and engines (Adwaita no longer makes use of any engine drawing).
 
