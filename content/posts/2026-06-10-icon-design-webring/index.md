@@ -6,6 +6,7 @@ date = 2026-06-10
 tags = ["web", "design", "icon", "gnome", "nostalgia"]
 [extra]
 image = "under-construction.png"
+mastodon_url = "https://mastodon.social/@jimmac/116726365330416707"
 +++
 
 Terry Godier wrote a beautiful essay ["The Boring Internet"](https://www.terrygodier.com/the-boring-internet/). The internet isn't dying, he argues, just the commercial veneer glued on top of it is. Underneath all the engagement metrics and algorithmic feeds, there's still an older, slower, more federated web. One built on protocols nobody owns. RSS feeds still work (thank you, Aaron), people can set up websites and blogs.
