@@ -830,13 +830,17 @@ a.post-item {
   & iframe { text-align: center; }
 
   & video,
-  & .full img,
-  & img.full,
   & iframe {
     display: block;
     width: 100%;
     min-height: 400px;
     @media (max-width: 800px) { min-height: inherit; }
+  }
+
+  & .full img,
+  & img.full {
+    display: block;
+    width: 100%;
   }
 
   & img.centered { display: block; margin: auto; }

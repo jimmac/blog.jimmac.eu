@@ -4,7 +4,7 @@ description = "GNOME app icons were meant to be pixels. None of that SVG BS."
 date = 2026-04-25
 aliases = ["/2026/app-pixels/"]
 [taxonomies]
-tags = ["pixelart", "icon", "gnome"]
+tags = ["pixelart", "icon", "gnome", "nostalgia"]
 [extra]
 image = "app-icons-crt-01.png"
 mastodon_url="https://mastodon.social/@jimmac/116466467250232097"

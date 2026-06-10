@@ -4,7 +4,7 @@ description = "Going back to basics with clean HTML and CSS, no frameworks neede
 date = 2025-05-21
 aliases = ["/2025/plain-html/"]
 [taxonomies]
-tags = ["work", "web", "design", "css"]
+tags = ["work", "web", "design", "css", "nostalgia"]
 [extra]
 audio = "speech.opus"
 +++
