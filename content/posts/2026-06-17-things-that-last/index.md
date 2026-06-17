@@ -6,6 +6,7 @@ date = 2026-06-17
 tags = ["personal", "whenthingsworklikemagic", "design"]
 [extra]
 image = "bike.webp"
+mastodon_url = "https://mastodon.social/@jimmac/116765052594754770"
 related = [
   "posts/2021-02-03-iphone12-mini/index.md",
   "posts/2021-09-06-magic-brick/index.md",
