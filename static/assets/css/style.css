@@ -508,10 +508,9 @@ table {
   border-radius: 12px;
   overflow: hidden;
   background: var(--color-code-bg);
-  transition: box-shadow 200ms var(--smooth-ease), transform 200ms var(--bounce-ease);
+  transition: box-shadow 200ms var(--smooth-ease);
 }
 .featured-card:hover {
-  transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 

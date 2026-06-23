@@ -276,7 +276,12 @@
 
     var sketch = function (p) {
       var artworks = [];
+      var apngRaw = [], apngFrames = [], apngDelays = [], apngTimer = [], apngFrameIdx = [];
       var buffer, crtShader, bloomShader, osdFont;
+
+      function isApng(src) {
+        return src.toLowerCase().endsWith('.apng');
+      }
 
       function drawOSD(buf) {
         if (osd.timer <= 0) return;
@@ -304,6 +309,9 @@
       p.preload = function () {
         for (var i = 0; i < sources.length; i++) {
           artworks.push(p.loadImage(sources[i]));
+          if (isApng(sources[i]) && typeof UPNG !== 'undefined') {
+            apngRaw[i] = p.loadBytes(sources[i]);
+          }
         }
         osdFont = p.loadFont('/assets/fonts/departure-mono/DepartureMono-Regular.otf');
       };
@@ -314,14 +322,23 @@
         return { w: w, h: h };
       }
 
-      function drawArt(art) {
+      function drawArt(art, idx) {
         buffer.background(10);
         var scale = Math.min(buffer.width / srcW, buffer.height / srcH);
         var drawW = cfg.width * scale;
         var drawH = cfg.height * scale;
         var ox = (buffer.width - drawW) / 2;
         var oy = (buffer.height - drawH) / 2;
-        buffer.image(art, ox, oy, drawW, drawH);
+        if (apngFrames[idx] && apngFrames[idx].length > 0) {
+          var elapsed = p.millis() - apngTimer[idx];
+          if (elapsed >= apngDelays[idx][apngFrameIdx[idx]]) {
+            apngFrameIdx[idx] = (apngFrameIdx[idx] + 1) % apngFrames[idx].length;
+            apngTimer[idx] = p.millis();
+          }
+          buffer.image(apngFrames[idx][apngFrameIdx[idx]], ox, oy, drawW, drawH);
+        } else {
+          buffer.image(art, ox, oy, drawW, drawH);
+        }
       }
 
       p.setup = function () {
@@ -333,6 +350,31 @@
         buffer.noSmooth();
         crtShader = p.createFilterShader(CRT_FRAG);
         bloomShader = p.createFilterShader(BLOOM_FRAG);
+
+        // Decode APNG frames into p5.Image objects
+        if (typeof UPNG !== 'undefined') {
+          for (var i = 0; i < sources.length; i++) {
+            if (apngRaw[i]) {
+              var arr = new Uint8Array(apngRaw[i].bytes);
+              var decoded = UPNG.decode(arr.buffer);
+              var frameBufs = UPNG.toRGBA8(decoded);
+              var w = decoded.width, h = decoded.height;
+              apngFrames[i] = [];
+              apngDelays[i] = [];
+              apngTimer[i] = 0;
+              apngFrameIdx[i] = 0;
+              for (var f = 0; f < frameBufs.length; f++) {
+                var rgba = new Uint8ClampedArray(frameBufs[f]);
+                var img = p.createImage(w, h);
+                img.loadPixels();
+                for (var j = 0; j < rgba.length; j++) img.pixels[j] = rgba[j];
+                img.updatePixels();
+                apngFrames[i].push(img);
+                apngDelays[i].push(decoded.frames[f].delay);
+              }
+            }
+          }
+        }
 
         // Hide fallback images, activate CRT styling
         var imgs = container.querySelectorAll('img');
@@ -354,7 +396,7 @@
           buffer.push();
           if (progress < 0.5) {
             // first half: old image breaks up into static
-            drawArt(artworks[currentIndex]);
+            drawArt(artworks[currentIndex], currentIndex);
             buffer.loadPixels();
             var staticAmount = progress * 2.0;
             for (var i = 0; i < buffer.pixels.length; i += 4) {
@@ -368,7 +410,7 @@
             buffer.updatePixels();
           } else {
             // second half: new image emerges from static
-            drawArt(artworks[currentIndex]);
+            drawArt(artworks[currentIndex], currentIndex);
             buffer.loadPixels();
             var staticAmount = (1.0 - progress) * 2.0;
             for (var i = 0; i < buffer.pixels.length; i += 4) {
@@ -406,7 +448,7 @@
           if (cs.timer <= 0) cs.active = false;
         } else {
           var art = artworks[currentIndex];
-          drawArt(art);
+          drawArt(art, currentIndex);
           drawOSD(buffer);
           p.background(10);
           p.image(buffer, -p.width / 2, -p.height / 2, p.width, p.height);
