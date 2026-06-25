@@ -12,7 +12,7 @@ related = [
   "posts/2026-04-13-release-gnome-zola/index.md",
 ]
 image = "flatpak-pixels.apng"
-mastodon_url = "https://mastodon.social/@jimmac/"
+mastodon_url = "https://mastodon.social/@jimmac/116810976549407990"
 +++
 
 The Flatpak website has been running on [Middleman](https://middlemanapp.com/) for years and time hasn't been kind. Touching the project resulted in seeing 42 vulnerability warnings. The gem itself hasn't seen an update in ages, and the dependency list is rather large. 
