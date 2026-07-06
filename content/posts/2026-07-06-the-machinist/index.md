@@ -6,7 +6,7 @@ aliases = ["/2026/the-machinist/"]
 [taxonomies]
 tags = ["movie", "nostalgia", "personal"]
 [extra]
-mastodon_url = "https://mastodon.social/@jimmac/000000000000000000"
+mastodon_url = "https://mastodon.social/@jimmac/116872034603842129"
 image = "machinist.webp"
 related = [
   "posts/2024-09-13-weyland/index.md",
