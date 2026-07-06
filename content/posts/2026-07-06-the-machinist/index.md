@@ -15,8 +15,6 @@ related = [
 ]
 +++
 
-When I post about movies, it's usually something that actually airs in cinemas and I'm shocked that a reasonable movie still is able to come out of Hollywood. This time it's different. 
-
-I'd like to turn your attention to one of my old favorites, without actually having seen it in recent years. I couldn't remember something for weeks. It popped into my head during a run &mdash; a relief, even though the memory itself was not pleasant. This episode of my flaky mind reminded me of this movie.
+I couldn't remember something for weeks. It popped into my head during a run &mdash; a relief, even though the memory itself was not pleasant. This episode of my flaky mind reminded me of this movie.
 
 I won't give you even a hint of what the movie is about. The strength of it is not the premise, but the mood, the superb acting and Christian Bale's physical dedication to the role impressed me, alongside a cast of wonderfully weird characters and ominous presence of giant spinning machines. If you somehow missed the movie, give it a go. It's one of those that keep coming back to you.
