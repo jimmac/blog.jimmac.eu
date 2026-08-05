@@ -19,7 +19,7 @@ related = [
 ]
 +++
 
-<!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->
+{% raw %}<!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->{% endraw %}
 [comment]: [Previously](/posts/tour-sketches/).
 
 ![M8](m8.jpg)

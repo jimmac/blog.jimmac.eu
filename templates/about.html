@@ -1,4 +1,3 @@
-{% import "macros.html" as macros %}
 {% extends "base.html" %}
 
 {% block body %}
@@ -33,6 +32,6 @@
     </div>
   </main>
 
-  {{ macros::footer() }}
+  {% include "partials/footer.html" %}
 </div>
 {% endblock body %}

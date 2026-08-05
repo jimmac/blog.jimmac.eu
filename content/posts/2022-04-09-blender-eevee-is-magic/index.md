@@ -43,5 +43,5 @@ There was some interest in how the shader is set up, so I'm happily making the f
 
 To do it properly, I'd probably want to improve the actual display shader to rasterize the bitmaps in a more sophisticated manner than just displaying a bitmap with no filtering. But I'd say even this basic setup has served the purpose of checking the viability of a symbol rendered on a lousy display.
 
-<!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->
+{% raw %}<!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->{% endraw %}
 [comment]: [Previously](/posts/tour-sketches/).

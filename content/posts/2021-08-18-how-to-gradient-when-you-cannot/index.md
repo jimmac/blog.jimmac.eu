@@ -9,7 +9,7 @@ tags = ["work", "gnome", "inkscape", "tutorial"]
 audio = "speech.opus"
 +++
 
-<!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->
+{% raw %}<!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->{% endraw %}
 [comment]: [Previously](/posts/tour-sketches/).
 
 While this topic isn't anything new (the asset in question is probably a decade old) I never shared a dirty little secret about some of our symbolic assets.

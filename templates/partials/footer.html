@@ -1,0 +1,8 @@
+{# Footer partial #}
+<footer class="footer">
+</footer>
+<script src="/assets/js/main.js" defer="defer"></script>
+{% if config.extra.google_analytics %}
+  <script src="/assets/js/galite.js"></script>
+  <script>var galite = galite || {}; galite.UA = "{{ config.extra.google_analytics }}";</script>
+{% endif %}

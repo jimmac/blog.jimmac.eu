@@ -3,7 +3,7 @@
   <title>{{ config.title }}</title>
   <link href="{{ config.base_url }}/feed.xml" rel="self" type="application/atom+xml"/>
   <link href="{{ config.base_url }}"/>
-  <updated>{{ now() | date(format="%+") }}</updated>
+  <updated>{{ now() | date(format="%Y-%m-%dT%H:%M:%S%:z") }}</updated>
   <id>{{ config.base_url }}/</id>
   <author>
     <name>{{ config.extra.author.name }}</name>
@@ -15,9 +15,9 @@
     <title>{{ post.title }}</title>
     <link href="{{ post.permalink }}"/>
     <id>{{ post.permalink }}</id>
-    <published>{{ post.date | date(format="%+") }}</published>
-    <updated>{% if post.updated %}{{ post.updated | date(format="%+") }}{% else %}{{ post.date | date(format="%+") }}{% endif %}</updated>
-    {% set summary_text = post.description | default(value="") %}
+    <published>{{ post.date | date(format="%Y-%m-%d") }}</published>
+    <updated>{% if post.updated %}{{ post.updated | date(format="%Y-%m-%d") }}{% else %}{{ post.date | date(format="%Y-%m-%d") }}{% endif %}</updated>
+    {% set summary_text = post.description | default(value="", boolean=true) %}
     {% if summary_text == "" %}{% set summary_text = post.content | striptags | truncate(length=200) %}{% endif %}
     {% if summary_text != "" %}<summary>{{ summary_text }}</summary>{% endif %}
     {% set clean = post.content | regex_replace(pattern="(?s)<style[^>]*>.*?</style>", rep="") | regex_replace(pattern="(?s)<iframe[^>]*>.*?</iframe>", rep="") | regex_replace(pattern="(?s)<svg[^>]*>.*?</svg>", rep="") %}

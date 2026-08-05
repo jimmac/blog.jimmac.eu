@@ -33,5 +33,5 @@ I'm not going to be spamming the [planet](https://planet.gnome.org) with every t
 
 I really enjoy stepping back into my tracking shoes after two decades, especially when I ran into the old [Buzz](https://en.wikipedia.org/wiki/Jeskola_Buzz) crew on the Dirtywave Discord server. Shout out to [Ilya](https://weeklybeats.com/ilzxc) and [Noggin'](https://weeklybeats.com/noggin) who've made my re-entry to music super enjoyable.
 
-<!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->
+{% raw %}<!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->{% endraw %}
 [comment]: [Previously](/posts/tour-sketches/).

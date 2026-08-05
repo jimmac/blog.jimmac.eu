@@ -18,7 +18,7 @@ related = [
 ]
 +++
 
-<!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->
+{% raw %}<!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->{% endraw %}
 [comment]: [Previously](/posts/tour-sketches/).
 
 <a href="https://soundcloud.com/jimmac/null-amusement"><img loading="lazy" src="chiptune.gif" alt="Null Amusement"></a>

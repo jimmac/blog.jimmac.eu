@@ -9,7 +9,7 @@ audio = "speech.opus"
 +++
 
 <!-- <div class="inlineimgs" markdown="1"> -->
-<!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->
+{% raw %}<!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->{% endraw %}
 
 When I [previously posted](/posts/perseverance/)
 about the Perseverance landing, I didn't realize NASA has actually published textured models of [the lander](https://mars.nasa.gov/resources/25042/mars-perseverance-rover-3d-model/) and it's cute not-so-little maritan helicopter, [Ingenuity](https://mars.nasa.gov/resources/25043/mars-ingenuity-helicopter-3d-model/).

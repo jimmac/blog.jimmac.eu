@@ -13,7 +13,7 @@ related = [
 ]
 +++
 
-<!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->
+{% raw %}<!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->{% endraw %}
 
 While [Flatpak](https://flatpak.org) itself is an architecturally decentralized way to distribute apps, [Flathub](https://beta.flathub.org) embraces the convenience for people to come to one place to install apps. There's some fairly big changes coming to Flathub that I'm extremely excited about, that will make sure the new wave of Linux apps doesn't fizzle out and we'll maintain a sustainable application ecosystem.
 

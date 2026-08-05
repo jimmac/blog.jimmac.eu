@@ -11,7 +11,7 @@ related = [
 ]
 +++
 
-<!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->
+{% raw %}<!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->{% endraw %}
 
 <img loading="lazy" src="connections-hope.png" alt="Connections: Hope">
 

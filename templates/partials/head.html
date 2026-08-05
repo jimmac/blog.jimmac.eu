@@ -1,0 +1,48 @@
+{# Head partial #}
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="application-name" content="{{ config.title }}" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="#fff" />
+  <meta name="apple-mobile-web-app-title" content="{{ config.title }}" />
+  <title>{% if page_title %}{{ page_title }} - {{ config.title }}{% else %}{{ config.title }}{% endif %}</title>
+  <link rel="alternate" href="{{ current_url | default(value=config.base_url) }}" hreflang="{{ lang | default(value='en') }}" />
+  <link rel="canonical" href="{{ current_url | default(value=config.base_url) }}" />
+  <meta name="description" content="{{ page_description | default(value=config.description, boolean=true) | truncate(length=200) }}" />
+  <meta name="referrer" content="no-referrer-when-downgrade" />
+  <meta property="og:site_name" content="{% if page_title %}{{ page_title }} | {{ config.extra.author.name }}{% else %}{{ config.title }}{% endif %}" />
+  <meta property="og:title" content="{% if page_title %}{{ page_title }} | {{ config.extra.author.name }}{% else %}{{ config.title }}{% endif %}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ current_url | default(value=config.base_url) }}" />
+  <meta property="og:description" content="{{ page_description | default(value=config.description, boolean=true) | truncate(length=200) }}" />
+  {% if og_image %}
+  <meta property="og:image" content="{{ og_image }}" />
+  {% else %}
+  <meta property="og:image" content="{{ config.base_url }}/assets/img/ogp.png" />
+  {% endif %}
+  <meta property="og:image:width" content="640" />
+  <meta property="og:image:height" content="640" />
+  <meta name="twitter:card" content="{% if og_image %}summary_large_image{% else %}summary{% endif %}" />
+  <meta name="twitter:title" content="{% if page_title %}{{ page_title }} | {{ config.extra.author.name }}{% else %}{{ config.title }}{% endif %}" />
+  <meta name="twitter:url" content="{{ current_url | default(value=config.base_url) }}" />
+  <meta name="twitter:description" content="{{ page_description | default(value=config.description, boolean=true) | truncate(length=200) }}" />
+  {% if og_image %}
+  <meta name="twitter:image" content="{{ og_image }}" />
+  {% else %}
+  <meta name="twitter:image" content="{{ config.base_url }}/assets/img/ogp.png" />
+  {% endif %}
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png" />
+  <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+  <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="apple-mobile-web-app-title" content="Jakub Steiner" />
+  <meta name="application-name" content="Jakub Steiner" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#2c2c2c" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>

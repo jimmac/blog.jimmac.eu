@@ -1,4 +1,3 @@
-{% import "macros.html" as macros %}
 {% extends "base.html" %}
 
 {% block body %}
@@ -22,13 +21,9 @@
     <ul id="search-results"></ul>
 
     {% set taxonomy = get_taxonomy(kind="tags") %}
-    {% set_global sorted_terms = [] %}
-    {% for term in taxonomy.items %}
-      {% set_global sorted_terms = sorted_terms | concat(with=[term]) %}
-    {% endfor %}
-    {% set sorted_terms = sorted_terms | sort(attribute="pages") | reverse %}
+    {% set sorted_terms = taxonomy.items | sort(attribute="page_count") | reverse %}
     <div class="archive-tags">
-      {% for term in sorted_terms | slice(end=10) %}
+      {% for term in sorted_terms[:10] %}
         <a class="tag-item" href="{{ term.permalink }}">{{ term.name }}</a>
       {% endfor %}
     </div>

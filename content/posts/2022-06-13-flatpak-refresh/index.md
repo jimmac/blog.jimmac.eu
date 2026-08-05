@@ -9,7 +9,7 @@ tags = ["flatpak", "design", "work", "brand"]
 image = "flatpak.png"
 +++
 
-<!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->
+{% raw %}<!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->{% endraw %}
 
 ![Flatpak](flatpak.png)
 

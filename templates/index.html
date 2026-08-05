@@ -1,14 +1,13 @@
-{% import "macros.html" as macros %}
 {% extends "base.html" %}
 
 {% block body %}
 <div class="wrapper">
-  {{ macros::author() }}
+  {% include "partials/author.html" %}
   <main aria-label="Content">
     {% set posts_section = get_section(path="posts/_index.md") %}
 
     <div class="featured-grid">
-      {% for post in posts_section.pages | slice(end=3) %}
+      {% for post in posts_section.pages[:3] %}
       <article class="featured-card">
         <a href="{{ post.permalink }}" class="featured-link">
           <div class="featured-visual" aria-hidden="true">
@@ -27,7 +26,7 @@
     </div>
 
     <h3 class="posts-item-note" aria-label="Older Posts">Older Posts</h3>
-    {% for post in posts_section.pages | slice(start=3, end=12) %}
+    {% for post in posts_section.pages[3:12] %}
       <a href="{{ post.permalink }}" class="post-item">
         <span class="post-item-date">{{ post.date | date(format="%b %d, %Y") }}</span>
         <h3 class="post-item-title">{{ post.title }}</h3>
@@ -37,6 +36,6 @@
       </a>
     {% endfor %}
   </main>
-  {{ macros::footer() }}
+  {% include "partials/footer.html" %}
 </div>
 {% endblock body %}

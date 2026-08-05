@@ -38,7 +38,7 @@ In 2022 I'd like to
 
 A little late with wishing you a better 2022 than 2020 was! I didn't even catch 2021 fly by.
 
-<!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->
+{% raw %}<!-- <a href="{{ site.url }}{{ page.url }}">absolute links</a> -->{% endraw %}
 [comment]: [Previously](/posts/tour-sketches/).
 
 
