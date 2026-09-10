@@ -10,6 +10,7 @@ related = [
   "posts/2004-12-30-new-zealand-part-1/index.md",
   "posts/2016-01-29-rio/index.md",
 ]
+audio = "speech.opus"
 +++
 
 In 1993, I stood at the top of the World Trade Center feeling like being on top of everything. It was the culmination of my first proper trip west, a stark contrast to a country behind an iron curtain or even a small-town Amherst, New Hampshire, where I had to earn my way into that adventure.
