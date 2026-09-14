@@ -25,7 +25,6 @@ I've been putting off learning about the **performance macros** forever, and I h
 
 I'm still a noob at this, but the point is the same as [always](/posts/jammin-on-elektron/): there's real joy in performing and building up energy for the drop in real time -- way more satisfying than preprogramming the whole sequence.
 
-Listen right here:
 <audio controls>
 <source src="Innit.mp3" type="audio/mpeg">
 </audio>
