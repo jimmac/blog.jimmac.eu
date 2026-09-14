@@ -2,6 +2,7 @@ public/
 .aider*
 venv/
 venv-py310/
+venv-qwen/
 venv-xpu/
 .DS_Store
 
