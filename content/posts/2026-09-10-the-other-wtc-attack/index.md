@@ -5,6 +5,7 @@ date = 2026-09-10
 [taxonomies]
 tags = ["personal", "nostalgia", "blastfromthepast"]
 [extra]
+mastodon_url = "https://mastodon.social/@jimmac/117248244218378329"
 image = "wtc-1993-top.webp"
 related = [
   "posts/2004-12-30-new-zealand-part-1/index.md",
