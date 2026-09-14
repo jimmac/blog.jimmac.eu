@@ -31,6 +31,21 @@ pip install "transformers==4.57.3" "accelerate==1.12.0" librosa soundfile onnxru
 
 The CUDA/GPU index for torch is only relevant if you have an NVIDIA GPU.
 
+### macOS (Apple Silicon) via Homebrew
+
+On M1/M2/M3/M4 the PyPI PyTorch build is already Metal-accelerated — no `--index-url` needed.
+
+```bash
+brew install python@3.10 ffmpeg
+python3.10 -m venv venv-qwen
+source venv-qwen/bin/activate
+pip install torch torchaudio
+pip install --no-deps qwen-tts
+pip install "transformers==4.57.3" "accelerate==1.12.0" librosa soundfile onnxruntime einops sox
+```
+
+`--model Qwen/Qwen3-TTS-12Hz-1.7B-Base` swaps to the larger checkpoint if your M-series can handle it.
+
 ### Reference transcript (Qwen only)
 
 Qwen3-TTS needs the transcript of the reference clip for full cloning quality. Set it in `scripts/generate-tts-qwen.py`:
