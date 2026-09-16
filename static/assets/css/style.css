@@ -836,6 +836,11 @@ a.post-item {
     @media (max-width: 800px) { min-height: inherit; }
   }
 
+  & video.rounded {
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+
   & .full img,
   & img.full {
     display: block;
