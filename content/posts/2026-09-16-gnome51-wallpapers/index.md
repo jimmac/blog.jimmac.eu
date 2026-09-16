@@ -36,4 +36,4 @@ One thing we keep struggling with is performance in the Appearance panel. The im
 
 <img loading="lazy" src="concepts.webp" class="full" alt="A concept that didn't make it">
 
-We've also started embedding attribution and license straight into the images themselves, so the credits travel with the file instead of living only in the repo. And with [Loupe displaying the metadata nicely](fixme-link-to-loupe-section-when-release.gnome.org-51-exists), you get to see it conveniently.
+We've also started embedding attribution and license straight into the images themselves, so the credits travel with the file instead of living only in the repo. And with [Loupe displaying the metadata nicely](https://release.gnome.org/51/#image-viewer), you get to see it conveniently.
