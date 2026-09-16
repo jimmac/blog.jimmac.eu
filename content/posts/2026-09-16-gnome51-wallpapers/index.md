@@ -8,6 +8,7 @@ slug = "gnome51-wallpapers"
 tags = ["work", "gnome", "design", "wallpaper", "art", "blender"]
 [extra]
 image = "thumb.webp"
+mastodon_url = "https://mastodon.social/@jimmac/117281348845055008"
 related = [
   "posts/2026-03-18-gnome50-wallpapers/index.md",
   "posts/2025-09-17-wallpapers/index.md",
