@@ -460,7 +460,7 @@ table {
 }
 
 /* ============================================================
-   FEATURED TILES  (landing page top 3)
+   FEATURED TILES  (landing page top 4: 3 tiles + 1 wide)
    ============================================================ */
 
 .featured-grid {
@@ -476,9 +476,49 @@ table {
   overflow: hidden;
   background: var(--color-code-bg);
   transition: box-shadow 200ms var(--smooth-ease);
+
+  &:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
 }
-.featured-card:hover {
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+
+.featured-card--wide {
+  grid-column: 1 / -1;
+
+  & .featured-link {
+    flex-direction: row;
+    @media (max-width: 800px) { flex-direction: column; }
+  }
+
+  & .featured-visual {
+    width: 50%;
+    flex-shrink: 0;
+    aspect-ratio: 16 / 9;
+    min-height: 0;
+    align-self: stretch;
+    @media (max-width: 800px) {
+      width: 100%;
+      aspect-ratio: 3 / 2;
+    }
+  }
+
+  & .featured-body {
+    flex: 1;
+    justify-content: center;
+    padding: 1.25rem 1.5rem;
+  }
+
+  & .featured-title {
+    font-size: 1.5rem;
+    @media (max-width: 800px) { font-size: 1.25rem; }
+  }
+
+  & .featured-blurb {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 }
 
 .featured-link {

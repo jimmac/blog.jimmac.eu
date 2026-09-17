@@ -7,7 +7,24 @@
     {% set posts_section = get_section(path="posts/_index.md") %}
 
     <div class="featured-grid">
-      {% for post in posts_section.pages[:3] %}
+      {% if posts_section.pages[0] %}
+      {% set newest = posts_section.pages[0] %}
+      <article class="featured-card featured-card--wide">
+        <a href="{{ newest.permalink }}" class="featured-link">
+          <div class="featured-visual" aria-hidden="true">
+            {% if newest.extra.image %}
+            <img class="featured-image" src="{{ newest.path }}{{ newest.extra.image }}" alt="" loading="lazy" onerror="this.remove()">
+            {% endif %}
+          </div>
+          <div class="featured-body">
+            <time class="featured-date">{{ newest.date | date(format="%b %d, %Y") }}</time>
+            <h2 class="featured-title">{{ newest.title }}</h2>
+            <p class="featured-blurb">{% if newest.description %}{{ newest.description }}{% else %}{{ newest.content | striptags | truncate(length=200) }}{% endif %}</p>
+          </div>
+        </a>
+      </article>
+      {% endif %}
+      {% for post in posts_section.pages[1:4] %}
       <article class="featured-card">
         <a href="{{ post.permalink }}" class="featured-link">
           <div class="featured-visual" aria-hidden="true">
@@ -26,7 +43,7 @@
     </div>
 
     <h3 class="posts-item-note" aria-label="Older Posts">Older Posts</h3>
-    {% for post in posts_section.pages[3:12] %}
+    {% for post in posts_section.pages[4:13] %}
       <a href="{{ post.permalink }}" class="post-item">
         <span class="post-item-date">{{ post.date | date(format="%b %d, %Y") }}</span>
         <h3 class="post-item-title">{{ post.title }}</h3>
