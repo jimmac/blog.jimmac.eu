@@ -231,22 +231,6 @@ a {
   }
 }
 
-.external::after {
-  content: "";
-  display: inline-block;
-  width: 0.7em;
-  height: 0.7em;
-  vertical-align: middle;
-  margin-inline-start: 0.2em;
-  background-color: currentColor;
-  -webkit-mask-image: var(--icon-external);
-  mask-image: var(--icon-external);
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-
 del { color: inherit; }
 em  { color: inherit; }
 
@@ -377,25 +361,12 @@ table {
     &:not(:last-child) { margin-inline-end: 5px; }
     &.rss { position: relative; bottom: -3px; outline: none; }
     &.rss::after { content: none; }
-    &.external {
-      flex-direction: row;
-      gap: 0.3em;
-      &::after {
-        content: "";
-        font-weight: inherit;
-        width: 0.7em;
-        height: 0.7em;
-        overflow: visible;
-        visibility: visible;
-      }
-    }
     &.active { opacity: 1; font-weight: 600; }
 
     @media (max-width: 800px) {
       opacity: 0.8;
       display: block;
       &::after { content: none; }
-      &.external::after { content: none; }
     }
   }
 
@@ -451,10 +422,6 @@ table {
       box-sizing: border-box;
       font-size: 1.1em;
       &:not(:last-child) { margin: 0; padding: 2px 0; }
-    }
-
-    & input[type="checkbox"]:checked ~ .trigger .menu-link.external::after {
-      content: "";
     }
   }
 }
