@@ -32,4 +32,4 @@ I mostly do [design](https://jimmac.eu) — working on [GNOME](https://gnome.org
 
 <!-- more -->
 
-I post sketches and art on [Mastodon](https://mastodon.social/@jimmac) and [Instagram](https://instagram.com/jimmacfx). I also enjoy [photography](https://photo.jimmac.eu/) and have a [YouTube channel](https://www.youtube.com/@jimmacfx) where I post FPV [racing](https://www.youtube.com/watch?v=sMdIYyGLNbA) and [travel / cinematography](https://www.youtube.com/watch?v=il7ac0EHzS8) videos.
+I post sketches and art on [Mastodon](https://mastodon.social/@jimmac). I also enjoy [photography](https://photo.jimmac.eu/) and have a [YouTube channel](https://www.youtube.com/@jimmacfx) where I post FPV [racing](https://www.youtube.com/watch?v=sMdIYyGLNbA) and [travel / cinematography](https://www.youtube.com/watch?v=il7ac0EHzS8) videos.
