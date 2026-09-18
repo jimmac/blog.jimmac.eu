@@ -21,24 +21,15 @@ I like to run my [Linux as an operating system](https://os.gnome.org), so I usua
 
 <!-- more -->
 
-On GNOME OS, developer tools like `git` and `toolbox` aren't part of the base image. You get them by enabling the *developer system extension*:
-
-```bash
-sudo updatectl enable devel --now
-```
-
-This gives you the toolchain needed to clone repos and build things locally.
+On GNOME OS, some developer tools like `git` and `toolbox` are in the base image. 
 
 ## Installing flatpak-builder
 
-The builder is distributed on Flathub as `org.flatpak.Builder`. Install it like any other Flatpak:
+`flatpak-builder` isn't though. It is distributed on Flathub as `org.flatpak.Builder`. Install it like any other Flatpak:
 
 ```bash
 flatpak install flathub org.flatpak.Builder
 ```
-
-
-
 
 ## Building and Installing Locally
 
@@ -51,3 +42,13 @@ org.flatpak.Builder --user --install \
 ```
 
 And that's it!
+
+## Developer extension
+
+There are some extra tools for development available for GNOME OS though. You get them by enabling the *developer system extension*:
+
+```bash
+sudo updatectl enable devel --now
+```
+
+This gives you the toolchain needed to clone repos and build things locally. So instead of installing the flatpak, you get `flatpak-builder` as a utility.
