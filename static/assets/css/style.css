@@ -380,6 +380,41 @@ table {
 
 .menu {
   user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    text-decoration: none;
+    color: var(--color-heading);
+    margin-inline-end: auto;
+
+    @media (max-width: 800px) {
+      position: absolute;
+      inset-inline-start: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 3;
+    }
+  }
+
+  & .brand-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+    user-select: none;
+    background-color: var(--color-heading);
+  }
+
+  & .brand-name {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
 
   & .trigger { float: right; float: inline-end; }
   & .menu-trigger { display: none; }
@@ -475,39 +510,6 @@ table {
 }
 
 /* ============================================================
-   AUTHOR
-   ============================================================ */
-
-.author {
-  margin-block-start: 6.3rem;
-  margin-block-end: 7.2rem;
-  text-align: center;
-
-  @media (max-width: 800px) { margin-block-end: 3em; }
-
-  & .author-avatar {
-    width: 70px;
-    height: 70px;
-    border-radius: 100%;
-    user-select: none;
-    background-color: var(--color-heading);
-    animation: 0.5s var(--smooth-ease) forwards fadein;
-  }
-
-  & .author-name {
-    font-size: 1.7em;
-    margin-block-end: 2px;
-  }
-
-  & .author-bio {
-    margin: 0 auto;
-    opacity: 0.9;
-    max-width: 393px;
-    line-height: 1.688;
-  }
-}
-
-/* ============================================================
    FEATURED TILES  (landing page top 4: 3 tiles + 1 wide)
    ============================================================ */
 
@@ -515,8 +517,12 @@ table {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+  margin-block-start: 2rem;
   margin-block-end: 3rem;
-  @media (max-width: 800px) { grid-template-columns: 1fr; }
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+    margin-block-start: 1.5rem;
+  }
 }
 
 .featured-card {
@@ -1748,26 +1754,6 @@ img.icon-dropshadow {
 /* ============================================================
    ABOUT PAGE
    ============================================================ */
-
-.about-header {
-  margin-block-start: 6.3rem;
-  margin-block-end: 3rem;
-  text-align: center;
-}
-
-.about-avatar {
-  width: 90px;
-  height: 90px;
-  border-radius: 100%;
-  user-select: none;
-  background-color: var(--color-heading);
-  animation: 0.5s var(--smooth-ease) forwards fadein;
-}
-
-.about-name {
-  font-size: 1.7em;
-  margin-block-end: 2px;
-}
 
 .about-intro {
   margin: 0.5rem auto 0;
