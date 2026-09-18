@@ -17,7 +17,7 @@ related = [
 
 <img loading="lazy" src="flatpak-builder.svg" alt="Flatpak Builder icon" class="full">
 
-I like to run my [Linux as an operating system](https://or.gnome.org), so I usually resort to [toolbox](https://containertoolbx.org) for packages and development. However `flatpak-builder` is distributed as a flatpak itself, so here's how you can go about building flatpaks yourself for when [GNOME Nighlies](https://nightly.gnome.org) are not enough.
+I like to run my [Linux as an operating system](https://os.gnome.org), so I usually resort to [toolbox](https://containertoolbx.org) for packages and development. However `flatpak-builder` is distributed as a flatpak itself, so here's how you can go about building flatpaks yourself for when [GNOME Nighlies](https://nightly.gnome.org) are not enough.
 
 <!-- more -->
 
