@@ -45,7 +45,9 @@ flatpak install flathub org.flatpak.Builder
 Here's how I build [Shaper](https://gitlab.gnome.org/World/design/shaper), an icon designer for GNOME symbolics. 
 
 ```bash
-flatpak run --command=flatpak-builder org.flatpak.Builder --user --install --force-clean build-dir org.gnome.design.Shaper.json
+flatpak run --command=flatpak-builder \
+org.flatpak.Builder --user --install \
+--force-clean build-dir org.gnome.design.Shaper.json
 ```
 
 And that's it!
