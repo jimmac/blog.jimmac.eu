@@ -7,6 +7,7 @@ aliases = ["/2026/building-flatpaks-locally/"]
 tags = ["flatpak", "flathub", "gnome", "tech", "tutorial"]
 [extra]
 image = "thumb.svg"
+mastodon_url = "https://mastodon.social/@jimmac/117293604864644158"
 related = [
   "posts/2022-11-11-Builder-Shell/index.md",
   "posts/2021-02-04-curtail/index.md",
