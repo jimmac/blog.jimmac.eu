@@ -383,6 +383,9 @@ table {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
+
+  @media (max-width: 800px) { gap: 0.5rem; }
 
   & .brand {
     display: inline-flex;
@@ -391,14 +394,6 @@ table {
     text-decoration: none;
     color: var(--color-heading);
     margin-inline-end: auto;
-
-    @media (max-width: 800px) {
-      position: absolute;
-      inset-inline-start: 12px;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 3;
-    }
   }
 
   & .brand-avatar {
@@ -416,9 +411,10 @@ table {
     white-space: nowrap;
   }
 
-  & .trigger { float: right; float: inline-end; }
-  & .menu-trigger { display: none; }
-  & .menu-icon { display: none; }
+  & .trigger {
+    display: flex;
+    align-items: center;
+  }
 
   & .menu-link {
     color: var(--color-heading);
@@ -430,6 +426,8 @@ table {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
+
+    @media (max-width: 800px) { padding: 5px 6px; }
 
     &::after {
       content: attr(data-text);
@@ -445,67 +443,6 @@ table {
     &.rss { position: relative; bottom: -3px; outline: none; }
     &.rss::after { content: none; }
     &.active { opacity: 1; font-weight: 600; }
-
-    @media (max-width: 800px) {
-      opacity: 0.8;
-      display: block;
-      &::after { content: none; }
-    }
-  }
-
-  @media (max-width: 800px) {
-    position: fixed;
-    inset-block-start: 0; inset-inline-start: 0; inset-inline-end: 0;
-    z-index: 2;
-    text-align: center;
-    height: 50px;
-    background-color: var(--color-bg);
-    border-block-end: 1px solid var(--color-border);
-
-    & .menu-icon {
-      display: block;
-      position: absolute;
-      inset-inline-end: 0;
-      width: 50px;
-      height: 23px;
-      line-height: 0;
-      padding-block-start: 13px;
-      padding-block-end: 15px;
-      cursor: pointer;
-      text-align: center;
-      z-index: 1;
-
-      & > svg { fill: var(--color-heading); opacity: 0.7; }
-      &:hover > svg { opacity: 1; }
-      &:active { transform: scale(0.9); }
-    }
-
-    & input[type="checkbox"]:not(:checked) ~ .trigger {
-      clear: both;
-      visibility: hidden;
-    }
-
-    & input[type="checkbox"]:checked ~ .trigger {
-      position: fixed;
-      animation: 0.2s var(--smooth-ease) forwards fadein;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      background-color: var(--color-bg);
-      backdrop-filter: blur(20px);
-      isolation: isolate;
-      height: 100vh;
-      width: 100%;
-      inset-block-start: 0;
-    }
-
-    & .menu-link {
-      display: block;
-      box-sizing: border-box;
-      font-size: 1.1em;
-      &:not(:last-child) { margin: 0; padding: 2px 0; }
-    }
   }
 }
 
@@ -1098,15 +1035,6 @@ pre {
     border: 0;
     color: inherit;
   }
-}
-
-/* ============================================================
-   ANIMATIONS
-   ============================================================ */
-
-@keyframes fadein {
-  0%   { opacity: 0.2; backdrop-filter: blur(0); }
-  100% { opacity: 0.98; backdrop-filter: blur(20px); }
 }
 
 /* ============================================================

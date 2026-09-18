@@ -28,7 +28,6 @@ avatar = "/assets/img/avatar.svg"
 
 [extra.menus]
 items = [
-  { title = "latest",    url = "/",          external = false },
   { title = "archive",   url = "/archive/",  external = false },
   { title = "about",     url = "/about/",    external = false },
 ]
