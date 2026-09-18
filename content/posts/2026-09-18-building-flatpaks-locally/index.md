@@ -45,10 +45,10 @@ And that's it!
 
 ## Developer extension
 
-There are some extra tools for development available for GNOME OS though. You get them by enabling the *developer system extension*:
+There are some extra tools for development available for GNOME OS. You get them by enabling the *developer system extension*:
 
 ```bash
 sudo updatectl enable devel --now
 ```
 
-This gives you the toolchain needed to clone repos and build things locally. So instead of installing the flatpak, you get `flatpak-builder` as a utility.
+So instead of installing the flatpak, you get `flatpak-builder` as a utility.
