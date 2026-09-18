@@ -12,10 +12,21 @@
   <link rel="alternate" href="{{ current_url | default(value=config.base_url) }}" hreflang="{{ lang | default(value='en') }}" />
   <link rel="canonical" href="{{ current_url | default(value=config.base_url) }}" />
   <meta name="description" content="{{ page_description | default(value=config.description, boolean=true) | truncate(length=200) }}" />
+  <meta name="author" content="{{ config.extra.author.name }}" />
   <meta name="referrer" content="no-referrer-when-downgrade" />
+  {% if current_url is defined and "404" in current_url %}<meta name="robots" content="noindex, nofollow" />{% endif %}
   <meta property="og:site_name" content="{% if page_title %}{{ page_title }} | {{ config.extra.author.name }}{% else %}{{ config.title }}{% endif %}" />
   <meta property="og:title" content="{% if page_title %}{{ page_title }} | {{ config.extra.author.name }}{% else %}{{ config.title }}{% endif %}" />
+  {% if page is defined and page.date %}
+  <meta property="og:type" content="article" />
+  <meta property="article:published_time" content="{{ page.date | date(format='%Y-%m-%d') }}" />
+  {% if page.updated %}<meta property="article:modified_time" content="{{ page.updated | date(format='%Y-%m-%d') }}" />
+  {% elif page.extra.modified %}<meta property="article:modified_time" content="{{ page.extra.modified }}" />{% endif %}
+  {% if page.taxonomies.tags %}{% for tag in page.taxonomies.tags %}<meta property="article:tag" content="{{ tag }}" />
+  {% endfor %}{% endif %}
+  {% else %}
   <meta property="og:type" content="website" />
+  {% endif %}
   <meta property="og:url" content="{{ current_url | default(value=config.base_url) }}" />
   <meta property="og:description" content="{{ page_description | default(value=config.description, boolean=true) | truncate(length=200) }}" />
   {% if og_image %}
@@ -46,4 +57,66 @@
   <meta name="msapplication-TileColor" content="#da532c" />
   <meta name="theme-color" content="#2c2c2c" />
   <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="me" href="https://mastodon.social/@jimmac" />
+  {% if page is defined and page.date %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": {{ page.title | json_encode() | safe }},
+    "description": {{ page_description | default(value=config.description, boolean=true) | truncate(length=200) | json_encode() | safe }},
+    "image": "{{ og_image | default(value=config.base_url ~ "/assets/img/ogp.png") | safe }}",
+    "datePublished": "{{ page.date | date(format='%Y-%m-%d') }}",
+    {% if page.updated %}"dateModified": "{{ page.updated | date(format='%Y-%m-%d') }}",
+    {% elif page.extra.modified %}"dateModified": "{{ page.extra.modified }}",
+    {% else %}"dateModified": "{{ page.date | date(format='%Y-%m-%d') }}",{% endif %}
+    "author": {
+      "@type": "Person",
+      "name": "{{ config.extra.author.name }}",
+      "url": "https://jimmac.eu",
+      "sameAs": [
+        "https://mastodon.social/@jimmac",
+        "https://github.com/jimmac",
+        "https://jimmac.eu"
+      ]
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "{{ config.extra.author.name }}",
+      "url": "https://jimmac.eu",
+      "image": "{{ config.base_url }}/assets/img/avatar.svg"
+    },
+    "mainEntityOfPage": "{{ current_url | default(value=config.base_url) | safe }}",
+    "url": "{{ current_url | default(value=config.base_url) | safe }}"
+    {% if page.taxonomies.tags %},
+    "keywords": {{ page.taxonomies.tags | join(sep=", ") | json_encode() | safe }}
+    {% endif %}
+  }
+  </script>
+  {% else %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": {{ config.title | json_encode() | safe }},
+    "url": "{{ config.base_url }}",
+    "description": {{ config.description | json_encode() | safe }},
+    "author": {
+      "@type": "Person",
+      "name": "{{ config.extra.author.name }}",
+      "alternateName": "jimmac",
+      "url": "https://jimmac.eu",
+      "image": "https://jimmac.eu/assets/img/card.png",
+      "sameAs": [
+        "https://mastodon.social/@jimmac",
+        "https://github.com/jimmac",
+        "https://jimmac.eu",
+        "https://art.jimmac.eu",
+        "https://photo.jimmac.eu",
+        "https://music.jimmac.eu"
+      ]
+    }
+  }
+  </script>
+  {% endif %}
 </head>

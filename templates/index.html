@@ -12,7 +12,7 @@
         <a href="{{ newest.permalink }}" class="featured-link">
           <div class="featured-visual" aria-hidden="true">
             {% if newest.extra.image %}
-            <img class="featured-image" src="{{ newest.path }}{{ newest.extra.image }}" alt="" loading="lazy" onerror="this.remove()">
+            <img class="featured-image" src="{{ newest.path }}{{ newest.extra.image }}" alt="{{ newest.title }}" loading="lazy" onerror="this.remove()">
             {% endif %}
           </div>
           <div class="featured-body">
@@ -28,7 +28,7 @@
         <a href="{{ post.permalink }}" class="featured-link">
           <div class="featured-visual" aria-hidden="true">
             {% if post.extra.image %}
-            <img class="featured-image" src="{{ post.path }}{{ post.extra.image }}" alt="" loading="lazy" onerror="this.remove()">
+            <img class="featured-image" src="{{ post.path }}{{ post.extra.image }}" alt="{{ post.title }}" loading="lazy" onerror="this.remove()">
             {% endif %}
           </div>
           <div class="featured-body">

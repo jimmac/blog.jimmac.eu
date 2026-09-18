@@ -1,6 +1,7 @@
 ---
 title: R.I.P. Gorilla
 date: 2011-09-14 12:28:28+00:00
+description: Why I retired the Gorilla SVG icon set in favour of the Tango style guidelines.
 tags:
 - design
 - inkscape

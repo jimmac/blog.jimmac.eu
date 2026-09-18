@@ -50,11 +50,15 @@
             {{ page.extra.modified }}
           </time>
           {% endif %}
-          <span hidden itemprop="publisher" itemtype="Person">{{ config.extra.author.name }}</span>
+          <span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Person">
+            <span hidden itemprop="name">{{ config.extra.author.name }}</span>
+          </span>
           {% if page.extra.image %}
-          <span hidden itemprop="image">{{ page.extra.image }}</span>
+          <span hidden itemprop="image">{{ page.permalink }}{{ page.extra.image }}</span>
+          {% else %}
+          <span hidden itemprop="image">{{ config.base_url }}/assets/img/ogp.png</span>
           {% endif %}
-          <span hidden itemprop="mainEntityOfPage">{{ page.summary }}</span>
+          <link hidden itemprop="mainEntityOfPage" href="{{ page.permalink }}" />
         </div>
         {% endif %}
       </header>

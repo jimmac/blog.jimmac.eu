@@ -13,7 +13,7 @@
         <a href="{{ card.url }}" class="featured-link">
           <div class="featured-visual" data-accent="{{ card.accent }}" aria-hidden="true">
             {% if card.image %}
-            <img class="featured-image" src="/assets/img/{{ card.image }}" alt="" loading="lazy" onerror="this.remove()">
+            <img class="featured-image" src="/assets/img/{{ card.image }}" alt="{{ card.title }}" loading="lazy" onerror="this.remove()">
             {% endif %}
           </div>
           <div class="featured-body">
