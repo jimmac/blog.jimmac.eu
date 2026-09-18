@@ -25,7 +25,7 @@ On GNOME OS, some developer tools like `git` and `toolbox` are in the base image
 
 ## Installing flatpak-builder
 
-`flatpak-builder` isn't though. It is distributed on Flathub as `org.flatpak.Builder`. Install it like any other Flatpak:
+`flatpak-builder` isn't part of base OS though. It is distributed on [Flathub](https://flathub.org) as `org.flatpak.Builder`. Install it like any other Flatpak:
 
 ```bash
 flatpak install flathub org.flatpak.Builder
