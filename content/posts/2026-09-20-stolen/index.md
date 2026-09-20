@@ -7,13 +7,12 @@ aliases = ["/2026/stolen/"]
 tags = ["music", "weeklybeats", "synth", "tracker"]
 [extra]
 image = "thum8b.png"
-mastodon_url = "https://mastodon.social/@jimmac/000000000000000000"
+mastodon_url = "https://mastodon.social/@jimmac/117303228317675314"
 related = [
   "posts/2026-09-14-innit/index.md",
   "posts/2026-05-09-fms-carrier/index.md",
   "posts/2022-02-15-fugue-machine-on-the-m8/index.md",
 ]
-audio = "speech.opus"
 +++
 
 Bombarded by the deception and [lies of the AI industry](https://www.youtube.com/watch?v=4qV5WWgFTS8) I chose to sample boy Amodei for the ironic outrage about Chinese companies stealing their dataset. Thus the tune title.
