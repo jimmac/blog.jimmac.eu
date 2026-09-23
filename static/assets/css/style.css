@@ -1229,19 +1229,19 @@ audio[controls] {
     inset-block-start: 1.25rem;
     display: flex;
     align-items: center;
-    gap: 2px;
-    height: 24px;
+    gap: 3px;
+    height: 28px;
     opacity: 0;
     transition: opacity 0.3s;
 
     span {
-      width: 2px;
+      width: 3px;
       height: 100%;
-      border-radius: 1.5px;
+      border-radius: 999px;
       background: var(--color-link);
-      transform: scaleY(0.05);
+      transform: scaleY(0.15);
       transform-origin: center;
-      transition: transform 0.1s ease-out;
+      will-change: transform;
     }
   }
 
