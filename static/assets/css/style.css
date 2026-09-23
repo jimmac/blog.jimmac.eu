@@ -525,19 +525,10 @@ table {
 
 .featured-card--wide {
   grid-column: 1 / -1;
-  background: var(--blue3);
-  color: #fff;
-  @media (prefers-color-scheme: dark) { background: var(--blue5); }
 
   & .featured-title {
     font-size: 1.5rem;
-    color: #fff;
     @media (max-width: 800px) { font-size: 1.25rem; }
-  }
-
-  & .featured-date,
-  & .featured-blurb {
-    color: rgba(255, 255, 255, 0.85);
   }
 
   & .featured-link {
