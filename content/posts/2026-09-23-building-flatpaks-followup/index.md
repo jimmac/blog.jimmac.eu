@@ -22,3 +22,5 @@ All you need to do with the [developer sysext](https://gnome.pages.gitlab.gnome.
 ```
 foundry init && foundry build
 ```
+
+Been building projects left and right today and it's rad.
