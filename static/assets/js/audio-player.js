@@ -206,6 +206,113 @@ async function fetchMeta(audio) {
 }
 
 /* ----------------------------------------------------------------
+   Shared 5-band meter (iOS Podcasts style).
+   Per-band auto-center in the dB domain: each bar tracks its own slow
+   average and displays deviation from it, so quiet speech and hot masters
+   both sit mid-scale. A fresh AnalyserNode reports -Infinity until audio
+   flows, which would poison the envelopes with NaN — guarded below.
+   ---------------------------------------------------------------- */
+
+function createMeter(audio, bars) {
+  let analyser, freqData, floatData, rafId, bandBins;
+  // Bands in Hz so the low bar actually covers the kick (~45-120 Hz).
+  const BANDS_HZ = [[45, 120], [120, 280], [280, 900], [900, 2800], [2800, 11000]];
+  const MIN_H = 0.15;
+  const ATTACK = 0.7;   // fast rise so kicks pop
+  const RELEASE = 0.18; // glide back down like iOS
+  const DB_DEV_RANGE = 12; // ±6 dB maps to full swing
+  const USE_FLOAT = typeof Float32Array !== "undefined";
+  const shown = Array.from({ length: bars.length }, () => 0);
+  const mean = Array.from({ length: bars.length }, () => null);
+
+  function resetBars() {
+    for (let i = 0; i < bars.length; i++) {
+      shown[i] = 0;
+      bars[i].style.transform = `scaleY(${MIN_H})`;
+    }
+  }
+  function resetRange() {
+    for (let i = 0; i < mean.length; i++) mean[i] = null;
+  }
+  function initAnalyser() {
+    if (analyser) return;
+    try {
+      const ctx = getCtx();
+      if (ctx.state === "suspended") ctx.resume();
+      const src = ctx.createMediaElementSource(audio);
+      analyser = ctx.createAnalyser();
+      analyser.fftSize = 1024;
+      // Fast enough to follow kicks; our own envelope does the gliding.
+      analyser.smoothingTimeConstant = 0.35;
+      analyser.minDecibels = -85;
+      analyser.maxDecibels = -25;
+      freqData = new Uint8Array(analyser.frequencyBinCount);
+      if (USE_FLOAT && analyser.getFloatFrequencyData) {
+        floatData = new Float32Array(analyser.frequencyBinCount);
+      }
+      // Hz bands -> bins for this context's sample rate, non-overlapping.
+      const binHz = ctx.sampleRate / analyser.fftSize;
+      bandBins = BANDS_HZ.slice(0, bars.length).map(([loHz, hiHz]) => {
+        const lo = Math.max(1, Math.floor(loHz / binHz));
+        const hi = Math.min(analyser.frequencyBinCount - 1, Math.max(lo, Math.floor(hiHz / binHz)));
+        return [lo, hi];
+      });
+      src.connect(analyser);
+      analyser.connect(ctx.destination);
+    } catch { /* cross-origin or unsupported – bars stay flat */ }
+  }
+  function bandAvgDb(lo, hi) {
+    let sum = 0;
+    for (let b = lo; b <= hi; b++) sum += floatData[b];
+    return sum / (hi - lo + 1);
+  }
+  function bandAvgByte(lo, hi) {
+    const end = Math.min(hi, freqData.length - 1);
+    let sum = 0;
+    for (let b = lo; b <= end; b++) sum += freqData[b];
+    return sum / ((end - lo + 1) * 255);
+  }
+  function tickLevels() {
+    if (!analyser) return;
+    if (floatData) {
+      analyser.getFloatFrequencyData(floatData);
+      for (let i = 0; i < bandBins.length; i++) {
+        const inst = bandAvgDb(bandBins[i][0], bandBins[i][1]);
+        if (!isFinite(inst) || inst <= -80) {
+          shown[i] += (0 - shown[i]) * RELEASE;
+          bars[i].style.transform = `scaleY(${(MIN_H + (1 - MIN_H) * shown[i]).toFixed(3)})`;
+          continue;
+        }
+        mean[i] = mean[i] === null ? inst : mean[i] + (inst - mean[i]) * 0.01;
+        const norm = Math.min(1, Math.max(0, 0.5 + (inst - mean[i]) / DB_DEV_RANGE));
+        const rate = norm > shown[i] ? ATTACK : RELEASE;
+        shown[i] += (norm - shown[i]) * rate;
+        bars[i].style.transform = `scaleY(${(MIN_H + (1 - MIN_H) * shown[i]).toFixed(3)})`;
+      }
+    } else {
+      // Fallback for browsers without float frequency data.
+      analyser.getByteFrequencyData(freqData);
+      for (let i = 0; i < bandBins.length; i++) {
+        const inst = bandAvgByte(bandBins[i][0], bandBins[i][1]);
+        const rate = inst > shown[i] ? ATTACK : RELEASE;
+        shown[i] += (inst - shown[i]) * rate;
+        bars[i].style.transform = `scaleY(${(MIN_H + (1 - MIN_H) * shown[i]).toFixed(3)})`;
+      }
+    }
+    rafId = requestAnimationFrame(tickLevels);
+  }
+
+  return {
+    start() { initAnalyser(); tickLevels(); },
+    stop(withRange) {
+      cancelAnimationFrame(rafId);
+      resetBars();
+      if (withRange) resetRange();
+    },
+  };
+}
+
+/* ----------------------------------------------------------------
    Player init
    ---------------------------------------------------------------- */
 
@@ -283,118 +390,21 @@ function initPlayer(audio) {
   btnBack.addEventListener("click", () => { audio.currentTime = Math.max(0, audio.currentTime - 15); });
   btnFwd.addEventListener("click", () => { audio.currentTime = Math.min(audio.duration, audio.currentTime + 15); });
 
-  // --- analyser for level bars (5-band meter, iOS Podcasts style) ---
-  let analyser, freqData, floatData, rafId, bandBins;
-  // Bands in Hz so the low bar actually covers the kick (~45-120 Hz).
-  // The old bin-fixed bands started at ~190 Hz, missing the kick fundamental.
-  const BANDS_HZ = [[45, 120], [120, 280], [280, 900], [900, 2800], [2800, 11000]];
-  const MIN_H = 0.15;
-  const ATTACK = 0.7;   // fast rise so kicks pop
-  const RELEASE = 0.18; // glide back down like iOS
-  const shown = [0, 0, 0, 0, 0];
-  // Per-band auto-center: each bar tracks its own slow average (in dB)
-  // and displays deviation from it. Quiet speech and hot masters both sit
-  // mid-scale by construction; the kick punches because hits sit ~+6 dB
-  // over the low bar's average while gaps dip below it. dB domain is
-  // essential: a limited master saturates byte spectra (std ~ 0), but dB
-  // keeps ~15 dB of swing per band to work with.
-  const USE_FLOAT = typeof Float32Array !== "undefined";
-  const DB_DEV_RANGE = 12; // ±6 dB maps to full swing
-  const mean = [null, null, null, null, null];
-  function resetBars() {
-    for (let i = 0; i < bars.length; i++) {
-      shown[i] = 0;
-      bars[i].style.transform = `scaleY(${MIN_H})`;
-    }
-  }
-  function resetRange() {
-    for (let i = 0; i < mean.length; i++) mean[i] = null;
-  }
-  function initAnalyser() {
-    if (analyser) return;
-    try {
-      const ctx = getCtx();
-      if (ctx.state === "suspended") ctx.resume();
-      const src = ctx.createMediaElementSource(audio);
-      analyser = ctx.createAnalyser();
-      analyser.fftSize = 1024;
-      // Fast enough to follow kicks; our own envelope does the gliding.
-      analyser.smoothingTimeConstant = 0.35;
-      analyser.minDecibels = -85;
-      analyser.maxDecibels = -25;
-      freqData = new Uint8Array(analyser.frequencyBinCount);
-      if (USE_FLOAT && analyser.getFloatFrequencyData) {
-        floatData = new Float32Array(analyser.frequencyBinCount);
-      }
-      // Hz bands -> bins for this context's sample rate, non-overlapping.
-      const binHz = ctx.sampleRate / analyser.fftSize;
-      bandBins = BANDS_HZ.map(([loHz, hiHz]) => {
-        const lo = Math.max(1, Math.floor(loHz / binHz));
-        const hi = Math.min(analyser.frequencyBinCount - 1, Math.max(lo, Math.floor(hiHz / binHz)));
-        return [lo, hi];
-      });
-      src.connect(analyser);
-      analyser.connect(ctx.destination);
-    } catch { /* cross-origin or unsupported – bars stay flat */ }
-  }
-  function bandAvgDb(lo, hi) {
-    let sum = 0;
-    for (let b = lo; b <= hi; b++) sum += floatData[b];
-    return sum / (hi - lo + 1);
-  }
-  function bandAvgByte(lo, hi) {
-    const end = Math.min(hi, freqData.length - 1);
-    let sum = 0;
-    for (let b = lo; b <= end; b++) sum += freqData[b];
-    return sum / ((end - lo + 1) * 255);
-  }
-  function tickLevels() {
-    if (!analyser) return;
-    if (floatData) {
-      analyser.getFloatFrequencyData(floatData);
-      for (let i = 0; i < bandBins.length; i++) {
-        const inst = bandAvgDb(bandBins[i][0], bandBins[i][1]);
-        // A fresh AnalyserNode reports -Infinity until audio flows through
-        // it; feeding that into the followers poisons them with NaN (which
-        // then sticks forever, since NaN + anything = NaN). Ease toward rest
-        // until real data arrives.
-        if (!isFinite(inst) || inst <= -80) {
-          shown[i] += (0 - shown[i]) * RELEASE;
-          bars[i].style.transform = `scaleY(${(MIN_H + (1 - MIN_H) * shown[i]).toFixed(3)})`;
-          continue;
-        }
-        mean[i] = mean[i] === null ? inst : mean[i] + (inst - mean[i]) * 0.01;
-        const norm = Math.min(1, Math.max(0, 0.5 + (inst - mean[i]) / DB_DEV_RANGE));
-        const rate = norm > shown[i] ? ATTACK : RELEASE;
-        shown[i] += (norm - shown[i]) * rate;
-        bars[i].style.transform = `scaleY(${(MIN_H + (1 - MIN_H) * shown[i]).toFixed(3)})`;
-      }
-    } else {
-      // Fallback for browsers without float frequency data.
-      analyser.getByteFrequencyData(freqData);
-      for (let i = 0; i < bandBins.length; i++) {
-        const inst = bandAvgByte(bandBins[i][0], bandBins[i][1]);
-        const rate = inst > shown[i] ? ATTACK : RELEASE;
-        shown[i] += (inst - shown[i]) * rate;
-        bars[i].style.transform = `scaleY(${(MIN_H + (1 - MIN_H) * shown[i]).toFixed(3)})`;
-      }
-    }
-    rafId = requestAnimationFrame(tickLevels);
-  }
+  // --- analyser-driven level bars (shared meter engine) ---
+  const meter = createMeter(audio, bars);
 
   audio.addEventListener("play", () => {
     player.classList.add("playing");
-    initAnalyser();
-    tickLevels();
+    meter.start();
   });
-  audio.addEventListener("pause", () => { player.classList.remove("playing"); cancelAnimationFrame(rafId); resetBars(); });
+  audio.addEventListener("pause", () => { player.classList.remove("playing"); meter.stop(false); });
   audio.addEventListener("loadedmetadata", () => { timeDur.textContent = formatTime(audio.duration); });
   audio.addEventListener("timeupdate", () => {
     const pct = audio.duration ? (audio.currentTime / audio.duration) * 100 : 0;
     fill.style.width = pct + "%";
     timeCur.textContent = formatTime(audio.currentTime);
   });
-  audio.addEventListener("ended", () => { player.classList.remove("playing"); cancelAnimationFrame(rafId); resetBars(); resetRange(); });
+  audio.addEventListener("ended", () => { player.classList.remove("playing"); meter.stop(true); });
 
   track.addEventListener("click", (e) => {
     const ratio = e.offsetX / track.offsetWidth;
@@ -454,35 +464,7 @@ function initTTSPlayer(button) {
     }
   });
 
-  let analyser, freqData, rafId;
-  const BINS  = [3, 5, 8, 12, 17, 22, 28];
-  const FLOOR = [0.55, 0.35, 0.15, 0.05, 0.1, 0.2, 0.35];
-  const CEIL  = [0.2, 0.4, 0.7, 0.85, 0.7, 0.4, 0.2];
-
-  function initAnalyser() {
-    if (analyser) return;
-    try {
-      const ctx = getCtx();
-      const src = ctx.createMediaElementSource(audio);
-      analyser = ctx.createAnalyser();
-      analyser.fftSize = 64;
-      freqData = new Uint8Array(analyser.frequencyBinCount);
-      src.connect(analyser);
-      analyser.connect(ctx.destination);
-    } catch { /* cross-origin or unsupported */ }
-  }
-
-  function tick() {
-    if (!analyser) return;
-    analyser.getByteFrequencyData(freqData);
-    for (let i = 0; i < BINS.length; i++) {
-      const raw = freqData[BINS[i]] / 255;
-      const normed = Math.min(1, Math.max(0, raw - FLOOR[i]) / (1 - FLOOR[i]));
-      const v = Math.pow(normed, 0.6) * CEIL[i];
-      bars[i].style.transform = `scaleY(${0.05 + v * 0.95})`;
-    }
-    rafId = requestAnimationFrame(tick);
-  }
+  const meter = createMeter(audio, bars);
 
   button.addEventListener("click", (e) => {
     e.preventDefault();
@@ -491,13 +473,12 @@ function initTTSPlayer(button) {
 
   audio.addEventListener("play", () => {
     button.classList.add("tts-playing");
-    initAnalyser();
-    tick();
+    meter.start();
   });
 
   audio.addEventListener("pause", () => {
     button.classList.remove("tts-playing");
-    cancelAnimationFrame(rafId);
+    meter.stop(false);
   });
 
   audio.addEventListener("timeupdate", () => {
@@ -509,7 +490,7 @@ function initTTSPlayer(button) {
 
   audio.addEventListener("ended", () => {
     button.classList.remove("tts-playing");
-    cancelAnimationFrame(rafId);
+    meter.stop(true);
     audio.currentTime = 0;
     if (isFinite(audio.duration)) {
       durationEl.textContent = formatTime(audio.duration);
