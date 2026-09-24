@@ -4,7 +4,7 @@ description = "Turns out there's a much easier method to building flatpaks on GN
 date = 2026-09-23
 aliases = ["/2026/building-flatpaks-followup/"]
 [taxonomies]
-tags = ["flatpak", "flathub", "gnome", "tech", "tutorial"]
+tags = ["flatpak", "flathub", "gnome", "tech", "tutorial", "development"]
 [extra]
 image = "thumb.png"
 mastodon_url = "https://mastodon.social/@jimmac/117321986112178920"
@@ -12,6 +12,7 @@ related = [
   "posts/2026-09-18-building-flatpaks-locally/index.md",
   "posts/2022-11-11-Builder-Shell/index.md"
 ]
+audio = "speech.opus"
 +++
 
 Some of you mentioned the [flatpak-builder](/posts/building-flatpaks-locally/) approach is way too complicated. Indeed it is.

@@ -4,7 +4,7 @@ description = "Using flatpak-builder from Flathub to build and test Flatpak apps
 date = 2026-09-18
 aliases = ["/2026/building-flatpaks-locally/"]
 [taxonomies]
-tags = ["flatpak", "flathub", "gnome", "tech", "tutorial"]
+tags = ["flatpak", "flathub", "gnome", "tech", "tutorial", "development"]
 [extra]
 image = "thumb.svg"
 mastodon_url = "https://mastodon.social/@jimmac/117293604864644158"
