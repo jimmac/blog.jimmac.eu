@@ -7,6 +7,7 @@ aliases = ["/2026/digger/"]
 tags = ["movie"]
 [extra]
 image = "digger.webp"
+mastodon_url = "https://mastodon.social/@jimmac/117447069032432373"
 related = [
   "posts/2024-09-13-weyland/index.md",
   "posts/2025-05-22-scavengers-reign/index.md",
