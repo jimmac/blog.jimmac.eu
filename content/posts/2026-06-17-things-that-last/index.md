@@ -14,7 +14,7 @@ related = [
 audio = "speech.opus"
 +++
 
-One of the great annual trips we do with a bunch of friends is a train trip to Jakuszyce, a tiny stop in neighbouring Poland, and ride along the contour line through one of the most beautiful places in the Jizera Mountains. There's only one proper climb from Smedava to Knajpa, the rest is fast. A joyride. Catching up on our lives on the train and a joyride home is the best combo. 
+One of the great annual trips we do with a bunch of friends is a train trip to Jakuszyce, a tiny stop in neighboring Poland, and ride along the contour line through one of the most beautiful places in the Jizera Mountains. There's only one proper climb from Smedava to Knajpa, the rest is fast. A joyride. Catching up on our lives on the train and a joyride home is the best combo. 
 
 <img loading="lazy" src="bigbike.webp" alt="Forever Young Bike" class="full">
 
