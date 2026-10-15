@@ -8,7 +8,7 @@ slug = "pixelart-wallpapers"
 tags = ["pixelart", "wallpaper", "art", "gnome", "blender", "work"]
 [extra]
 image = "thumb.webp"
-# mastodon_url = "https://mastodon.social/@jimmac/REPLACE_AFTER_PUBLISH"
+mastodon_url = "https://mastodon.social/@jimmac/117444475533166691"
 related = [
   "posts/2026-09-16-gnome51-wallpapers/index.md",
   "posts/2026-04-25-app-pixels/index.md",
