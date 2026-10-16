@@ -753,7 +753,7 @@ a.post-item {
 }
 
 .header {
-  margin-block-start: 7.8em;
+  margin-block-start: 2rem;
   margin-block-end: 3em;
 
   & .tags {
