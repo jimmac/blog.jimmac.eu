@@ -7,6 +7,7 @@ aliases = ["/2026/liberec-dam/"]
 tags = ["fpv", "drone", "music", "dirtywaveM8"]
 [extra]
 image = "thumb.webp"
+mastodon_url = "https://mastodon.social/@jimmac/117460866839273537"
 related = [
   "posts/2021-06-07-troubled-minister/index.md",
   "posts/2021-05-20-100kph/index.md",
