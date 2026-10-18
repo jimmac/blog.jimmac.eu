@@ -55,6 +55,8 @@ For inline images, the approach that seems more straight forward and I've taken 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KflnciWB6-c?si=7iR1SuiHF_s48Uih" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+([Watch "Prefers Reduced Motion" on YouTube](https://www.youtube.com/watch?v=KflnciWB6-c))
+
 # Sphinx/RST
 
 GNOME *Human Interface Guidelines* are written in restructured text/Sphinx, however. Escaping to html for images/pictures would be quite cumbersome, but luckily dark mode is supported in the furo theme (and derivates) using the `only-light` and `only-dark` classes. The markup gets a little chatty, but still quite legible. There's some iterations to be made, but in terms of legibility it's finally a bit more accessible.

@@ -25,6 +25,8 @@ I've produced a [fraction of my drone videos](https://www.youtube.com/c/JakubSte
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0tShCs6BMrE?si=-IBul5PXzQS5cQSR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+([Watch "M8: Pentatonic Bells" on YouTube](https://www.youtube.com/watch?v=0tShCs6BMrE))
+
 I've also come back to pixel art, even though the joy is a lot tainted by the tools I use. Very convenient, very direct, so much fun, very proprietary. 
 
 ![libadwaita](libadwaita.gif)

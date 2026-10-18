@@ -27,4 +27,6 @@ All of the martian footage has been rendered with the realtime eevee engine, max
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AxYo_qJi2XQ?si=jvPc8m-i7z4rxQ-k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+([Watch "Digitone + Digitakt: Ingenuity FPV" on YouTube](https://www.youtube.com/watch?v=AxYo_qJi2XQ))
+
 The original track was recorded at 60BPM, but sadly the footage is unbearable to watch for over 4 minutes, so I've resampled it to 90BMP to keep the legth down. It does glitch at some points, but the motivation to work on this has reached critical levels, so I'm calling it done.

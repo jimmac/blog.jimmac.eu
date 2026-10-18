@@ -25,6 +25,8 @@ related = [
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UXctJgtPJrc?si=vQMFCK365YDbHG4T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+([Watch "GNOME 43 Wallpaper Streams" on YouTube](https://www.youtube.com/watch?v=UXctJgtPJrc))
+
 I took extra time this release to focus on refreshing the whole wallpaper set for 43. While the default wallpaper isn't a big departure from 3.38 hexagon theme, most of the supplemental wallpapers have been refreshed from the ground up. The [video above](https://vimeo.com/736863449) shows a few glimpses of all the one way streets it took for the default to land back in the hexagons.
 
 GNOME 42 was the first release to ship a bunch of SVG based wallpapers that embraced the flat colors and gradients and benefited from being just a few kilobytes in file size. It was also the first release to ship *dark preference* variants. All of that continues into 43.

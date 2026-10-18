@@ -15,6 +15,8 @@ GNOME shell's [quick settings](https://gitlab.gnome.org/fmuellner/quick-settings
 
 <iframe class="full" src="https://www.youtube.com/embed/S9wKTD0hcFY?si=q73gmtiZDHIbjzGK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+([Watch "berlin mini guadec 2160p" on YouTube](https://www.youtube.com/watch?v=S9wKTD0hcFY))
+
 I've shot a [few photos](http://jimmac.musichall.cz/photos/2022_Berlin_Mirror_GUADEC/) and edited the short [video above](https://vimeo.com/733288200). Even the music was done during the night sessions at [C-Base](https://www.c-base.org/). 
 
 Big thanks to the C-Base crew for taking good care of us in all aspects -- audio-visual support for the talks and following the main event in Mexico, refreshments and even outside seating. Last but not least the GNOME Foundation for sponsoring the travel (mostly on the ground).

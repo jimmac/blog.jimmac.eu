@@ -22,6 +22,8 @@ It’s been a while since I’ve annoyed you by mentioning drones, but here we a
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/b2Io9hGHNTw?si=KUUhi3cLzRLvq4n6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+([Watch "Bike Trip Jizerka" on YouTube](https://www.youtube.com/watch?v=b2Io9hGHNTw))
+
 The camera quality won’t blow you away, but it’s solid enough if you can overlook its overly-sharpened aesthetic. The Neo can even play the part of a lightweight cinewhoop or a poor man’s DJI Mini, though that’s only if you own DJI’s latest goggles and remotes—so there’s a bit of a catch. I bought it mainly for the fun shots you’re watching here, and while I’m not interested in keeping up with DJI’s endless upgrades, I must admit the little drone has charm and utility.
 
 Neo’s `Follow` mode is a standout, tracking you accurately with just its camera feed and no fancy sensors. It tries to follow your path to avoid hitting anything. But beware the `Direction Tracking` mode in crowded areas—it has a habit of misjudging where you’re facing and wobbling about. The biggest hiccup I encountered? No gesture to make it return home, which left me standing under it after performing a `Rocket` shot, until the battery ran out. Luckily the pain lasted only about 10 minutes. Overall, it’s a great toy for hikes, casual outings, and occasional public embarrassment.

@@ -15,3 +15,6 @@ related = [
 Initially I was going to do a more elaborate workflow tutorial, but time flies when you're having fun on 3.24. With the release out, I'd rather publish this than let it rot. Maybe the next one!
 
 <iframe class="full" src="https://www.youtube.com/embed/dfw-aifD5qg" title="Recipe Icon" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+([Watch "Icon Workflow – Recipes" on YouTube](https://www.youtube.com/watch?v=dfw-aifD5qg))
+

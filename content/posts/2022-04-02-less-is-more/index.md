@@ -31,6 +31,8 @@ However a radical constraint of a single hour to lay down a pattern and record a
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Fqk1mnxcBMU?si=He3dAwVPTbleB3i_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+([Watch "M8+TD3: Acid Downtempo" on YouTube](https://www.youtube.com/watch?v=Fqk1mnxcBMU))
+
 Even not being able to figure out how to do dual mono mix on the M8 is not a show stopper in such scenario (apologies to every one using headphones).
 
 I hope a proper spring comes soon as I can't wait to FPV. This one pack in the garden was *painful* on the fingers.

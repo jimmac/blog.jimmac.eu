@@ -31,4 +31,6 @@ From about 3 videos a week in 2018 I'm down to about 3 a year. One might say I'v
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QMTmC736Um4?si=P4vJY5Di5pMoJLEl" title="Take Frequent Breaks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+([Watch "FPV Showreel 2023" on YouTube](https://www.youtube.com/watch?v=QMTmC736Um4))
+
 I've completely dropped the ball when it comes to racing though. Didn't even qualify in Klatovy this year, because absolutely everyone has been training like crazy. It's been lovely to hang around with the weirdos in the three competitions I attended.

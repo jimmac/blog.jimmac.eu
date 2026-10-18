@@ -44,6 +44,8 @@ What makes FMS a bit crazy is what it's doing under the hood. The Gameboy Advanc
 
 <iframe class="full" src="https://www.youtube.com/embed/OvFURaZI1zY" title="FMS Carrier" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen title="First composition on the FMS, performed on the R35S handheld"></iframe>
 
+([Watch "FMS: Crunchy" on YouTube](https://www.youtube.com/watch?v=OvFURaZI1zY))
+
 Picking GBA as a platform of choice in 2026 may be strange. Surprisingly, it can be used on a very large array of hardware. Not only can you plug a memory card into the original hardware or new fancy clones like the [Analogue Pocket](https://www.analogue.co/pocket), you have an exponentially larger choice of dozens if not hundreds of Chinese emulator handhelds from [Anbernic](https://anbernic.com/), [Powkiddy](https://powkiddy.com/), [Miyoo](https://lomiyoo.com/) or [Retroid](https://www.goretroid.com/). You can also use the [Steam Deck](https://store.steampowered.com/steamdeck) or any PC running one of the many emulators, [RetroArch](https://www.retroarch.com/) being the most popular one.
 
 FMS really touched me. Partly because I have a soft spot for the Nordic demo scene, but mainly for its novel approach to composition. Just like with the M8, creating basic building blocks and then applying transposition to break the looping monotony is my favorite workflow. This little thing has that in the form of pattern and trig transposition but also a novel take on "effects". Yes, you heard me right. There's a sorta-kinda-delay. Even does stereo field ping-pong.

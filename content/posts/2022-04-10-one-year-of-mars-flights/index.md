@@ -17,6 +17,8 @@ Next week it's going to be a year since Ingenuity made the first flight in an at
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/s7NoLm4xUB4?si=tMataTVDVRIGsrLB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+([Watch "Ingenuity's One Year of Mars Flights" on YouTube](https://www.youtube.com/watch?v=s7NoLm4xUB4))
+
 Something that sounded unlikely became a great success with [24 flights](https://mars.nasa.gov/technology/helicopter/#Flight-Log) so far. To celebrate the occasion I revisited an older project of mine and used more appropriate footage shot by my friend [VOPO](https://www.vojtechpollak.com/) at Fuertaventura, Canary Islands. I rendered some overlays of the Ingenuity model kindly provided by NASA.
 
 ![Ingenuity with Perseverance](ingenuity-and-perseverance.webp)

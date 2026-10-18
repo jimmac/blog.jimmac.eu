@@ -23,6 +23,8 @@ While [Flatpak](https://flatpak.org) itself is an architecturally decentralized 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/d770zFM4jIE?si=TyuylOVmFM4FsaiK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+([Watch "Flathub Rebrand" on YouTube](https://www.youtube.com/watch?v=d770zFM4jIE))
+
 Thus there is no better time to refresh what has become a little dated, Flathub's visual identity. It centers around the core of what Flathub is — the apps themselves. The identity isn't very loud and shouty. The flashy colors and emphasis remains on the apps themselves, Flathub is the neutral platform for the apps to shine.
 
 <a href="https://github.com/flathub/website/files/10815847/brand-guide.pdf"><img loading="lazy" src="brand.webp" alt="Brand Guidelines"></a>

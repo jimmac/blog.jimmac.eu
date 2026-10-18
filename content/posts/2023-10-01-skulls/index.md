@@ -18,6 +18,8 @@ I've been wanting to make a game for as long as I remember. Granted I don't reme
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/A4IEt4OpzEw?si=-Z_sinGfKmsqKqxw" title="Take Frequent Breaks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+([Watch "go bust some skulls!" on YouTube](https://www.youtube.com/watch?v=A4IEt4OpzEw))
+
 
 ## Pixel Art Obsession
 

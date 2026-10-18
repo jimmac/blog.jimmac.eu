@@ -18,4 +18,10 @@ I avoid fiddling with batteries in the house, so I soldered up a [4S Li-Ion pack
 
 
 
+<!-- vimeo is a racket
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/552584366" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+-->
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7iIjy0WqTbc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+([Watch "5K GoPro Hero 9 -- Digitone + Digitakt -- 100KPH" on YouTube](https://www.youtube.com/watch?v=7iIjy0WqTbc))
