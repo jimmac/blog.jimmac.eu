@@ -1,66 +1,192 @@
-#!/usr/bin/env python
-"""Generate text-to-speech audio for blog posts using Chatterbox TTS."""
+#!/usr/bin/env python3
+"""Generate spoken audio (Opus) for blog posts using Qwen3-TTS.
+
+Single entry point. Run it with any Python 3:
+
+    ./scripts/generate-tts.py                 # latest post
+    ./scripts/generate-tts.py content/posts/NAME
+    ./scripts/generate-tts.py --all
+
+On the first run it creates a dedicated virtualenv (venv-qwen) next to this
+file, installs/updates every dependency it needs, and then re-executes itself
+inside that environment. No manual setup, no activating anything.
+"""
 
 import argparse
 import glob
+import hashlib
 import os
 import re
 import subprocess
 import sys
 import tempfile
 
-# Chatterbox imports
-try:
-    from chatterbox.tts_turbo import ChatterboxTurboTTS
-    import torch
-    import numpy as np
-    from scipy.io import wavfile
-    # Set default dtype to float32 to avoid dtype mismatch errors
-    torch.set_default_dtype(torch.float32)
-except ImportError as e:
-    print(f"Error: Missing required packages. Install with: pip install chatterbox-tts torch scipy", file=sys.stderr)
-    print(f"Details: {e}", file=sys.stderr)
-    sys.exit(1)
+# --------------------------------------------------------------------------
+# Paths
+# --------------------------------------------------------------------------
+
+SCRIPTS_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_ROOT = os.path.dirname(SCRIPTS_DIR)
+VENV_DIR = os.path.join(REPO_ROOT, "venv-qwen")
+VENV_PYTHON = os.path.join(VENV_DIR, "bin", "python")
+STAMP_FILE = os.path.join(VENV_DIR, ".tts-requirements")
+VOICE_REFERENCE = os.path.join(SCRIPTS_DIR, "voice_reference_10s.wav")
+
+# --------------------------------------------------------------------------
+# Environment bootstrap
+# --------------------------------------------------------------------------
+
+TORCH_INDEX = "https://download.pytorch.org/whl/cpu"
+
+# pip invocations, in order. The list is hashed to know when to reinstall.
+PIP_STEPS = [
+    ["--upgrade", "pip", "setuptools", "wheel"],
+    ["torch", "torchaudio", "--index-url", TORCH_INDEX],
+    ["--no-deps", "qwen-tts"],
+    [
+        "transformers==4.57.3",
+        "accelerate==1.12.0",
+        "librosa",
+        "soundfile",
+        "onnxruntime",
+        "einops",
+        "sox",
+        "scipy",
+        "numpy",
+    ],
+]
+
+REQUIRED_IMPORTS = ["qwen_tts", "torch", "scipy", "numpy"]
+
+
+def _requirements_hash():
+    return hashlib.sha256(repr(PIP_STEPS).encode()).hexdigest()
+
+
+def _find_python310():
+    """Locate a Python 3.10 interpreter (the version Qwen3-TTS is pinned to)."""
+    for name in ("python3.10", "python3"):
+        exe = subprocess.run(
+            ["bash", "-lc", f"command -v {name}"],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.DEVNULL,
+            text=True,
+        ).stdout.strip()
+        if not exe:
+            continue
+        try:
+            major, minor = (
+                int(x) for x in
+                subprocess.run(
+                    [exe, "-c", "import sys;print('%d %d' % sys.version_info[:2])"],
+                    stdout=subprocess.PIPE,
+                    text=True,
+                    check=True,
+                ).stdout.split()
+            )
+        except Exception:
+            continue
+        if (major, minor) == (3, 10):
+            return exe
+    return None
+
+
+def _deps_ok():
+    if not os.path.exists(STAMP_FILE):
+        return False
+    with open(STAMP_FILE) as f:
+        if f.read().strip() != _requirements_hash():
+            return False
+    try:
+        subprocess.run(
+            [VENV_PYTHON, "-c", "import " + ", ".join(REQUIRED_IMPORTS)],
+            check=True,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+        )
+    except Exception:
+        return False
+    return True
+
+
+def _install_deps():
+    print("Setting up TTS dependencies (this may take a while)...", file=sys.stderr)
+    for step in PIP_STEPS:
+        print(f"  pip install {' '.join(step)}", file=sys.stderr)
+        subprocess.run([VENV_PYTHON, "-m", "pip", "install", *step], check=True)
+    with open(STAMP_FILE, "w") as f:
+        f.write(_requirements_hash())
+
+
+def ensure_environment():
+    """Make sure we run inside the venv with all dependencies present."""
+    if os.path.realpath(sys.executable) == os.path.realpath(VENV_PYTHON):
+        return
+
+    if not os.path.exists(VENV_PYTHON):
+        python = _find_python310()
+        if python is None:
+            sys.exit(
+                "ERROR: Python 3.10 not found.\n"
+                "Install it (e.g. 'brew install python@3.10' or your distro package)\n"
+                "and run this script again."
+            )
+        print(f"Creating virtualenv at {VENV_DIR}...", file=sys.stderr)
+        subprocess.run([python, "-m", "venv", VENV_DIR], check=True)
+
+    if not _deps_ok():
+        _install_deps()
+
+    print("Launching TTS environment...", file=sys.stderr)
+    os.execv(VENV_PYTHON, [VENV_PYTHON, os.path.abspath(__file__), *sys.argv[1:]])
+
+
+# --------------------------------------------------------------------------
+# Generation (runs inside the venv)
+# --------------------------------------------------------------------------
 
 OUTPUT_NAME = "speech.opus"
 MIN_WORDS = 150
 
-# Reference audio for voice cloning
-VOICE_REFERENCE = os.path.join(os.path.dirname(__file__), "voice_reference_10s.wav")
+# Hugging Face model id. 0.6B base (voice clone) by default.
+MODEL_NAME = "Qwen/Qwen3-TTS-12Hz-0.6B-Base"
+LANGUAGE = "English"
 
-# Pronunciation dictionary - map words to phonetic respellings
-# IPA: /jeˈʃæ͜ɑp/ -> phonetic: "yeh-SHAP"
+# Transcript of the reference audio (required for full cloning quality).
+# Leave empty for embedding-only cloning (lower fidelity but works).
+REFERENCE_TEXT = "The proof. The blog port worked better than expected. Finding CI github action was where most enthusiasm was lo-"
+
+# Pronunciation dictionary - map words to phonetic respellings.
 PRONUNCIATION_FIXES = {
     "gesceap": "yeh-SHAP",
     "Gesceap": "yeh-SHAP",
     "GNOME": "NOME",
 }
 
-# Global model instance (initialized on first use)
-_chatterbox_model = None
+_qwen_model = None
 
 
-def get_chatterbox_model():
-    """Get or initialize the Chatterbox TTS model (singleton)."""
-    global _chatterbox_model
-    if _chatterbox_model is None:
+def get_qwen_model():
+    """Get or initialize the Qwen3-TTS model (singleton)."""
+    global _qwen_model
+    if _qwen_model is None:
+        import torch
+
         device = "cuda" if torch.cuda.is_available() else "cpu"
         if device == "cpu":
             torch.set_num_threads(os.cpu_count())
             torch.set_num_interop_threads(min(4, os.cpu_count()))
-            print(f"Initializing Chatterbox TTS model on CPU ({os.cpu_count()} threads)...", file=sys.stderr)
+            print(f"Initializing Qwen3-TTS model on CPU ({os.cpu_count()} threads)...", file=sys.stderr)
         else:
-            print(f"Initializing Chatterbox TTS model on {device}...", file=sys.stderr)
-        _chatterbox_model = ChatterboxTurboTTS.from_pretrained(device=device)
-        if device == "cpu":
-            try:
-                _chatterbox_model = torch.compile(_chatterbox_model, mode="reduce-overhead")
-                print("  torch.compile() applied", file=sys.stderr)
-            except Exception as e:
-                import traceback
-                print(f"  torch.compile() not available:", file=sys.stderr)
-                traceback.print_exc(file=sys.stderr)
-    return _chatterbox_model
+            print(f"Initializing Qwen3-TTS model on {device}...", file=sys.stderr)
+        dtype = torch.bfloat16 if device == "cuda" else torch.float32
+        _qwen_model = Qwen3TTSModel.from_pretrained(
+            MODEL_NAME,
+            device_map=device,
+            dtype=dtype,
+            attn_implementation="flash_attention_2" if device == "cuda" else "eager",
+        )
+    return _qwen_model
 
 
 def parse_post(path):
@@ -122,8 +248,7 @@ def strip_markdown(text):
     text = text.replace("&amp;", "&")
     text = text.replace("&lt;", "<")
     text = text.replace("&gt;", ">")
-    # Convert headings to text with pauses
-    # Add double period after headings to create a longer pause
+    # Convert headings to text with pauses (double period = longer pause)
     text = re.sub(r"^#{1,6}\s+(.+?)$", r"\1..", text, flags=re.MULTILINE)
     # Remove bold/italic markers
     text = re.sub(r"\*{1,3}([^*]+)\*{1,3}", r"\1", text)
@@ -149,21 +274,17 @@ def patch_front_matter(path, front_matter, body):
     for line in lines:
         stripped = line.strip()
 
-        # Check if we're entering [extra] section
         if stripped == "[extra]":
             in_extra = True
             new_lines.append(line)
             continue
 
-        # If we're in [extra] and hit an existing audio line, replace it
         if in_extra and re.match(r'^audio\s*=', stripped):
             if not patched:
                 new_lines.append(f'audio = "{OUTPUT_NAME}"')
                 patched = True
-            # Skip any additional audio lines
             continue
 
-        # If we're leaving [extra] section, add audio if we haven't yet
         if in_extra and stripped.startswith("["):
             if not patched:
                 new_lines.append(f'audio = "{OUTPUT_NAME}"')
@@ -172,12 +293,10 @@ def patch_front_matter(path, front_matter, body):
 
         new_lines.append(line)
 
-    # If [extra] was the last section and we haven't patched yet
     if in_extra and not patched:
         new_lines.append(f'audio = "{OUTPUT_NAME}"')
         patched = True
 
-    # If there was no [extra] section at all
     if not patched:
         new_lines.append("[extra]")
         new_lines.append(f'audio = "{OUTPUT_NAME}"')
@@ -190,14 +309,12 @@ def patch_front_matter(path, front_matter, body):
 def fix_pronunciation(text):
     """Replace words with phonetic respellings for better TTS pronunciation."""
     for word, respelling in PRONUNCIATION_FIXES.items():
-        # Use word boundaries to avoid partial matches
         text = re.sub(rf'\b{re.escape(word)}\b', respelling, text, flags=re.IGNORECASE)
     return text
 
 
 def chunk_text(text, max_words=100):
     """Split text into chunks by sentences, respecting max word count."""
-    # Split into sentences
     sentences = re.split(r'(?<=[.!?])\s+', text)
     chunks = []
     current_chunk = []
@@ -220,54 +337,70 @@ def chunk_text(text, max_words=100):
 
 
 def generate_audio(text, output_path):
-    """Generate TTS using Chatterbox and encode to Opus via ffmpeg."""
-    model = get_chatterbox_model()
+    """Generate TTS using Qwen3-TTS and encode to Opus via ffmpeg."""
+    import numpy as np
+    import torch
+    from scipy.io import wavfile
 
-    # Split text into chunks to avoid tokenizer truncation
+    model = get_qwen_model()
+
     chunks = chunk_text(text, max_words=100)
     print(f"  Generating {len(chunks)} chunk(s)...", file=sys.stderr)
 
-    all_audio = []
+    # Build the voice clone prompt once (extracts speaker embedding).
+    try:
+        if REFERENCE_TEXT:
+            prompt = model.create_voice_clone_prompt(
+                ref_audio=VOICE_REFERENCE,
+                ref_text=REFERENCE_TEXT,
+                x_vector_only_mode=False,
+            )
+        else:
+            prompt = model.create_voice_clone_prompt(
+                ref_audio=VOICE_REFERENCE,
+                x_vector_only_mode=True,
+            )
+    except Exception as e:
+        print(f"  Failed to build voice clone prompt: {e}", file=sys.stderr)
+        return False
 
-    for i, chunk in enumerate(chunks, 1):
-        print(f"  Chunk {i}/{len(chunks)}...", file=sys.stderr)
+    with torch.inference_mode():
         try:
-            with torch.inference_mode():
-                wav = model.generate(chunk, audio_prompt_path=VOICE_REFERENCE)
-            audio_np = wav.cpu().numpy()
-            if audio_np.ndim == 2:
-                audio_np = audio_np[0]
-            all_audio.append(audio_np)
+            wavs, sr = model.generate_voice_clone(
+                text=chunks,
+                language=[LANGUAGE] * len(chunks),
+                voice_clone_prompt=prompt,
+            )
         except Exception as e:
-            print(f"  Chatterbox generation failed on chunk {i}: {e}", file=sys.stderr)
+            print(f"  Qwen3-TTS generation failed: {e}", file=sys.stderr)
             return False
 
-    # Concatenate all audio chunks
-    if not all_audio:
-        print(f"  No audio generated", file=sys.stderr)
-        return False
+    all_audio = []
+    for i, wav in enumerate(wavs, 1):
+        print(f"  Chunk {i}/{len(wavs)} done", file=sys.stderr)
+        audio_np = wav.cpu().numpy() if hasattr(wav, "cpu") else np.asarray(wav)
+        if audio_np.ndim == 2:
+            audio_np = audio_np[0]
+        if audio_np.size == 0:
+            print(f"  Empty audio generated for chunk {i}", file=sys.stderr)
+            return False
+        all_audio.append(audio_np)
 
     combined_audio = np.concatenate(all_audio)
 
-    # Save to temporary WAV file
     with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as tmp_wav:
         tmp_wav_path = tmp_wav.name
 
     try:
-        # Normalize to int16 range
         audio_np = np.clip(combined_audio, -1.0, 1.0)
         audio_int16 = (audio_np * 32767).astype(np.int16)
-        # Save using scipy
-        wavfile.write(tmp_wav_path, model.sr, audio_int16)
+        wavfile.write(tmp_wav_path, sr, audio_int16)
     except Exception as e:
         print(f"  Failed to save WAV: {e}", file=sys.stderr)
-        import traceback
-        traceback.print_exc()
         if os.path.exists(tmp_wav_path):
             os.unlink(tmp_wav_path)
         return False
 
-    # Convert WAV to Opus using ffmpeg
     ffmpeg_cmd = [
         "ffmpeg", "-y",
         "-i", tmp_wav_path,
@@ -277,13 +410,8 @@ def generate_audio(text, output_path):
         output_path,
     ]
 
-    result = subprocess.run(
-        ffmpeg_cmd,
-        stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE,
-    )
+    result = subprocess.run(ffmpeg_cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
-    # Clean up temp file
     os.unlink(tmp_wav_path)
 
     if result.returncode != 0:
@@ -316,10 +444,7 @@ def process_post(post_dir, dry_run=False, enforce_min_words=True, force=False):
         print(f"  Skipping {post_dir}: no text content")
         return
 
-    # Prepend title as spoken intro
     spoken_text = f"{title}.\n\n{plain_text}" if title else plain_text
-
-    # Apply pronunciation fixes
     spoken_text = fix_pronunciation(spoken_text)
 
     word_count = len(spoken_text.split())
@@ -343,32 +468,66 @@ def process_post(post_dir, dry_run=False, enforce_min_words=True, force=False):
     print(f"  Patched front matter: {index_path}")
 
 
+def find_latest_post():
+    """Return the newest post directory (by the date in its name)."""
+    dated = []
+    for post_dir in glob.glob(os.path.join(REPO_ROOT, "content/posts/*/")):
+        name = os.path.basename(post_dir.rstrip("/"))
+        m = re.match(r"(\d{4}-\d{2}-\d{2})", name)
+        if m:
+            dated.append((m.group(1), post_dir.rstrip("/")))
+    if not dated:
+        sys.exit("No dated posts found under content/posts/")
+    return sorted(dated)[-1][1]
+
+
 def main():
-    parser = argparse.ArgumentParser(description="Generate TTS audio for blog posts using Chatterbox")
-    parser.add_argument("post_dir", nargs="?", help="Path to a post directory")
+    parser = argparse.ArgumentParser(
+        description="Generate TTS audio for blog posts using Qwen3-TTS",
+        epilog="With no arguments the latest post is generated (and forced).",
+    )
+    parser.add_argument("post_dir", nargs="?", help="Path to a post directory (default: latest post)")
     parser.add_argument("--all", action="store_true", help="Process all posts")
     parser.add_argument("--force", action="store_true", help="Regenerate even if audio exists")
     parser.add_argument("--dry-run", action="store_true", help="Show what would be done")
+    parser.add_argument("--model", default=MODEL_NAME, help="Hugging Face / local model id")
+    parser.add_argument("--language", default=LANGUAGE, help="Language for synthesis (e.g. English, Auto)")
+    parser.add_argument("--ref-text", default=REFERENCE_TEXT, help="Transcript of the reference audio")
     args = parser.parse_args()
 
-    if not args.post_dir and not args.all:
-        parser.error("Provide a post directory or use --all")
+    globals().update(
+        MODEL_NAME=args.model,
+        LANGUAGE=args.language,
+        REFERENCE_TEXT=args.ref_text,
+    )
 
     if not os.path.exists(VOICE_REFERENCE):
-        print(f"Voice reference file not found at {VOICE_REFERENCE}", file=sys.stderr)
-        sys.exit(1)
+        sys.exit(f"Voice reference file not found at {VOICE_REFERENCE}")
+
+    if subprocess.run(["bash", "-lc", "command -v ffmpeg"], stdout=subprocess.DEVNULL).returncode != 0:
+        sys.exit("ffmpeg not found. Install it (e.g. 'brew install ffmpeg' or your distro package).")
+
+    # Work from the repo root so relative post globs behave predictably.
+    os.chdir(REPO_ROOT)
 
     if args.all:
         posts = sorted(glob.glob("content/posts/*/"))
         print(f"Found {len(posts)} post directories")
         for post_dir in posts:
             process_post(post_dir.rstrip("/"), args.dry_run,
-                        enforce_min_words=True, force=args.force)
+                         enforce_min_words=True, force=args.force)
     else:
-        # When explicitly specifying a post, skip the word count check and force regeneration
-        process_post(args.post_dir.rstrip("/"), args.dry_run,
-                    enforce_min_words=False, force=True)
+        post_dir = args.post_dir or find_latest_post()
+        # Explicit / latest target: skip the word-count gate and regenerate.
+        process_post(post_dir.rstrip("/"), args.dry_run,
+                     enforce_min_words=False, force=True)
 
 
 if __name__ == "__main__":
+    ensure_environment()
+
+    # Imported lazily so the bootstrap (which runs with plain system python)
+    # never needs the heavy dependencies.
+    from qwen_tts import Qwen3TTSModel  # noqa: E402
+
     main()

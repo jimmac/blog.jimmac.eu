@@ -7,7 +7,6 @@ venv-xpu/
 .DS_Store
 
 # TTS temporary files
-test_chatterbox_output.wav
 scripts/voice_reference.wav
 scripts/voice_reference_short.wav
 

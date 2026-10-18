@@ -6,7 +6,7 @@ Formerly jekyll, now zola powered blog. Theme based off of
 ## Features
 
 - **Static site generation** with [Zola](https://www.getzola.org/)
-- **Text-to-speech** voice cloning with [Chatterbox TTS](https://github.com/resemble-ai/chatterbox)
+- **Text-to-speech** voice cloning with [Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS)
 - **Responsive design** with custom audio player
 - **Fast builds** and deployment to GitHub Pages
 
@@ -14,9 +14,9 @@ Formerly jekyll, now zola powered blog. Theme based off of
 
 Blog posts can include automatically generated voiceovers using voice cloning technology. See **[TTS.md](TTS.md)** for complete documentation.
 
-**Quick setup:**
+**Quick start:**
 ```bash
-./scripts/setup-tts.sh
+./scripts/generate-tts.py            # latest post
 ./scripts/generate-tts.py --all
 ```
 
@@ -45,17 +45,17 @@ zola build
 ### Generate TTS audio
 
 ```bash
-# Setup (first time only)
-./scripts/setup-tts.sh
-
-# Generate for all posts
-./scripts/generate-tts.py --all
+# Latest post (default)
+./scripts/generate-tts.py
 
 # Single post
 ./scripts/generate-tts.py content/posts/POST-NAME
+
+# All posts
+./scripts/generate-tts.py --all
 ```
 
-See [TTS.md](TTS.md) for detailed TTS documentation.
+The script bootstraps its own virtualenv and dependencies on first run. See [TTS.md](TTS.md) for details.
 
 ## Project Structure
 
@@ -64,8 +64,8 @@ blog.jimmac.eu/
 ├── content/          # Blog posts and pages
 ├── static/           # Static assets (CSS, JS, images)
 ├── templates/        # Zola templates
-├── scripts/          # TTS generation scripts
-├── venv-py310/       # Python virtual environment (TTS)
+├── scripts/          # Site/TTS generation scripts
+├── venv-qwen/        # Python virtual environment (TTS, auto-created)
 ├── TTS.md            # TTS documentation
 └── README.md         # This file
 ```
