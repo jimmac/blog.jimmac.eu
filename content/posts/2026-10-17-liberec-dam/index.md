@@ -14,6 +14,7 @@ related = [
   "posts/2024-09-09-dji-neo/index.md",
   "posts/2026-09-14-innit/index.md",
 ]
+audio = "speech.opus"
 +++
 
 <iframe class="full" src="https://www.youtube.com/embed/wiKVTD2or2s" title="Liberec Dam 2026" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
