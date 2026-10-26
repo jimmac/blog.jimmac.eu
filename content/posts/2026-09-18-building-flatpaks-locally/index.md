@@ -13,6 +13,7 @@ related = [
   "posts/2021-02-04-curtail/index.md",
   "posts/2021-02-06-git-worktree/index.md",
 ]
+audio = "speech.opus"
 +++
 
 <img loading="lazy" src="flatpak-builder.svg" alt="Flatpak Builder icon" class="full">

@@ -13,6 +13,7 @@ related = [
   "posts/2025-05-22-scavengers-reign/index.md",
   "posts/2026-06-03-backrooms/index.md",
 ]
+audio = "speech.opus"
 +++
 
 I couldn't remember something for weeks. It popped into my head during a run &mdash; a relief, even though the memory itself was not pleasant. This episode of my flaky mind reminded me of this movie.

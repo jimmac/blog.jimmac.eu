@@ -12,6 +12,7 @@ related = [
   "posts/2018-07-18-detail-considered-harmful/index.md",
   "posts/2022-04-02-less-is-more/index.md",
 ]
+audio = "speech.opus"
 +++
 
 **DRAFT — stub, do not publish yet.**

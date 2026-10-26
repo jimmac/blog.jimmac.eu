@@ -13,6 +13,7 @@ related = [
   "posts/2026-05-09-fms-carrier/index.md",
   "posts/2022-02-15-fugue-machine-on-the-m8/index.md",
 ]
+audio = "speech.opus"
 +++
 
 Bombarded by the deception and [lies of the AI industry](https://www.youtube.com/watch?v=4qV5WWgFTS8) I chose to sample boy Amodei for the ironic outrage about Chinese companies stealing their dataset. Thus the tune title.

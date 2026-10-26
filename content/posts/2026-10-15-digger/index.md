@@ -14,6 +14,7 @@ related = [
   "posts/2026-06-03-backrooms/index.md",
   "posts/2026-07-06-the-machinist/index.md",
 ]
+audio = "speech.opus"
 +++
 
 ![Digger](digger.webp)
