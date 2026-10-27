@@ -45,6 +45,13 @@ zola serve
 zola build
 ```
 
+Note: `zola serve` ignores HTTP `Range` requests (it answers `200` with the
+full body), which WebKitGTK browsers (Epiphany) treat as a media error —
+post audio will not load or play at all under the dev server. To test audio
+playback in Epiphany, `zola build` and serve `public/` with a range-capable
+server (anything production-grade, e.g. `python3 -m http.server` does not
+qualify; nginx or `python3 -m RangeHTTPServer` do).
+
 ### Generate TTS audio
 
 ```bash

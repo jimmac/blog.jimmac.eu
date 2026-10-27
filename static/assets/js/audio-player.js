@@ -214,7 +214,7 @@ async function fetchMeta(audio) {
    ---------------------------------------------------------------- */
 
 function createMeter(audio, bars) {
-  let analyser, freqData, floatData, rafId, bandBins;
+  let analyser, freqData, floatData, rafId, bandBins, running = false;
   // Bands in Hz so the low bar actually covers the kick (~45-120 Hz).
   const BANDS_HZ = [[45, 120], [120, 280], [280, 900], [900, 2800], [2800, 11000]];
   const MIN_H = 0.15;
@@ -238,7 +238,6 @@ function createMeter(audio, bars) {
     if (analyser) return;
     try {
       const ctx = getCtx();
-      if (ctx.state === "suspended") ctx.resume();
       const src = ctx.createMediaElementSource(audio);
       analyser = ctx.createAnalyser();
       analyser.fftSize = 1024;
@@ -303,8 +302,21 @@ function createMeter(audio, bars) {
   }
 
   return {
-    start() { initAnalyser(); tickLevels(); },
+    // Build the WebAudio graph early, before the element has prerolled its
+    // media pipeline. In WebKitGTK, attaching a MediaElementAudioSourceNode
+    // to an element that has already preloaded and then playing it can leave
+    // the pipeline stuck: play/playing fire, readyState is HAVE_ENOUGH_DATA,
+    // but currentTime never advances (see guardFirstPlayStall).
+    init() { initAnalyser(); },
+    // Idempotent: safe to call from both the click handler and the play event.
+    start() {
+      initAnalyser();
+      const ctx = getCtx();
+      if (ctx.state === "suspended") ctx.resume().catch(() => {});
+      if (!running) { running = true; tickLevels(); }
+    },
     stop(withRange) {
+      running = false;
       cancelAnimationFrame(rafId);
       resetBars();
       if (withRange) resetRange();
@@ -385,13 +397,22 @@ function initPlayer(audio) {
 
   // --- wiring ---
   btnPlay.addEventListener("click", () => {
-    if (audio.paused) audio.play(); else audio.pause();
+    if (audio.paused) {
+      meter.start();
+      audio.play().catch(() => {});
+      guardFirstPlayStall(audio);
+    } else {
+      audio.pause();
+    }
   });
   btnBack.addEventListener("click", () => { audio.currentTime = Math.max(0, audio.currentTime - 15); });
   btnFwd.addEventListener("click", () => { audio.currentTime = Math.min(audio.duration, audio.currentTime + 15); });
 
   // --- analyser-driven level bars (shared meter engine) ---
   const meter = createMeter(audio, bars);
+  // Route into WebAudio before the element prerolls, to dodge the
+  // WebKitGTK first-play stall (see guardFirstPlayStall).
+  meter.init();
 
   audio.addEventListener("play", () => {
     player.classList.add("playing");
@@ -433,6 +454,32 @@ function makeBtn(cls, svg) {
 }
 
 /* ----------------------------------------------------------------
+   WebKitGTK first-play watchdog.
+
+   WebKitGTK (verified on 2.54) can freeze the first play of a media
+   element routed through WebAudio: the play and playing events fire,
+   readyState reaches HAVE_ENOUGH_DATA, but currentTime stays at 0 and
+   nothing is audible. One pause/play cycle restarts the clock. We avoid
+   the usual trigger by building the audio graph before the element
+   preloads (meter.init() during player setup); this watchdog recovers
+   the remaining cases (other WebKit builds, elements that were already
+   buffered when the graph was built, ...).
+   ---------------------------------------------------------------- */
+
+function guardFirstPlayStall(audio) {
+  const deadline = performance.now() + 2000;
+  setTimeout(function check() {
+    if (audio.paused || audio.currentTime > 0 || performance.now() > deadline) return;
+    if (audio.readyState >= 3) {
+      audio.pause();
+      audio.play().catch(() => {});
+    } else {
+      setTimeout(check, 150);
+    }
+  }, 150);
+}
+
+/* ----------------------------------------------------------------
    Inline TTS player (compact, beside post title)
    ---------------------------------------------------------------- */
 
@@ -465,10 +512,20 @@ function initTTSPlayer(button) {
   });
 
   const meter = createMeter(audio, bars);
+  // Route the element into WebAudio now, before preload prerolls its media
+  // pipeline — attaching the source node to an already-prerolled element is
+  // what triggers the WebKitGTK first-play stall (see guardFirstPlayStall).
+  meter.init();
 
   button.addEventListener("click", (e) => {
     e.preventDefault();
-    if (audio.paused) audio.play(); else audio.pause();
+    if (audio.paused) {
+      meter.start();
+      audio.play().catch(() => {});
+      guardFirstPlayStall(audio);
+    } else {
+      audio.pause();
+    }
   });
 
   audio.addEventListener("play", () => {
