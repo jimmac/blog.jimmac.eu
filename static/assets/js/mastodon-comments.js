@@ -19,11 +19,11 @@
   if (!wrapper) return;
 
   // Progressive enhancement: once JS runs, the inline discussion takes
-  // over from the "Discuss on the Fediverse" button (which remains the
-  // no-JS fallback).
+  // over and the "Discuss on the Fediverse" button moves below the
+  // thread, as the no-JS fallback for viewers with no JS.
   section.hidden = false;
   var button = document.querySelector(".mastodon-discuss");
-  if (button) button.hidden = true;
+  if (button) section.appendChild(button);
 
   // Parse https://host/@user/123456 (also tolerates ?fragment)
   var m = section.dataset.mastodonUrl.match(/^https:\/\/([^/]+)\/@[^/]+\/(\d+)/);

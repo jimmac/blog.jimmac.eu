@@ -1519,6 +1519,9 @@ img.icon-dropshadow {
       font-weight: var(--weight-bold);
     }
   }
+  & .mastodon-discuss {
+    margin-block-start: 1.5rem;
+  }
 }
 
 .mastodon-comments-list {
