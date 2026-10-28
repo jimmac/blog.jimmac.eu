@@ -13,7 +13,7 @@
    ============================================================ #}
 {% component youtube(id, title="YouTube video", ratio="16 / 9") -%}
 {%- set r = ratio | replace(from=" ", to="") %}
-{%- set title = title | escape -%}
+{%- set title = title | escape_xml -%}
 <figure class="yt{% if r == "9/16" %} yt--portrait{% endif %}" data-yt-id="{{ id }}" data-yt-title="{{ title }}">
   <div class="yt__shell">
     <div class="yt__bar">
