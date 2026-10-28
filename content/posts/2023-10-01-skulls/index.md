@@ -16,9 +16,7 @@ I've been wanting to make a game for as long as I remember. Granted I don't reme
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/869483483?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Go Bust Some Skulls!"></iframe></div>
 -->
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/A4IEt4OpzEw?si=-Z_sinGfKmsqKqxw" title="Take Frequent Breaks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-([Watch "go bust some skulls!" on YouTube](https://www.youtube.com/watch?v=A4IEt4OpzEw))
+{{< youtube id="A4IEt4OpzEw" title="go bust some skulls!" />}}
 
 
 ## Pixel Art Obsession

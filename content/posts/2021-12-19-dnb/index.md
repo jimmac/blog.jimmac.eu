@@ -50,16 +50,6 @@ I've also been learning the ropes of Blender's geometry nodes recently. While on
 
 
 
-<iframe
-  style="aspect-ratio: 9 / 16"
-  src="https://www.youtube.com/embed/c-emI28oYOE" 
-  title="YouTube video player" 
-  frameborder="0" 
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-  allowfullscreen>
-<a href="https://www.youtube.com/shorts/c-emI28oYOE">youtube short</a>
-</iframe>
-
-([Watch "m8 woohan 1080p" on YouTube](https://www.youtube.com/watch?v=c-emI28oYOE))
+{{< youtube id="c-emI28oYOE" title="m8 woohan 1080p" ratio="9 / 16" />}}
 
 I also have to mention the absolutely bonkers amazing visual identity of the M8 project. It just couldn't be more hip. This is also my very last gear acquisition. For sure.

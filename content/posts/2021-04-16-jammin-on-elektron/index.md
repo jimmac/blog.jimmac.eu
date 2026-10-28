@@ -22,9 +22,7 @@ Obviously I have to preface this by saying that I am absoutely aware just how te
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/531996041" width="640" height="360" frameborder="0" allowfullscreen></iframe>
 -->
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mQciyWnevFA?si=6FxVZ-quRM08R_sH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-([Watch "Digitone + Digitakt: Amps" on YouTube](https://www.youtube.com/watch?v=mQciyWnevFA))
+{{< youtube id="mQciyWnevFA" title="Digitone + Digitakt: Amps" />}}
 
 I always enjoy processes where I only give a hint of direction and just enjoy the ride while the result builds itself. Trackers felt great because they allow you to consistently adjust and build upon some foundations. The idea that I have to have a plan in my head and have to move fast enough not to screw up sounded terrible when I started. Even without involving other people, it felt stressful. But I stuck with it and now I actually enjoy the process. Yes, I do have to take multiple takes and have to fight my urge to do a 100% clean run, but learning to publish something is something that also doesn't come naturally.
 
@@ -34,8 +32,6 @@ I always enjoy processes where I only give a hint of direction and just enjoy th
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/533270191" width="640" height="360" frameborder="0" allowfullscreen></iframe>
 -->
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8Z17MhlIOJ8?si=ZNqCCaXNBTk38_rh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-([Watch "Wonderland 2021" on YouTube](https://www.youtube.com/watch?v=8Z17MhlIOJ8))
+{{< youtube id="8Z17MhlIOJ8" title="Wonderland 2021" />}}
 
 Don't expect Tinlicker or Jon Hokins yet, but I'm hopeful that this time next year I will still be posting about my music.

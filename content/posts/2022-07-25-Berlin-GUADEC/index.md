@@ -13,9 +13,7 @@ The Berlin hackfest and conference wasn't a polished, well organized experience 
 
 GNOME shell's [quick settings](https://gitlab.gnome.org/fmuellner/quick-settings-extension), the [mobile form factor](https://blogs.gnome.org/shell-dev/2022/05/30/towards-gnome-shell-on-mobile/), non-overlapped window management, Flathub and GNOME branding, video subsystems and others.
 
-<iframe class="full" src="https://www.youtube.com/embed/S9wKTD0hcFY?si=q73gmtiZDHIbjzGK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-([Watch "berlin mini guadec 2160p" on YouTube](https://www.youtube.com/watch?v=S9wKTD0hcFY))
+{{< youtube id="S9wKTD0hcFY" title="berlin mini guadec 2160p" />}}
 
 I've shot a [few photos](http://jimmac.musichall.cz/photos/2022_Berlin_Mirror_GUADEC/) and edited the short [video above](https://vimeo.com/733288200). Even the music was done during the night sessions at [C-Base](https://www.c-base.org/). 
 

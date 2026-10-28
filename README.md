@@ -8,7 +8,26 @@ Formerly jekyll, now zola powered blog. Theme based off of
 - **Static site generation** with [Zola](https://www.getzola.org/)
 - **Text-to-speech** with [Ollama Phonon](https://ollama.com/library/phonon)
 - **Responsive design** with custom audio player
+- **Lazy YouTube embeds** — click-to-load facade player, no third-party JS until play
 - **Fast builds** and deployment to GitHub Pages
+
+## YouTube embeds
+
+Posts embed YouTube videos with a click-to-load facade player: custom chrome
+around a poster thumbnail, nothing fetched from YouTube (no player JS, no
+tracking) until the visitor presses play. Without JavaScript the poster stays
+a plain link to the video.
+
+```md
+{{< youtube id="VIDEO_ID" title="Video Title" />}}
+
+<!-- vertical video / Shorts -->
+{{< youtube id="VIDEO_ID" title="Video Title" ratio="9 / 16" />}}
+```
+
+- Component: `templates/components.html`
+- Styles: `static/assets/css/style.css` (`.yt`)
+- Behavior: `static/assets/js/youtube-player.js`
 
 ## Text-to-Speech
 

@@ -17,9 +17,7 @@ related = [
 audio = "speech.opus"
 +++
 
-<iframe class="full" src="https://www.youtube.com/embed/H-0-faTDwiQ" title="Analog 4: Innit" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-([Watch "Analog 4: Innit" on YouTube](https://www.youtube.com/watch?v=H-0-faTDwiQ))
+{{< youtube id="H-0-faTDwiQ" title="Analog 4: Innit" />}}
 
 I've been doing [weeklybeats](https://weeklybeats.com/) 2026 almost entirely on the [Dirtywave M8](https://dirtywave.com) -- often on a Sunday night, in bed, on an actual hw. This was before Tim went and elevated a hardware abstraction layer into a [proper iOS App](https://apps.apple.com/us/app/m8-music-tracker/id6806721202) (which I still very much recommend). This particular tune though, "Innit", is an oddity for me: it lives on the [Analog Four](https://www.elektron.se/), a box I got from a friend ages ago for an absolutely irresistible price. It mostly collected dust. I'd make a few tunes here and there but never really dug into the stuff that makes it unique. Other than having individual channels ready for effects pedals and exposing the Elektron sequencer via CV for your eurorack addiction (stuff that I for *sure* will never use).
 

@@ -20,9 +20,7 @@ It’s been a while since I’ve annoyed you by mentioning drones, but here we a
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/1007568748?h=4416493d62" frameborder="0" allowfullscreen><img loading="lazy" alt="thumbnail for an external video of the DJI Neo" src="neo.webp"></iframe>
 -->
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/b2Io9hGHNTw?si=KUUhi3cLzRLvq4n6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-([Watch "Bike Trip Jizerka" on YouTube](https://www.youtube.com/watch?v=b2Io9hGHNTw))
+{{< youtube id="b2Io9hGHNTw" title="Bike Trip Jizerka" />}}
 
 The camera quality won’t blow you away, but it’s solid enough if you can overlook its overly-sharpened aesthetic. The Neo can even play the part of a lightweight cinewhoop or a poor man’s DJI Mini, though that’s only if you own DJI’s latest goggles and remotes—so there’s a bit of a catch. I bought it mainly for the fun shots you’re watching here, and while I’m not interested in keeping up with DJI’s endless upgrades, I must admit the little drone has charm and utility.
 

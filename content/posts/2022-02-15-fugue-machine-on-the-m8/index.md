@@ -29,9 +29,7 @@ I'm not going to be spamming the [planet](https://planet.gnome.org) with every t
 <a href="https://vimeo.com/675661848">Fugue</a></iframe>
 -->
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7meFQrpH_i4?si=2JiTqsAxfIaffibX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-([Watch "M8+DT/WB06: Fugue" on YouTube](https://www.youtube.com/watch?v=7meFQrpH_i4))
+{{< youtube id="7meFQrpH_i4" title="M8+DT/WB06: Fugue" />}}
 
 I really enjoy stepping back into my tracking shoes after two decades, especially when I ran into the old [Buzz](https://en.wikipedia.org/wiki/Jeskola_Buzz) crew on the Dirtywave Discord server. Shout out to [Ilya](https://weeklybeats.com/ilzxc) and [Noggin'](https://weeklybeats.com/noggin) who've made my re-entry to music super enjoyable.
 

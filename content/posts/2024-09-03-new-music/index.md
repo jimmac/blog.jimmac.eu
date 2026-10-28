@@ -22,22 +22,16 @@ I often self-censor, thinking my thoughts aren't worth a longer post, so I stick
 # Worthy Music
 Like many, I often find myself gravitating towards the music that shaped my younger years. But I also seek out new music. Taking part in [Weekly Beats](https://weeklybeats.com) helps a lot. That's how I discovered a very talented artist with an unpronounceable name -- [Gesceap](https://gesceap.bandcamp.com/). I've put him into the same genre box as Chris Leary aka Ochre, my old favorite. The tremendous detail of Gesceap's work is that he produces on a tiny little piece of software called [nanoloop](https://nanoloop.com/iphone/index.html). His level of mastery within such a constrained world is truly remarkable.
 
-<iframe class="full" src="https://www.youtube.com/embed/C1FFbwOMZrA?si=qeDyGJfZb_I3pgIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-([Watch "Gesceap - Chryo (E.N.Cowell Remix)" on YouTube](https://www.youtube.com/watch?v=C1FFbwOMZrA))
+{{< youtube id="C1FFbwOMZrA" title="Gesceap - Chryo (E.N.Cowell Remix)" />}}
 
 Another artist I admire is [Ivar Tryti](https://ivartryti.bandcamp.com/). Absolute master of the Elektron boxes, he performs all his tunes with robotic speed and precision, but the music stands on its own. Truly love the way he works with energy.
 
-<iframe class="full" src="https://www.youtube.com/embed/VyKmR5lUvuY?si=aSzCzMd2IYUcc11L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-([Watch "analog four is analog" on YouTube](https://www.youtube.com/watch?v=VyKmR5lUvuY))
+{{< youtube id="VyKmR5lUvuY" title="analog four is analog" />}}
 
 # Berlin Performance
 One of my personal highlights at this year’s mini GUADEC was the opportunity to demonstrate the [Dirtywave M8](https://dirtywave.com). While the device locked up three times during the show (eek) as I was sporting a beta build to be able to use the Novation Launchpad Pro. Tim only added support for it like a week prior.
 
 The crowd was amazing, and the performance went much better than I expected. I even kept going, drifting into DJ space and playing for over 2.5 hours.
 
-<iframe class="full" src="https://www.youtube.com/embed/KfoFjA5NfWk?si=JbPquxpQGNP_XbvH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-([Watch "M8: Live Performance Regenbogen Fabrik Berlin 2024" on YouTube](https://www.youtube.com/watch?v=KfoFjA5NfWk))
+{{< youtube id="KfoFjA5NfWk" title="M8: Live Performance Regenbogen Fabrik Berlin 2024" />}}
 

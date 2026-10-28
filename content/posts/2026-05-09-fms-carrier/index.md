@@ -42,9 +42,7 @@ PipBoy({
 
 What makes FMS a bit crazy is what it's doing under the hood. The Gameboy Advance has no FM synthesis hardware at all. Its audio gives you two Direct Sound DMA channels of 8-bit signed PCM — that's 256 amplitude levels, roughly 48 dB of dynamic range. For comparison, a CD has 96 dB, in much finer fidelity. The CPU is an ARM7TDMI running at 16.78 MHz with 256 KB of RAM, and that's where *all* the FM math happens. Sine waves, modulation, mixing four channels, all in real time, in software, on a chip from 2001 that was designed to shuffle sprites around. The hiss you hear is just part of the deal: quantization noise from that 8-bit DAC. So few amplitude steps means everything that comes out has this fuzzy, slightly crushed quality. You can't get rid of it. It *is* the sound. And somehow there are four channels of 2-operator FM synthesis in there, each with envelopes and ratio control. On a Gameboy Advance. 
 
-<iframe class="full" src="https://www.youtube.com/embed/OvFURaZI1zY" title="FMS Carrier" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen title="First composition on the FMS, performed on the R35S handheld"></iframe>
-
-([Watch "FMS: Crunchy" on YouTube](https://www.youtube.com/watch?v=OvFURaZI1zY))
+{{< youtube id="OvFURaZI1zY" title="FMS: Crunchy" />}}
 
 Picking GBA as a platform of choice in 2026 may be strange. Surprisingly, it can be used on a very large array of hardware. Not only can you plug a memory card into the original hardware or new fancy clones like the [Analogue Pocket](https://www.analogue.co/pocket), you have an exponentially larger choice of dozens if not hundreds of Chinese emulator handhelds from [Anbernic](https://anbernic.com/), [Powkiddy](https://powkiddy.com/), [Miyoo](https://lomiyoo.com/) or [Retroid](https://www.goretroid.com/). You can also use the [Steam Deck](https://store.steampowered.com/steamdeck) or any PC running one of the many emulators, [RetroArch](https://www.retroarch.com/) being the most popular one.
 

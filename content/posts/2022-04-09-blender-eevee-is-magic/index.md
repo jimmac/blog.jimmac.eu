@@ -31,9 +31,7 @@ Sadly I've already invested in [an appliance that covers my video streaming and 
 <script src="https://player.vimeo.com/api/player.js"></script>
 -->
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/RAv6eNpBnBY?si=8GraybI2ZjzOFSXx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-([Watch "Blender Eevee: Stream Deck" on YouTube](https://www.youtube.com/watch?v=RAv6eNpBnBY))
+{{< youtube id="RAv6eNpBnBY" title="Blender Eevee: Stream Deck" />}}
 
 For [GNOME wallpapers](https://gitlab.gnome.org/GNOME/gnome-backgrounds/) there are cases where I have to resort to waiting on Cycles, but if you compare this 2 minute render (left) to the 0.5s render (right) it's really not worth it in many cases. 
 

@@ -24,7 +24,5 @@ It is just incredible that the footage below is hand held and the cameraman is n
 <p><small><a href="https://vimeo.com/598486554">Skate Your Name: Patrik</a> from <a href="https://vimeo.com/jimmacfx">jimmac</a> on <a href="https://vimeo.com">Vimeo</a>. Music arranged on <a href="https://polyend.com/tracker/">Polyend Tracker</a>.</small></p>
 -->
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Kg9hSbVFzSk?si=Ocz2lBBKqQpfHRJt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-([Watch "Skate Your Name: Patrik" on YouTube](https://www.youtube.com/watch?v=Kg9hSbVFzSk))
+{{< youtube id="Kg9hSbVFzSk" title="Skate Your Name: Patrik" />}}
 

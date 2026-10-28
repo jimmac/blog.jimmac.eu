@@ -24,7 +24,5 @@ I am still the amateur I was 20 years ago, but the joy of of nudging something t
 <p><a href="https://vimeo.com/506578461">Digitakt + Digitone: Boards of Landfill</a> from <a href="https://vimeo.com/jimmacfx">jimmac</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 -->
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sR_DaUlrM0o?si=n4dYHSjW7JgnmmMN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-([Watch "Digitakt + Digitone: Boards of Landfill" on YouTube](https://www.youtube.com/watch?v=sR_DaUlrM0o))
+{{< youtube id="sR_DaUlrM0o" title="Digitakt + Digitone: Boards of Landfill" />}}
 
