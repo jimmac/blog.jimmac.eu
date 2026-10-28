@@ -6,21 +6,19 @@ Formerly jekyll, now zola powered blog. Theme based off of
 ## Features
 
 - **Static site generation** with [Zola](https://www.getzola.org/)
-- **Text-to-speech** with [Ollama Phonon](https://ollama.com/library/phonon) or voice cloning with [Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS)
+- **Text-to-speech** with [Ollama Phonon](https://ollama.com/library/phonon)
 - **Responsive design** with custom audio player
 - **Fast builds** and deployment to GitHub Pages
 
 ## Text-to-Speech
 
-Blog posts can include automatically generated voiceovers. On macOS, use
-Ollama + Phonon; Qwen3-TTS is available for cloning a voice from a reference
-clip. See **[TTS.md](TTS.md)** for complete documentation.
+Blog posts can include automatically generated voiceovers via Ollama + Phonon.
+See **[TTS.md](TTS.md)** for complete documentation.
 
 **Quick start:**
 ```bash
 ollama pull phonon
-./scripts/generate-tts-phonon.py     # latest post, built-in voice
-./scripts/generate-tts.py            # latest post, cloned voice
+./scripts/generate-tts.py            # latest post, built-in voice
 ```
 
 ## Development
@@ -55,22 +53,17 @@ qualify; nginx or `python3 -m RangeHTTPServer` do).
 ### Generate TTS audio
 
 ```bash
-# Latest post (macOS, Ollama + Phonon)
-./scripts/generate-tts-phonon.py
-
-# Latest post (Qwen3-TTS, voice cloning)
+# Latest post
 ./scripts/generate-tts.py
 
 # Single post
-./scripts/generate-tts-phonon.py content/posts/POST-NAME
+./scripts/generate-tts.py content/posts/POST-NAME
 
 # All posts
-./scripts/generate-tts-phonon.py --all
+./scripts/generate-tts.py --all
 ```
 
-The Phonon script talks to a local Ollama server; the Qwen script bootstraps
-its own virtualenv and dependencies on first run. See [TTS.md](TTS.md) for
-details.
+The script talks to a local Ollama server. See [TTS.md](TTS.md) for details.
 
 ## Project Structure
 
@@ -80,7 +73,6 @@ blog.jimmac.eu/
 ├── static/           # Static assets (CSS, JS, images)
 ├── templates/        # Zola templates
 ├── scripts/          # Site/TTS generation scripts
-├── venv-qwen/        # Python virtual environment (TTS, auto-created)
 ├── TTS.md            # TTS documentation
 └── README.md         # This file
 ```

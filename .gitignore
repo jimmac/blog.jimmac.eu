@@ -1,17 +1,7 @@
 public/
 .aider*
 venv/
-venv-py310/
-venv-qwen/
-venv-xpu/
 .DS_Store
-
-# TTS temporary files
-scripts/voice_reference.wav
-scripts/voice_reference_short.wav
-
-# But keep the 10s reference used by the script
-!scripts/voice_reference_10s.wav
 
 # Python cache
 *.pyc
