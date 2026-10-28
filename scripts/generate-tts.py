@@ -40,7 +40,7 @@ OUTPUT_NAME = "speech.opus"
 MIN_WORDS = 150
 
 DEFAULT_MODEL = "phonon"
-DEFAULT_VOICE = "Lottie"
+DEFAULT_VOICE = "Maeve"
 DEFAULT_HOST = "http://localhost:11434"
 
 # Phonon returns raw 16-bit little-endian mono at 24 kHz.

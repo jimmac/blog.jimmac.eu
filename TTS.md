@@ -21,7 +21,7 @@ ollama pull phonon
 - `./scripts/generate-tts.py content/posts/POST-NAME` — a specific post
 - `./scripts/generate-tts.py --all [--force] [--dry-run]`
 - `./scripts/generate-tts.py --voice Zoey` — pick a voice
-  (`ollama show phonon` lists them all; the default voice is `Lottie`)
+  (`ollama show phonon` lists them all; the default voice is `Maeve`)
 - `./scripts/generate-tts.py --model phonon:40m-pt` — use another model
 
 Long posts are split into sentence-aligned chunks under the speech API's
