@@ -868,7 +868,7 @@ a.post-item {
     color: var(--color-link);
     text-decoration: none;
 
-    &[href^="http"]:not(.tag):not(:has(img))::after {
+    &[href^="http"]:not(.tag):not(:has(img)):not(.mastodon-comments a)::after {
       content: "";
       display: inline-block;
       width: 0.65em;
@@ -1480,6 +1480,8 @@ img.icon-dropshadow {
   flex-shrink: 0;
   transition: background-color 150ms var(--smooth-ease), color 150ms var(--smooth-ease);
 
+  &[hidden] { display: none; }
+
   &:hover {
     background: var(--color-link);
     color: var(--color-on-accent);
@@ -1492,6 +1494,188 @@ img.icon-dropshadow {
   fill: currentColor;
   flex-shrink: 0;
 }
+
+/* ============================================================
+   MASTODON COMMENTS (progressive enhancement, see
+   static/assets/js/mastodon-comments.js)
+   ============================================================ */
+
+.mastodon-comments {
+  margin-block-start: 2.5rem;
+  padding-block-start: 1.5rem;
+  border-block-start: 1px solid var(--color-border);
+
+  & .mastodon-comments-title {
+    font-size: 1.1rem;
+    margin-block: 0 0.4rem;
+  }
+
+  & .mastodon-comments-lead {
+    font-size: 80%;
+    color: var(--color-muted);
+
+    & .mastodon-reply-count {
+      color: var(--color-heading);
+      font-weight: var(--weight-bold);
+    }
+  }
+}
+
+.mastodon-comments-list {
+  margin-block-start: 1.5rem;
+}
+
+.mastodon-comment {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2.5rem 1fr;
+  gap: 0.3rem 0.75rem;
+  padding-block: 0.75rem;
+
+  &:not(:first-of-type) {
+    margin-block-start: 1.25rem;
+  }
+
+  /* nested replies indent */
+  & .mastodon-thread {
+    grid-column: 2;
+    margin-block-start: 0.8rem;
+
+    & .mastodon-comment {
+      background-image: linear-gradient(var(--color-subtle),
+                                        var(--color-subtle));
+      background-size: 2px 100%;
+      background-repeat: no-repeat;
+      padding-inline-start: 0.5rem;
+    }
+  }
+
+  & .mastodon-avatar-link {
+    grid-row: 1 / span 2;
+    display: block;
+    align-self: start;
+  }
+
+  & .mastodon-avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: var(--radius);
+    display: block;
+  }
+
+  & .mastodon-comment-header {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    min-width: 0;
+  }
+
+  & .mastodon-name {
+    font-weight: var(--weight-bold);
+    color: var(--color-heading);
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &:hover { color: var(--color-link); }
+  }
+
+  & .mastodon-instance {
+    font-size: 0.7rem;
+    color: var(--color-muted);
+    text-decoration: none;
+    white-space: nowrap;
+    padding-inline: 0.45rem;
+    border-radius: 9999px;
+    background: var(--color-code-bg);
+
+    &:hover { color: var(--color-link); }
+  }
+
+  & .mastodon-comment-date {
+    margin-inline-start: auto;
+    font-size: 0.7rem;
+    color: var(--color-muted);
+    white-space: nowrap;
+
+    & a { color: inherit; text-decoration: none; }
+  }
+
+  & .mastodon-comment-body {
+    font-size: var(--font-size-sm);
+
+    & p {
+      margin-block: 0.35rem;
+
+      &:first-child { margin-block-start: 0; }
+      &:last-child { margin-block-end: 0; }
+    }
+
+    & a {
+      color: var(--color-link);
+      text-decoration-color: transparent;
+      text-underline-offset: 0.2em;
+      transition: text-decoration-color 150ms var(--smooth-ease);
+
+      &:hover { text-decoration-color: currentColor; }
+    }
+  }
+
+  & .mastodon-emoji {
+    width: 1.1em;
+    height: 1.1em;
+    vertical-align: -0.2em;
+  }
+
+  & .mastodon-media {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+    gap: 0.4rem;
+    margin-block: 0.5rem;
+
+    & .mastodon-media-item {
+      display: block;
+
+      & img,
+      & video {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-height: 14rem;
+        object-fit: cover;
+        border-radius: var(--radius);
+      }
+    }
+  }
+
+  & .mastodon-comment-meta {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.7rem;
+    color: var(--color-muted);
+    grid-column: 2; /* align under the comment body, not the avatar */
+  }
+
+  & .mastodon-meta-item:first-child {
+    color: #e01b24;
+  }
+
+  /* blog owner replies */
+  &.is-op {
+    & .mastodon-avatar {
+      outline: 2px solid var(--color-link);
+      outline-offset: 1px;
+    }
+
+    & .mastodon-name::after {
+      content: " · OP";
+      color: var(--color-muted);
+      font-weight: var(--weight-bold);
+    }
+  }
+}
+
 
 /* ============================================================
    IMAGE GRID  (sketches, pixel art, wallpapers, screenshots)
