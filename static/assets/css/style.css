@@ -1672,6 +1672,52 @@ img.icon-dropshadow {
       font-weight: var(--weight-bold);
     }
   }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 2rem 1fr;
+    gap: 0.25rem 0.5rem;
+
+    & .mastodon-avatar {
+      width: 2rem;
+      height: 2rem;
+    }
+
+    & .mastodon-comment-header {
+      gap: 0.35rem;
+    }
+
+    & .mastodon-name {
+      font-size: 0.85rem;
+      white-space: nowrap;
+    }
+
+    & .mastodon-comment-date {
+      font-size: 0.65rem;
+    }
+
+    & .mastodon-comment-body {
+      font-size: 0.95rem;
+
+      & img {
+        max-width: 100%;
+      }
+    }
+
+    & .mastodon-media {
+      grid-template-columns: 1fr;
+    }
+
+    & .mastodon-comment-meta {
+      gap: 0.75rem;
+      font-size: 0.65rem;
+    }
+
+    & .mastodon-thread {
+      & .mastodon-comment {
+        padding-inline-start: 0.35rem;
+      }
+    }
+  }
 }
 
 
