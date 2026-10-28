@@ -58,17 +58,7 @@
         '<a href="' + section.dataset.mastodonUrl + '">this post</a> to be the first!</p>';
       return;
     }
-    setStatusCounts(status);
     buildThread(domTree(status, descendants), wrapper);
-  }
-
-  function setStatusCounts(status) {
-    var counts = section.querySelector(".mastodon-reply-count");
-    if (counts && status.replies_count > 0) {
-      counts.hidden = false;
-      counts.textContent = "(" + status.replies_count + " " +
-        (status.replies_count === 1 ? "reply" : "replies") + ")";
-    }
   }
 
   /* ---------- thread building -------------------------------------- */

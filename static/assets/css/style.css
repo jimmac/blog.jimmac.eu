@@ -1513,11 +1513,6 @@ img.icon-dropshadow {
   & .mastodon-comments-lead {
     font-size: 80%;
     color: var(--color-muted);
-
-    & .mastodon-reply-count {
-      color: var(--color-heading);
-      font-weight: var(--weight-bold);
-    }
   }
   & .mastodon-discuss {
     margin-block-start: 1.5rem;
