@@ -23,9 +23,9 @@ There's only a few places I get to take visiting friends to in Liberec. Sadly at
 
 In the autumn of 2022, a full reconstruction finally began, a mere century after the dam was built. Quite a massive operation, with 26,000 cubic meters of silt dug out, the original masonry  injected with a fresh waterproof jacket from a brand new gallery dug right under the dam, and the bottom outlets were swapped for beefier ones. Being a listed landmark, the dam got to keep its pretty face while the guts were replaced. A three-year job that -- in the finest local tradition -- took a bit longer and cost north of EUR 20 million. It's worth noting that Liberec is one if not the most indebted cities in Czechia.
 
-In the meantime the city had a moonscape where its living room used to be. I went to investigate the drained bowl like everyone else and came back with a portrait short of the eerie emptiness, set to an electronica track that goes by *Spore Structure*:
+In the meantime the city had a moonscape where its living room used to be. I went to investigate the drained bowl like everyone else and came back with a portrait short of the eerie emptiness (mixed with some shots from the wider neighborhood).
 
-{{< youtube id="ZCnfYd5A6ws" title="Spore Structure [Dirtywave M8]" />}}
+{{< youtube id="ygFHgP8sbEU" title="Empty Dam" />}}
 
 This year the water finally came back. Not yet finished, the lake is once again the city's front yard, has a refurbished beach, and a dam that's now rated to pass a 10,000-year flood. A figure I sincerely hope remains purely theoretical. To celebrate, I did the only reasonable thing: sent up a flying camera and cut the results to a tune. Sadly the dam claimed another one of my birds (currently the score is 2:0). A mistake had cost me one of older 5" as a broken OSD, ancient battery and water can lead to brisk ends. Luckily the tandem flight with a friend was done on my 4" and I have a video to share above.
 
