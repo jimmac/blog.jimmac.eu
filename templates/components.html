@@ -16,9 +16,6 @@
 {%- set title = title | escape_xml -%}
 <figure class="yt{% if r == "9/16" %} yt--portrait{% endif %}" data-yt-id="{{ id }}" data-yt-title="{{ title }}">
   <div class="yt__shell">
-    <div class="yt__bar">
-      <span class="yt__meta">YouTube · HD</span>
-    </div>
     <div class="yt__stage"{% if r != "16/9" %} style="aspect-ratio: {{ ratio }}"{% endif %}>
       <a class="yt__facade" href="https://www.youtube.com/watch?v={{ id }}" aria-label="Play {{ title }}">
         <img class="yt__poster"
@@ -30,10 +27,10 @@
         <span class="yt__play" aria-hidden="true"></span>
       </a>
     </div>
+    <div class="yt__bar">
+      <span class="yt__title">{{ title }}</span>
+      <a class="yt__watch" href="https://www.youtube.com/watch?v={{ id }}" rel="noopener">Watch on YouTube</a>
+    </div>
   </div>
-  <figcaption class="yt__caption">
-    <span class="yt__title">{{ title }}</span>
-    <a class="yt__watch" href="https://www.youtube.com/watch?v={{ id }}" rel="noopener">Watch on YouTube</a>
-  </figcaption>
 </figure>
 {% endcomponent youtube %}

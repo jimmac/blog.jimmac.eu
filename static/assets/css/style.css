@@ -1366,9 +1366,22 @@ audio[controls] {
     text-transform: uppercase;
   }
 
-  & .yt__meta {
+  /* title takes the left side of the bar, watch link the right */
+  & .yt__title {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 700; /*Departure Mono has no bold — browser synthesizes it */
+    color: light-dark(#000, #fff); /* maximize contrast on the chrome */
+  }
+
+  & .yt__watch {
+    flex-shrink: 0;
     margin-inline-start: auto;
-    color: #626d80;
+    text-decoration: none;
+
+    &:hover, &:focus { text-decoration: underline; }
   }
 
   & .yt__stage {
@@ -1435,35 +1448,6 @@ audio[controls] {
     mask-position: center;
     mask-repeat: no-repeat;
     mask-composite: exclude;
-  }
-
-  & .yt__caption {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-    gap: 1rem;
-    margin-block-start: 0.6rem;
-    padding-inline: 0.25rem;
-  }
-
-  & .yt__title {
-    min-width: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    font-style: italic;
-    font-size: var(--font-size-sm);
-    color: var(--color-muted);
-  }
-
-  & .yt__watch {
-    flex-shrink: 0;
-    font-family: var(--font-mono);
-    font-style: normal;
-    font-size: 12px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    text-decoration: none;
   }
 
   &.yt--playing .yt__bar { opacity: 0.55; }
