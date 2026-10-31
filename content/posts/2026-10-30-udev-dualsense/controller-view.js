@@ -3,13 +3,14 @@
 // and related or neighboring rights to this work.
 // https://creativecommons.org/publicdomain/zero/1.0/
 //
-// DualSense Viewer v3.0 — "console cowboy"
+// DualSense Viewer v3.1 — "console cowboy"
 // Displays the original Playstation 5 Dualsense mesh (see
 // dualsense.LICENSE.txt alongside this script for the CC-BY-4.0
 // credit) as a page ornament. The canvas bleeds over the surrounding
 // text and alpha-composites onto the page; grabbing the controller
-// itself (raycast hit test) lets you tumble it around. A connected
-// gamepad makes it lean and its light bar glow.
+// itself (raycast hit test) lets you tumble it around — with a mouse
+// or a finger. A connected gamepad makes it lean and its light bar
+// glow.
 
 (function () {
   'use strict';
@@ -245,7 +246,8 @@
 
     /* grabbing: raycast the controller itself, not the canvas rect.
        The canvas is pointer-transparent, so page text stays selectable
-       right through it; the grab cursor only appears over the pad. */
+       right through it; the grab cursor only appears over the pad.
+       Mouse and touch alike go through the same pointer events. */
 
     var dragging = false;
     var dragPointer = -1;
@@ -270,7 +272,7 @@
     }
 
     window.addEventListener('pointerdown', function (e) {
-      if (e.pointerType === 'touch' || !hitModel(e.clientX, e.clientY)) return;
+      if (!hitModel(e.clientX, e.clientY)) return;
       dragging = true;
       dragPointer = e.pointerId;
       lastX = e.clientX; lastY = e.clientY;
@@ -279,6 +281,28 @@
       e.preventDefault(); // no text selection while tumbling
       document.documentElement.style.cursor = 'grabbing';
     });
+
+    /* Touch drags need extra convincing: the canvas is
+       pointer-transparent, so the finger's hit target is whatever page
+       text sits underneath — an element with default touch-action the
+       browser happily starts scrolling (and scrolling means
+       pointercancel, which would cut the drag short). Canceling the
+       touch events while a drag is in flight keeps the finger on the
+       model. Gestures that miss the model are untouched, so scrolling
+       and long-press selection behave normally everywhere else. */
+
+    window.addEventListener('touchstart', function (e) {
+      if (dragging) { e.preventDefault(); return; }
+      // pointerdown should already have arrived for this touch; in
+      // case it hasn't, test the finger directly so the very first
+      // event of the gesture is already canceled
+      var t = e.changedTouches[0];
+      if (t && hitModel(t.clientX, t.clientY)) e.preventDefault();
+    }, { passive: false });
+
+    window.addEventListener('touchmove', function (e) {
+      if (dragging) e.preventDefault();
+    }, { passive: false });
 
     /* trackball: free rotation, no clamps, no gimbal lock. The drag
        delta maps to a rotation axis in the screen plane, transformed
