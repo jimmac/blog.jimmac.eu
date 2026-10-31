@@ -2018,6 +2018,52 @@ img.icon-dropshadow {
 }
 
 /* ============================================================
+   CONTROLLER VIEW  (three.js DualSense page ornament)
+   ============================================================ */
+
+.controller-view {
+  /* The layout box only reserves a slice of page; the canvas bleeds
+     beyond it and alpha-composites over the neighbouring text. */
+  position: relative;
+  z-index: 1;
+  height: 190px;
+  margin: 1.5rem 0;
+
+  & canvas {
+    display: block;
+    position: absolute;
+    top: 50%;
+    inset-inline: 0;
+    width: 100%;
+    height: clamp(420px, 60vh, 560px);
+    transform: translateY(-50%);
+    /* pointer-transparent: text stays selectable right through the
+       canvas, grabbing is handled by raycasting the model itself */
+    pointer-events: none;
+  }
+
+  &.controller-fallback {
+    height: auto;
+    padding: 1rem 0;
+    color: var(--color-muted);
+    font-family: var(--font-mono);
+    text-align: center;
+
+    & canvas {
+      display: none;
+    }
+  }
+
+  @media (max-width: 600px) {
+    height: 140px;
+
+    & canvas {
+      height: 400px;
+    }
+  }
+}
+
+/* ============================================================
    ABOUT PAGE
    ============================================================ */
 
