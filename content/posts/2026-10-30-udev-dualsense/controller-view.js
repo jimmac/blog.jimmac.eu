@@ -47,6 +47,8 @@
     renderer.toneMapping = THREE.ACESFilmicToneMapping;
     renderer.toneMappingExposure = 1.05;
     renderer.setClearColor(0x000000, 0);
+    // The container is hidden until there is actually a viewer to show.
+    container.classList.add('is-running');
     container.appendChild(renderer.domElement);
     var canvas = renderer.domElement;
 
@@ -120,6 +122,12 @@
     var activity = 0;
     var tTotal = 0;
 
+    // slow idle roll around the camera's view axis: one full turn / 10s
+    var SPIN_RATE = Math.PI * 2 / 10;
+    var spinAxis = new THREE.Vector3();
+    var spinQuat = new THREE.Quaternion();
+    var spinCamQuat = new THREE.Quaternion();
+
     function readPad() {
       var pads = navigator.getGamepads ? navigator.getGamepads() : [];
       for (var i = 0; i < pads.length; i++) {
@@ -162,6 +170,14 @@
       leanGroup.rotation.x = cur.leanX + cur.nod;
       leanGroup.rotation.z = cur.leanZ;
       leanGroup.position.y = reduced ? 0 : Math.sin(tTotal * 1.1) * 0.08;
+
+      if (!reduced && !dragging) {
+        camera.getWorldQuaternion(spinCamQuat);
+        // screen-space vertical axis (top to bottom)
+        spinAxis.set(0, 1, 0).applyQuaternion(spinCamQuat);
+        spinQuat.setFromAxisAngle(spinAxis, SPIN_RATE * dt);
+        tumbleGroup.quaternion.premultiply(spinQuat).normalize();
+      }
 
       for (var i = 0; i < emissiveMats.length; i++) {
         emissiveMats[i].emissiveIntensity =
@@ -217,6 +233,10 @@
       modelBox.setFromObject(tumbleGroup);
       modelSizeArr = [size.x * scale, size.y * scale, size.z * scale];
       modelReady = true;
+      // Refit now that the real model bounds are known.
+      resize();
+      // Reveal the model credit only once the viewer has something to show.
+      container.classList.add('is-ready');
     }, undefined, function (err) {
       container.classList.add('controller-fallback');
       container.textContent = 'controller model failed to load';
@@ -338,9 +358,24 @@
       renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
       renderer.setSize(w, h, false);
       var aspect = Math.max(0.4, w / h);
-      var d = 19;
-      if (aspect < 1.45) d = Math.min(38, 19 * (1.45 / aspect));
       camera.aspect = aspect;
+
+      // Fit the model's bounding sphere, not just its current pose, so
+      // tumbling it can never push the controller past the canvas edge.
+      // The 1.25 factor leaves breathing room above and below.
+      var radius = modelSizeArr[0]
+        ? 0.5 * Math.sqrt(
+            modelSizeArr[0] * modelSizeArr[0] +
+            modelSizeArr[1] * modelSizeArr[1] +
+            modelSizeArr[2] * modelSizeArr[2])
+        : 8.5;
+      var vFov = THREE.MathUtils.degToRad(camera.fov);
+      var hFov = 2 * Math.atan(Math.tan(vFov / 2) * aspect);
+      var d = Math.max(
+        radius / Math.sin(vFov / 2),
+        radius / Math.sin(hFov / 2)
+      ) * 1.25;
+
       camera.position.set(0, d * 0.42, d * 0.91);
       camera.lookAt(0, -0.4, 0);
       camera.updateProjectionMatrix();

@@ -20,13 +20,13 @@ Nostalgia stroke me fiercely and I needed to play that game in some form. Among 
 
 That UX is crazy, let me tell you. In the end you get a game playable even on an old workstation, which was a surprise in itself. A much bigger surprise was the support for network play.. Obviously not a single soul is playing Grid in 2026, but it's a fun thought I might convince someone to play :)
 
-![Race Driver: Grid running in RPCS3](racedrive-grid.webp)
+<img class="full full-bleed" src="racedriver-grid.webp" width="1635" height="593" alt="Race Driver: Grid running in RPCS3">
 
 <div id="controller-view" class="controller-view">
 
 </div>
 
-*3D model: ["Playstation 5 Dualsense"](https://sketchfab.com/3d-models/playstation-5-dualsense-878c1f882808477ab81c2fe86d5a3936) by [AHarmlessPotato](https://sketchfab.com/AHarmlessPotato), [CC-BY-4.0](http://creativecommons.org/licenses/by/4.0/).*
+<p class="controller-credit"><em>3D model: <a href="https://sketchfab.com/3d-models/playstation-5-dualsense-878c1f882808477ab81c2fe86d5a3936">"Playstation 5 Dualsense"</a> by AHarmlessPotato, CC-BY-4.0</em></p>
 
 <script src="three.min.js"></script>
 <script src="gltf-loader.js"></script>
@@ -63,10 +63,5 @@ Check things work from inside RPCS3's sandbox:
 flatpak run --command=sh net.rpcs3.RPCS3 -c 'test -r /dev/hidraw9 && test -w /dev/hidraw9 && echo OK'
 ```
 
-Now, in RPCS3:
-
-1. Open Configuration → Pads
-2. Player 1, Handler: DualSense
-3. Click Refresh — the DualSense should now appear in the device list and respond to stick wiggle and whatnot.
 
 But again, the experience of this monstrosity. Briefly looking over Alice' shoulder at what's she's cooking with [Highscore](https://gitlab.gnome.org/World/highscore), the difference in experience and polish is night & day. 

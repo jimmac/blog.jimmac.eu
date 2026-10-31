@@ -362,13 +362,11 @@ table {
 
 .navbar {
   height: auto;
-  max-width: calc(var(--width-wide) - var(--space) * 2);
+  width: 100%;
   position: sticky;
   inset-block-start: 0;
-  margin-inline-end: auto;
-  margin-inline-start: auto;
   border-block-end: 1px solid var(--color-border);
-  padding: 15px var(--space);
+  padding-block: 15px;
   z-index: 100;
   background-color: var(--color-navbar-bg);
   backdrop-filter: blur(20px);
@@ -383,8 +381,15 @@ table {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  max-width: calc(var(--width-narrow) - var(--space) * 2);
+  margin-inline: auto;
+  padding-inline: var(--space);
 
-  @media (max-width: 800px) { gap: 0.5rem; }
+  @media (max-width: 800px) {
+    gap: 0.5rem;
+    max-width: calc(var(--width-narrow) - var(--space));
+    padding-inline: 15px;
+  }
 
   & .brand {
     display: inline-flex;
@@ -1034,6 +1039,15 @@ pre {
 
 img.centered { display: block; margin: auto; }
 img.full     { display: block; width: 100%; }
+
+/* Break a banner out of the reading column to the viewport edges. */
+.page-content img.full-bleed {
+  width: 100vw;
+  max-width: 100vw;
+  height: auto;
+  margin-inline: calc(50% - 50vw);
+  border-radius: 0;
+}
 
 /* native fallback if JS hasn't loaded */
 audio[controls] {
@@ -2022,6 +2036,10 @@ img.icon-dropshadow {
    ============================================================ */
 
 .controller-view {
+  /* Progressive enhancement: without JS there is no viewer, so the
+     container must not reserve any layout space. */
+  display: none;
+
   /* The layout box only reserves a slice of page; the canvas bleeds
      beyond it and alpha-composites over the neighbouring text. */
   position: relative;
@@ -2035,14 +2053,19 @@ img.icon-dropshadow {
     top: 50%;
     inset-inline: 0;
     width: 100%;
-    height: clamp(420px, 60vh, 560px);
+    height: clamp(560px, 78vh, 760px);
     transform: translateY(-50%);
     /* pointer-transparent: text stays selectable right through the
        canvas, grabbing is handled by raycasting the model itself */
     pointer-events: none;
   }
 
+  &.is-running {
+    display: block;
+  }
+
   &.controller-fallback {
+    display: block;
     height: auto;
     padding: 1rem 0;
     color: var(--color-muted);
@@ -2058,9 +2081,19 @@ img.icon-dropshadow {
     height: 140px;
 
     & canvas {
-      height: 400px;
+      height: 540px;
     }
   }
+}
+
+/* The model credit is progressive enhancement: present in the markup for
+   attribution, but only shown once the viewer has loaded a model. */
+.controller-credit {
+  display: none;
+}
+
+.controller-view.is-ready + .controller-credit {
+  display: block;
 }
 
 /* ============================================================
