@@ -8,6 +8,7 @@ tags = ["linux", "gnome"]
 [extra]
 image = "thumb.webp"
 audio = "speech.opus"
+mastodon_url = "https://mastodon.social/@jimmac/117536181145290258"
 related = [
   "posts/2023-05-01-udev-m8/index.md",
   "posts/2026-09-18-building-flatpaks-locally/index.md",
@@ -18,7 +19,7 @@ I never liked racing "sims" like Gran Turismo. So realistic! You can bounce off 
 
 Nostalgia stroke me fiercely and I needed to play that game in some form. Among a sea of weird remakes, there simply wasn't a platform you could play the proper original *Racedriver: Grid* on, other than emulators. So I bit the bullet and dove into the craziness of [RPCS3](https://flathub.org/en/apps/net.rpcs3.RPCS3).
 
-That UX is crazy, let me tell you. In the end you get a game playable even on an old workstation, which was a surprise in itself. A much bigger surprise was the support for network play.. Obviously not a single soul is playing Grid in 2026, but it's a fun thought I might convince someone to play :)
+That UX is crazy, let me tell you. In the end you get a game playable even on an old workstation, which was a surprise in itself. A much bigger surprise was the support for network play. Obviously not a single soul is playing Grid in 2026, but it's a fun thought I might convince someone to play :)
 
 <img class="full full-bleed" src="racedriver-grid.webp" width="1635" height="593" alt="Race Driver: Grid running in RPCS3">
 
