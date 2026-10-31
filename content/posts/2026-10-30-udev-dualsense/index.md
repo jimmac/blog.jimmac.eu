@@ -4,7 +4,7 @@ description = "The world of emulators is insane, but sometimes you have to visit
 date = 2026-10-30
 aliases = ["/2026/udev-dualsense/"]
 [taxonomies]
-tags = ["linux", "gnome"]
+tags = ["linux", "gnome", "nostalgia"]
 [extra]
 image = "thumb.webp"
 audio = "speech.opus"
