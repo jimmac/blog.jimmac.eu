@@ -67,6 +67,30 @@
 
     var camera = new THREE.PerspectiveCamera(38, 16 / 10, 0.1, 100);
 
+    /* grab zoom: the camera dollies in a touch while the model is
+       held, easing back out on release — an affordable tactile
+       flourish next to the tumbling */
+    var ZOOM_IN = 0.76; // multiply the framing distance by this while dragging
+    var zoomTarget = 1;
+    var zoomCur = 1;
+    /* zoom motion is a short timed tween with an ease-in-out cubic,
+       accelerating out of the start and settling in gently (both ways) */
+    var zoomTweenT = 1; // seconds elapsed; 1 >= duration means idle
+    var ZOOM_TWEEN_DUR = 0.15;
+    var zoomStart = 1;
+    var camBasePos = new THREE.Vector3();
+    var camFollow = new THREE.Vector3(0, -0.4, 0);
+    var camTmp = new THREE.Vector3();
+
+    function updateCamera() {
+      // zoom along the look direction, not around the world origin,
+      // so the controller stays framed by the same point
+      camTmp.copy(camBasePos).sub(camFollow).multiplyScalar(zoomCur);
+      camera.position.copy(camFollow).add(camTmp);
+      camera.lookAt(camFollow);
+      camera.updateProjectionMatrix();
+    }
+
     /* lights — tuned per colour scheme so the model reads well on both
        the light page and the dark page; swaps live when the theme does */
 
@@ -278,6 +302,9 @@
       lastX = e.clientX; lastY = e.clientY;
       spinVel.set(0, 0, 0); // grabbing catches a spinning controller
       dragSamples.length = 0;
+      zoomStart = zoomCur;
+      zoomTweenT = 0;
+      zoomTarget = ZOOM_IN;
       e.preventDefault(); // no text selection while tumbling
       document.documentElement.style.cursor = 'grabbing';
     });
@@ -348,6 +375,9 @@
       if (dragging && e.pointerId === dragPointer) {
         dragging = false;
         document.documentElement.style.cursor = '';
+        zoomStart = zoomCur;
+        zoomTweenT = 0;
+        zoomTarget = 1;
         releaseSpin();
       }
     }
@@ -401,8 +431,8 @@
       ) * 1.25;
 
       camera.position.set(0, d * 0.42, d * 0.91);
-      camera.lookAt(0, -0.4, 0);
-      camera.updateProjectionMatrix();
+      camBasePos.copy(camera.position);
+      updateCamera();
     }
     resize();
     if (window.ResizeObserver) {
@@ -444,6 +474,17 @@
         spinVel.multiplyScalar(Math.exp(-2.2 * dt));
         if (spinVel.length() < 0.05) spinVel.set(0, 0, 0);
       }
+
+      // grab zoom: tween the dolly to the target (in while held,
+      // back out after release); same motion for mouse and touch
+      zoomTweenT = Math.min(zoomTweenT + dt, ZOOM_TWEEN_DUR);
+      var p = zoomTweenT / ZOOM_TWEEN_DUR;
+      // ease-in-out cubic: 4p³ first half, 1 - (-2p+2)³/2 second half
+      var ease = p < 0.5
+        ? 4 * p * p * p
+        : 1 - Math.pow(-2 * p + 2, 3) / 2;
+      zoomCur = zoomStart + (zoomTarget - zoomStart) * ease;
+      if (p < 1) updateCamera();
 
       renderer.render(scene, camera);
     }
