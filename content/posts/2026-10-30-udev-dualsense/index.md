@@ -8,7 +8,8 @@ tags = ["linux", "gnome", "nostalgia"]
 [extra]
 image = "thumb.webp"
 audio = "speech.opus"
-mastodon_url = "https://mastodon.social/@jimmac/117536181145290258"
+#mastodon_url = "https://mastodon.social/@jimmac/117536181145290258"
+mastodon_url = "https://mastodon.social/@jimmac/117531485575105534"
 related = [
   "posts/2023-05-01-udev-m8/index.md",
   "posts/2026-09-18-building-flatpaks-locally/index.md",
